@@ -1,0 +1,451 @@
+import z from 'zod'
+
+import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+
+import { IAccount } from '../account'
+import { IAccountHistory } from '../account-history'
+import { IComakerCollateral } from '../comaker-collateral'
+import { IComakerMemberProfile } from '../comaker-member-profile'
+import { ICurrency } from '../currency'
+import { IGeneralLedger } from '../general-ledger'
+import { ILoanAccount } from '../loan-account'
+import { ILoanAmortizationSchedule } from '../loan-amortization-schedule'
+import { ILoanClearanceAnalysis } from '../loan-clearance-analysis'
+import { ILoanClearanceAnalysisInstitution } from '../loan-clearance-analysis-institution'
+import { ILoanPurpose } from '../loan-purpose'
+import { ILoanStatus } from '../loan-status'
+import { ILoanTag } from '../loan-tag'
+import { ILoanTermsAndConditionAmountReceipt } from '../loan-terms-and-condition-amount-receipt'
+import { ILoanTermsAndConditionSuggestedPayment } from '../loan-terms-and-condition-suggested-payment'
+import { ILoanTransactionEntry } from '../loan-transaction-entry'
+import { IMedia } from '../media'
+import { IMemberAccountingLedger } from '../member-account-ledger'
+import { IMemberProfile } from '../member-profile'
+import { ITransactionBatch } from '../transaction-batch'
+import { IUser } from '../user'
+import {
+    LoanEditTransactionSchema,
+    LoanTransactionPrintSchema,
+    LoanTransactionSchema,
+    TLoanTransactionAdjustmentSchema,
+    TLoanTransactionSignatureSchema,
+    TLoanTransactionSuggestedSchema,
+} from './loan-transaction.validation'
+import {
+    COMPUTATION_TYPE,
+    LOAN_ADJUSTMENT_TYPE,
+    LOAN_AMORTIZATION_TYPE,
+    LOAN_COLLECTOR_PLACE,
+    LOAN_COMAKER_TYPE,
+    LOAN_MODE_OF_PAYMENT,
+    LOAN_OVERALL_PAYMENT_STATUS,
+    LOAN_PAYMENT_STATUS,
+    LOAN_TYPE,
+    WEEKDAYS,
+} from './loan.constants'
+
+export type TLoanModeOfPayment = (typeof LOAN_MODE_OF_PAYMENT)[number]
+
+export type TWeekdays = (typeof WEEKDAYS)[number]
+
+export type TLoanCollectorPlace = (typeof LOAN_COLLECTOR_PLACE)[number]
+
+export type TLoanComakerType = (typeof LOAN_COMAKER_TYPE)[number]
+
+export type TLoanType = (typeof LOAN_TYPE)[number]
+
+export type TLoanAmortizationType = (typeof LOAN_AMORTIZATION_TYPE)[number]
+
+export type TComputationType = (typeof COMPUTATION_TYPE)[number]
+
+// NOT SERVER/ONLY CLIENT GENERATED
+export type TLoanStatusType = 'draft' | 'printed' | 'approved' | 'released'
+
+export type TLoanMode =
+    | 'draft'
+    | 'printed'
+    | 'approved'
+    | 'released'
+    | 'release-today'
+
+export interface ILoanTransaction
+    extends IBaseEntityMeta,
+        ILoanTransactionSignatures,
+        ILoanTransactionStatusDates {
+    voucher?: string
+
+    transaction_batch_id?: TEntityId
+    transaction_batch?: ITransactionBatch
+    official_receipt_number: string
+
+    print_number: number
+
+    employee_user_id?: TEntityId
+    employee_user?: IUser
+
+    loan_purpose_id?: TEntityId
+    loan_purpose?: ILoanPurpose
+
+    loan_status_id?: TEntityId
+    loan_status?: ILoanStatus
+
+    count?: number
+    balance?: number
+
+    mode_of_payment: TLoanModeOfPayment
+    mode_of_payment_weekly: TWeekdays
+    mode_of_payment_fixed_days?: number
+    mode_of_payment_semi_monthly_pay_1: number
+    mode_of_payment_semi_monthly_pay_2: number
+    mode_of_payment_monthly_exact_day: boolean
+
+    comaker_type: TLoanComakerType
+
+    // Pag comaker type ay deposit
+    comaker_deposit_member_accounting_ledger_id?: TEntityId
+    comaker_deposit_member_accounting_ledger?: IMemberAccountingLedger
+
+    comaker_collaterals?: IComakerCollateral[] // pag comaker ay collaterals
+    comaker_member_profiles: IComakerMemberProfile[] // pag comaker ay member
+
+    collector_place: TLoanCollectorPlace
+
+    loan_type?: TLoanType
+    previous_loan_id?: TEntityId
+    previous_loan?: ILoanTransaction
+    terms: number
+
+    additional_days?: number // new
+    number_of_months?: number // new
+    amount_granted?: number //new
+    advance_interest?: number // new
+    interest_rate?: number // new
+    fines_rate?: number // new
+    date_rebated?: string //new
+    last_pay_date?: string //new
+    total_count?: number // new
+    original_ticket?: string // new
+    first_pay_date?: string // new
+    first_pay_amount?: number // new
+    first_irr?: number //new
+    first_dq?: number //new
+    interest_previous_paid?: number // new
+    fines_previous_paid?: number // new
+
+    amortization: number
+    is_add_on: boolean
+
+    applied_1: number
+    applied_2: number
+
+    account_id?: TEntityId
+    account?: IAccount
+    member_profile_id?: TEntityId
+    member_profile?: IMemberProfile
+
+    member_joint_account_id?: TEntityId
+    member_joint_account?: IAccount
+
+    signature_media_id?: TEntityId
+    signature_media?: IMedia
+
+    mount_to_be_closed: number
+    damayan_fund: number
+    share_capital: number
+    length_of_service: string
+
+    check_number?: string
+    check_date?: string
+
+    loan_transaction_entries: ILoanTransactionEntry[]
+    loan_transaction_entries_deleted: TEntityId[] // nothing, just for type
+
+    //Loan Clearance Analysis
+    loan_clearance_analysis: ILoanClearanceAnalysis[]
+    loan_clearance_analysis_deleted?: TEntityId[] // nothing, just for type
+
+    loan_clearance_analysis_institution: ILoanClearanceAnalysisInstitution[]
+    loan_clearance_analysis_institution_deleted?: TEntityId[] // nothing, just for type
+
+    // Terms and Condition / Receipt
+    loan_terms_and_condition_amount_receipt: ILoanTermsAndConditionAmountReceipt[]
+    loan_terms_and_condition_amount_receipt_deleted?: TEntityId[] // nothing, just for type
+
+    loan_terms_and_condition_suggested_payment: ILoanTermsAndConditionSuggestedPayment[]
+    loan_terms_and_condition_suggested_payment_deleted?: TEntityId[] // nothing, just for type
+
+    exclude_sunday: boolean
+    exclude_holiday: boolean
+    exclude_saturday: boolean
+
+    remarks_other_terms: string
+    remarks_payroll_deduction: boolean
+    record_of_loan_payments_or_loan_status: string
+    collateral_offered: string
+
+    loan_tags: ILoanTag[]
+
+    appraised_value: number
+    appraised_value_description: string
+
+    total_debit: number
+    total_credit: number
+    total_add_on: number
+    total_deduction: number
+
+    printed_by_user_id?: string
+    printed_by?: IUser
+
+    approved_by_user_id?: string
+    approved_by?: IUser
+
+    released_by_user_id?: string
+    released_by?: IUser
+
+    // ADDED FROM ZALZAL Dev Branch
+    processing?: boolean
+
+    loan_accounts?: ILoanAccount[]
+}
+
+export interface ILoanTransactionStatusDates {
+    printed_date?: string // Printed
+    approved_date?: string //
+    released_date?: string // Not editable anymore
+}
+
+export interface ILoanTransactionSignatures {
+    approved_by_signature_media_id?: TEntityId
+    approved_by_signature_media?: IMedia
+    approved_by_name: string
+    approved_by_position: string
+
+    prepared_by_signature_media_id?: TEntityId
+    prepared_by_signature_media?: IMedia
+    prepared_by_name: string
+    prepared_by_position: string
+
+    certified_by_signature_media_id?: TEntityId
+    certified_by_signature_media?: IMedia
+    certified_by_name: string
+    certified_by_position: string
+
+    verified_by_signature_media_id?: TEntityId
+    verified_by_signature_media?: IMedia
+    verified_by_name: string
+    verified_by_position: string
+
+    check_by_signature_media_id?: TEntityId
+    check_by_signature_media?: IMedia
+    check_by_name: string
+    check_by_position: string
+
+    acknowledge_by_signature_media_id?: TEntityId
+    acknowledge_by_signature_media?: IMedia
+    acknowledge_by_name: string
+    acknowledge_by_position: string
+
+    noted_by_signature_media_id?: TEntityId
+    noted_by_signature_media?: IMedia
+    noted_by_name: string
+    noted_by_position: string
+
+    posted_by_signature_media_id?: TEntityId
+    posted_by_signature_media?: IMedia
+    posted_by_name: string
+    posted_by_position: string
+
+    paid_by_signature_media_id?: TEntityId
+    paid_by_signature_media?: IMedia
+    paid_by_name: string
+    paid_by_position: string
+}
+
+export type ILoanTransactionRequest = z.infer<typeof LoanTransactionSchema>
+
+export type ILoanEditTransactionRequest = z.infer<
+    typeof LoanEditTransactionSchema
+>
+
+export interface ILoanTransactionPaginated
+    extends IPaginatedResult<ILoanTransaction> {}
+
+// Loan Transaction Signature
+export type ILoanTransactionSignatureRequest = TLoanTransactionSignatureSchema
+
+// Loan Transaction Print Request
+
+export type ILoanTransactionPrintRequest = LoanTransactionPrintSchema
+
+// for suggested amortization
+export type ILoanTransactionSuggested = { terms: number }
+export type ILoanTransactionSuggestedRequest = TLoanTransactionSuggestedSchema
+
+// for loan transaction amort schedules
+export interface ILoanAmortizationSchedules {
+    currency: ICurrency
+
+    // entries: IComputationSheetAmortizationResponseDeduction[]
+    total_debit: number
+    total_credit: number
+
+    total: number
+
+    schedule: ILoanAmortizationSchedule[]
+}
+
+// for processing all progress
+export type LoanProcessingEventResponse = {
+    total: number
+    processed: number
+    start_time: string
+    current_time: string
+    account_name: string
+    member_name: string
+}
+
+// for loan transaction adjustments
+export type TLoanAdjustmentType = (typeof LOAN_ADJUSTMENT_TYPE)[number]
+export type ILoanTransactionAdjustmentRequest = TLoanTransactionAdjustmentSchema
+
+// for loan transaction account summary
+export interface ILoanTransactionAccountSummary {
+    account_history_id: TEntityId
+    account_history: IAccountHistory
+
+    loan_transaction_id: TEntityId
+
+    due_date?: string
+    last_payment?: string
+
+    // COUNTS
+    total_number_of_payments: number
+    total_number_of_deductions: number
+    total_number_of_additions: number
+
+    // AMOUNTS
+    total_account_principal: number
+    total_account_advanced_payment: number
+    total_account_principal_paid: number
+    total_remaining_principal: number
+
+    total_debit: number
+    total_credit: number
+    balance: number
+}
+
+// for loan transaction summary
+export interface ILoanTransactionSummary {
+    arrears: number
+    amount_granted: number
+    add_on_amount: number
+
+    account_summary: ILoanTransactionAccountSummary[]
+    general_ledger: IGeneralLedger[]
+
+    last_payment?: string
+    first_deliquency_date?: string
+    first_irregularity_date?: string
+
+    total_principal: number
+    total_advanced_payment: number
+    total_principal_paid: number
+    total_remaining_principal: number // old coop progress
+}
+
+// FOR VIEWING ONLY (NORMALIZED VIEW TYPE)
+
+export type TLoanLedgerNormalized = {
+    entry_date: string
+    uid: string
+} & Partial<
+    Record<
+        `${TEntityId}_debit` | `${TEntityId}_credit` | `${TEntityId}_balance`,
+        unknown
+    > &
+        Record<`${TEntityId}_ledger`, IGeneralLedger>
+>
+
+// FOR LOAN TRANSACTION PAYMENT SCHEDULE
+
+export type TLoanPaymentStatus = (typeof LOAN_PAYMENT_STATUS)[number]
+export type TLoanOverallPaymentStatus =
+    (typeof LOAN_OVERALL_PAYMENT_STATUS)[number]
+
+// LOAN SUMMARY ALL MEMBER
+export interface ILoanAccountSummaryResponse {
+    account_history_id: TEntityId
+    account_history: IAccountHistory
+
+    total_debit: number
+    total_credit: number
+    balance: number
+
+    due_date?: string
+    last_payment?: string
+
+    total_number_of_payments: number
+
+    total_number_of_deductions: number
+    total_deductions: number
+    total_number_of_additions: number
+    total_additions: number
+
+    total_account_principal: number
+    total_account_advanced_payment: number
+    total_account_principal_paid: number
+    total_remaining_principal: number
+    loan_transaction_id: TEntityId
+}
+
+export interface ILoanTransactionSummaryResponse {
+    loan_transaction_id: TEntityId
+    amount_granted: number
+
+    arrears: number
+
+    last_payment?: string
+    first_deliquency_date?: string
+    first_irregularity_date?: string
+    total_principal: number
+    total_advanced_payment: number
+    total_principal_paid: number
+    total_remaining_principal: number
+}
+
+// MEMBER LOAN SUMMARY
+
+// MemberLoanSummary represents loan summary for a single member
+export interface IMemberLoanSummary {
+    member_profile_id: TEntityId
+    total_loans: number
+    total_arrears: number
+    total_principal: number
+    total_paid: number
+    total_remaining: number
+    active_loans: number
+    fully_paid_loans: number
+    overdue_loans: number
+    last_payment_date?: string
+    last_payment_amount: number
+}
+
+// AllMembersLoanSummaryResponse represents loan summaries for all members
+export interface IAllMembersLoanSummaryResponse {
+    member_summaries: IMemberLoanSummary[]
+    total_members: number
+    total_loans: number
+    total_arrears: number
+    total_principal: number
+    total_paid: number
+    total_remaining: number
+    total_active_loans: number
+    total_fully_paid_loans: number
+    total_overdue_loans: number
+    members_with_loans: number
+    members_with_overdue: number
+    members_fully_paid: number
+    organization_id: TEntityId
+    branch_id: TEntityId
+    generated_at: string
+}
