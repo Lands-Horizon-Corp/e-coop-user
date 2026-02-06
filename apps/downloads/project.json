@@ -1,0 +1,9 @@
+{
+  "name": "downloads",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/downloads/src",
+  "projectType": "application",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project downloads --web",
+  "targets": {}
+}

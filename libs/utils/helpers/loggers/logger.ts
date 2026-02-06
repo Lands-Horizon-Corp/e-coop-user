@@ -1,5 +1,5 @@
 import { APP_ENV } from '../../constants'
-import { TFootstepLevel, createFootstep } from '@/footstep'
+import { TFootstepLevel, createFootstep } from '../../src/footstep'
 
  
 type LogMethod = (...args: unknown[]) => void

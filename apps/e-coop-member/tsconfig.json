@@ -1,5 +1,8 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "moduleResolution": "bundler",
+    "module": "esnext",
     "jsx": "react-jsx",
     "allowJs": false,
     "esModuleInterop": false,
@@ -8,7 +11,12 @@
     "types": ["vite/client", "vitest"]
   },
   "files": [],
-  "include": [],
+  "include": [
+    "vite.config.mts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.app.json"
@@ -16,6 +24,5 @@
     {
       "path": "./tsconfig.spec.json"
     }
-  ],
-  "extends": "../../tsconfig.base.json"
+  ]
 }
