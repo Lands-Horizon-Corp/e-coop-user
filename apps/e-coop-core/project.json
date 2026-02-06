@@ -1,0 +1,9 @@
+{
+  "name": "e-coop-core",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e-coop-core/src",
+  "projectType": "application",
+  "tags": ["scope:core"],
+  "// targets": "to see all targets run: nx show project e-coop-core --web",
+  "targets": {}
+}

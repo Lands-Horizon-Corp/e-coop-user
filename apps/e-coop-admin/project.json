@@ -1,0 +1,9 @@
+{
+  "name": "e-coop-admin",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/e-coop-admin/src",
+  "projectType": "application",
+  "tags": ["scope:admin"],
+  "// targets": "to see all targets run: nx show project e-coop-admin --web",
+  "targets": {}
+}
