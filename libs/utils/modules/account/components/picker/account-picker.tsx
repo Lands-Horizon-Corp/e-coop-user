@@ -1,0 +1,356 @@
+import { useState } from 'react'
+
+import { useQueryClient } from '@tanstack/react-query'
+
+import { PAGINATION_INITIAL_INDEX, PICKERS_SELECT_PAGE_SIZE } from '@/constants'
+import { cn } from '@/helpers'
+import {
+    IAccount,
+    TPaginatedAccountHookMode,
+    useFilteredPaginatedAccount,
+} from '@/modules/account'
+// import { AccountTypeBadge } from '@/modules/account'
+// import { FinancialStatementTypeBadge } from '@/modules/financial-statement-definition/components/financial-statement-type-badge'
+// import { GeneralLedgerTypeBadge } from '@/modules/general-ledger/components/general-ledger-type-badge'
+import { IPickerBaseProps } from '@/types/component-types/picker'
+import { PaginationState } from '@tanstack/react-table'
+
+import {
+    ChevronDownIcon,
+    EyeIcon,
+    RenderIcon,
+    TIcon,
+    XIcon,
+} from '@/components/icons'
+import MiniPaginationBar from '@/components/pagination-bars/mini-pagination-bar'
+import GenericPicker from '@/components/pickers/generic-picker'
+import LoadingSpinner from '@/components/spinners/loading-spinner'
+import { Button } from '@/components/ui/button'
+
+import useFilterState from '@/hooks/use-filter-state'
+import { useInternalState } from '@/hooks/use-internal-state'
+import { useModalState } from '@/hooks/use-modal-state'
+
+import { TEntityId } from '@/types'
+
+import { AccountViewerModal } from '../account-viewer/account-viewer'
+
+interface PickerProp extends IPickerBaseProps<IAccount> {
+    allowShorcutCommand?: boolean
+    modalOnly?: boolean
+    defaultOpen?: boolean
+    nameOnly?: boolean
+    hideDescription?: boolean
+    allowClear?: boolean
+    mode: TPaginatedAccountHookMode
+}
+
+type FinalProp = PickerProp &
+    (
+        | {
+              mode: Exclude<
+                  TPaginatedAccountHookMode,
+                  | 'currency'
+                  | 'currency-loan'
+                  | 'currency-payment'
+                  | 'loan-accounts-currency'
+                  | 'currency-cash-and-cash-equivalence'
+                  | 'currency-paid-up-shared-capital'
+                  | 'loan-connectable-account-currency' // - This returns SVF, Interest, Fines accounts that can be connected to a loan account based on currency
+              >
+          }
+        | {
+              mode:
+                  | 'currency'
+                  | 'currency-payment'
+                  | 'currency-loan'
+                  | 'loan-accounts-currency'
+                  | 'currency-cash-and-cash-equivalence'
+                  | 'currency-paid-up-shared-capital'
+                  | 'loan-connectable-account-currency' // - This returns SVF, Interest, Fines accounts that can be connected to a loan account based on currency
+              currencyId: TEntityId
+          }
+    )
+
+const AccountPicker = ({
+    mode = 'all',
+    value,
+    disabled,
+    allowShorcutCommand = false,
+    placeholder,
+    onSelect,
+    modalOnly = false,
+    nameOnly = false,
+    hideDescription = false,
+    modalState,
+    triggerClassName,
+    currencyId,
+    allowClear = false,
+}: FinalProp & { currencyId?: TEntityId }) => {
+    const queryClient = useQueryClient()
+
+    const [state, setState] = useInternalState(
+        false,
+        modalState?.open,
+        modalState?.onOpenChange
+    )
+
+    const [pagination, setPagination] = useState<PaginationState>({
+        pageIndex: PAGINATION_INITIAL_INDEX,
+        pageSize: PICKERS_SELECT_PAGE_SIZE,
+    })
+
+    const { finalFilterPayloadBase64, bulkSetFilter } = useFilterState({
+        defaultFilterMode: 'OR',
+        debounceFinalFilterMs: 0,
+        onFilterChange: () =>
+            setPagination((prev) => ({
+                ...prev,
+                pageIndex: PAGINATION_INITIAL_INDEX,
+            })),
+    })
+
+    const {
+        data: AccountData,
+        isPending,
+        isLoading,
+        isFetching,
+    } = useFilteredPaginatedAccount({
+        mode,
+        currencyId,
+        query: {
+            ...pagination,
+            showMessage: false,
+            filter: finalFilterPayloadBase64,
+        },
+        options: {
+            enabled: !disabled,
+        },
+    })
+    const { data = [], totalPage = 0, totalSize = 0 } = AccountData || {}
+    return (
+        <>
+            <GenericPicker
+                isLoading={isPending || isLoading || isFetching}
+                items={data}
+                listHeading={`Matched Results (${totalSize})`}
+                onOpenChange={setState}
+                onSearchChange={(searchValue) => {
+                    bulkSetFilter([{ displayText: 'Name', field: 'name' }], {
+                        displayText: '',
+                        mode: 'contains',
+                        dataType: 'text',
+                        value: searchValue,
+                    })
+                }}
+                onSelect={(account) => {
+                    queryClient.setQueryData(['account', value], account)
+                    onSelect?.(account)
+                    setState(false)
+                }}
+                open={state}
+                renderItem={(Account) => (
+                    <AccountItem account={Account} key={Account.id} />
+                )}
+                searchPlaceHolder="Search account name"
+            >
+                <MiniPaginationBar
+                    disablePageMove={isFetching}
+                    onNext={({ pageIndex }) =>
+                        setPagination((prev) => ({ ...prev, pageIndex }))
+                    }
+                    onPrev={({ pageIndex }) =>
+                        setPagination((prev) => ({ ...prev, pageIndex }))
+                    }
+                    pagination={{
+                        pageIndex: pagination.pageIndex,
+                        pageSize: pagination.pageSize,
+                        totalPage: totalPage,
+                        totalSize: totalSize,
+                    }}
+                />
+            </GenericPicker>
+            {!modalOnly && (
+                <div
+                    className={cn(
+                        'flex items-center',
+                        allowClear ? 'space-x-2' : ''
+                    )}
+                >
+                    <Button
+                        className={cn(
+                            'w-full items-center justify-between rounded-md border bg-background p-0 px-1',
+                            triggerClassName
+                        )}
+                        disabled={disabled}
+                        onClick={() => setState((prev) => !prev)}
+                        role="combobox"
+                        tabIndex={0}
+                        type="button"
+                        variant="secondary"
+                    >
+                        {/* for future references how it fixed the issue */}
+                        {/* flex-1 min-w-0 makes content area responsive */}
+                        {/* flex-1 min-w-0 ensures proper space usage for truncation */}
+                        {/* flex-shrink-0 protects the icon */}
+                        {/* flex-shrink-0 protects the badges */}
+                        {/* flex-shrink-0 protects the shortcut command */}
+                        <div className="flex flex-1 items-center text-sm text-foreground/90 overflow-hidden">
+                            <span className="flex flex-1 min-w-0 items-center gap-x-2">
+                                <div>
+                                    {isFetching && !value ? (
+                                        <LoadingSpinner />
+                                    ) : (
+                                        ''
+                                    )}
+                                </div>
+                                {value?.icon && value.icon.length > 0 && (
+                                    <span className="bg-muted border rounded-full p-0.5 shrink-0">
+                                        <RenderIcon
+                                            icon={value.icon as TIcon}
+                                        />
+                                    </span>
+                                )}
+                                {!value ? (
+                                    <span className="text-foreground/70 truncate">
+                                        {placeholder || 'Select Account'}
+                                    </span>
+                                ) : (
+                                    <span className="inline-flex flex-1 min-w-0 gap-x-4 items-center">
+                                        <span className="font-medium truncate min-w-fit shrink">
+                                            {value.name ?? placeholder}
+                                        </span>
+
+                                        {!nameOnly && !hideDescription && (
+                                            <span className="text-xs text-foreground/70 truncate shrink">
+                                                {value.description}
+                                            </span>
+                                        )}
+                                    </span>
+                                )}
+                                {/* {!nameOnly && (
+                                    <span className="ml-2 flex-none flex gap-x-1 items-center font-mono text-sm text-foreground/30 flex-shrink-0">
+                                        {value?.type && (
+                                            <AccountTypeBadge
+                                                description="(Type)"
+                                                type={value.type}
+                                            />
+                                        )}
+                                        {value?.general_ledger_type && (
+                                            <GeneralLedgerTypeBadge
+                                                description="(GL)"
+                                                type={value.general_ledger_type}
+                                            />
+                                        )}
+                                        {value?.financial_statement_type && (
+                                            <FinancialStatementTypeBadge
+                                                description=" (FS)"
+                                                type={
+                                                    value.financial_statement_type
+                                                }
+                                            />
+                                        )}
+                                    </span>
+                                )} */}
+                            </span>
+
+                            {/* Shortcut Command */}
+                            {allowShorcutCommand && (
+                                <span className="ml-2 mr-1 text-sm text-foreground/40 shrink-0">
+                                    ⌘ ↵
+                                </span>
+                            )}
+                        </div>
+
+                        {/* Chevron Icon */}
+                        <ChevronDownIcon className="shrink-0 ml-1" />
+                    </Button>
+                    {allowClear && value && (
+                        <Button
+                            className="cursor-pointer shrink-0 rounded-full p-0! px-0!"
+                            onClick={(e) => {
+                                e.preventDefault()
+                                e.stopPropagation()
+                                onSelect?.(undefined as unknown as IAccount)
+                            }}
+                            size={'sm'}
+                            variant={'ghost'}
+                        >
+                            <XIcon className="inline" />
+                        </Button>
+                    )}
+                </div>
+            )}
+        </>
+    )
+}
+
+const AccountItem = ({ account }: { account: IAccount }) => {
+    const viewAccountModal = useModalState()
+
+    return (
+        <div className="flex w-full items-center justify-between py-1">
+            <div className="flex items-center gap-x-2">
+                {account.icon && account.icon.length > 0 && (
+                    <span className="bg-muted rounded-full p-0.5">
+                        <RenderIcon icon={account.icon as TIcon} />
+                    </span>
+                )}
+                <span className="text-ellipsis text-left text-foreground/80">
+                    {account.currency?.emoji
+                        ? `${account.currency?.emoji} `
+                        : '🏳️ '}
+                    {account.name}
+                    <br />
+                    <span className="text-xs text-muted-foreground/70">
+                        {account.description}
+                    </span>
+                </span>
+            </div>
+            <div className="absolute" onClick={(e) => e.stopPropagation()}>
+                <AccountViewerModal
+                    {...viewAccountModal}
+                    accountViewerProps={{
+                        accountId: account.id,
+                        defaultValue: account,
+                    }}
+                />
+            </div>
+            <Button
+                className="cursor-pointer bg-background/40"
+                onClick={(e) => {
+                    e.stopPropagation()
+                    viewAccountModal.onOpenChange(true)
+                }}
+                size="icon-sm"
+                type="button"
+                variant="ghost"
+            >
+                <EyeIcon className="size-2" />
+            </Button>
+            {/* 
+                        <p className="mr-2 flex gap-x-2 items-center font-mono text-xs italic text-foreground/40">
+                            {Account.type && (
+                                <AccountTypeBadge
+                                    description="(Type)"
+                                    type={Account.type}
+                                />
+                            )}
+                            {Account.general_ledger_type && (
+                                <GeneralLedgerTypeBadge
+                                    description="(GL)"
+                                    type={Account.general_ledger_type}
+                                />
+                            )}
+                            {Account.financial_statement_type && (
+                                <FinancialStatementTypeBadge
+                                    description=" (FS)"
+                                    type={Account.financial_statement_type}
+                                />
+                            )}
+                        </p> */}
+        </div>
+    )
+}
+
+export default AccountPicker

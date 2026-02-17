@@ -119,7 +119,7 @@ export const getPaginationMetadata = <T>(
  */
 export const estimateMemoryUsage = (
     itemCount: number,
-    estimatedItemSize = 500
+    estimatedItemSize: number = 500
 ): {
     bytes: number
     kilobytes: number

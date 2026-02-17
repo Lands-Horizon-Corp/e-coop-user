@@ -12,7 +12,9 @@
       "@nx/react/typings/image.d.ts"
     ],
     "composite": true,
-    "declaration": true 
+    "declaration": true,
+    "noEmit": false,
+    "allowImportingTsExtensions": false
   },
   "include": [
     "vite.config.ts",
