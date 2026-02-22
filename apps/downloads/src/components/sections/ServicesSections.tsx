@@ -192,14 +192,14 @@ const RealisticCoin = ({
 
       <motion.div
         animate={{ rotateY: isMain ? 360 : -360 }}
-        transition={{ duration: isMain ? 8 : 3, repeat: Infinity, ease: "linear" }}
         className={`relative ${sizeClasses[size]} rounded-full`}
         style={{ transformStyle: "preserve-3d" }}
+        transition={{ duration: isMain ? 8 : 3, repeat: Infinity, ease: "linear" }}
       >
         {[...Array(thickness)].map((_, i) => (
           <div
-            key={i}
             className="absolute inset-0 rounded-full"
+            key={i}
             style={{
               background: edgeGradient,
               transform: `translateZ(-${i + 1}px)`,
@@ -305,12 +305,12 @@ export default function ServicesSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           <motion.div 
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
             className="relative h-[350px] sm:h-[450px] lg:h-[600px] flex items-center justify-center"
+            initial={{ opacity: 0, x: -50 }}
             style={{ perspective: "1000px" }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, x: 0 }}
           >
             <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 lg:-translate-x-[65%]">
               
@@ -324,14 +324,6 @@ export default function ServicesSection() {
                   
                   return (
                     <motion.div
-                      key={i}
-                      className="absolute top-1/2 left-1/2 pointer-events-none"
-                      initial={{ 
-                        x: "-50%", 
-                        y: "-50%", 
-                        opacity: 0,
-                        scale: 0
-                      }}
                       animate={{ 
                         x: [
                           "-50%", 
@@ -344,6 +336,15 @@ export default function ServicesSection() {
                         opacity: [0, 1, 1, 0],
                         scale: [0, 0.9, 0.8, 0.5]
                       }}
+                      className="absolute top-1/2 left-1/2 pointer-events-none"
+                      initial={{ 
+                        x: "-50%", 
+                        y: "-50%", 
+                        opacity: 0,
+                        scale: 0
+                      }}
+                      key={i}
+                      style={{ zIndex: 30 }}
                       transition={{
                         duration: 4,
                         repeat: Infinity,
@@ -351,13 +352,12 @@ export default function ServicesSection() {
                         ease: "easeOut",
                         times: [0, 0.2, 0.7, 1]
                       }}
-                      style={{ zIndex: 30 }}
                     >
                       <RealisticCoin 
-                        symbol={coin.symbol} 
                         backSymbol={coin.backSymbol} 
-                        colors={colors}
+                        colors={colors} 
                         size="normal"
+                        symbol={coin.symbol}
                       />
                     </motion.div>
                   );
@@ -371,14 +371,6 @@ export default function ServicesSection() {
                   
                   return (
                     <motion.div
-                      key={`second-${i}`}
-                      className="absolute top-1/2 left-1/2 pointer-events-none"
-                      initial={{ 
-                        x: "-50%", 
-                        y: "-50%", 
-                        opacity: 0,
-                        scale: 0
-                      }}
                       animate={{ 
                         x: [
                           "-50%", 
@@ -391,6 +383,15 @@ export default function ServicesSection() {
                         opacity: [0, 0.8, 0.8, 0],
                         scale: [0, 0.7, 0.6, 0.4] 
                       }}
+                      className="absolute top-1/2 left-1/2 pointer-events-none"
+                      initial={{ 
+                        x: "-50%", 
+                        y: "-50%", 
+                        opacity: 0,
+                        scale: 0
+                      }}
+                      key={`second-${i}`}
+                      style={{ zIndex: 30 }}
                       transition={{
                         duration: 5,
                         repeat: Infinity,
@@ -398,13 +399,12 @@ export default function ServicesSection() {
                         ease: "easeOut",
                         times: [0, 0.15, 0.6, 1]
                       }}
-                      style={{ zIndex: 30 }}
                     >
                       <RealisticCoin 
-                        symbol={coin.symbol} 
                         backSymbol={coin.backSymbol} 
-                        colors={colors}
+                        colors={colors} 
                         size="small"
+                        symbol={coin.symbol}
                       />
                     </motion.div>
                   );
@@ -412,43 +412,43 @@ export default function ServicesSection() {
 
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" style={{ zIndex: 10 }}>
                   <RealisticCoin 
-                    symbol="$" 
                     backSymbol="₱" 
-                    colors={coinColors.base}
-                    size="large"
+                    colors={coinColors.base} 
                     isMain={true}
+                    size="large"
+                    symbol="$"
                   />
                 </div>
 
                 <motion.div
                   animate={{ rotate: 360 }}
-                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute inset-6 sm:inset-8 lg:inset-12 rounded-full border border-emerald-500/20"
                   style={{ zIndex: 5 }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 >
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-emerald-400 rounded-full shadow-[0_0_15px_rgba(52,211,153,0.8)]" />
                 </motion.div>
 
                 <motion.div
                   animate={{ rotate: -360 }}
-                  transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                   className="absolute inset-0 sm:inset-2 lg:inset-4 rounded-full border border-emerald-500/15"
                   style={{ zIndex: 5 }}
+                  transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                 >
                   <div className="absolute bottom-0 left-1/2 -translate-x-1/2 translate-y-1/2 w-1 h-1 sm:w-1.5 sm:h-1.5 bg-emerald-300 rounded-full shadow-[0_0_10px_rgba(52,211,153,0.6)]" />
                 </motion.div>
 
                 {[...Array(6)].map((_, i) => (
                   <motion.div
-                    key={`particle-${i}`}
-                    className="absolute w-1 h-1 sm:w-1.5 sm:h-1.5 bg-emerald-400/60 rounded-full top-1/2 left-1/2"
-                    style={{ zIndex: 5 }}
                     animate={{
                       x: [0, Math.cos(i * 60 * Math.PI / 180) * 100],
                       y: [0, Math.sin(i * 60 * Math.PI / 180) * 100],
                       opacity: [0.2, 0.8, 0.2],
                       scale: [0.8, 1.2, 0.8]
                     }}
+                    className="absolute w-1 h-1 sm:w-1.5 sm:h-1.5 bg-emerald-400/60 rounded-full top-1/2 left-1/2"
+                    key={`particle-${i}`}
+                    style={{ zIndex: 5 }}
                     transition={{
                       duration: 4,
                       repeat: Infinity,
@@ -478,20 +478,20 @@ export default function ServicesSection() {
 
                 return (
                   <motion.div
-                    key={index}
-                    initial={{ opacity: 0, scale: 0.8 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: card.delay + 0.5, duration: 0.6 }}
                     className={`absolute ${positions[card.position as keyof typeof positions]}`}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    key={index}
+                    transition={{ delay: card.delay + 0.5, duration: 0.6 }}
+                    viewport={{ once: true }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                   >
                     {/* Connecting line - shorter on mobile */}
                     <motion.div
-                      initial={{ scaleX: 0 }}
-                      whileInView={{ scaleX: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: card.delay + 0.8, duration: 0.8 }}
                       className={`absolute ${linePositions[card.position as keyof typeof linePositions]} bg-gradient-to-r from-emerald-500/50 to-transparent hidden sm:block`}
+                      initial={{ scaleX: 0 }}
+                      transition={{ delay: card.delay + 0.8, duration: 0.8 }}
+                      viewport={{ once: true }}
+                      whileInView={{ scaleX: 1 }}
                     />
                     
                     {/* Animated dot - smaller on mobile */}
@@ -500,16 +500,16 @@ export default function ServicesSection() {
                         scale: [1, 1.5, 1],
                         opacity: [0.5, 1, 0.5]
                       }}
-                      transition={{ duration: 2, repeat: Infinity, delay: card.delay }}
                       className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 sm:w-1.5 sm:h-1.5 lg:w-2 lg:h-2 bg-emerald-400 rounded-full hidden sm:block"
+                      transition={{ duration: 2, repeat: Infinity, delay: card.delay }}
                     />
                     
                     {/* Card - compact on mobile, normal on desktop */}
                     <motion.div
                       animate={{ y: [0, -4, 0] }}
+                      className="relative p-2 sm:p-3 lg:p-4 rounded-lg sm:rounded-xl border border-emerald-500/20 backdrop-blur-md w-24 sm:w-32 lg:w-48 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
                       transition={{ duration: 3, repeat: Infinity, delay: card.delay, ease: "easeInOut" }}
                       whileHover={{ scale: 1.05 }}
-                      className="relative p-2 sm:p-3 lg:p-4 rounded-lg sm:rounded-xl border border-emerald-500/20 backdrop-blur-md w-24 sm:w-32 lg:w-48 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
                     >
                       <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-md sm:rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 mb-1 sm:mb-2">
                         <card.icon className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-4 lg:h-4" />
@@ -526,9 +526,9 @@ export default function ServicesSection() {
           <div className="space-y-6">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              whileInView={{ opacity: 1, y: 0 }}
             >
               <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white leading-tight">
                 What are <span className="text-emerald-400">you</span> up to?
@@ -539,14 +539,15 @@ export default function ServicesSection() {
             </motion.div>
 
             <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
               className="grid grid-cols-1 sm:grid-cols-2 gap-3"
+              initial="hidden"
+              variants={containerVariants}
+              viewport={{ once: true }}
+              whileInView="visible"
             >
               {services.map((service, index) => (
                 <motion.div
+                  className="group p-3 sm:p-4 rounded-xl border border-gray-800/50 backdrop-blur-sm transition-all duration-300"
                   key={index}
                   variants={itemVariants}
                   whileHover={{ 
@@ -554,7 +555,6 @@ export default function ServicesSection() {
                     backgroundColor: "rgba(16, 185, 129, 0.05)",
                     borderColor: "rgba(16, 185, 129, 0.3)"
                   }}
-                  className="group p-3 sm:p-4 rounded-xl border border-gray-800/50 backdrop-blur-sm transition-all duration-300"
                 >
                   <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 mb-2 sm:mb-3 group-hover:bg-emerald-500/20 group-hover:border-emerald-500/40 transition-all duration-300">
                     <service.icon className="w-3.5 h-3.5 sm:w-4 sm:h-4" strokeWidth={1.5} />
