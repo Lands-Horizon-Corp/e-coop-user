@@ -3,12 +3,15 @@ FROM oven/bun:1 AS builder
 
 WORKDIR /app
 
-COPY . .
+COPY package.json bun.lockb ./
+
 RUN bun install -g nx husky
 
 RUN bun install --frozen-lockfile
 
-RUN bun build:downloads
+COPY . .
+
+RUN NX_DAEMON=false bun run build:downloads
 
 EXPOSE 3000
 

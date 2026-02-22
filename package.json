@@ -11,7 +11,7 @@
     "prepare": "husky",
     "dev:downloads": "bunx nx serve downloads",
     "build:downloads": "bunx nx build downloads",
-    "start:downloads":"bunx nx preview downloads",
+    "start:downloads":"bunx serve -s dist/apps/downloads",
     "dev:e-coop-admin": "bunx nx serve e-coop-admin",
     "build:e-coop-admin": "bunx nx build e-coop-admin",
     "start:e-coop-admin":"bunx nx preview e-coop-admin",
