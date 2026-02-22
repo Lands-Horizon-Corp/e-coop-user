@@ -1,23 +1,22 @@
-# Use a Node image for Docker builds
+# Builder stage
 FROM node:20-bullseye-slim AS builder
 
-# Set working directory
 WORKDIR /app
 
 # Copy package files
-COPY package.json package-lock.json ./
+COPY package.json ./
 COPY bun.lock ./
 
-# Install Node dependencies
-RUN npm ci
+# Install dependencies
+RUN npm install
 
-# Copy the rest of the project
+# Copy rest of project
 COPY . .
 
-# Optional: Clear Nx cache
+# Clear Nx cache (optional)
 RUN npx nx reset
 
-# Build the downloads app using Node (stable)
+# Build downloads app
 RUN npx nx build downloads
 
 # ---- Production image ----
@@ -25,14 +24,14 @@ FROM node:20-bullseye-slim AS runtime
 
 WORKDIR /app
 
-# Copy built files from builder
+# Copy built files
 COPY --from=builder /app/dist/apps/downloads ./dist/apps/downloads
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # Install only production dependencies
-RUN npm ci --production
+RUN npm install --production
 
 EXPOSE 3000
 
-# Start the downloads app
+# Start app
 CMD ["npx", "nx", "serve", "downloads", "--prod"]
