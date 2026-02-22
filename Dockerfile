@@ -1,17 +1,21 @@
 FROM oven/bun:1 AS builder
 
-
 WORKDIR /app
 
-COPY package.json bun.lock ./
+# Copy only dependency files first
+COPY package.json bun.lockb ./
 
-RUN bun install -g nx husky
-
+# Install deps
 RUN bun install --frozen-lockfile
 
+# Copy rest of project
 COPY . .
 
-RUN NX_DAEMON=false bun run build:downloads
+# Disable Nx daemon inside Docker
+ENV NX_DAEMON=false
+
+# Build
+RUN bunx nx build downloads
 
 EXPOSE 3000
 
