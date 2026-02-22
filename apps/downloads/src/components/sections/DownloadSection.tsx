@@ -11,7 +11,7 @@ interface OSMeta {
   label: string;
   version: string;
   Icon: React.FC<React.SVGProps<SVGSVGElement>>;
-  packages: { type: PackageType; label: string; size: string }[];
+  packages: { type: PackageType; label: string; size: string; downloadUrl?: string }[];
 }
 
 const OS_META: Record<OS, OSMeta> = {
@@ -24,7 +24,12 @@ const OS_META: Record<OS, OSMeta> = {
       </svg>
     ),
     packages: [
-      { type: "exe", label: "Installer (.exe)", size: "245 MB" },
+      { 
+        type: "exe", 
+        label: "Installer (.exe)", 
+        size: "245 MB",
+        downloadUrl: "https://e-coop-storage-r3wisiu87k.t3.storageapi.dev/ECoopSystem.exe?x-id=GetObject&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=tid_kErVDLy_wogbyLda_iwzTDEiemeQMmtTehgwJ_pes_pAGntFlS%2F20260222%2Fauto%2Fs3%2Faws4_request&X-Amz-Date=20260222T142900Z&X-Amz-Expires=360000&X-Amz-SignedHeaders=host&X-Amz-Signature=cb3fd7b80bb54d886cde2d8550c2e89a6c550e4d125f550800498f8c4cee17dc"
+      },
       { type: "msi", label: "MSI Package", size: "243 MB" },
     ],
   },
@@ -58,18 +63,18 @@ const OS_META: Record<OS, OSMeta> = {
 
 // Dashboard card components
 const MemberCard = () => (
-  <div className="h-full flex flex-col p-3">
+  <div className="h-full flex flex-col p-4">
     <div className="flex items-center justify-between mb-2">
       <div className="p-1.5 rounded-lg bg-emerald-500/20">
         <Users className="w-3 h-3 text-emerald-400" />
       </div>
       <span className="text-[10px] text-emerald-400 font-medium">+12%</span>
     </div>
-    <div className="text-lg font-bold text-white mb-0.5">2,847</div>
-    <div className="text-[10px] text-teal-100/50 mb-2">Active Members</div>
-    <div className="flex -space-x-1.5 mt-auto">
+    <div className="text-xl font-bold text-white mb-1">2,847</div>
+    <div className="text-[11px] text-teal-100/50 mb-3">Active Members</div>
+    <div className="flex gap-1.5 mt-auto">
       {[...Array(4)].map((_, i) => (
-        <div key={i} className="w-5 h-5 rounded-full bg-gradient-to-br from-emerald-400/30 to-emerald-600/30 border border-white/10 flex items-center justify-center text-[8px] text-white/70">
+        <div className="w-5 h-5 rounded-full bg-gradient-to-br from-emerald-400/30 to-emerald-600/30 border border-white/10 flex items-center justify-center text-[8px] text-white/70" key={i}>
           {String.fromCharCode(65 + i)}
         </div>
       ))}
@@ -81,20 +86,20 @@ const MemberCard = () => (
 );
 
 const TransactionCard = () => (
-  <div className="h-full flex flex-col p-3">
+  <div className="h-full flex flex-col p-4">
     <div className="flex items-center justify-between mb-2">
       <div className="p-1.5 rounded-lg bg-emerald-500/20">
         <TrendingUp className="w-3 h-3 text-emerald-400" />
       </div>
       <Activity className="w-3 h-3 text-emerald-400/50" />
     </div>
-    <div className="text-lg font-bold text-white mb-0.5">₱1.2M</div>
-    <div className="text-[10px] text-teal-100/50 mb-2">This Month</div>
-    <div className="flex items-end gap-1 h-8 mt-auto">
+    <div className="text-xl font-bold text-white mb-1">₱1.2M</div>
+    <div className="text-[11px] text-teal-100/50 mb-3">This Month</div>
+    <div className="flex items-end gap-1 h-10 mt-auto">
       {[40, 65, 45, 80, 55, 90, 70].map((h, i) => (
         <div
-          key={i}
           className="flex-1 rounded-t bg-gradient-to-t from-emerald-500/40 to-emerald-400/60"
+          key={i}
           style={{ height: `${h}%` }}
         />
       ))}
@@ -103,15 +108,15 @@ const TransactionCard = () => (
 );
 
 const ReportCard = () => (
-  <div className="h-full flex flex-col p-3">
+  <div className="h-full flex flex-col p-4">
     <div className="flex items-center justify-between mb-2">
       <div className="p-1.5 rounded-lg bg-emerald-500/20">
         <FileText className="w-3 h-3 text-emerald-400" />
       </div>
       <div className="w-4 h-4 rounded-full border-2 border-emerald-400/30 border-t-emerald-400 animate-spin" />
     </div>
-    <div className="text-lg font-bold text-white mb-0.5">847</div>
-    <div className="text-[10px] text-teal-100/50 mb-2">Reports Generated</div>
+    <div className="text-xl font-bold text-white mb-1">847</div>
+    <div className="text-[11px] text-teal-100/50 mb-3">Reports Generated</div>
     <div className="space-y-1.5 mt-auto">
       <div className="flex items-center gap-2">
         <div className="w-1.5 h-1.5 rounded-full bg-emerald-400" />
@@ -319,7 +324,8 @@ export default function DownloadSection() {
               <AnimatedSection animation="fadeUp" delay={0.5}>
                 <motion.a
                   className="group mt-8 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-gray-900 font-bold shadow-xl shadow-emerald-500/20 relative overflow-hidden"
-                  href="#"
+                  href={currentPackage.downloadUrl || "#"}
+                  download={currentPackage.downloadUrl ? "ECoopSystem.exe" : undefined}
                   whileHover={{ 
                     scale: 1.05, 
                     boxShadow: '0 0 40px rgba(52, 211, 153, 0.4)',
@@ -384,21 +390,21 @@ export default function DownloadSection() {
                         </div>
 
                         {/* Three Stats Cards */}
-                        <div className="grid grid-cols-3 gap-3 mb-4">
+                        <div className="grid grid-cols-3 gap-4 mb-5">
                           <motion.div 
-                            className="h-28 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
+                            className="h-36 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
                             whileHover={{ scale: 1.02, borderColor: 'rgba(52, 211, 153, 0.3)' }}
                           >
                             <MemberCard />
                           </motion.div>
                           <motion.div 
-                            className="h-28 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
+                            className="h-36 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
                             whileHover={{ scale: 1.02, borderColor: 'rgba(52, 211, 153, 0.3)' }}
                           >
                             <TransactionCard />
                           </motion.div>
                           <motion.div 
-                            className="h-28 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
+                            className="h-36 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
                             whileHover={{ scale: 1.02, borderColor: 'rgba(52, 211, 153, 0.3)' }}
                           >
                             <ReportCard />

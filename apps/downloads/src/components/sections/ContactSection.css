@@ -108,3 +108,22 @@
 .PhoneInputCountrySelect option:hover {
   background-color: rgba(16, 185, 129, 0.1);
 }
+
+/* Custom dropdown scrollbar */
+.max-h-60::-webkit-scrollbar {
+  width: 8px;
+}
+
+.max-h-60::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.max-h-60::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.3);
+  border-radius: 4px;
+}
+
+.max-h-60::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}

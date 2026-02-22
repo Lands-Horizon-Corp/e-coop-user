@@ -38,25 +38,25 @@ export default function PreviewSection() {
                 {/* Desktop Browser Window - BLACK STROKE */}
                 <motion.div 
                   className="relative rounded-3xl overflow-hidden bg-black/40 backdrop-blur-xl border-[7px] border-black shadow-2xl"
-                  whileHover={{ scale: 1.02, rotate: 2 }}
                   transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  whileHover={{ scale: 1.02, rotate: 2 }}
                 >
                   {/* Desktop Dashboard Image - NO TITLE BAR */}
                   <div className="relative overflow-hidden bg-slate-900">
                     <img 
-                      src={dashboardImage} 
                       alt="E-Cooperative Dashboard Desktop" 
-                      className="w-full h-auto"
+                      className="w-full h-auto" 
                       loading="lazy"
+                      src={dashboardImage}
                     />
                   </div>
                 </motion.div>
 
                 {/* Mobile Phone - ALIGNED TO RIGHT EDGE OF DESKTOP */}
                 <motion.div 
+                  animate={{ opacity: 1, x: 0, rotate: 0 }}
                   className="absolute right-15 bottom-12 top-1/2 -translate-y-1/2 translate-x-1/2 w-56 md:w-80 z-20"
                   initial={{ opacity: 0, x: 100, rotate: 15 }}
-                  animate={{ opacity: 1, x: 0, rotate: 0 }}
                   transition={{ delay: 0.5, duration: 0.6 }}
                   whileHover={{ scale: 1.05, rotate: -5 }}
                 >
@@ -68,10 +68,10 @@ export default function PreviewSection() {
                     {/* Screen */}
                     <div className="relative rounded-[2.5rem] overflow-hidden bg-slate-900 aspect-[9/16]">
                       <img 
-                        src={mobileDashboardImage} 
                         alt="E-Cooperative Mobile App" 
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover" 
                         loading="lazy"
+                        src={mobileDashboardImage}
                       />
                     </div>
                   </div>
@@ -82,13 +82,13 @@ export default function PreviewSection() {
 
                 {/* ROBOT MASCOT - BIGGER & FLOATING */}
                 <motion.div
-                  className="absolute -left-24 md:-left-40 lg:-left-48 top-1/2 -translate-y-1/2 z-30 w-48 md:w-72 lg:w-96"
-                  initial={{ opacity: 0, x: -100, y: 20 }}
                   animate={{ 
                     opacity: 1, 
                     x: 0, 
                     y: [0, -15, 0],
                   }}
+                  className="absolute -left-24 md:-left-40 lg:-left-48 top-1/2 -translate-y-1/2 z-30 w-48 md:w-72 lg:w-96"
+                  initial={{ opacity: 0, x: -100, y: 20 }}
                   transition={{ 
                     opacity: { delay: 0.6, duration: 0.5 },
                     x: { delay: 0.6, duration: 0.5, type: "spring" },
@@ -102,19 +102,19 @@ export default function PreviewSection() {
                   whileHover={{ scale: 1.08, rotate: -5 }}
                 >
                   <img 
-                    src={robotImage} 
                     alt="E-Coop Assistant" 
-                    className="w-full h-auto drop-shadow-[0_20px_50px_rgba(52,211,153,0.4)]"
+                    className="w-full h-auto drop-shadow-[0_20px_50px_rgba(52,211,153,0.4)]" 
                     loading="lazy"
+                    src={robotImage}
                   />
                   
                   {/* Floating glow effect behind robot */}
                   <motion.div 
-                    className="absolute inset-0 -z-10 bg-emerald-500/40 blur-3xl rounded-full scale-75"
                     animate={{ 
                       scale: [0.75, 0.9, 0.75],
                       opacity: [0.4, 0.6, 0.4]
                     }}
+                    className="absolute inset-0 -z-10 bg-emerald-500/40 blur-3xl rounded-full scale-75"
                     transition={{ 
                       duration: 3, 
                       repeat: Infinity, 
