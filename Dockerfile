@@ -1,4 +1,4 @@
-FROM oven/bun:1 AS builder
+FROM oven/bun:1.1.43 AS builder
 
 WORKDIR /app
 
@@ -14,10 +14,13 @@ COPY . .
 
 # Disable Nx daemon inside Docker
 ENV NX_DAEMON=false
+ENV NX_ISOLATE_PLUGINS=false
 
+RUN bun run build:downloads
 # Build
-RUN bun build:downloads
-
+FROM oven/bun:1-slim
+WORKDIR /app
+COPY --from=builder /app /app
 EXPOSE 3000
 
 CMD ["bun", "run", "start:downloads"]
