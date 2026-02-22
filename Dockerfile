@@ -6,8 +6,8 @@ WORKDIR /app
 COPY package.json bun.lock ./
 
 # Install deps
-RUN bun install --frozen-lockfile
 RUN bun install -g husky
+RUN bun install --frozen-lockfile
 
 # Copy rest of project
 COPY . .
