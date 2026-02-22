@@ -16,7 +16,7 @@ COPY . .
 ENV NX_DAEMON=false
 
 # Build
-RUN bunx nx build:downloads
+RUN bun build:downloads
 
 EXPOSE 3000
 
