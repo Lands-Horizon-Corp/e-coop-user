@@ -1,37 +1,46 @@
-# Builder stage
+# ---- Builder stage ----
 FROM node:20-bullseye-slim AS builder
 
 WORKDIR /app
 
-# Copy package files
+# Install Bun globally and Husky
+RUN npm install -g bun husky
+
+# Copy package files and Bun lockfile
 COPY package.json ./
 COPY bun.lock ./
 
-# Install dependencies
-RUN npm install
+# Install dependencies using Bun
+RUN bun install
 
-# Copy rest of project
+# Copy the rest of the project
 COPY . .
 
 # Clear Nx cache (optional)
 RUN npx nx reset
 
-# Build downloads app
-RUN npx nx build downloads
+# Build the downloads app using Bun
+RUN bunx nx build downloads
 
 # ---- Production image ----
 FROM node:20-bullseye-slim AS runtime
 
 WORKDIR /app
 
-# Copy built files
-COPY --from=builder /app/dist/apps/downloads ./dist/apps/downloads
-COPY package.json ./
+# Install Bun globally
+RUN npm install -g bun
 
-# Install only production dependencies
-RUN npm install --production
+# Copy built files from builder
+COPY --from=builder /app/dist/apps/downloads ./dist/apps/downloads
+
+# Copy Bun lockfile and package.json for production dependencies
+COPY package.json ./
+COPY bun.lock ./
+
+# Install only production dependencies using Bun
+RUN bun install --production
 
 EXPOSE 3000
 
-# Start app
-CMD ["npx", "nx", "serve", "downloads", "--prod"]
+# Start the app using Bun
+CMD ["bunx", "nx", "serve", "downloads", "--prod"]
