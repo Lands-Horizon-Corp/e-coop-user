@@ -11,7 +11,7 @@ RUN bun install --frozen-lockfile
 
 COPY . .
 
-RUN bun run build:downloads
+RUN NX_DAEMON=false bun run build:downloads
 
 EXPOSE 3000
 
