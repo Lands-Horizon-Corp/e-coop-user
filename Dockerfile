@@ -1,26 +1,29 @@
-FROM oven/bun:1.1.43 AS builder
+# ---- Builder + Runtime (single stage) ----
+FROM node:20-bullseye-slim
 
 WORKDIR /app
 
-# Copy only dependency files first
-COPY package.json bun.lock ./
+# Install Bun globally and Husky
+RUN npm install -g bun husky
 
-# Install deps
-RUN bun install -g husky
-RUN bun install --frozen-lockfile
-
-# Copy rest of project
+# Copy the full project
 COPY . .
 
-# Disable Nx daemon inside Docker
-ENV NX_DAEMON=false
-ENV NX_ISOLATE_PLUGINS=false
+# Install dependencies using Bun
+RUN bun install
 
-RUN bun run build:downloads
-# Build
-FROM oven/bun:1-slim
-WORKDIR /app
-COPY --from=builder /app /app
+# Optional: clear Nx cache
+RUN npx nx reset
+
+# Build the downloads app
+RUN bunx nx build downloads
+RUN bunx nx build e-coop-admin
+RUN bunx nx build e-coop-core
+RUN bunx nx build e-coop-member
+
 EXPOSE 3000
+EXPOSE 3001
+EXPOSE 3002
+EXPOSE 3003
 
-CMD ["bun", "run", "start:downloads"]
+CMD ["sh", "-c", "bun run start:downloads & bun run start:e-coop-admin & bun run start:e-coop-core & bun run start:e-coop-member"]

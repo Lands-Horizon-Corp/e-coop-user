@@ -16,6 +16,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 export default defineConfig({
+    base: '/',
     root: __dirname,
     cacheDir: '../../node_modules/.vite/apps/downloads',
     publicDir: '../../public',
