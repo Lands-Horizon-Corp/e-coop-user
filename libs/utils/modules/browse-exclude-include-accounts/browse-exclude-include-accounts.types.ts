@@ -30,4 +30,4 @@ export type IBrowseExcludeIncludeAccountsRequest = z.infer<
     typeof BrowseExcludeIncludeAccountsSchema
 >
 
-export interface IBrowseExcludeIncludeAccountsPaginated extends IPaginatedResult<IBrowseExcludeIncludeAccounts> {}
+export type IBrowseExcludeIncludeAccountsPaginated = IPaginatedResult<IBrowseExcludeIncludeAccounts>

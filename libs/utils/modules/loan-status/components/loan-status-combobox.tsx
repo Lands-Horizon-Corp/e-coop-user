@@ -35,10 +35,10 @@ import {
     LoanStatusCreateUpdateFormModal,
 } from './forms/loan-status-create-update-form'
 
-export interface ILoanStatusComboboxCreateProps extends Pick<
+export type ILoanStatusComboboxCreateProps = Pick<
     ILoanStatusFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

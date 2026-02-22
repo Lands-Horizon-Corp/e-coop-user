@@ -95,7 +95,7 @@ export type IOrganizationEditRequest = TOrganizationEditSchema
 //     currency_id?: TEntityId
 // }
 
-export interface IOrganizationPaginated extends IPaginatedResult<IOrganization> {}
+export type IOrganizationPaginated = IPaginatedResult<IOrganization>
 
 export interface ICreateOrganizationResponse {
     organization: IOrganization

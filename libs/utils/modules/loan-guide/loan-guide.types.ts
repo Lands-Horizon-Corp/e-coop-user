@@ -58,4 +58,4 @@ export interface ILoanGuide extends IBaseEntityMeta {
 
 export type ILoanGuideRequest = z.infer<typeof LoanGuideSchema>
 
-export interface ILoanGuidePaginated extends IPaginatedResult<ILoanGuide> {}
+export type ILoanGuidePaginated = IPaginatedResult<ILoanGuide>

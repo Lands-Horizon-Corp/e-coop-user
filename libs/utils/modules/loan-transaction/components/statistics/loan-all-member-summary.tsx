@@ -28,7 +28,7 @@ import { Skeleton } from '@/components/ui/skeleton'
 
 import { IClassProps } from '@/types'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const LoanAllMemberSummary = ({ className }: Props) => {
     const { data, isLoading, isError, refetch, isFetching } =

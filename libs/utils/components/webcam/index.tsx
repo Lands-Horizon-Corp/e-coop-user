@@ -18,7 +18,7 @@ import { IClassProps } from '@/types'
 import ActionTooltip from '../tooltips/action-tooltip'
 import CameraDevicePicker from './camera-device-picker'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const WebCam = forwardRef<Webcam, Props>(({ className }: Props, ref) => {
     const [camActive, setCamActive] = useState(false)

@@ -2,7 +2,7 @@ import { BarChart3, Bot, Database, Download, Shield, Users } from "lucide-react"
 
 export default function HomeHero() {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden" id="home">
       {/* Floating icons with CSS animation */}
       <div className="pointer-events-none absolute inset-0 opacity-25">
         <div 
@@ -110,9 +110,9 @@ export default function HomeHero() {
               <div className="mt-4 flex items-end gap-1 h-8">
                 {[35, 55, 45, 70, 100].map((h, idx) => (
                   <div
+                    className="flex-1 rounded-t bg-emerald-400/50"
                     key={idx}
                     style={{ height: `${h}%` }}
-                    className="flex-1 rounded-t bg-emerald-400/50"
                   />
                 ))}
               </div>
@@ -158,8 +158,8 @@ export default function HomeHero() {
             {/* Button */}
             <div className="mt-10 flex justify-center">
               <a
-                href="#download"
                 className="inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-gray-900 font-bold shadow-xl shadow-emerald-500/20 hover:scale-105 hover:shadow-[0_0_40px_rgba(52,211,153,0.4)] hover:bg-gray-100 active:scale-95 transition-all duration-200"
+                href="#download"
               >
                 <Download className="h-5 w-5" />
                 Download for Windows

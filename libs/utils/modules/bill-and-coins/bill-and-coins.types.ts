@@ -31,4 +31,4 @@ export interface IBillsAndCoin extends ITimeStamps {
     currency: ICurrency
 }
 
-export interface IBillsAndCoinPaginated extends IPaginatedResult<IBillsAndCoin> {}
+export type IBillsAndCoinPaginated = IPaginatedResult<IBillsAndCoin>

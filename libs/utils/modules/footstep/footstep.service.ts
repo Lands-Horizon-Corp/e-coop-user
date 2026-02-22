@@ -69,7 +69,7 @@ export const useFilteredPaginatedFootsteps = ({
             query,
         ],
         queryFn: async () => {
-            let url: string = 'me'
+            let url = 'me'
             if (mode === 'me-branch') {
                 url = 'current/me/branch'
             } else if (mode === 'branch') {

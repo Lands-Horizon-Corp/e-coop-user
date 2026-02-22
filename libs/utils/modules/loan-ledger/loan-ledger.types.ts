@@ -22,6 +22,6 @@ export interface ILoanLedger extends IBaseEntityMeta {
 
 export type ILoanLedgerRequest = z.infer<typeof LoanLedgerSchema>
 
-export interface ILoanLedgerPaginated extends IPaginatedResult<ILoanLedger> {}
+export type ILoanLedgerPaginated = IPaginatedResult<ILoanLedger>
 
 export type ILoanLedgerChangeLineRequest = TLoanLedgerChangeLineSchema

@@ -51,4 +51,4 @@ export interface IBranch extends ITimeStamps, IAuditable {
 
 export type IBranchRequest = TBranchSchema
 
-export interface IBranchPaginated extends IPaginatedResult<IBranch> {}
+export type IBranchPaginated = IPaginatedResult<IBranch>

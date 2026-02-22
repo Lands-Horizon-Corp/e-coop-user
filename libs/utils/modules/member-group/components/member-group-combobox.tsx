@@ -30,10 +30,10 @@ import {
     MemberGroupCreateUpdateFormModal,
 } from './member-group-create-update-form'
 
-export interface IMemberGroupComboboxCreateProps extends Pick<
+export type IMemberGroupComboboxCreateProps = Pick<
     IMemberGroupFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

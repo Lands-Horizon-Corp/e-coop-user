@@ -27,4 +27,4 @@ export type IAccountTransactionEntryRequest = z.infer<
     typeof AccountTransactionEntrySchema
 >
 
-export interface IAccountTransactionEntryPaginated extends IPaginatedResult<IAccountTransactionEntry> {}
+export type IAccountTransactionEntryPaginated = IPaginatedResult<IAccountTransactionEntry>

@@ -50,12 +50,12 @@ export default function Navbar({ logo }: { logo: string }) {
             {/* LEFT — logo placeholder (keeps layout) */}
             <div className="flex items-center gap-3">
               {/* keep an invisible placeholder so the centered nav stays centered */}
-              <img src={logo} alt="eCOOP" className="h-11 w-auto opacity-0" />
+              <img alt="eCOOP" className="h-11 w-auto opacity-0" src={logo} />
             </div>
 
             {/* fixed logo — this follows the viewport while nav stays in flow */}
             <div className="fixed left-6 top-3 z-50 md:left-10">
-              <img src={logo} alt="eCOOP" className="h-11 w-auto" />
+              <img alt="eCOOP" className="h-11 w-auto" src={logo} />
             </div>
 
             {/* CENTER — NAV LINKS */}
@@ -65,9 +65,9 @@ export default function Navbar({ logo }: { logo: string }) {
 
                 return (
                   <a
-                    key={link.id}
-                    href={`#${link.id}`}
                     className="relative hover:text-white transition-colors"
+                    href={`#${link.id}`}
+                    key={link.id}
                   >
                     <span className={isActive ? "text-white" : ""}>
                       {link.label}

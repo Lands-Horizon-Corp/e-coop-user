@@ -21,7 +21,7 @@ import { IChargesRateScheme } from '../../charges-rate-scheme.types'
 import ChargesRateSchemeUpdateForm from '../forms/charges-rate-scheme-update-form'
 import ChargesRateSchemesSidebar from './charges-rate-schemes-sidebar'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const ChargesRateSchemeEditor = ({ className }: Props) => {
     const queryClient = useQueryClient()

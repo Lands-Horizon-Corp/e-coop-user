@@ -30,10 +30,10 @@ import {
     IAreaFormProps,
 } from './forms/area-create-update-form'
 
-export interface IAreaComboboxCreateProps extends Pick<
+export type IAreaComboboxCreateProps = Pick<
     IAreaFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

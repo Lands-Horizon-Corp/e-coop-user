@@ -12,7 +12,15 @@
     "dev:downloads": "npx nx serve downloads",
     "dev:e-coop-admin": "npx nx serve e-coop-admin",
     "dev:e-coop-core": "npx nx serve e-coop-core",
-    "dev:e-coop-member": "npx nx serve e-coop-member"
+    "dev:e-coop-member": "npx nx serve e-coop-member",
+    "fc": "prettier . -c",
+    "fcf": "prettier -c",
+    "fw": "prettier . -w",
+    "fwf": "prettier -w",
+    "el": "eslint .",
+    "elf": "eslint . --fix",
+    "fmt": "eslint . --fix && prettier . -w"
+    
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

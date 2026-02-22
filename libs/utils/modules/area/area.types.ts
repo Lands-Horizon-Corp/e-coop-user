@@ -14,4 +14,4 @@ export interface IArea extends IBaseEntityMeta {
 
 export type IAreaRequest = z.infer<typeof AreaSchema>
 
-export interface IAreaPaginated extends IPaginatedResult<IArea> {}
+export type IAreaPaginated = IPaginatedResult<IArea>

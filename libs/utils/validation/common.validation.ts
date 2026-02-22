@@ -11,7 +11,7 @@ import {
 } from '@/constants'
 
 export const entityIdSchema = z.uuidv4()
-export const EntityIdSchema = (fieldName: string = 'Field') =>
+export const EntityIdSchema = (fieldName = 'Field') =>
     z.uuidv4({ error: `${fieldName} is required` })
 
 export const descriptionSchema = z.coerce.string({

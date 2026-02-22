@@ -4,7 +4,7 @@ import { LoadingCircleIcon } from '@/components/icons'
 
 import { IClassProps } from '@/types'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const LoadingSpinner = ({ className }: Props) => {
     return (

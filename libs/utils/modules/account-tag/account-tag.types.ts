@@ -23,4 +23,4 @@ export interface IAccounTagRequest {
     icon?: string
 }
 
-export interface IAccountTagPaginated extends IPaginatedResult<IAccountTag> {}
+export type IAccountTagPaginated = IPaginatedResult<IAccountTag>

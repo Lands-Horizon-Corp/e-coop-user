@@ -29,10 +29,10 @@ import {
     MemberClassificationCreateUpdateFormModal,
 } from './member-classification-create-update-form'
 
-export interface IMemberClassificationComboboxCreateProps extends Pick<
+export type IMemberClassificationComboboxCreateProps = Pick<
     IMemberClassificationCreateUpdateFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

@@ -12,7 +12,7 @@ import { MobileDropdown } from './accounts-settings/mobile-dropdown'
 import { NavigationSection } from './accounts-settings/navigation-section'
 import { QuickActions } from './accounts-settings/quick-actions'
 
-interface Props extends IBaseProps {}
+type Props = IBaseProps
 
 const settingsNavItems = [
     { name: 'General', path: '/account-profile' },

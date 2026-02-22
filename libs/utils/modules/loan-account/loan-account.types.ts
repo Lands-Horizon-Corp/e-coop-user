@@ -33,4 +33,4 @@ export interface ILoanAccount extends IBaseEntityMeta {
 
 export type ILoanAccountRequest = z.infer<typeof LoanAccountSchema>
 
-export interface ILoanAccountPaginated extends IPaginatedResult<ILoanAccount> {}
+export type ILoanAccountPaginated = IPaginatedResult<ILoanAccount>

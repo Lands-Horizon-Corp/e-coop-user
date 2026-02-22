@@ -4,7 +4,7 @@ import { ImageIcon } from "lucide-react";
 
 export default function PreviewSection() {
   return (
-    <section id="preview" className="relative z-10 py-24">
+    <section className="relative z-10 py-24" id="preview">
       <div className="px-6 md:px-10">
         <div className="mx-auto max-w-6xl">
           {/* Section header */}

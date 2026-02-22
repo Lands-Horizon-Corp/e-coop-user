@@ -22,4 +22,4 @@ export interface ITimesheet extends IBaseEntityMeta {
 
 export type ITimesheetInOutRequest = z.infer<typeof TimesheetRequestSchema>
 
-export interface IPaginatedTimesheet extends IPaginatedResult<ITimesheet> {}
+export type IPaginatedTimesheet = IPaginatedResult<ITimesheet>

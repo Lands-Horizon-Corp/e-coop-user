@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-export function useAlertBeforeClosing(shouldAlert: boolean = true) {
+export function useAlertBeforeClosing(shouldAlert = true) {
     useEffect(() => {
         if (!shouldAlert) return
 

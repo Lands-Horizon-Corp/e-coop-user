@@ -28,10 +28,10 @@ import {
     IComputationSheetFormProps,
 } from './forms/computation-sheet-create-update-form'
 
-export interface IComputationSheetCreateProps extends Pick<
+export type IComputationSheetCreateProps = Pick<
     IComputationSheetFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props {
     value?: TEntityId

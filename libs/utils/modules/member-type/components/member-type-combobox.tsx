@@ -30,10 +30,10 @@ import {
     TMemberTypeForm,
 } from './forms/member-type-create-update-form'
 
-export interface IMemberTypeComboboxCreateProps extends Pick<
+export type IMemberTypeComboboxCreateProps = Pick<
     TMemberTypeForm,
     'name' | 'prefix' | 'description'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

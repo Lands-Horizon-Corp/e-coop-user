@@ -35,14 +35,14 @@ export default function Policies() {
                   const isActive = p === active;
                   return (
                     <button
-                      key={p}
-                      onClick={() => setActive(p)}
                       className={[
                         "w-full text-left rounded-xl px-4 py-2.5 text-sm transition",
                         isActive
                           ? "border border-emerald-400/50 bg-emerald-400/10 text-emerald-100"
                           : "text-teal-50/70 hover:bg-white/[0.06] hover:text-teal-50",
                       ].join(" ")}
+                      key={p}
+                      onClick={() => setActive(p)}
                     >
                       {p}
                     </button>
@@ -94,7 +94,7 @@ export default function Policies() {
               "Device information",
               "Other information necessary for service delivery",
             ].map(x => (
-              <li key={x} className="flex gap-3">
+              <li className="flex gap-3" key={x}>
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
                 {x}
               </li>
@@ -117,7 +117,7 @@ export default function Policies() {
               "Third-party integrations (payment providers)",
               "Manual uploads and submissions by users",
             ].map(x => (
-              <li key={x} className="flex gap-3">
+              <li className="flex gap-3" key={x}>
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
                 {x}
               </li>
@@ -139,7 +139,7 @@ export default function Policies() {
             "Data analytics and platform optimization",
             "Compliance with legal requirements",
           ].map(x => (
-            <li key={x} className="flex gap-3">
+            <li className="flex gap-3" key={x}>
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
               {x}
             </li>
@@ -158,7 +158,7 @@ export default function Policies() {
             "Legal and regulatory obligations",
             "Legitimate interests (fraud prevention, service improvement)",
           ].map(x => (
-            <li key={x} className="flex gap-3">
+            <li className="flex gap-3" key={x}>
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
               {x}
             </li>
@@ -177,7 +177,7 @@ export default function Policies() {
             "Service updates and communication",
             "Analytics and risk management",
           ].map(x => (
-            <li key={x} className="flex gap-3">
+            <li className="flex gap-3" key={x}>
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
               {x}
             </li>
@@ -197,7 +197,7 @@ export default function Policies() {
             "Approved API developers",
             "Only with consent or legal obligation",
           ].map(x => (
-            <li key={x} className="flex gap-3">
+            <li className="flex gap-3" key={x}>
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
               {x}
             </li>
@@ -228,7 +228,7 @@ export default function Policies() {
             "XSS / SQLi / CSRF protection",
             "Rate limiting and IP blocking",
           ].map(x => (
-            <li key={x} className="flex gap-3">
+            <li className="flex gap-3" key={x}>
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
               {x}
             </li>
@@ -249,7 +249,7 @@ export default function Policies() {
             "Data portability",
             "File complaints",
           ].map(x => (
-            <li key={x} className="flex gap-3">
+            <li className="flex gap-3" key={x}>
               <span className="mt-2 h-1.5 w-1.5 rounded-full bg-emerald-300" />
               {x}
             </li>
@@ -282,8 +282,8 @@ export default function Policies() {
     },
   ].map(section => (
     <div
-      key={section.t}
       className="rounded-2xl border border-white/10 bg-black/10 p-6 text-sm text-teal-50/70 space-y-3"
+      key={section.t}
     >
       <h2 className="text-lg font-bold text-white">{section.t}</h2>
       {section.body}

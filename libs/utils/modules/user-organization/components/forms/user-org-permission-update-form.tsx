@@ -161,12 +161,12 @@ const UserOrgPermissionUpdateForm = ({
                             render={({ field }) => (
                                 <Textarea
                                     {...field}
-                                    value={field.value as string}
                                     autoComplete="off"
                                     disabled={isDisabled(field.name)}
                                     id={field.name}
                                     placeholder="Describe the permission"
                                     rows={3}
+                                    value={field.value as string}
                                 />
                             )}
                         />

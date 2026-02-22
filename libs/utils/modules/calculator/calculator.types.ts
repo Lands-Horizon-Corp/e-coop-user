@@ -4,10 +4,8 @@ import { IBaseEntityMeta, IPaginatedResult } from '@/types'
 
 import { CalculatorSchema } from './calculator.validation'
 
-export interface ICalculator extends IBaseEntityMeta {
-    //add here
-}
+export type ICalculator = IBaseEntityMeta
 
 export type ICalculatorRequest = z.infer<typeof CalculatorSchema>
 
-export interface ICalculatorPaginated extends IPaginatedResult<ICalculator> {}
+export type ICalculatorPaginated = IPaginatedResult<ICalculator>

@@ -17,7 +17,7 @@ export interface IHoliday extends IBaseEntityMeta {
 
 export type IHolidayRequest = z.infer<typeof HolidaySchema>
 
-export interface IHolidayPaginated extends IPaginatedResult<IHoliday> {}
+export type IHolidayPaginated = IPaginatedResult<IHoliday>
 
 export interface IHolidayYears {
     year: number

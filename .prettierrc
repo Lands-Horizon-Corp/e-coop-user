@@ -1,3 +1,33 @@
 {
-  "singleQuote": true
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true,
+    "overrides": [
+        {
+            "files": "src/*.{js,ts,jsx,tsx}",
+            "options": {
+                "semi": true
+            }
+        }
+    ],
+    "importOrder": [
+        "^react$",
+        "^(zod|sonner|react-easy-crop|react-hook-form|@tanstack/react-query|@tanstack/react-router|@tanstack/react-router-devtools|query-string|fuse(.)js|axios|react-dnd|react-dnd-html5-backend)$",
+        "^@hookform/(.*)$",
+        "^@radix-ui/(.*)$",
+        "<THIRD_PARTY_MODULES>",
+        "^@/components/(.*)$",
+        "^@/lib/(.*)$",
+        "^@/validations/(.*)$",
+        "^@/hooks/(.*)$",
+        "^@/types$",
+        "^[./]"
+    ],
+    "importOrderSeparation": true,
+    "importOrderSortSpecifiers": true,
+    "plugins": [
+        "prettier-plugin-tailwindcss",
+        "@trivago/prettier-plugin-sort-imports"
+    ]
 }

@@ -43,4 +43,4 @@ export interface IFootstepRequest {
     module: string
 }
 
-export interface IFootstepPaginated extends IPaginatedResult<IFootstep> {}
+export type IFootstepPaginated = IPaginatedResult<IFootstep>

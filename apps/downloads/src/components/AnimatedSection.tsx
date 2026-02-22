@@ -63,16 +63,16 @@ export function AnimatedSection({
 
   return (
     <motion.div
-      ref={ref}
-      initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
-      variants={animationVariants[animation]}
+      className={className}
+      initial="hidden"
+      ref={ref}
       transition={{
         duration,
         delay,
         ease: [0.25, 0.1, 0.25, 1],
       }}
-      className={className}
+      variants={animationVariants[animation]}
     >
       {children}
     </motion.div>
@@ -98,9 +98,10 @@ export function StaggerContainer({
 
   return (
     <motion.div
-      ref={ref}
-      initial="hidden"
       animate={isInView ? 'visible' : 'hidden'}
+      className={className}
+      initial="hidden"
+      ref={ref}
       variants={{
         hidden: {},
         visible: {
@@ -110,7 +111,6 @@ export function StaggerContainer({
           }
         }
       }}
-      className={className}
     >
       {children}
     </motion.div>
@@ -126,6 +126,7 @@ interface StaggerItemProps {
 export function StaggerItem({ children, className, animation = 'fadeUp' }: StaggerItemProps) {
   return (
     <motion.div
+      className={className}
       variants={{
         hidden: animationVariants[animation].hidden,
         visible: {
@@ -133,7 +134,6 @@ export function StaggerItem({ children, className, animation = 'fadeUp' }: Stagg
           transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }
         }
       }}
-      className={className}
     >
       {children}
     </motion.div>
@@ -166,12 +166,12 @@ export function Magnetic({ children, className, strength = 0.3 }: MagneticProps)
 
   return (
     <motion.div
-      ref={ref}
       className={className}
-      onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      transition={{ type: 'spring', stiffness: 150, damping: 15 }}
+      onMouseMove={handleMouseMove}
+      ref={ref}
       style={{ willChange: 'transform' }}
+      transition={{ type: 'spring', stiffness: 150, damping: 15 }}
     >
       {children}
     </motion.div>
@@ -195,7 +195,7 @@ export function Parallax({ children, className, speed = 0.5 }: ParallaxProps) {
   const y = useTransform(scrollYProgress, [0, 1], [-100 * speed, 100 * speed]);
 
   return (
-    <motion.div ref={ref} style={{ y }} className={className}>
+    <motion.div className={className} ref={ref} style={{ y }}>
       {children}
     </motion.div>
   );

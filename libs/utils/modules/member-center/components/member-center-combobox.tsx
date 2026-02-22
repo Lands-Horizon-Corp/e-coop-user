@@ -30,10 +30,10 @@ import {
     MemberCenterCreateUpdateFormModal,
 } from './member-center-create-update-form'
 
-export interface IMemberCenterComboboxCreateProps extends Pick<
+export type IMemberCenterComboboxCreateProps = Pick<
     IMemberCenterCreateUpdateFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

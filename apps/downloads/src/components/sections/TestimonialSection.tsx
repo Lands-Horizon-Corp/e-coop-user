@@ -111,23 +111,23 @@ export default function TestimonialSection() {
   };
 
   return (
-    <section id="testimonials" className="relative z-10 py-24 overflow-hidden">
+    <section className="relative z-10 py-24 overflow-hidden" id="testimonials">
       {/* Background decorative elements */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div 
-          className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/5 rounded-full blur-3xl"
           animate={{ 
             scale: [1, 1.2, 1],
             opacity: [0.05, 0.1, 0.05]
           }}
+          className="absolute top-20 left-10 w-72 h-72 bg-emerald-500/5 rounded-full blur-3xl"
           transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div 
-          className="absolute bottom-20 right-10 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl"
           animate={{ 
             scale: [1.2, 1, 1.2],
             opacity: [0.1, 0.05, 0.1]
           }}
+          className="absolute bottom-20 right-10 w-96 h-96 bg-teal-500/5 rounded-full blur-3xl"
           transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
         />
       </div>
@@ -171,42 +171,42 @@ export default function TestimonialSection() {
               {/* Main Card */}
               <motion.div 
                 className="relative bg-black/40 backdrop-blur-xl rounded-3xl border border-white/10 p-8 md:p-12 overflow-hidden"
+                transition={{ duration: 0.3 }}
                 whileHover={{ 
                   boxShadow: '0 25px 50px -12px rgba(52, 211, 153, 0.15)',
                   borderColor: 'rgba(52, 211, 153, 0.2)'
                 }}
-                transition={{ duration: 0.3 }}
               >
                 {/* Quote Icon */}
                 <motion.div 
-                  className="absolute top-6 right-6 md:top-8 md:right-8"
                   animate={{ 
                     rotate: [0, 10, 0],
                     scale: [1, 1.1, 1]
                   }}
+                  className="absolute top-6 right-6 md:top-8 md:right-8"
                   transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                 >
                   <Quote className="h-12 w-12 md:h-16 md:w-16 text-emerald-500/10" />
                 </motion.div>
 
                 {/* Content */}
-                <AnimatePresence mode="wait" custom={direction}>
+                <AnimatePresence custom={direction} mode="wait">
                   <motion.div
-                    key={currentTestimonial.id}
-                    custom={direction}
-                    variants={slideVariants}
-                    initial="enter"
                     animate="center"
+                    custom={direction}
                     exit="exit"
+                    initial="enter"
+                    key={currentTestimonial.id}
                     transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
+                    variants={slideVariants}
                   >
                     {/* Rating */}
                     <div className="flex gap-1 mb-6">
                       {[...Array(5)].map((_, i) => (
                         <motion.div
-                          key={i}
-                          initial={{ opacity: 0, scale: 0 }}
                           animate={{ opacity: 1, scale: 1 }}
+                          initial={{ opacity: 0, scale: 0 }}
+                          key={i}
                           transition={{ delay: i * 0.05 }}
                         >
                           <Star 
@@ -246,9 +246,9 @@ export default function TestimonialSection() {
                 {/* Progress Bar */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-white/5">
                   <motion.div 
+                    animate={{ width: `${((currentIndex + 1) / testimonials.length) * 100}%` }}
                     className="h-full bg-gradient-to-r from-emerald-400 to-teal-400"
                     initial={{ width: 0 }}
-                    animate={{ width: `${((currentIndex + 1) / testimonials.length) * 100}%` }}
                     transition={{ duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
                   />
                 </div>
@@ -260,16 +260,16 @@ export default function TestimonialSection() {
                 <div className="flex gap-2">
                   {testimonials.map((_, index) => (
                     <motion.button
-                      key={index}
-                      onClick={() => goToSlide(index)}
+                      aria-label={`Go to testimonial ${index + 1}`}
                       className={`h-2 rounded-full transition-all duration-300 ${
                         index === currentIndex 
                           ? "w-8 bg-emerald-400" 
                           : "w-2 bg-white/30 hover:bg-white/50"
                       }`}
+                      key={index}
+                      onClick={() => goToSlide(index)}
                       whileHover={{ scale: 1.2 }}
                       whileTap={{ scale: 0.9 }}
-                      aria-label={`Go to testimonial ${index + 1}`}
                     />
                   ))}
                 </div>
@@ -277,20 +277,20 @@ export default function TestimonialSection() {
                 {/* Arrows */}
                 <div className="flex gap-3">
                   <motion.button
-                    onClick={prevSlide}
+                    aria-label="Previous testimonial"
                     className="h-12 w-12 rounded-full bg-white/5 hover:bg-white/10 border border-white/10 flex items-center justify-center transition-all duration-300"
+                    onClick={prevSlide}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.9 }}
-                    aria-label="Previous testimonial"
                   >
                     <ChevronLeft className="h-5 w-5 text-white" />
                   </motion.button>
                   <motion.button
-                    onClick={nextSlide}
+                    aria-label="Next testimonial"
                     className="h-12 w-12 rounded-full bg-emerald-500 hover:bg-emerald-400 flex items-center justify-center transition-all duration-300"
+                    onClick={nextSlide}
                     whileHover={{ scale: 1.1, boxShadow: '0 0 20px rgba(52, 211, 153, 0.4)' }}
                     whileTap={{ scale: 0.9 }}
-                    aria-label="Next testimonial"
                   >
                     <ChevronRight className="h-5 w-5 text-black" />
                   </motion.button>
@@ -302,7 +302,7 @@ export default function TestimonialSection() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-2 sm:gap-4 mt-6">
             {stats.map((stat, index) => (
-              <AnimatedSection key={index} animation="fadeUp" delay={0.4 + index * 0.1}>
+              <AnimatedSection animation="fadeUp" delay={0.4 + index * 0.1} key={index}>
                 <motion.div 
                   className="text-center p-3 rounded-2xl bg-black/30 backdrop-blur-sm border border-white/5 hover:border-emerald-500/20 transition-all duration-300"
                   whileHover={{ y: -4, backgroundColor: 'rgba(0,0,0,0.4)' }}
@@ -310,9 +310,9 @@ export default function TestimonialSection() {
                   <motion.div 
                     className="text-3xl md:text-4xl font-extrabold text-emerald-400"
                     initial={{ opacity: 0, scale: 0.5 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ delay: 0.5 + index * 0.1, type: "spring" }}
                     viewport={{ once: true }}
+                    whileInView={{ opacity: 1, scale: 1 }}
                   >
                     {stat.value}
                   </motion.div>

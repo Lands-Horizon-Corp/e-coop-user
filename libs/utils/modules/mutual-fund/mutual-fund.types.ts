@@ -67,4 +67,4 @@ export type IMutualFundPostRequest = TMutualFundViewPostRequestSchema
 
 export type IMutualFundPrintRequest = TMutualFundPrintSchema
 
-export interface IMutualFundPaginated extends IPaginatedResult<IMutualFund> {}
+export type IMutualFundPaginated = IPaginatedResult<IMutualFund>

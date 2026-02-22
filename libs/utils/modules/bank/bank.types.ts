@@ -15,4 +15,4 @@ export interface IBank extends IBaseEntityMeta {
 
 export type IBankRequest = z.infer<typeof BankSchema>
 
-export interface IBankPaginated extends IPaginatedResult<IBank> {}
+export type IBankPaginated = IPaginatedResult<IBank>

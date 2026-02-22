@@ -15,4 +15,4 @@ export type IMemberGroupRequest = z.infer<typeof MemberGroupSchema>
 // organization_id: TEntityId
 // branch_id: TEntityId
 
-export interface IMemberGroupPaginated extends IPaginatedResult<IMemberGroup> {}
+export type IMemberGroupPaginated = IPaginatedResult<IMemberGroup>

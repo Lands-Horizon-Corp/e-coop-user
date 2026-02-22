@@ -32,4 +32,4 @@ export interface ITransactionTagRequest {
     icon: string
 }
 
-export interface ITransactionTagPaginated extends IPaginatedResult<ITransactionTag> {}
+export type ITransactionTagPaginated = IPaginatedResult<ITransactionTag>

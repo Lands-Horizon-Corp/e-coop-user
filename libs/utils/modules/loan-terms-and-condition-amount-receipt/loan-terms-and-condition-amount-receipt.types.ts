@@ -16,4 +16,4 @@ export type ILoanTermsAndConditionAmountReceiptRequest = z.infer<
     typeof LoanTermsAndConditionAmountReceiptSchema
 >
 
-export interface ILoanTermsAndConditionAmountReceiptPaginated extends IPaginatedResult<ILoanTermsAndConditionAmountReceipt> {}
+export type ILoanTermsAndConditionAmountReceiptPaginated = IPaginatedResult<ILoanTermsAndConditionAmountReceipt>

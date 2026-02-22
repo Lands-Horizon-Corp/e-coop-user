@@ -23,4 +23,4 @@ export interface IMemberOccupationHistory
     member_occupation?: IMemberOccupation
 }
 
-export interface IMemberOccupationHistoryPaginated extends IPaginatedResult<IMemberOccupationHistory> {}
+export type IMemberOccupationHistoryPaginated = IPaginatedResult<IMemberOccupationHistory>

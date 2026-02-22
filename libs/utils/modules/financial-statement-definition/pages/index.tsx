@@ -80,7 +80,7 @@ const FinancialStatementDefinition = () => {
     }
     const handleEditFinancialStatementGrouping = (
         grouping: IFinancialStatementAccountGrouping,
-        viewOnly: boolean = false
+        viewOnly = false
     ) => {
         setFinancialStatementGrouping(grouping)
         setViewOnlyFinancialStatementGrouping(viewOnly)
@@ -89,7 +89,7 @@ const FinancialStatementDefinition = () => {
 
     const handleViewFinancialStatementGrouping = (
         grouping: IFinancialStatementAccountGrouping,
-        viewOnly: boolean = true
+        viewOnly = true
     ) => {
         setFinancialStatementGrouping(grouping)
         setViewOnlyFinancialStatementGrouping(viewOnly)

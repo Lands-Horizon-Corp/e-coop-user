@@ -88,7 +88,7 @@ export const useGetDisbursementTransaction = ({
             query,
         ].filter(Boolean),
         queryFn: async () => {
-            let url: string = `${apiCrudService.route}/branch`
+            let url = `${apiCrudService.route}/branch`
 
             switch (mode) {
                 case 'branch':
@@ -161,7 +161,7 @@ export const useFilteredPaginatedDisbursementTransaction = ({
             query,
         ].filter(Boolean),
         queryFn: async () => {
-            let url: string = `${apiCrudService.route}/branch/search`
+            let url = `${apiCrudService.route}/branch/search`
 
             switch (mode) {
                 case 'branch':

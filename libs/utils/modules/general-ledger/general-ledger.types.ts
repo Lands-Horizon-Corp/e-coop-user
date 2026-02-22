@@ -94,4 +94,4 @@ export interface IMemberGeneralLedgerTotal {
     balance: number
 }
 
-export interface IGeneralLedgerPaginated extends IPaginatedResult<IGeneralLedger> {}
+export type IGeneralLedgerPaginated = IPaginatedResult<IGeneralLedger>

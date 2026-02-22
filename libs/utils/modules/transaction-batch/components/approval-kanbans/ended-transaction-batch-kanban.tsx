@@ -29,7 +29,7 @@ import { useSubscribe } from '@/hooks/use-pubsub'
 
 import { IClassProps } from '@/types'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const EndedTransactionBatchKanban = (_props: Props) => {
     const {

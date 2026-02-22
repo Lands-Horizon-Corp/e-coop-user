@@ -11,4 +11,4 @@ export interface ITransactions extends IBaseEntityMeta {
 
 export type ITransactionsRequest = z.infer<typeof TransactionsSchema>
 
-export interface ITransactionsPaginated extends IPaginatedResult<ITransactions> {}
+export type ITransactionsPaginated = IPaginatedResult<ITransactions>

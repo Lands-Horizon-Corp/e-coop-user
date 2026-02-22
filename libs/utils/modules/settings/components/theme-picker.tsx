@@ -28,7 +28,7 @@ import { useInternalState } from '@/hooks/use-internal-state'
 
 import { useTheme } from '../provider/theme-provider'
 
-interface ThemePickerProps extends IPickerBaseProps {}
+type ThemePickerProps = IPickerBaseProps
 
 const ThemePicker = ({
     onSelect,

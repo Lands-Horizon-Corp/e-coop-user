@@ -8,7 +8,7 @@ import LightDarkModeSettings from './light-dark-mode-settings'
 import ThemesSettings from './themes-settings'
 import TransitionSettings from './transition-settings'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const AppearanceSettings = ({ className }: Props) => {
     return (

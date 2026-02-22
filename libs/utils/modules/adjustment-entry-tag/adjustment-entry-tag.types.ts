@@ -22,4 +22,4 @@ export interface IAdjustmentEntryTagRequest {
     icon: string
 }
 
-export interface IAdjustmentEntryTagPaginated extends IPaginatedResult<IAdjustmentEntryTag> {}
+export type IAdjustmentEntryTagPaginated = IPaginatedResult<IAdjustmentEntryTag>

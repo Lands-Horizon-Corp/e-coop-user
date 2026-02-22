@@ -272,7 +272,7 @@ export type ILoanEditTransactionRequest = z.infer<
     typeof LoanEditTransactionSchema
 >
 
-export interface ILoanTransactionPaginated extends IPaginatedResult<ILoanTransaction> {}
+export type ILoanTransactionPaginated = IPaginatedResult<ILoanTransaction>
 
 // Loan Transaction Signature
 export type ILoanTransactionSignatureRequest = TLoanTransactionSignatureSchema

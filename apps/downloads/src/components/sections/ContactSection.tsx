@@ -67,7 +67,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="relative z-10 py-24">
+    <section className="relative z-10 py-24" id="contact">
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/4 w-[600px] h-[400px] bg-emerald-500/5 rounded-full blur-3xl" />
@@ -104,10 +104,10 @@ export default function ContactSection() {
 
               <div className="space-y-5">
                 {contactInfo.map((item, index) => (
-                  <AnimatedSection key={item.label} animation="fadeUp" delay={0.2 + index * 0.1}>
+                  <AnimatedSection animation="fadeUp" delay={0.2 + index * 0.1} key={item.label}>
                     <motion.a
-                      href={item.href}
                       className="group flex items-start gap-4 p-4 rounded-xl bg-black/20 border border-white/5 hover:border-emerald-500/30 hover:bg-black/30 transition-all duration-300"
+                      href={item.href}
                       whileHover={{ x: 4 }}
                     >
                       <div className="h-10 w-10 rounded-xl bg-emerald-500/10 flex items-center justify-center group-hover:bg-emerald-500/20 transition-colors">
@@ -138,8 +138,8 @@ export default function ContactSection() {
                     Join our platform and empower your community with cutting-edge digital tools.
                   </p>
                   <motion.a
-                    href="#download"
                     className="inline-flex items-center gap-2 mt-5 rounded-xl bg-emerald-500 px-5 py-3 text-sm font-bold text-black shadow-lg shadow-emerald-500/25"
+                    href="#download"
                     whileHover={{ 
                       scale: 1.02, 
                       backgroundColor: '#34d399',
@@ -154,29 +154,29 @@ export default function ContactSection() {
             </div>
 
             {/* Right - Form */}
-            <AnimatedSection animation="fadeUp" delay={0.3} className="lg:col-span-3">
+            <AnimatedSection animation="fadeUp" className="lg:col-span-3" delay={0.3}>
               <motion.form 
-                onSubmit={handleSubmit}
                 className="relative rounded-3xl bg-black/40 backdrop-blur-xl border border-white/10 shadow-2xl p-8 overflow-hidden"
+                onSubmit={handleSubmit}
               >
                 {/* Success overlay */}
                 <AnimatePresence>
                   {isSubmitted && (
                     <motion.div
-                      initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
                       className="absolute inset-0 bg-black/80 backdrop-blur-xl flex items-center justify-center z-10"
+                      exit={{ opacity: 0 }}
+                      initial={{ opacity: 0 }}
                     >
                       <motion.div
-                        initial={{ scale: 0.5, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0.5, opacity: 0 }}
                         className="text-center"
+                        exit={{ scale: 0.5, opacity: 0 }}
+                        initial={{ scale: 0.5, opacity: 0 }}
                       >
                         <motion.div
-                          initial={{ scale: 0 }}
                           animate={{ scale: 1 }}
+                          initial={{ scale: 0 }}
                           transition={{ type: "spring", delay: 0.2 }}
                         >
                           <CheckCircle className="h-16 w-16 text-emerald-400 mx-auto mb-4" />
@@ -202,13 +202,13 @@ export default function ContactSection() {
                       First Name
                     </label>
                     <input
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       name="firstName"
-                      value={formState.firstName}
+                      onBlur={() => setFocusedField(null)}
                       onChange={handleChange}
                       onFocus={() => setFocusedField('firstName')}
-                      onBlur={() => setFocusedField(null)}
-                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       required
+                      value={formState.firstName}
                     />
                   </div>
 
@@ -223,13 +223,13 @@ export default function ContactSection() {
                       Last Name
                     </label>
                     <input
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       name="lastName"
-                      value={formState.lastName}
+                      onBlur={() => setFocusedField(null)}
                       onChange={handleChange}
                       onFocus={() => setFocusedField('lastName')}
-                      onBlur={() => setFocusedField(null)}
-                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       required
+                      value={formState.lastName}
                     />
                   </div>
 
@@ -244,14 +244,14 @@ export default function ContactSection() {
                       Email
                     </label>
                     <input
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       name="email"
-                      type="email"
-                      value={formState.email}
+                      onBlur={() => setFocusedField(null)}
                       onChange={handleChange}
                       onFocus={() => setFocusedField('email')}
-                      onBlur={() => setFocusedField(null)}
-                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       required
+                      type="email"
+                      value={formState.email}
                     />
                   </div>
 
@@ -279,13 +279,13 @@ export default function ContactSection() {
                           Phone Number
                         </label>
                         <input
+                          className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                           name="phone"
-                          type="tel"
-                          value={formState.phone}
+                          onBlur={() => setFocusedField(null)}
                           onChange={handleChange}
                           onFocus={() => setFocusedField('phone')}
-                          onBlur={() => setFocusedField(null)}
-                          className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+                          type="tel"
+                          value={formState.phone}
                         />
                       </div>
                     </div>
@@ -302,23 +302,23 @@ export default function ContactSection() {
                       Message
                     </label>
                     <textarea
+                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 resize-none"
                       name="message"
-                      value={formState.message}
+                      onBlur={() => setFocusedField(null)}
                       onChange={handleChange}
                       onFocus={() => setFocusedField('message')}
-                      onBlur={() => setFocusedField(null)}
-                      rows={4}
-                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 resize-none"
                       required
+                      rows={4}
+                      value={formState.message}
                     />
                   </div>
 
                   {/* Submit */}
                   <div className="md:col-span-2">
                     <motion.button
-                      type="submit"
-                      disabled={isSubmitting}
                       className="w-full rounded-xl bg-emerald-500 py-4 text-sm font-bold text-black shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2 disabled:opacity-70"
+                      disabled={isSubmitting}
+                      type="submit"
                       whileHover={{ 
                         scale: 1.02, 
                         backgroundColor: '#34d399',
@@ -328,8 +328,8 @@ export default function ContactSection() {
                     >
                       {isSubmitting ? (
                         <motion.div
-                          className="h-5 w-5 border-2 border-black/30 border-t-black rounded-full"
                           animate={{ rotate: 360 }}
+                          className="h-5 w-5 border-2 border-black/30 border-t-black rounded-full"
                           transition={{ duration: 1, repeat: Infinity, ease: "linear" }}
                         />
                       ) : (

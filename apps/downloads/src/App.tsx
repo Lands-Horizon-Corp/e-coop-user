@@ -31,19 +31,19 @@ function App() {
     return (
       <div className="fixed inset-0 bg-[#0a0a0a] flex items-center justify-center z-50">
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.8 }}
           className="text-center"
+          exit={{ opacity: 0, scale: 0.8 }}
+          initial={{ opacity: 0, scale: 0.8 }}
         >
           <motion.img 
-            src={logo} 
             alt="eCOOP" 
-            className="h-16 w-auto mx-auto"
             animate={{ 
               scale: [1, 1.1, 1],
               opacity: [0.5, 1, 0.5]
-            }}
+            }} 
+            className="h-16 w-auto mx-auto"
+            src={logo}
             transition={{ duration: 1.5, repeat: Infinity }}
           />
         </motion.div>

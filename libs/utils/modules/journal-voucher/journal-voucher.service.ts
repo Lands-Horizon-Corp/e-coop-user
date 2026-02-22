@@ -107,7 +107,7 @@ export const useFilteredPaginatedJournalVoucher = ({
             Boolean
         ),
         queryFn: async () => {
-            const url: string = `${journalVoucherAPIRoute}/${mode ? mode : ''}/search`
+            const url = `${journalVoucherAPIRoute}/${mode ? mode : ''}/search`
             const finalUrl = qs.stringifyUrl(
                 {
                     url,

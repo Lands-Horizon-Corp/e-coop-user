@@ -11,7 +11,7 @@ import {
 
 import { IChildProps } from '@/types'
 
-interface Props extends IChildProps {}
+type Props = IChildProps
 
 const UserOrgGuard = ({ children }: Props) => {
     const sendOnline = useSendHeartbeatOnline()

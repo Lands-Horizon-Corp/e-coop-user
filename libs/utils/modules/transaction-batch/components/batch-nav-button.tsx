@@ -32,7 +32,7 @@ import { IClassProps } from '@/types'
 import { TransactionBatchCreateFormModal } from './forms/transaction-batch-create-form'
 import TransactionBatch from './transaction-batch'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const TransactionBatchNavButton = (_props: Props) => {
     const modalState = useModalState()

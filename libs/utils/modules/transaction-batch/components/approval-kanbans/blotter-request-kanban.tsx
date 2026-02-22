@@ -26,7 +26,7 @@ import {
 import { BatchBlotterQuickViewModal } from '../transaction-batch/transaction-batch-quick-view'
 import TransactionBatchStatusIndicator from '../transaction-batch/transaction-batch-status-indicator'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const BlotterRequestKanban = (_props: Props) => {
     const {

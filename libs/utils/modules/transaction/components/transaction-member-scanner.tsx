@@ -28,7 +28,7 @@ import MemberPicker from '../../member-profile/components/member-picker'
 import { useGetMemberProfileById } from '../../member-profile/member-profile.service'
 import { useTransactionContext } from '../context/transaction-context'
 
-interface MemberQrScannerProps extends IBaseProps {}
+type MemberQrScannerProps = IBaseProps
 
 const TransactionMemberScanner = ({ className }: MemberQrScannerProps) => {
     const [startScan, setStartScan] = useState(false)

@@ -140,7 +140,7 @@ export interface IBranchSettings
 
 export type IBranchSettingsRequest = z.infer<typeof BranchSettingRequestSchema>
 
-export interface IBranchSettingsPaginated extends IPaginatedResult<IBranchSettings> {}
+export type IBranchSettingsPaginated = IPaginatedResult<IBranchSettings>
 
 //  FOR BRANCH SETTINGS CURRENCY
 

@@ -11,4 +11,4 @@ export interface ILoanPurpose extends IBaseEntityMeta {
 
 export type ILoanPurposeRequest = z.infer<typeof LoanPurposeSchema>
 
-export interface ILoanPurposePaginated extends IPaginatedResult<ILoanPurpose> {}
+export type ILoanPurposePaginated = IPaginatedResult<ILoanPurpose>

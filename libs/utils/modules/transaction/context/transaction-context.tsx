@@ -12,7 +12,7 @@ import {
 } from '../hooks/use-transaction-controller'
 import { paymentORResolver } from '../transaction.utils'
 
-export interface ITransactionFeatureContext extends TTransactionControllerReturn {}
+export type ITransactionFeatureContext = TTransactionControllerReturn
 
 type TTransactipnProviderProps = {
     children: React.ReactNode

@@ -42,19 +42,19 @@ export default function Footer({ logo }: FooterProps) {
               {/* Brand Column */}
               <div className="lg:col-span-1 space-y-6">
                 <motion.img 
-                  src={logo} 
                   alt="eCOOP" 
-                  className="h-12 w-auto"
+                  className="h-12 w-auto" 
+                  src={logo}
                   whileHover={{ scale: 1.05 }}
                 />
                 
                 <div className="flex items-center gap-3 text-xs text-white/60">
                   <motion.span 
-                    className="h-2 w-2 rounded-full bg-emerald-500"
                     animate={{ 
                       scale: [1, 1.2, 1],
                       opacity: [1, 0.7, 1]
                     }}
+                    className="h-2 w-2 rounded-full bg-emerald-500"
                     transition={{ duration: 2, repeat: Infinity }}
                   />
                   All systems operational
@@ -78,8 +78,8 @@ export default function Footer({ logo }: FooterProps) {
                   {quickLinks.map((link) => (
                     <li key={link.label}>
                       <motion.a
-                        href={link.href}
                         className="group inline-flex items-center gap-1 text-xs text-white/50 hover:text-emerald-400 transition-colors"
+                        href={link.href}
                         whileHover={{ x: 4 }}
                       >
                         {link.label}
@@ -101,8 +101,8 @@ export default function Footer({ logo }: FooterProps) {
                   {policies.map((link) => (
                     <li key={link.label}>
                       <motion.a
-                        href={link.href}
                         className="group inline-flex items-center gap-1 text-xs text-white/50 hover:text-emerald-400 transition-colors"
+                        href={link.href}
                         whileHover={{ x: 4 }}
                       >
                         {link.label}
@@ -121,8 +121,8 @@ export default function Footer({ logo }: FooterProps) {
                 <ul className="space-y-4">
                   <li>
                     <motion.a
-                      href="mailto:lands.horizon.corp@gmail.com"
                       className="group flex items-center gap-3 text-xs text-white/50 hover:text-emerald-400 transition-colors"
+                      href="mailto:lands.horizon.corp@gmail.com"
                       whileHover={{ x: 4 }}
                     >
                       <Mail className="h-4 w-4" />
@@ -131,8 +131,8 @@ export default function Footer({ logo }: FooterProps) {
                   </li>
                   <li>
                     <motion.a
-                      href="tel:+639916171081"
                       className="group flex items-center gap-3 text-xs text-white/50 hover:text-emerald-400 transition-colors"
+                      href="tel:+639916171081"
                       whileHover={{ x: 4 }}
                     >
                       <Phone className="h-4 w-4" />
@@ -161,8 +161,8 @@ export default function Footer({ logo }: FooterProps) {
                   {socialLinks.map((link) => (
                     <li key={link.label}>
                       <motion.a
-                        href={link.href}
                         className="group inline-flex items-center gap-1 text-xs text-white/50 hover:text-emerald-400 transition-colors"
+                        href={link.href}
                         whileHover={{ x: 4 }}
                       >
                         {link.label}
@@ -183,15 +183,15 @@ export default function Footer({ logo }: FooterProps) {
               </p>
               <div className="flex items-center gap-6">
                 <motion.a 
-                  href="#" 
-                  className="text-[11px] text-white/30 hover:text-white/50 transition-colors"
+                  className="text-[11px] text-white/30 hover:text-white/50 transition-colors" 
+                  href="#"
                   whileHover={{ y: -2 }}
                 >
                   Sitemap
                 </motion.a>
                 <motion.a 
-                  href="#" 
-                  className="text-[11px] text-white/30 hover:text-white/50 transition-colors"
+                  className="text-[11px] text-white/30 hover:text-white/50 transition-colors" 
+                  href="#"
                   whileHover={{ y: -2 }}
                 >
                   Accessibility

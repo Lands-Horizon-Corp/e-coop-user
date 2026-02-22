@@ -13,4 +13,4 @@ export interface ILoanTag extends IBaseEntityMeta {
 
 export type ILoanTagRequest = z.infer<typeof LoanTagSchema>
 
-export interface ILoanTagPaginated extends IPaginatedResult<ILoanTag> {}
+export type ILoanTagPaginated = IPaginatedResult<ILoanTag>

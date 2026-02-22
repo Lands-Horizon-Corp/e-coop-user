@@ -2,7 +2,7 @@ import { cn } from '@/helpers'
 
 import { IBaseProps } from '@/types'
 
-interface Props extends IBaseProps {}
+type Props = IBaseProps
 
 const KanbanItemsContainer = ({ className, children }: Props) => {
     return (

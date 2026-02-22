@@ -17,4 +17,4 @@ export interface IOrganizationMedia extends IAuditable, ITimeStamps {
 }
 export type IOrganizationMediaRequest = z.infer<typeof OrganizationMediaSchema>
 
-export interface IOrganizationMediaPaginated extends IPaginatedResult<IOrganizationMedia> {}
+export type IOrganizationMediaPaginated = IPaginatedResult<IOrganizationMedia>

@@ -20,6 +20,7 @@ export default defineConfig([
       '**/amplify',
       '**/vitest.config.*.timestamp*',
       '**/vite.config.*.timestamp*',
+      ".nx/**/*",
     ],
   },
 

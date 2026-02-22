@@ -13,17 +13,17 @@ export default function AuroraBackground() {
       
       {/* Aurora blob 1 - Emerald */}
       <motion.div
+        animate={{
+          x: [0, 100, -50, 0],
+          y: [0, -50, 100, 0],
+          scale: [1, 1.2, 0.9, 1],
+        }}
         className="absolute w-[800px] h-[800px] rounded-full aurora-blob"
         style={{
           background: 'radial-gradient(circle, rgba(52, 211, 153, 0.15) 0%, rgba(52, 211, 153, 0.05) 40%, transparent 70%)',
           filter: 'blur(60px)',
           top: '-20%',
           left: '-10%',
-        }}
-        animate={{
-          x: [0, 100, -50, 0],
-          y: [0, -50, 100, 0],
-          scale: [1, 1.2, 0.9, 1],
         }}
         transition={{
           duration: 20,
@@ -34,17 +34,17 @@ export default function AuroraBackground() {
       
       {/* Aurora blob 2 - Teal */}
       <motion.div
+        animate={{
+          x: [0, -80, 60, 0],
+          y: [0, 80, -40, 0],
+          scale: [1, 0.9, 1.1, 1],
+        }}
         className="absolute w-[600px] h-[600px] rounded-full aurora-blob-2"
         style={{
           background: 'radial-gradient(circle, rgba(45, 212, 191, 0.12) 0%, rgba(45, 212, 191, 0.04) 40%, transparent 70%)',
           filter: 'blur(50px)',
           top: '10%',
           right: '-5%',
-        }}
-        animate={{
-          x: [0, -80, 60, 0],
-          y: [0, 80, -40, 0],
-          scale: [1, 0.9, 1.1, 1],
         }}
         transition={{
           duration: 25,
@@ -55,17 +55,17 @@ export default function AuroraBackground() {
       
       {/* Aurora blob 3 - Cyan */}
       <motion.div
+        animate={{
+          x: [0, 60, -80, 0],
+          y: [0, -60, 40, 0],
+          scale: [1, 1.1, 0.95, 1],
+        }}
         className="absolute w-[500px] h-[500px] rounded-full aurora-blob-3"
         style={{
           background: 'radial-gradient(circle, rgba(20, 184, 166, 0.1) 0%, rgba(20, 184, 166, 0.03) 40%, transparent 70%)',
           filter: 'blur(45px)',
           bottom: '20%',
           left: '20%',
-        }}
-        animate={{
-          x: [0, 60, -80, 0],
-          y: [0, -60, 40, 0],
-          scale: [1, 1.1, 0.95, 1],
         }}
         transition={{
           duration: 18,

@@ -2,7 +2,7 @@ import { cn } from '@/helpers/tw-utils'
 
 import type { IBaseProps } from '@/types'
 
-interface Props extends IBaseProps {}
+type Props = IBaseProps
 
 const PageContainer = ({ children, className }: Props) => {
     return (

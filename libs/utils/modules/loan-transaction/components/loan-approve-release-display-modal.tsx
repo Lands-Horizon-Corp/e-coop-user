@@ -37,7 +37,7 @@ import {
     LoanReleaseNoTransactionBatchDisplay,
 } from './modal-displays/loan-release-invalid'
 
-export interface ILoanTransactionPrintFormProps extends IClassProps {}
+export type ILoanTransactionPrintFormProps = IClassProps
 
 export type TLoanApproveReleaseDisplayMode =
     | 'approve'

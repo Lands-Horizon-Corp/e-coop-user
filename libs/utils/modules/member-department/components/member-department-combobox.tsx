@@ -35,10 +35,10 @@ import {
     TMemberDepartmentFormValues,
 } from './member-department-create-update-form'
 
-export interface IMemberDepartmentComboboxCreateProps extends Pick<
+export type IMemberDepartmentComboboxCreateProps = Pick<
     TMemberDepartmentFormValues,
     'name' | 'description' | 'icon'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

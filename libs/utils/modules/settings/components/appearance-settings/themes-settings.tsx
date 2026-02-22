@@ -15,7 +15,7 @@ import { IClassProps } from '@/types'
 
 import { useTheme } from '../../provider/theme-provider'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 interface CustomTheme {
     name: string

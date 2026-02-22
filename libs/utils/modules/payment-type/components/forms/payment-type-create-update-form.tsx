@@ -205,12 +205,12 @@ const PaymentTypeCreateUpdateForm = ({
                             render={({ field }) => (
                                 <Textarea
                                     {...field}
-                                    value={field.value as string}
                                     autoComplete="off"
                                     className="max-h-40"
                                     disabled={isDisabled(field.name)}
                                     id={field.name}
                                     placeholder="Optional description for the payment type"
+                                    value={field.value as string}
                                 />
                             )}
                         />

@@ -16,7 +16,7 @@ import BranchSettingsCurrencyForm from '../forms/branch-settings-currency-form'
 import BranchSettingsForm from '../forms/branch-settings-form'
 import LoanProcessing from './loan-processing'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const BranchSettings = ({ className }: Props) => {
     const {

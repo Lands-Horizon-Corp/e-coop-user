@@ -11,4 +11,4 @@ export interface ICollateral extends IBaseEntityMeta {
 
 export type ICollateralRequest = TCollateralSchema
 
-export interface ICollateralPaginated extends IPaginatedResult<ICollateral> {}
+export type ICollateralPaginated = IPaginatedResult<ICollateral>

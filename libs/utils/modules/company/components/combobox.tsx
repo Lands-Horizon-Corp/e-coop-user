@@ -29,10 +29,10 @@ import {
     ICompanyFormProps,
 } from './forms/company-create-update-modal'
 
-export interface ICompanyComboboxCreateProps extends Pick<
+export type ICompanyComboboxCreateProps = Pick<
     ICompanyFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props {
     value?: TEntityId

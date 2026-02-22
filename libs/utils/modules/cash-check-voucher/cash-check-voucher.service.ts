@@ -104,7 +104,7 @@ export const useFilteredPaginatedCashCheckVoucher = ({
             Boolean
         ),
         queryFn: async () => {
-            const url: string = `${cashCheckVoucherAPIRoute}/${mode ? mode : ''}/search`
+            const url = `${cashCheckVoucherAPIRoute}/${mode ? mode : ''}/search`
             const finalUrl = qs.stringifyUrl(
                 {
                     url,

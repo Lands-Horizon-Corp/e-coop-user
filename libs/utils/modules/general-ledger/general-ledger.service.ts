@@ -192,7 +192,7 @@ export const useFilteredPaginatedGeneralLedger = ({
             query,
         ].filter(Boolean),
         queryFn: async () => {
-            let url: string = `${generalLedgerAPIRoute}/branch/search`
+            let url = `${generalLedgerAPIRoute}/branch/search`
 
             switch (mode) {
                 case 'branch':

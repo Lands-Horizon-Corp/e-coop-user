@@ -16,19 +16,19 @@ function FAQItem({ question, answer, isOpen, onClick, index }: FAQItemProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
       transition={{ delay: index * 0.1 }}
       viewport={{ once: true }}
+      whileInView={{ opacity: 1, y: 0 }}
     >
       <motion.button
-        type="button"
-        onClick={onClick}
         className={cn(
           "w-full text-left rounded-2xl backdrop-blur-xl px-6 py-5 transition-all duration-300",
           isOpen 
             ? "bg-emerald-500/10 border border-emerald-500/30" 
             : "bg-black/30 border border-white/5 hover:bg-black/40 hover:border-white/10"
         )}
+        onClick={onClick}
+        type="button"
         whileHover={{ scale: 1.01 }}
         whileTap={{ scale: 0.99 }}
       >
@@ -41,11 +41,11 @@ function FAQItem({ question, answer, isOpen, onClick, index }: FAQItemProps) {
           </span>
           <motion.div
             animate={{ rotate: isOpen ? 180 : 0 }}
-            transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             className={cn(
               "h-8 w-8 rounded-full flex items-center justify-center transition-colors",
               isOpen ? "bg-emerald-500/20" : "bg-white/5"
             )}
+            transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
           >
             <ChevronDown className={cn(
               "h-4 w-4 transition-colors",
@@ -57,11 +57,11 @@ function FAQItem({ question, answer, isOpen, onClick, index }: FAQItemProps) {
         <AnimatePresence>
           {isOpen && (
             <motion.div
-              initial={{ height: 0, opacity: 0 }}
               animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
               className="overflow-hidden"
+              exit={{ height: 0, opacity: 0 }}
+              initial={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
             >
               <p className="pt-4 text-sm leading-relaxed text-teal-100/60">
                 {answer}
@@ -105,7 +105,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section id="faq" className="relative z-10 py-24">
+    <section className="relative z-10 py-24" id="faq">
       {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-emerald-500/5 rounded-full blur-3xl -translate-y-1/2" />
@@ -144,16 +144,16 @@ export default function FAQSection() {
 
               <AnimatedSection animation="fadeUp" delay={0.3}>
                 <motion.a
-                  href="#contact"
                   className="group mt-8 inline-flex items-center gap-3 rounded-xl bg-emerald-500/10 px-6 py-4 border border-emerald-500/20 text-emerald-300 font-semibold hover:bg-emerald-500/20 transition-all"
+                  href="#contact"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
                   <MessageCircle className="h-5 w-5" />
                   Contact us for more help
                   <motion.span
-                    className="inline-block"
                     animate={{ x: [0, 4, 0] }}
+                    className="inline-block"
                     transition={{ duration: 1.5, repeat: Infinity }}
                   >
                     →
@@ -166,12 +166,12 @@ export default function FAQSection() {
             <div className="space-y-4">
               {faqs.map((faq, index) => (
                 <FAQItem
-                  key={index}
-                  question={faq.question}
                   answer={faq.answer}
-                  isOpen={openIndex === index}
-                  onClick={() => handleClick(index)}
                   index={index}
+                  isOpen={openIndex === index}
+                  key={index}
+                  onClick={() => handleClick(index)}
+                  question={faq.question}
                 />
               ))}
             </div>

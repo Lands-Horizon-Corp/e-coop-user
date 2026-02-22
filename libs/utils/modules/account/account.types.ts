@@ -217,7 +217,7 @@ export interface IAccountHistory extends IAccount {
 
 export type IAccountRequest = TAccountFormValues
 
-export interface IAccountPaginated extends IPaginatedResult<IAccount> {}
+export type IAccountPaginated = IPaginatedResult<IAccount>
 
 export type TPaginatedAccountHookMode =
     | 'withdraw'

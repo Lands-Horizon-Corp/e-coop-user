@@ -43,4 +43,4 @@ export interface ICashCountBatchRequest {
     grand_total?: number
 }
 
-export interface ICashCountPaginated extends IPaginatedResult<ICashCount> {}
+export type ICashCountPaginated = IPaginatedResult<ICashCount>

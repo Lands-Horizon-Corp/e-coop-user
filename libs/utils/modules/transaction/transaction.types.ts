@@ -59,7 +59,7 @@ export interface ITransaction extends IBaseEntityMeta {
     reference_number: string
 }
 
-export interface ITransactionPaginated extends IPaginatedResult<ITransaction> {}
+export type ITransactionPaginated = IPaginatedResult<ITransaction>
 
 export type TUpdateReferenceNumberProps = {
     transactionId: string

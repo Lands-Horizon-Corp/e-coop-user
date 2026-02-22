@@ -31,7 +31,7 @@ import {
     CashCheckVoucherReleaseNoTransactionBatchDisplay,
 } from '../modal-displays/cash-check-voucher-release-invalid'
 
-export interface ICashCheckVoucherApproveReleaseDisplayModalProps extends IClassProps {}
+export type ICashCheckVoucherApproveReleaseDisplayModalProps = IClassProps
 
 export type TJournalVoucherApproveReleaseDisplayMode =
     | 'approve'

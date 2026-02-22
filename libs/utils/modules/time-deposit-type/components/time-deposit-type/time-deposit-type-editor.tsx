@@ -23,7 +23,7 @@ import { ITimeDepositType } from '../../time-deposit-type.types'
 import TimeDepositTypeUpdateForm from '../forms/time-deposit-type-update-form/time-deposit-type-update-form'
 import TimeDepositTypesSidebar from './time-deposit-type-sidebar'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const TimeDepositSchemeEditor = ({ className }: Props) => {
     const [timeDepositType, setTimeDepositType] = useState<

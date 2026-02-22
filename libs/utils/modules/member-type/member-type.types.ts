@@ -26,4 +26,4 @@ export interface IMemberType extends ITimeStamps, IAuditable {
 
 export type IMemberTypeRequest = z.infer<typeof MemberTypeSchema>
 
-export interface IMemberTypePaginated extends IPaginatedResult<IMemberType> {}
+export type IMemberTypePaginated = IPaginatedResult<IMemberType>

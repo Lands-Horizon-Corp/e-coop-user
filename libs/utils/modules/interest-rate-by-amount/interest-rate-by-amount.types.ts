@@ -14,4 +14,4 @@ export type IInterestRateByAmountRequest = z.infer<
     typeof InterestRateByAmountSchema
 >
 
-export interface IInterestRateByAmountPaginated extends IPaginatedResult<IInterestRateByAmount> {}
+export type IInterestRateByAmountPaginated = IPaginatedResult<IInterestRateByAmount>

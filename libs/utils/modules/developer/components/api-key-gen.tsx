@@ -17,7 +17,7 @@ import { IClassProps } from '@/types'
 
 import { useRefreshAPIKey } from '../developer.service'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const APIKeyGen = ({ className }: Props) => {
     const [canView, setCanView] = useState(false)

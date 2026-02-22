@@ -35,10 +35,10 @@ import {
     ICollateralFormProps,
 } from './forms/collateral-create-update-form'
 
-export interface ICollateralComboboxCreateProps extends Pick<
+export type ICollateralComboboxCreateProps = Pick<
     ICollateralFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

@@ -69,6 +69,6 @@ export interface ISubscriptionPlanRequest {
     currency_id?: TEntityId | null
 }
 
-export interface ISubscriptionPlanPaginated extends IPaginatedResult<ISubscriptionPlan> {}
+export type ISubscriptionPlanPaginated = IPaginatedResult<ISubscriptionPlan>
 
 export type TSubscriptionPlanMode = 'all' | 'timezone'

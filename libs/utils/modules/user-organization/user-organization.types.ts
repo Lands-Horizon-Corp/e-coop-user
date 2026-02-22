@@ -137,8 +137,8 @@ export interface IUserOrganizationSettings {
     settings_payment_type_default_value_id?: TEntityId | null
 }
 
-export interface IUserOrganizationSettingsRequest extends IUserOrganizationSettings {}
+export type IUserOrganizationSettingsRequest = IUserOrganizationSettings
 
-export interface IUserOrganizationPaginated<
+export type IUserOrganizationPaginated<
     TUser = IUserBase,
-> extends IPaginatedResult<IUserOrganization<TUser>> {}
+> = IPaginatedResult<IUserOrganization<TUser>>

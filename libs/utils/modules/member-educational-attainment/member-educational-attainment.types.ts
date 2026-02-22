@@ -44,4 +44,4 @@ export interface IMemberEducationalAttainment extends ITimeStamps, IAuditable {
     // history?: IMemberEducationalAttainmentHistory[]
 }
 
-export interface IMemberEducationalAttainmentPaginated extends IPaginatedResult<IMemberEducationalAttainment> {}
+export type IMemberEducationalAttainmentPaginated = IPaginatedResult<IMemberEducationalAttainment>

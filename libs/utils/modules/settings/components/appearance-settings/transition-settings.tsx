@@ -18,7 +18,7 @@ interface AnimationPreviewProps {
     onClick: () => void
 }
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const animationConfig = {
     circle: {

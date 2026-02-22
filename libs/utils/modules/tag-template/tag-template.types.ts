@@ -19,4 +19,4 @@ export interface ITagTemplate extends IBaseEntityMeta {
 
 export type ITagTemplateRequest = z.infer<typeof TagTemplateSchema>
 
-export interface ITagTemplatePaginated extends IPaginatedResult<ITagTemplate> {}
+export type ITagTemplatePaginated = IPaginatedResult<ITagTemplate>

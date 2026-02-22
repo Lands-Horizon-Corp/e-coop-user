@@ -15,4 +15,4 @@ export interface ICompany extends IBaseEntityMeta {
 
 export type ICompanyRequest = z.infer<typeof CompanySchema>
 
-export interface ICompanyPaginated extends IPaginatedResult<ICompany> {}
+export type ICompanyPaginated = IPaginatedResult<ICompany>

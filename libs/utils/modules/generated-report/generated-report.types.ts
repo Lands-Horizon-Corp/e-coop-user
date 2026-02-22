@@ -214,10 +214,10 @@ export interface IGeneratedReportRequest {
     landscape?: boolean
 }
 
-export interface IPFGeneratedReport extends IGeneratedReport {}
-export interface IExcelGeneratedReport extends IGeneratedReport {}
+export type IPFGeneratedReport = IGeneratedReport
+export type IExcelGeneratedReport = IGeneratedReport
 
-export interface IGeneratedReportPaginated extends IPaginatedResult<IGeneratedReport> {}
+export type IGeneratedReportPaginated = IPaginatedResult<IGeneratedReport>
 
 export interface IGeneratedReportUpdateRequest {
     name: string

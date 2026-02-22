@@ -20,7 +20,7 @@ export type IMemberProfileMediaRequest = z.infer<
     typeof MemberProfileMediaSchema
 >
 
-export interface IMemberProfileMediaPaginated extends IPaginatedResult<IMemberProfileMedia> {}
+export type IMemberProfileMediaPaginated = IPaginatedResult<IMemberProfileMedia>
 
 export type IMemberProfileMediaBulkRequest = {
     ids: TEntityId[]

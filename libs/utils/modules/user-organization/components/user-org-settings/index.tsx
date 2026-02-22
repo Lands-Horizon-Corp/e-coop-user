@@ -17,7 +17,7 @@ import UserOrgSettingsForm, {
     TUserOrgSettingsFormValues,
 } from '../forms/user-org-settings-form'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const UserOrganizationSettings = ({ className }: Props) => {
     const {

@@ -67,7 +67,7 @@ const GeneralLedgerDefinition = () => {
 
     const handleEditGLGrouping = (
         grouping: IGeneralLedgerAccountGrouping,
-        financialStatementGrouping: boolean = false
+        financialStatementGrouping = false
     ) => {
         setGrouping(grouping)
         setFinancialStatementGrouping(financialStatementGrouping)
@@ -78,7 +78,7 @@ const GeneralLedgerDefinition = () => {
 
     const handleViewGLGrouping = (
         grouping: IGeneralLedgerAccountGrouping,
-        financialStatementGrouping: boolean = true
+        financialStatementGrouping = true
     ) => {
         setGrouping(grouping)
         setFinancialStatementGrouping(financialStatementGrouping)

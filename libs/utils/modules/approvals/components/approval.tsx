@@ -8,7 +8,7 @@ import EndedTransactionBatchKanban from '../../transaction-batch/components/appr
 import NewMemberProfileKanban from './kanbans/new-member-profile-kanban'
 import UserJoinRequestKanban from './kanbans/user-join-request-kanban'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const Approval = ({ className }: Props) => {
     const canSeeEndBatch = hasPermissionFromAuth({

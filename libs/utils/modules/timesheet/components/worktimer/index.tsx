@@ -21,7 +21,7 @@ import { IClassProps } from '@/types'
 import TimeInOut from './time-in-out'
 import { LiveWorkTimeDurationDisplay } from './work-time-duration-display'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const WorkTimer = ({ className }: Props) => {
     const queryClient = useQueryClient()

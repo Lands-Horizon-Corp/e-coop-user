@@ -20,7 +20,7 @@ import ComputationSheetAccounts from '../computation-sheet-account'
 import LoanSchemeSidebar from './computation-schemes-sidebar'
 import LoanSchemeDisplay from './computation-sheet-scheme-display'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const ComputationSheetSchemeEditor = ({ className }: Props) => {
     const [computationSheet, setComputationSheet] = useState<

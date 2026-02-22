@@ -66,7 +66,7 @@ import { useGroupRoutes } from '../developer.service'
 import { IAPIList, IGroupedRoute } from '../developer.types'
 import { APIKeyGenModal } from './api-key-gen'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const SearchInput = ({
     onSearchChange,

@@ -18,4 +18,4 @@ export interface IAccountClassificationRequest {
     branch_id?: TEntityId
 }
 
-export interface IAccountClassificationPaginated extends IPaginatedResult<IAccountClassification> {}
+export type IAccountClassificationPaginated = IPaginatedResult<IAccountClassification>

@@ -13,7 +13,7 @@ import Modal, { IModalProps } from '@/components/modals/modal'
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
-interface PaymentSuccessModalProps extends IModalProps {}
+type PaymentSuccessModalProps = IModalProps
 
 const TransactionMemberAccountLedger = ({
     ...props

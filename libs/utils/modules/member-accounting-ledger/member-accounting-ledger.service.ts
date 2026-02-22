@@ -91,7 +91,7 @@ export const useFilteredPaginatedMemberAccountingLedger = ({
             query,
         ],
         queryFn: async () => {
-            let url: string = `${route}/branch/search`
+            let url = `${route}/branch/search`
 
             if (mode === 'member') {
                 url = `${route}/member-profile/${memberProfileId}/search`

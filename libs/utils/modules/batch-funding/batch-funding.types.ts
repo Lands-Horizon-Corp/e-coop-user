@@ -38,4 +38,4 @@ export interface IBatchFunding extends IBaseEntityMeta {
 
 export type IBatchFundingRequest = z.infer<typeof BatchFundingSchema>
 
-export interface IBatchFundingPaginated extends IPaginatedResult<IBatchFunding> {}
+export type IBatchFundingPaginated = IPaginatedResult<IBatchFunding>

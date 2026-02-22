@@ -201,7 +201,7 @@ export const useFilteredPaginatedTransactionBatch = ({
             query,
         ],
         queryFn: async () => {
-            let url: string = `search`
+            let url = `search`
 
             if (mode === 'me') {
                 url = 'me/search'

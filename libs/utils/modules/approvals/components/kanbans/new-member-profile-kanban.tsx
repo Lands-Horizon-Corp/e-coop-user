@@ -35,7 +35,7 @@ import KanbanContainer from '../kanban/kanban-container'
 import KanbanItemsContainer from '../kanban/kanban-items-container'
 import KanbanTitle from '../kanban/kanban-title'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const NewMemberProfileKanban = (_props: Props) => {
     const queryClient = useQueryClient()
