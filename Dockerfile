@@ -17,3 +17,5 @@ RUN npx nx reset
 
 # Build the downloads app
 RUN bunx nx build downloads
+
+CMD ["bunx", "serve", "-s", "dist/apps/downloads", "-l", "3000"]
