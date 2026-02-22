@@ -1,0 +1,49 @@
+import { useQueryClient } from '@tanstack/react-query'
+
+import { useAuthUser } from '@/modules/authentication/authgentication.store'
+import PermissionGuard from '@/modules/permission/components/permission-guard'
+import TimesheetTable from '@/modules/timesheet/components/timesheet-table'
+import TimesheetAction from '@/modules/timesheet/components/timesheet-table/row-action-context'
+
+import PageContainer from '@/components/containers/page-container'
+
+import { useSubscribe } from '@/hooks/use-pubsub'
+
+const MyTimesheetPage = () => {
+    const {
+        currentAuth: { user },
+    } = useAuthUser()
+    const queryClient = useQueryClient()
+
+    useSubscribe(`timesheet.create.user.${user.id}`, () => {
+        queryClient.invalidateQueries({
+            queryKey: ['timesheet', 'paginated', 'me'],
+        })
+    })
+
+    useSubscribe(`timesheet.update.user.${user.id}`, () => {
+        queryClient.invalidateQueries({
+            queryKey: ['timesheet', 'paginated', 'me'],
+        })
+    })
+
+    useSubscribe(`timesheet.delete.user.${user.id}`, () => {
+        queryClient.invalidateQueries({
+            queryKey: ['timesheet', 'paginated', 'me'],
+        })
+    })
+
+    return (
+        <PageContainer>
+            <PermissionGuard action="Read" resourceType="MyTimesheet">
+                <TimesheetTable
+                    actionComponent={TimesheetAction}
+                    className="max-h-[90vh] min-h-[90vh] w-full"
+                    mode="me"
+                />
+            </PermissionGuard>
+        </PageContainer>
+    )
+}
+
+export default MyTimesheetPage

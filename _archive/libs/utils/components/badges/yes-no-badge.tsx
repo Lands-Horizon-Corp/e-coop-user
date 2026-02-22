@@ -1,0 +1,53 @@
+import { forwardRef } from 'react'
+
+import { cn } from '@/helpers/tw-utils'
+import { type VariantProps, cva } from 'class-variance-authority'
+
+import type { IClassProps } from '@/types'
+
+const yesNoVariants = cva(
+    'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',
+    {
+        variants: {
+            variant: {
+                yes: [
+                    'bg-primary/10 text-primary/70 border-primary hover:bg-primary/20',
+                    'dark:bg-primary/10/20 dark:text-primary dark:border-primary/70 dark:hover:bg-primary/10/30',
+                ],
+                no: [
+                    'bg-gray-100 text-gray-600 border-gray-200 hover:bg-gray-200',
+                    'dark:bg-gray-800/50 dark:text-gray-400 dark:border-gray-700 dark:hover:bg-gray-800/70',
+                ],
+            },
+        },
+        defaultVariants: {
+            variant: 'no',
+        },
+    }
+)
+
+interface Props extends IClassProps, VariantProps<typeof yesNoVariants> {
+    value: boolean
+    yesText?: string
+    noText?: string
+}
+
+const YesNoBadge = forwardRef<HTMLDivElement, Props>(
+    ({ value, yesText = 'Yes', noText = 'No', className }, ref) => {
+        const variant = value ? 'yes' : 'no'
+        const displayText = value ? yesText : noText
+
+        return (
+            <div
+                className={cn(yesNoVariants({ variant }), className)}
+                ref={ref}
+            >
+                {displayText}
+            </div>
+        )
+    }
+)
+
+YesNoBadge.displayName = 'YesNoBadge'
+
+export default YesNoBadge
