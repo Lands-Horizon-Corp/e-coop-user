@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import HomeHero from "./components/sections/HomeHero";
 import PreviewSection from "./components/sections/PreviewSection";
 import DownloadSection from "./components/sections/DownloadSection";
+import ServicesSection from "./components/sections/ServicesSections";
 import TestimonialSection from "./components/sections/TestimonialSection";
 import FAQSection from "./components/sections/FAQSection";
 import ContactSection from "./components/sections/ContactSection";
@@ -72,6 +73,7 @@ function App() {
           <HomeHero />
           <PreviewSection />
           <DownloadSection />
+          <ServicesSection />
           <TestimonialSection />
           <FAQSection />
           <ContactSection />

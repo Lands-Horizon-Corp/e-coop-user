@@ -29,10 +29,28 @@ export default function ParticlesBackground() {
   const scrollOffsetRef = useRef(0);
   const targetScrollOffsetRef = useRef(0);
   const animationFrameIdRef = useRef<number | null>(null);
+  const documentHeightRef = useRef(0);
+
+  const getDocumentHeight = () => {
+    return Math.max(
+      document.body.scrollHeight,
+      document.body.offsetHeight,
+      document.documentElement.clientHeight,
+      document.documentElement.scrollHeight,
+      document.documentElement.offsetHeight
+    );
+  };
 
   const initParticles = useCallback((canvas: HTMLCanvasElement) => {
     const particles: Particle[] = [];
-    const particleCount = Math.min(60, Math.floor((canvas.width * canvas.height) / 20000));
+    // Get full document height, not just viewport
+    const docHeight = getDocumentHeight();
+    documentHeightRef.current = docHeight;
+
+    // Calculate particle count based on document area, not just viewport
+    const area = canvas.width * docHeight;
+    const particleCount = Math.min(100, Math.floor(area / 15000));
+
     const colors = [
       "rgba(52, 211, 153,",   // emerald-400
       "rgba(45, 212, 191,",   // teal-400
@@ -43,7 +61,8 @@ export default function ParticlesBackground() {
 
     for (let i = 0; i < particleCount; i++) {
       const colorBase = colors[Math.floor(Math.random() * colors.length)];
-      const baseY = Math.random() * canvas.height * 3;
+      // Spread particles across entire document height
+      const baseY = Math.random() * docHeight;
       particles.push({
         x: Math.random() * canvas.width,
         y: baseY,
@@ -71,13 +90,14 @@ export default function ParticlesBackground() {
       const p1 = particles[i];
       const p1DrawY = p1.y - scrollOffset;
 
+      // Only check connections for particles visible or near viewport
       if (p1DrawY < -connectionDistance * 2 || p1DrawY > canvasHeight + connectionDistance * 2) {
         continue;
       }
 
       for (let j = i + 1; j < particles.length; j++) {
         if (connectionCount >= maxConnections) break;
-        
+
         const p2 = particles[j];
         const p2DrawY = p2.y - scrollOffset;
 
@@ -88,7 +108,7 @@ export default function ParticlesBackground() {
         const dx = p1.x - p2.x;
         const dy = p1DrawY - p2DrawY;
         const distance = Math.sqrt(dx * dx + dy * dy);
-        
+
         if (distance < connectionDistance) {
           const opacity = (1 - distance / connectionDistance) * 0.15;
           connections.push({
@@ -115,11 +135,20 @@ export default function ParticlesBackground() {
     const resize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      // Re-init particles when resizing to cover new document height
       particlesRef.current = initParticles(canvas);
     };
 
     resize();
     window.addEventListener("resize", resize);
+
+    // Also re-init when content changes (optional - checks every 2 seconds)
+    const checkHeightInterval = setInterval(() => {
+      const currentHeight = getDocumentHeight();
+      if (Math.abs(currentHeight - documentHeightRef.current) > 100) {
+        particlesRef.current = initParticles(canvas);
+      }
+    }, 2000);
 
     const onScroll = () => {
       targetScrollOffsetRef.current = window.scrollY;
@@ -163,7 +192,8 @@ export default function ParticlesBackground() {
 
         const drawY = p.y - scrollOffset;
 
-        if (drawY < -50 || drawY > canvas.height + 50) return;
+        // Skip rendering if far outside viewport (optimization)
+        if (drawY < -100 || drawY > canvas.height + 100) return;
 
         // Mouse interaction - gentle repulsion
         const mouse = mouseRef.current;
@@ -211,6 +241,7 @@ export default function ParticlesBackground() {
       window.removeEventListener("resize", resize);
       window.removeEventListener("scroll", onScroll);
       window.removeEventListener("mousemove", onMouseMove);
+      clearInterval(checkHeightInterval);
     };
   }, [initParticles, updateConnections]);
 
