@@ -21,4 +21,4 @@ RUN bunx nx build downloads
 ENV PORT=3000
 EXPOSE 3000
 
-CMD ["sh", "-c", "bunx serve dist/apps/downloads -l $PORT --single"]
+CMD ["sh", "-c", "bunx serve apps/downloads/dist -l $PORT --single"]
