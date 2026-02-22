@@ -27,6 +27,34 @@ function App() {
     };
   }, []);
 
+  // Handle hash navigation on initial load and hash changes
+  useEffect(() => {
+    const handleHashNavigation = () => {
+      const hash = window.location.hash;
+      if (hash) {
+        // Wait for content to render, then scroll to the section
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
+      }
+    };
+
+    // Handle initial load with hash
+    if (!isLoading) {
+      handleHashNavigation();
+    }
+
+    // Listen for hash changes
+    window.addEventListener('hashchange', handleHashNavigation);
+    
+    return () => {
+      window.removeEventListener('hashchange', handleHashNavigation);
+    };
+  }, [isLoading]);
+
   // Loading screen
   if (isLoading) {
     return (

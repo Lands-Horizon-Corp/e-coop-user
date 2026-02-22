@@ -88,13 +88,11 @@ const floatingCards = [
   }
 ];
 
+// REDUCED from 6 to 3 coins
 const miniCoins = [
   { symbol: "$", backSymbol: "₱", shade: "light" },
   { symbol: "€", backSymbol: "£", shade: "base" },
-  { symbol: "¥", backSymbol: "₹", shade: "dark" },
-  { symbol: "₩", backSymbol: "₿", shade: "lightest" },
-  { symbol: "¢", backSymbol: "₣", shade: "darkest" },
-  { symbol: "₺", backSymbol: "₴", shade: "medium" }
+  { symbol: "¥", backSymbol: "₹", shade: "dark" }
 ];
 
 const coinColors = {
@@ -316,6 +314,7 @@ export default function ServicesSection() {
               
               <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[260px] lg:h-[400px]">
                 
+                {/* First wave - now only 3 coins instead of 6 */}
                 {miniCoins.map((coin, i) => {
                   const angle = (i / miniCoins.length) * 360;
                   const distance = 100;
@@ -363,8 +362,9 @@ export default function ServicesSection() {
                   );
                 })}
 
-                {miniCoins.slice(0, 4).map((coin, i) => {
-                  const angle = ((i / 4) * 360) + 45;
+                {/* Second wave - now only 2 coins instead of 4 */}
+                {miniCoins.slice(0, 2).map((coin, i) => {
+                  const angle = ((i / 2) * 360) + 45;
                   const distance = 130;
                   const delay = i * 0.5 + 2;
                   const colors = coinColors[coin.shade];
