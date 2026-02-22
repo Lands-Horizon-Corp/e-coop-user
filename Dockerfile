@@ -16,10 +16,10 @@ RUN bun install
 RUN npx nx reset
 
 # Build the downloads app
-RUN bunx nx build downloads
-RUN bunx nx build e-coop-admin
-RUN bunx nx build e-coop-core
-RUN bunx nx build e-coop-member
+RUN bun run build:downloads
+RUN bun run build:e-coop-admin
+RUN bun run build:e-coop-core
+RUN bun run build:e-coop-member
 
 EXPOSE 3000
 EXPOSE 3001
