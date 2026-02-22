@@ -1,0 +1,229 @@
+import { forwardRef } from 'react'
+
+import { cn } from '@/helpers'
+import { withToastCallbacks } from '@/helpers/callback-helper'
+import { IMemberProfile } from '@/modules/member-profile'
+import { MemberUserAccountCreateUpdateFormModal } from '@/modules/member-user-account/components/forms/member-account-create-update-form'
+import {
+    useConnectMemberProfileToUserAccount,
+    useDisconnectMemberProfileUserAccount,
+} from '@/modules/member-user-account/member-user-account.service'
+import { IMember } from '@/modules/user'
+import { IUserOrganization } from '@/modules/user-organization'
+import UserOrganizationPicker from '@/modules/user-organization/components/user-organization-picker'
+import useActionSecurityStore from '@/store/action-security-store'
+import useConfirmModalStore from '@/store/confirm-modal-store'
+
+import {
+    LinkIcon,
+    PlugConnectFillIcon,
+    UnlinkIcon,
+    UserPlusIcon,
+} from '@/components/icons'
+import LoadingSpinner from '@/components/spinners/loading-spinner'
+import { Button } from '@/components/ui/button'
+
+import { useModalState } from '@/hooks/use-modal-state'
+
+import ProfileConnectUserModalDisplay from '../../../profile-connect-user-content'
+import UserAccountCardMini from './member-account-card-mini'
+
+interface Props {
+    memberProfile: IMemberProfile
+}
+
+const MemberUserAccount = forwardRef<HTMLDivElement, Props>(
+    ({ memberProfile }, ref) => {
+        const createUserModal = useModalState()
+        const connectUserModal = useModalState()
+
+        const { onOpen } = useConfirmModalStore()
+        const { onOpenSecurityAction } = useActionSecurityStore()
+
+        const { mutate: connect, isPending: isConnecting } =
+            useConnectMemberProfileToUserAccount({
+                options: {
+                    ...withToastCallbacks({ textSuccess: 'Connected' }),
+                },
+            })
+        const { mutate: disconnect, isPending: isDisconnecting } =
+            useDisconnectMemberProfileUserAccount({
+                options: {
+                    ...withToastCallbacks({ textSuccess: 'Disconnected' }),
+                },
+            })
+
+        return (
+            <div ref={ref}>
+                <p className="mb-2">User Member Portal Account</p>
+
+                {memberProfile.user !== undefined ? (
+                    <div>
+                        <p className="mb-4 text-xs leading-relaxed text-muted-foreground">
+                            Member Portal Account let them sign in to member
+                            portal. Below is the connected Member Portal Account
+                            for this member profile.
+                        </p>
+                        <UserAccountCardMini user={memberProfile.user} />
+                        <p className="my-4 rounded-md text-xs text-muted-foreground/60">
+                            If the member wants a new account, you can
+                            disconnect this account first.
+                        </p>
+                        <Button
+                            disabled={isDisconnecting}
+                            hoverVariant="destructive"
+                            onClick={() => {
+                                onOpen({
+                                    title: 'Disconnect Portal Account',
+                                    description:
+                                        'You are about to disconnect this account from member profile. Are you sure to do this?',
+                                    onConfirm: () =>
+                                        onOpenSecurityAction({
+                                            title: 'Disconnect User Account',
+                                            onSuccess: () =>
+                                                disconnect(memberProfile.id),
+                                        }),
+                                })
+                            }}
+                            variant="secondary"
+                        >
+                            {isDisconnecting ? (
+                                <LoadingSpinner />
+                            ) : (
+                                <>
+                                    <UnlinkIcon className="mr-1" />
+                                    Disconnect Portal Account
+                                </>
+                            )}
+                        </Button>
+                    </div>
+                ) : (
+                    <div className="space-y-4">
+                        <p className="text-sm text-muted-foreground">
+                            This member does not have a Member Portal Account
+                            for logging in. To enable login access, create a new
+                            Portal Account or connect an existing one.
+                        </p>
+                        <fieldset
+                            className="flex gap-x-2"
+                            disabled={isConnecting}
+                        >
+                            <MemberUserAccountCreateUpdateFormModal
+                                {...createUserModal}
+                                formProps={{
+                                    memberProfileId: memberProfile.id,
+                                    defaultValues: {
+                                        birthdate: memberProfile.birthdate,
+                                        contact_number:
+                                            memberProfile.contact_number,
+                                        first_name: memberProfile.first_name,
+                                        middle_name: memberProfile.middle_name,
+                                        last_name: memberProfile.full_name,
+                                        suffix: memberProfile.suffix,
+                                        full_name: memberProfile.full_name,
+                                        user_name: memberProfile.first_name,
+                                    },
+                                }}
+                            />
+                            <UserOrganizationPicker
+                                modalState={connectUserModal}
+                                onSelect={(value) => {
+                                    const userOrg =
+                                        value as unknown as IUserOrganization<IMember>
+
+                                    onOpen({
+                                        title: (
+                                            <p className="flex items-center truncate">
+                                                <span className="mr-2 inline-flex items-center justify-center rounded-md bg-accent p-1">
+                                                    <LinkIcon className="text-primary" />
+                                                </span>
+                                                Connect Member Portal Acount
+                                                Account
+                                            </p>
+                                        ),
+                                        description:
+                                            "You're about to connect a member profile to a user account. This action will link these profiles together permanently.",
+                                        confirmString: (
+                                            <p>
+                                                <LinkIcon className="mr-2 inline" />
+                                                Connect
+                                            </p>
+                                        ),
+                                        content: (
+                                            <ProfileConnectUserModalDisplay
+                                                memberProfile={memberProfile}
+                                                userOrg={userOrg}
+                                            />
+                                        ),
+                                        onConfirm: () =>
+                                            connect({
+                                                memberProfileId:
+                                                    memberProfile.id,
+                                                userId: userOrg.user_id,
+                                            }),
+                                    })
+                                }}
+                                triggerClassName="hidden"
+                                userOrgSearchMode="none-member-profile"
+                            />
+
+                            <Button
+                                className="group !h-auto w-1/2 flex-col items-start space-y-2 rounded-xl from-primary/40 to-transparent to-80% py-4 hover:bg-gradient-to-tr"
+                                onClick={() =>
+                                    createUserModal.onOpenChange(true)
+                                }
+                                variant="outline"
+                            >
+                                <div className="flex w-full items-center justify-between">
+                                    <p className="shrink truncate group-hover:text-primary">
+                                        Create New User Member Portal Account
+                                    </p>
+                                    <UserPlusIcon className="size-4 shrink-0 text-muted-foreground/60 duration-200 ease-out group-hover:text-primary" />
+                                </div>
+                                <p className="text-wrap text-left text-xs text-muted-foreground group-hover:text-primary">
+                                    Create a new User Member Portal Account for
+                                    this member profile.
+                                </p>
+                            </Button>
+                            <Button
+                                className={cn(
+                                    'group !h-auto w-1/2 flex-col items-start space-y-2 rounded-xl from-primary/40 to-transparent to-80% py-4 hover:bg-gradient-to-tr',
+                                    isConnecting && 'bg-gradient-to-tr'
+                                )}
+                                onClick={() =>
+                                    connectUserModal.onOpenChange(true)
+                                }
+                                variant="outline"
+                            >
+                                <div className="flex w-full items-center justify-between">
+                                    <p className="shrink truncate group-hover:text-primary">
+                                        Connect to existing User Profile
+                                    </p>
+                                    {!isConnecting ? (
+                                        <PlugConnectFillIcon className="size-4 shrink-0 text-muted-foreground/60 duration-200 ease-out group-hover:text-primary" />
+                                    ) : (
+                                        <LoadingSpinner className="inline" />
+                                    )}
+                                </div>
+                                <p
+                                    className={cn(
+                                        'text-wrap text-left text-xs text-muted-foreground group-hover:text-primary',
+                                        isConnecting && 'animate-pulse'
+                                    )}
+                                >
+                                    {isConnecting
+                                        ? 'Connecting...'
+                                        : 'Connect this Profile to an existing User Member Portal Account that has no profile yet.'}
+                                </p>
+                            </Button>
+                        </fieldset>
+                    </div>
+                )}
+            </div>
+        )
+    }
+)
+
+MemberUserAccount.displayName = 'MembershipInfo'
+
+export default MemberUserAccount

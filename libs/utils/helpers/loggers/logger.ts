@@ -1,14 +1,14 @@
-import { APP_ENV } from '../../constants'
-import { TFootstepLevel, createFootstep } from '../../src/footstep'
+import { IS_STAGING } from '@/constants'
+import { TFootstepLevel, createFootstep } from '@/modules/footstep'
 
- 
+/* eslint-disable no-console */
 type LogMethod = (...args: unknown[]) => void
 
 class Logger {
     private static instances: Map<string, Logger> = new Map()
     private isDevelopment: boolean
     private module?: string
-    private static hasLoggedAsciiArt = false
+    private static hasLoggedAsciiArt: boolean = false
 
     public log: LogMethod
     public warn: LogMethod
@@ -16,9 +16,10 @@ class Logger {
     public info: LogMethod
     public debug: LogMethod
 
-    private constructor(module?: string, footstep = true) {
-        this.isDevelopment = ['development', 'local'].includes(APP_ENV)
+    private constructor(module?: string, footstep: boolean = true) {
+        this.isDevelopment = !IS_STAGING
         this.module = module
+
         if (!Logger.hasLoggedAsciiArt && !this.isDevelopment) {
             console.log(
                 '\n                  ......                                    \n            .,,,,,,,,,,,,,,,,,,,                             \n        ,,,,,,,,,,,,,,,,,,,,,,,,,,                          \n      ,,,,,,,,,,,,,,  .,,,,,,,,,,,,,                        \n    ,,,,,,,,,,           ,,,,,,,,,,,,                       \n      ,,,,,,,          .,,,,,,,,,,,                          \n  ,*,,,,,,          ,,,,,,,,,,,,                             \n.**,,,,.**      .,,,,,,,,,,,                                \n.,,,,,,,**    ,,,,,,,,,,,                                   \n  .,,,,.**       ,,,,,,                                      \n    *******       ,                                         \n    **********              **,                             \n      ************,,  ,,*********,                          \n        **************************                          \n            ********************                             \n                  ******.\n'
@@ -136,7 +137,7 @@ class Logger {
         level: TFootstepLevel,
         description: string,
         activity: string,
-        footstep = true
+        footstep: boolean = true
     ) {
         if (this.module) {
             if (footstep)
@@ -152,7 +153,7 @@ class Logger {
     }
 
     public static getInstance(
-        module = 'default',
+        module: string = 'default',
         footstep = true
     ): Logger {
         if (!Logger.instances.has(module)) {
