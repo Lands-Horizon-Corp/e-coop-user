@@ -51,10 +51,7 @@ export interface IQRMemberProfile {
     email: string
 }
 
-export type IQrUserDecodedResult = IQrScanResult<
-    IQrMemberIdData,
-    'user-qr'
->
+export type IQrUserDecodedResult = IQrScanResult<IQrMemberIdData, 'user-qr'>
 
 export type IQrInvitationCodeDecodedResult = IQrScanResult<
     IQRInvitationCode,

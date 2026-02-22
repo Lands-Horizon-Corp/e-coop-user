@@ -41,7 +41,8 @@ export type IAutomaticLoanDeductionRequest = z.infer<
     typeof AutomaticLoanDeductionSchema
 >
 
-export type IAutomaticLoanDeductionPaginated = IPaginatedResult<IAutomaticLoanDeduction>
+export type IAutomaticLoanDeductionPaginated =
+    IPaginatedResult<IAutomaticLoanDeduction>
 
 // For computation of deduction entry amount/values
 export type AutomaticLoanDeductionEntry = {

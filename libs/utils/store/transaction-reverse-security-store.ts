@@ -18,7 +18,12 @@ type TransactionSecurityModalDataProps = {
 export const useTransactionReverseSecurityStore =
     create<ITransactionReverseSecurityStore>((set) => ({
         isOpen: false,
-        modalData: { title: '', onSuccess: () => {} },
+        modalData: {
+            title: '',
+            onSuccess: () => {
+                /* noop */
+            },
+        },
         onClose: () => set({ isOpen: false }),
         onOpenReverseRequestAction: (modalData) =>
             set({ isOpen: true, modalData }),

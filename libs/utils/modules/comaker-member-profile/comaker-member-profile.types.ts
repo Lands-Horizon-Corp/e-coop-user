@@ -21,4 +21,5 @@ export type IComakerMemberProfileRequest = z.infer<
     typeof ComakerMemberProfileSchema
 >
 
-export type IComakerMemberProfilePaginated = IPaginatedResult<IComakerMemberProfile>
+export type IComakerMemberProfilePaginated =
+    IPaginatedResult<IComakerMemberProfile>

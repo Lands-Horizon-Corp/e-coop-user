@@ -18,7 +18,8 @@
     "allowImportingTsExtensions": true, 
     "noEmit": true,
     "paths": {
-      "@e-coop/utils": ["libs/utils/src/index.ts"]
+      "@e-coop/utils": ["libs/utils/*"],
+      "@libs/utils": ["libs/utils/*"]
     },
     "strict": true
   },

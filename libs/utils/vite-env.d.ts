@@ -12,7 +12,7 @@ interface ImportMetaEnv {
     readonly VITE_WS_USER: string
     readonly VITE_WS_PASSWORD: string
 
-    // Soketi 
+    // Soketi
     readonly VITE_SOKETI_KEY: string
     readonly VITE_SOKETI_HOST: string
     readonly VITE_SOKETI_PORT: string

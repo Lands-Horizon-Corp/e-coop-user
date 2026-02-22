@@ -36,4 +36,5 @@ export type IChargesRateSchemeModeOfPaymentRequest = z.infer<
     typeof ChargesRateSchemeModeOfPaymentSchema
 >
 
-export type IChargesRateSchemeModeOfPaymentPaginated = IPaginatedResult<IChargesRateSchemeModeOfPayment>
+export type IChargesRateSchemeModeOfPaymentPaginated =
+    IPaginatedResult<IChargesRateSchemeModeOfPayment>

@@ -22,4 +22,5 @@ export interface IMemberCenterHistory extends ITimeStamps, IAuditable {
     branch: IBranch
 }
 
-export type IMemberCenterHistoryPaginated = IPaginatedResult<IMemberCenterHistory>
+export type IMemberCenterHistoryPaginated =
+    IPaginatedResult<IMemberCenterHistory>

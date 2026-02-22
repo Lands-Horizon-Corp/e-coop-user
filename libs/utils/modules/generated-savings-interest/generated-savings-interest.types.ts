@@ -61,4 +61,5 @@ export interface IGeneratedSavingsInterestView {
 export type IGeneratedSavingsInterestPrintRequest =
     TGeneratedSavingsInterestPrintSchema
 
-export type IGeneratedSavingsInterestPaginated = IPaginatedResult<IGeneratedSavingsInterest>
+export type IGeneratedSavingsInterestPaginated =
+    IPaginatedResult<IGeneratedSavingsInterest>

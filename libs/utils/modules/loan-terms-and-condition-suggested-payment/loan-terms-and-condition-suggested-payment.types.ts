@@ -14,4 +14,5 @@ export type ILoanTermsAndConditionSuggestedPaymentRequest = z.infer<
     typeof LoanTermsAndConditionSuggestedPaymentSchema
 >
 
-export type ILoanTermsAndConditionSuggestedPaymentPaginated = IPaginatedResult<ILoanTermsAndConditionSuggestedPayment>
+export type ILoanTermsAndConditionSuggestedPaymentPaginated =
+    IPaginatedResult<ILoanTermsAndConditionSuggestedPayment>

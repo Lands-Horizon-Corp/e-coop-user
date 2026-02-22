@@ -113,6 +113,7 @@ export function usePWA(): PWAHookReturn {
     // Check if app is already installed
     useEffect(() => {
         if (isStandalone) {
+            // eslint-disable-next-line react-hooks/set-state-in-effect
             setIsInstalled(true)
             setCanInstall(false)
             setShowInstallPrompt(false)

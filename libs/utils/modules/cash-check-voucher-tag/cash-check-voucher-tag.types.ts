@@ -15,4 +15,5 @@ export type ICashCheckVoucherTagRequest = z.infer<
     typeof CashCheckVoucherTagSchema
 >
 
-export type ICashCheckVoucherTagPaginated = IPaginatedResult<ICashCheckVoucherTag>
+export type ICashCheckVoucherTagPaginated =
+    IPaginatedResult<ICashCheckVoucherTag>

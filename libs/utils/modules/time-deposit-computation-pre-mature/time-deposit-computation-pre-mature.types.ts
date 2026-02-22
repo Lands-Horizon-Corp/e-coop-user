@@ -18,4 +18,5 @@ export type ITimeDepositComputationPreMatureRequest = z.infer<
     typeof TimeDepositComputationPreMatureSchema
 >
 
-export type ITimeDepositComputationPreMaturePaginated = IPaginatedResult<ITimeDepositComputationPreMature>
+export type ITimeDepositComputationPreMaturePaginated =
+    IPaginatedResult<ITimeDepositComputationPreMature>

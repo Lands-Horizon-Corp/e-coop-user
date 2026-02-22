@@ -28,7 +28,9 @@ export const useInactivityStore = create<IInactivityStore>((set) => ({
     userActivityState: 'active',
     setUserActivityState: (state) => set({ userActivityState: state }),
 
-    handleRestartActivityTracking: () => {},
+    handleRestartActivityTracking: () => {
+        /* noop */
+    },
     setHandleRestartActivityTracking: (restartFn) =>
         set({ handleRestartActivityTracking: restartFn }),
 }))

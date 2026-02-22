@@ -25,4 +25,5 @@ export interface IMemberClassificationHistory
     member_profile?: IMemberProfile
 }
 
-export type IMemberClassificationHistoryPaginated = IPaginatedResult<IMemberClassificationHistory>
+export type IMemberClassificationHistoryPaginated =
+    IPaginatedResult<IMemberClassificationHistory>

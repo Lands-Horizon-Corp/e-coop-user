@@ -21,4 +21,5 @@ export type IMutualFundAdditionalMembersRequest = z.infer<
     typeof MutualFundAdditionalMembersSchema
 >
 
-export type IMutualFundAdditionalMembersPaginated = IPaginatedResult<IMutualFundAdditionalMembers>
+export type IMutualFundAdditionalMembersPaginated =
+    IPaginatedResult<IMutualFundAdditionalMembers>

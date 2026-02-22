@@ -125,11 +125,21 @@ class Logger {
                     footstep
                 )
             }
-            console.log = (..._args) => {}
-            console.warn = (..._args) => {}
-            console.error = (..._args) => {}
-            console.info = (..._args) => {}
-            console.debug = (..._args) => {}
+            console.log = (..._args) => {
+                /* noop */
+            }
+            console.warn = (..._args) => {
+                /* noop */
+            }
+            console.error = (..._args) => {
+                /* noop */
+            }
+            console.info = (..._args) => {
+                /* noop */
+            }
+            console.debug = (..._args) => {
+                /* noop */
+            }
         }
     }
 
@@ -152,10 +162,7 @@ class Logger {
         }
     }
 
-    public static getInstance(
-        module = 'default',
-        footstep = true
-    ): Logger {
+    public static getInstance(module = 'default', footstep = true): Logger {
         if (!Logger.instances.has(module)) {
             Logger.instances.set(module, new Logger(module, footstep))
         }

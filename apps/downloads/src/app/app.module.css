@@ -1,25 +1,25 @@
 :global(.thin-scroll) {
-  scrollbar-width: thin;
-  scrollbar-color: rgba(100, 116, 139, 0.55) transparent;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(100, 116, 139, 0.55) transparent;
 }
 
 :global(.thin-scroll::-webkit-scrollbar) {
-  width: 8px;
+    width: 8px;
 }
 
 :global(.thin-scroll::-webkit-scrollbar-track) {
-  background: transparent;
+    background: transparent;
 }
 
 :global(.thin-scroll::-webkit-scrollbar-thumb) {
-  background: rgba(148, 163, 184, 0.35);
-  border-radius: 999px;
-  border: 2px solid transparent; /* makes it look thinner */
-  background-clip: padding-box;
+    background: rgba(148, 163, 184, 0.35);
+    border-radius: 999px;
+    border: 2px solid transparent; /* makes it look thinner */
+    background-clip: padding-box;
 }
 
 :global(.thin-scroll::-webkit-scrollbar-thumb:hover) {
-  background: rgba(148, 163, 184, 0.55);
-  border: 2px solid transparent;
-  background-clip: padding-box;
+    background: rgba(148, 163, 184, 0.55);
+    border: 2px solid transparent;
+    background-clip: padding-box;
 }

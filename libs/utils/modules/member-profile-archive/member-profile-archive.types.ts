@@ -24,7 +24,8 @@ export type IMemberProfileArchiveRequest = z.infer<
     typeof MemberProfileArchiveSchema
 >
 
-export type IMemberProfileArchivePaginated = IPaginatedResult<IMemberProfileArchive>
+export type IMemberProfileArchivePaginated =
+    IPaginatedResult<IMemberProfileArchive>
 
 export type IMemberProfileArchiveBulkRequest =
     TMemberProfileArchiveBulkUpdateSchema

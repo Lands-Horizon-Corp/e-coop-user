@@ -23,4 +23,5 @@ export type IMemberClassificationRequest = z.infer<
     typeof MemberClassificationSchema
 >
 
-export type IMemberClassificationPaginated = IPaginatedResult<IMemberClassification>
+export type IMemberClassificationPaginated =
+    IPaginatedResult<IMemberClassification>

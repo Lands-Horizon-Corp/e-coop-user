@@ -33,4 +33,5 @@ export interface ILoanTransactionEntry extends IBaseEntityMeta {
 
 export type ILoanTransactionEntryRequest = TLoanTransactionEntrySchema
 
-export type ILoanTransactionEntryPaginated = IPaginatedResult<ILoanTransactionEntry>
+export type ILoanTransactionEntryPaginated =
+    IPaginatedResult<ILoanTransactionEntry>

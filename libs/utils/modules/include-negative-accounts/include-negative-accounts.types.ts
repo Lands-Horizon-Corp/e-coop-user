@@ -20,4 +20,5 @@ export type IIncludeNegativeAccountsRequest = z.infer<
     typeof IncludeNegativeAccountsSchema
 >
 
-export type IIncludeNegativeAccountsPaginated = IPaginatedResult<IIncludeNegativeAccounts>
+export type IIncludeNegativeAccountsPaginated =
+    IPaginatedResult<IIncludeNegativeAccounts>

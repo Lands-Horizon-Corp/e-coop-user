@@ -17,7 +17,13 @@ interface IConfirmModalStore {
 
 const useActionSecurityStore = create<IConfirmModalStore>((set) => ({
     isOpen: false,
-    modalData: { title: '', description: '', onSuccess: () => {} },
+    modalData: {
+        title: '',
+        description: '',
+        onSuccess: () => {
+            /* noop */
+        },
+    },
     onOpenSecurityAction: (newModalData) => {
         // const {
         //     authStatus,

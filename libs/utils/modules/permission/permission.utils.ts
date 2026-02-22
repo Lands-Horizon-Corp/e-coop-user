@@ -63,10 +63,7 @@ export function hasPermission({
 export type GetCrudPermissionOpts<
     TResourceData extends IAuditable = IAuditable,
     TUser extends { user_id: TEntityId } = IUserOrganization,
-> = Omit<
-    IHasPermissionOpts<TResourceData, TUser>,
-    'action' | 'conditionLogic'
->
+> = Omit<IHasPermissionOpts<TResourceData, TUser>, 'action' | 'conditionLogic'>
 
 // HELPER UTIL FUNC
 export const getActionDetails = (action: TPermissionAction) => {

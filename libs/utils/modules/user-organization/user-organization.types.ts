@@ -139,6 +139,6 @@ export interface IUserOrganizationSettings {
 
 export type IUserOrganizationSettingsRequest = IUserOrganizationSettings
 
-export type IUserOrganizationPaginated<
-    TUser = IUserBase,
-> = IPaginatedResult<IUserOrganization<TUser>>
+export type IUserOrganizationPaginated<TUser = IUserBase> = IPaginatedResult<
+    IUserOrganization<TUser>
+>

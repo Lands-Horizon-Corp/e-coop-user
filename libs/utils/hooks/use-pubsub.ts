@@ -38,6 +38,8 @@ export const useSubscribe = <T = unknown>(
             onReceive?.(data)
         })
 
-        return () => {}
+        return () => {
+            /* noop */
+        }
     }, [connection, subject, onReceive, isLiveEnabled])
 }

@@ -18,4 +18,5 @@ export interface IAccountClassificationRequest {
     branch_id?: TEntityId
 }
 
-export type IAccountClassificationPaginated = IPaginatedResult<IAccountClassification>
+export type IAccountClassificationPaginated =
+    IPaginatedResult<IAccountClassification>

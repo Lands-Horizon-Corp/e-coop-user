@@ -14,4 +14,5 @@ export type ICancelledCashCheckVoucherRequest = z.infer<
     typeof CancelledCashCheckVoucherSchema
 >
 
-export type ICancelledCashCheckVoucherPaginated = IPaginatedResult<ICancelledCashCheckVoucher>
+export type ICancelledCashCheckVoucherPaginated =
+    IPaginatedResult<ICancelledCashCheckVoucher>
