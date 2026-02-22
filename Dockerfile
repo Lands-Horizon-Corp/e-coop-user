@@ -8,7 +8,8 @@ RUN bun install -g nx husky
 
 RUN bun install --frozen-lockfile
 
-RUN bun run build:downloads
+RUN bun build:downloads
 
+EXPOSE 3000
 
 CMD ["bun", "run", "start:downloads"]
