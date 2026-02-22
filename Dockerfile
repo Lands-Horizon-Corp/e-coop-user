@@ -1,23 +1,30 @@
-FROM oven/bun:1 AS builder
+# ---------------------------
+# Stage 1: Build with Node
+# ---------------------------
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Copy only dependency files first
-COPY package.json bun.lock ./
+COPY package.json package-lock.json* bun.lock* ./
 
-# Install deps
-RUN bun install -g husky
-RUN bun install --frozen-lockfile
+RUN npm install
 
-# Copy rest of project
 COPY . .
 
-# Disable Nx daemon inside Docker
 ENV NX_DAEMON=false
 
-# Build
-RUN bun build:downloads
+RUN npx nx build downloads
+
+# ---------------------------
+# Stage 2: Run with Bun
+# ---------------------------
+FROM oven/bun:1
+
+WORKDIR /app
+
+COPY --from=builder /app/dist/apps/downloads ./dist
+COPY package.json ./
 
 EXPOSE 3000
 
-CMD ["bun", "run", "start:downloads"]
+CMD ["bun", "dist/main.js"]
