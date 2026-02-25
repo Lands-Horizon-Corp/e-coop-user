@@ -20,8 +20,8 @@
 
 .PhoneInputInput:focus {
   border-color: rgb(16, 185, 129);
-  ring: 2px;
-  ring-color: rgba(16, 185, 129, 0.2);
+  kerning: 2px;
+  lighting-color: rgba(16, 185, 129, 0.2);
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
@@ -83,7 +83,7 @@
 
 .phone-input-error .PhoneInputInput:focus {
   border-color: rgb(239, 68, 68);
-  ring-color: rgba(239, 68, 68, 0.2);
+  lighting-color: rgba(239, 68, 68, 0.2);
   box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.2);
 }
 
@@ -94,7 +94,7 @@
 
 .phone-input-success .PhoneInputInput:focus {
   border-color: rgb(16, 185, 129);
-  ring-color: rgba(16, 185, 129, 0.2);
+  lighting-color: rgba(16, 185, 129, 0.2);
   box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
 }
 
