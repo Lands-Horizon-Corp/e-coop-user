@@ -1,0 +1,17 @@
+{
+  "entry": [
+    "apps/**/*.{ts,tsx}",
+    "libs/**/*.{ts,tsx}"
+  ],
+  "project": [
+    "apps/**/*.{ts,tsx}",
+    "libs/**/*.{ts,tsx}"
+  ],
+  "ignore": [
+    "**/*.test.{ts,tsx}",
+    "**/*.spec.{ts,tsx}",
+    "**/*.stories.{ts,tsx}",
+    "**/dist/**",
+    "**/node_modules/**"
+  ]
+}
