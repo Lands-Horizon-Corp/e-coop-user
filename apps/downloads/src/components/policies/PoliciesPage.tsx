@@ -12,12 +12,30 @@ export default function PoliciesPage() {
 
   const currentPolicy: Policy = allPolicies.find((p) => p.id === policyId) || allPolicies[0];
 
+  // Track which section is in view while scrolling
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setActiveSection("");
-    }, 0);
-    return () => clearTimeout(timer);
-  }, [policyId]);
+    const handleScroll = () => {
+      const sections = currentPolicy.sections.map((s) => ({
+        id: s.id,
+        element: document.getElementById(s.id),
+      }));
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        if (section.element) {
+          const rect = section.element.getBoundingClientRect();
+          if (rect.top <= 150) {
+            setActiveSection(section.id);
+            break;
+          }
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Check on mount
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [currentPolicy]);
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -108,23 +126,30 @@ export default function PoliciesPage() {
             </motion.div>
           </div>
 
-          {/* RIGHT SIDEBAR - Table of Contents */}
+          {/* RIGHT SIDEBAR - Table of Contents with active highlighting */}
           <div className="lg:col-span-3">
             <div>
               <h3 className="mb-6 text-base font-semibold text-gray-100">
                 In this article
               </h3>
               <nav className="space-y-4">
-                {currentPolicy.sections.map((section: PolicySection, index: number) => (
-                  <button
-                    className="block w-full text-left text-sm text-emerald-400 transition-colors hover:text-emerald-300"
-                    key={section.id}
-                    onClick={() => scrollToSection(section.id)}
-                    type="button"
-                  >
-                    {index + 1}. {section.title.replace(/^\d+\.\s*/, "")}
-                  </button>
-                ))}
+                {currentPolicy.sections.map((section: PolicySection, index: number) => {
+                  const isActive = activeSection === section.id;
+                  return (
+                    <button
+                      className={`block w-full text-left text-sm transition-colors ${
+                        isActive
+                          ? "font-semibold text-emerald-300"
+                          : "text-emerald-400 hover:text-emerald-300"
+                      }`}
+                      key={section.id}
+                      onClick={() => scrollToSection(section.id)}
+                      type="button"
+                    >
+                      {index + 1}. {section.title.replace(/^\d+\.\s*/, "")}
+                    </button>
+                  );
+                })}
               </nav>
             </div>
           </div>
