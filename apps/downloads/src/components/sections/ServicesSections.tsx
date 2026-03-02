@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { 
   Wallet, 
   Landmark, 
@@ -11,10 +11,17 @@ import {
   Bell,
   ArrowRightLeft,
   Fingerprint,
-  PiggyBank
+  PiggyBank,
+  LucideIcon
 } from "lucide-react";
 
-const services = [
+interface Service {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+}
+
+const services: Service[] = [
   {
     icon: Wallet,
     title: "Account Wallets",
@@ -57,7 +64,15 @@ const services = [
   }
 ];
 
-const floatingCards = [
+interface FloatingCard {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  position: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+  delay: number;
+}
+
+const floatingCards: FloatingCard[] = [
   {
     icon: Bell,
     title: "Real-time Alerts",
@@ -88,14 +103,27 @@ const floatingCards = [
   }
 ];
 
-// REDUCED from 6 to 3 coins
-const miniCoins = [
+interface MiniCoin {
+  symbol: string;
+  backSymbol: string;
+  shade: ColorKey;
+}
+
+const miniCoins: MiniCoin[] = [
   { symbol: "$", backSymbol: "₱", shade: "light" },
   { symbol: "€", backSymbol: "£", shade: "base" },
   { symbol: "¥", backSymbol: "₹", shade: "dark" }
 ];
 
-const coinColors = {
+interface CoinColorConfig {
+  from: string;
+  to: string;
+  edge: string[];
+}
+
+type ColorKey = 'lightest' | 'light' | 'medium' | 'base' | 'dark' | 'darkest';
+
+const coinColors: Record<ColorKey, CoinColorConfig> = {
   lightest: { from: "#a7f3d0", to: "#34d399", edge: ["#6ee7b7", "#34d399"] },
   light: { from: "#6ee7b7", to: "#10b981", edge: ["#34d399", "#10b981"] },
   medium: { from: "#34d399", to: "#059669", edge: ["#10b981", "#059669"] },
@@ -104,7 +132,7 @@ const coinColors = {
   darkest: { from: "#047857", to: "#064e3b", edge: ["#065f46", "#064e3b"] }
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -115,7 +143,7 @@ const containerVariants = {
   }
 };
 
-const itemVariants = {
+const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
@@ -128,7 +156,7 @@ const itemVariants = {
 };
 
 // Smooth gradient with many stops to prevent banding
-const createSmoothGradient = (color1, color2, angle = 135) => {
+const createSmoothGradient = (color1: string, color2: string, angle = 135): string => {
   return `linear-gradient(${angle}deg, 
     ${color1} 0%, 
     ${color2} 11%,
@@ -143,19 +171,27 @@ const createSmoothGradient = (color1, color2, angle = 135) => {
   )`;
 };
 
+interface RealisticCoinProps {
+  symbol: string;
+  backSymbol: string;
+  colors: CoinColorConfig;
+  size?: "small" | "normal" | "large";
+  isMain?: boolean;
+}
+
+const sizeClasses: Record<string, string> = {
+  small: "w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-sm sm:text-base lg:text-lg",
+  normal: "w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 text-base sm:text-lg lg:text-2xl",
+  large: "w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 text-2xl sm:text-3xl lg:text-5xl"
+};
+
 const RealisticCoin = ({ 
   symbol, 
   backSymbol, 
   colors, 
   size = "normal", 
   isMain = false 
-}) => {
-  const sizeClasses = {
-    small: "w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-sm sm:text-base lg:text-lg",
-    normal: "w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 text-base sm:text-lg lg:text-2xl",
-    large: "w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 text-2xl sm:text-3xl lg:text-5xl"
-  };
-
+}: RealisticCoinProps) => {
   const thickness = isMain ? 6 : size === "normal" ? 4 : 3;
   const edgeGradient = `linear-gradient(to bottom, ${colors.edge[0]} 0%, ${colors.from} 20%, ${colors.to} 50%, ${colors.from} 80%, ${colors.edge[1]} 100%)`;
 
@@ -303,7 +339,7 @@ export default function ServicesSection() {
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           
           <motion.div 
-            className="relative h-[350px] sm:h-[450px] lg:h-[600px] flex items-center justify-center"
+            className="relative h-87.5 sm:h-112.5 lg:h-150 flex items-center justify-center"
             initial={{ opacity: 0, x: -50 }}
             style={{ perspective: "1000px" }}
             transition={{ duration: 0.8 }}
@@ -312,7 +348,7 @@ export default function ServicesSection() {
           >
             <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 lg:-translate-x-[65%]">
               
-              <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[260px] lg:h-[400px]">
+              <div className="relative w-70 h-70 sm:w-[320px] sm:h-80 lg:w-65 lg:h-100">
                 
                 {/* First wave - now only 3 coins instead of 6 */}
                 {miniCoins.map((coin, i) => {
@@ -461,24 +497,23 @@ export default function ServicesSection() {
 
               {/* FIXED: Stats cards with better mobile positioning */}
               {floatingCards.map((card, index) => {
-                // Much closer positioning for mobile so cards stay visible
                 const positions = {
                   "top-left": "top-0 -left-12 sm:-left-16 lg:-left-40",
                   "top-right": "top-0 -right-12 sm:-right-16 lg:-right-40",
                   "bottom-left": "bottom-0 -left-12 sm:-left-16 lg:-left-40",
                   "bottom-right": "bottom-0 -right-12 sm:-right-16 lg:-right-40"
-                };
+                } as const;
                 
                 const linePositions = {
                   "top-left": "top-1/3 left-0 w-10 sm:w-14 lg:w-32 h-px origin-right -rotate-12",
                   "top-right": "top-1/3 right-0 w-10 sm:w-14 lg:w-32 h-px origin-left rotate-12",
                   "bottom-left": "bottom-1/3 left-0 w-10 sm:w-14 lg:w-32 h-px origin-right rotate-12",
                   "bottom-right": "bottom-1/3 right-0 w-10 sm:w-14 lg:w-32 h-px origin-left -rotate-12"
-                };
+                } as const;
 
                 return (
                   <motion.div
-                    className={`absolute ${positions[card.position as keyof typeof positions]}`}
+                    className={`absolute ${positions[card.position]}`}
                     initial={{ opacity: 0, scale: 0.8 }}
                     key={index}
                     transition={{ delay: card.delay + 0.5, duration: 0.6 }}
@@ -487,7 +522,7 @@ export default function ServicesSection() {
                   >
                     {/* Connecting line - shorter on mobile */}
                     <motion.div
-                      className={`absolute ${linePositions[card.position as keyof typeof linePositions]} bg-gradient-to-r from-emerald-500/50 to-transparent hidden sm:block`}
+                      className={`absolute ${linePositions[card.position]} bg-linear-to-r from-emerald-500/50 to-transparent hidden sm:block`}
                       initial={{ scaleX: 0 }}
                       transition={{ delay: card.delay + 0.8, duration: 0.8 }}
                       viewport={{ once: true }}
