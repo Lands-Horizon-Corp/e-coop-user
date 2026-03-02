@@ -5,5 +5,21 @@
   "projectType": "application",
   "tags": [],
   "// targets": "to see all targets run: nx show project downloads --web",
-  "targets": {}
+  "targets": {
+    "build": {
+      "executor": "@nx/vite:build", 
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/downloads",
+        "main": "apps/downloads/src/main.ts",
+        "tsConfig": "apps/downloads/tsconfig.app.json"
+      }
+    },
+    "start": {
+    "executor": "nx:run-commands",
+    "options": {
+      "command": "bunx serve {outputPath} -l 3000 --single"
+    }
+  }
+  }
 }

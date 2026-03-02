@@ -16,7 +16,7 @@ RUN bun install
 RUN npx nx reset
 
 # Build the downloads app
-RUN bun run build:downloads
+RUN bun run build:all
 # RUN bun run build:e-coop-admin
 # RUN bun run build:e-coop-core
 # RUN bun run build:e-coop-member
@@ -26,4 +26,4 @@ EXPOSE 3001
 EXPOSE 3002
 EXPOSE 3003
 
-CMD ["sh", "-c", "bun run start:downloads"]
+CMD ["sh", "-c", "bun run start:all"]
