@@ -82,14 +82,14 @@ function PoliciesLayout() {
   
   return (
     <div className="min-h-screen bg-[#0a0f1c]">
-      <Navbar logo={logo} isPoliciesPage={true} />
+      <Navbar isPoliciesPage={true} logo={logo} />
       <main>  {/* REMOVED pt-20 HERE */}
         <AnimatePresence mode="wait">
           <motion.div
-            key={location.pathname}
-            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
+            initial={{ opacity: 0, y: 20 }}
+            key={location.pathname}
             transition={{ duration: 0.3 }}
           >
             <PoliciesPage />
@@ -142,10 +142,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/policies" element={<PoliciesLayout />}>
-          <Route index element={<PoliciesPage />} />
-          <Route path=":policyId" element={<PoliciesPage />} />
+        <Route element={<LandingPage />} path="/" />
+        <Route element={<PoliciesLayout />} path="/policies">
+          <Route element={<PoliciesPage />} index />
+          <Route element={<PoliciesPage />} path=":policyId" />
         </Route>
       </Routes>
     </BrowserRouter>

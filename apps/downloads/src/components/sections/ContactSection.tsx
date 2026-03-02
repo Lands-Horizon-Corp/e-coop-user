@@ -65,9 +65,9 @@ const CountrySelect = ({ value, onChange, ...rest }: CountrySelectProps) => {
   return (
     <div className="relative" ref={dropdownRef}>
       <button
-        type="button"
-        onClick={() => setIsOpen(!isOpen)}
         className="PhoneInputCountry"
+        onClick={() => setIsOpen(!isOpen)}
+        type="button"
         {...rest}
       >
         {value && (
@@ -83,24 +83,24 @@ const CountrySelect = ({ value, onChange, ...rest }: CountrySelectProps) => {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -10, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: -10, scale: 0.95 }}
-            transition={{ duration: 0.15 }}
             className="absolute top-full left-0 mt-2 w-72 rounded-xl bg-[#1a2332] border border-white/10 shadow-2xl overflow-hidden z-60"
+            exit={{ opacity: 0, y: -10, scale: 0.95 }}
+            initial={{ opacity: 0, y: -10, scale: 0.95 }}
+            transition={{ duration: 0.15 }}
           >
             {/* Search */}
             <div className="p-3 border-b border-white/10 bg-black/20">
               <div className="relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-white/40" />
                 <input
-                  type="text"
-                  placeholder="Search country..."
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  className="w-full rounded-lg bg-black/40 border border-white/10 pl-9 pr-3 py-2 text-sm text-white placeholder:text-white/40 outline-none focus:border-emerald-500"
                   autoFocus
+                  className="w-full rounded-lg bg-black/40 border border-white/10 pl-9 pr-3 py-2 text-sm text-white placeholder:text-white/40 outline-none focus:border-emerald-500"
+                  onChange={(e) => setSearchQuery(e.target.value)}
                   onClick={(e) => e.stopPropagation()}
+                  placeholder="Search country..."
+                  type="text"
+                  value={searchQuery}
                 />
               </div>
             </div>
@@ -110,16 +110,16 @@ const CountrySelect = ({ value, onChange, ...rest }: CountrySelectProps) => {
               {filteredCountries.length > 0 ? (
                 filteredCountries.map((country) => (
                   <button
+                    className={`w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors hover:bg-emerald-500/10 ${
+                      value === country ? "bg-emerald-500/20" : ""
+                    }`}
                     key={country}
-                    type="button"
                     onClick={() => {
                       onChange(country);
                       setIsOpen(false);
                       setSearchQuery("");
                     }}
-                    className={`w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors hover:bg-emerald-500/10 ${
-                      value === country ? "bg-emerald-500/20" : ""
-                    }`}
+                    type="button"
                   >
                     <span className="text-xl">
                       {String.fromCodePoint(...[...country.toUpperCase()].map(char => 127397 + char.charCodeAt(0)))}

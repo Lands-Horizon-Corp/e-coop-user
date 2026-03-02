@@ -324,8 +324,8 @@ export default function DownloadSection() {
               <AnimatedSection animation="fadeUp" delay={0.5}>
                 <motion.a
                   className="group mt-8 inline-flex items-center gap-3 rounded-full bg-white px-8 py-4 text-gray-900 font-bold shadow-xl shadow-emerald-500/20 relative overflow-hidden"
-                  href={currentPackage.downloadUrl || "#"}
                   download={currentPackage.downloadUrl ? "ECoopSystem.exe" : undefined}
+                  href={currentPackage.downloadUrl || "#"}
                   whileHover={{ 
                     scale: 1.05, 
                     boxShadow: '0 0 40px rgba(52, 211, 153, 0.4)',
