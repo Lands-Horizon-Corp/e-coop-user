@@ -18,7 +18,7 @@
     "start": {
     "executor": "nx:run-commands",
     "options": {
-      "command": "bunx serve {outputPath} -l 3000 --single"
+      "command": "bunx serve dist/apps/downloads -l 3000 --single"
     }
   }
   }
