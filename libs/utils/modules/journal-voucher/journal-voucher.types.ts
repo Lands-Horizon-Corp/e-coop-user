@@ -9,6 +9,7 @@ import {
 import { IJournalVoucherTag } from '../journal-voucher-tag'
 import { IMemberProfile } from '../member-profile'
 import { IUser } from '../user'
+import { IUserOrganizationSettings } from '../user-organization'
 
 export interface IJournalVoucher extends IBaseEntityMeta {
     cash_voucher_number: string
@@ -84,9 +85,10 @@ export type TPrintMode = 'print' | 'print-undo' | 'approve'
 
 export type TJournalActionMode = 'approve-undo' | 'release' | 'print-only'
 
-export type IJournalVoucherPaginated = IPaginatedResult<IJournalVoucher>
+export interface IJournalVoucherPaginated extends IPaginatedResult<IJournalVoucher> {}
 
 export type TORJournalVoucherSettings = Omit<
     IJournalVoucherORSettings,
     'journal_voucher_or_unique'
->
+> &
+    Pick<IUserOrganizationSettings, 'journal_voucher_auto_increment'>

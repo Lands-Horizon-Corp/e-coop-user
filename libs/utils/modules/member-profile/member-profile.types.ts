@@ -61,6 +61,7 @@ import { IQrScanResult } from '../qr-crypto'
 import { IUserBase } from '../user/user.types'
 import {
     TMemberProfileMembershipInfoSchema,
+    TMemberProfilePersonalInfoSchema,
     TQuickCreateMemberProfileSchema,
 } from './member-profile.validation'
 
@@ -206,7 +207,7 @@ export interface IMemberProfile extends ITimeStamps, IAuditable {
     member_assets?: IMemberAsset[]
     member_incomes?: IMemberIncome[]
     // memberWallets?: IMemberWallet[] // ano to desu
-    member_address?: IMemberAddress[]
+    member_addresses?: IMemberAddress[]
     member_expenses?: IMemberExpense[]
     // memberDescriptions?: IMemberDescription[]
     member_close_remarks?: IMemberCloseRemark[]
@@ -220,7 +221,7 @@ export interface IMemberProfile extends ITimeStamps, IAuditable {
     latitude?: number
 }
 
-export type IMemberProfilePaginated = IPaginatedResult<IMemberProfile>
+export interface IMemberProfilePaginated extends IPaginatedResult<IMemberProfile> {}
 
 export type IMemberProfilePicker = Pick<
     IMemberProfile,
@@ -241,31 +242,33 @@ export interface IMemberIncomeRequest {
 
 // THIS IS ONLY USE FOR MEMBER PROFILE UPDATE
 // 📌 Identity & Personal Info
-export interface IMemberProfilePersonalInfoRequest {
-    first_name: string
-    middle_name?: string
-    last_name: string
-    full_name?: string
-    suffix?: string
-    member_gender_id?: TEntityId
-    birthdate?: string
-    contact_number?: string
-    business_contact_number?: string
+// export interface IMemberProfilePersonalInfoRequest {
+//     first_name: string
+//     middle_name?: string
+//     last_name: string
+//     full_name?: string
+//     suffix?: string
+//     member_gender_id?: TEntityId
+//     birthdate?: string
+//     contact_number?: string
+//     business_contact_number?: string
 
-    birth_place?: string // ISO ALPHA-3
+//     birth_place?: string // ISO ALPHA-3
 
-    civil_status: TCivilStatus
+//     civil_status: TCivilStatus
 
-    occupation_id?: TEntityId
+//     occupation_id?: TEntityId
 
-    business_address?: string
-    business_contact?: string
+//     business_address?: string
+//     business_contact?: string
 
-    member_address?: IMemberAddressRequest[]
+//     member_address?: IMemberAddressRequest[]
 
-    notes?: string
-    description?: string
-}
+//     notes?: string
+//     description?: string
+// }
+
+export type IMemberProfilePersonalInfoRequest = TMemberProfilePersonalInfoSchema
 
 // 🏛️ Membership Info
 export type IMemberProfileMembershipInfoRequest =
@@ -280,8 +283,32 @@ export interface IMemberProfileMediasRequest {
     signature_media_id?: TEntityId
 }
 
+export type IMemberTypeMock = {
+    id: string
+    prefix: string
+    name: string
+    description: string
+}
+export interface IMemberTypeCountResponse {
+    member_type_id: TEntityId
+    member_type: IMemberTypeMock
+    count: number
+}
+export interface IMemberProfileDashboardSummaryResponse {
+    total_members: number
+    total_male_members: number
+    total_female_members: number
+    member_type_counts: IMemberTypeCountResponse[]
+}
+
 export type TMemberPassbookGenerateSettings = Omit<
     IMemberPassbookSettings,
     'check_voucher_general_or_unique'
 > &
     Omit<IMemberPassbookSettings, 'member_profile_passbook_or_unique'>
+
+export interface IMemberProfileQuickSearchResponse {
+    id: string
+    full_name: string
+    media?: IMedia
+}

@@ -265,8 +265,8 @@ export const IAccountRequestSchema = z
         //     .enum(ACCOUNT_EXCLUSIVE_SETTING_TYPE)
         //     .default('None'),
 
-        default_payment_type_id: entityIdSchema.optional(),
-        default_payment_type: z.any().optional(),
+        // default_payment_type_id: entityIdSchema.optional(),
+        // default_payment_type: z.any().optional(),
 
         show_in_general_ledger_source_check_voucher: z.boolean().default(true),
         show_in_general_ledger_source_withdraw: z.boolean().default(true),
@@ -313,6 +313,8 @@ export const IAccountRequestSchema = z
             .default('None'),
 
         interest_diminishing_by_year: z.boolean().optional().default(false),
+
+        financial_statement_title_id: entityIdSchema.optional(),
     })
     .and(AccountTypeDiscriminator)
 

@@ -3,7 +3,7 @@ import { toast } from 'sonner'
 
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import { useQuickTransferContext } from '../context/quick-transfer-context'
+import { useQuickTransferContext } from '@/modules/quick-transfer/context/quick-transfer-context'
 import { TQuickWithdrawSchemaFormValues } from '../quick-transfer.validation'
 
 interface QuickTransferHotkeyProps {

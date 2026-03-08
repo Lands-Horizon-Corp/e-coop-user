@@ -16,10 +16,12 @@ import { TAPIQueryOptions, TEntityId } from '@/types'
 
 import type {
     IMemberProfile,
+    IMemberProfileDashboardSummaryResponse,
     IMemberProfileMembershipInfoRequest,
     IMemberProfilePaginated,
     IMemberProfilePersonalInfoRequest,
     IMemberProfileQuickCreateRequest,
+    IMemberProfileQuickSearchResponse,
     IMemberProfileRequest,
 } from './member-profile.types'
 import { TMemberProfileCoordinatesSchema } from './member-profile.validation'
@@ -84,8 +86,43 @@ export const declineMemberProfile = async (id: TEntityId) => {
     )
     return response.data
 }
+export const getMemberProfileDashboardSummary = async () => {
+    return (
+        await API.get<IMemberProfileDashboardSummaryResponse>(
+            `${memberProfileAPIRoute}/summary`
+        )
+    ).data
+}
 
-// 🪝 HOOK STARTS HERE
+export const getMemberProfileQuickSearch = async (search: string) => {
+    const url = qs.stringifyUrl({
+        url: `${memberProfileAPIRoute}/quick/search`,
+        query: { search },
+    })
+    const response = await API.get<IMemberProfileQuickSearchResponse[]>(url)
+    return response.data
+}
+
+export const useGetPendingMemberProfiles = ({
+    query,
+    options,
+}: {
+    query?: TAPIQueryOptions
+    options?: HookQueryOptions<IMemberProfile[], Error>
+} = {}) => {
+    return useQuery<IMemberProfile[], Error>({
+        queryKey: [memberProfileBaseKey, 'pending', query].filter(Boolean),
+
+        queryFn: () =>
+            getAllPendingMemberProfile({
+                query,
+            }),
+
+        staleTime: 1000 * 60, // 1 minute cache
+        ...options,
+    })
+}
+
 export const {
     useCreate: useCreateMemberProfile,
     useDeleteById: useDeleteMemberProfileById,
@@ -126,8 +163,12 @@ export const useQuickCreateMemberProfile = createMutationFactory<
             payload: data,
         })
     },
-    invalidationFn: (args) =>
-        createMutationInvalidateFn(memberProfileBaseKey, args),
+    invalidationFn: (args) => {
+        args.queryClient.invalidateQueries({
+            queryKey: ['auth'],
+        })
+        createMutationInvalidateFn(memberProfileBaseKey, args)
+    },
 })
 
 // 🪝 Custom Hook for Updating Membership Info
@@ -229,6 +270,18 @@ export const useGetPaginatedMemberProfileByMemberType = ({
     })
 }
 
+export const useGetMemberDashboardSummary = ({
+    options,
+}: {
+    options: HookQueryOptions<IMemberProfileDashboardSummaryResponse, Error>
+}) => {
+    return useQuery<IMemberProfileDashboardSummaryResponse, Error>({
+        queryKey: [memberProfileBaseKey, 'member-profile-summary'],
+        queryFn: getMemberProfileDashboardSummary,
+        ...options,
+    })
+}
+
 export const useLinkMemberProfileMemberType = createMutationFactory<
     IMemberProfile,
     Error,
@@ -271,5 +324,39 @@ export const useUnlinkMemberProfileMemberType = createMutationFactory<
         updateMutationInvalidationFn(memberProfileBaseKey, args)
     },
 })
+
+export const useGetMemberProfile = createMutationFactory<
+    IMemberProfile,
+    Error,
+    TEntityId
+>({
+    mutationFn: async (id) => {
+        const response = await API.get<IMemberProfile>(
+            `${memberProfileAPIRoute}/${id}`
+        )
+        return response.data
+    },
+    invalidationFn: (args) => {
+        args.queryClient.invalidateQueries({
+            queryKey: [memberProfileBaseKey, 'by-id', args.variables],
+        })
+    },
+})
+
+export const useGetMemberProfileQuickSearch = ({
+    search,
+    options,
+}: {
+    search: string
+    options?: HookQueryOptions<IMemberProfileQuickSearchResponse[], Error>
+}) => {
+    return useQuery<IMemberProfileQuickSearchResponse[], Error>({
+        queryKey: [memberProfileBaseKey, 'quick-search', search],
+        queryFn: () => getMemberProfileQuickSearch(search),
+        enabled: search.length >= 2,
+        staleTime: 1000 * 30,
+        ...options,
+    })
+}
 
 export const logger = Logger.getInstance('member-profile')

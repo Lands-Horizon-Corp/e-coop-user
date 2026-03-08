@@ -1,3 +1,4 @@
+import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
@@ -12,11 +13,13 @@ import {
     updateMutationInvalidationFn,
 } from '@/providers/repositories/mutation-factory'
 
-import { TAPIQueryOptions, TEntityId, UpdateIndexRequest } from '@/types'
+import { TAPIQueryOptions, TEntityId } from '@/types'
 
+import { TGeneralLedgerType } from '../general-ledger'
 import {
     IAccount,
     IAccountPaginated,
+    IAccountQuickSearchResponse,
     IAccountRequest,
     TAccountComputationsheetConnect,
     TAccountLoanConnect,
@@ -35,7 +38,7 @@ const { baseQueryKey, apiCrudHooks, apiCrudService } = createDataLayerFactory<
 
 export const accountBaseQueryKey = baseQueryKey
 
-export const { getAll: getAllAccounts } = apiCrudService
+export const { getAll: getAllAccounts, getById } = apiCrudService
 
 export const { API, route: accountAPIRoute } = apiCrudService
 
@@ -72,21 +75,31 @@ export const exportSelected = async (ids: TEntityId[]) => {
         { skipNull: true }
     )
 
-    await downloadFile(url, 'selected_banks_export.xlsx')
+    await downloadFile(url, 'selected_account_report.xlsx')
 }
 
-export const AccountUpdateIndex = async (
-    changedItems: UpdateIndexRequest[]
-): Promise<IAccount> => {
-    const response = await Promise.all(
-        changedItems.map((item) =>
-            API.put<{ accountId: TEntityId; index: number }, IAccount>(
-                `${accountAPIRoute}/${item.id}/index/${item.index}`
-            )
-        )
-    )
-    return response[0].data
+export const getAccountQuickSearch = async (search: string) => {
+    const url = qs.stringifyUrl({
+        url: `${accountAPIRoute}/quick/search`,
+        query: { search },
+    })
+
+    const response = await API.get<IAccountQuickSearchResponse[]>(url)
+    return response.data
 }
+
+// export const AccountUpdateIndex = async (
+//     changedItems: UpdateIndexRequest[]
+// ): Promise<IAccount> => {
+//     const response = await Promise.all(
+//         changedItems.map((item) =>
+//             API.put<{ accountId: TEntityId; index: number }, IAccount>(
+//                 `${accountAPIRoute}/${item.id}/index/${item.index}`
+//             )
+//         )
+//     )
+//     return response[0].data
+// }
 
 export const deleteAccountFromGLFS = async ({
     id,
@@ -100,15 +113,15 @@ export const deleteAccountFromGLFS = async ({
     ).data
 }
 
-export const useUpdateAccountIndex = createMutationFactory<
-    IAccount,
-    Error,
-    UpdateIndexRequest[]
->({
-    mutationFn: AccountUpdateIndex,
-    invalidationFn: (args) =>
-        updateMutationInvalidationFn('update-account-index', args),
-})
+// export const useUpdateAccountIndex = createMutationFactory<
+//     IAccount,
+//     Error,
+//     UpdateIndexRequest[]
+// >({
+//     mutationFn: AccountUpdateIndex,
+//     invalidationFn: (args) =>
+//         updateMutationInvalidationFn('update-account-index', args),
+// })
 
 export const useDeleteAccountFromGLFS = createMutationFactory<
     IAccount,
@@ -263,6 +276,64 @@ export const useAccountComputationDisconnect = createMutationFactory<
     },
 })
 
+export const useReorderAccounts = () => {
+    const queryClient = useQueryClient()
+
+    return useMutation({
+        mutationFn: async (variables: { ids: string[] }) => {
+            await API.put(`${accountAPIRoute}/live/order`, variables)
+        },
+
+        // 🔥 Optimistic Desu Sheesh
+        onMutate: async (variables) => {
+            await queryClient.cancelQueries({
+                queryKey: ['account', 'all', 'all'],
+            })
+
+            const previousAccounts = queryClient.getQueryData<IAccount[]>([
+                'account',
+                'all',
+                'all',
+            ])
+
+            queryClient.setQueryData<IAccount[]>(
+                ['account', 'all', 'all'],
+                (old) => {
+                    if (!old) return old
+
+                    const map = new Map(old.map((a) => [a.id, a]))
+
+                    const idSet = new Set(variables.ids)
+
+                    const reordered = variables.ids
+                        .map((id) => map.get(id))
+                        .filter(Boolean)
+
+                    const remaining = old.filter((a) => !idSet.has(a.id))
+
+                    return [...reordered, ...remaining] as IAccount[]
+                }
+            )
+
+            return { previousAccounts }
+        },
+
+        onError: (_err, _variables, context) => {
+            if (context?.previousAccounts) {
+                queryClient.setQueryData(
+                    ['account', 'all', 'all'],
+                    context.previousAccounts
+                )
+            }
+        },
+        onSuccess: () => {
+            queryClient.invalidateQueries({
+                queryKey: ['account', 'all', 'all'],
+            })
+        },
+    })
+}
+
 export const useAccountLoanConnect = createMutationFactory<
     IAccount,
     Error,
@@ -390,6 +461,35 @@ export const useMoveAccountOrderIndex = createMutationFactory<
         [accountBaseQueryKey, 'paginated'],
         [accountBaseQueryKey, 'all', 'loan-account-connections'],
     ],
+})
+
+export const useGetAccountQuickSearch = ({
+    search,
+    options,
+}: {
+    search: string
+    options?: HookQueryOptions<IAccountQuickSearchResponse[], Error>
+}) => {
+    return useQuery<IAccountQuickSearchResponse[], Error>({
+        queryKey: [accountBaseQueryKey, 'quick-search', search],
+        queryFn: () => getAccountQuickSearch(search),
+        enabled: search.length >= 2,
+        staleTime: 1000 * 30,
+        ...options,
+    })
+}
+
+export const useGetFirstAccountIndexByGlType = createMutationFactory<
+    number | undefined,
+    Error,
+    TGeneralLedgerType
+>({
+    mutationFn: async (glType) => {
+        const Accounts = await getAllAccounts()
+        return Accounts.find(
+            (account) => account.general_ledger_type === glType
+        )?.index
+    },
 })
 
 export const logger = Logger.getInstance('account')

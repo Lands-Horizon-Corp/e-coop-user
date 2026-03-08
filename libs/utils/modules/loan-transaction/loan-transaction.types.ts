@@ -27,11 +27,12 @@ import { IMemberAccountingLedger } from '../member-account-ledger'
 import { IMemberProfile } from '../member-profile'
 import { ITransactionBatch } from '../transaction-batch'
 import { IUser } from '../user'
+import { IUserOrganizationSettings } from '../user-organization'
 import {
     LoanEditTransactionSchema,
-    LoanTransactionPrintSchema,
     LoanTransactionSchema,
     TLoanTransactionAdjustmentSchema,
+    TLoanTransactionPrintSchema,
     TLoanTransactionSignatureSchema,
     TLoanTransactionSuggestedSchema,
 } from './loan-transaction.validation'
@@ -272,14 +273,14 @@ export type ILoanEditTransactionRequest = z.infer<
     typeof LoanEditTransactionSchema
 >
 
-export type ILoanTransactionPaginated = IPaginatedResult<ILoanTransaction>
+export interface ILoanTransactionPaginated extends IPaginatedResult<ILoanTransaction> {}
 
 // Loan Transaction Signature
 export type ILoanTransactionSignatureRequest = TLoanTransactionSignatureSchema
 
 // Loan Transaction Print Request
 
-export type ILoanTransactionPrintRequest = LoanTransactionPrintSchema
+export type ILoanTransactionPrintRequest = TLoanTransactionPrintSchema
 
 // for suggested amortization
 export type ILoanTransactionSuggested = { terms: number }
@@ -458,4 +459,8 @@ export type TORLoanVoucherSettings = Omit<
     ILoanVoucherORSettings,
     'loan_voucher_or_unique'
 > &
-    Omit<ICashCheckVoucherGeneralORSettings, 'check_voucher_general_or_unique'>
+    Omit<
+        ICashCheckVoucherGeneralORSettings,
+        'check_voucher_general_or_unique'
+    > &
+    Pick<IUserOrganizationSettings, 'loan_voucher_auto_increment'>

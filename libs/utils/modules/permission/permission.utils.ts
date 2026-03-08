@@ -60,10 +60,13 @@ export function hasPermission({
         : actions.some(evaluateAction)
 }
 // Extract only CRUD PERMS and returned as object of actions
-export type GetCrudPermissionOpts<
+export interface GetCrudPermissionOpts<
     TResourceData extends IAuditable = IAuditable,
     TUser extends { user_id: TEntityId } = IUserOrganization,
-> = Omit<IHasPermissionOpts<TResourceData, TUser>, 'action' | 'conditionLogic'>
+> extends Omit<
+    IHasPermissionOpts<TResourceData, TUser>,
+    'action' | 'conditionLogic'
+> {}
 
 // HELPER UTIL FUNC
 export const getActionDetails = (action: TPermissionAction) => {

@@ -3,7 +3,7 @@ import {
     IDepositSetting,
     IWithdrawSetting,
 } from '../branch-settings'
-import { TORBuilderOptions } from '../or-builder'
+import { TORBuilderOptions } from '@/modules/or-builder'
 import { TPaymentMode } from './quick-transfer.types'
 
 type TORSettingResult =
@@ -32,6 +32,7 @@ export const QuickTransferOR = (
         deposit_use_date_or,
         deposit_padding,
         deposit_common_or,
+        deposit_allow_user_input,
     } = branchSetting
 
     if (mode === 'withdraw') {
@@ -61,6 +62,7 @@ export const QuickTransferOR = (
             deposit_use_date_or,
             deposit_padding,
             deposit_common_or,
+            deposit_allow_user_input,
         },
     }
 }

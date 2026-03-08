@@ -1,10 +1,7 @@
 import z from 'zod'
 
-import {
-    EntityIdSchema,
-    descriptionTransformerSanitizer,
-    entityIdSchema,
-} from '@/validation'
+import { EntityIdSchema, descriptionTransformerSanitizer } from '@/validation'
+import { entityIdSchema } from '@/validation'
 
 import { CashCheckVoucherEntrySchema } from '../cash-check-voucher-entry'
 

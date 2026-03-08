@@ -21,7 +21,6 @@ export const useQuickTransferController = ({
     const {
         currentAuth: { user_organization },
     } = useAuthUserWithOrgBranch()
-
     const {
         settings_accounting_withdraw_default_value,
         settings_accounting_deposit_default_value,
@@ -34,6 +33,7 @@ export const useQuickTransferController = ({
         accountPickerState: useModalState(false),
         othersState: useModalState(false),
         paymentTypeModalState: useModalState(false),
+        ledger: useModalState(false),
     }
 
     const modalTransactionReverseState = useTransactionReverseSecurityStore()

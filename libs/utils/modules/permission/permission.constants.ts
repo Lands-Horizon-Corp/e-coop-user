@@ -719,6 +719,12 @@ export const PERMISSION_ALL_RESOURCE_ACTION = [
         supportedActions: ['Read'] as TPermissionAction[],
     },
     {
+        resource: 'Branch',
+        label: 'Branch  Module',
+        description: 'Allow access/actions branch',
+        supportedActions: generateBaseAction() as TPermissionAction[],
+    },
+    {
         resource: 'MyBranchFootsteps',
         label: 'My Branch Footsteps Module',
         description: 'Allow access to their current branch footsteps',
@@ -781,6 +787,23 @@ export const PERMISSION_ALL_RESOURCE_ACTION = [
         label: 'Area',
         description: 'Allow action/access for Area module',
         supportedActions: generateBaseAction() as TPermissionAction[],
+    },
+
+    {
+        resource: 'Feed',
+        label: 'Feed',
+        description: 'Allow action/access for Feed module',
+        supportedActions: generateBaseAction() as TPermissionAction[],
+    },
+    {
+        resource: 'FeedComment',
+        label: 'Feed Comment',
+        description: 'Allow delete action for Feed comment',
+        supportedActions: [
+            'Create',
+            'OwnDelete',
+            'Delete',
+        ] as TPermissionAction[],
     },
 ] as const satisfies PermissionResourceAction[]
 

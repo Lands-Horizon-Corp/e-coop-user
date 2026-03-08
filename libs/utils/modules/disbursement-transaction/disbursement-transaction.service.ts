@@ -15,7 +15,11 @@ import type {
     IDisbursementTransactionRequest,
 } from './disbursement-transaction.types'
 
-const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory<
+const {
+    apiCrudHooks,
+    apiCrudService,
+    baseQueryKey: disbursementTransactionBaseKey,
+} = createDataLayerFactory<
     IDisbursementTransaction,
     IDisbursementTransactionRequest
 >({
@@ -43,7 +47,6 @@ export const {
 // ex: export const getSomethingByOrgId = async () => disbursementTransactionAPI.get({....})
 
 // 🪝 HOOK STARTS HERE
-export { baseQueryKey } // might needed outside
 
 export const {
     useCreate: useCreateDisbursementTransaction,
@@ -80,15 +83,15 @@ export const useGetDisbursementTransaction = ({
     return useQuery<IDisbursementTransaction[], Error>({
         ...options,
         queryKey: [
-            'disbursement-transaction',
-            'filtered-paginated',
+            disbursementTransactionBaseKey,
+            'all',
             mode,
             userOrganizationId,
             transactionBatchId,
             query,
         ].filter(Boolean),
         queryFn: async () => {
-            let url = `${apiCrudService.route}/branch`
+            let url: string = `${apiCrudService.route}/branch`
 
             switch (mode) {
                 case 'branch':
@@ -153,7 +156,7 @@ export const useFilteredPaginatedDisbursementTransaction = ({
     return useQuery<IDisbursementTransactionPaginated, Error>({
         ...options,
         queryKey: [
-            'disbursement-transaction',
+            disbursementTransactionBaseKey,
             'filtered-paginated',
             mode,
             userOrganizationId,
@@ -161,7 +164,7 @@ export const useFilteredPaginatedDisbursementTransaction = ({
             query,
         ].filter(Boolean),
         queryFn: async () => {
-            let url = `${apiCrudService.route}/branch/search`
+            let url: string = `${apiCrudService.route}/branch/search`
 
             switch (mode) {
                 case 'branch':

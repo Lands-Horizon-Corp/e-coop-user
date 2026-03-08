@@ -19,13 +19,16 @@ import {
 import { TAPIQueryOptions, TEntityId } from '@/types'
 
 import { IBranch, getBranchesByOrganizationId } from '../branch'
+import { employeeBaseKey } from '../employee'
+import { TimeMachineRequest } from '../transaction-batch'
 import { IUserBase } from '../user/user.types'
 import {
     IOrgUserOrganizationGroup,
     IUserOrganization,
     IUserOrganizationPaginated,
     IUserOrganizationPermissionRequest,
-    IUserOrganizationSettingsRequest,
+    IUserOrganizationSettings,
+    IUserOrganizationTimeMachine,
 } from './user-organization.types'
 
 export const { apiCrudHooks, apiCrudService, baseQueryKey } =
@@ -168,10 +171,10 @@ export const updateUserOrganizationSettings = async ({
 }: {
     id?: TEntityId
     url?: string
-    data: IUserOrganizationSettingsRequest
+    data: IUserOrganizationSettings
 }) => {
     const response = await API.put<
-        IUserOrganizationSettingsRequest,
+        IUserOrganizationSettings,
         IUserOrganization
     >(
         url ??
@@ -418,6 +421,35 @@ export const useUpdateUserOrganizationPermission = createMutationFactory<
     },
 })
 
+export const useSetTimeMachine = createMutationFactory<
+    IUserOrganization,
+    Error,
+    IUserOrganizationTimeMachine
+>({
+    mutationFn: async (payload) => {
+        const response = await API.put<
+            IUserOrganizationTimeMachine,
+            IUserOrganization
+        >(`${userOrganizationAPIRoute}/time-machine/`, payload)
+        return response.data
+    },
+    invalidationFn: (args) => {
+        args.queryClient.invalidateQueries({
+            queryKey: ['auth', 'context'],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['transaction-batch'],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['employee', 'paginated'],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['user-organization', args.resultData.id],
+        })
+        updateMutationInvalidationFn('user-organization', args)
+    },
+})
+
 export const useCancelTimeMachineTime = createMutationFactory<
     IUserOrganization,
     Error,
@@ -434,6 +466,9 @@ export const useCancelTimeMachineTime = createMutationFactory<
             queryKey: ['auth', 'context'],
         })
         args.queryClient.invalidateQueries({
+            queryKey: ['transaction-batch'],
+        })
+        args.queryClient.invalidateQueries({
             queryKey: ['employee', 'paginated'],
         })
         args.queryClient.invalidateQueries({
@@ -446,15 +481,21 @@ export const useCancelTimeMachineTime = createMutationFactory<
 export const useUpdateUserOrganizationSettings = createMutationFactory<
     IUserOrganization,
     Error,
-    { id?: TEntityId; url?: string; data: IUserOrganizationSettingsRequest }
+    { id?: TEntityId; url?: string; data: IUserOrganizationSettings }
 >({
     mutationFn: (args) => updateUserOrganizationSettings(args),
     invalidationFn: (args) => {
         args.queryClient.invalidateQueries({
-            queryKey: ['employee', 'paginated'],
+            queryKey: [employeeBaseKey, 'paginated'],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['transaction-batch'],
         })
         args.queryClient.invalidateQueries({
             queryKey: ['user-organization', args.resultData.id],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['auth', 'context'],
         })
         updateMutationInvalidationFn('user-organization', args)
     },
@@ -479,5 +520,34 @@ export const useCanUserCanJoinBranch = ({
         enabled: !!organizationId && !!branchId && (options?.enabled ?? true),
     })
 }
+
+export const useTimeMachine = createMutationFactory<
+    IUserOrganization,
+    Error,
+    TimeMachineRequest
+>({
+    mutationFn: async (date) => {
+        const response = await API.put<TimeMachineRequest, IUserOrganization>(
+            `${userOrganizationAPIRoute}/time-machine`,
+            date
+        )
+        return response.data
+    },
+    invalidationFn: (args) => {
+        args.queryClient.invalidateQueries({
+            queryKey: ['auth', 'context'],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['transaction-batch'],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['employee', 'paginated'],
+        })
+        args.queryClient.invalidateQueries({
+            queryKey: ['user-organization', args.resultData.id],
+        })
+        updateMutationInvalidationFn('user-organization', args)
+    },
+})
 
 export const logger = Logger.getInstance('user-organization')

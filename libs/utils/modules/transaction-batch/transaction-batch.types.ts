@@ -47,6 +47,7 @@ export interface ITransactionBatch
     // FOR LESS
     petty_cash: number
     loan_releases: number
+    cash_check_voucher_total: number
     time_deposit_withdrawal: number
     savings_withdrawal: number
 
@@ -69,11 +70,13 @@ export interface ITransactionBatch
     ended_at?: string
     total_batch_time?: string
 
+    is_today: boolean
+
     currency_id: TEntityId
     currency: ICurrency
 }
 
-export type ITransactionBatchMinimal = Omit<
+export interface ITransactionBatchMinimal extends Omit<
     ITransactionBatch,
     | 'total_cash_collection'
     | 'total_deposit_entry'
@@ -90,7 +93,7 @@ export type ITransactionBatchMinimal = Omit<
     | 'total_actual_remittance'
     | 'total_actual_supposed_comparison'
     | keyof ITransactionBatchSignatures
->
+> {}
 
 export type TTransactionBatchFullorMin =
     | ITransactionBatch
@@ -183,4 +186,4 @@ export interface ITransactionBatchHistoryTotal {
     deposit_entry_credit_total: number
 }
 
-export type ITransactionBatchPaginated = IPaginatedResult<ITransactionBatch>
+export interface ITransactionBatchPaginated extends IPaginatedResult<ITransactionBatch> {}
