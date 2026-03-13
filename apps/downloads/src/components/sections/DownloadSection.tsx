@@ -72,9 +72,9 @@ const MemberCard = () => (
     </div>
     <div className="text-xl font-bold text-white mb-1">2,847</div>
     <div className="text-[11px] text-teal-100/50 mb-3">Active Members</div>
-    <div className="flex gap-1.5 mt-auto">
+      <div className="flex gap-1.5 mt-auto">
       {[...Array(4)].map((_, i) => (
-        <div className="w-5 h-5 rounded-full bg-gradient-to-br from-emerald-400/30 to-emerald-600/30 border border-white/10 flex items-center justify-center text-[8px] text-white/70" key={i}>
+        <div className="w-5 h-5 rounded-full bg-linear-to-br from-emerald-400/30 to-emerald-600/30 border border-white/10 flex items-center justify-center text-[8px] text-white/70" key={i}>
           {String.fromCharCode(65 + i)}
         </div>
       ))}
@@ -98,7 +98,7 @@ const TransactionCard = () => (
     <div className="flex items-end gap-1 h-10 mt-auto">
       {[40, 65, 45, 80, 55, 90, 70].map((h, i) => (
         <div
-          className="flex-1 rounded-t bg-gradient-to-t from-emerald-500/40 to-emerald-400/60"
+          className="flex-1 rounded-t bg-linear-to-t from-emerald-500/40 to-emerald-400/60"
           key={i}
           style={{ height: `${h}%` }}
         />
@@ -169,7 +169,7 @@ const LoanCard = () => (
 
     <div className="mt-4 flex items-center gap-2">
       <div className="flex-1 h-2 rounded-full bg-white/5 overflow-hidden">
-        <div className="w-4/5 h-full bg-gradient-to-r from-emerald-500 to-teal-400 rounded-full" />
+        <div className="w-4/5 h-full bg-linear-to-r from-emerald-500 to-teal-400 rounded-full" />
       </div>
       <span className="text-xs text-emerald-400 font-medium">80%</span>
     </div>
@@ -195,7 +195,7 @@ export default function DownloadSection() {
   return (
     <section className="relative z-10 py-24" id="download">
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-emerald-500/5 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-150 bg-emerald-500/5 rounded-full blur-3xl" />
       </div>
 
       <div className="px-6 md:px-10">
@@ -332,7 +332,7 @@ export default function DownloadSection() {
                   }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <span className="absolute inset-0 bg-gradient-to-r from-emerald-400/0 via-emerald-400/30 to-emerald-400/0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700" />
+                  <span className="absolute inset-0 bg-linear-to-r from-emerald-400/0 via-emerald-400/30 to-emerald-400/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
                   <Download className="h-5 w-5" />
                   Download {currentPackage.label}
                   <ArrowRight className="h-4 w-4 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
@@ -351,7 +351,7 @@ export default function DownloadSection() {
             {/* Right - Mockup */}
             <AnimatedSection animation="scale" delay={0.3}>
               <div className="relative">
-                <div className="absolute -inset-8 bg-gradient-to-r from-emerald-500/10 via-teal-500/10 to-emerald-500/10 rounded-full blur-3xl" />
+                <div className="absolute -inset-8 bg-linear-to-r from-emerald-500/10 via-teal-500/10 to-emerald-500/10 rounded-full blur-3xl" />
                 
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -377,7 +377,7 @@ export default function DownloadSection() {
                       {/* Content */}
                       <div className="p-6">
                         {/* App Header */}
-                        <div className="h-20 rounded-2xl bg-gradient-to-r from-emerald-500/10 to-teal-500/10 border border-white/5 flex items-center px-5 mb-5">
+                        <div className="h-20 rounded-2xl bg-linear-to-r from-emerald-500/10 to-teal-500/10 border border-white/5 flex items-center px-5 mb-5">
                           <div className="flex items-center gap-4">
                             <div className="h-11 w-11 rounded-xl bg-emerald-500/20 flex items-center justify-center">
                               <SelectedOSIcon className="h-6 w-6 text-emerald-400" />
@@ -392,19 +392,19 @@ export default function DownloadSection() {
                         {/* Three Stats Cards */}
                         <div className="grid grid-cols-3 gap-4 mb-5">
                           <motion.div 
-                            className="h-36 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
+                            className="h-36 rounded-xl bg-linear-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
                             whileHover={{ scale: 1.02, borderColor: 'rgba(52, 211, 153, 0.3)' }}
                           >
                             <MemberCard />
                           </motion.div>
                           <motion.div 
-                            className="h-36 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
+                            className="h-36 rounded-xl bg-linear-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
                             whileHover={{ scale: 1.02, borderColor: 'rgba(52, 211, 153, 0.3)' }}
                           >
                             <TransactionCard />
                           </motion.div>
                           <motion.div 
-                            className="h-36 rounded-xl bg-gradient-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
+                            className="h-36 rounded-xl bg-linear-to-br from-white/5 to-transparent border border-white/5 backdrop-blur-sm overflow-hidden"
                             whileHover={{ scale: 1.02, borderColor: 'rgba(52, 211, 153, 0.3)' }}
                           >
                             <ReportCard />
@@ -413,7 +413,7 @@ export default function DownloadSection() {
 
                         {/* Large Feature Card */}
                         <motion.div 
-                          className="h-44 rounded-2xl bg-gradient-to-br from-emerald-500/5 to-teal-500/5 border border-white/5 backdrop-blur-sm overflow-hidden"
+                          className="h-44 rounded-2xl bg-linear-to-br from-emerald-500/5 to-teal-500/5 border border-white/5 backdrop-blur-sm overflow-hidden"
                           whileHover={{ scale: 1.01, borderColor: 'rgba(52, 211, 153, 0.2)' }}
                         >
                           <LoanCard />

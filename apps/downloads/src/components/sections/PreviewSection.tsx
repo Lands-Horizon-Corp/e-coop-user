@@ -31,7 +31,7 @@ export default function PreviewSection() {
           <AnimatedSection animation="scale" delay={0.2}>
             <div className="relative group">
               {/* Glow effect behind */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500/20 via-teal-500/20 to-emerald-500/20 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-500" />
+              <div className="absolute -inset-4 bg-linear-to-r from-emerald-500/20 via-teal-500/20 to-emerald-500/20 rounded-[2.5rem] blur-2xl opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
               
               {/* Main container with overflow visible for phone and robot */}
               <div className="relative overflow-visible">
@@ -61,12 +61,12 @@ export default function PreviewSection() {
                   whileHover={{ scale: 1.05, rotate: -5 }}
                 >
                   {/* Phone frame - BLACK STROKE */}
-                  <div className="relative rounded-[3rem] bg-black p-2 shadow-2xl border-[1px] border-black">
+                  <div className="relative rounded-[3rem] bg-black p-2 shadow-2xl border border-black">
                     {/* Notch */}
                     <div className="absolute top-5 left-1/2 -translate-x-1/2 w-24 h-1.5 bg-black rounded-full z-10" />
                     
                     {/* Screen */}
-                    <div className="relative rounded-[2.5rem] overflow-hidden bg-slate-900 aspect-[9/16]">
+                    <div className="relative rounded-[2.5rem] overflow-hidden bg-slate-900 aspect-9/16">
                       <img 
                         alt="E-Cooperative Mobile App" 
                         className="w-full h-full object-cover" 
