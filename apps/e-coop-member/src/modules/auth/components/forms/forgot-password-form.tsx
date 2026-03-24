@@ -1,0 +1,139 @@
+import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
+
+import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
+
+import { cn } from '@/helpers'
+import { allErrorMessageExtractor } from '@/helpers/error-message-extractor'
+import { IForgetPasswordEntry } from '@/store/fake-store'
+
+import { FingerPrintIcon } from '@/components/icons'
+import LoadingSpinner from '@/components/spinners/loading-spinner'
+import { Button } from '@/components/ui/button'
+import { Form } from '@/components/ui/form'
+import FormErrorMessage from '@/components/ui/form-error-message'
+import FormFieldWrapper from '@/components/ui/form-field-wrapper'
+import { Input } from '@/components/ui/input'
+
+import { useFormHelper } from '@/hooks/use-form-helper'
+
+import { IClassProps, IForm } from '@/types'
+
+import { IUserForgotPasswordRequest } from '../../auth-types'
+import { useForgotPassword } from '../../auth.service'
+import { ForgotPasswordSchema } from '../../auth.validation'
+
+export interface ForgotPasswordFormProps
+    extends
+        IClassProps,
+        IForm<Partial<IUserForgotPasswordRequest>, IForgetPasswordEntry> {}
+
+const ForgotPasswordForm = ({
+    className,
+    ...formProps
+}: ForgotPasswordFormProps) => {
+    const form = useForm<IUserForgotPasswordRequest>({
+        resolver: standardSchemaResolver(ForgotPasswordSchema),
+        mode: 'onSubmit',
+        reValidateMode: 'onChange',
+        defaultValues: {
+            ...formProps.defaultValues,
+            key: formProps.defaultValues?.key ?? '',
+        },
+    })
+
+    const {
+        mutateAsync,
+        error: rawError,
+        isPending,
+        reset,
+    } = useForgotPassword({
+        options: {
+            // onSuccess: formProps.onSuccess,
+            onError: formProps.onError,
+        },
+    })
+
+    const error = allErrorMessageExtractor({
+        error: rawError,
+        showUnknownErrorMessage: true,
+    })
+
+    const { formRef, handleFocusError } =
+        useFormHelper<IUserForgotPasswordRequest>({
+            form,
+            ...formProps,
+            autoSave: false,
+            preventExitOnDirty: false,
+        })
+
+    const onSubmit = form.handleSubmit((formData) => {
+        reset()
+        toast.promise(mutateAsync(formData), {
+            loading: 'Wait..',
+            success: 'Reset Link Generated',
+            error: (error) =>
+                allErrorMessageExtractor<string>({
+                    error,
+                    showUnknownErrorMessage: true,
+                }) || 'unknown error',
+        })
+    }, handleFocusError)
+
+    return (
+        <Form {...form}>
+            <form
+                className={cn(
+                    'flex w-full flex-col gap-y-4 bg-card p-5 rounded-xl',
+                    className
+                )}
+                onSubmit={onSubmit}
+                ref={formRef}
+            >
+                <fieldset
+                    className="space-y-8"
+                    disabled={isPending || formProps.readOnly}
+                >
+                    <div className="space-y-4">
+                        <FormFieldWrapper
+                            control={form.control}
+                            label="Email/Contact *"
+                            name="key"
+                            render={({ field }) => (
+                                <Input
+                                    {...field}
+                                    autoComplete="email"
+                                    id={field.name}
+                                    placeholder="example@email.com"
+                                />
+                            )}
+                        />
+                    </div>
+                </fieldset>
+
+                <div className="space-y-2 py-1">
+                    <FormErrorMessage className="py-1" errorMessage={error} />
+                    <div className="flex items-center justify-end">
+                        <Button
+                            className="w-full self-end font-bold"
+                            disabled={isPending || formProps.readOnly}
+                            onClick={onSubmit}
+                            size="sm"
+                        >
+                            {isPending ? (
+                                <LoadingSpinner />
+                            ) : (
+                                <>
+                                    <FingerPrintIcon className="mr-1" /> Request
+                                    Reset
+                                </>
+                            )}
+                        </Button>
+                    </div>
+                </div>
+            </form>
+        </Form>
+    )
+}
+
+export default ForgotPasswordForm

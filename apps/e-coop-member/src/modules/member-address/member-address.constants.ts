@@ -1,0 +1,25 @@
+export const HOME_TYPES = [
+    'House',
+    'Apartment',
+    'Condominium',
+    'Townhouse',
+    'Duplex',
+    'Studio',
+    'Villa',
+    'Cottage',
+    'Bungalow',
+    'Penthouse',
+    'Office',
+    'Commercial Space',
+    'Shop/Store',
+    'Warehouse',
+    'Garage',
+    'Co-living Space',
+    'Serviced Apartment',
+    'Shared House',
+    'Farmhouse',
+    'Cabin',
+    'Other',
+] as const
+
+export type THomeType = (typeof HOME_TYPES)[number]

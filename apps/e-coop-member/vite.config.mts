@@ -6,12 +6,14 @@ import tailwindcss from '@tailwindcss/vite'
 import { tanstackRouter } from '@tanstack/router-plugin/vite'
 import UnheadVite from '@unhead/addons/vite'
 import react from '@vitejs/plugin-react'
+import { join } from 'path'
 import { dirname } from 'path'
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { fileURLToPath } from 'url'
 import { compression } from 'vite-plugin-compression2'
 import { defineConfig } from 'vitest/config'
+import { VitePWA } from 'vite-plugin-pwa'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -35,6 +37,7 @@ export default defineConfig({
         alias: {
             stream: 'stream-browserify',
             crypto: 'crypto-browserify',
+            '@': join(__dirname, 'src'),
         },
     },
 
@@ -43,6 +46,7 @@ export default defineConfig({
         tanstackRouter({ target: 'react', autoCodeSplitting: true }),
         react(),
         nxViteTsPaths(),
+        VitePWA({ registerType: 'autoUpdate' }),
         nxCopyAssetsPlugin(['*.md']),
         tailwindcss(),
         compression(),

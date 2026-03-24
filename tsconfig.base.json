@@ -1,27 +1,28 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "bundler", 
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2022",
-    "module": "esnext",
-    "lib": ["es2023", "dom", "dom.iterable"],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "jsx": "react-jsx", 
-    "allowImportingTsExtensions": true, 
-    "noEmit": true,
-    "paths": {
-      "@e-coop/utils": ["libs/utils/*"],
-      "@libs/utils": ["libs/utils/*"]
+    "compileOnSave": false,
+    "compilerOptions": {
+        "rootDir": ".",
+        "sourceMap": true,
+        "declaration": false,
+        "moduleResolution": "bundler",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "target": "es2022",
+        "module": "esnext",
+        "lib": ["es2023", "dom", "dom.iterable"],
+        "skipLibCheck": true,
+        "skipDefaultLibCheck": true,
+        "baseUrl": ".",
+        "jsx": "react-jsx",
+        "allowImportingTsExtensions": true,
+        "noEmit": true,
+        "paths": {
+            "@e-coop/utils": ["libs/utils/*"],
+            "@libs/utils": ["libs/utils/*"],
+            "@e-coop-monorepo/ui": ["libs/ui/src/index.ts"]
+        },
+        "strict": true
     },
-    "strict": true
-  },
-  "exclude": ["node_modules", "tmp"]
+    "exclude": ["node_modules", "tmp"]
 }

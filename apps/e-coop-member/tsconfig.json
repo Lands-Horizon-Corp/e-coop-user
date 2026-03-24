@@ -7,15 +7,21 @@
     "allowJs": false,
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
     "strict": true,
-    "types": ["vite/client", "vitest"]
+    "types": ["vite/client", "vitest"],
+    "paths": {
+      "@/*": ["apps/e-coop-member/src/*"],
+      "@/libs": ["libs/*"]
+    }
   },
   "files": [],
   "include": [
     "vite.config.mts",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
+    "src/**/*.json"
   ],
   "references": [
     {

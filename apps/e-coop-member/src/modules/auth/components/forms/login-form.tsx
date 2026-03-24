@@ -1,0 +1,170 @@
+import { Link } from '@tanstack/react-router'
+import { useForm } from 'react-hook-form'
+import { toast } from 'sonner'
+
+import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
+
+import { cn } from '@/helpers'
+import { allErrorMessageExtractor } from '@/helpers/error-message-extractor'
+
+import { FingerPrintIcon } from '@/components/icons'
+import LoadingSpinner from '@/components/spinners/loading-spinner'
+import { Button } from '@/components/ui/button'
+import { Form, FormItem } from '@/components/ui/form'
+import FormErrorMessage from '@/components/ui/form-error-message'
+import FormFieldWrapper from '@/components/ui/form-field-wrapper'
+import { Input } from '@/components/ui/input'
+import PasswordInput from '@/components/ui/password-input'
+
+import { useFormHelper } from '@/hooks/use-form-helper'
+
+import { IClassProps, IForm } from '@/types'
+
+import { IAuthContext, IUserLoginRequest } from '../../auth-types'
+import { useSignIn } from '../../auth.service'
+import { UserLoginRequestSchema } from '../../auth.validation'
+
+export interface LoginFormProps
+    extends IClassProps, IForm<Partial<IUserLoginRequest>, IAuthContext> {}
+
+const LoginForm = ({ className, ...formProps }: LoginFormProps) => {
+    const form = useForm<IUserLoginRequest>({
+        resolver: standardSchemaResolver(UserLoginRequestSchema),
+        mode: 'onSubmit',
+        reValidateMode: 'onChange',
+        defaultValues: {
+            ...formProps.defaultValues,
+            key: '',
+            password: '',
+        },
+    })
+
+    const {
+        mutateAsync,
+        error: rawError,
+        isPending,
+        reset,
+    } = useSignIn({
+        options: {
+            onSuccess: formProps.onSuccess,
+            onError: formProps.onError,
+        },
+    })
+
+    const error = allErrorMessageExtractor<string>({
+        error: rawError,
+        showUnknownErrorMessage: true,
+    })
+
+    const { formRef, handleFocusError } = useFormHelper<IUserLoginRequest>({
+        form,
+        ...formProps,
+        autoSave: false,
+        preventExitOnDirty: false,
+    })
+
+    const onSubmit = form.handleSubmit((formData) => {
+        reset()
+        toast.promise(
+            mutateAsync(formData, {
+                onSuccess: (data) => {
+                    form.reset({ key: data.user?.email })
+                },
+            }),
+            {
+                loading: 'Logging you in',
+                success: 'Logged in, welcome!',
+                error: (error) =>
+                    allErrorMessageExtractor<string>({
+                        error,
+                        showUnknownErrorMessage: true,
+                    }),
+            }
+        )
+    }, handleFocusError)
+
+    return (
+        <Form {...form}>
+            <form
+                className={cn(
+                    'flex w-full flex-col gap-y-4 bg-card p-5 rounded-xl',
+                    className
+                )}
+                onSubmit={onSubmit}
+                ref={formRef}
+            >
+                <fieldset
+                    className="space-y-8"
+                    disabled={isPending || formProps.readOnly}
+                >
+                    <div className="space-y-4">
+                        <FormFieldWrapper
+                            control={form.control}
+                            label="Email/Contact *"
+                            name="key"
+                            render={({ field }) => (
+                                <Input
+                                    {...field}
+                                    autoComplete="email"
+                                    id={field.name}
+                                    placeholder="example@email.com"
+                                />
+                            )}
+                        />
+                        <FormFieldWrapper
+                            control={form.control}
+                            label={
+                                <>
+                                    <span>Password *</span>
+                                    <Link
+                                        className="text-muted-foreground hover:text-primary hover:underline hover:border-b border-b-transparent border-b ease-in-out duration-100"
+                                        key={form.watch('key')}
+                                        search={{ key: form.getValues('key') }}
+                                        to="/auth/forgot-password"
+                                    >
+                                        Forgot Password?
+                                    </Link>
+                                </>
+                            }
+                            labelClassName="text-xs flex justify-between"
+                            name="password"
+                            render={({ field }) => (
+                                <FormItem>
+                                    <PasswordInput
+                                        {...field}
+                                        autoComplete="new-password"
+                                        defaultVisibility={false}
+                                        id={field.name}
+                                        placeholder="+8 Character Password"
+                                    />
+                                </FormItem>
+                            )}
+                        />
+                    </div>
+                </fieldset>
+
+                <div className="space-y-2 py-1">
+                    <FormErrorMessage className="py-1" errorMessage={error} />
+                    <div className="flex items-center justify-end">
+                        <Button
+                            className="w-full self-end font-bold"
+                            disabled={isPending || formProps.readOnly}
+                            onClick={onSubmit}
+                            size="sm"
+                        >
+                            {isPending ? (
+                                <LoadingSpinner />
+                            ) : (
+                                <>
+                                    <FingerPrintIcon className="mr-1" /> Sign In
+                                </>
+                            )}
+                        </Button>
+                    </div>
+                </div>
+            </form>
+        </Form>
+    )
+}
+
+export default LoginForm
