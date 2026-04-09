@@ -8,22 +8,22 @@ interface FooterProps {
 
 const quickLinks = [
   { label: "Get started", href: "#download" },
-  { label: "Terms and Conditions", href: "#policies" },
-  { label: "Privacy Policy", href: "#policies" },
-  { label: "Terms of use", href: "#policies" },
-  { label: "Cookie policy", href: "#policies" },
-  { label: "Data Protection Policy", href: "#policies" },
-  { label: "Risk Management Policy", href: "#policies" },
+  { label: "Terms and Conditions", href: "/policies/terms" },
+  { label: "Privacy Policy", href: "/policies/privacy" },
+  { label: "Terms of use", href: "/policies/terms" },
+  { label: "Cookie policy", href: "/policies/cookies" },
+  { label: "Data Protection Policy", href: "/policies/data-protection" },
+  { label: "Risk Management Policy", href: "/policies/risk-management" },
   { label: "FAQ", href: "#faq" },
   { label: "Developers", href: "#" },
 ];
 
 const policies = [
-  { label: "AML and CTF Policy", href: "#policies" },
-  { label: "Know Your Customer (KYC) Policy", href: "#policies" },
-  { label: "Complaint Handling and Dispute Resolution Policy", href: "#policies" },
-  { label: "Fair and Charges Policy", href: "#policies" },
-  { label: "Security Policy", href: "#policies" },
+  { label: "AML and CTF Policy", href: "/policies/aml-ctf" },
+  { label: "Know Your Customer (KYC) Policy", href: "/policies/kyc" },
+  { label: "Complaint Handling and Dispute Resolution Policy", href: "/policies/complaints" },
+  { label: "Fair and Charges Policy", href: "/policies/fee-charges" },
+  { label: "Security Policy", href: "/policies/security" },
 ];
 
 const socialLinks = [

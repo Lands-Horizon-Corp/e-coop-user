@@ -1,7 +1,11 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Mail, MapPin, Phone, Send, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Send, CheckCircle, AlertCircle, Search } from "lucide-react";
 import { AnimatedSection } from "../AnimatedSection";
+import PhoneInput, { getCountries, getCountryCallingCode } from 'react-phone-number-input';
+import en from 'react-phone-number-input/locale/en';
+import 'react-phone-number-input/style.css';
+import './ContactSection.css';
 
 const contactInfo = [
   {
@@ -24,51 +28,229 @@ const contactInfo = [
   }
 ];
 
+// Custom Country Select with Search
+interface CountrySelectProps {
+  value?: string;
+  onChange: (value: string) => void;
+  options?: unknown;
+}
+
+const CountrySelect = ({ value, onChange, ...rest }: CountrySelectProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [searchQuery, setSearchQuery] = useState("");
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+        setSearchQuery("");
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  const countries = getCountries();
+  const filteredCountries = countries.filter(country => {
+    const countryName = en[country]?.toLowerCase() || "";
+    const callingCode = getCountryCallingCode(country);
+    return (
+      countryName.includes(searchQuery.toLowerCase()) ||
+      callingCode.includes(searchQuery) ||
+      country.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+  });
+
+  return (
+    <div className="relative" ref={dropdownRef}>
+      <button
+        className="PhoneInputCountry"
+        onClick={() => setIsOpen(!isOpen)}
+        type="button"
+        {...rest}
+      >
+        {value && (
+          <span className="PhoneInputCountryIcon PhoneInputCountryIcon--border">
+            {String.fromCodePoint(...[...value.toUpperCase()].map(char => 127397 + char.charCodeAt(0)))}
+          </span>
+        )}
+        <svg className="PhoneInputCountrySelectArrow" viewBox="0 0 12 12">
+          <path d="M6 9L1 4h10z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            className="absolute top-full left-0 mt-2 w-72 rounded-xl bg-[#1a2332] border border-white/10 shadow-2xl overflow-hidden z-60"
+            exit={{ opacity: 0, y: -10, scale: 0.95 }}
+            initial={{ opacity: 0, y: -10, scale: 0.95 }}
+            transition={{ duration: 0.15 }}
+          >
+            {/* Search */}
+            <div className="p-3 border-b border-white/10 bg-black/20">
+              <div className="relative">
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-white/40" />
+                <input
+                  autoFocus
+                  className="w-full rounded-lg bg-black/40 border border-white/10 pl-9 pr-3 py-2 text-sm text-white placeholder:text-white/40 outline-none focus:border-emerald-500"
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  onClick={(e) => e.stopPropagation()}
+                  placeholder="Search country..."
+                  type="text"
+                  value={searchQuery}
+                />
+              </div>
+            </div>
+
+            {/* Country List */}
+            <div className="max-h-60 overflow-y-auto">
+              {filteredCountries.length > 0 ? (
+                filteredCountries.map((country) => (
+                  <button
+                    className={`w-full flex items-center gap-3 px-4 py-2.5 text-left transition-colors hover:bg-emerald-500/10 ${
+                      value === country ? "bg-emerald-500/20" : ""
+                    }`}
+                    key={country}
+                    onClick={() => {
+                      onChange(country);
+                      setIsOpen(false);
+                      setSearchQuery("");
+                    }}
+                    type="button"
+                  >
+                    <span className="text-xl">
+                      {String.fromCodePoint(...[...country.toUpperCase()].map(char => 127397 + char.charCodeAt(0)))}
+                    </span>
+                    <span className="flex-1 text-sm text-white/90">{en[country]}</span>
+                    <span className="text-sm text-emerald-400 font-medium">+{getCountryCallingCode(country)}</span>
+                  </button>
+                ))
+              ) : (
+                <div className="px-4 py-4 text-center text-sm text-white/40">
+                  No countries found
+                </div>
+              )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+};
+
+
 export default function ContactSection() {
   const [formState, setFormState] = useState({
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",
     message: ""
   });
+  const [phone, setPhone] = useState<string>();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [focusedField, setFocusedField] = useState<string | null>(null);
+  
+  // Validation state
+  const [errors, setErrors] = useState<{[key: string]: string}>({});
+  const [touched, setTouched] = useState<{[key: string]: boolean}>({});
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    
-    setIsSubmitting(false);
-    setIsSubmitted(true);
-    
-    // Reset after showing success
-    setTimeout(() => {
-      setIsSubmitted(false);
-      setFormState({
-        firstName: "",
-        lastName: "",
-        email: "",
-        phone: "",
-        message: ""
-      });
-    }, 3000);
+  // STRICT Email validation
+  const validateEmail = (email: string): boolean => {
+    if (!email) return true;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+  // Handle email input with validation
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    setFormState(prev => ({
+      ...prev,
+      email: value
+    }));
+
+    if (touched.email) {
+      if (value && !validateEmail(value)) {
+        setErrors(prev => ({ ...prev, email: 'Please enter a valid email (e.g., name@example.com)' }));
+      } else {
+        setErrors(prev => ({ ...prev, email: '' }));
+      }
+    }
+  };
+
+  // Handle blur - mark as touched and validate
+  const handleBlur = (field: string) => {
+    setFocusedField(null);
+    setTouched(prev => ({ ...prev, [field]: true }));
+
+    if (field === 'email') {
+      if (formState.email && !validateEmail(formState.email)) {
+        setErrors(prev => ({ ...prev, email: 'Please enter a valid email (e.g., name@example.com)' }));
+      } else {
+        setErrors(prev => ({ ...prev, email: '' }));
+      }
+    }
+
+    if (field === 'phone') {
+      if (!phone) {
+        setErrors(prev => ({ ...prev, phone: 'Please enter a valid phone number' }));
+      } else {
+        setErrors(prev => ({ ...prev, phone: '' }));
+      }
+    }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormState(prev => ({
       ...prev,
       [e.target.name]: e.target.value
     }));
   };
 
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Mark all as touched
+    setTouched({ email: true, phone: true, firstName: true, lastName: true, message: true });
+    
+    // Validate all
+    const newErrors: {[key: string]: string} = {};
+    
+    if (!formState.email) {
+      newErrors.email = 'Email is required';
+    } else if (!validateEmail(formState.email)) {
+      newErrors.email = 'Please enter a valid email (e.g., name@example.com)';
+    }
+    
+    if (!phone) {
+      newErrors.phone = 'Please enter a valid phone number';
+    }
+
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      return;
+    }
+    
+    setIsSubmitting(true);
+    await new Promise(resolve => setTimeout(resolve, 1500));
+    setIsSubmitting(false);
+    setIsSubmitted(true);
+    
+    setTimeout(() => {
+      setIsSubmitted(false);
+      setFormState({ firstName: "", lastName: "", email: "", message: "" });
+      setPhone(undefined);
+      setTouched({});
+      setErrors({});
+    }, 3000);
+  };
+
   return (
     <section className="relative z-10 py-24" id="contact">
-      {/* Background glow */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute bottom-0 left-1/4 w-[600px] h-[400px] bg-emerald-500/5 rounded-full blur-3xl" />
       </div>
@@ -81,9 +263,7 @@ export default function ContactSection() {
               className="inline-flex items-center gap-2 rounded-full bg-emerald-500/10 px-5 py-2 border border-emerald-500/20 mb-6"
               whileHover={{ scale: 1.05 }}
             >
-              <span className="text-xs font-bold tracking-widest text-emerald-300">
-                CONTACT
-              </span>
+              <span className="text-xs font-bold tracking-widest text-emerald-300">CONTACT</span>
             </motion.div>
             <h3 className="text-4xl md:text-5xl font-extrabold">
               Get in <span className="text-emerald-400">Touch</span>
@@ -97,9 +277,7 @@ export default function ContactSection() {
             {/* Left - Contact Info */}
             <div className="lg:col-span-2">
               <AnimatedSection animation="fadeUp" delay={0.1}>
-                <h4 className="text-lg font-bold text-white mb-6">
-                  Contact Information
-                </h4>
+                <h4 className="text-lg font-bold text-white mb-6">Contact Information</h4>
               </AnimatedSection>
 
               <div className="space-y-5">
@@ -115,9 +293,7 @@ export default function ContactSection() {
                       </div>
                       <div>
                         <div className="text-xs text-white/50 mb-1">{item.label}</div>
-                        <div className="text-sm text-teal-100/70 whitespace-pre-line">
-                          {item.value}
-                        </div>
+                        <div className="text-sm text-teal-100/70 whitespace-pre-line">{item.value}</div>
                       </div>
                     </motion.a>
                   </AnimatedSection>
@@ -204,7 +380,7 @@ export default function ContactSection() {
                     <input
                       className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       name="firstName"
-                      onBlur={() => setFocusedField(null)}
+                      onBlur={() => handleBlur('firstName')}
                       onChange={handleChange}
                       onFocus={() => setFocusedField('firstName')}
                       required
@@ -225,7 +401,7 @@ export default function ContactSection() {
                     <input
                       className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
                       name="lastName"
-                      onBlur={() => setFocusedField(null)}
+                      onBlur={() => handleBlur('lastName')}
                       onChange={handleChange}
                       onFocus={() => setFocusedField('lastName')}
                       required
@@ -233,7 +409,7 @@ export default function ContactSection() {
                     />
                   </div>
 
-                  {/* Email */}
+                  {/* Email with STRICT validation */}
                   <div className="md:col-span-2 relative">
                     <label className={cn(
                       "absolute left-4 transition-all duration-200 pointer-events-none",
@@ -244,51 +420,65 @@ export default function ContactSection() {
                       Email
                     </label>
                     <input
-                      className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
+                      className={cn(
+                        "w-full rounded-xl bg-black/40 border px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:ring-2",
+                        errors.email 
+                          ? "border-red-500 focus:border-red-500 focus:ring-red-500/20" 
+                          : touched.email && !errors.email && formState.email
+                            ? "border-emerald-500 focus:border-emerald-500 focus:ring-emerald-500/20"
+                            : "border-white/10 focus:border-emerald-500 focus:ring-emerald-500/20"
+                      )}
                       name="email"
-                      onBlur={() => setFocusedField(null)}
-                      onChange={handleChange}
+                      onBlur={() => handleBlur('email')}
+                      onChange={handleEmailChange}
                       onFocus={() => setFocusedField('email')}
                       required
                       type="email"
                       value={formState.email}
                     />
+                    {errors.email && (
+                      <motion.div 
+                        animate={{ opacity: 1, y: 0 }}
+                        className="flex items-center gap-1 mt-1.5"
+                        initial={{ opacity: 0, y: -10 }}
+                      >
+                        <AlertCircle className="h-3.5 w-3.5 text-red-400" />
+                        <p className="text-xs text-red-400">{errors.email}</p>
+                      </motion.div>
+                    )}
                   </div>
 
-                  {/* Phone */}
+                  {/* Phone Input with react-phone-number-input */}
                   <div className="md:col-span-2">
-                    <div className="flex gap-3">
-                      <select
-                        className="w-28 rounded-xl bg-black/40 border border-white/10 px-3 py-3 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
-                        defaultValue="+63"
+                    <label className="block text-xs text-emerald-400 mb-2">
+                      Phone Number
+                    </label>
+                    <PhoneInput
+                      className={cn(
+                        "phone-input-custom",
+                        errors.phone 
+                          ? "phone-input-error" 
+                          : touched.phone && phone
+                            ? "phone-input-success"
+                            : ""
+                      )}
+                      countrySelectComponent={CountrySelect}
+                      defaultCountry="PH"
+                      international
+                      onBlur={() => handleBlur('phone')}
+                      onChange={setPhone}
+                      value={phone}
+                    />
+                    {errors.phone && (
+                      <motion.div 
+                        animate={{ opacity: 1, y: 0 }}
+                        className="flex items-center gap-1 mt-1.5"
+                        initial={{ opacity: 0, y: -10 }}
                       >
-                        <option value="+63">🇵🇭 +63</option>
-                        <option value="+1">🇺🇸 +1</option>
-                        <option value="+44">🇬🇧 +44</option>
-                        <option value="+61">🇦🇺 +61</option>
-                        <option value="+65">🇸🇬 +65</option>
-                        <option value="+81">🇯🇵 +81</option>
-                      </select>
-                      <div className="relative flex-1">
-                        <label className={cn(
-                          "absolute left-4 transition-all duration-200 pointer-events-none",
-                          focusedField === 'phone' || formState.phone
-                            ? "top-1 text-xs text-emerald-400"
-                            : "top-3.5 text-sm text-white/40"
-                        )}>
-                          Phone Number
-                        </label>
-                        <input
-                          className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20"
-                          name="phone"
-                          onBlur={() => setFocusedField(null)}
-                          onChange={handleChange}
-                          onFocus={() => setFocusedField('phone')}
-                          type="tel"
-                          value={formState.phone}
-                        />
-                      </div>
-                    </div>
+                        <AlertCircle className="h-3.5 w-3.5 text-red-400" />
+                        <p className="text-xs text-red-400">{errors.phone}</p>
+                      </motion.div>
+                    )}
                   </div>
 
                   {/* Message */}
@@ -304,7 +494,7 @@ export default function ContactSection() {
                     <textarea
                       className="w-full rounded-xl bg-black/40 border border-white/10 px-4 pt-6 pb-2 text-sm text-white outline-none transition-all duration-200 focus:border-emerald-500 focus:ring-2 focus:ring-emerald-500/20 resize-none"
                       name="message"
-                      onBlur={() => setFocusedField(null)}
+                      onBlur={() => handleBlur('message')}
                       onChange={handleChange}
                       onFocus={() => setFocusedField('message')}
                       required
