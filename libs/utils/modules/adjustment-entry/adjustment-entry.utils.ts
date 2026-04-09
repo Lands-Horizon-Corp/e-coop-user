@@ -1,5 +1,6 @@
-import { TORAdjustmentVoucherSettings } from '.'
 import { buildOR } from '@/modules/or-builder'
+
+import { TORAdjustmentVoucherSettings } from '.'
 
 export const isAllowedInputAdjustmentVoucherOR = (
     orOptions?: TORAdjustmentVoucherSettings

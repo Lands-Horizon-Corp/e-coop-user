@@ -40,6 +40,8 @@ export interface IDisbursementTransactionRequest {
     amount: number
 }
 
-export type IDisbursementTransactionPaginated = IPaginatedResult<IDisbursementTransaction>
+export type IDisbursementTransactionPaginated =
+    IPaginatedResult<IDisbursementTransaction>
 
-export type IDisbursementTransactionPaginated = IPaginatedResult<IDisbursementTransaction>
+export type IDisbursementTransactionPaginated =
+    IPaginatedResult<IDisbursementTransaction>

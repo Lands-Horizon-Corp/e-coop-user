@@ -1,6 +1,5 @@
 export const spoofErrorMessages = {
-    ERR_NO_FILE_UPLOADED: 
-        'No file uploaded. Please provide a selfie image.',
+    ERR_NO_FILE_UPLOADED: 'No file uploaded. Please provide a selfie image.',
     ERR_NO_FACE:
         'No face detected in the image. Please provide a clear image of your face.',
     ERR_NOT_FRONTAL:

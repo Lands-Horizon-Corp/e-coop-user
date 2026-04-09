@@ -1,4 +1,5 @@
 import { buildOR } from '@/modules/or-builder'
+
 import { TORCashCheckSettings } from './cash-check-voucher.types'
 
 export const isAllowedInputCashCheckOR = (orOptions?: TORCashCheckSettings) => {

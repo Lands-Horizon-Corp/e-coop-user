@@ -1,18 +1,18 @@
-import { StrictMode } from 'react';
+import { StrictMode } from 'react'
 
-import { disableReactDevTools } from '@fvilers/disable-react-devtools';
-import { createRoot } from 'react-dom/client';
-import { registerSW } from 'virtual:pwa-register';
+import { disableReactDevTools } from '@fvilers/disable-react-devtools'
+import { createRoot } from 'react-dom/client'
+import { registerSW } from 'virtual:pwa-register'
 
-import App from './app';
-import { APP_ENV } from './constants';
-import './index.css';
+import App from './app'
+import { APP_ENV } from './constants'
+import './index.css'
 
 // Enhanced PWA registration with update notification
 const updateSW = registerSW({
     onNeedRefresh() {
         if (confirm('New content available. Reload to update?')) {
-            updateSW(true);
+            updateSW(true)
         }
     },
     onOfflineReady() {
@@ -20,21 +20,21 @@ const updateSW = registerSW({
     },
     onRegistered(r: ServiceWorkerRegistration | undefined) {
         if (APP_ENV === 'development') {
-            console.warn('SW Registered: ', r);
+            console.warn('SW Registered: ', r)
         }
     },
     onRegisterError(error: unknown) {
-        console.error('SW registration error', error);
+        console.error('SW registration error', error)
     },
     immediate: true,
-});
+})
 
 if (APP_ENV !== 'development') {
-    disableReactDevTools();
+    disableReactDevTools()
 }
 
 createRoot(document.getElementById('root')!).render(
     <StrictMode>
         <App />
     </StrictMode>
-);
+)

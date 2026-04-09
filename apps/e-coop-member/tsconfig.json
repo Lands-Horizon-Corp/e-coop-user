@@ -11,8 +11,25 @@
     "strict": true,
     "types": ["vite/client", "vitest"],
     "paths": {
-      "@/*": ["apps/e-coop-member/src/*"],
-      "@/libs": ["libs/*"]
+      // 1. Ensure the app can read the global aliases
+      "@e-coop/utils": ["../../libs/utils/src/index.ts"],
+      "@e-coop/utils/*": ["../../libs/utils/src/*"],
+      "@e-coop-monorepo/ui": ["../../libs/ui/src/index.ts"],
+      "@e-coop-monorepo/ui/*": ["../../libs/ui/src/*"],
+      
+      // 2. The Migration Hack (routes old local imports to the new libs)
+      "@/helpers/*": ["libs/utils/helpers/*"],
+      "@/hooks/*": ["libs/utils/hooks/*"],
+      "@/validation/*": ["libs/utils/validation/*"],
+      "@/types/*": ["libs/utils/types/*"],
+      "@/contexts/*": ["libs/utils/contexts/*"],
+      "@/providers/*": ["libs/utils/providers/*"],
+      
+      // 👇 UI Migration Hack pointing to your Shadcn components
+      "@/components/*": ["libs/ui/src/lib/components/*"],
+      
+      // 3. The fallback for local app files
+      "@/*": ["./src/*"]
     }
   },
   "files": [],

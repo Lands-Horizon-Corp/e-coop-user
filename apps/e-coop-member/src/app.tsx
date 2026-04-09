@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useState } from 'react'
 
 import {
     QueryClient,
     QueryClientProvider,
     matchQuery,
-} from '@tanstack/react-query';
-import { MutationCache } from '@tanstack/react-query';
-import { RouterProvider, createRouter } from '@tanstack/react-router';
+} from '@tanstack/react-query'
+import { MutationCache } from '@tanstack/react-query'
+import { RouterProvider, createRouter } from '@tanstack/react-router'
 
-import MapProvider from './components/map/map.provider';
-import { ThemeProvider } from './providers/theme/provider/theme-provider';
+import MapProvider from './components/map/map.provider'
+import { ThemeProvider } from './providers/theme/provider/theme-provider'
 // import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
 // import SpySvg from '../src/assets/spy.svg';
@@ -20,13 +20,13 @@ import { ThemeProvider } from './providers/theme/provider/theme-provider';
 // import MouseTrailEffect from './components/ui/mouse-trail-effect';
 // import { APP_ENV } from './constants';
 // import { useIncognitoDetector } from './hooks/use-incognito-detector';
-import { routeTree } from './routeTree.gen';
+import { routeTree } from './routeTree.gen'
 
-const router = createRouter({ routeTree });
+const router = createRouter({ routeTree })
 
 declare module '@tanstack/react-router' {
     interface Register {
-        router: typeof router;
+        router: typeof router
     }
 }
 
@@ -45,8 +45,8 @@ const AppContent = () => {
                 size={10}
             /> */}
         </>
-    );
-};
+    )
+}
 
 const App = () => {
     const [queryClient] = useState(
@@ -64,12 +64,12 @@ const App = () => {
                                 mutation.meta?.invalidates?.some((queryKey) =>
                                     matchQuery({ queryKey }, query)
                                 ) ?? true,
-                        });
+                        })
                     }
                 },
             }),
         })
-    );
+    )
     // const { isChecking, isAllowed } = useIncognitoDetector({
     //     onNotAllowed: () => {
     //         localStorage.clear();
@@ -108,7 +108,7 @@ const App = () => {
             </ThemeProvider>
             {/* <ReactQueryDevtools initialIsOpen={false} /> */}
         </QueryClientProvider>
-    );
-};
+    )
+}
 
-export default App;
+export default App

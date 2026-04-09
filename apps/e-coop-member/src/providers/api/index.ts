@@ -202,7 +202,6 @@ const API = {
     },
 }
 
-
 export const SpoofingAPI = {
     async uploadFile<R = TSpoofingResponse>(
         url: string,

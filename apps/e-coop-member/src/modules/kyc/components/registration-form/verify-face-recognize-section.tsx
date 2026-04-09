@@ -157,10 +157,11 @@ export const VerifyFaceRecognitionSection = ({
                                 minScreenshotWidth={500}
                                 ref={camRef}
                                 screenshotFormat="image/jpeg"
-                                videoConstraints={{ 
+                                videoConstraints={{
                                     facingMode: 'user',
                                     width: { ideal: 500 },
-                                    height: { ideal: 500 }, }}
+                                    height: { ideal: 500 },
+                                }}
                             />
                         )}
 

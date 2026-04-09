@@ -12,8 +12,8 @@ import rollupNodePolyFill from 'rollup-plugin-node-polyfills'
 import { visualizer } from 'rollup-plugin-visualizer'
 import { fileURLToPath } from 'url'
 import { compression } from 'vite-plugin-compression2'
-import { defineConfig } from 'vitest/config'
 import { VitePWA } from 'vite-plugin-pwa'
+import { defineConfig } from 'vitest/config'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)

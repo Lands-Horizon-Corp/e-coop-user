@@ -1,9 +1,10 @@
+import { TORBuilderOptions } from '@/modules/or-builder'
+
 import {
     IBranchSettings,
     IDepositSetting,
     IWithdrawSetting,
 } from '../branch-settings'
-import { TORBuilderOptions } from '@/modules/or-builder'
 import { TPaymentMode } from './quick-transfer.types'
 
 type TORSettingResult =

@@ -1,33 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils';
+import { cn } from '@/helpers/tw-utils'
 
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogTitle,
-} from '@/components/ui/dialog';
+} from '@/components/ui/dialog'
 
 const ConnectionProvider = ({ interval = 10_000 }: { interval?: number }) => {
-    const [isConnected, setIsConnected] = useState(true);
+    const [isConnected, setIsConnected] = useState(true)
 
     useEffect(() => {
         const updateConnectionStatus = () => {
-            setIsConnected(navigator.onLine);
-        };
+            setIsConnected(navigator.onLine)
+        }
 
-        const checkerFunction = setInterval(updateConnectionStatus, interval);
+        const checkerFunction = setInterval(updateConnectionStatus, interval)
 
-        window.addEventListener('online', updateConnectionStatus);
-        window.addEventListener('offline', updateConnectionStatus);
+        window.addEventListener('online', updateConnectionStatus)
+        window.addEventListener('offline', updateConnectionStatus)
 
         return () => {
-            clearInterval(checkerFunction);
-            window.removeEventListener('online', updateConnectionStatus);
-            window.removeEventListener('offline', updateConnectionStatus);
-        };
-    }, [interval]);
+            clearInterval(checkerFunction)
+            window.removeEventListener('online', updateConnectionStatus)
+            window.removeEventListener('offline', updateConnectionStatus)
+        }
+    }, [interval])
 
     return (
         <Dialog open={!isConnected}>
@@ -147,7 +147,7 @@ const ConnectionProvider = ({ interval = 10_000 }: { interval?: number }) => {
                 </DialogDescription>
             </DialogContent>
         </Dialog>
-    );
-};
+    )
+}
 
-export default ConnectionProvider;
+export default ConnectionProvider

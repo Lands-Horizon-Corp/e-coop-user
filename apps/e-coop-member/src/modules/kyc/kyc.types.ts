@@ -28,8 +28,6 @@ export type IKYCVerifyAddressesRequest = TKYCVerifyAddressesSchema
 export type IKYCVerifyGovernmentBenefitsRequest =
     TKYCVerifyGovernmentBenefitsSchema
 
-
-
 export type TSpoofErrorMessagesKeys = keyof typeof spoofErrorMessages
 
 export type TSpoofingResponse = {
