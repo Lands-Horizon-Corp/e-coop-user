@@ -59,7 +59,6 @@ export const useLocationInfo = () => {
             if (isErrorTimezones) {
                 console.error('Error loading timezone data.')
             }
-            // eslint-disable-next-line react-hooks/set-state-in-effect
             setCountryName(null)
             setStateName(null)
             setCountryAlpha2Code(undefined)

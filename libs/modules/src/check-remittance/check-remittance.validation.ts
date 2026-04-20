@@ -1,0 +1,31 @@
+import z from 'zod'
+
+import {
+    descriptionTransformerSanitizer,
+    entityIdSchema,
+    stringDateWithTransformSchema,
+} from '@/validation'
+
+export const CheckRemittanceSchema = z.object({
+    bank_id: entityIdSchema,
+    media_id: entityIdSchema.optional(),
+    media: z.any(), // pang view lamang
+
+    transaction_batch_id: entityIdSchema.optional(),
+
+    branch_id: entityIdSchema.optional(),
+    organization_id: entityIdSchema.optional(),
+    employee_user_id: entityIdSchema.optional(),
+
+    currency_id: entityIdSchema,
+    currency: z.any(),
+
+    reference_number: z.string().min(1, 'Reference Number is required'),
+    account_name: z.string().min(1, 'Account Name is required'),
+    amount: z.coerce.number().min(1, 'Minimum amount is 1'),
+    date_entry: stringDateWithTransformSchema,
+    description: z
+        .string()
+        .optional()
+        .transform(descriptionTransformerSanitizer),
+})
