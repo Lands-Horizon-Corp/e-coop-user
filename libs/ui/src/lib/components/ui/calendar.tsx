@@ -1,13 +1,21 @@
+'use client'
+
 import * as React from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { DayButton, DayPicker, getDefaultClassNames } from 'react-day-picker'
+import {
+    ChevronDownIcon,
+    ChevronLeftIcon,
+    ChevronRightIcon,
+} from 'lucide-react'
+import {
+    type DayButton,
+    DayPicker,
+    getDefaultClassNames,
+} from 'react-day-picker'
 
 import { Button, buttonVariants } from '@/components/ui/button'
 
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon } from '../icons'
-
-export type DayPickerProp = React.ComponentProps<typeof DayPicker>
+import { cn } from '@/lib/utils'
 
 function Calendar({
     className,
@@ -18,7 +26,7 @@ function Calendar({
     formatters,
     components,
     ...props
-}: DayPickerProp & {
+}: React.ComponentProps<typeof DayPicker> & {
     buttonVariant?: React.ComponentProps<typeof Button>['variant']
 }) {
     const defaultClassNames = getDefaultClassNames()
@@ -95,7 +103,10 @@ function Calendar({
                     defaultClassNames.week_number
                 ),
                 day: cn(
-                    'relative w-full h-full p-0 text-center [&:first-child[data-selected=true]_button]:rounded-l-md [&:last-child[data-selected=true]_button]:rounded-r-md group/day aspect-square select-none',
+                    'relative w-full h-full p-0 text-center [&:last-child[data-selected=true]_button]:rounded-r-md group/day aspect-square select-none',
+                    props.showWeekNumber
+                        ? '[&:nth-child(2)[data-selected=true]_button]:rounded-l-md'
+                        : '[&:first-child[data-selected=true]_button]:rounded-l-md',
                     defaultClassNames.day
                 ),
                 range_start: cn(
@@ -111,7 +122,7 @@ function Calendar({
                     defaultClassNames.range_end
                 ),
                 today: cn(
-                    'bg-accent  rounded-md data-[selected=true]:rounded-none',
+                    'bg-accent text-accent-foreground rounded-md data-[selected=true]:rounded-none',
                     defaultClassNames.today
                 ),
                 outside: cn(
@@ -201,7 +212,7 @@ function CalendarDayButton({
     return (
         <Button
             className={cn(
-                'data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]: data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover: flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md [&>span]:text-xs [&>span]:opacity-70',
+                'data-[selected-single=true]:bg-primary data-[selected-single=true]:text-primary-foreground data-[range-middle=true]:bg-accent data-[range-middle=true]:text-accent-foreground data-[range-start=true]:bg-primary data-[range-start=true]:text-primary-foreground data-[range-end=true]:bg-primary data-[range-end=true]:text-primary-foreground group-data-[focused=true]/day:border-ring group-data-[focused=true]/day:ring-ring/50 dark:hover:text-accent-foreground flex aspect-square size-auto w-full min-w-(--cell-size) flex-col gap-1 leading-none font-normal group-data-[focused=true]/day:relative group-data-[focused=true]/day:z-10 group-data-[focused=true]/day:ring-[3px] data-[range-end=true]:rounded-md data-[range-end=true]:rounded-r-md data-[range-middle=true]:rounded-none data-[range-start=true]:rounded-md data-[range-start=true]:rounded-l-md [&>span]:text-xs [&>span]:opacity-70',
                 defaultClassNames.day,
                 className
             )}

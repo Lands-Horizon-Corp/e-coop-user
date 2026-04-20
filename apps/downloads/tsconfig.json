@@ -10,7 +10,7 @@
     "strict": true,
     "types": ["vite/client", "vitest"]
   },
-  "files": [],
+  "files": ["src/App.tsx"],
   "include": [
     "vite.config.mts",
     "src/**/*.ts",

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, Variants } from 'framer-motion'
 import {
     ArrowRightLeft,
     Banknote,
@@ -89,16 +89,18 @@ const floatingCards = [
     },
 ]
 
+type CoinShade = 'lightest' | 'light' | 'medium' | 'base' | 'dark' | 'darkest';
+
 const miniCoins = [
-    { symbol: '$', backSymbol: '₱', shade: 'light' },
-    { symbol: '€', backSymbol: '£', shade: 'base' },
-    { symbol: '¥', backSymbol: '₹', shade: 'dark' },
-    { symbol: '₩', backSymbol: '₿', shade: 'lightest' },
-    { symbol: '¢', backSymbol: '₣', shade: 'darkest' },
-    { symbol: '₺', backSymbol: '₴', shade: 'medium' },
+    { symbol: '$', backSymbol: '₱', shade: 'light' as CoinShade },
+    { symbol: '€', backSymbol: '£', shade: 'base' as CoinShade },
+    { symbol: '¥', backSymbol: '₹', shade: 'dark' as CoinShade },
+    { symbol: '₩', backSymbol: '₿', shade: 'lightest' as CoinShade },
+    { symbol: '¢', backSymbol: '₣', shade: 'darkest' as CoinShade },
+    { symbol: '₺', backSymbol: '₴', shade: 'medium' as CoinShade },
 ]
 
-const coinColors = {
+const coinColors: Record<CoinShade, { from: string; to: string; edge: [string, string] }> = {
     lightest: { from: '#a7f3d0', to: '#34d399', edge: ['#6ee7b7', '#34d399'] },
     light: { from: '#6ee7b7', to: '#10b981', edge: ['#34d399', '#10b981'] },
     medium: { from: '#34d399', to: '#059669', edge: ['#10b981', '#059669'] },
@@ -118,20 +120,19 @@ const containerVariants = {
     },
 }
 
-const itemVariants = {
+const itemVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
         opacity: 1,
         y: 0,
         transition: {
             duration: 0.5,
-            ease: 'easeOut',
+            ease: [0.42, 0, 0.58, 1],
         },
     },
 }
 
-// Smooth gradient with many stops to prevent banding
-const createSmoothGradient = (color1, color2, angle = 135) => {
+const createSmoothGradient = (color1: string, color2: string, angle = 135) => {
     return `linear-gradient(${angle}deg, 
     ${color1} 0%, 
     ${color2} 11%,
@@ -152,6 +153,12 @@ const RealisticCoin = ({
     colors,
     size = 'normal',
     isMain = false,
+}: {
+    symbol: string
+    backSymbol: string
+    colors: { from: string; to: string; edge: [string, string] }
+    size?: 'small' | 'normal' | 'large'
+    isMain?: boolean
 }) => {
     const sizeClasses = {
         small: 'w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-sm sm:text-base lg:text-lg',

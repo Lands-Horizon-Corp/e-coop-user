@@ -1,5 +1,0 @@
-export * from './generated-savings-interest.types'
-export * from './generated-savings-interest.utils'
-export * from './generated-savings-interest.service'
-export * from './generated-savings-interest.constant'
-export * from './generated-savings-interest.validation'

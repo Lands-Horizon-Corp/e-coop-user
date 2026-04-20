@@ -39,7 +39,7 @@
     "src/**/*.tsx",
     "src/**/*.d.ts",
     "src/**/*.json"
-  ],
+, "../../libs/ui/src/lib/types/reports/report-base.tsx"  ],
   "references": [
     {
       "path": "./tsconfig.app.json"

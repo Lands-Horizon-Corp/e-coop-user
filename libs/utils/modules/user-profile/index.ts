@@ -1,5 +1,0 @@
-export * from './components'
-export * from './user-profile.service'
-export * from './hooks/use-user-profile-inactivity-hook'
-export * from './user-profile.types'
-export * from './user-profile.validation'

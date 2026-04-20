@@ -18,13 +18,11 @@
         "allowImportingTsExtensions": true,
         "noEmit": true,
         "paths": {
-            // Utils Library
             "@e-coop/utils": ["libs/utils/src/index.ts"],
             "@e-coop/utils/*": ["libs/utils/src/*"],
-            
-            // UI Library (Using the exact name Nx generated for you)
             "@e-coop-monorepo/ui": ["libs/ui/src/index.ts"],
-            "@e-coop-monorepo/ui/*": ["libs/ui/src/*"]
+            "@e-coop-monorepo/ui/*": ["libs/ui/src/*"],
+            "@e-coop-monorepo/modules": ["libs/modules/src/index.ts"]
         },
         "strict": true
     },
