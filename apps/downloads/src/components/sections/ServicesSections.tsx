@@ -1,139 +1,163 @@
-import { motion, Variants } from 'framer-motion'
-import {
-    ArrowRightLeft,
-    Banknote,
-    Bell,
-    Database,
-    Fingerprint,
-    Landmark,
-    PiggyBank,
-    ShieldCheck,
-    TrendingUp,
-    Users,
-    Wallet,
-    Zap,
-} from 'lucide-react'
+import { motion, Variants } from "framer-motion";
+import { 
+  Wallet, 
+  Landmark, 
+  Zap, 
+  Users, 
+  TrendingUp, 
+  ShieldCheck, 
+  Banknote, 
+  Database,
+  Bell,
+  ArrowRightLeft,
+  Fingerprint,
+  PiggyBank,
+  LucideIcon
+} from "lucide-react";
 
-const services = [
-    {
-        icon: Wallet,
-        title: 'Account Wallets',
-        description: 'Secure multi-asset custody for every cooperative member.',
-    },
-    {
-        icon: Landmark,
-        title: 'Digital Banking',
-        description: 'Cloud-native core processing for instant transactions.',
-    },
-    {
-        icon: Zap,
-        title: 'High performance',
-        description: 'Sub-millisecond ledger updates for global scale.',
-    },
-    {
-        icon: Users,
-        title: 'Membership & Shares',
-        description: 'Manage cooperative membership and share holdings.',
-    },
-    {
-        icon: TrendingUp,
-        title: 'Forecasting',
-        description: 'Predictive liquidity models powered by neural networks.',
-    },
-    {
-        icon: ShieldCheck,
-        title: 'Secure Cooperative',
-        description: 'Military-grade encryption for total data sovereignty.',
-    },
-    {
-        icon: Banknote,
-        title: 'Loans & Grants',
-        description: 'Streamlined lending and grant management system.',
-    },
-    {
-        icon: Database,
-        title: 'Data Storage & APIs',
-        description:
-            'Extensible endpoints for third-party fintech integration.',
-    },
-]
-
-const floatingCards = [
-    {
-        icon: Bell,
-        title: 'Real-time Alerts',
-        description: 'Instant push notifications for every transaction.',
-        position: 'top-left',
-        delay: 0,
-    },
-    {
-        icon: ArrowRightLeft,
-        title: 'Easy Transfers',
-        description: 'Seamless peer-to-peer cooperative sharing.',
-        position: 'top-right',
-        delay: 0.2,
-    },
-    {
-        icon: Fingerprint,
-        title: 'Biometric Security',
-        description: 'Military-grade Face and Touch ID integration.',
-        position: 'bottom-left',
-        delay: 0.4,
-    },
-    {
-        icon: PiggyBank,
-        title: 'Smart Savings',
-        description: 'AI-driven round-ups and automated goal tracking.',
-        position: 'bottom-right',
-        delay: 0.6,
-    },
-]
-
-type CoinShade = 'lightest' | 'light' | 'medium' | 'base' | 'dark' | 'darkest';
-
-const miniCoins = [
-    { symbol: '$', backSymbol: '₱', shade: 'light' as CoinShade },
-    { symbol: '€', backSymbol: '£', shade: 'base' as CoinShade },
-    { symbol: '¥', backSymbol: '₹', shade: 'dark' as CoinShade },
-    { symbol: '₩', backSymbol: '₿', shade: 'lightest' as CoinShade },
-    { symbol: '¢', backSymbol: '₣', shade: 'darkest' as CoinShade },
-    { symbol: '₺', backSymbol: '₴', shade: 'medium' as CoinShade },
-]
-
-const coinColors: Record<CoinShade, { from: string; to: string; edge: [string, string] }> = {
-    lightest: { from: '#a7f3d0', to: '#34d399', edge: ['#6ee7b7', '#34d399'] },
-    light: { from: '#6ee7b7', to: '#10b981', edge: ['#34d399', '#10b981'] },
-    medium: { from: '#34d399', to: '#059669', edge: ['#10b981', '#059669'] },
-    base: { from: '#10b981', to: '#047857', edge: ['#059669', '#047857'] },
-    dark: { from: '#059669', to: '#065f46', edge: ['#047857', '#065f46'] },
-    darkest: { from: '#047857', to: '#064e3b', edge: ['#065f46', '#064e3b'] },
+interface Service {
+  icon: LucideIcon;
+  title: string;
+  description: string;
 }
 
-const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.1,
-            delayChildren: 0.3,
-        },
-    },
+const services: Service[] = [
+  {
+    icon: Wallet,
+    title: "Account Wallets",
+    description: "Secure multi-asset custody for every cooperative member."
+  },
+  {
+    icon: Landmark,
+    title: "Digital Banking",
+    description: "Cloud-native core processing for instant transactions."
+  },
+  {
+    icon: Zap,
+    title: "High performance",
+    description: "Sub-millisecond ledger updates for global scale."
+  },
+  {
+    icon: Users,
+    title: "Membership & Shares",
+    description: "Manage cooperative membership and share holdings."
+  },
+  {
+    icon: TrendingUp,
+    title: "Forecasting",
+    description: "Predictive liquidity models powered by neural networks."
+  },
+  {
+    icon: ShieldCheck,
+    title: "Secure Cooperative",
+    description: "Military-grade encryption for total data sovereignty."
+  },
+  {
+    icon: Banknote,
+    title: "Loans & Grants",
+    description: "Streamlined lending and grant management system."
+  },
+  {
+    icon: Database,
+    title: "Data Storage & APIs",
+    description: "Extensible endpoints for third-party fintech integration."
+  }
+];
+
+interface FloatingCard {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  position: "top-left" | "top-right" | "bottom-left" | "bottom-right";
+  delay: number;
 }
+
+const floatingCards: FloatingCard[] = [
+  {
+    icon: Bell,
+    title: "Real-time Alerts",
+    description: "Instant push notifications for every transaction.",
+    position: "top-left",
+    delay: 0
+  },
+  {
+    icon: ArrowRightLeft,
+    title: "Easy Transfers",
+    description: "Seamless peer-to-peer cooperative sharing.",
+    position: "top-right",
+    delay: 0.2
+  },
+  {
+    icon: Fingerprint,
+    title: "Biometric Security",
+    description: "Military-grade Face and Touch ID integration.",
+    position: "bottom-left",
+    delay: 0.4
+  },
+  {
+    icon: PiggyBank,
+    title: "Smart Savings",
+    description: "AI-driven round-ups and automated goal tracking.",
+    position: "bottom-right",
+    delay: 0.6
+  }
+];
+
+interface MiniCoin {
+  symbol: string;
+  backSymbol: string;
+  shade: ColorKey;
+}
+
+const miniCoins: MiniCoin[] = [
+  { symbol: "$", backSymbol: "₱", shade: "light" },
+  { symbol: "€", backSymbol: "£", shade: "base" },
+  { symbol: "¥", backSymbol: "₹", shade: "dark" }
+];
+
+interface CoinColorConfig {
+  from: string;
+  to: string;
+  edge: string[];
+}
+
+type ColorKey = 'lightest' | 'light' | 'medium' | 'base' | 'dark' | 'darkest';
+
+const coinColors: Record<ColorKey, CoinColorConfig> = {
+  lightest: { from: "#a7f3d0", to: "#34d399", edge: ["#6ee7b7", "#34d399"] },
+  light: { from: "#6ee7b7", to: "#10b981", edge: ["#34d399", "#10b981"] },
+  medium: { from: "#34d399", to: "#059669", edge: ["#10b981", "#059669"] },
+  base: { from: "#10b981", to: "#047857", edge: ["#059669", "#047857"] },
+  dark: { from: "#059669", to: "#065f46", edge: ["#047857", "#065f46"] },
+  darkest: { from: "#047857", to: "#064e3b", edge: ["#065f46", "#064e3b"] }
+};
+
+const containerVariants: Variants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.3
+    }
+  }
+};
 
 const itemVariants: Variants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.5,
-            ease: [0.42, 0, 0.58, 1],
-        },
-    },
-}
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: "easeOut"
+    }
+  }
+};
 
-const createSmoothGradient = (color1: string, color2: string, angle = 135) => {
-    return `linear-gradient(${angle}deg, 
+// Smooth gradient with many stops to prevent banding
+const createSmoothGradient = (color1: string, color2: string, angle = 135): string => {
+  return `linear-gradient(${angle}deg, 
     ${color1} 0%, 
     ${color2} 11%,
     ${color1} 22%,
@@ -144,30 +168,32 @@ const createSmoothGradient = (color1: string, color2: string, angle = 135) => {
     ${color2} 77%,
     ${color1} 88%,
     ${color2} 100%
-  )`
+  )`;
+};
+
+interface RealisticCoinProps {
+  symbol: string;
+  backSymbol: string;
+  colors: CoinColorConfig;
+  size?: "small" | "normal" | "large";
+  isMain?: boolean;
 }
 
-const RealisticCoin = ({
-    symbol,
-    backSymbol,
-    colors,
-    size = 'normal',
-    isMain = false,
-}: {
-    symbol: string
-    backSymbol: string
-    colors: { from: string; to: string; edge: [string, string] }
-    size?: 'small' | 'normal' | 'large'
-    isMain?: boolean
-}) => {
-    const sizeClasses = {
-        small: 'w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-sm sm:text-base lg:text-lg',
-        normal: 'w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 text-base sm:text-lg lg:text-2xl',
-        large: 'w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 text-2xl sm:text-3xl lg:text-5xl',
-    }
+const sizeClasses: Record<string, string> = {
+  small: "w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12 text-sm sm:text-base lg:text-lg",
+  normal: "w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 text-base sm:text-lg lg:text-2xl",
+  large: "w-20 h-20 sm:w-28 sm:h-28 lg:w-40 lg:h-40 text-2xl sm:text-3xl lg:text-5xl"
+};
 
-    const thickness = isMain ? 6 : size === 'normal' ? 4 : 3
-    const edgeGradient = `linear-gradient(to bottom, ${colors.edge[0]} 0%, ${colors.from} 20%, ${colors.to} 50%, ${colors.from} 80%, ${colors.edge[1]} 100%)`
+const RealisticCoin = ({ 
+  symbol, 
+  backSymbol, 
+  colors, 
+  size = "normal", 
+  isMain = false 
+}: RealisticCoinProps) => {
+  const thickness = isMain ? 6 : size === "normal" ? 4 : 3;
+  const edgeGradient = `linear-gradient(to bottom, ${colors.edge[0]} 0%, ${colors.from} 20%, ${colors.to} 50%, ${colors.from} 80%, ${colors.edge[1]} 100%)`;
 
     const mainGradient = {
         backgroundImage: `
@@ -318,113 +344,118 @@ const RealisticCoin = ({
 }
 
 export default function ServicesSection() {
-    return (
-        <section className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
-            <div className="relative max-w-7xl mx-auto">
-                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+  return (
+    <section className="relative min-h-screen py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <div className="relative max-w-7xl mx-auto">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          
+          <motion.div 
+            className="relative h-87.5 sm:h-112.5 lg:h-150 flex items-center justify-center"
+            initial={{ opacity: 0, x: -50 }}
+            style={{ perspective: "1000px" }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            whileInView={{ opacity: 1, x: 0 }}
+          >
+            <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 lg:-translate-x-[65%]">
+              
+              <div className="relative w-70 h-70 sm:w-[320px] sm:h-80 lg:w-65 lg:h-100">
+                
+                {/* First wave - now only 3 coins instead of 6 */}
+                {miniCoins.map((coin, i) => {
+                  const angle = (i / miniCoins.length) * 360;
+                  const distance = 100;
+                  const delay = i * 0.4;
+                  const colors = coinColors[coin.shade];
+                  
+                  return (
                     <motion.div
-                        className="relative h-[350px] sm:h-[450px] lg:h-[600px] flex items-center justify-center"
-                        initial={{ opacity: 0, x: -50 }}
-                        style={{ perspective: '1000px' }}
-                        transition={{ duration: 0.8 }}
-                        viewport={{ once: true }}
-                        whileInView={{ opacity: 1, x: 0 }}
+                      animate={{ 
+                        x: [
+                          "-50%", 
+                          `${Math.cos(angle * Math.PI / 180) * distance - 50}%`
+                        ],
+                        y: [
+                          "-50%", 
+                          `${Math.sin(angle * Math.PI / 180) * distance - 50}%`
+                        ],
+                        opacity: [0, 1, 1, 0],
+                        scale: [0, 0.9, 0.8, 0.5]
+                      }}
+                      className="absolute top-1/2 left-1/2 pointer-events-none"
+                      initial={{ 
+                        x: "-50%", 
+                        y: "-50%", 
+                        opacity: 0,
+                        scale: 0
+                      }}
+                      key={i}
+                      style={{ zIndex: 30 }}
+                      transition={{
+                        duration: 4,
+                        repeat: Infinity,
+                        delay: delay,
+                        ease: "easeOut",
+                        times: [0, 0.2, 0.7, 1]
+                      }}
                     >
-                        <div className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 lg:-translate-x-[65%]">
-                            <div className="relative w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[260px] lg:h-[400px]">
-                                {miniCoins.map((coin, i) => {
-                                    const angle = (i / miniCoins.length) * 360
-                                    const distance = 100
-                                    const delay = i * 0.4
-                                    const colors = coinColors[coin.shade]
+                      <RealisticCoin 
+                        backSymbol={coin.backSymbol} 
+                        colors={colors} 
+                        size="normal"
+                        symbol={coin.symbol}
+                      />
+                    </motion.div>
+                  );
+                })}
 
-                                    return (
-                                        <motion.div
-                                            animate={{
-                                                x: [
-                                                    '-50%',
-                                                    `${Math.cos((angle * Math.PI) / 180) * distance - 50}%`,
-                                                ],
-                                                y: [
-                                                    '-50%',
-                                                    `${Math.sin((angle * Math.PI) / 180) * distance - 50}%`,
-                                                ],
-                                                opacity: [0, 1, 1, 0],
-                                                scale: [0, 0.9, 0.8, 0.5],
-                                            }}
-                                            className="absolute top-1/2 left-1/2 pointer-events-none"
-                                            initial={{
-                                                x: '-50%',
-                                                y: '-50%',
-                                                opacity: 0,
-                                                scale: 0,
-                                            }}
-                                            key={i}
-                                            style={{ zIndex: 30 }}
-                                            transition={{
-                                                duration: 4,
-                                                repeat: Infinity,
-                                                delay: delay,
-                                                ease: 'easeOut',
-                                                times: [0, 0.2, 0.7, 1],
-                                            }}
-                                        >
-                                            <RealisticCoin
-                                                backSymbol={coin.backSymbol}
-                                                colors={colors}
-                                                size="normal"
-                                                symbol={coin.symbol}
-                                            />
-                                        </motion.div>
-                                    )
-                                })}
-
-                                {miniCoins.slice(0, 4).map((coin, i) => {
-                                    const angle = (i / 4) * 360 + 45
-                                    const distance = 130
-                                    const delay = i * 0.5 + 2
-                                    const colors = coinColors[coin.shade]
-
-                                    return (
-                                        <motion.div
-                                            animate={{
-                                                x: [
-                                                    '-50%',
-                                                    `${Math.cos((angle * Math.PI) / 180) * distance - 50}%`,
-                                                ],
-                                                y: [
-                                                    '-50%',
-                                                    `${Math.sin((angle * Math.PI) / 180) * distance - 50}%`,
-                                                ],
-                                                opacity: [0, 0.8, 0.8, 0],
-                                                scale: [0, 0.7, 0.6, 0.4],
-                                            }}
-                                            className="absolute top-1/2 left-1/2 pointer-events-none"
-                                            initial={{
-                                                x: '-50%',
-                                                y: '-50%',
-                                                opacity: 0,
-                                                scale: 0,
-                                            }}
-                                            key={`second-${i}`}
-                                            style={{ zIndex: 30 }}
-                                            transition={{
-                                                duration: 5,
-                                                repeat: Infinity,
-                                                delay: delay,
-                                                ease: 'easeOut',
-                                                times: [0, 0.15, 0.6, 1],
-                                            }}
-                                        >
-                                            <RealisticCoin
-                                                backSymbol={coin.backSymbol}
-                                                colors={colors}
-                                                size="small"
-                                                symbol={coin.symbol}
-                                            />
-                                        </motion.div>
-                                    )
-                                })}
+                {/* Second wave - now only 2 coins instead of 4 */}
+                {miniCoins.slice(0, 2).map((coin, i) => {
+                  const angle = ((i / 2) * 360) + 45;
+                  const distance = 130;
+                  const delay = i * 0.5 + 2;
+                  const colors = coinColors[coin.shade];
+                  
+                  return (
+                    <motion.div
+                      animate={{ 
+                        x: [
+                          "-50%", 
+                          `${Math.cos(angle * Math.PI / 180) * distance - 50}%`
+                        ],
+                        y: [
+                          "-50%", 
+                          `${Math.sin(angle * Math.PI / 180) * distance - 50}%`
+                        ],
+                        opacity: [0, 0.8, 0.8, 0],
+                        scale: [0, 0.7, 0.6, 0.4] 
+                      }}
+                      className="absolute top-1/2 left-1/2 pointer-events-none"
+                      initial={{ 
+                        x: "-50%", 
+                        y: "-50%", 
+                        opacity: 0,
+                        scale: 0
+                      }}
+                      key={`second-${i}`}
+                      style={{ zIndex: 30 }}
+                      transition={{
+                        duration: 5,
+                        repeat: Infinity,
+                        delay: delay,
+                        ease: "easeOut",
+                        times: [0, 0.15, 0.6, 1]
+                      }}
+                    >
+                      <RealisticCoin 
+                        backSymbol={coin.backSymbol} 
+                        colors={colors} 
+                        size="small"
+                        symbol={coin.symbol}
+                      />
+                    </motion.div>
+                  );
+                })}
 
                                 <div
                                     className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
@@ -496,96 +527,68 @@ export default function ServicesSection() {
                                 ))}
                             </div>
 
-                            {/* FIXED: Stats cards with better mobile positioning */}
-                            {floatingCards.map((card, index) => {
-                                // Much closer positioning for mobile so cards stay visible
-                                const positions = {
-                                    'top-left':
-                                        'top-0 -left-12 sm:-left-16 lg:-left-40',
-                                    'top-right':
-                                        'top-0 -right-12 sm:-right-16 lg:-right-40',
-                                    'bottom-left':
-                                        'bottom-0 -left-12 sm:-left-16 lg:-left-40',
-                                    'bottom-right':
-                                        'bottom-0 -right-12 sm:-right-16 lg:-right-40',
-                                }
+              {/* FIXED: Stats cards with better mobile positioning */}
+              {floatingCards.map((card, index) => {
+                const positions = {
+                  "top-left": "top-0 -left-12 sm:-left-16 lg:-left-40",
+                  "top-right": "top-0 -right-12 sm:-right-16 lg:-right-40",
+                  "bottom-left": "bottom-0 -left-12 sm:-left-16 lg:-left-40",
+                  "bottom-right": "bottom-0 -right-12 sm:-right-16 lg:-right-40"
+                } as const;
+                
+                const linePositions = {
+                  "top-left": "top-1/3 left-0 w-10 sm:w-14 lg:w-32 h-px origin-right -rotate-12",
+                  "top-right": "top-1/3 right-0 w-10 sm:w-14 lg:w-32 h-px origin-left rotate-12",
+                  "bottom-left": "bottom-1/3 left-0 w-10 sm:w-14 lg:w-32 h-px origin-right rotate-12",
+                  "bottom-right": "bottom-1/3 right-0 w-10 sm:w-14 lg:w-32 h-px origin-left -rotate-12"
+                } as const;
 
-                                const linePositions = {
-                                    'top-left':
-                                        'top-1/3 left-0 w-10 sm:w-14 lg:w-32 h-px origin-right -rotate-12',
-                                    'top-right':
-                                        'top-1/3 right-0 w-10 sm:w-14 lg:w-32 h-px origin-left rotate-12',
-                                    'bottom-left':
-                                        'bottom-1/3 left-0 w-10 sm:w-14 lg:w-32 h-px origin-right rotate-12',
-                                    'bottom-right':
-                                        'bottom-1/3 right-0 w-10 sm:w-14 lg:w-32 h-px origin-left -rotate-12',
-                                }
-
-                                return (
-                                    <motion.div
-                                        className={`absolute ${positions[card.position as keyof typeof positions]}`}
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        key={index}
-                                        transition={{
-                                            delay: card.delay + 0.5,
-                                            duration: 0.6,
-                                        }}
-                                        viewport={{ once: true }}
-                                        whileInView={{ opacity: 1, scale: 1 }}
-                                    >
-                                        {/* Connecting line - shorter on mobile */}
-                                        <motion.div
-                                            className={`absolute ${linePositions[card.position as keyof typeof linePositions]} bg-gradient-to-r from-emerald-500/50 to-transparent hidden sm:block`}
-                                            initial={{ scaleX: 0 }}
-                                            transition={{
-                                                delay: card.delay + 0.8,
-                                                duration: 0.8,
-                                            }}
-                                            viewport={{ once: true }}
-                                            whileInView={{ scaleX: 1 }}
-                                        />
-
-                                        {/* Animated dot - smaller on mobile */}
-                                        <motion.div
-                                            animate={{
-                                                scale: [1, 1.5, 1],
-                                                opacity: [0.5, 1, 0.5],
-                                            }}
-                                            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 sm:w-1.5 sm:h-1.5 lg:w-2 lg:h-2 bg-emerald-400 rounded-full hidden sm:block"
-                                            transition={{
-                                                duration: 2,
-                                                repeat: Infinity,
-                                                delay: card.delay,
-                                            }}
-                                        />
-
-                                        {/* Card - compact on mobile, normal on desktop */}
-                                        <motion.div
-                                            animate={{ y: [0, -4, 0] }}
-                                            className="relative p-2 sm:p-3 lg:p-4 rounded-lg sm:rounded-xl border border-emerald-500/20 backdrop-blur-md w-24 sm:w-32 lg:w-48 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
-                                            transition={{
-                                                duration: 3,
-                                                repeat: Infinity,
-                                                delay: card.delay,
-                                                ease: 'easeInOut',
-                                            }}
-                                            whileHover={{ scale: 1.05 }}
-                                        >
-                                            <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-md sm:rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 mb-1 sm:mb-2">
-                                                <card.icon className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-4 lg:h-4" />
-                                            </div>
-                                            <h4 className="text-white font-semibold text-[9px] sm:text-[11px] lg:text-xs mb-0.5">
-                                                {card.title}
-                                            </h4>
-                                            <p className="text-gray-400 text-[7px] sm:text-[9px] lg:text-[10px] leading-tight hidden sm:block">
-                                                {card.description}
-                                            </p>
-                                        </motion.div>
-                                    </motion.div>
-                                )
-                            })}
-                        </div>
+                return (
+                  <motion.div
+                    className={`absolute ${positions[card.position]}`}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    key={index}
+                    transition={{ delay: card.delay + 0.5, duration: 0.6 }}
+                    viewport={{ once: true }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                  >
+                    {/* Connecting line - shorter on mobile */}
+                    <motion.div
+                      className={`absolute ${linePositions[card.position]} bg-linear-to-r from-emerald-500/50 to-transparent hidden sm:block`}
+                      initial={{ scaleX: 0 }}
+                      transition={{ delay: card.delay + 0.8, duration: 0.8 }}
+                      viewport={{ once: true }}
+                      whileInView={{ scaleX: 1 }}
+                    />
+                    
+                    {/* Animated dot - smaller on mobile */}
+                    <motion.div
+                      animate={{ 
+                        scale: [1, 1.5, 1],
+                        opacity: [0.5, 1, 0.5]
+                      }}
+                      className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1 h-1 sm:w-1.5 sm:h-1.5 lg:w-2 lg:h-2 bg-emerald-400 rounded-full hidden sm:block"
+                      transition={{ duration: 2, repeat: Infinity, delay: card.delay }}
+                    />
+                    
+                    {/* Card - compact on mobile, normal on desktop */}
+                    <motion.div
+                      animate={{ y: [0, -4, 0] }}
+                      className="relative p-2 sm:p-3 lg:p-4 rounded-lg sm:rounded-xl border border-emerald-500/20 backdrop-blur-md w-24 sm:w-32 lg:w-48 shadow-[0_0_20px_rgba(16,185,129,0.1)]"
+                      transition={{ duration: 3, repeat: Infinity, delay: card.delay, ease: "easeInOut" }}
+                      whileHover={{ scale: 1.05 }}
+                    >
+                      <div className="w-5 h-5 sm:w-6 sm:h-6 lg:w-8 lg:h-8 rounded-md sm:rounded-lg bg-emerald-500/20 flex items-center justify-center text-emerald-400 mb-1 sm:mb-2">
+                        <card.icon className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-4 lg:h-4" />
+                      </div>
+                      <h4 className="text-white font-semibold text-[9px] sm:text-[11px] lg:text-xs mb-0.5">{card.title}</h4>
+                      <p className="text-gray-400 text-[7px] sm:text-[9px] lg:text-[10px] leading-tight hidden sm:block">{card.description}</p>
                     </motion.div>
+                  </motion.div>
+                );
+              })}
+            </div>
+          </motion.div>
 
                     <div className="space-y-6">
                         <motion.div

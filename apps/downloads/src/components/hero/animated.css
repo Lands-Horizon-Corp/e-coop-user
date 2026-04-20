@@ -1,0 +1,169 @@
+/**
+ * Hero Section Animations
+ * CSS implementation of floating animations
+ * 
+ * Benefits over inline styles:
+ * - Single source of truth for animations
+ * - Hardware acceleration by browser
+ * - No inline styles = cleaner JSX
+ * - Reusable across components
+ * - Easier to debug and maintain
+ */
+
+/* Floating animation for decorative elements */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.9;
+  }
+}
+
+/* Apply animation class */
+.float-animated {
+  animation: float 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+/* Floating icon animations with specific durations */
+.float-6s {
+  animation: float 6s ease-in-out infinite;
+}
+
+.float-5-5s {
+  animation: float 5.5s ease-in-out infinite;
+}
+
+.float-6-5s {
+  animation: float 6.5s ease-in-out infinite;
+}
+
+.float-7s {
+  animation: float 7s ease-in-out infinite;
+}
+
+.float-8s {
+  animation: float 8s ease-in-out infinite;
+}
+
+.float-5s {
+  animation: float 5s ease-in-out infinite;
+}
+
+/* Delay utilities */
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-0-5s {
+  animation-delay: 0.5s;
+}
+
+.delay-1s {
+  animation-delay: 1s;
+}
+
+.delay-1-5s {
+  animation-delay: 1.5s;
+}
+
+.delay-2s {
+  animation-delay: 2s;
+}
+
+/* Smooth hover transition */
+.feature-card-hover {
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feature-card-hover:hover {
+  transform: translateY(-8px);
+}
+
+/* Glow effect for cards */
+.card-glow {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-glow::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(
+    circle,
+    rgba(52, 211, 153, 0.15) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+/* Accessibility: Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .float-6s,
+  .float-7s,
+  .float-8s,
+  .float-5-5s,
+  .float-6-5s,
+  .float-5s {
+    animation: none;
+  }
+
+  .feature-card-hover:hover {
+    transform: none;
+  }
+
+  .card-glow::before {
+    animation: none;
+  }
+}
+
+/* Ensure smooth animation performance */
+.animated-icon {
+  contain: layout style paint;
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile */
+  .float-6s,
+  .float-7s,
+  .float-8s,
+  .float-5-5s,
+  .float-6-5s,
+  .float-5s {
+    animation-duration: calc(var(--duration) * 1.2);
+  }
+
+  /* Disable on very small screens for performance */
+  @media (max-width: 480px) {
+    .float-6s,
+    .float-7s,
+    .float-8s,
+    .float-5-5s,
+    .float-6-5s,
+    .float-5s {
+      animation: none;
+    }
+  }
+}
