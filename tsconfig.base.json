@@ -20,11 +20,13 @@
         "noEmit": true,
         "paths": {
             "@e-coop-monorepo/shared/helpers": ["libs/shared/src/helpers/index.ts"],
-            "@e-coop-monorepo/shared": ["./libs/shared/src/index.ts"],
-            "@e-coop-monorepo/shared/*": ["./libs/shared/src/*"],
-            "@e-coop-monorepo/ui": ["./libs/ui/src/index.ts"],
-            "@e-coop-monorepo/ui/*": ["./libs/ui/src/*"],
-            "@e-coop-monorepo/modules": ["./libs/modules/src/index.ts"]
+            "@e-coop-monorepo/shared": ["libs/shared/src/index.ts"],
+            "@e-coop-monorepo/shared/*": ["libs/shared/src/*"],
+            "@e-coop-monorepo/ui": ["libs/ui/src/index.ts"],
+            "@e-coop-monorepo/ui/*": ["libs/ui/src/*"],
+            "@e-coop-monorepo/modules": ["libs/modules/src/index.ts"],
+            "@e-coop-monorepo/modules/*": ["libs/modules/src/*"]
+            
         },
         "strict": true
     },
