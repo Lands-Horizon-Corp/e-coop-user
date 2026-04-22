@@ -4,7 +4,7 @@ import {
     TFilterModes,
     TFilterPayload,
     TFinalFilter,
-} from ''
+} from '../../contexts/filter-context'
 
 type Primitive = string | number | boolean | Date
 
