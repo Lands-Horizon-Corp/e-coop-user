@@ -3,10 +3,10 @@ import { ReactNode } from 'react'
 import { useRouter, useSearch } from '@tanstack/react-router'
 
 import { cn } from '@/helpers'
-import { useAuthUserWithOrgMemberProfile } from '@/modules/auth/authgentication.store'
+import { useAuthMember } from '@/store/fake-store'
 import { IconType } from 'react-icons/lib'
 
-import PageContainer from '@/components/containers/page-container'
+import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
 import {
     GraduationCapIcon,
     HandCoinsIcon,
@@ -15,9 +15,9 @@ import {
     UserIcon,
     UserTagIcon,
     Users3Icon,
-} from '@/components/icons'
-import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
+} from '@e-coop-monorepo/ui/components/icons'
+import { ScrollArea, ScrollBar } from '@e-coop-monorepo/ui/components/ui/scroll-area'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@e-coop-monorepo/ui/components/ui/tabs'
 
 import { IClassProps } from '@/types'
 
@@ -66,7 +66,7 @@ const SettingsTabs: {
                         Member Profile Identity
                     </p>
                     <p className="text-sm text-muted-foreground">
-                        Update your identity information
+                        Update member your identity
                     </p>
                 </div>
                 <IdentityForm
@@ -141,7 +141,7 @@ const MemberProfileSettingsPage = ({ className }: Props) => {
     const router = useRouter()
 
     const { tab = 'identity' } = useSearch({
-        from: '/(private)/profile',
+        from: '/(dashboard)/profile',
     }) as { tab?: string }
 
     const handleTabChange = (newTab: string) => {
@@ -153,9 +153,7 @@ const MemberProfileSettingsPage = ({ className }: Props) => {
         })
     }
 
-    const {
-        currentAuth: { member_profile },
-    } = useAuthUserWithOrgMemberProfile()
+    const { authMember } = useAuthMember()
 
     return (
         <PageContainer className={className}>
@@ -169,7 +167,7 @@ const MemberProfileSettingsPage = ({ className }: Props) => {
                         <TabsList className="border-bx mb-3 h-auto flex-col justify-start gap-x-2 gap-y-1 rounded-none sticky top-0 bg-transparent px-0 py-1 text-foreground">
                             {SettingsTabs.map((stngsTab) => (
                                 <TabsTrigger
-                                    className="dara-[state=active]:border relative w-full justify-start rounded-md from-primary/20 to-transparent text-muted-foreground after:absolute after:inset-y-0 after:left-0 after:w-0.5 after:content-[''] hover:text-foreground data-[state=active]:bg-secondary data-[state=active]:bg-linear-to-r data-[state=active]:shadow-none data-[state=active]:after:bg-primary dark:bg-transparent"
+                                    className="dara-[state=active]:border relative w-full justify-start rounded-md from-primary/20 to-transparent text-muted-foreground after:absolute after:inset-y-0 after:left-0 after:w-0.5 after:content-[''] hover:text-foreground data-[state=active]:bg-secondary data-[state=active]:bg-gradient-to-r data-[state=active]:shadow-none data-[state=active]:after:bg-primary dark:bg-transparent"
                                     key={stngsTab.value}
                                     value={stngsTab.value}
                                 >
@@ -191,7 +189,7 @@ const MemberProfileSettingsPage = ({ className }: Props) => {
                         <ScrollBar orientation="vertical" />
                     </ScrollArea>
                     <div className="tst flex-1 rounded-md p-0 text-start">
-                        {member_profile &&
+                        {authMember &&
                             SettingsTabs.map((tab) => (
                                 <TabsContent
                                     asChild
@@ -199,7 +197,8 @@ const MemberProfileSettingsPage = ({ className }: Props) => {
                                     value={tab.value}
                                 >
                                     {tab.Component({
-                                        memberProfile: member_profile,
+                                        memberProfile:
+                                            authMember as unknown as IMemberProfile,
                                     })}
                                 </TabsContent>
                             ))}

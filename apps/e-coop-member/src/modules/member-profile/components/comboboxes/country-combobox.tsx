@@ -12,7 +12,7 @@ import { cn } from '@/helpers/tw-utils'
 import { countries } from 'country-data-list'
 import { CircleFlag } from 'react-circle-flags'
 
-import { ArrowChevronDown, CheckIcon, GlobeIcon } from '@/components/icons'
+import { ArrowChevronDown, CheckIcon, GlobeIcon } from '@e-coop-monorepo/ui/components/icons'
 import {
     Command,
     CommandEmpty,
@@ -20,12 +20,12 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@/components/ui/command'
+} from '@e-coop-monorepo/ui/components/ui/command'
 import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from '@/components/ui/popover'
+} from '@e-coop-monorepo/ui/components/ui/popover'
 
 export interface Country {
     alpha2: string

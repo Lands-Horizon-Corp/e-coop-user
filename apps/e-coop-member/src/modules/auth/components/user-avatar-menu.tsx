@@ -2,6 +2,7 @@ import { useRouter } from '@tanstack/react-router'
 import { toast } from 'sonner'
 
 import useConfirmModalStore from '@/store/confirm-modal-store'
+import { useFakeStore } from '@/store/fake-store'
 import { HelpCircle, LogOut, Settings } from 'lucide-react'
 
 import {
@@ -10,40 +11,35 @@ import {
     BadgeQuestionFillIcon,
     BoxesStackedIcon,
     HouseIcon,
-} from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import InfoTooltip from '@/components/tooltips/info-tooltip'
-import { Badge } from '@/components/ui/badge'
+} from '@e-coop-monorepo/ui/components/icons'
+import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
+import InfoTooltip from '@e-coop-monorepo/ui/components/tooltips/info-tooltip'
+import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@e-coop-monorepo/ui/components/ui/dropdown-menu'
 
 import { useSignOut } from '..'
-import { useAuthStore } from '../authgentication.store'
 
 const UserAvatarMenu = () => {
-    const {
-        currentAuth: { member_profile },
-        resetAuth,
-    } = useAuthStore()
+    const { authMember } = useFakeStore()
     const { onOpen } = useConfirmModalStore()
     const router = useRouter()
 
     const { mutate: handleSignout } = useSignOut({
         options: {
             onSuccess: () => {
-                router.navigate({ to: '/' })
+                router.navigate({ to: '/auth/sign-in' as string })
                 toast.success('Signed out')
-                resetAuth()
             },
         },
     })
 
-    if (!member_profile) return null
+    if (!authMember) return null
 
     return (
         <DropdownMenu>
@@ -51,25 +47,25 @@ const UserAvatarMenu = () => {
                 <button className="relative rounded-full">
                     <ImageDisplay
                         className="size-8"
-                        fallback={member_profile.first_name
+                        fallback={authMember.first_name
                             .slice(0, 2)
                             .toUpperCase()}
-                        src={member_profile.media?.download_url}
+                        src={authMember.profile_picture_url}
                     />
                     <span className="absolute -bottom-1 -right-1 drop-shadow">
                         <span className="relative block">
                             <span className="h-[40%] w-[40%] left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 -z-10 bg-background absolute" />
-                            {member_profile.status === 'verified' && (
+                            {authMember.status === 'verified' && (
                                 <InfoTooltip content="Verified User">
                                     <BadgeCheckFillIcon className="size-3.5 text-primary z-10" />
                                 </InfoTooltip>
                             )}{' '}
-                            {member_profile.status === 'not allowed' && (
+                            {authMember.status === 'not allowed' && (
                                 <InfoTooltip content="Not Allowed">
                                     <BadgeExclamationFillIcon className="size-3.5 text-destructive z-10" />
                                 </InfoTooltip>
                             )}
-                            {member_profile.status === 'pending' && (
+                            {authMember.status === 'pending' && (
                                 <InfoTooltip content="Pending User">
                                     <BadgeQuestionFillIcon className="size-3.5 text-warning z-10" />
                                 </InfoTooltip>
@@ -87,26 +83,26 @@ const UserAvatarMenu = () => {
                     <div className="relative">
                         <ImageDisplay
                             className="size-16"
-                            fallback={member_profile.first_name
+                            fallback={authMember.first_name
                                 .slice(0, 2)
                                 .toUpperCase()}
-                            src={member_profile.media?.download_url}
+                            src={authMember.profile_picture_url}
                         />
                         <span className="absolute bottom-1 right-1 text-primary drop-shadow">
                             <span className="relative block">
                                 <span className="h-[40%] w-[40%] left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 -z-10 bg-background absolute" />
-                                {member_profile.status === 'verified' && (
+                                {authMember.status === 'verified' && (
                                     <InfoTooltip content="Verified User">
                                         <BadgeCheckFillIcon className="size-3.5 text-primary z-10" />
                                     </InfoTooltip>
                                 )}{' '}
-                                {member_profile.status === 'not allowed' && (
+                                {authMember.status === 'not allowed' && (
                                     <InfoTooltip content="Not Allowed">
                                         <BadgeExclamationFillIcon className="size-3.5 text-destructive z-10" />
                                     </InfoTooltip>
                                 )}
-                                {member_profile.status === 'pending' ||
-                                    (member_profile.status === 'for review' && (
+                                {authMember.status === 'pending' ||
+                                    (authMember.status === 'for review' && (
                                         <InfoTooltip content="Pending/For Review">
                                             <BadgeQuestionFillIcon className="size-3.5 text-warning z-10" />
                                         </InfoTooltip>
@@ -115,7 +111,7 @@ const UserAvatarMenu = () => {
                         </span>
                     </div>
                     <Badge className="text-xs px-3 py-1" variant="success">
-                        Hi, {member_profile.first_name}!
+                        Hi, {authMember.first_name}!
                     </Badge>
                 </div>
 

@@ -15,21 +15,21 @@ import {
 } from 'lucide-react'
 import { QRCodeSVG } from 'qrcode.react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
+} from '@e-coop-monorepo/ui/components/ui/card'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import {
     InputOTP,
     InputOTPGroup,
     InputOTPSlot,
-} from '@/components/ui/input-otp'
-import { Label } from '@/components/ui/label'
+} from '@e-coop-monorepo/ui/components/ui/input-otp'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
 
 import { cn } from '@/lib/utils'
 
@@ -126,7 +126,6 @@ const MemberCredentials = ({ memberProfile }: UserCredentialProps) => {
     }
 
     const getMaskedKey = (key: string) => {
-        if (!key) return
         if (key.includes('@')) {
             const [name, domain] = key.split('@')
             return `${name.slice(0, 2)}***@${domain}`

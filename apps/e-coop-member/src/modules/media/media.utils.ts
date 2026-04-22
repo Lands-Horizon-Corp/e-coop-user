@@ -1,7 +1,4 @@
 import { downloadFile } from '@/helpers'
-import { decode } from '@jsquash/jpeg'
-import { encode } from '@jsquash/jpeg'
-import resize from '@jsquash/resize'
 import Pica from 'pica'
 
 import { IMedia } from '.'
@@ -359,21 +356,4 @@ export const resizeImage = async (
     if (!resizedBlob) throw new Error('Blob generation failed')
 
     return resizedBlob
-}
-
-export const compressImage = async (
-    file: File,
-    height: number,
-    width: number
-): Promise<Blob> => {
-    const rawFileBuffer = await file.arrayBuffer()
-    const decodedImageData = await decode(rawFileBuffer)
-    const resizedData = await resize(decodedImageData, {
-        width: width,
-        height: height,
-    })
-
-    const compressedBuffer = await encode(resizedData, { quality: 100 })
-
-    return new Blob([compressedBuffer], { type: 'image/jpeg' })
 }

@@ -16,7 +16,7 @@ import {
     SpreadSheetFileIcon,
     TextFileFillIcon,
     VideoFileFillIcon,
-} from '@/components/icons'
+} from '@e-coop-monorepo/ui/components/icons'
 
 import { IClassProps } from '@/types'
 

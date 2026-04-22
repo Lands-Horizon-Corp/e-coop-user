@@ -5,7 +5,7 @@ import { IAccount } from '../account'
 import { IBranch } from '../branch'
 import { IOrganization } from '../organization'
 import { IPaymentType } from '../payment-type/payment-type.types'
-// import { TPermission } from '../permission'
+import { TPermission } from '../permission'
 import { IUserBase, TUserType } from '../user/user.types'
 
 export interface IUserOrganizationContext<
@@ -42,7 +42,7 @@ export interface IUserOrganization<TUser = IUserBase>
     // Perms
     permission_name: string
     permission_description: string
-    // permissions: TPermission[]
+    permissions: TPermission[]
 }
 
 export interface IUserOrganizationResponse {
@@ -66,7 +66,7 @@ export interface IOrgUserOrganizationGroup extends IOrganization {
 export interface IUserOrganizationPermissionRequest {
     permission_name: string
     permission_description: string
-    // permissions: TPermission[]
+    permissions: TPermission[]
 }
 
 export interface IUserOrganizationSettings {

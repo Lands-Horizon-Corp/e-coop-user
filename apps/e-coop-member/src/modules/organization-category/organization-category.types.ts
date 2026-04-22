@@ -1,6 +1,6 @@
 import { IAuditable, ITimeStamps, TEntityId } from '@/types'
 
-// import { ICategory } from '../category'
+import { ICategory } from '../category'
 import { IOrganization } from '../organization/organization.types'
 
 export interface IOrganizationCategory extends ITimeStamps, IAuditable {
@@ -9,7 +9,7 @@ export interface IOrganizationCategory extends ITimeStamps, IAuditable {
     organization: IOrganization
     name: string
     category_id: TEntityId
-    // category: ICategory
+    category: ICategory
 }
 
 export interface IOrganizationCategoryRequest {

@@ -1,4 +1,5 @@
 import AnimateRevealEffect from '@/modules/home/components/animate-reveal-effect'
+import { CoopBackground } from '@/modules/home/components/coop-bg'
 import { IOrganizationMedia } from '@/modules/organization-media'
 import { Images } from 'lucide-react'
 
@@ -8,7 +9,7 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from '@/components/ui/carousel'
+} from '@e-coop-monorepo/ui/components/ui/carousel'
 
 interface MediaCarouselProps {
     medias: IOrganizationMedia[]
@@ -47,17 +48,17 @@ export const MediaCarousel = ({ medias }: MediaCarouselProps) => {
                 </div>
 
                 <Carousel
-                    className="w-full"
                     opts={{
                         align: 'start',
                         loop: true,
                     }}
+                    className="w-full"
                 >
                     <CarouselContent className="-ml-4 md:-ml-6">
                         {medias.map((mediaItem, index) => (
                             <CarouselItem
-                                className="pl-4 md:pl-6 basis-full sm:basis-1/2 lg:basis-1/3"
                                 key={mediaItem.id}
+                                className="pl-4 md:pl-6 basis-full sm:basis-1/2 lg:basis-1/3"
                             >
                                 <div
                                     className="group relative overflow-hidden rounded-2xl shadow-card hover-lift animate-scale-up"
@@ -70,12 +71,12 @@ export const MediaCarousel = ({ medias }: MediaCarouselProps) => {
                                         {mediaItem.media && (
                                             <>
                                                 <img
-                                                    alt={mediaItem.name}
-                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                                     src={
                                                         mediaItem.media
                                                             .download_url
                                                     }
+                                                    alt={mediaItem.name}
+                                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                                 />
 
                                                 {/* Overlay gradient */}
@@ -110,12 +111,12 @@ export const MediaCarousel = ({ medias }: MediaCarouselProps) => {
 
                     {/* Navigation buttons */}
                     <CarouselPrevious
-                        className="hidden md:flex -left-7 w-12 h-12 border-border shadow-card hover:shadow-card-hover hover:bg-accent hover:text-accent-foreground transition-all"
                         variant={'secondary'}
+                        className="hidden md:flex -left-7 w-12 h-12 border-border shadow-card hover:shadow-card-hover hover:bg-accent hover:text-accent-foreground transition-all"
                     />
                     <CarouselNext
-                        className="hidden md:flex -right-7 w-12 h-12 bg-card border-border shadow-card hover:shadow-card-hover hover:bg-accent hover:text-accent-foreground transition-all"
                         variant={'secondary'}
+                        className="hidden md:flex -right-7 w-12 h-12 bg-card border-border shadow-card hover:shadow-card-hover hover:bg-accent hover:text-accent-foreground transition-all"
                     />
                 </Carousel>
 
@@ -123,8 +124,8 @@ export const MediaCarousel = ({ medias }: MediaCarouselProps) => {
                 <div className="flex justify-center gap-2 mt-8">
                     {medias.slice(0, 5).map((_, index) => (
                         <div
-                            className="w-2 h-2 rounded-full bg-muted-foreground/30 transition-all duration-300 hover:bg-primary hover:scale-125"
                             key={index}
+                            className="w-2 h-2 rounded-full bg-muted-foreground/30 transition-all duration-300 hover:bg-primary hover:scale-125"
                         />
                     ))}
                 </div>

@@ -8,6 +8,7 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 import { cn } from '@/helpers'
 import { toReadableDate } from '@/helpers/date-utils'
 import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
+import { IMedia } from '@/modules/media'
 import {
     MemberGovernmentBenefitSchema,
     TMemberGovernmentBenefitSchema,
@@ -18,22 +19,22 @@ import { IGovernmentId } from '@/modules/member-profile'
 import { CountryCombobox } from '@/modules/member-profile/components/comboboxes/country-combobox'
 import { CreditCard, MoreVertical, Pencil, Plus, Trash2 } from 'lucide-react'
 
-import FormFooterResetSubmit from '@/components/form-components/form-footer-reset-submit'
-import Modal, { IModalProps } from '@/components/modals/modal'
-import { Button } from '@/components/ui/button'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import { Form } from '@/components/ui/form'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import ImageField from '@/components/ui/image-field'
-import { Input } from '@/components/ui/input'
-import InputDate from '@/components/ui/input-date'
+} from '@e-coop-monorepo/ui/components/ui/dropdown-menu'
+import { Form } from '@e-coop-monorepo/ui/components/ui/form'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import InputDate from '@e-coop-monorepo/ui/components/ui/input-date'
 
-// import TextEditor from '@/components/ui/text-editor'
+// import TextEditor from '@e-coop-monorepo/ui/components/ui/text-editor'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 import { useModalState } from '@/hooks/use-modal-state'
@@ -404,7 +405,11 @@ export const GovernmentBenefitCreateUpdateForm = ({
                                             )
                                         }}
                                         placeholder="Upload ID Front Photo"
-                                        value={value}
+                                        value={
+                                            value
+                                                ? (value as IMedia).download_url
+                                                : value
+                                        }
                                     />
                                 )
                             }}
@@ -430,7 +435,11 @@ export const GovernmentBenefitCreateUpdateForm = ({
                                             )
                                         }}
                                         placeholder="Upload ID Back Photo"
-                                        value={value}
+                                        value={
+                                            value
+                                                ? (value as IMedia).download_url
+                                                : value
+                                        }
                                     />
                                 )
                             }}

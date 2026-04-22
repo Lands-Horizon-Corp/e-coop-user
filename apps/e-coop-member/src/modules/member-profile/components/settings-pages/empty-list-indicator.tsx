@@ -1,6 +1,6 @@
 import { cn } from '@/helpers'
 
-import { GhostIcon } from '@/components/icons'
+import { GhostIcon } from '@e-coop-monorepo/ui/components/icons'
 
 import { IClassProps } from '@/types'
 

@@ -1,17 +1,14 @@
-import { Link, useLocation } from '@tanstack/react-router'
+import { Link } from '@tanstack/react-router'
 
-import { FingerPrintIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import { useFakeStore } from '@/store/fake-store'
 
-import { useAuthStore } from '../../authgentication.store'
+import { FingerPrintIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 
 const NavSignIn = () => {
-    const pathname = useLocation({
-        select: (location) => location.pathname,
-    })
-    const { authStatus } = useAuthStore()
+    const { authMember } = useFakeStore()
 
-    if (authStatus === 'authorized' || pathname === '/auth/sign-in') return null
+    if (authMember) return null
 
     return (
         <Button asChild className="scale-effects rounded-full cursor-pointer">

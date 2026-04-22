@@ -7,14 +7,14 @@ import { cn } from '@/helpers'
 import { toInputDateString } from '@/helpers/date-utils'
 import { CurrencyInput } from '@/modules/currency'
 
-import FormFooterResetSubmit from '@/components/form-components/form-footer-reset-submit'
-import Modal, { IModalProps } from '@/components/modals/modal'
-import { Form } from '@/components/ui/form'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import ImageField from '@/components/ui/image-field'
-import { Input } from '@/components/ui/input'
-import InputDate from '@/components/ui/input-date'
-import TextEditor from '@/components/ui/text-editor'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
+import { Form } from '@e-coop-monorepo/ui/components/ui/form'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import InputDate from '@e-coop-monorepo/ui/components/ui/input-date'
+import TextEditor from '@e-coop-monorepo/ui/components/ui/text-editor'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 
@@ -85,11 +85,13 @@ const MemberAssetCreateUpdateForm = ({
             ...formProps,
         })
 
-    const onSubmit = form.handleSubmit(() => {
+    const onSubmit = form.handleSubmit((formData) => {
         // Mock: Just log or toast
         if (assetId) {
+            console.log('Update asset mock:', formData)
             // toast.success('Asset updated successfully!')
         } else {
+            console.log('Create asset mock:', formData)
             // toast.success('Asset created successfully!')
         }
     }, handleFocusError)
@@ -166,12 +168,12 @@ const MemberAssetCreateUpdateForm = ({
                         <FormFieldWrapper
                             control={form.control}
                             label="Asset Photo"
-                            name="media_id"
+                            name="media_url"
                             render={({ field }) => (
                                 <ImageField
                                     {...field}
                                     placeholder="Upload Asset Photo"
-                                    value={form.watch('media')}
+                                    value={form.watch('media_url')}
                                 />
                             )}
                         />

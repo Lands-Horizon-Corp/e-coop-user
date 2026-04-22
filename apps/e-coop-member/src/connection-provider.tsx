@@ -7,7 +7,7 @@ import {
     DialogContent,
     DialogDescription,
     DialogTitle,
-} from '@/components/ui/dialog'
+} from '@e-coop-monorepo/ui/components/ui/dialog'
 
 const ConnectionProvider = ({ interval = 10_000 }: { interval?: number }) => {
     const [isConnected, setIsConnected] = useState(true)

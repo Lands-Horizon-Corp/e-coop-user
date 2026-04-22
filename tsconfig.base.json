@@ -13,7 +13,7 @@
         "lib": ["es2023", "dom", "dom.iterable"],
         "skipLibCheck": true,
         "skipDefaultLibCheck": true,
-        "baseUrl": ".",
+        // "baseUrl": ".",
         "jsx": "react-jsx",
         "allowImportingTsExtensions": true,
         "noEmit": true,

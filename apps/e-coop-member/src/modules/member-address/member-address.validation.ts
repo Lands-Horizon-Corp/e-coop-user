@@ -1,12 +1,8 @@
 import z from 'zod'
 
-import { HOME_TYPES } from './member-address.constants'
-
-export const HomeTypeSchema = z.enum(HOME_TYPES, 'Invalid home type')
-
 export const MemberAddressSchema = z.object({
     id: z.string().optional(),
-    label: HomeTypeSchema,
+    label: z.string().min(1, 'Label is required'),
     country_code: z.string().min(1, 'Country code is required'),
     address: z.string().min(1, 'Address is required'),
     city: z.string().optional(),

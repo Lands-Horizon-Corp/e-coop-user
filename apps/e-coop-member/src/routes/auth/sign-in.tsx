@@ -3,8 +3,8 @@ import { createFileRoute, useRouter } from '@tanstack/react-router'
 import COOKIE_ICON from '@/assets/cookie-icon.svg'
 import LoginForm from '@/modules/auth/components/forms/login-form'
 
-import PageContainer from '@/components/containers/page-container'
-import ImageDisplay from '@/components/image-display'
+import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
+import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 
 export const Route = createFileRoute('/auth/sign-in')({
     component: RouteComponent,
@@ -21,7 +21,7 @@ function RouteComponent() {
                 <div className="flex flex-col items-center space-y-2">
                     <ImageDisplay className="size-12" src={COOKIE_ICON} />
                     <h1 className="text-xl font-semibold">
-                        Welcome back Member!
+                        Welcome back dear Member!
                     </h1>
                     <div className="space-y-2 max-w-sm">
                         <p className="text-muted-foreground text-sm text-center">

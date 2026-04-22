@@ -6,26 +6,27 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import { cn } from '@/helpers'
 import { allErrorMessageExtractor } from '@/helpers/error-message-extractor'
+import { IMemberProfile } from '@/modules/member-profile'
 
-import { FingerPrintIcon } from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
-import { Form, FormItem } from '@/components/ui/form'
-import FormErrorMessage from '@/components/ui/form-error-message'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import { Input } from '@/components/ui/input'
-import PasswordInput from '@/components/ui/password-input'
+import { FingerPrintIcon } from '@e-coop-monorepo/ui/components/icons'
+import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Form, FormItem } from '@e-coop-monorepo/ui/components/ui/form'
+import FormErrorMessage from '@e-coop-monorepo/ui/components/ui/form-error-message'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 
 import { IClassProps, IForm } from '@/types'
 
-import { IAuthContext, IUserLoginRequest } from '../../auth-types'
+import { IUserLoginRequest } from '../../auth-types'
 import { useSignIn } from '../../auth.service'
 import { UserLoginRequestSchema } from '../../auth.validation'
 
 export interface LoginFormProps
-    extends IClassProps, IForm<Partial<IUserLoginRequest>, IAuthContext> {}
+    extends IClassProps, IForm<Partial<IUserLoginRequest>, IMemberProfile> {}
 
 const LoginForm = ({ className, ...formProps }: LoginFormProps) => {
     const form = useForm<IUserLoginRequest>({
@@ -68,7 +69,7 @@ const LoginForm = ({ className, ...formProps }: LoginFormProps) => {
         toast.promise(
             mutateAsync(formData, {
                 onSuccess: (data) => {
-                    form.reset({ key: data.user?.email })
+                    form.reset(data)
                 },
             }),
             {

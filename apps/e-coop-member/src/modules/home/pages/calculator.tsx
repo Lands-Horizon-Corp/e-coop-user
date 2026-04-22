@@ -11,25 +11,25 @@ import {
     TrendingUp,
 } from 'lucide-react'
 
-import { FlickeringGrid } from '@/components/backgrounds/flickering-grid'
-import { Particles } from '@/components/ui/background-particles'
-import { Button } from '@/components/ui/button'
+import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
+import { Particles } from '@e-coop-monorepo/ui/components/ui/background-particles'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@/components/ui/card'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+} from '@e-coop-monorepo/ui/components/ui/card'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select'
+} from '@e-coop-monorepo/ui/components/ui/select'
 
 import { CoopBackground } from '../components/coop-bg'
 

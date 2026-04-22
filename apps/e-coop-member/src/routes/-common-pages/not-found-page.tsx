@@ -2,9 +2,9 @@ import { NotFoundRouteProps, useRouter } from '@tanstack/react-router'
 
 import { cn } from '@/helpers/tw-utils'
 
-import { FlickeringGrid } from '@/components/backgrounds/flickering-grid'
-import { ArrowLeftIcon, SignPostIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
+import { ArrowLeftIcon, SignPostIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 
 import { IBaseProps } from '@/types'
 

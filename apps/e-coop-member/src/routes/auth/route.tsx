@@ -1,15 +1,13 @@
 import { Outlet, createFileRoute } from '@tanstack/react-router'
 
-import GuestGuard from '@/modules/auth/components/guest-guard'
-
-// import { FlickeringGrid } from '@/components/backgrounds/flickering-grid'
+// import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
 // import LandingFooter from '@/modules/home/pages/footer'
 
-import AuthNav from '@/components/nav/navs/auth-nav'
+import AuthNav from '@e-coop-monorepo/ui/components/nav/navs/auth-nav'
 
 const AuthLayout = () => {
     return (
-        <GuestGuard allowAuthenticatedUser={false}>
+        <>
             <AuthNav />
             <main>
                 {/* <FlickeringGrid
@@ -21,7 +19,7 @@ const AuthLayout = () => {
                 <Outlet />
                 {/* <LandingFooter /> */}
             </main>
-        </GuestGuard>
+        </>
     )
 }
 

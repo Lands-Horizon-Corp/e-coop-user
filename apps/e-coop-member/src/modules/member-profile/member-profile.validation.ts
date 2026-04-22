@@ -102,11 +102,8 @@ export const MemberProfileIdentitySchema = z.object({
         .transform(descriptionTransformerSanitizer)
         .optional(),
 
-    signature_media_id: entityIdSchema.optional(),
-    signature_media: z.any(),
-
-    media_id: entityIdSchema.optional(),
-    media: z.any(),
+    signature_url: z.string().optional(),
+    profile_picture_url: z.string().optional(),
 })
 
 export type TMemberProfileIdentitySchema = z.infer<
@@ -156,9 +153,7 @@ export const MemberAssetSchema = z.object({
         .string<string>()
         .transform(descriptionTransformerSanitizer)
         .optional(),
-
-    media_id: entityIdSchema.optional(),
-    media: z.any(),
+    media_url: entityIdSchema.optional(),
 })
 
 export type IMemberAssetRequest = z.infer<typeof MemberAssetSchema>

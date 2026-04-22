@@ -4,8 +4,8 @@ import COOKIE_ICON from '@/assets/cookie-icon.svg'
 import { IUserForgotPasswordRequest } from '@/modules/auth'
 import ForgotPasswordForm from '@/modules/auth/components/forms/forgot-password-form'
 
-import PageContainer from '@/components/containers/page-container'
-import ImageDisplay from '@/components/image-display'
+import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
+import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 
 export const Route = createFileRoute('/auth/forgot-password')({
     component: RouteComponent,

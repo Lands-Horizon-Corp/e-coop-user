@@ -7,9 +7,7 @@ import {
     TGeneralStatus,
 } from '@/types'
 
-import { IMedia } from '../media'
 import { TMemberAddressSchema } from '../member-address/member-address.validation'
-import { TMemberGovernmentBenefitSchema } from '../member-government-benefit'
 import { IMemberCenter } from './components/comboboxes/member-center-combobox'
 import { IMemberClassification } from './components/comboboxes/member-classification-combobox'
 import { IMemberGender } from './components/comboboxes/member-gender-combobox'
@@ -22,6 +20,7 @@ import {
     TMemberContactReferenceSchema,
     TMemberEducationalAttainmentSchema,
     TMemberExpenseSchema,
+    TMemberGovernmentBenefitSchema,
     TMemberIncomeSchema,
     TMemberProfileIdentitySchema,
     TQuickCreateMemberProfileSchema,
@@ -188,11 +187,8 @@ export interface IMemberProfile extends IBaseEntityMeta {
     // MEMBER PROFILE
     id: TEntityId
 
-    signature_media_id?: TEntityId
-    signature_media?: IMedia
-
-    media_id?: TEntityId
-    media?: IMedia
+    signature_url?: string
+    profile_picture_url?: string
 
     member_type?: IMemberType
     member_group?: IMemberGroup
@@ -242,7 +238,6 @@ export interface IMemberProfile extends IBaseEntityMeta {
     member_contact_references?: IMemberContactReference[]
     longitude?: number
     latitude?: number
-    profile_picture_url: string
 }
 
 // export type IMemberProfileRequest = z.infer<typeof MemberProfileSchema>
@@ -255,31 +250,3 @@ export type IMemberProfileEducationalAttainmentRequest =
     TMemberEducationalAttainmentSchema
 
 export interface IMemberProfilePaginated extends IPaginatedResult<IMemberProfile> {}
-
-///
-
-// THIS IS ONLY USE FOR MEMBER PROFILE UPDATE
-// 📌 Identity & Personal Info
-export interface IMemberProfilePersonalInfoRequest {
-    first_name: string
-    middle_name?: string
-    last_name: string
-    full_name?: string
-    suffix?: string
-    member_gender_id?: TEntityId
-    birthdate?: string
-    contact_number?: string
-    business_contact_number?: string
-
-    birth_place?: string // ISO ALPHA-3
-
-    civil_status: TCivilStatus
-
-    occupation_id?: TEntityId
-
-    business_address?: string
-    business_contact?: string
-
-    notes?: string
-    description?: string
-}

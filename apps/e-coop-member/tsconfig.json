@@ -5,7 +5,7 @@
     "module": "esnext",
     "jsx": "react-jsx",
     "allowJs": false,
-    "esModuleInterop": false,
+    // "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
     "strict": true,
@@ -18,15 +18,22 @@
       "@e-coop-monorepo/ui/*": ["../../libs/ui/src/*"],
       
       // 2. The Migration Hack (routes old local imports to the new libs)
-      "@/helpers/*": ["libs/utils/helpers/*"],
-      "@/hooks/*": ["libs/utils/hooks/*"],
-      "@/validation/*": ["libs/utils/validation/*"],
-      "@/types/*": ["libs/utils/types/*"],
-      "@/contexts/*": ["libs/utils/contexts/*"],
-      "@/providers/*": ["libs/utils/providers/*"],
+      "@/helpers": ["../../libs/shared/src/helpers/index.ts"],
+      "@/helpers/*": ["../../libs/shared/src/helpers/*"],
+      "@/hooks": ["../../libs/shared/src/hooks/index.ts"],
+      "@/hooks/*": ["../../libs/shared/src/hooks/*"],
+      "@/validation": ["../../libs/shared/src/validation/index.ts"],
+      "@/validation/*": ["../../libs/shared/src/validation/*"],
+      "@/types": ["../../libs/shared/src/types/index.ts"],
+      "@/types/*": ["../../libs/shared/src/types/*"],
+      "@/contexts": ["../../libs/shared/src/contexts/index.ts"],
+      "@/contexts/*": ["../../libs/shared/src/contexts/*"],
+      "@/constants": ["../../libs/shared/src/constants/index.ts"],
+      "@/constants/*": ["../../libs/shared/src/constants/*"],
+      "@/providers/*": ["./src/providers/*"],
       
       // 👇 UI Migration Hack pointing to your Shadcn components
-      "@/components/*": ["libs/ui/src/lib/components/*"],
+      "@/components/*": ["../../libs/ui/src/components/*"],
       
       // 3. The fallback for local app files
       "@/*": ["./src/*"]

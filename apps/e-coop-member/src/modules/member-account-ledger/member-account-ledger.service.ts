@@ -1,19 +1,13 @@
-import { useQuery } from '@tanstack/react-query'
-
+import { Logger } from '@/helpers/loggers'
 import type { IMemberAccountingLedger } from '@/modules/member-account-ledger'
-import {
-    HookQueryOptions,
-    createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
-
-import { TEntityId } from '@/types'
+import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
 
 const {
     apiCrudHooks,
     apiCrudService,
     baseQueryKey: memberAccountLedgerBaseKey,
 } = createDataLayerFactory<IMemberAccountingLedger, never>({
-    url: '/api/v1/member-accounting-ledger',
+    url: '/api/v1/member-account-ledger',
     baseKey: 'member-account-ledger',
 })
 
@@ -46,30 +40,4 @@ export const {
     useDeleteMany: useDeleteManyMemberAccountLedger,
 } = apiCrudHooks
 
-export const getMemberWallet = async (
-    memberProfileId: TEntityId
-): Promise<IMemberAccountingLedger> => {
-    const response = await API.get<IMemberAccountingLedger>(
-        `${apiCrudService.route}/member-profile/${memberProfileId}/wallet`
-    )
-    return response.data
-}
-
-export const useGetMemberWallet = ({
-    memberProfileId,
-    options,
-}: {
-    memberProfileId?: TEntityId
-    options?: HookQueryOptions<IMemberAccountingLedger, Error>
-}) => {
-    return useQuery<IMemberAccountingLedger, Error>({
-        queryKey: [
-            memberAccountLedgerBaseKey,
-            'member-wallet',
-            memberProfileId,
-        ],
-        enabled: !!memberProfileId,
-        queryFn: () => getMemberWallet(memberProfileId!),
-        ...options,
-    })
-}
+export const logger = Logger.getInstance('member-account-ledger')

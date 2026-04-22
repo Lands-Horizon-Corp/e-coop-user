@@ -1,3 +1,3 @@
-// import { Logger } from '@/helpers/loggers'
+import { Logger } from '@/helpers/loggers'
 
-// export const logger = Logger.getInstance('member-bank-card')
+export const logger = Logger.getInstance('member-bank-card')

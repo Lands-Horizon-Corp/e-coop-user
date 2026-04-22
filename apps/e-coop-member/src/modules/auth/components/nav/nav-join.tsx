@@ -1,17 +1,14 @@
-import { Link, useLocation } from '@tanstack/react-router'
+import { Link } from '@tanstack/react-router'
 
-import { FingerprintScanIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import { useFakeStore } from '@/store/fake-store'
 
-import { useAuthStore } from '../../authgentication.store'
+import { FingerprintScanIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 
 const NavJoin = () => {
-    const pathname = useLocation({
-        select: (location) => location.pathname,
-    })
-    const { authStatus } = useAuthStore()
+    const { authMember } = useFakeStore()
 
-    if (authStatus !== 'unauthorized' || pathname === '/auth/join') return null
+    if (authMember) return null
 
     return (
         <Link to="/auth/join">

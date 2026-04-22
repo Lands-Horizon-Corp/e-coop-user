@@ -6,13 +6,13 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 import { cn } from '@/helpers'
 import { allErrorMessageExtractor } from '@/helpers/error-message-extractor'
 
-import { FingerPrintIcon } from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
-import { Form, FormItem } from '@/components/ui/form'
-import FormErrorMessage from '@/components/ui/form-error-message'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import PasswordInput from '@/components/ui/password-input'
+import { FingerPrintIcon } from '@e-coop-monorepo/ui/components/icons'
+import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Form, FormItem } from '@e-coop-monorepo/ui/components/ui/form'
+import FormErrorMessage from '@e-coop-monorepo/ui/components/ui/form-error-message'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 
@@ -69,21 +69,15 @@ const ResetPasswordForm = ({
 
     const onSubmit = form.handleSubmit((formData) => {
         reset()
-        toast.promise(
-            mutateAsync({
-                ...formData,
-                resetId: formData.reset_id,
-            }),
-            {
-                loading: 'Wait..',
-                success: 'Your new password has been saved.',
-                error: (error) =>
-                    allErrorMessageExtractor<string>({
-                        error,
-                        showUnknownErrorMessage: true,
-                    }) || 'unknown error',
-            }
-        )
+        toast.promise(mutateAsync(formData), {
+            loading: 'Wait..',
+            success: 'Your new password has been saved.',
+            error: (error) =>
+                allErrorMessageExtractor<string>({
+                    error,
+                    showUnknownErrorMessage: true,
+                }) || 'unknown error',
+        })
     }, handleFocusError)
 
     return (

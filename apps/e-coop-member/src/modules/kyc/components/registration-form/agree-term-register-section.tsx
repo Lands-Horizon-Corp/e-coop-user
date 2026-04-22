@@ -14,19 +14,19 @@ import {
     RefreshIcon,
     ShieldIcon,
     Users3FillIcon,
-} from '@/components/icons'
-import TextRenderer from '@/components/text-renderer'
+} from '@e-coop-monorepo/ui/components/icons'
+import TextRenderer from '@e-coop-monorepo/ui/components/text-renderer'
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from '@/components/ui/accordion'
-import { Button } from '@/components/ui/button'
-import { Checkbox } from '@/components/ui/checkbox'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import { Label } from '@/components/ui/label'
-import { ScrollArea } from '@/components/ui/scroll-area'
+} from '@e-coop-monorepo/ui/components/ui/accordion'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Checkbox } from '@e-coop-monorepo/ui/components/ui/checkbox'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
+import { ScrollArea } from '@e-coop-monorepo/ui/components/ui/scroll-area'
 
 import { useKYCRegister } from '../..'
 import { KYCRegisterSchema, TKYCAgreeTermsSchema } from '../../kyc.validation'

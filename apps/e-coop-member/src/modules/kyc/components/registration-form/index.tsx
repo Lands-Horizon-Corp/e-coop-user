@@ -4,9 +4,9 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import { cn } from '@/helpers'
 
-import { ChevronLeftIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
-import { Form } from '@/components/ui/form'
+import { ChevronLeftIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Form } from '@e-coop-monorepo/ui/components/ui/form'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 
@@ -62,20 +62,16 @@ const KYCRegisterForm = ({
         defaultValues: {
             step: 0,
             first_name: '',
-            sex: 'female',
-            civil_status: 'married',
             last_name: '',
             username: '',
             middle_name: '',
             suffix: '',
-            birth_place: 'PHL',
             ...defaultValues,
         },
     })
 
     const { formRef, handleFocusError } = useFormHelper<IKYCRegisterRequest>({
         form,
-        preventExitOnDirty: form.getValues('step') !== 10,
         ...formProps,
     })
 
@@ -208,8 +204,8 @@ const KYCRegisterForm = ({
                         return (
                             <div
                                 className={cn(
-                                    'w-5 h-1.5 rounded-full bg-muted dark:bg-accent',
-                                    step === i && 'bg-primary dark:bg-primary'
+                                    'w-5 h-1.5 rounded-full bg-muted',
+                                    step === i && 'bg-primary'
                                 )}
                                 key={i}
                             />

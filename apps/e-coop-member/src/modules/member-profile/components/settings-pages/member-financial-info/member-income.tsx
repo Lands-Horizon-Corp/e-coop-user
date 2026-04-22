@@ -16,11 +16,11 @@ import {
     PencilFillIcon,
     PlusIcon,
     TrashIcon,
-} from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
+} from '@e-coop-monorepo/ui/components/icons'
+import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
+import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Separator } from '@e-coop-monorepo/ui/components/ui/separator'
 
 import { useModalState } from '@/hooks/use-modal-state'
 

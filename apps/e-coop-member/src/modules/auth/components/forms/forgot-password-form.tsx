@@ -7,13 +7,13 @@ import { cn } from '@/helpers'
 import { allErrorMessageExtractor } from '@/helpers/error-message-extractor'
 import { IForgetPasswordEntry } from '@/store/fake-store'
 
-import { FingerPrintIcon } from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
-import { Form } from '@/components/ui/form'
-import FormErrorMessage from '@/components/ui/form-error-message'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import { Input } from '@/components/ui/input'
+import { FingerPrintIcon } from '@e-coop-monorepo/ui/components/icons'
+import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Form } from '@e-coop-monorepo/ui/components/ui/form'
+import FormErrorMessage from '@e-coop-monorepo/ui/components/ui/form-error-message'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 
@@ -49,7 +49,7 @@ const ForgotPasswordForm = ({
         reset,
     } = useForgotPassword({
         options: {
-            // onSuccess: formProps.onSuccess,
+            onSuccess: formProps.onSuccess,
             onError: formProps.onError,
         },
     })

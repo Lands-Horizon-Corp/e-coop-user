@@ -13,18 +13,18 @@ import { X } from 'lucide-react'
 import { Calendar, Heart, User } from 'lucide-react'
 import { ImagePlus, PenTool } from 'lucide-react'
 
-import { UserPlusIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { UserPlusIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select'
-import { Textarea } from '@/components/ui/textarea'
+} from '@e-coop-monorepo/ui/components/ui/select'
+import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 
 import { TRelationship } from '../comboboxes/relationship-combobox'
 import { FAMILY_RELATIONSHIP } from '../comboboxes/relationship-combobox'

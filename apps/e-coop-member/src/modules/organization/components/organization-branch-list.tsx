@@ -38,7 +38,9 @@ export const BranchList = ({ branches }: BranchListProps) => {
                             </h2>
                             <p className="text-muted-foreground text-sm mt-1">
                                 {branches.length}{' '}
-                                {branches.length === 1 ? 'Branch' : 'Branches'}{' '}
+                                {branches.length === 1
+                                    ? 'Branch'
+                                    : 'Branches'}{' '}
                                 to serve you
                             </p>
                         </div>
@@ -48,13 +50,10 @@ export const BranchList = ({ branches }: BranchListProps) => {
                 {/* Branch Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
                     {sortedBranches.map((branch, index) => (
-                        <AnimateRevealEffect
-                            duration={index * 0.5}
-                            key={branch.id}
-                        >
+                        <AnimateRevealEffect duration={index * .50}>
                             <div
-                                className="animate-fade-up"
                                 key={branch.id}
+                                className="animate-fade-up"
                                 style={{
                                     animationDelay: `${0.1 * (index + 1)}s`,
                                 }}

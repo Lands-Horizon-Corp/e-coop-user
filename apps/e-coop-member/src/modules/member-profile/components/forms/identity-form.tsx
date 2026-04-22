@@ -10,20 +10,20 @@ import CivilStatusCombobox from '@/modules/member-profile/components/comboboxes/
 import { CountryCombobox } from '@/modules/member-profile/components/comboboxes/country-combobox'
 import MemberGenderCombobox from '@/modules/member-profile/components/comboboxes/member-gender-combobox'
 
-import FormFooterResetSubmit from '@/components/form-components/form-footer-reset-submit'
-import { CameraFillIcon, FilesIcon, UserIcon } from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import SignatureField from '@/components/signature/signature-field'
-import SingleImageUploaderModal from '@/components/single-image-uploader/single-image-uploader-modal'
-import ActionTooltip from '@/components/tooltips/action-tooltip'
-import { Button } from '@/components/ui/button'
-import { Form } from '@/components/ui/form'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import ImageField from '@/components/ui/image-field'
-// import ImageField from '@/components/ui/image-field'
-import { Input } from '@/components/ui/input'
-import InputDate from '@/components/ui/input-date'
-import { Textarea } from '@/components/ui/textarea'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
+import { CameraFillIcon, FilesIcon, UserIcon } from '@e-coop-monorepo/ui/components/icons'
+import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
+import SignatureField from '@e-coop-monorepo/ui/components/signature/signature-field'
+import SingleImageUploaderModal from '@e-coop-monorepo/ui/components/single-image-uploader/single-image-uploader-modal'
+import ActionTooltip from '@e-coop-monorepo/ui/components/tooltips/action-tooltip'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Form } from '@e-coop-monorepo/ui/components/ui/form'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
+// import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import InputDate from '@e-coop-monorepo/ui/components/ui/input-date'
+import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 import { useModalState } from '@/hooks/use-modal-state'
@@ -63,7 +63,6 @@ const IdentityForm = ({
         mode: 'onSubmit',
         reValidateMode: 'onChange',
         defaultValues: {
-            birth_place: 'PHL',
             ...formProps.defaultValues,
             birthdate: toInputDateString(
                 formProps.defaultValues?.birthdate ?? new Date()
@@ -131,40 +130,30 @@ const IdentityForm = ({
                             <FormFieldWrapper
                                 control={form.control}
                                 label="Photo"
-                                name="media_id"
+                                name="profile_picture_url"
                                 render={({ field: _field }) => (
                                     // <AccountProfilePicture form={form} />
                                     <ImageField
                                         {..._field}
                                         onChange={(src) => {
-                                            _field.onChange(src?.id)
-                                            form.setValue('media', src)
+                                            _field.onChange(src)
                                         }}
                                         placeholder="Upload Photo"
-                                        value={form.watch('media')}
+                                        value={form.watch(
+                                            'profile_picture_url'
+                                        )}
                                     />
                                 )}
                             />
                             <FormFieldWrapper
                                 control={form.control}
                                 label="Signature"
-                                name="signature_media_id"
+                                name="signature_url"
                                 render={({ field }) => {
                                     return (
                                         <SignatureField
                                             {...field}
-                                            onChange={(media) => {
-                                                field.onChange(media?.id)
-                                                form.setValue(
-                                                    'signature_media',
-                                                    media
-                                                )
-                                            }}
                                             placeholder="Signature"
-                                            value={
-                                                form.watch('signature_media')
-                                                    ?.download_url
-                                            }
                                         />
                                     )
                                 }}
@@ -282,14 +271,7 @@ const IdentityForm = ({
                                     label="Birth Place (ISO Alpha-3)"
                                     name="birth_place"
                                     render={({ field }) => (
-                                        <CountryCombobox
-                                            {...field}
-                                            defaultValue={field.value}
-                                            onChange={(country) =>
-                                                field.onChange(country?.alpha3)
-                                            }
-                                            undefinable
-                                        />
+                                        <CountryCombobox {...field} />
                                     )}
                                 />
                             </div>
@@ -415,8 +397,7 @@ export const AccountProfilePictureFormField = ({
                 singleImageUploadProps={{
                     defaultFileName: `user`,
                     onUploadComplete: (newMediaResource) => {
-                        form.setValue('media', newMediaResource)
-                        form.setValue('media_id', newMediaResource.id)
+                        form.setValue('profile_picture_url', newMediaResource)
                         modalState.onOpenChange(false)
                     },
                 }}
@@ -425,7 +406,7 @@ export const AccountProfilePictureFormField = ({
             <ImageDisplay
                 className="size-full rounded-full border-4 border-popover shadow-sm"
                 fallback={form.getValues('first_name').charAt(0) ?? '-'}
-                src={form.getValues('media')}
+                src={form.getValues('profile_picture_url')}
             />
             <ActionTooltip align="center" side="right" tooltipContent="Change">
                 <Button

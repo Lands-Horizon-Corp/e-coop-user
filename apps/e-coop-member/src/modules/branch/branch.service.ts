@@ -6,7 +6,7 @@ import {
 } from '@/providers/repositories/data-layer-factory'
 import { createMutationFactory } from '@/providers/repositories/mutation-factory'
 
-import { getCurrentLocation, getDistance } from '@/components/map/map.utils'
+import { getCurrentLocation, getDistance } from '@e-coop-monorepo/ui/components/map/map.utils'
 
 import { TAPIQueryOptions, TEntityId } from '@/types'
 

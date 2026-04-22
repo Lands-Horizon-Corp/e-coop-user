@@ -2,8 +2,8 @@ import { useMemo } from 'react'
 
 import { cn } from '@/helpers/tw-utils'
 
-import { CheckIcon, XIcon } from '@/components/icons'
-import { Progress } from '@/components/ui/progress'
+import { CheckIcon, XIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Progress } from '@e-coop-monorepo/ui/components/ui/progress'
 
 import { IClassProps } from '@/types'
 

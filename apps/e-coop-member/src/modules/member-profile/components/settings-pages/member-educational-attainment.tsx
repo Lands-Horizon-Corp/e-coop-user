@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
@@ -9,24 +9,24 @@ import {
     FileText,
     GraduationCap,
     Pencil,
+    Plus,
     School,
     X,
 } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select'
-import { Textarea } from '@/components/ui/textarea'
+} from '@e-coop-monorepo/ui/components/ui/select'
+import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 
 import { IMemberProfile } from '../../member-profile.types'
-import { SettingsSection } from './settngs-section'
 
 type TEntityId = string
 
@@ -57,6 +57,79 @@ export interface IMemberEducationalAttainment {
     program_course?: string
     educational_attainment: TEducationalAttainment
     description?: string
+}
+
+interface EducationSectionProps {
+    title: string
+    description?: string
+    icon?: ReactNode
+    onAdd: () => void
+    addLabel: string
+    isFormOpen: boolean
+    form: ReactNode
+    children: ReactNode
+    isEmpty: boolean
+    emptyMessage: string
+}
+
+function EducationSection({
+    title,
+    description,
+    icon,
+    onAdd,
+    addLabel,
+    isFormOpen,
+    form,
+    children,
+    isEmpty,
+    emptyMessage,
+}: EducationSectionProps) {
+    return (
+        <section className="space-y-4">
+            <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                    {icon && (
+                        <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
+                            {icon}
+                        </div>
+                    )}
+                    <div>
+                        <h2 className="text-lg font-semibold text-foreground">
+                            {title}
+                        </h2>
+                        {description && (
+                            <p className="text-sm text-muted-foreground">
+                                {description}
+                            </p>
+                        )}
+                    </div>
+                </div>
+                {!isFormOpen && (
+                    <Button className="gap-2" onClick={onAdd}>
+                        <Plus className="w-4 h-4" />
+                        {addLabel}
+                    </Button>
+                )}
+            </div>
+
+            {isFormOpen && form}
+
+            {!isEmpty ? (
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {children}
+                </div>
+            ) : !isFormOpen ? (
+                <div className="flex flex-col items-center justify-center py-12 border border-dashed border-border rounded-xl bg-card/50">
+                    <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center mb-4">
+                        <GraduationCap className="w-6 h-6 text-muted-foreground" />
+                    </div>
+                    <p className="text-muted-foreground text-sm">
+                        {emptyMessage}
+                    </p>
+                </div>
+            ) : null}
+        </section>
+    )
 }
 
 interface EducationCardProps {
@@ -173,6 +246,7 @@ function EducationCard({ education, onEdit }: EducationCardProps) {
     )
 }
 
+// ============= Form Component =============
 interface EducationFormProps {
     onSubmit: (data: EducationFormData) => void
     onCancel: () => void
@@ -487,21 +561,20 @@ const MemberEducationalAttainmentSection = ({
     return (
         <div className="min-h-screen bg-background">
             <div className="max-w-6xl mx-auto px-4 py-8 space-y-10">
-                <SettingsSection
+                <EducationSection
                     addLabel="Add Education"
                     description="Academic history and qualifications"
                     emptyMessage="No educational records yet. Add your educational background."
                     form={
-                        showForm && (
-                            <EducationForm
-                                initialData={editingEducation || undefined}
-                                onCancel={handleCancel}
-                                onSubmit={handleSubmit}
-                            />
-                        )
+                        <EducationForm
+                            initialData={editingEducation || undefined}
+                            onCancel={handleCancel}
+                            onSubmit={handleSubmit}
+                        />
                     }
                     icon={<GraduationCap className="w-5 h-5 text-primary" />}
                     isEmpty={educations.length === 0}
+                    isFormOpen={showForm}
                     onAdd={() => setShowForm(true)}
                     title="Educational Attainments"
                 >
@@ -512,7 +585,7 @@ const MemberEducationalAttainmentSection = ({
                             onEdit={handleEdit}
                         />
                     ))}
-                </SettingsSection>
+                </EducationSection>
             </div>
         </div>
     )

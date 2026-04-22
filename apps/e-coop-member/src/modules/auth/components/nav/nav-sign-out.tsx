@@ -3,39 +3,33 @@ import { toast } from 'sonner'
 
 // import { useAuthStore } from '@/modules/authentication/authgentication.store'
 import useConfirmModalStore from '@/store/confirm-modal-store'
+import { useFakeStore } from '@/store/fake-store'
 
-import { FingerprintOffIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import { FingerprintOffIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 
 import { useSignOut } from '../../auth.service'
-import { useAuthStore } from '../../authgentication.store'
 
 const NavSignOut = () => {
     const router = useRouter()
     const { onOpen } = useConfirmModalStore()
-
-    const {
-        authStatus,
-        currentAuth: { user, member_profile },
-        resetAuth,
-    } = useAuthStore()
-
-    const { mutate: handleSignout, isPending: isSigningOut } = useSignOut({
+    const { mutate: handleSignout } = useSignOut({
         options: {
             onSuccess: () => {
-                router.navigate({ to: '/' })
+                router.navigate({ to: '/auth/sign-in' as string })
                 toast.success('Signed out')
-                resetAuth()
             },
         },
     })
 
-    if (authStatus === 'unauthorized' || !user || !member_profile) return null
+    const { authMember } = useFakeStore()
+
+    if (!authMember) return null
 
     return (
         <Button
             className="scale-effects rounded-full cursor-pointer"
-            disabled={isSigningOut}
+            // disabled={isSigningOut}
             onClick={() =>
                 onOpen({
                     title: 'Sign Out',

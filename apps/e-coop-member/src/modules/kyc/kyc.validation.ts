@@ -2,7 +2,6 @@ import z from 'zod'
 
 import {
     EntityIdSchema,
-    SexSchema,
     civilStatusSchema,
     stringDateSchema,
 } from '@/validation'
@@ -21,19 +20,15 @@ export const KYCVerifyBranchSchema = z.object({
 export const KYCVerifyPersonalInfoSchema = z.object({
     username: z.coerce
         .string<string>()
-        .min(3, 'User name min of 3 characters')
+        .min(1, 'User name is required')
         .max(30)
         .lowercase('Username must be lowercase'),
     first_name: z.coerce.string<string>().min(1, 'First name is required'),
     last_name: z.coerce.string<string>().min(1, 'Last name is required'),
     middle_name: z.coerce.string<string>().optional(),
     suffix: z.coerce.string<string>().optional().nullable(),
-    sex: SexSchema,
     civil_status: civilStatusSchema,
     member_gender: z.any(),
-
-    birth_place: z.string().min(3, 'Country code is required'),
-
     birthdate: stringDateSchema
         .refine(
             (val) => {

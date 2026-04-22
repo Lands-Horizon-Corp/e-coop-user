@@ -1,12 +1,9 @@
-// import axios from 'axios'
 import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { cn } from '@/helpers'
 import { toDateTimeFormatFile } from '@/helpers/date-utils'
 import { useUploadMedia } from '@/modules/media'
-// import { TSpoofingResponse } from '@/providers/api'
-// import { error } from 'console'
 import { ScanFace } from 'lucide-react'
 import Webcam from 'react-webcam'
 
@@ -14,8 +11,8 @@ import {
     CheckFillIcon,
     FingerPrintIcon,
     RotateLeftIcon,
-} from '@/components/icons'
-import { Button } from '@/components/ui/button'
+} from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 
 import { useCamera } from '@/hooks/use-camera'
 
@@ -80,8 +77,8 @@ export const VerifyFaceRecognitionSection = ({
                                 }
                             ),
                             {
-                                loading: 'Uploading selfie',
-                                error: 'Failed to upload selfie:',
+                                loading: 'Verifying selfie',
+                                error: 'Failed to verify selfie',
                             }
                         )
                     },
@@ -89,12 +86,7 @@ export const VerifyFaceRecognitionSection = ({
             ),
             {
                 loading: 'Verifying selfie',
-                error: (error: unknown) => {
-                    if (error instanceof Error) {
-                        return `Failed to verify selfie: ${error.message}`
-                    }
-                    return 'Failed to verify selfie'
-                },
+                error: 'Failed to verify selfie',
             }
         )
 
@@ -153,15 +145,9 @@ export const VerifyFaceRecognitionSection = ({
                             <Webcam
                                 audio={false}
                                 className="absolute inset-0 h-full w-full object-cover scale-110"
-                                minScreenshotHeight={500}
-                                minScreenshotWidth={500}
                                 ref={camRef}
                                 screenshotFormat="image/jpeg"
-                                videoConstraints={{
-                                    facingMode: 'user',
-                                    width: { ideal: 500 },
-                                    height: { ideal: 500 },
-                                }}
+                                videoConstraints={{ facingMode: 'user' }}
                             />
                         )}
 

@@ -10,11 +10,11 @@ import {
     Users,
 } from 'lucide-react'
 
-import { FlickeringGrid } from '@/components/backgrounds/flickering-grid'
-import { Particles } from '@/components/ui/background-particles'
-import { Badge } from '@/components/ui/badge'
-import { Button } from '@/components/ui/button'
-import { Card } from '@/components/ui/card'
+import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
+import { Particles } from '@e-coop-monorepo/ui/components/ui/background-particles'
+import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Card } from '@e-coop-monorepo/ui/components/ui/card'
 
 import AnimateRevealEffect from '../components/animate-reveal-effect'
 import { CoopBackground } from '../components/coop-bg'

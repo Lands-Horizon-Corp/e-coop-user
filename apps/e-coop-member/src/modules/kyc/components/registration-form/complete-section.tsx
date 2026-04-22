@@ -2,7 +2,7 @@ import { UseFormReturn } from 'react-hook-form'
 
 import { ArrowRight, CheckCircle2, PartyPopper } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 
 import { IKYCRegisterRequest } from '../../kyc.types'
 
@@ -64,7 +64,7 @@ export const CompleteSection = ({ onComplete }: CompleteSectionProps) => {
                 size="lg"
                 type="button"
             >
-                Go to Sign In
+                Go to Dashboard
                 <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
         </section>

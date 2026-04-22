@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
+import { Logger } from '@/helpers/loggers'
 import APIService from '@/providers/api'
 import { createAPIRepository } from '@/providers/repositories/api-crud-factory'
 import { HookQueryOptions } from '@/providers/repositories/data-layer-factory'
@@ -9,7 +10,6 @@ import { TAPIQueryOptions, TEntityId } from '@/types'
 
 import { IMemberGeneralLedgerTotal } from '../general-ledger'
 import {
-    IMemberAccountingLedger,
     IMemberAccountingLedgerPaginated,
     IMemberAccountingLedgerTotal,
 } from '../member-account-ledger'
@@ -105,62 +105,28 @@ export const useFilteredPaginatedMemberAccountingLedger = ({
     })
 }
 
-export const useGetMemberAccountingLedger = ({
+// Hook for fetching the total accounting ledger for a member
+export const useMemberAccountingLedgerTotal = ({
+    enabled,
     memberProfileId,
-    query,
     options,
 }: {
-    mode?: TMemberAccountingLedgerHookMode
-    memberProfileId?: TEntityId
-    query?: TAPIQueryOptions
-    options?: HookQueryOptions<IMemberAccountingLedger[], Error>
+    memberProfileId: TEntityId
+    enabled?: boolean
+    options?: HookQueryOptions<IMemberAccountingLedgerTotal, Error>
 }) => {
-    return useQuery<IMemberAccountingLedger[], Error>({
+    return useQuery<IMemberAccountingLedgerTotal, Error>({
         ...options,
-        queryKey: [
-            'member-accounting-ledger',
-            'filtered-paginated',
-            memberProfileId,
-            query,
-        ],
-        queryFn: async () => {
-            const finalUrl = qs.stringifyUrl(
-                {
-                    url: `/api/v1/member-accounting-ledger/member-profile/${memberProfileId}`,
-                    query,
-                },
-                { skipNull: true }
-            )
-
-            const response =
-                await APIService.get<IMemberAccountingLedger[]>(finalUrl)
-            return response.data
+        queryKey: ['member-accounting-ledger', 'total', memberProfileId],
+        queryFn: async () => getMemberAccountingLedgerTotal(memberProfileId),
+        initialData: {
+            total_deposits: 0,
+            total_loans: 0,
+            total_share_capital_plus_fixed_savings: 0,
         },
+        enabled,
     })
 }
-
-// Hook for fetching the total accounting ledger for a member
-// export const useMemberAccountingLedgerTotal = ({
-//     enabled,
-//     memberProfileId,
-//     options,
-// }: {
-//     memberProfileId: TEntityId
-//     enabled?: boolean
-//     options?: HookQueryOptions<IMemberAccountingLedgerTotal, Error>
-// }) => {
-//     return useQuery<IMemberAccountingLedgerTotal, Error>({
-//         ...options,
-//         queryKey: ['member-accounting-ledger', 'total', memberProfileId],
-//         queryFn: async () => getMemberAccountingLedgerTotal(memberProfileId),
-//         initialData: {
-//             total_deposits: 0,
-//             total_loans: 0,
-//             total_share_capital_plus_fixed_savings: 0,
-//         },
-//         enabled,
-//     })
-// }
 
 // Hook for fetching the total of a member account general ledger
 export const useMemberAccountGeneralLedgerTotal = ({
@@ -189,3 +155,5 @@ export const useMemberAccountGeneralLedgerTotal = ({
             getMemberAccountGeneralLedgerTotal({ memberProfileId, accountId }),
     })
 }
+
+export const logger = Logger.getInstance('member-accounting-ledger')

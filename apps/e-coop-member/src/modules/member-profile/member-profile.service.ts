@@ -1,15 +1,12 @@
 import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
-import {
-    createMutationFactory,
-    updateMutationInvalidationFn,
-} from '@/providers/repositories/mutation-factory'
+import { createMutationFactory } from '@/providers/repositories/mutation-factory'
 import { useFakeStore } from '@/store/fake-store'
 
 import { TEntityId } from '@/types'
 
 import {
     IMemberProfile,
-    IMemberProfilePersonalInfoRequest,
+    IMemberpRofileIdentityRequest,
 } from './member-profile.types'
 
 export const {
@@ -23,21 +20,43 @@ export const {
 
 // ⚙️🛠️ API SERVICE HERE
 
-export const { API, updateById: updateMemberProfileById } = apiCrudService
+export const { API } = apiCrudService
 
 export const useUpdateMemberProfileIdentity = createMutationFactory<
     IMemberProfile,
     Error,
-    { memberId: TEntityId; data: IMemberProfilePersonalInfoRequest }
+    { memberId: TEntityId; data: IMemberpRofileIdentityRequest }
 >({
-    mutationFn: async ({ memberId, data }) =>
-        await updateMemberProfileById({
-            id: memberId,
-            payload: data,
-            targetUrl: `/personal-info`,
-        }),
-    invalidationFn: (args) =>
-        updateMutationInvalidationFn(memberProfileBaseKey, args),
+    mutationFn: async ({ memberId, data }) => {
+        const { updateMember, authMember, setAuthMember } =
+            useFakeStore.getState()
+
+        // Update inside the members list
+        updateMember(memberId, {
+            ...data,
+            updated_at: new Date().toISOString(),
+        })
+
+        // If the authenticated member is the one being updated, update it too
+        if (authMember?.id === memberId) {
+            setAuthMember({
+                ...authMember,
+                ...data,
+                updated_at: new Date().toISOString(),
+            })
+        }
+
+        // Return updated member (React Query expects return)
+        const updated = useFakeStore
+            .getState()
+            .members.find((m) => m.id === memberId)
+
+        if (!updated) {
+            throw new Error('Member not found in fake store')
+        }
+
+        return updated
+    },
 })
 
 export const useDeleteEducationalAttainment = createMutationFactory<

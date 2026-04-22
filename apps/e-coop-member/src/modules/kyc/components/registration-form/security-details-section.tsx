@@ -9,17 +9,17 @@ import {
 } from '@/modules/auth/components/value-checklist-indicator'
 import { Lock } from 'lucide-react'
 
-import { EmailIcon, VerifiedPatchIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
-import { FormItem } from '@/components/ui/form'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
+import { EmailIcon, VerifiedPatchIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { FormItem } from '@e-coop-monorepo/ui/components/ui/form'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import {
     InputGroup,
     InputGroupAddon,
     InputGroupInput,
-} from '@/components/ui/input-group'
-import PasswordInput from '@/components/ui/password-input'
-import { PhoneInput } from '@/components/ui/phone-input'
+} from '@e-coop-monorepo/ui/components/ui/input-group'
+import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
+import { PhoneInput } from '@e-coop-monorepo/ui/components/ui/phone-input'
 
 import { TKYCVerifySecurityDetailsSchema, useKYCSecurityDetails } from '../..'
 

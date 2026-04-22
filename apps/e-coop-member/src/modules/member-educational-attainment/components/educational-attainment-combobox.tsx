@@ -3,8 +3,8 @@ import * as React from 'react'
 import { cn } from '@/helpers'
 import { Check } from 'lucide-react'
 
-import { ChevronDownIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import { ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     Command,
     CommandEmpty,
@@ -12,12 +12,12 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@/components/ui/command'
+} from '@e-coop-monorepo/ui/components/ui/command'
 import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from '@/components/ui/popover'
+} from '@e-coop-monorepo/ui/components/ui/popover'
 
 import { EDUCATIONAL_ATTAINMENT } from '../constants'
 import { TEducationalAttainment } from '../member-educational-attainment.types'

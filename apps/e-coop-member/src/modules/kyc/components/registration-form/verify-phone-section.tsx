@@ -7,13 +7,13 @@ import { cn } from '@/helpers'
 import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
 import { Phone } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import {
     InputOTP,
     InputOTPGroup,
     InputOTPSlot,
-} from '@/components/ui/input-otp'
+} from '@e-coop-monorepo/ui/components/ui/input-otp'
 
 import {
     TKYCVerifyPhoneSchema,
@@ -81,7 +81,6 @@ export const VerifyPhoneSection = ({
                     name="otp"
                     render={({ field }) => (
                         <InputOTP
-                            autoFocus
                             maxLength={6}
                             {...field}
                             onComplete={() => onSubmit()}

@@ -1,75 +1,205 @@
 // ==========================================
 // 🧩 ROOT UI COMPONENTS
 // ==========================================
-export * from './lib/components/ui/accordion'
-export * from './lib/components/ui/alert'
-export * from './lib/components/ui/aspect-ratio'
-export * from './lib/components/ui/avatar'
-export * from './lib/components/ui/background-particles'
-export * from './lib/components/ui/background-paths'
-export * from './lib/components/ui/badge'
-export * from './lib/components/ui/breadcrumb'
-export * from './lib/components/ui/button-group'
-export * from './lib/components/ui/button'
-export * from './lib/components/ui/calendar'
-export * from './lib/components/ui/card'
-export * from './lib/components/ui/carousel'
-export * from './lib/components/ui/checkbox'
-export * from './lib/components/ui/collapsible'
-export * from './lib/components/ui/command'
-export * from './lib/components/ui/context-menu'
-export * from './lib/components/ui/date-input-field'
-export * from './lib/components/ui/debounced-input'
-export * from './lib/components/ui/dialog'
-export * from './lib/components/ui/drawer'
-export * from './lib/components/ui/dropdown-menu'
-export * from './lib/components/ui/electric-line'
-export * from './lib/components/ui/empty-state'
-export * from './lib/components/ui/empty'
-export * from './lib/components/ui/file-uploader'
-export * from './lib/components/ui/FileTypeIcons'
-export * from './lib/components/ui/form-error-message'
-export * from './lib/components/ui/form-field-wrapper'
-export * from './lib/components/ui/form'
-export * from './lib/components/ui/gradient-text'
-export * from './lib/components/ui/grid-pattern'
-export * from './lib/components/ui/hover-card'
-export * from './lib/components/ui/image-field'
-export * from './lib/components/ui/input-date'
-export * from './lib/components/ui/input-group'
-export * from './lib/components/ui/input-otp'
-export * from './lib/components/ui/input'
-export * from './lib/components/ui/kbd'
-export * from './lib/components/ui/label'
-export * from './lib/components/ui/mouse-trail-effect'
-export * from './lib/components/ui/password-input'
-export * from './lib/components/ui/phone-input'
-export * from './lib/components/ui/popover'
-export * from './lib/components/ui/progress'
-export * from './lib/components/ui/radio-group'
-export * from './lib/components/ui/random-code'
-export * from './lib/components/ui/re-captcha'
-export * from './lib/components/ui/resizable'
-export * from './lib/components/ui/scroll-area'
-export * from './lib/components/ui/select'
-export * from './lib/components/ui/separator'
-export * from './lib/components/ui/sheet'
-export * from './lib/components/ui/sidebar'
-export * from './lib/components/ui/skeleton'
-export * from './lib/components/ui/slider'
-export * from './lib/components/ui/sonner'
-export * from './lib/components/ui/stepper'
-export * from './lib/components/ui/switch'
-export * from './lib/components/ui/table'
-export * from './lib/components/ui/tabs'
-export * from './lib/components/ui/textarea'
-export * from './lib/components/ui/timeline'
-export * from './lib/components/ui/toggle-group'
-export * from './lib/components/ui/toggle'
-export * from './lib/components/ui/tooltip'
-export * from './lib/components/ui/triple-arrow'
-export * from './lib/components/ui/truncated-text'
-export * from './lib/components/ui/use-isFocused'
+export * from './components/ui/accordion'
+export * from './components/ui/alert'
+export * from './components/ui/aspect-ratio'
+export * from './components/ui/avatar'
+export * from './components/ui/background-particles'
+export * from './components/ui/background-paths'
+export * from './components/ui/badge'
+export * from './components/ui/breadcrumb'
+export * from './components/ui/button-group'
+export * from './components/ui/button'
+export * from './components/ui/calendar'
+export * from './components/ui/card'
+export * from './components/ui/carousel'
+export * from './components/ui/checkbox'
+export * from './components/ui/collapsible'
+export * from './components/ui/command'
+export * from './components/ui/context-menu'
+export * from './components/ui/date-input-field'
+export * from './components/ui/debounced-input'
+export * from './components/ui/dialog'
+export * from './components/ui/drawer'
+export * from './components/ui/dropdown-menu'
+export * from './components/ui/electric-line'
+export * from './components/ui/empty-state'
+export * from './components/ui/empty'
+export * from './components/ui/file-uploader'
+export * from './components/ui/FileTypeIcons'
+export * from './components/ui/form-error-message'
+export * from './components/ui/form-field-wrapper'
+export * from './components/ui/form'
+export * from './components/ui/gradient-text'
+export * from './components/ui/grid-pattern'
+export * from './components/ui/hover-card'
+export * from './components/ui/image-field'
+export * from './components/ui/input-date'
+export * from './components/ui/input-group'
+export * from './components/ui/input-otp'
+export * from './components/ui/input'
+export * from './components/ui/kbd'
+export * from './components/ui/label'
+export * from './components/ui/mouse-trail-effect'
+export * from './components/ui/password-input'
+export * from './components/ui/phone-input'
+export * from './components/ui/popover'
+export * from './components/ui/progress'
+export * from './components/ui/radio-group'
+export * from './components/ui/random-code'
+export * from './components/ui/re-captcha'
+export * from './components/ui/resizable'
+export * from './components/ui/scroll-area'
+export * from './components/ui/select'
+export * from './components/ui/separator'
+export * from './components/ui/sheet'
+export * from './components/ui/sidebar'
+export * from './components/ui/skeleton'
+export * from './components/ui/slider'
+export * from './components/ui/sonner'
+export * from './components/ui/stepper'
+export * from './components/ui/switch'
+export * from './components/ui/table'
+export * from './components/ui/tabs'
+export * from './components/ui/textarea'
+export * from './components/ui/timeline'
+export * from './components/ui/toggle-group'
+export * from './components/ui/toggle'
+export * from './components/ui/tooltip'
+export * from './components/ui/triple-arrow'
+export * from './components/ui/truncated-text'
+export * from './components/ui/use-isFocused'
+
+
+// ==========================================
+// 🧱 ROOT COMPONENTS
+// ==========================================
+export * from './components/copy-text-button'
+export * from './components/ecoop-logo'
+export * from './components/image-display'
+export * from './components/image'
+
+
+// ==========================================
+// 📁 COMPONENT SUBFOLDERS
+// ==========================================
+
+// app-sidebar
+export * from './components/app-sidebar/app-sidebar-item'
+export * from './components/app-sidebar/app-sidebar-quick-navigate'
+export * from './components/app-sidebar/app-sidebar-toggle'
+export * from './components/app-sidebar/app-sidebar-user'
+export * from './components/app-sidebar/app-sidebar-utils'
+export * from './components/app-sidebar/types'
+
+// backgrounds
+export * from './components/backgrounds/flickering-grid'
+export * from './components/backgrounds/flowing-grid'
+export * from './components/backgrounds/random-arrows'
+export * from './components/backgrounds/random-dots'
+
+// bank
+export * from './components/bank/bank.service'
+
+// buttons
+export * from './components/buttons/refresh-button'
+
+// containers
+export * from './components/containers/page-container'
+
+// footers
+export * from './components/footers/auth-footer'
+export * from './components/footers/common-links'
+
+// form-components
+export * from './components/form-components/form-footer-reset-submit'
+
+// icons
+export * from './components/icons'
+
+// image-preview
+export * from './components/image-preview/image-preview'
+
+// map
+export * from './components/map'
+export * from './components/map/map.config'
+export * from './components/map/map.provider'
+export * from './components/map/map.utils'
+
+// modals
+export * from './components/modals/action-name-confirm-modal'
+// export * from './components/modals/action-security-modal'
+export * from './components/modals/confirm-modal'
+export * from './components/modals/info-modal'
+export * from './components/modals/modal'
+
+// nav
+export * from './components/nav/nav-container'
+export * from './components/nav/root-nav'
+
+// pages-breadcrumbs
+export * from './components/pages-breadcrumbs'
+export * from './components/pages-breadcrumbs/page-navigator'
+
+// pagination-bars
+export * from './components/pagination-bars/mini-pagination-bar'
+
+// pickers
+export * from './components/pickers/color-picker'
+export * from './components/pickers/generic-picker'
+// export * from './components/pickers/member-picker-with-scanner'
+
+// picture-crop
+export * from './components/picture-crop'
+
+// qr-code
+export * from './components/qr-code'
+export * from './components/qr-code/qr-code-downloadable'
+export * from './components/qr-code/qr-code'
+
+// search
+export * from './components/search/generic-search-input'
+
+// signature
+export * from './components/signature'
+export * from './components/signature/capture-signature'
+export * from './components/signature/draw-signature'
+export * from './components/signature/signature-field'
+export * from './components/signature/signature-picker-uploader'
+export * from './components/signature/upload-signature'
+
+// single-image-uploader
+export * from './components/single-image-uploader/picture-drop'
+export * from './components/single-image-uploader/single-image-uploader-modal'
+export * from './components/single-image-uploader/single-image-uploader'
+export * from './components/single-image-uploader/single-picture-uploader'
+export * from './components/single-image-uploader/upload-options'
+
+// spinners
+export * from './components/spinners/loading-spinner'
+
+// text-editor
+export * from './components/text-editor'
+export * from './components/text-editor/toolbar'
+
+// text-renderer
+export * from './components/text-renderer'
+
+// theme-toggle
+export * from './components/theme-toggle'
+export * from './components/theme-toggle/theme-toggle-menu'
+
+// tooltips
+export * from './components/tooltips/action-tooltip'
+export * from './components/tooltips/info-tooltip'
+
+// additional ui files present in components/ui
+export * from './components/ui/alert-dialog'
+// export * from './components/ui/card-top-image'
+export * from './components/ui/chart'
+export * from './components/ui/combobox'
+
 
 // ==========================================
 // 📁 SUBFOLDERS

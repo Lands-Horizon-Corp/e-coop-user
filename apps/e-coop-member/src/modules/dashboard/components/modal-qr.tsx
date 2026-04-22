@@ -1,10 +1,12 @@
-import { QrCode } from '@/components/qr-code'
+import QRCode from 'react-qr-code'
+
+import { QrCode } from '@e-coop-monorepo/ui/components/qr-code'
 import {
     Dialog,
     DialogContent,
     DialogHeader,
     DialogTitle,
-} from '@/components/ui/dialog'
+} from '@e-coop-monorepo/ui/components/ui/dialog'
 
 interface QrCodeModalProps {
     open: boolean

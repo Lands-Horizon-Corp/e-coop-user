@@ -4,17 +4,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import logo from "./assets/logo.png";
 import Navbar from "./components/Navbar";
 import HomeHero from "./components/sections/HomeHero";
-import PreviewSection from "./components/sections/PreviewSection";
-import DownloadSection from "./components/sections/DownloadSection";
-import ServicesSection from "./components/sections/ServicesSections";
-import TestimonialSection from "./components/sections/TestimonialSection";
-import FAQSection from "./components/sections/FAQSection";
-import ContactSection from "./components/sections/ContactSection";
-import MissionVisionSection from "./components/sections/MissionVisionSection";
-import Footer from "./components/sections/Footer";
-import AuroraBackground from "./components/effects/AuroraBackground";
-import ParticlesBackground from "./components/effects/ParticlesBackground";
-import ScrollProgress from "./components/effects/ScrollProgress";
+import { PreviewSection, DownloadSection, ServicesSections, TestimonialSection, FAQSection, ContactSection, MissionVisionSection, Footer } from "./components/sections";
+import { AuroraBackground, ParticlesBackground, ScrollProgress } from "./components/effects"; 
 import PoliciesPage from "./components/policies/PoliciesPage";
 
 // Landing page component
@@ -61,7 +52,7 @@ function LandingPage() {
                     <HomeHero />
                     <PreviewSection />
                     <DownloadSection />
-                    <ServicesSection />
+                    <ServicesSections />
                     <TestimonialSection />
                     <FAQSection />
                     <ContactSection />

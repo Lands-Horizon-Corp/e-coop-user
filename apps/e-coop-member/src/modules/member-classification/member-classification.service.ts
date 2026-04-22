@@ -1,4 +1,4 @@
-// import { Logger } from '@/helpers/loggers'
+import { Logger } from '@/helpers/loggers'
 import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
 
 import type {
@@ -28,4 +28,4 @@ export const {
     useUpdateById,
 } = apiCrudHooks
 
-// export const logger = Logger.getInstance('member-classification')
+export const logger = Logger.getInstance('member-classification')

@@ -9,9 +9,9 @@ import {
 import { findCountry } from '@/modules/member-profile/components/comboboxes/country-combobox'
 import { CircleFlag } from 'react-circle-flags'
 
-import { CheckIcon, ChevronDownIcon } from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
+import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
+import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     Command,
     CommandEmpty,
@@ -19,12 +19,12 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@/components/ui/command'
+} from '@e-coop-monorepo/ui/components/ui/command'
 import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from '@/components/ui/popover'
+} from '@e-coop-monorepo/ui/components/ui/popover'
 
 import { TEntityId } from '@/types'
 

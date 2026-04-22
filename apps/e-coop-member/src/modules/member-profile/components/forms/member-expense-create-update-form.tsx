@@ -6,12 +6,12 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 import { cn } from '@/helpers'
 import { CurrencyInput } from '@/modules/currency'
 
-import FormFooterResetSubmit from '@/components/form-components/form-footer-reset-submit'
-import Modal, { IModalProps } from '@/components/modals/modal'
-import { Form } from '@/components/ui/form'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import { Input } from '@/components/ui/input'
-import TextEditor from '@/components/ui/text-editor'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
+import { Form } from '@e-coop-monorepo/ui/components/ui/form'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import TextEditor from '@e-coop-monorepo/ui/components/ui/text-editor'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 

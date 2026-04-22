@@ -8,13 +8,13 @@ import { dateAgo, toReadableDate } from '@/helpers/date-utils'
 import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
 import { type Accept, type DropzoneOptions, useDropzone } from 'react-dropzone'
 
-import { DownloadIcon, TrashIcon, UploadIcon } from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import Modal, { IModalProps } from '@/components/modals/modal'
-import ActionTooltip from '@/components/tooltips/action-tooltip'
-import { AspectRatio } from '@/components/ui/aspect-ratio'
-import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
+import { DownloadIcon, TrashIcon, UploadIcon } from '@e-coop-monorepo/ui/components/icons'
+import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
+import ActionTooltip from '@e-coop-monorepo/ui/components/tooltips/action-tooltip'
+import { AspectRatio } from '@e-coop-monorepo/ui/components/ui/aspect-ratio'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Progress } from '@e-coop-monorepo/ui/components/ui/progress'
 
 import {
     TDownloadMediaProp,

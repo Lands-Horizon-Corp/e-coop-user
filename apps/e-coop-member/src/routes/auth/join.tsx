@@ -5,9 +5,9 @@ import KYCRegisterForm from '@/modules/kyc/components/registration-form'
 
 // import JoinForm from '@/modules/auth/components/forms/join-form'
 
-import PageContainer from '@/components/containers/page-container'
+import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
 
-// import ImageDisplay from '@/components/image-display'
+// import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 
 export const Route = createFileRoute('/auth/join')({
     component: RouteComponent,
@@ -34,7 +34,7 @@ function RouteComponent() {
                 </div> */}
                 <KYCRegisterForm
                     onCompleteKYCRegister={() => {
-                        router.navigate({ to: '/auth/sign-in' as string })
+                        router.navigate({ to: '/dashboard' as string })
                     }}
                 />
                 {/* <JoinForm

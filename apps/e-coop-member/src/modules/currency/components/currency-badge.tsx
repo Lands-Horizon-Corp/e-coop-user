@@ -1,7 +1,8 @@
 import { cn } from '@/helpers/tw-utils'
-import { findCountry } from '@/modules/member-profile/components/comboboxes/country-combobox'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { CircleFlag } from 'react-circle-flags'
+
+import { findCountry } from '@e-coop-monorepo/ui/components/comboboxes/country-combobox'
 
 import { ICurrency } from '../currency.types'
 

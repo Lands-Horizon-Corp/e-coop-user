@@ -2,7 +2,7 @@ import z from 'zod'
 
 import { PercentageSchema, entityIdSchema } from '@/validation'
 
-// import { UnbalanceAccountSchema } from '../unbalance-account'
+import { UnbalanceAccountSchema } from '../unbalance-account'
 
 export const BranchSettingsSchema = z.object({
     id: entityIdSchema,
@@ -81,27 +81,27 @@ export const BranchSettingsCurrencySchema = z.object({
     paid_up_shared_capital_account_id: entityIdSchema,
     paid_up_shared_capital_account: z.any(),
 
-    // unbalanced_accounts: z
-    //     .array(UnbalanceAccountSchema)
-    //     .default([])
-    //     .refine(
-    //         (unbalancedAccounts) => {
-    //             const value = new Set()
+    unbalanced_accounts: z
+        .array(UnbalanceAccountSchema)
+        .default([])
+        .refine(
+            (unbalancedAccounts) => {
+                const value = new Set()
 
-    //             for (const data of unbalancedAccounts) {
-    //                 if (value.has(data.currency_id)) {
-    //                     return false
-    //                 }
-    //                 value.add(data.currency_id)
-    //             }
+                for (const data of unbalancedAccounts) {
+                    if (value.has(data.currency_id)) {
+                        return false
+                    }
+                    value.add(data.currency_id)
+                }
 
-    //             return true
-    //         },
-    //         {
-    //             path: [''],
-    //             error: 'Currency must not repeat.',
-    //         }
-    //     ),
+                return true
+            },
+            {
+                path: [''],
+                error: 'Currency must not repeat.',
+            }
+        ),
     unbalanced_account_delete_ids: z.array(entityIdSchema).default([]),
 
     // account_for_overflow_id: entityIdSchema,

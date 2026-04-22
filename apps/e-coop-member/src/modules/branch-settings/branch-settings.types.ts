@@ -4,9 +4,8 @@ import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
 
 import { IAccount } from '../account'
 import { ICurrency } from '../currency'
-import { IMemberGender } from '../member-gender'
-// import { IMemberType } from '../member-type'
-// import { IUnbalanceAccount } from '../unbalance-account'
+import { IMemberType } from '../member-type'
+import { IUnbalanceAccount } from '../unbalance-account'
 import {
     BranchSettingsSchema,
     TBranchSettingsCurrencySchema,
@@ -71,7 +70,7 @@ export interface IBranchSettings extends IBaseEntityMeta {
     check_voucher_use_date_or: boolean
 
     default_member_type_id: TEntityId
-    // default_member_type: IMemberType
+    default_member_type: IMemberType
 
     currency_id: TEntityId
     currency: ICurrency
@@ -84,10 +83,7 @@ export interface IBranchSettings extends IBaseEntityMeta {
 
     loan_applied_equal_to_balance: boolean
 
-    default_member_gender_id?: TEntityId
-    default_member_gender?: IMemberGender
-
-    // unbalanced_accounts: IUnbalanceAccount[]
+    unbalanced_accounts: IUnbalanceAccount[]
     unbalanced_account_delete_ids: TEntityId[]
 
     // account_for_overflow_id: TEntityId

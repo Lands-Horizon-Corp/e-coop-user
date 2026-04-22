@@ -10,7 +10,6 @@ import {
     TKYCVerifyPhoneSchema,
     TKYCVerifySecurityDetailsSchema,
 } from './kyc.validation'
-import { spoofErrorMessages } from './spoof-detection.constants'
 
 export interface IKyc extends IBaseEntityMeta {
     //add here
@@ -27,12 +26,3 @@ export type IKYCVerifyPhoneRequest = TKYCVerifyPhoneSchema
 export type IKYCVerifyAddressesRequest = TKYCVerifyAddressesSchema
 export type IKYCVerifyGovernmentBenefitsRequest =
     TKYCVerifyGovernmentBenefitsSchema
-
-export type TSpoofErrorMessagesKeys = keyof typeof spoofErrorMessages
-
-export type TSpoofingResponse = {
-    detail: string
-    description?: string
-    error?: string
-    code?: TSpoofErrorMessagesKeys
-}

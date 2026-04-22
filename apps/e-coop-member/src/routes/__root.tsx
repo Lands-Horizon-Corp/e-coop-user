@@ -1,26 +1,15 @@
 // import { useCallback } from 'react'
-import { useEffect } from 'react'
-
 import { Outlet, createRootRoute } from '@tanstack/react-router'
 import { Toaster } from 'sonner'
-
-import AuthLoader from '@/modules/auth/components/auth-loader'
-import Themes from '@/modules/settings/data/themes.json'
-import {
-    CustomThemeColors,
-    useTheme,
-} from '@/providers/theme/provider/theme-provider'
 
 import {
     CheckFillIcon,
     InfoFillCircleIcon,
     NotAllowedIcon,
     WarningFillIcon,
-} from '@/components/icons'
-import ConfirmModal from '@/components/modals/confirm-modal'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-
-import { useGetOrganization } from '@/hooks/use-get-organization'
+} from '@e-coop-monorepo/ui/components/icons'
+import ConfirmModal from '@e-coop-monorepo/ui/components/modals/confirm-modal'
+import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 
 // import { AxiosError } from 'axios'
 // import { DndProvider } from 'react-dnd'
@@ -33,18 +22,18 @@ import { useGetOrganization } from '@/hooks/use-get-organization'
 // import { ActionSecurityProvider } from '@/providers/action-security-provider'
 // import ConnectionProvider from '@/providers/connection-provider'
 
-// import CookieConsent from '@/components/cookie-consent'
+// import CookieConsent from '@e-coop-monorepo/ui/components/cookie-consent'
 // import {
 //     CheckFillIcon,
 //     InfoFillCircleIcon,
 //     NotAllowedIcon,
 //     WarningFillIcon,
-// } from '@/components/icons'
-// import ImagePreviewModal from '@/components/image-preview/image-preview-modal'
-// import ConfirmModal from '@/components/modals/confirm-modal'
-// import InfoModal from '@/components/modals/info-modal'
-// import LoadingSpinner from '@/components/spinners/loading-spinner'
-// import { Toaster } from '@/components/ui/sonner'
+// } from '@e-coop-monorepo/ui/components/icons'
+// import ImagePreviewModal from '@e-coop-monorepo/ui/components/image-preview/image-preview-modal'
+// import ConfirmModal from '@e-coop-monorepo/ui/components/modals/confirm-modal'
+// import InfoModal from '@e-coop-monorepo/ui/components/modals/info-modal'
+// import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
+// import { Toaster } from '@e-coop-monorepo/ui/components/ui/sonner'
 
 // import { useNatsConnect } from '@/hooks/use-pubsub'
 // import { useQeueryHookCallback } from '@/hooks/use-query-hook-cb'
@@ -59,36 +48,6 @@ export const Route = createRootRoute({
 })
 
 function RootLayout() {
-    const organization = useGetOrganization()
-    const orgMedia = organization?.media?.download_url || '/e-coop-logo.png'
-    const orgName = organization?.name || 'E-coop Member Portal'
-
-    const { applyCustomThemeColors } = useTheme()
-
-    useEffect(() => {
-        if (orgName) {
-            document.title = orgName
-
-            const favicon = document.querySelector(
-                "link[rel='icon']"
-            ) as HTMLLinkElement | null
-
-            if (favicon && orgMedia) {
-                favicon.href = orgMedia
-                favicon.type = 'image/png'
-            }
-        }
-        const theme = [...Themes].find(
-            (item) => item.name === organization?.theme
-        )
-        if (theme) {
-            applyCustomThemeColors(
-                theme.colors as CustomThemeColors,
-                theme.name
-            )
-        }
-    }, [orgName, orgMedia])
-
     // const { setAuthStatus, setCurrentAuth, resetAuth } = useAuthStore()
 
     // const { error, isError, data, isSuccess } = useAuthContext({
@@ -136,7 +95,6 @@ function RootLayout() {
     return (
         <div className="relative">
             {/* <DndProvider backend={HTML5Backend}> */}
-            <AuthLoader />
             <Toaster
                 className="z-[9999] toaster group"
                 closeButton
@@ -170,6 +128,13 @@ function RootLayout() {
                 toastOptions={{
                     classNames: {
                         icon: 'flex items-center !mr-2 justify-center',
+
+                        success:
+                            '!p-4 !rounded-xl !border-t-0 !border-x-0 !border-b-1 ' +
+                            '!bg-green-50 dark:!bg-gradient-to-tr ' +
+                            '!border-b-green-500 !border-green-600 ' +
+                            'dark:!from-green-500/20 dark:!to-background ' +
+                            '!text-foreground',
 
                         info:
                             '!p-4 !rounded-xl !border-t-0 !border-x-0 !border-b-1 ' +

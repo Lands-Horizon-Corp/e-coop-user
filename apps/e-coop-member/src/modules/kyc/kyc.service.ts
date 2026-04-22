@@ -1,15 +1,10 @@
-// import { check } from 'zod'
-import { SPOOFING_SERVER_URL } from '@/constants'
-import { HTTP_STATUS } from '@/constants/http-status'
 import { imageCompressed } from '@/helpers'
-// import { imageCompressed } from '@/helpers';
-import { SpoofingAPI } from '@/providers/api'
 import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
 import { createMutationFactory } from '@/providers/repositories/mutation-factory'
 
-// import { el } from 'date-fns/locale'
-
 import { TEntityId } from '@/types'
+
+// import { Logger } from '@/helpers/loggers'
 
 import type {
     IKyc,
@@ -18,11 +13,10 @@ import type {
     TKYCVerifyPersonalInfoSchema,
     TKYCVerifyPhoneSchema,
     TKYCVerifySecurityDetailsSchema,
-    TSpoofErrorMessagesKeys,
 } from '../kyc'
+import { resizeImage } from '../media'
 import { TMemberAddressSchema } from '../member-address/member-address.validation'
 import { IMemberGovernmentBenefitRequest } from '../member-profile'
-import { spoofErrorMessages } from './spoof-detection.constants'
 
 const {
     // apiCrudHooks,
@@ -183,37 +177,13 @@ export const useKYCVerifySelfie = createMutationFactory<
         // ): Promise<IMedia> => {
 
         const formData = new FormData()
-        const formDataForSpoofing = new FormData()
 
-        // resize getting an error on some browsers (brave)
-        // const resizedFile = await compressImage(file, 500, 500)
-        const convertedFile = new File([file], file.name, {
+        const resizedFile = await resizeImage(file, { height: 500, width: 500 })
+        const convertedFile = new File([resizedFile], file.name, {
             type: 'image/webp',
         })
 
         formData.append('file', await imageCompressed(convertedFile))
-        //uncompressed img 500x500 for spoofing
-        formDataForSpoofing.append('file', file)
-
-        const checkSpoofingResponse = await SpoofingAPI.uploadFile(
-            `${SPOOFING_SERVER_URL}/api/v1/spoof/detect`,
-            formDataForSpoofing,
-            {},
-            {
-                validateStatus: (status) =>
-                    status === HTTP_STATUS.UNAUTHORIZED ||
-                    status === HTTP_STATUS.BAD_REQUEST ||
-                    status === HTTP_STATUS.OK_NO_CONTENT ||
-                    status === HTTP_STATUS.OK,
-            }
-        )
-
-        const errorCode = checkSpoofingResponse.data.code
-
-        if (isSpoofErrorCode(errorCode)) {
-            throw new Error(spoofErrorMessages[errorCode])
-        }
-
         const response = await API.uploadFile<void>(
             `${kycAPIRoute}/selfie`,
             formData,
@@ -223,6 +193,8 @@ export const useKYCVerifySelfie = createMutationFactory<
             }
         )
 
+        // return response.data
+        // }
         return response.data
     },
 })
@@ -270,9 +242,3 @@ export const useKYCRegister = createMutationFactory<
 
 // export const logger = Logger.getInstance('kyc')
 // custom hooks can go here
-
-export const isSpoofErrorCode = (
-    code: unknown
-): code is TSpoofErrorMessagesKeys => {
-    return typeof code === 'string' && code in spoofErrorMessages
-}

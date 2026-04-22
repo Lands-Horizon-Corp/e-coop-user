@@ -1,304 +1,168 @@
-import { useMutation, useQuery } from '@tanstack/react-query'
+import { useMutation } from '@tanstack/react-query'
 
-import { createAPIRepository } from '@/providers/repositories/api-crud-factory'
-import { HookQueryOptions } from '@/providers/repositories/data-layer-factory'
+import {
+    IUserForgotPasswordRequest,
+    IUserLoginRequest,
+    IUserPasswordResetRequest,
+} from '@/modules/auth'
+import {
+    IMemberProfile,
+    IQuickCreateMemberProfile,
+} from '@/modules/member-profile'
 import {
     HookMutationOptions,
-    // createMutationFactory,
+    createMutationFactory,
 } from '@/providers/repositories/mutation-factory'
+import { IForgetPasswordEntry, useFakeStore } from '@/store/fake-store'
 
-import { TEntityId } from '@/types'
-
-import { IUserChangePasswordRequest } from '../user'
-import {
-    IAuthContext,
-    ISignInRequest,
-    IUserForgotPasswordRequest,
-} from './auth-types'
-
-const { API, route: authenticationAPIRoute } = createAPIRepository(
-    '/api/v1/authentication'
-)
-
-// ⚙️🛠️ API SERVICE HERE
-
-export const currentAuth = async () => {
-    const endpoint = `${authenticationAPIRoute}/current`
-    return (await API.get<IAuthContext>(endpoint)).data
-}
-
-export const currentUser = async () => {
-    const endpoint = `${authenticationAPIRoute}/current/user`
-    return (await API.get<IAuthContext>(endpoint)).data
-}
-
-export const signIn = async (data: ISignInRequest) => {
-    const endpoint = `${authenticationAPIRoute}/login`
-    return (await API.post<ISignInRequest, IAuthContext>(endpoint, data)).data
-}
-
-export const forgotPassword = async (data: IUserForgotPasswordRequest) => {
-    const endpoint = `${authenticationAPIRoute}/forgot-password`
-    await API.post<IUserForgotPasswordRequest, { key: string }>(endpoint, data)
-    return data
-}
-
-export const changePassword = async (
-    resetId: string,
-    data: IUserChangePasswordRequest
-) => {
-    const endpoint = `${authenticationAPIRoute}/change-password/${resetId}`
-    await API.post<IUserChangePasswordRequest, void>(endpoint, data)
-}
-
-export const signOut = async () => {
-    await API.post(`${authenticationAPIRoute}/logout`)
-}
-
-// API Functions for OTP Verification
-export const requestContactNumberVerification = async (): Promise<void> => {
-    const endpoint = `${authenticationAPIRoute}/apply-contact-number`
-    await API.post(endpoint)
-}
-
-export const requestEmailVerification = async (): Promise<void> => {
-    const endpoint = `${authenticationAPIRoute}/apply-email`
-    await API.post(endpoint)
-}
-
-// FOR Verifying email and contact
-
-// verify
-// export const verifyEmail = async (
-//     data: IVerifyEmailRequest
-// ): Promise<IUserBase> => {
-//     const endpoint = `${authenticationAPIRoute}/verify-email`
-//     return (await API.post<IVerifyEmailRequest, IUserBase>(endpoint, data)).data
-// }
-
-// // Verify Contact Number
-// export const verifyContactNumber = async (
-//     data: IVerifyContactNumberRequest
-// ): Promise<IUserBase> => {
-//     const endpoint = `${authenticationAPIRoute}/verify-contact-number`
-//     return (
-//         await API.post<IVerifyContactNumberRequest, IUserBase>(endpoint, data)
-//     ).data
-// }
-
-// Current Logged in user
-// export const currentLoggedInUsers = async () => {
-//     // /authentication/current-logged-in-accounts
-//     const endpoint = `${authenticationAPIRoute}/current-logged-in-accounts`
-//     return (await API.get<ILoggedInUser[]>(endpoint)).data
-// }
-
-// Sign out all logged in session of current user
-export const signOutLoggedInUsers = async () => {
-    const endpoint = `${authenticationAPIRoute}/current-logged-in-accounts/logout`
-    await API.post<void>(endpoint)
-}
-
-export const checkResetLink = async (resetId: string) => {
-    const endpoint = `${authenticationAPIRoute}/verify-reset-link/${resetId}`
-    await API.get<void>(endpoint)
-}
-
-// 🪝 HOOK STARTS HERE
-
-// Get Auth Context
-export const useAuthContext = ({
-    options,
-}: {
-    options?: HookQueryOptions<IAuthContext>
-} = {}) => {
-    return useQuery<IAuthContext>({
-        queryKey: ['auth', 'context'],
-        queryFn: currentAuth,
-        ...options,
-    })
-}
-
-// Get Current User
-export const useCurrentUser = ({
-    options,
-}: {
-    options?: HookQueryOptions<IAuthContext>
-} = {}) => {
-    return useQuery<IAuthContext>({
-        queryKey: ['auth', 'current-user'],
-        queryFn: currentUser,
-        ...options,
-    })
-}
-
+// FAKE SIGN IN HOOK
 export const useSignIn = ({
     options,
 }: {
-    options?: HookMutationOptions<IAuthContext, Error, ISignInRequest>
+    options?: HookMutationOptions<IMemberProfile, Error, IUserLoginRequest>
 } = {}) => {
-    return useMutation<IAuthContext, Error, ISignInRequest>({
-        mutationFn: signIn,
+    return useMutation<IMemberProfile, Error, IUserLoginRequest>({
+        mutationFn: async ({ key, password }) => {
+            const { setAuthMember, members } = useFakeStore.getState()
+
+            const matchedMember = members.find((m) => m.key === key)
+
+            if (!matchedMember) {
+                throw new Error('Member not found')
+            }
+
+            if (matchedMember.password !== password) {
+                throw new Error('Invalid credentials')
+            }
+
+            setAuthMember(matchedMember)
+            return matchedMember
+        },
         ...options,
     })
 }
 
-// Forgot Password
+export const useQuickRegisterMember = createMutationFactory<
+    IMemberProfile,
+    Error,
+    IQuickCreateMemberProfile
+>({
+    mutationFn: async (data) => {
+        const { addMember } = useFakeStore.getState()
+
+        // create new IMemberProfile
+        const newMember: IMemberProfile = {
+            ...data,
+            id: crypto.randomUUID(),
+            created_at: new Date(),
+            updated_at: new Date(),
+        } as unknown as IMemberProfile
+
+        // add to store
+        addMember(newMember)
+
+        return newMember
+    },
+
+    invalidationFn: () => {},
+})
+
 export const useForgotPassword = ({
     options,
 }: {
     options?: HookMutationOptions<
-        { key: string },
+        IForgetPasswordEntry,
         Error,
         IUserForgotPasswordRequest
     >
 } = {}) => {
-    return useMutation<{ key: string }, Error, IUserForgotPasswordRequest>({
-        mutationFn: forgotPassword,
-        ...options,
-    })
+    return useMutation<IForgetPasswordEntry, Error, IUserForgotPasswordRequest>(
+        {
+            mutationFn: async ({ key }) => {
+                const { members, setForgetPasswordRequest } =
+                    useFakeStore.getState()
+
+                const member = members.find((m) => m.key === key)
+
+                if (!member) {
+                    throw new Error('Member not found')
+                }
+
+                const otp = Math.floor(
+                    100000 + Math.random() * 900000
+                ).toString()
+
+                const request: IForgetPasswordEntry = {
+                    id: crypto.randomUUID(),
+                    memberProfileId: member.id,
+                    otp,
+                }
+                setForgetPasswordRequest(request)
+
+                return request
+            },
+            ...options,
+        }
+    )
 }
 
-// Change Password
 export const useChangePassword = ({
     options,
 }: {
-    options?: HookMutationOptions<
-        void,
-        Error,
-        IUserChangePasswordRequest & { resetId: string }
-    >
+    options?: HookMutationOptions<void, Error, IUserPasswordResetRequest>
 } = {}) => {
-    return useMutation<
-        void,
-        Error,
-        IUserChangePasswordRequest & { resetId: string }
-    >({
-        mutationFn: ({ resetId, ...data }) => changePassword(resetId, data),
+    return useMutation<void, Error, IUserPasswordResetRequest>({
+        mutationFn: async ({ reset_id, new_password, confirm_password }) => {
+            const {
+                members,
+                forgetPasswordRequest,
+                updateMember,
+                setForgetPasswordRequest,
+            } = useFakeStore.getState()
+
+            // validate reset request
+            if (
+                !forgetPasswordRequest ||
+                forgetPasswordRequest.id !== reset_id
+            ) {
+                throw new Error('Invalid or expired password reset request')
+            }
+
+            if (new_password !== confirm_password) {
+                throw new Error('Passwords do not match')
+            }
+
+            // find the member
+            const member = members.find(
+                (m) => m.id === forgetPasswordRequest.memberProfileId
+            )
+
+            if (!member) {
+                throw new Error('Member not found')
+            }
+
+            // update password
+            updateMember(member.id, { password: new_password })
+
+            // clear reset request
+            setForgetPasswordRequest(null)
+        },
         ...options,
     })
 }
 
-// Sign Out
 export const useSignOut = ({
     options,
 }: {
     options?: HookMutationOptions<void, string, void>
-}) => {
-    return useMutation<void, string, void>({
-        mutationFn: signOut,
-        ...options,
-    })
-}
-
-// FOr modals that requires retype password verification before an action
-
-// export const useVerifyPassword = ({
-//     options,
-// }: {
-//     options?: HookMutationOptions<
-//         IVerification,
-//         Error,
-//         IVerificationPasswordRequest
-//     >
-// } = {}) => {
-//     return useMutation<IVerification, Error, IVerificationPasswordRequest>({
-//         mutationFn: verifyWithPassword,
-//         ...options,
-//     })
-// }
-
-export const useCheckResetId = ({
-    resetId,
-    options,
-}: {
-    resetId: TEntityId
-    options?: HookQueryOptions<boolean, Error>
-}) => {
-    return useQuery<boolean, Error>({
-        ...options,
-        queryKey: ['reset-id', resetId],
-        queryFn: async () => {
-            await checkResetLink(resetId)
-            return true
-        },
-    })
-}
-
-// Hook for sending OTP Verification
-export const useSendOTPVerification = ({
-    verifyMode,
-    options,
-}: {
-    verifyMode: 'email' | 'mobile'
-    options?: HookMutationOptions<void, Error>
-}) => {
-    return useMutation<void, Error>({
-        mutationFn: async () => {
-            if (verifyMode === 'email') {
-                return await requestEmailVerification()
-            } else if (verifyMode === 'mobile') {
-                return await requestContactNumberVerification()
-            }
-
-            throw new Error('Unknown verify mode')
-        },
-        ...options,
-    })
-}
-
-// Hook for Verifying Email or Contact Number
-// export const useVerify = createMutationFactory<
-//     IUserBase,
-//     Error,
-//     {
-//         otp: string
-//         verifyMode: 'email' | 'mobile'
-//     }
-// >({
-//     mutationFn: async (data) => {
-//         if (data.verifyMode === 'email') {
-//             return await verifyEmail(data)
-//         } else if (data.verifyMode === 'mobile') {
-//             return await verifyContactNumber(data)
-//         }
-
-//         throw new Error('Unknown verify mode')
-//     },
-// })
-
-// Get Current Logged In User
-// export const useCurrentLoggedInUser = ({
-//     options,
-// }: {
-//     options?: HookQueryOptions<ILoggedInUser[], Error>
-// } = {}) => {
-//     return useQuery<ILoggedInUser[], Error>({
-//         ...options,
-//         queryKey: ['auth', 'current-logged-in-user'],
-//         queryFn: async () => await currentLoggedInUsers(),
-//     })
-// }
-
-// Sign Out Current Logged In User
-export const useCurrentLoggedInUserLogout = ({
-    options,
-}: {
-    options?: HookMutationOptions<void, Error, void>
 } = {}) => {
-    return useMutation<void, Error, void>({
+    return useMutation<void, string, void>({
+        mutationFn: async () => {
+            const { setAuthMember } = useFakeStore.getState()
+
+            // clear authenticated member
+            setAuthMember(null)
+        },
         ...options,
-        mutationKey: ['auth', 'signout', 'current-logged-in-user'],
-        mutationFn: async () => await signOutLoggedInUsers(),
     })
 }
-
-// export const useRequestReverseTransaction = createMutationFactory<
-//     IVerification,
-//     Error,
-//     IVerificationPasswordAdminRequest
-// >({
-//     mutationFn: async (data) => await verifyWithPasswordAdmin(data),
-// })
-
-// export const logger = Logger.getInstance('authentication')

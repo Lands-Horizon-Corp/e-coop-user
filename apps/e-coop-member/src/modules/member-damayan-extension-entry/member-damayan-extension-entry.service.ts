@@ -1,3 +1,3 @@
-// import { Logger } from '@/helpers/loggers'
+import { Logger } from '@/helpers/loggers'
 
-// export const logger = Logger.getInstance('member-damayan-extension-entry')
+export const logger = Logger.getInstance('member-damayan-extension-entry')

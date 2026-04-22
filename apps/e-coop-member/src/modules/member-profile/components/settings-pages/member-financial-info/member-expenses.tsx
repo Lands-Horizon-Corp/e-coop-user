@@ -1,4 +1,4 @@
-import { forwardRef } from 'react'
+import { forwardRef, useState } from 'react'
 
 import { withToastCallbacks } from '@/helpers/callback-helper'
 import { toReadableDate } from '@/helpers/date-utils'
@@ -17,11 +17,11 @@ import {
     PlusIcon,
     TrashIcon,
     WoodSignsIcon,
-} from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import TextRenderer from '@/components/text-renderer'
-import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
+} from '@e-coop-monorepo/ui/components/icons'
+import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
+import TextRenderer from '@e-coop-monorepo/ui/components/text-renderer'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Separator } from '@e-coop-monorepo/ui/components/ui/separator'
 
 import { useModalState } from '@/hooks/use-modal-state'
 
@@ -29,7 +29,7 @@ import { MemberExpenseCreateUpdateFormModal } from '../../forms/member-expense-c
 import EmptyListIndicator from '../empty-list-indicator'
 
 const MemberExpenseCard = ({ expense }: { expense: IMemberExpense }) => {
-    // const [edit, setEdit] = useState(false)
+    const [edit, setEdit] = useState(false)
     const { onOpen } = useConfirmModalStore()
     const { mutate: deleteExpense, isPending: isDeleting } =
         useDeleteMemberProfileExpense({
@@ -40,7 +40,7 @@ const MemberExpenseCard = ({ expense }: { expense: IMemberExpense }) => {
 
     return (
         <div className="flex flex-col gap-y-1 rounded-xl border bg-background p-4">
-            {/* <MemberExpenseCreateUpdateFormModal
+            <MemberExpenseCreateUpdateFormModal
                 description="Modify / Update this expense information."
                 formProps={{
                     expenseId: expense.id,
@@ -50,14 +50,14 @@ const MemberExpenseCard = ({ expense }: { expense: IMemberExpense }) => {
                 onOpenChange={setEdit}
                 open={edit}
                 title="Update Expense"
-            /> */}
+            />
             <div className="flex justify-between">
                 <p className="font-bold">{expense.name}</p>
                 <div className="flex items-center justify-end">
                     <Button
                         className="!size-fit px-1.5 py-1.5 text-muted-foreground/40"
                         disabled={isDeleting}
-                        // onClick={() => setEdit(true)}
+                        onClick={() => setEdit(true)}
                         size="icon"
                         variant="ghost"
                     >

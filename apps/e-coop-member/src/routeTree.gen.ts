@@ -11,22 +11,19 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as PlaygroundRouteImport } from './routes/playground'
 import { Route as AuthRouteRouteImport } from './routes/auth/route'
-import { Route as privateRouteRouteImport } from './routes/(private)/route'
-import { Route as homeRouteRouteImport } from './routes/(home)/route'
-import { Route as homeIndexRouteImport } from './routes/(home)/index'
+import { Route as landingRouteRouteImport } from './routes/(landing)/route'
+import { Route as dashboardRouteRouteImport } from './routes/(dashboard)/route'
+import { Route as landingIndexRouteImport } from './routes/(landing)/index'
 import { Route as AuthSignInRouteImport } from './routes/auth/sign-in'
 import { Route as AuthResetPasswordRouteImport } from './routes/auth/reset-password'
 import { Route as AuthJoinRouteImport } from './routes/auth/join'
 import { Route as AuthForgotPasswordRouteImport } from './routes/auth/forgot-password'
-import { Route as testingVerifyFaceRecognizePageRouteImport } from './routes/(testing)/verify-face-recognize-page'
-import { Route as privateProfileRouteImport } from './routes/(private)/profile'
-import { Route as homeTermsRouteImport } from './routes/(home)/terms'
-import { Route as homeContactUsRouteImport } from './routes/(home)/contact-us'
-import { Route as homeCalculatorRouteImport } from './routes/(home)/calculator'
-import { Route as homeAboutRouteImport } from './routes/(home)/about'
-import { Route as privateDashboardIndexRouteImport } from './routes/(private)/dashboard/index'
-import { Route as privateloanLoanApplicationCompleteRouteImport } from './routes/(private)/(loan)/loan-application-complete'
-import { Route as privateloanLoanApplicationRouteImport } from './routes/(private)/(loan)/loan-application'
+import { Route as landingTermsRouteImport } from './routes/(landing)/terms'
+import { Route as landingContactUsRouteImport } from './routes/(landing)/contact-us'
+import { Route as landingCalculatorRouteImport } from './routes/(landing)/calculator'
+import { Route as landingAboutRouteImport } from './routes/(landing)/about'
+import { Route as dashboardProfileRouteImport } from './routes/(dashboard)/profile'
+import { Route as dashboardDashboardRouteImport } from './routes/(dashboard)/dashboard'
 
 const PlaygroundRoute = PlaygroundRouteImport.update({
   id: '/playground',
@@ -38,18 +35,18 @@ const AuthRouteRoute = AuthRouteRouteImport.update({
   path: '/auth',
   getParentRoute: () => rootRouteImport,
 } as any)
-const privateRouteRoute = privateRouteRouteImport.update({
-  id: '/(private)',
+const landingRouteRoute = landingRouteRouteImport.update({
+  id: '/(landing)',
   getParentRoute: () => rootRouteImport,
 } as any)
-const homeRouteRoute = homeRouteRouteImport.update({
-  id: '/(home)',
+const dashboardRouteRoute = dashboardRouteRouteImport.update({
+  id: '/(dashboard)',
   getParentRoute: () => rootRouteImport,
 } as any)
-const homeIndexRoute = homeIndexRouteImport.update({
+const landingIndexRoute = landingIndexRouteImport.update({
   id: '/',
   path: '/',
-  getParentRoute: () => homeRouteRoute,
+  getParentRoute: () => landingRouteRoute,
 } as any)
 const AuthSignInRoute = AuthSignInRouteImport.update({
   id: '/sign-in',
@@ -71,177 +68,140 @@ const AuthForgotPasswordRoute = AuthForgotPasswordRouteImport.update({
   path: '/forgot-password',
   getParentRoute: () => AuthRouteRoute,
 } as any)
-const testingVerifyFaceRecognizePageRoute =
-  testingVerifyFaceRecognizePageRouteImport.update({
-    id: '/(testing)/verify-face-recognize-page',
-    path: '/verify-face-recognize-page',
-    getParentRoute: () => rootRouteImport,
-  } as any)
-const privateProfileRoute = privateProfileRouteImport.update({
-  id: '/profile',
-  path: '/profile',
-  getParentRoute: () => privateRouteRoute,
-} as any)
-const homeTermsRoute = homeTermsRouteImport.update({
+const landingTermsRoute = landingTermsRouteImport.update({
   id: '/terms',
   path: '/terms',
-  getParentRoute: () => homeRouteRoute,
+  getParentRoute: () => landingRouteRoute,
 } as any)
-const homeContactUsRoute = homeContactUsRouteImport.update({
+const landingContactUsRoute = landingContactUsRouteImport.update({
   id: '/contact-us',
   path: '/contact-us',
-  getParentRoute: () => homeRouteRoute,
+  getParentRoute: () => landingRouteRoute,
 } as any)
-const homeCalculatorRoute = homeCalculatorRouteImport.update({
+const landingCalculatorRoute = landingCalculatorRouteImport.update({
   id: '/calculator',
   path: '/calculator',
-  getParentRoute: () => homeRouteRoute,
+  getParentRoute: () => landingRouteRoute,
 } as any)
-const homeAboutRoute = homeAboutRouteImport.update({
+const landingAboutRoute = landingAboutRouteImport.update({
   id: '/about',
   path: '/about',
-  getParentRoute: () => homeRouteRoute,
+  getParentRoute: () => landingRouteRoute,
 } as any)
-const privateDashboardIndexRoute = privateDashboardIndexRouteImport.update({
-  id: '/dashboard/',
-  path: '/dashboard/',
-  getParentRoute: () => privateRouteRoute,
+const dashboardProfileRoute = dashboardProfileRouteImport.update({
+  id: '/profile',
+  path: '/profile',
+  getParentRoute: () => dashboardRouteRoute,
 } as any)
-const privateloanLoanApplicationCompleteRoute =
-  privateloanLoanApplicationCompleteRouteImport.update({
-    id: '/(loan)/loan-application-complete',
-    path: '/loan-application-complete',
-    getParentRoute: () => privateRouteRoute,
-  } as any)
-const privateloanLoanApplicationRoute =
-  privateloanLoanApplicationRouteImport.update({
-    id: '/(loan)/loan-application',
-    path: '/loan-application',
-    getParentRoute: () => privateRouteRoute,
-  } as any)
+const dashboardDashboardRoute = dashboardDashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => dashboardRouteRoute,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/auth': typeof AuthRouteRouteWithChildren
   '/playground': typeof PlaygroundRoute
-  '/about': typeof homeAboutRoute
-  '/calculator': typeof homeCalculatorRoute
-  '/contact-us': typeof homeContactUsRoute
-  '/terms': typeof homeTermsRoute
-  '/profile': typeof privateProfileRoute
-  '/verify-face-recognize-page': typeof testingVerifyFaceRecognizePageRoute
+  '/dashboard': typeof dashboardDashboardRoute
+  '/profile': typeof dashboardProfileRoute
+  '/about': typeof landingAboutRoute
+  '/calculator': typeof landingCalculatorRoute
+  '/contact-us': typeof landingContactUsRoute
+  '/terms': typeof landingTermsRoute
   '/auth/forgot-password': typeof AuthForgotPasswordRoute
   '/auth/join': typeof AuthJoinRoute
   '/auth/reset-password': typeof AuthResetPasswordRoute
   '/auth/sign-in': typeof AuthSignInRoute
-  '/': typeof homeIndexRoute
-  '/loan-application': typeof privateloanLoanApplicationRoute
-  '/loan-application-complete': typeof privateloanLoanApplicationCompleteRoute
-  '/dashboard/': typeof privateDashboardIndexRoute
+  '/': typeof landingIndexRoute
 }
 export interface FileRoutesByTo {
   '/auth': typeof AuthRouteRouteWithChildren
   '/playground': typeof PlaygroundRoute
-  '/about': typeof homeAboutRoute
-  '/calculator': typeof homeCalculatorRoute
-  '/contact-us': typeof homeContactUsRoute
-  '/terms': typeof homeTermsRoute
-  '/profile': typeof privateProfileRoute
-  '/verify-face-recognize-page': typeof testingVerifyFaceRecognizePageRoute
+  '/dashboard': typeof dashboardDashboardRoute
+  '/profile': typeof dashboardProfileRoute
+  '/about': typeof landingAboutRoute
+  '/calculator': typeof landingCalculatorRoute
+  '/contact-us': typeof landingContactUsRoute
+  '/terms': typeof landingTermsRoute
   '/auth/forgot-password': typeof AuthForgotPasswordRoute
   '/auth/join': typeof AuthJoinRoute
   '/auth/reset-password': typeof AuthResetPasswordRoute
   '/auth/sign-in': typeof AuthSignInRoute
-  '/': typeof homeIndexRoute
-  '/loan-application': typeof privateloanLoanApplicationRoute
-  '/loan-application-complete': typeof privateloanLoanApplicationCompleteRoute
-  '/dashboard': typeof privateDashboardIndexRoute
+  '/': typeof landingIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
-  '/(home)': typeof homeRouteRouteWithChildren
-  '/(private)': typeof privateRouteRouteWithChildren
+  '/(dashboard)': typeof dashboardRouteRouteWithChildren
+  '/(landing)': typeof landingRouteRouteWithChildren
   '/auth': typeof AuthRouteRouteWithChildren
   '/playground': typeof PlaygroundRoute
-  '/(home)/about': typeof homeAboutRoute
-  '/(home)/calculator': typeof homeCalculatorRoute
-  '/(home)/contact-us': typeof homeContactUsRoute
-  '/(home)/terms': typeof homeTermsRoute
-  '/(private)/profile': typeof privateProfileRoute
-  '/(testing)/verify-face-recognize-page': typeof testingVerifyFaceRecognizePageRoute
+  '/(dashboard)/dashboard': typeof dashboardDashboardRoute
+  '/(dashboard)/profile': typeof dashboardProfileRoute
+  '/(landing)/about': typeof landingAboutRoute
+  '/(landing)/calculator': typeof landingCalculatorRoute
+  '/(landing)/contact-us': typeof landingContactUsRoute
+  '/(landing)/terms': typeof landingTermsRoute
   '/auth/forgot-password': typeof AuthForgotPasswordRoute
   '/auth/join': typeof AuthJoinRoute
   '/auth/reset-password': typeof AuthResetPasswordRoute
   '/auth/sign-in': typeof AuthSignInRoute
-  '/(home)/': typeof homeIndexRoute
-  '/(private)/(loan)/loan-application': typeof privateloanLoanApplicationRoute
-  '/(private)/(loan)/loan-application-complete': typeof privateloanLoanApplicationCompleteRoute
-  '/(private)/dashboard/': typeof privateDashboardIndexRoute
+  '/(landing)/': typeof landingIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/auth'
     | '/playground'
+    | '/dashboard'
+    | '/profile'
     | '/about'
     | '/calculator'
     | '/contact-us'
     | '/terms'
-    | '/profile'
-    | '/verify-face-recognize-page'
     | '/auth/forgot-password'
     | '/auth/join'
     | '/auth/reset-password'
     | '/auth/sign-in'
     | '/'
-    | '/loan-application'
-    | '/loan-application-complete'
-    | '/dashboard/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/auth'
     | '/playground'
+    | '/dashboard'
+    | '/profile'
     | '/about'
     | '/calculator'
     | '/contact-us'
     | '/terms'
-    | '/profile'
-    | '/verify-face-recognize-page'
     | '/auth/forgot-password'
     | '/auth/join'
     | '/auth/reset-password'
     | '/auth/sign-in'
     | '/'
-    | '/loan-application'
-    | '/loan-application-complete'
-    | '/dashboard'
   id:
     | '__root__'
-    | '/(home)'
-    | '/(private)'
+    | '/(dashboard)'
+    | '/(landing)'
     | '/auth'
     | '/playground'
-    | '/(home)/about'
-    | '/(home)/calculator'
-    | '/(home)/contact-us'
-    | '/(home)/terms'
-    | '/(private)/profile'
-    | '/(testing)/verify-face-recognize-page'
+    | '/(dashboard)/dashboard'
+    | '/(dashboard)/profile'
+    | '/(landing)/about'
+    | '/(landing)/calculator'
+    | '/(landing)/contact-us'
+    | '/(landing)/terms'
     | '/auth/forgot-password'
     | '/auth/join'
     | '/auth/reset-password'
     | '/auth/sign-in'
-    | '/(home)/'
-    | '/(private)/(loan)/loan-application'
-    | '/(private)/(loan)/loan-application-complete'
-    | '/(private)/dashboard/'
+    | '/(landing)/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
-  homeRouteRoute: typeof homeRouteRouteWithChildren
-  privateRouteRoute: typeof privateRouteRouteWithChildren
+  dashboardRouteRoute: typeof dashboardRouteRouteWithChildren
+  landingRouteRoute: typeof landingRouteRouteWithChildren
   AuthRouteRoute: typeof AuthRouteRouteWithChildren
   PlaygroundRoute: typeof PlaygroundRoute
-  testingVerifyFaceRecognizePageRoute: typeof testingVerifyFaceRecognizePageRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -260,26 +220,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/(private)': {
-      id: '/(private)'
+    '/(landing)': {
+      id: '/(landing)'
       path: ''
       fullPath: ''
-      preLoaderRoute: typeof privateRouteRouteImport
+      preLoaderRoute: typeof landingRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/(home)': {
-      id: '/(home)'
+    '/(dashboard)': {
+      id: '/(dashboard)'
       path: ''
       fullPath: ''
-      preLoaderRoute: typeof homeRouteRouteImport
+      preLoaderRoute: typeof dashboardRouteRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/(home)/': {
-      id: '/(home)/'
+    '/(landing)/': {
+      id: '/(landing)/'
       path: '/'
       fullPath: '/'
-      preLoaderRoute: typeof homeIndexRouteImport
-      parentRoute: typeof homeRouteRoute
+      preLoaderRoute: typeof landingIndexRouteImport
+      parentRoute: typeof landingRouteRoute
     }
     '/auth/sign-in': {
       id: '/auth/sign-in'
@@ -309,109 +269,83 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AuthForgotPasswordRouteImport
       parentRoute: typeof AuthRouteRoute
     }
-    '/(testing)/verify-face-recognize-page': {
-      id: '/(testing)/verify-face-recognize-page'
-      path: '/verify-face-recognize-page'
-      fullPath: '/verify-face-recognize-page'
-      preLoaderRoute: typeof testingVerifyFaceRecognizePageRouteImport
-      parentRoute: typeof rootRouteImport
-    }
-    '/(private)/profile': {
-      id: '/(private)/profile'
-      path: '/profile'
-      fullPath: '/profile'
-      preLoaderRoute: typeof privateProfileRouteImport
-      parentRoute: typeof privateRouteRoute
-    }
-    '/(home)/terms': {
-      id: '/(home)/terms'
+    '/(landing)/terms': {
+      id: '/(landing)/terms'
       path: '/terms'
       fullPath: '/terms'
-      preLoaderRoute: typeof homeTermsRouteImport
-      parentRoute: typeof homeRouteRoute
+      preLoaderRoute: typeof landingTermsRouteImport
+      parentRoute: typeof landingRouteRoute
     }
-    '/(home)/contact-us': {
-      id: '/(home)/contact-us'
+    '/(landing)/contact-us': {
+      id: '/(landing)/contact-us'
       path: '/contact-us'
       fullPath: '/contact-us'
-      preLoaderRoute: typeof homeContactUsRouteImport
-      parentRoute: typeof homeRouteRoute
+      preLoaderRoute: typeof landingContactUsRouteImport
+      parentRoute: typeof landingRouteRoute
     }
-    '/(home)/calculator': {
-      id: '/(home)/calculator'
+    '/(landing)/calculator': {
+      id: '/(landing)/calculator'
       path: '/calculator'
       fullPath: '/calculator'
-      preLoaderRoute: typeof homeCalculatorRouteImport
-      parentRoute: typeof homeRouteRoute
+      preLoaderRoute: typeof landingCalculatorRouteImport
+      parentRoute: typeof landingRouteRoute
     }
-    '/(home)/about': {
-      id: '/(home)/about'
+    '/(landing)/about': {
+      id: '/(landing)/about'
       path: '/about'
       fullPath: '/about'
-      preLoaderRoute: typeof homeAboutRouteImport
-      parentRoute: typeof homeRouteRoute
+      preLoaderRoute: typeof landingAboutRouteImport
+      parentRoute: typeof landingRouteRoute
     }
-    '/(private)/dashboard/': {
-      id: '/(private)/dashboard/'
+    '/(dashboard)/profile': {
+      id: '/(dashboard)/profile'
+      path: '/profile'
+      fullPath: '/profile'
+      preLoaderRoute: typeof dashboardProfileRouteImport
+      parentRoute: typeof dashboardRouteRoute
+    }
+    '/(dashboard)/dashboard': {
+      id: '/(dashboard)/dashboard'
       path: '/dashboard'
-      fullPath: '/dashboard/'
-      preLoaderRoute: typeof privateDashboardIndexRouteImport
-      parentRoute: typeof privateRouteRoute
-    }
-    '/(private)/(loan)/loan-application-complete': {
-      id: '/(private)/(loan)/loan-application-complete'
-      path: '/loan-application-complete'
-      fullPath: '/loan-application-complete'
-      preLoaderRoute: typeof privateloanLoanApplicationCompleteRouteImport
-      parentRoute: typeof privateRouteRoute
-    }
-    '/(private)/(loan)/loan-application': {
-      id: '/(private)/(loan)/loan-application'
-      path: '/loan-application'
-      fullPath: '/loan-application'
-      preLoaderRoute: typeof privateloanLoanApplicationRouteImport
-      parentRoute: typeof privateRouteRoute
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof dashboardDashboardRouteImport
+      parentRoute: typeof dashboardRouteRoute
     }
   }
 }
 
-interface homeRouteRouteChildren {
-  homeAboutRoute: typeof homeAboutRoute
-  homeCalculatorRoute: typeof homeCalculatorRoute
-  homeContactUsRoute: typeof homeContactUsRoute
-  homeTermsRoute: typeof homeTermsRoute
-  homeIndexRoute: typeof homeIndexRoute
+interface dashboardRouteRouteChildren {
+  dashboardDashboardRoute: typeof dashboardDashboardRoute
+  dashboardProfileRoute: typeof dashboardProfileRoute
 }
 
-const homeRouteRouteChildren: homeRouteRouteChildren = {
-  homeAboutRoute: homeAboutRoute,
-  homeCalculatorRoute: homeCalculatorRoute,
-  homeContactUsRoute: homeContactUsRoute,
-  homeTermsRoute: homeTermsRoute,
-  homeIndexRoute: homeIndexRoute,
+const dashboardRouteRouteChildren: dashboardRouteRouteChildren = {
+  dashboardDashboardRoute: dashboardDashboardRoute,
+  dashboardProfileRoute: dashboardProfileRoute,
 }
 
-const homeRouteRouteWithChildren = homeRouteRoute._addFileChildren(
-  homeRouteRouteChildren,
+const dashboardRouteRouteWithChildren = dashboardRouteRoute._addFileChildren(
+  dashboardRouteRouteChildren,
 )
 
-interface privateRouteRouteChildren {
-  privateProfileRoute: typeof privateProfileRoute
-  privateloanLoanApplicationRoute: typeof privateloanLoanApplicationRoute
-  privateloanLoanApplicationCompleteRoute: typeof privateloanLoanApplicationCompleteRoute
-  privateDashboardIndexRoute: typeof privateDashboardIndexRoute
+interface landingRouteRouteChildren {
+  landingAboutRoute: typeof landingAboutRoute
+  landingCalculatorRoute: typeof landingCalculatorRoute
+  landingContactUsRoute: typeof landingContactUsRoute
+  landingTermsRoute: typeof landingTermsRoute
+  landingIndexRoute: typeof landingIndexRoute
 }
 
-const privateRouteRouteChildren: privateRouteRouteChildren = {
-  privateProfileRoute: privateProfileRoute,
-  privateloanLoanApplicationRoute: privateloanLoanApplicationRoute,
-  privateloanLoanApplicationCompleteRoute:
-    privateloanLoanApplicationCompleteRoute,
-  privateDashboardIndexRoute: privateDashboardIndexRoute,
+const landingRouteRouteChildren: landingRouteRouteChildren = {
+  landingAboutRoute: landingAboutRoute,
+  landingCalculatorRoute: landingCalculatorRoute,
+  landingContactUsRoute: landingContactUsRoute,
+  landingTermsRoute: landingTermsRoute,
+  landingIndexRoute: landingIndexRoute,
 }
 
-const privateRouteRouteWithChildren = privateRouteRoute._addFileChildren(
-  privateRouteRouteChildren,
+const landingRouteRouteWithChildren = landingRouteRoute._addFileChildren(
+  landingRouteRouteChildren,
 )
 
 interface AuthRouteRouteChildren {
@@ -433,11 +367,10 @@ const AuthRouteRouteWithChildren = AuthRouteRoute._addFileChildren(
 )
 
 const rootRouteChildren: RootRouteChildren = {
-  homeRouteRoute: homeRouteRouteWithChildren,
-  privateRouteRoute: privateRouteRouteWithChildren,
+  dashboardRouteRoute: dashboardRouteRouteWithChildren,
+  landingRouteRoute: landingRouteRouteWithChildren,
   AuthRouteRoute: AuthRouteRouteWithChildren,
   PlaygroundRoute: PlaygroundRoute,
-  testingVerifyFaceRecognizePageRoute: testingVerifyFaceRecognizePageRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
+import { Logger } from '@/helpers/loggers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
@@ -147,4 +148,5 @@ export const useDeleteMemberProfileMediaById = createMutationFactory<
     },
 })
 
+export const logger = Logger.getInstance('member-profile-media')
 // custom hooks can go here

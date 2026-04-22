@@ -8,8 +8,8 @@ import {
 } from '@/types/common'
 import { entityIdSchema } from '@/validation'
 
-// import { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header'
-// import { IInterestRateScheme } from '../interest-rate-scheme'
+import { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header'
+import { IInterestRateScheme } from '../interest-rate-scheme'
 import { IMemberClassification } from '../member-classification/member-classification.types'
 
 export interface IMemberClassificationInterestRateRequest {
@@ -26,11 +26,11 @@ export interface IMemberClassificationInterestRate
     name: string
     description: string
     interest_rate_scheme_id?: TEntityId
-    // interest_rate_scheme?: IInterestRateScheme
+    interest_rate_scheme?: IInterestRateScheme
     member_classification_id?: TEntityId
     member_classification?: IMemberClassification
     interest_rate_by_terms_header_id?: TEntityId
-    // interest_rate_by_terms_header?: IInterestRateByTermsHeaderResponse
+    interest_rate_by_terms_header?: IInterestRateByTermsHeaderResponse
 }
 
 export const memberClassificationInterestRateRequestSchema = z.object({

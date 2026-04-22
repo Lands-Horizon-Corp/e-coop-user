@@ -1,6 +1,6 @@
 import { ArrowRight, Ban, Lock, Scale, Shield, Users } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 
 interface BenefitItemProps {
     icon: React.ReactNode
@@ -11,7 +11,7 @@ interface BenefitItemProps {
 
 const BenefitItem = ({ icon, title, description, index }: BenefitItemProps) => (
     <div
-        className="flex gap-4 p-4 rounded-lg bg-muted hover:bg-secondary transition-colors duration-300 animate-slide-up"
+        className="flex gap-4 p-4 rounded-lg bg-secondary/50 hover:bg-secondary transition-colors duration-300 animate-slide-up"
         style={{ animationDelay: `${index * 100}ms` }}
     >
         <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">

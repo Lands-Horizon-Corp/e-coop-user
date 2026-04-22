@@ -3,11 +3,11 @@ import { UseFormReturn } from 'react-hook-form'
 import { cn } from '@/helpers'
 import { IBranch, useGetAllBranch } from '@/modules/branch'
 
-import { BuildingBranchIcon, EmailIcon, PhoneIcon } from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import { redirectToGoogleMapsDirection } from '@/components/map/map.utils'
-import { Button } from '@/components/ui/button'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
+import { BuildingBranchIcon, EmailIcon, PhoneIcon } from '@e-coop-monorepo/ui/components/icons'
+import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
+import { redirectToGoogleMapsDirection } from '@e-coop-monorepo/ui/components/map/map.utils'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 
 import { TEntityId } from '@/types'
 
@@ -43,18 +43,6 @@ export const BranchSection = ({ form, onNext }: PersonalInfoStepProps) => {
                                 onSelectBranch={(selectedBranch) => {
                                     field.onChange(selectedBranch.id)
                                     form.setValue('branch', selectedBranch)
-
-                                    form.setValue(
-                                        'member_gender_id' as keyof TKYCBranchSchema,
-                                        selectedBranch.branch_setting
-                                            .default_member_gender_id
-                                    )
-                                    form.setValue(
-                                        'member_gender' as keyof TKYCBranchSchema,
-                                        selectedBranch.branch_setting
-                                            .default_member_gender
-                                    )
-
                                     onNext()
                                 }}
                                 selectedBranchId={form.watch('branch_id')}

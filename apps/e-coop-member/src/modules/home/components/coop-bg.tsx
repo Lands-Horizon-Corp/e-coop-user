@@ -224,43 +224,43 @@ export function CoopBackground({
                     cx="15%"
                     cy="20%"
                     fill="var(--primary)"
-                    opacity={opacityValue}
                     r="8"
+                    opacity={opacityValue}
                 />
                 <circle
                     cx="45%"
                     cy="35%"
                     fill="var(--primary)"
-                    opacity={opacityValue}
                     r="10"
+                    opacity={opacityValue}
                 />
                 <circle
                     cx="75%"
                     cy="25%"
                     fill="var(--primary)"
-                    opacity={opacityValue}
                     r="8"
+                    opacity={opacityValue}
                 />
                 <circle
                     cx="85%"
                     cy="60%"
                     fill="var(--primary)"
-                    opacity={opacityValue}
                     r="6"
+                    opacity={opacityValue}
                 />
                 <circle
                     cx="55%"
                     cy="75%"
                     fill="var(--primary)"
-                    opacity={opacityValue}
                     r="9"
+                    opacity={opacityValue}
                 />
                 <circle
                     cx="25%"
                     cy="65%"
                     fill="var(--primary)"
-                    opacity={opacityValue}
                     r="7"
+                    opacity={opacityValue}
                 />
             </svg>
         ),

@@ -17,11 +17,11 @@ import {
     X,
 } from 'lucide-react'
 
-import { Button } from '@/components/ui/button'
-import ImageField from '@/components/ui/image-field'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
-import { Textarea } from '@/components/ui/textarea'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
+import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 
 import { IMemberProfile } from '../../member-profile.types'
 import { CountryCombobox } from '../comboboxes/country-combobox'
@@ -498,8 +498,8 @@ export interface GovernmentBenefitFormData {
     value: string
     expiry_date: string
     description: string
-    front_media_url?: string
-    back_media_url?: string
+    front_media_url: string
+    back_media_url: string
 }
 
 function GovernmentBenefitForm({
@@ -750,13 +750,11 @@ function GovernmentBenefitForm({
                                 onChange={(url) =>
                                     setFormData({
                                         ...formData,
-                                        front_media_url: url?.download_url
-                                            ? url.download_url
-                                            : undefined,
+                                        front_media_url: url!,
                                     })
                                 }
                                 placeholder="Upload Front Image"
-                                // value={formData.front_media_url || ''}
+                                value={formData.front_media_url}
                             />
                         </div>
                         <div>
@@ -770,13 +768,11 @@ function GovernmentBenefitForm({
                                 onChange={(url) =>
                                     setFormData({
                                         ...formData,
-                                        back_media_url: url?.download_url
-                                            ? url.download_url
-                                            : undefined,
+                                        back_media_url: url!,
                                     })
                                 }
                                 placeholder="Upload Back Image"
-                                // value={formData.back_media_url}
+                                value={formData.back_media_url}
                             />
                         </div>
                     </div>

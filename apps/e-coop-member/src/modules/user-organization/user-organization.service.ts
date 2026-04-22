@@ -6,6 +6,7 @@ import {
 import { toast } from 'sonner'
 
 import { groupBy, withCatchAsync } from '@/helpers/function-utils'
+import { Logger } from '@/helpers/loggers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
@@ -448,3 +449,5 @@ export const useCanUserCanJoinBranch = ({
         enabled: !!organizationId && !!branchId && (options?.enabled ?? true),
     })
 }
+
+export const logger = Logger.getInstance('user-organization')

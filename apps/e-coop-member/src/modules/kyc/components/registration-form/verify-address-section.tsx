@@ -5,30 +5,28 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { GOOGLE_MAPS_ID } from '@/constants'
 import { cn } from '@/helpers'
 import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import HomeTypeCombobox from '@/modules/member-address/components/home-type-combobox'
 import { MemberAddressSchema } from '@/modules/member-address/member-address.validation'
 import { IMemberAddressRequest } from '@/modules/member-profile'
 import { CountryCombobox } from '@/modules/member-profile/components/comboboxes/country-combobox'
 import { MapPin, MoreVertical, Pencil, Plus, Star, Trash2 } from 'lucide-react'
 
-import FormFooterResetSubmit from '@/components/form-components/form-footer-reset-submit'
-import MapView, { MapLocation } from '@/components/map'
-import Modal, { IModalProps } from '@/components/modals/modal'
-import { Button } from '@/components/ui/button'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
+import MapView, { MapLocation } from '@e-coop-monorepo/ui/components/map'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
-import { Form } from '@/components/ui/form'
-import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-import { Input } from '@/components/ui/input'
-import { Switch } from '@/components/ui/switch'
-import { Textarea } from '@/components/ui/textarea'
+} from '@e-coop-monorepo/ui/components/ui/dropdown-menu'
+import { Form } from '@e-coop-monorepo/ui/components/ui/form'
+import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import { Switch } from '@e-coop-monorepo/ui/components/ui/switch'
+import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 
 import { useFormHelper } from '@/hooks/use-form-helper'
 import { useModalState } from '@/hooks/use-modal-state'
@@ -267,7 +265,7 @@ export const AddressCreateUpdateForm = ({
         mode: 'onSubmit',
         reValidateMode: 'onChange',
         defaultValues: {
-            label: 'House',
+            label: '',
             address: '',
             city: '',
             postal_code: '',
@@ -354,15 +352,13 @@ export const AddressCreateUpdateForm = ({
                 <fieldset className="space-y-4" disabled={readOnly}>
                     <FormFieldWrapper
                         control={form.control}
-                        label="Home Type *"
+                        label="Label *"
                         name="label"
                         render={({ field }) => (
-                            <HomeTypeCombobox
+                            <Input
                                 {...field}
-                                className="bg-popover"
                                 disabled={isDisabled(field.name)}
-                                id={field.name}
-                                placeholder="Label"
+                                placeholder="Home, Office, etc."
                             />
                         )}
                     />
@@ -485,7 +481,7 @@ export const AddressCreateUpdateForm = ({
                                 }
                                 onClick={handleMapClick}
                                 options={{
-                                    mapId: GOOGLE_MAPS_ID,
+                                    mapId: '7315fed6ff6d5145e4c926ff',
                                     disableDefaultUI: true,
                                     zoomControl: true,
                                     streetViewControl: false,
