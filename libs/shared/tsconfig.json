@@ -1,10 +1,6 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["./*"]
-    },
     "module": "esnext",
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,

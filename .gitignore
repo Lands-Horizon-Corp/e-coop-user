@@ -43,3 +43,6 @@ Thumbs.db
 
 vitest.config.*.timestamp*
 vite.config.*.timestamp*
+.claude/worktrees
+.claude/settings.local.json
+.nx/polygraph
