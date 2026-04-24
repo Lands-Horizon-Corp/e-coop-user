@@ -24,29 +24,29 @@ export const ANIMATION_DELAYS = {
  */
 export const FLOATING_ANIMATIONS = [
   {
-    id: 'float-1',
-    duration: '6s',
-    delay: '0s',
+    id: "float-1",
+    duration: "6s",
+    delay: "0s",
   },
   {
-    id: 'float-2',
-    duration: '7s',
-    delay: '1s',
+    id: "float-2",
+    duration: "7s",
+    delay: "1s",
   },
   {
-    id: 'float-3',
-    duration: '8s',
-    delay: '2s',
+    id: "float-3",
+    duration: "8s",
+    delay: "2s",
   },
   {
-    id: 'float-4',
-    duration: '5.5s',
-    delay: '1.5s',
+    id: "float-4",
+    duration: "5.5s",
+    delay: "1.5s",
   },
   {
-    id: 'float-5',
-    duration: '6.5s',
-    delay: '0.5s',
+    id: "float-5",
+    duration: "6.5s",
+    delay: "0.5s",
   },
 ] as const;
 
@@ -56,12 +56,12 @@ export const FLOATING_ANIMATIONS = [
  */
 export const STAT_CARD_ANIMATIONS = {
   PRIMARY: {
-    duration: '5s',
-    delay: '0s',
+    duration: "5s",
+    delay: "0s",
   },
   SECONDARY: {
-    duration: '6s',
-    delay: '1s',
+    duration: "6s",
+    delay: "1s",
   },
 } as const;
 
@@ -80,7 +80,7 @@ export const HOVER_ANIMATIONS = {
  * Standard transitions for consistency
  */
 export const TRANSITIONS = {
-  FAST: 'duration-150',
-  DEFAULT: 'duration-300',
-  SLOW: 'duration-500',
+  FAST: "duration-150",
+  DEFAULT: "duration-300",
+  SLOW: "duration-500",
 } as const;

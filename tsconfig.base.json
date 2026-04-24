@@ -18,8 +18,8 @@
         "allowImportingTsExtensions": true,
         "noEmit": true,
         "paths": {
-            "@e-coop/utils": ["libs/utils/src/index.ts"],
-            "@e-coop/utils/*": ["libs/utils/src/*"],
+            "@e-coop/utils": ["libs/shared/src/index.ts"],
+            "@e-coop/utils/*": ["libs/shared/src/*"],
             "@e-coop-monorepo/ui": ["libs/ui/src/index.ts"],
             "@e-coop-monorepo/ui/*": ["libs/ui/src/*"],
             "@e-coop-monorepo/modules": ["libs/modules/src/index.ts"]

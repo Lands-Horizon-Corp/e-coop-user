@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Quote, Star } from 'lucide-react'
 
-import { AnimatedSection } from '../AnimatedSection'
+import { AnimatedSection } from '@e-coop-monorepo/ui'
 
 interface Testimonial {
     id: number

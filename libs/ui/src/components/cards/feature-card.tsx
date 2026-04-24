@@ -1,55 +1,17 @@
-/**
- * FeatureCard Component
- * Single Responsibility: Display a feature card with icon and description
- * Benefits:
- * - Eliminates repetition of 3 near-identical cards
- * - Easy to maintain and style
- * - Reusable across sections
- * - Type-safe props
- * - Proper accessibility
- */
+import React from 'react'
 
-import React from 'react';
-import { motion } from 'framer-motion';
-import { LucideIcon } from 'lucide-react';
+import { motion } from 'framer-motion'
+import { LucideIcon } from 'lucide-react'
 
 interface FeatureCardProps {
-  /**
-   * Unique identifier
-   */
-  id: string;
-
-  /**
-   * Lucide icon component
-   */
-  icon: LucideIcon;
-
-  /**
-   * Feature title
-   */
-  title: string;
-
-  /**
-   * Feature description
-   */
-  description: string;
-
-  /**
-   * Hover rotation angle in degrees
-   * Use positive values for clockwise, negative for counter-clockwise
-   */
-  hoverRotation?: number;
-
-  /**
-   * Additional CSS classes
-   */
-  className?: string;
+  id: string
+  icon: LucideIcon
+  title: string
+  description: string
+  hoverRotation?: number
+  className?: string
 }
 
-/**
- * FeatureCard component with smooth hover animations
- * Uses Framer Motion for declarative animation syntax
- */
 export const FeatureCard: React.FC<FeatureCardProps> = ({
   id,
   icon: Icon,
@@ -70,7 +32,6 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         transition: { duration: 0.3 },
       }}
     >
-      {/* Icon with hover animation */}
       <motion.div
         className="flex justify-center mb-4"
         initial={{ rotate: 0 }}
@@ -85,13 +46,9 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
           scale: 1.1,
         }}
       >
-        <Icon
-          aria-hidden="true"
-          className="h-9 w-9 text-emerald-300/90"
-        />
+        <Icon aria-hidden="true" className="h-9 w-9 text-emerald-300/90" />
       </motion.div>
 
-      {/* Title */}
       <h3
         className="text-sm font-semibold text-white text-center"
         id={`feature-title-${id}`}
@@ -99,27 +56,24 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         {title}
       </h3>
 
-      {/* Description */}
       <p className="mt-2 text-xs text-teal-100/60 text-center">
         {description}
       </p>
     </motion.div>
-  );
-};
+  )
+}
 
-FeatureCard.displayName = 'FeatureCard';
+FeatureCard.displayName = 'FeatureCard'
 
-// Export memoized version for performance
 export const MemoizedFeatureCard = React.memo(
   FeatureCard,
   (prev, next) => {
-    // Custom comparison to ensure we only re-render when needed
     return (
       prev.id === next.id &&
       prev.title === next.title &&
       prev.description === next.description &&
       prev.hoverRotation === next.hoverRotation &&
       prev.icon === next.icon
-    );
+    )
   }
-);
+)

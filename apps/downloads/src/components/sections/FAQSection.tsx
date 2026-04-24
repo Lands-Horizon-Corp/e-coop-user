@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronDown, HelpCircle, MessageCircle } from 'lucide-react'
 
 import { cn } from '../../lib/utils'
-import { AnimatedSection } from '../AnimatedSection'
+import { AnimatedSection } from '@e-coop-monorepo/ui'
 
 interface FAQItemProps {
     question: string

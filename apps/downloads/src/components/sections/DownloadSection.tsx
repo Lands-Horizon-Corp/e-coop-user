@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Download, ArrowRight, ChevronDown, Users, TrendingUp, FileText, DollarSign, Activity } from "lucide-react";
-import { AnimatedSection } from "../AnimatedSection";
+import { AnimatedSection } from "@e-coop-monorepo/ui";
 import { cn } from "../../lib/utils";
 
 type OS = 'windows' | 'macos' | 'linux'

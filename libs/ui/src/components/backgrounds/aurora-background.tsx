@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 
-export default function AuroraBackground() {
+export function AuroraBackground() {
     return (
         <div className="fixed inset-0 z-0 overflow-hidden pointer-events-none">
             {/* Base gradient */}

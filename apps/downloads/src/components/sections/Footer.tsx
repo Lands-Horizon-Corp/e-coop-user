@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
 
-import { AnimatedSection } from '../AnimatedSection'
+import { AnimatedSection } from '@e-coop-monorepo/ui'
 
 interface FooterProps {
     logo: string

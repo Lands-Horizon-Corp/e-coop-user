@@ -5,9 +5,9 @@ import {
   FEATURE_CARDS,
   HERO_TEXT,
 } from '../../constants/heroSection';
-import { MemoizedFloatingIcon } from '../hero/FloatingIcon';
-import { FloatingStatsSection } from '../hero/FloatingStatsSection';
-import { MemoizedFeatureCard } from '../hero/FeatureCard';
+import { MemoizedFeatureCard } from '@e-coop-monorepo/ui';
+import { MemoizedFloatingIcon } from '../FloatingIcon';
+import { FloatingStatsSection } from '../FloatingStatsSection';
 
 /**
  * Badge component extracted for reusability

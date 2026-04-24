@@ -98,6 +98,16 @@ export * from './components/backgrounds/flickering-grid'
 export * from './components/backgrounds/flowing-grid'
 export * from './components/backgrounds/random-arrows'
 export * from './components/backgrounds/random-dots'
+export * from './components/backgrounds/aurora-background'
+export * from './components/backgrounds/particles-background'
+export * from './components/backgrounds/scroll-progress'
+
+// animations
+export * from './components/animations/animated-section'
+
+// cards
+export * from './components/cards/feature-card'
+export * from './components/cards/stat-card'
 
 // bank
 export * from './components/bank/bank.service'

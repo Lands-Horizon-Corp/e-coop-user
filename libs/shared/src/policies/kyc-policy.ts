@@ -1,4 +1,4 @@
-import { Policy } from "../components/policies/types";
+import { Policy } from "./types";
 
 export const kycPolicy: Policy = {
   id: "kyc",

@@ -4,7 +4,7 @@ export const privacyPolicy: Policy = {
   id: "privacy",
   title: "Privacy Policy",
   effectiveDate: "January 1, 2026",
-  content: `Welcome to e-coop-suite. This Privacy Policy describes how Lands Horizon Corp ("we", "us", or "our") collects, uses, stores, and protects your personal information through the e-coop-suite platform (<a href="http://ecoop-suite.com/" class="text-emerald-400 hover:underline">http://ecoop-suite.com/</a>). By using our services, you agree to the practices described in this policy.
+  content: `Welcome to e-coop-suite. This Privacy Policy describes how Lands Horizon Corp ("we", "us", or "our") collects, uses, stores, and protects your personal information through the e-coop-suite platform (<a href="http://ecoop-suite.com/" class="text-emerald-400 hover:underline">http://ecoop-suite.com/</a>). By using our services, you agree to the practices described in this policy.
 `,
   sections: [
     {

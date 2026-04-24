@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link2 } from "lucide-react";
-import { allPolicies } from "./all-policies";
-import { policyList } from "./policy-list";
-import type { Policy, PolicySection } from "./types";
+import { allPolicies, policyList, type Policy, type PolicySection } from "@e-coop/utils/policies";
 
 export default function PoliciesPage() {
   const { policyId = "privacy" } = useParams();
@@ -12,7 +10,6 @@ export default function PoliciesPage() {
 
   const currentPolicy: Policy = allPolicies.find((p) => p.id === policyId) || allPolicies[0];
 
-  // Track which section is in view while scrolling
   useEffect(() => {
     const handleScroll = () => {
       const sections = currentPolicy.sections.map((s) => ({
@@ -33,7 +30,7 @@ export default function PoliciesPage() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // Check on mount
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [currentPolicy]);
 
@@ -64,7 +61,7 @@ export default function PoliciesPage() {
                 const activeClass = isActive
                   ? "border-emerald-400 border-l-2 bg-emerald-500/20 text-emerald-400"
                   : "text-gray-300 hover:bg-white/5 hover:text-white";
-                
+
                 return (
                   <Link
                     className={`block rounded-lg px-4 py-3 text-sm transition-all ${activeClass}`}

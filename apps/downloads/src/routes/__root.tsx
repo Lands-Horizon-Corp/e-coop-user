@@ -1,10 +1,8 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
+import { AuroraBackground, ParticlesBackground, ScrollProgress } from '@e-coop-monorepo/ui'
 import logo from '../assets/logo.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/sections/Footer'
-import AuroraBackground from '../components/effects/AuroraBackground'
-import ParticlesBackground from '../components/effects/ParticlesBackground'
-import ScrollProgress from '../components/effects/ScrollProgress'
 
 export const Route = createRootRoute({
     component: RootComponent,

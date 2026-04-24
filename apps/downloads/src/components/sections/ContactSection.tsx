@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Mail, MapPin, Phone, Send, CheckCircle, AlertCircle, Search } from "lucide-react";
-import { AnimatedSection } from "../AnimatedSection";
+import { AnimatedSection } from "@e-coop-monorepo/ui";
 import PhoneInput, { getCountries, getCountryCallingCode } from 'react-phone-number-input';
 import en from 'react-phone-number-input/locale/en';
 import 'react-phone-number-input/style.css';

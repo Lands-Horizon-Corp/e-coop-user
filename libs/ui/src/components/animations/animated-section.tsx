@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 
-import { type Variants, motion, useInView } from 'framer-motion'
-import { useScroll, useTransform } from 'framer-motion'
+import { type Variants, motion, useInView, useScroll, useTransform } from 'framer-motion'
 
 type AnimationType =
     | 'fadeUp'
@@ -13,7 +12,6 @@ type AnimationType =
     | 'slideUp'
     | 'none'
 
-// Define animation variants with enhanced easing
 const animationVariants: Record<AnimationType, Variants> = {
     fadeUp: {
         hidden: { opacity: 0, y: 50 },
@@ -58,7 +56,6 @@ interface AnimatedSectionProps {
     once?: boolean
 }
 
-// Main wrapper for sections that animate on scroll
 export function AnimatedSection({
     children,
     className,
@@ -95,7 +92,6 @@ interface StaggerContainerProps {
     delayStart?: number
 }
 
-// For staggered children animations
 export function StaggerContainer({
     children,
     className,
@@ -153,7 +149,6 @@ export function StaggerItem({
     )
 }
 
-// Magnetic hover effect wrapper
 interface MagneticProps {
     children: React.ReactNode
     className?: string
@@ -195,7 +190,6 @@ export function Magnetic({
     )
 }
 
-// Parallax wrapper
 interface ParallaxProps {
     children: React.ReactNode
     className?: string

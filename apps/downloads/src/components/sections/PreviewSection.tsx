@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { AnimatedSection } from "../AnimatedSection";
+import { AnimatedSection } from "@e-coop-monorepo/ui";
 import dashboardImage from "../../assets/dashboard2.png";
 import mobileDashboardImage from "../../assets/mobile-dashboard3.png";
 import robotImage from "../../assets/robot2.png";
