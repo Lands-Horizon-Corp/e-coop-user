@@ -19,6 +19,8 @@
         "allowImportingTsExtensions": true,
         "noEmit": true,
         "paths": {
+
+            "@e-coop-monorepo/ui": ["libs/ui/src/index.ts"],
             "@e-coop-monorepo/shared/constants": [
                 "libs/shared/constants/src/index.ts"
             ],

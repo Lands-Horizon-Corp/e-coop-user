@@ -1,4 +1,3 @@
-import type { ICONS } from '@e-coop-monorepo/shared/constants'
 import {
     AiOutlineDownload as DownloadIcon,
     AiOutlineFullscreenExit as FullscreenExitIcon,
@@ -1284,6 +1283,8 @@ export const IconMap = {
     'Report Search Icon': ReportsSearchIcon,
     'Sort Icon': SortIcon,
 }
+
+export const ICONS = Object.keys(IconMap) as Array<keyof typeof IconMap>
 
 export type TIcon = (typeof ICONS)[number]
 
