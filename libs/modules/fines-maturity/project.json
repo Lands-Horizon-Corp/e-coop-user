@@ -1,0 +1,9 @@
+{
+    "name": "fines-maturity",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/fines-maturity/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project fines-maturity --web",
+    "targets": {}
+}

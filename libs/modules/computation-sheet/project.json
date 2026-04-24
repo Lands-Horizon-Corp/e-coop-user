@@ -1,0 +1,9 @@
+{
+    "name": "computation-sheet",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/computation-sheet/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project computation-sheet --web",
+    "targets": {}
+}

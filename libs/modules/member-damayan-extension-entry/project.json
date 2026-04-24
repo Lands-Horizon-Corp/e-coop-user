@@ -1,0 +1,9 @@
+{
+    "name": "member-damayan-extension-entry",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/member-damayan-extension-entry/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-damayan-extension-entry --web",
+    "targets": {}
+}

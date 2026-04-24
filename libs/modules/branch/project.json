@@ -1,0 +1,9 @@
+{
+    "name": "branch",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/branch/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project branch --web",
+    "targets": {}
+}

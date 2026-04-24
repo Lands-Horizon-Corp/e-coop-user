@@ -1,0 +1,9 @@
+{
+    "name": "member-mutual-fund-history",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/member-mutual-fund-history/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-mutual-fund-history --web",
+    "targets": {}
+}

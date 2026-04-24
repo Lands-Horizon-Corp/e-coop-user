@@ -1,0 +1,9 @@
+{
+    "name": "cash-check-voucher-tag",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/cash-check-voucher-tag/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project cash-check-voucher-tag --web",
+    "targets": {}
+}

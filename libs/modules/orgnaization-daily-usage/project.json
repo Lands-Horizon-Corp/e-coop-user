@@ -1,0 +1,9 @@
+{
+    "name": "orgnaization-daily-usage",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/orgnaization-daily-usage/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project orgnaization-daily-usage --web",
+    "targets": {}
+}

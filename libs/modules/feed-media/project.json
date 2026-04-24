@@ -1,0 +1,9 @@
+{
+    "name": "feed-media",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/feed-media/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project feed-media --web",
+    "targets": {}
+}

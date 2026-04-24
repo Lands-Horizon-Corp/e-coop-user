@@ -1,0 +1,9 @@
+{
+    "name": "member-close-remark",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/member-close-remark/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-close-remark --web",
+    "targets": {}
+}

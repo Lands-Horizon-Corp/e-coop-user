@@ -1,0 +1,9 @@
+{
+    "name": "loan-status",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/loan-status/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project loan-status --web",
+    "targets": {}
+}

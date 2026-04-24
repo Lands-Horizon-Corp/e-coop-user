@@ -1,0 +1,9 @@
+{
+    "name": "member-department-history",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/member-department-history/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-department-history --web",
+    "targets": {}
+}

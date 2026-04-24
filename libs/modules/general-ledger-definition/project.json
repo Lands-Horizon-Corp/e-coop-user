@@ -1,0 +1,9 @@
+{
+    "name": "general-ledger-definition",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/general-ledger-definition/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project general-ledger-definition --web",
+    "targets": {}
+}

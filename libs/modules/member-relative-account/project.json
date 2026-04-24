@@ -1,0 +1,9 @@
+{
+    "name": "member-relative-account",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/member-relative-account/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-relative-account --web",
+    "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "general-accounting-ledger-tag",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/general-accounting-ledger-tag/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project general-accounting-ledger-tag --web",
+    "targets": {}
+}

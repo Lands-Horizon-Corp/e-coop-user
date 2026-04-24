@@ -1,0 +1,9 @@
+{
+    "name": "member-joint-account",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/member-joint-account/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-joint-account --web",
+    "targets": {}
+}

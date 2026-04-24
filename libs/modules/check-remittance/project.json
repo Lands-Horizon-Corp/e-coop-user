@@ -1,0 +1,9 @@
+{
+    "name": "check-remittance",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/check-remittance/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project check-remittance --web",
+    "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "charges-rate-by-range-or-minimum-amount",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/charges-rate-by-range-or-minimum-amount/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project charges-rate-by-range-or-minimum-amount --web",
+    "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "browse-exclude-include-accounts",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/browse-exclude-include-accounts/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project browse-exclude-include-accounts --web",
+    "targets": {}
+}

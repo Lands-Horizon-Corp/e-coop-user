@@ -1,0 +1,9 @@
+{
+    "name": "loan-transaction-entry",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/modules/loan-transaction-entry/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project loan-transaction-entry --web",
+    "targets": {}
+}
