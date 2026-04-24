@@ -2,7 +2,6 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { downloadFile } from '@/helpers/common-helper'
 import { Logger } from '@/helpers/loggers'
 import {
     HookQueryOptions,
@@ -12,6 +11,7 @@ import {
     createMutationFactory,
     updateMutationInvalidationFn,
 } from '@/providers/repositories/mutation-factory'
+import { downloadFile } from '@e-coop-monorepo/shared/helpers'
 
 import { TAPIQueryOptions, TEntityId } from '@/types'
 
