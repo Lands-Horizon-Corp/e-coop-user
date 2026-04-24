@@ -1,10 +1,6 @@
-import { cn } from '@/helpers/tw-utils'
-import {
-    ResolvedTheme,
-    useTheme,
-} from '@/providers/theme/provider/theme-provider'
-
-import { IClassProps } from '@/types'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { ResolvedTheme, useTheme } from '@e-coop-monorepo/shared/providers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import Image from './image'
 

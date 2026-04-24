@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ITimeDepositType } from '../time-deposit-type'
 import { TimeDepositComputationPreMatureSchema } from './time-deposit-computation-pre-mature.validation'
@@ -18,4 +22,5 @@ export type ITimeDepositComputationPreMatureRequest = z.infer<
     typeof TimeDepositComputationPreMatureSchema
 >
 
-export interface ITimeDepositComputationPreMaturePaginated extends IPaginatedResult<ITimeDepositComputationPreMature> {}
+export type ITimeDepositComputationPreMaturePaginated =
+    IPaginatedResult<ITimeDepositComputationPreMature>

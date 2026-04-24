@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     ICollectorsMemberAccountEntry,
     ICollectorsMemberAccountEntryRequest,
-} from '@/modules/collectors-member-account-entry'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/collectors-member-account-entry'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

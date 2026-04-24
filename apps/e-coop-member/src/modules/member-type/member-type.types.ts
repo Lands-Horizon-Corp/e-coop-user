@@ -5,7 +5,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranch } from '../branch'
 import { IBrowseReference } from '../browse-reference'
@@ -26,4 +26,4 @@ export interface IMemberType extends ITimeStamps, IAuditable {
 
 export type IMemberTypeRequest = z.infer<typeof MemberTypeSchema>
 
-export interface IMemberTypePaginated extends IPaginatedResult<IMemberType> {}
+export type IMemberTypePaginated = IPaginatedResult<IMemberType>

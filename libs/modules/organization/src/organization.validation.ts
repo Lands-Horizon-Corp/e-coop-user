@@ -5,7 +5,7 @@ import {
     descriptionTransformerSanitizer,
     emailSchema,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 export const OrganizationMigrationStatus = z.enum([
     'pending',

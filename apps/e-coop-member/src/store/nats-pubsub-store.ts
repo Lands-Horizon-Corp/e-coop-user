@@ -1,6 +1,6 @@
-import { WS_URL } from '@/constants'
-// import logger from '@/helpers/loggers/logger'
-// import logger from '@/helpers/loggers/logger'
+import { WS_URL } from '@e-coop-monorepo/shared/constants'
+// import logger from '@e-coop-monorepo/shared/helpers'
+// import logger from '@e-coop-monorepo/shared/helpers'
 import { NatsConnection, connect } from 'nats.ws'
 import { create } from 'zustand'
 

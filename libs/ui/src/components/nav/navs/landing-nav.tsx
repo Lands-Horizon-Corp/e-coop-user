@@ -2,7 +2,7 @@ import { ReactNode, useState } from 'react'
 
 import { Link, useLocation } from '@tanstack/react-router'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 import { HiBars3 } from 'react-icons/hi2'
 
 import { CalculatorIcon } from '@/components/icons'

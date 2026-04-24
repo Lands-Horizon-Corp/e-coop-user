@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account/account.types'
 import { TTagCategory } from '../tag-template'
@@ -23,4 +27,4 @@ export interface IAccounTagRequest {
     icon?: string
 }
 
-export interface IAccountTagPaginated extends IPaginatedResult<IAccountTag> {}
+export type IAccountTagPaginated = IPaginatedResult<IAccountTag>

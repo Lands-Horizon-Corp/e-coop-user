@@ -5,8 +5,11 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
-import { descriptionTransformerSanitizer, entityIdSchema } from '@/validation'
+} from '@e-coop-monorepo/shared/types'
+import {
+    descriptionTransformerSanitizer,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 import { IAccount } from '../account'
 import { IMemberProfile } from '../member-profile/member-profile.types'

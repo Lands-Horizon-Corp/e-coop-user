@@ -3,7 +3,7 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IGroceryComputationSheet } from '../grocery-computation-sheet/grocery-computation-sheet.types'
 

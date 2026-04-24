@@ -1,4 +1,4 @@
-import { TColumnDataTypes } from '@/contexts/filter-context'
+import { TColumnDataTypes } from '@e-coop-monorepo/shared/contexts'
 import { Table } from '@tanstack/react-table'
 
 /**

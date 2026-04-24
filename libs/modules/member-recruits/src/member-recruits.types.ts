@@ -1,7 +1,10 @@
 import z from 'zod'
 
-import { ITimeStamps, TEntityId } from '@/types/common'
-import { descriptionTransformerSanitizer, entityIdSchema } from '@/validation'
+import { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
+import {
+    descriptionTransformerSanitizer,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 import { IMemberProfile } from '../member-profile/member-profile.types'
 

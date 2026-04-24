@@ -1,4 +1,7 @@
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import {
     TKYCRegisterSchema,
@@ -11,11 +14,9 @@ import {
     TKYCVerifySecurityDetailsSchema,
 } from './kyc.validation'
 
-export interface IKyc extends IBaseEntityMeta {
-    //add here
-}
+export type IKyc = IBaseEntityMeta
 
-export interface IKycPaginated extends IPaginatedResult<IKyc> {}
+export type IKycPaginated = IPaginatedResult<IKyc>
 
 export type IKYCSelfieRequest = TKYCSelfieSchema
 export type IKYCRegisterRequest = TKYCRegisterSchema

@@ -1,12 +1,12 @@
 import z from 'zod'
 
-import { ICONS } from '@/constants'
+import { ICONS } from '@e-coop-monorepo/shared/constants'
 import {
     DaySchema,
     PercentageSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { FINANCIAL_STATEMENT_TYPE } from '../financial-statement-definition'
 import { GENERAL_LEDGER_TYPE } from '../general-ledger/general-ledger.constants'

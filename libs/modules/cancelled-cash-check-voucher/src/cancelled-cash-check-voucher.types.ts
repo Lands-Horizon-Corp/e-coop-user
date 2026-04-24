@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { CancelledCashCheckVoucherSchema } from './cancelled-cash-check-voucher.validation'
 
@@ -14,4 +17,5 @@ export type ICancelledCashCheckVoucherRequest = z.infer<
     typeof CancelledCashCheckVoucherSchema
 >
 
-export interface ICancelledCashCheckVoucherPaginated extends IPaginatedResult<ICancelledCashCheckVoucher> {}
+export type ICancelledCashCheckVoucherPaginated =
+    IPaginatedResult<ICancelledCashCheckVoucher>

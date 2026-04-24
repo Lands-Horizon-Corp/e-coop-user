@@ -7,7 +7,7 @@ import {
     entityIdSchema,
     passwordSchema,
     stringDateSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { USER_PROFILE_DURATION_UNITS } from './user-profile.constants'
 

@@ -5,7 +5,7 @@ import {
     descriptionTransformerSanitizer,
     entityIdSchema,
     stringDateSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 export const MemberAssetSchema = z.object({
     id: z.string().optional(),

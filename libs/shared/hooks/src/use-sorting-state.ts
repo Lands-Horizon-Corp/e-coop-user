@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import type { KeysOfOrString } from '@/types'
+import type { KeysOfOrString } from '@e-coop-monorepo/shared/types'
 
 export interface ISortItem<T = unknown> {
     field: KeysOfOrString<T>

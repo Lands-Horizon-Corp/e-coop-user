@@ -2,19 +2,7 @@ import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { IMemberProfile } from '@/modules/member-profile/member-profile.types'
-import {
-    Building,
-    Globe,
-    MapPin,
-    Navigation,
-    Pencil,
-    Phone,
-    Plus,
-    User,
-    X,
-} from 'lucide-react'
-
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile/member-profile.types'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import { Label } from '@e-coop-monorepo/ui/components/ui/label'
@@ -26,6 +14,17 @@ import {
     SelectValue,
 } from '@e-coop-monorepo/ui/components/ui/select'
 import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
+import {
+    Building,
+    Globe,
+    MapPin,
+    Navigation,
+    Pencil,
+    Phone,
+    Plus,
+    User,
+    X,
+} from 'lucide-react'
 
 interface IMemberAddress {
     id: string

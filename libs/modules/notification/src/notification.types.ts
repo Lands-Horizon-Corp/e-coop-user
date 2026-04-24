@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IUser, TUserType } from '../user'
 import { NOTIFICATION_TYPE } from './notification.constant'
@@ -22,6 +26,6 @@ export interface INotification extends IBaseEntityMeta {
 
 export type INotificationRequest = z.infer<typeof NotificationSchema>
 
-export interface INotificationPaginated extends IPaginatedResult<INotification> {}
+export type INotificationPaginated = IPaginatedResult<INotification>
 
 export type INotificationViewRequest = { ids: TEntityId[] }

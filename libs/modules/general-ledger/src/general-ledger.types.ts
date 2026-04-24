@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IBank } from '../bank'
@@ -94,4 +98,4 @@ export interface IMemberGeneralLedgerTotal {
     balance: number
 }
 
-export interface IGeneralLedgerPaginated extends IPaginatedResult<IGeneralLedger> {}
+export type IGeneralLedgerPaginated = IPaginatedResult<IGeneralLedger>

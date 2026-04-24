@@ -4,7 +4,7 @@ import {
     PercentageSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 export const AutomaticLoanDeductionSchema = z.object({
     id: entityIdSchema.optional(),

@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IUser } from '../user'
 import { FeedLikeSchema } from './feed-like.validation'
@@ -13,4 +17,4 @@ export interface IFeedLike extends IBaseEntityMeta {
 
 export type IFeedLikeRequest = z.infer<typeof FeedLikeSchema>
 
-export interface IFeedLikePaginated extends IPaginatedResult<IFeedLike> {}
+export type IFeedLikePaginated = IPaginatedResult<IFeedLike>

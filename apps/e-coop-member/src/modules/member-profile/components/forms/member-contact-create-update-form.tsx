@@ -3,8 +3,9 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
 import { VerifiedPatchIcon } from '@e-coop-monorepo/ui/components/icons'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
@@ -13,10 +14,6 @@ import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapp
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import { PhoneInput } from '@e-coop-monorepo/ui/components/ui/phone-input'
 import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-
-import { IClassProps, IForm, TEntityId } from '@/types'
 
 import { IMemberContactReferenceRequest } from '../../member-profile.types'
 import { MemberContactReferenceSchema } from '../../member-profile.validation'

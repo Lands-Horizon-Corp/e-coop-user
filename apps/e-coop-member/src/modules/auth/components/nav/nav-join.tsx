@@ -1,7 +1,6 @@
 import { Link } from '@tanstack/react-router'
 
-import { useFakeStore } from '@/store/fake-store'
-
+import { useFakeStore } from '@e-coop-monorepo/shared/store'
 import { FingerprintScanIcon } from '@e-coop-monorepo/ui/components/icons'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 

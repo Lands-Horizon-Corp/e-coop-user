@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { compareIgnoreCase } from '@/modules/timesheet/components/worktimer/utils'
+import { compareIgnoreCase } from '@e-coop-monorepo/modules/timesheet/components/worktimer/utils'
 import { AlertCircle, CheckCircle2 } from 'lucide-react'
 
 import Modal, { IModalProps } from '@/components/modals/modal'

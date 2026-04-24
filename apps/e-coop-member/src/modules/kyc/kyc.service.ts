@@ -1,10 +1,9 @@
-import { imageCompressed } from '@/helpers'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
-import { createMutationFactory } from '@/providers/repositories/mutation-factory'
+import { imageCompressed } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { TEntityId } from '@/types'
-
-// import { Logger } from '@/helpers/loggers'
+// import { Logger } from '@e-coop-monorepo/shared/helpers'
 
 import type {
     IKyc,

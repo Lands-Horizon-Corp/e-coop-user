@@ -1,4 +1,4 @@
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { MagnifyingGlassIcon } from '../icons'
 import {

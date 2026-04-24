@@ -1,4 +1,8 @@
-import { IPaginatedResult, ITimeStamps, TEntityId } from '@/types/common'
+import {
+    IPaginatedResult,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranch } from '../branch/branch.types'
 import { ICurrency } from '../currency'
@@ -31,4 +35,4 @@ export interface IBillsAndCoin extends ITimeStamps {
     currency: ICurrency
 }
 
-export interface IBillsAndCoinPaginated extends IPaginatedResult<IBillsAndCoin> {}
+export type IBillsAndCoinPaginated = IPaginatedResult<IBillsAndCoin>

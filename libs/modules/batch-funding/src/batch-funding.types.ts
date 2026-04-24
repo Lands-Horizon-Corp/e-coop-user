@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranch } from '../branch/branch.types'
 import { ICurrency } from '../currency'
@@ -38,4 +42,4 @@ export interface IBatchFunding extends IBaseEntityMeta {
 
 export type IBatchFundingRequest = z.infer<typeof BatchFundingSchema>
 
-export interface IBatchFundingPaginated extends IPaginatedResult<IBatchFunding> {}
+export type IBatchFundingPaginated = IPaginatedResult<IBatchFunding>

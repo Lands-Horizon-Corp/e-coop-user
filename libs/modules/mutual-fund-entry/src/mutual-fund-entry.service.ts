@@ -1,12 +1,11 @@
-import { Logger } from '@/helpers/loggers'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
-} from '@/providers/repositories/mutation-factory'
-
-import { TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     IMutualFundEntry,

@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-import { calculateUploadProgress } from '@/helpers/axios-helpers/axios-progress-helper'
-import { base64ImagetoFile } from '@/helpers/picture-crop-helper'
-import { cn } from '@/helpers/tw-utils'
 import { useUploadMedia } from '@/modules/media/media.service'
 import { IMedia } from '@/modules/media/media.types'
+import { calculateUploadProgress } from '@e-coop-monorepo/shared/helpers'
+import { base64ImagetoFile } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { AdjustIcon } from '@/components/icons'
 import ImageDisplay from '@/components/image-display'

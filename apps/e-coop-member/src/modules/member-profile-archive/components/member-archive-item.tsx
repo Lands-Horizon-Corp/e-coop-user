@@ -1,13 +1,12 @@
-import { toReadableDateTime } from '@/helpers/date-utils'
 import {
     TDownloadMediaProp,
     downloadMedia,
     formatBytes,
     getFileCategory,
     getFileInfo,
-} from '@/modules/media'
-import MediaResourceFileIcon from '@/modules/media/components/media-resource-file-icon'
-
+} from '@e-coop-monorepo/modules/media'
+import MediaResourceFileIcon from '@e-coop-monorepo/modules/media/components/media-resource-file-icon'
+import { toReadableDateTime } from '@e-coop-monorepo/shared/helpers'
 import {
     CalendarIcon,
     DownloadIcon,

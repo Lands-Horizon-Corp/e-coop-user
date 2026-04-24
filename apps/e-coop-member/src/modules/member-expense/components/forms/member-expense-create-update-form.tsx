@@ -3,21 +3,18 @@ import z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@/helpers'
-import { withToastCallbacks } from '@/helpers/callback-helper'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import { CurrencyInput } from '@/modules/currency'
-
+import { CurrencyInput } from '@e-coop-monorepo/modules/currency'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
 import TextEditor from '@e-coop-monorepo/ui/components/text-editor'
 import { Form } from '@e-coop-monorepo/ui/components/ui/form'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-
-import { IClassProps, IForm, TEntityId } from '@/types'
 
 import {
     useCreateMemberProfileExpense,

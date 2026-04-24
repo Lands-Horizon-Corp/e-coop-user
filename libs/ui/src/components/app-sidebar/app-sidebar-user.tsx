@@ -1,10 +1,10 @@
 import { Link, useRouter } from '@tanstack/react-router'
 import { toast } from 'sonner'
 
-import { useSignOut } from '@/modules/auth'
-// import { useModalState } from '@/hooks/use-modal-state'
-import { useAuthUser } from '@/modules/auth/authgentication.store'
-import useConfirmModalStore from '@/store/confirm-modal-store'
+import { useSignOut } from '@e-coop-monorepo/modules/auth'
+// import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { useAuthUser } from '@e-coop-monorepo/modules/auth/authgentication.store'
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 
 import {
     ChevronsUpDownIcon,

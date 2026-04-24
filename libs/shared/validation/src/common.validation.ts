@@ -8,10 +8,10 @@ import {
     NUMBER_LETTER_REGEX,
     PASSWORD_MIN_LENGTH,
     SEX,
-} from '@/constants'
+} from '@e-coop-monorepo/shared/constants'
 
 export const entityIdSchema = z.uuidv4()
-export const EntityIdSchema = (fieldName: string = 'Field') =>
+export const EntityIdSchema = (fieldName = 'Field') =>
     z.uuidv4({ error: `${fieldName} is required` })
 
 export const descriptionSchema = z.coerce.string({

@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { useModalState } from '@/hooks/use-modal-state'
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
 
 export interface IPickerBaseProps<T = unknown> {
     value?: T

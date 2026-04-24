@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { IFeedComment } from '../feed-comment'
 import { IFeedLike } from '../feed-like'
@@ -17,4 +20,4 @@ export interface IFeed extends IBaseEntityMeta {
 
 export type IFeedRequest = z.infer<typeof FeedSchema>
 
-export interface IFeedPaginated extends IPaginatedResult<IFeed> {}
+export type IFeedPaginated = IPaginatedResult<IFeed>

@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { IPaginatedResult, TEntityId } from '@/types'
+import { IPaginatedResult, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account/account.types'
 import { AccountHistorySchema } from './account-history.validation'
@@ -18,4 +18,4 @@ export interface IAccountHistory extends IAccount {
 
 export type IAccountHistoryRequest = z.infer<typeof AccountHistorySchema>
 
-export interface IAccountHistoryPaginated extends IPaginatedResult<IAccountHistory> {}
+export type IAccountHistoryPaginated = IPaginatedResult<IAccountHistory>

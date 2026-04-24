@@ -1,7 +1,10 @@
 import z from 'zod'
 
-import { PASSWORD_MIN_LENGTH } from '@/constants'
-import { otpCodeSchema, passwordSchema } from '@/validation'
+import { PASSWORD_MIN_LENGTH } from '@e-coop-monorepo/shared/constants'
+import {
+    otpCodeSchema,
+    passwordSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 export const UserLoginRequestSchema = z.object({
     key: z.coerce.string<string>().min(1, 'Email/Contact Number is required'),

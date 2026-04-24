@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IGeneratedSavingsInterest } from '../generated-savings-interest'
@@ -43,4 +47,5 @@ export interface IGeneratedSavingsInterestEntryDailyBalanceView {
     member_profile?: IMemberProfile
 }
 
-export interface IGeneratedSavingsInterestEntryPaginated extends IPaginatedResult<IGeneratedSavingsInterestEntry> {}
+export type IGeneratedSavingsInterestEntryPaginated =
+    IPaginatedResult<IGeneratedSavingsInterestEntry>

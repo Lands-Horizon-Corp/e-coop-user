@@ -3,7 +3,7 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IMemberClassificationInterestRate } from '../member-classification-interest-rate'
 

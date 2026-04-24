@@ -5,7 +5,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranch } from '../branch'
 import { MemberOccupationSchema } from './member-occupation.validation'
@@ -22,4 +22,4 @@ export interface IMemberOccupation extends ITimeStamps, IAuditable {
 
 export type IMemberOccupationRequest = z.infer<typeof MemberOccupationSchema>
 
-export interface IMemberOccupationPaginated extends IPaginatedResult<IMemberOccupation> {}
+export type IMemberOccupationPaginated = IPaginatedResult<IMemberOccupation>

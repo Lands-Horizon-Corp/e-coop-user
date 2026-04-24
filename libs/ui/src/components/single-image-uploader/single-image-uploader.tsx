@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import { base64ImagetoFile } from '@/helpers/picture-crop-helper'
-import { cn } from '@/helpers/tw-utils'
-import { IMedia, useUploadMedia } from '@/modules/media'
+import { IMedia, useUploadMedia } from '@e-coop-monorepo/modules/media'
+import { base64ImagetoFile } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { AdjustIcon } from '@/components/icons'
 import PictureCrop from '@/components/picture-crop'

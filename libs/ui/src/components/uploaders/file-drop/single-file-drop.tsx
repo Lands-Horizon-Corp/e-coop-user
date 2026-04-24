@@ -2,11 +2,10 @@ import { ReactNode } from 'react'
 
 import { toast } from 'sonner'
 
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { DropzoneOptions, useDropzone } from 'react-dropzone'
 
 import { Input } from '@/components/ui/input'
-
-import { IClassProps } from '@/types'
 
 import DefaultDropArea from '../drop-areas/default-drop-area'
 
@@ -60,22 +59,20 @@ const SingleFileDrop = ({
     })
 
     return (
-        <>
-            <div className="group relative z-10 cursor-pointer">
-                <div {...getRootProps()}>
-                    {RenderDropArea ? (
-                        RenderDropArea({ isDragActive })
-                    ) : (
-                        <DefaultDropArea
-                            className="min-h-80"
-                            dropText={dropText}
-                            isDraggingAbove={isDragActive}
-                        />
-                    )}
-                </div>
-                <Input {...getInputProps()} className="hidden" id="picture" />
+        <div className="group relative z-10 cursor-pointer">
+            <div {...getRootProps()}>
+                {RenderDropArea ? (
+                    RenderDropArea({ isDragActive })
+                ) : (
+                    <DefaultDropArea
+                        className="min-h-80"
+                        dropText={dropText}
+                        isDraggingAbove={isDragActive}
+                    />
+                )}
             </div>
-        </>
+            <Input {...getInputProps()} className="hidden" id="picture" />
+        </div>
     )
 }
 

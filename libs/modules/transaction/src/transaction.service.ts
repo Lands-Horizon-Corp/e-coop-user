@@ -1,19 +1,18 @@
 import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import { withCatchAsync } from '@/helpers/function-utils'
-import { Logger } from '@/helpers/loggers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     createMutationInvalidateFn,
-} from '@/providers/repositories/mutation-factory'
-
-import { TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IGeneralLedger, generalLedgerBaseKey } from '../general-ledger'
 import {

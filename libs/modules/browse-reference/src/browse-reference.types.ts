@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IInterestRateByAmount } from '../interest-rate-by-amount'
@@ -40,4 +44,4 @@ export interface IBrowseReference extends IBaseEntityMeta {
     interest_rates_by_amount: IInterestRateByAmount[]
 }
 
-export interface IBrowseReferencePaginated extends IPaginatedResult<IBrowseReference> {}
+export type IBrowseReferencePaginated = IPaginatedResult<IBrowseReference>

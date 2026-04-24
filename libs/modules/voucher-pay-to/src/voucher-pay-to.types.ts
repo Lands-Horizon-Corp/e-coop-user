@@ -1,4 +1,4 @@
-import { IBaseEntityMeta, TEntityId } from '@/types/common'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IMedia } from '../media/media.types'
 

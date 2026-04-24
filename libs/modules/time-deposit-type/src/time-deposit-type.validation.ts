@@ -5,7 +5,7 @@ import {
     EntityIdSchema,
     PercentageSchema,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { timeDepositComputationSchema } from '../time-deposit-computation'
 import { TimeDepositComputationPreMatureSchema } from '../time-deposit-computation-pre-mature'

@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios'
 
-import { API_URL } from '@/constants'
+import { API_URL } from '@e-coop-monorepo/shared/constants'
 
 let geoCache: Record<string, string> | null = {}
 let geoPermissionRequested = false

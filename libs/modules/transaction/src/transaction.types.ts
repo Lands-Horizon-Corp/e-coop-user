@@ -1,5 +1,9 @@
-import { IPaymentRequest } from '@/modules/quick-transfer'
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import { IPaymentRequest } from '@e-coop-monorepo/modules/quick-transfer'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { ICurrency } from '../currency'
@@ -59,7 +63,7 @@ export interface ITransaction extends IBaseEntityMeta {
     reference_number: string
 }
 
-export interface ITransactionPaginated extends IPaginatedResult<ITransaction> {}
+export type ITransactionPaginated = IPaginatedResult<ITransaction>
 
 export type TUpdateReferenceNumberProps = {
     transactionId: string

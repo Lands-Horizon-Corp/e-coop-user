@@ -1,6 +1,6 @@
 import { useCallback, useRef } from 'react'
 
-import { dataUrlToFile } from '@/modules/media'
+import { dataUrlToFile } from '@e-coop-monorepo/modules/media'
 import { format } from 'date-fns'
 import Webcam from 'react-webcam'
 

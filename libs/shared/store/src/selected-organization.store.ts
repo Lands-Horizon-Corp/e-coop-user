@@ -1,7 +1,6 @@
-import { IOrgUserOrganizationGroup } from '@/modules/user-organization'
+import { IOrgUserOrganizationGroup } from '@e-coop-monorepo/modules/user-organization'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
-
-import { TEntityId } from '@/types'
 
 type SelectedOrganizationState = {
     selectedOrg: IOrgUserOrganizationGroup | null

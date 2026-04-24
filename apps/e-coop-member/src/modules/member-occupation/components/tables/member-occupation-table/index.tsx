@@ -3,19 +3,15 @@ import { useMemo } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import FilterContext from '@/contexts/filter-context/filter-context'
-import { cn } from '@/helpers/tw-utils'
 import {
     MemberOccupationAPI,
     useGetPaginated,
 } from '@/modules/member-occupation/member-occupation.service'
 import { IMemberOccupation } from '@/modules/member-occupation/member-occupation.types'
-import {
-    getCoreRowModel,
-    getSortedRowModel,
-    useReactTable,
-} from '@tanstack/react-table'
-
+import FilterContext from '@e-coop-monorepo/shared/contexts'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import useDatableFilterState from '@e-coop-monorepo/shared/hooks'
+import { usePagination } from '@e-coop-monorepo/shared/hooks'
 import DataTable from '@e-coop-monorepo/ui/components/data-table'
 import DataTablePagination from '@e-coop-monorepo/ui/components/data-table/data-table-pagination'
 import DataTableToolbar, {
@@ -27,9 +23,11 @@ import { useDataTableSorting } from '@e-coop-monorepo/ui/components/data-table/u
 import useDataTableState, {
     useResolvedColumnOrder,
 } from '@e-coop-monorepo/ui/components/data-table/use-datatable-state'
-
-import useDatableFilterState from '@/hooks/use-filter-state'
-import { usePagination } from '@/hooks/use-pagination'
+import {
+    getCoreRowModel,
+    getSortedRowModel,
+    useReactTable,
+} from '@tanstack/react-table'
 
 import memberOccupationColumns, {
     IMemberOccupationTableColumnProps,

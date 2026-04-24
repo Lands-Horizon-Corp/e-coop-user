@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { IMemberType } from '../member-type'
 import { IMutualFund } from '../mutual-fund/mutual-fund.types'
@@ -21,4 +24,5 @@ export type IMutualFundAdditionalMembersRequest = z.infer<
     typeof MutualFundAdditionalMembersSchema
 >
 
-export interface IMutualFundAdditionalMembersPaginated extends IPaginatedResult<IMutualFundAdditionalMembers> {}
+export type IMutualFundAdditionalMembersPaginated =
+    IPaginatedResult<IMutualFundAdditionalMembers>

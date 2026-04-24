@@ -1,4 +1,9 @@
-import { IAuditable, IPaginatedResult, ITimeStamps, TEntityId } from '@/types'
+import {
+    IAuditable,
+    IPaginatedResult,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 export interface IAccountClassification extends IAuditable, ITimeStamps {
     id: TEntityId
@@ -18,4 +23,5 @@ export interface IAccountClassificationRequest {
     branch_id?: TEntityId
 }
 
-export interface IAccountClassificationPaginated extends IPaginatedResult<IAccountClassification> {}
+export type IAccountClassificationPaginated =
+    IPaginatedResult<IAccountClassification>

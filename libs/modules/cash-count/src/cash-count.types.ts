@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ICurrency } from '../currency'
 import { IUserBase } from '../user/user.types'
@@ -43,4 +47,4 @@ export interface ICashCountBatchRequest {
     grand_total?: number
 }
 
-export interface ICashCountPaginated extends IPaginatedResult<ICashCount> {}
+export type ICashCountPaginated = IPaginatedResult<ICashCount>

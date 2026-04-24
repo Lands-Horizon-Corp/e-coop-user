@@ -1,7 +1,7 @@
 import { Outlet, createFileRoute } from '@tanstack/react-router'
 
 // import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
-// import LandingFooter from '@/modules/home/pages/footer'
+// import LandingFooter from '@e-coop-monorepo/modules/home/pages/footer'
 
 import AuthNav from '@e-coop-monorepo/ui/components/nav/navs/auth-nav'
 

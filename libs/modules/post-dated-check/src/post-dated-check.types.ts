@@ -3,7 +3,7 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IBank } from '../bank/bank.types'
 import { IMemberProfile } from '../member-profile/member-profile.types'

@@ -2,12 +2,11 @@
 
 import React, { forwardRef, useCallback, useEffect, useRef } from 'react'
 
-import { GOOGLE_MAPS_ID } from '@/constants'
-import { cn } from '@/helpers/tw-utils'
-import { useTheme } from '@/providers/theme/provider/theme-provider'
+import { GOOGLE_MAPS_ID } from '@e-coop-monorepo/shared/constants'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useTheme } from '@e-coop-monorepo/shared/providers'
+import { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { GoogleMap, type GoogleMapProps } from '@react-google-maps/api'
-
-import { IBaseProps } from '@/types'
 
 import { SadFaceIcon } from '../icons'
 import { useMap } from './map.provider'

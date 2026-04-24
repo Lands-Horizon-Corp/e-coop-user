@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { MutualFundTableSchema } from './mutual-fund-table.validation'
 
@@ -12,4 +15,4 @@ export interface IMutualFundTable extends IBaseEntityMeta {
 
 export type IMutualFundTableRequest = z.infer<typeof MutualFundTableSchema>
 
-export interface IMutualFundTablePaginated extends IPaginatedResult<IMutualFundTable> {}
+export type IMutualFundTablePaginated = IPaginatedResult<IMutualFundTable>

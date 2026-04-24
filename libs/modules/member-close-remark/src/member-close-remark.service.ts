@@ -1,10 +1,9 @@
 import { useMutation } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
-import { HookMutationOptions } from '@/providers/repositories/mutation-factory'
-
-import { TEntityId } from '@/types'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+import { HookMutationOptions } from '@e-coop-monorepo/shared/providers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { memberProfileAPIRoute } from '../member-profile/member-profile.service'
 import type { IMemberProfile } from '../member-profile/member-profile.types'

@@ -5,7 +5,7 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 export interface IMemberOtherInformationEntryRequest {
     name: string

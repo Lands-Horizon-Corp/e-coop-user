@@ -1,6 +1,6 @@
 import { MutableRefObject, useEffect, useRef, useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 import ReactSignatureCanvas from 'react-signature-canvas'
 
 interface DrawSignatureProps {

@@ -6,20 +6,17 @@ import z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import { cn } from '@/helpers/tw-utils'
-import MediaUploader from '@/modules/media/components/media-uploader'
-
+import MediaUploader from '@e-coop-monorepo/modules/media/components/media-uploader'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
 import { Form } from '@e-coop-monorepo/ui/components/ui/form'
 import FormErrorMessage from '@e-coop-monorepo/ui/components/ui/form-error-message'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-
-import { IClassProps, IForm } from '@/types'
 
 import { useMemberProfileArchiveBulk } from '../../member-profile-archive.service'
 import { IMemberProfileArchiveBulkRequest } from '../../member-profile-archive.types'

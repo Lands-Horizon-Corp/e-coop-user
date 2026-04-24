@@ -3,17 +3,13 @@ import { useEffect } from 'react'
 import { useGetBranchesByOrganizationId } from '@/modules/branch'
 import { CoopBackground } from '@/modules/home/components/coop-bg'
 import Themes from '@/modules/settings/data/themes.json'
-import {
-    CustomThemeColors,
-    useTheme,
-} from '@/providers/theme/provider/theme-provider'
-
+import { CustomThemeColors, useTheme } from '@e-coop-monorepo/shared/providers'
 import { FlowingGrid } from '@e-coop-monorepo/ui/components/backgrounds/flowing-grid'
 
 import { OrganizationBanner } from '../components/organization-banner'
 import { BranchList } from '../components/organization-branch-list'
-import { MediaCarousel } from '../components/organization-media-carousel'
 import { OrganizationDetails } from '../components/organization-details/organization-details'
+import { MediaCarousel } from '../components/organization-media-carousel'
 import { useGetOrganizationById } from '../organization.service'
 
 const org_id = import.meta.env.VITE_ORGANIZATION_ID
@@ -40,7 +36,7 @@ const Organization = () => {
         }
     }, [Organization])
 
-    console.log("org",Organization, org_id)
+    console.log('org', Organization, org_id)
     if (!Organization || !Branches) return
     return (
         <main className="min-h-screen mx-auto w-[80%]">
@@ -51,8 +47,8 @@ const Organization = () => {
                 maxOpacity={0.7}
                 squareSize={4}
             /> */}
-            <CoopBackground/>
-            <CoopBackground variant="geometric" opacity={0.3} />
+            <CoopBackground />
+            <CoopBackground opacity={0.3} variant="geometric" />
             <OrganizationBanner organization={Organization} />
 
             <MediaCarousel medias={Organization.organization_medias} />

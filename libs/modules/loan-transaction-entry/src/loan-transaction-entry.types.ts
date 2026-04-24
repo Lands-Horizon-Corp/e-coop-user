@@ -1,7 +1,10 @@
-import { IAccount } from '@/modules/account/account.types'
-import { ILoanTransaction } from '@/modules/loan-transaction/loan-transaction.types'
-
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import { IAccount } from '@e-coop-monorepo/modules/account/account.types'
+import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction/loan-transaction.types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IMemberProfile } from '../member-profile'
 import { LOAN_TRANSACTION_ENTRY_TYPE } from './loan-transaction-constant'
@@ -40,4 +43,5 @@ export interface ILoanTransactionEntry extends IBaseEntityMeta {
 
 export type ILoanTransactionEntryRequest = TLoanTransactionEntrySchema
 
-export interface ILoanTransactionEntryPaginated extends IPaginatedResult<ILoanTransactionEntry> {}
+export type ILoanTransactionEntryPaginated =
+    IPaginatedResult<ILoanTransactionEntry>

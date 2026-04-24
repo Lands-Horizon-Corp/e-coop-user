@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     IGroceryComputationSheet,
     IGroceryComputationSheetRequest,
-} from '@/modules/grocery-computation-sheet'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/grocery-computation-sheet'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

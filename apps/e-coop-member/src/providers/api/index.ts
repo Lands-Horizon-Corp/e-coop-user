@@ -5,7 +5,7 @@ import axios, {
     type InternalAxiosRequestConfig,
 } from 'axios'
 
-import { API_URL, ORGANIZATION_ID } from '@/constants/envs'
+import { API_URL, ORGANIZATION_ID } from '@e-coop-monorepo/shared/constants'
 
 export interface IRequestParams {
     [key: string]: unknown

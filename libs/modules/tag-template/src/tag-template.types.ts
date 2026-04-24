@@ -1,8 +1,11 @@
 import z from 'zod'
 
-import { TIcon } from '@/components/icons'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import { TIcon } from '@/components/icons'
 
 import { TagTemplateSchema } from './tag-template.validation'
 import { TAG_CATEGORY } from './tag.constants'
@@ -19,4 +22,4 @@ export interface ITagTemplate extends IBaseEntityMeta {
 
 export type ITagTemplateRequest = z.infer<typeof TagTemplateSchema>
 
-export interface ITagTemplatePaginated extends IPaginatedResult<ITagTemplate> {}
+export type ITagTemplatePaginated = IPaginatedResult<ITagTemplate>

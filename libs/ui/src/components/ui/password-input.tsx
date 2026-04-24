@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import {
     InputGroup,

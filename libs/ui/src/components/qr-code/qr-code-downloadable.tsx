@@ -1,6 +1,10 @@
 import { useRef } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import {
+    UseDownloadOptions,
+    useDownloadElement,
+} from '@e-coop-monorepo/shared/hooks'
 
 import { ChevronDownIcon, DownloadIcon } from '@/components/icons'
 import LoadingSpinner from '@/components/spinners/loading-spinner'
@@ -12,11 +16,6 @@ import {
     DropdownMenuLabel,
     DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-
-import {
-    UseDownloadOptions,
-    useDownloadElement,
-} from '@/hooks/use-download-element'
 
 import QrCode, { IQrCodeProps } from './qr-code'
 

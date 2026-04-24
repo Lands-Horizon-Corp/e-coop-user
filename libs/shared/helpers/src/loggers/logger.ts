@@ -1,5 +1,8 @@
-import { IS_STAGING } from '@/constants'
-import { TFootstepLevel, createFootstep } from '@/modules/footstep'
+import {
+    TFootstepLevel,
+    createFootstep,
+} from '@e-coop-monorepo/modules/footstep'
+import { IS_STAGING } from '@e-coop-monorepo/shared/constants'
 
 /* eslint-disable no-console */
 type LogMethod = (...args: unknown[]) => void
@@ -8,7 +11,7 @@ class Logger {
     private static instances: Map<string, Logger> = new Map()
     private isDevelopment: boolean
     private module?: string
-    private static hasLoggedAsciiArt: boolean = false
+    private static hasLoggedAsciiArt = false
 
     public log: LogMethod
     public warn: LogMethod
@@ -16,7 +19,7 @@ class Logger {
     public info: LogMethod
     public debug: LogMethod
 
-    private constructor(module?: string, footstep: boolean = true) {
+    private constructor(module?: string, footstep = true) {
         this.isDevelopment = !IS_STAGING
         this.module = module
 
@@ -137,7 +140,7 @@ class Logger {
         level: TFootstepLevel,
         description: string,
         activity: string,
-        footstep: boolean = true
+        footstep = true
     ) {
         if (this.module) {
             if (footstep)
@@ -152,10 +155,7 @@ class Logger {
         }
     }
 
-    public static getInstance(
-        module: string = 'default',
-        footstep = true
-    ): Logger {
+    public static getInstance(module = 'default', footstep = true): Logger {
         if (!Logger.instances.has(module)) {
             Logger.instances.set(module, new Logger(module, footstep))
         }
@@ -170,7 +170,7 @@ export default Logger.getInstance('default', false)
 export { Logger }
 
 /**
-import { Logger } from '@/helpers/loggers/logger'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 
 const authLogger = Logger.getInstance('authentication')
 const userLogger = Logger.getInstance('user-management') 

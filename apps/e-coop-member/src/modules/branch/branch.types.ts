@@ -1,4 +1,9 @@
-import { IAuditable, IPaginatedResult, ITimeStamps, TEntityId } from '@/types'
+import {
+    IAuditable,
+    IPaginatedResult,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranchSettings } from '../branch-settings'
 import { ICurrency } from '../currency'
@@ -51,4 +56,4 @@ export interface IBranch extends ITimeStamps, IAuditable {
 
 export type IBranchRequest = TBranchSchema
 
-export interface IBranchPaginated extends IPaginatedResult<IBranch> {}
+export type IBranchPaginated = IPaginatedResult<IBranch>

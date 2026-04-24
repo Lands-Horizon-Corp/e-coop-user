@@ -15,12 +15,12 @@ import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spin
 // import { DndProvider } from 'react-dnd'
 // import { HTML5Backend } from 'react-dnd-html5-backend'
 
-// import { NATS_PASS, NATS_USER } from '@/constants'
-// import { IAuthContext, useAuthContext } from '@/modules/authentication'
-// import { useAuthStore } from '@/modules/authentication/authgentication.store'
-// import UserProfileInactivityPrompter from '@/modules/user-profile/components/user-profile-inactivity-prompter'
-// import { ActionSecurityProvider } from '@/providers/action-security-provider'
-// import ConnectionProvider from '@/providers/connection-provider'
+// import { NATS_PASS, NATS_USER } from '@e-coop-monorepo/shared/constants'
+// import { IAuthContext, useAuthContext } from '@e-coop-monorepo/modules/authentication'
+// import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
+// import UserProfileInactivityPrompter from '@e-coop-monorepo/modules/user-profile/components/user-profile-inactivity-prompter'
+// import { ActionSecurityProvider } from '@e-coop-monorepo/shared/providers'
+// import ConnectionProvider from '@e-coop-monorepo/shared/providers'
 
 // import CookieConsent from '@e-coop-monorepo/ui/components/cookie-consent'
 // import {
@@ -35,8 +35,8 @@ import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spin
 // import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 // import { Toaster } from '@e-coop-monorepo/ui/components/ui/sonner'
 
-// import { useNatsConnect } from '@/hooks/use-pubsub'
-// import { useQeueryHookCallback } from '@/hooks/use-query-hook-cb'
+// import { useNatsConnect } from '@e-coop-monorepo/shared/hooks'
+// import { useQeueryHookCallback } from '@e-coop-monorepo/shared/hooks'
 
 // import ErrorPage from './-common-pages/error-page'
 // import NotFoundPage from './-common-pages/not-found-page'

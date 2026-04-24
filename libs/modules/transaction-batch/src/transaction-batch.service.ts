@@ -1,14 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
-import { HookQueryOptions } from '@/providers/repositories/data-layer-factory'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@/providers/repositories/mutation-factory'
-
-import { TAPIQueryOptions, TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { ICashCount, ICashCountBatchRequest } from '../cash-count'
 import { cashCountAPIRoute } from '../cash-count/cash-count.service'
@@ -276,7 +275,7 @@ export const useFilteredPaginatedTransactionBatch = ({
             query,
         ],
         queryFn: async () => {
-            let url: string = `search`
+            let url = `search`
 
             if (mode === 'me') {
                 url = 'me/search'

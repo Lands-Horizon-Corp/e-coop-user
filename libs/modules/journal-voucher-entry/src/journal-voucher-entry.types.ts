@@ -1,6 +1,9 @@
-import { IJournalVoucher } from '@/modules/journal-voucher'
-
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import { IJournalVoucher } from '@e-coop-monorepo/modules/journal-voucher'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { ILoanTransaction } from '../loan-transaction'
@@ -31,4 +34,5 @@ export interface IJournalVoucherEntry extends IBaseEntityMeta {
 
 export type IJournalVoucherEntryRequest = TJournalVoucherEntrySchema
 
-export interface IJournalVoucherEntryPaginated extends IPaginatedResult<IJournalVoucherEntry> {}
+export type IJournalVoucherEntryPaginated =
+    IPaginatedResult<IJournalVoucherEntry>

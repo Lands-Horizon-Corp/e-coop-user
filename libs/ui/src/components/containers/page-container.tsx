@@ -1,8 +1,7 @@
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 
-import type { IBaseProps } from '@/types'
-
-interface Props extends IBaseProps {}
+type Props = IBaseProps
 
 const PageContainer = ({ children, className }: Props) => {
     return (

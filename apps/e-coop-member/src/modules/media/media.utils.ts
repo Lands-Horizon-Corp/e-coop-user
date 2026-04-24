@@ -1,4 +1,4 @@
-import { downloadFile } from '@/helpers'
+import { downloadFile } from '@e-coop-monorepo/shared/helpers'
 import Pica from 'pica'
 
 import { IMedia } from '.'

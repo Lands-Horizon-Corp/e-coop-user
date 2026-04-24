@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     IChargesRateSchemeAccount,
     IChargesRateSchemeAccountRequest,
-} from '@/modules/charges-rate-scheme-account'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/charges-rate-scheme-account'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

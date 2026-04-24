@@ -1,8 +1,6 @@
 import { useState } from 'react'
 
-import { ArrowUpRight, ChevronRight, Shield } from 'lucide-react'
-import { IconType } from 'react-icons/lib'
-
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import {
     CookieBiteIcon,
     FilesIcon,
@@ -12,8 +10,8 @@ import {
 } from '@e-coop-monorepo/ui/components/icons'
 import Modal from '@e-coop-monorepo/ui/components/modals/modal'
 import { Card } from '@e-coop-monorepo/ui/components/ui/card'
-
-import { useModalState } from '@/hooks/use-modal-state'
+import { ArrowUpRight, ChevronRight, Shield } from 'lucide-react'
+import { IconType } from 'react-icons/lib'
 
 import { IOrganization } from '../../organization.types'
 
@@ -128,8 +126,8 @@ const OrganizationLegalPolicies = ({
                                 const IconComponent = policy.icon
                                 return (
                                     <Card
-                                        key={policy.key}
                                         className="group relative overflow-hidden p-5 bg-card border-border/50 hover:border-primary/30 hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 cursor-pointer"
+                                        key={policy.key}
                                     >
                                         {/* Background gradient */}
                                         <div
@@ -162,6 +160,7 @@ const OrganizationLegalPolicies = ({
 
                                             <div className="pt-2 border-t border-border/50">
                                                 <span
+                                                    className="text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1"
                                                     onClick={() => {
                                                         if (policy.content) {
                                                             setSelectedPolicies(
@@ -181,7 +180,6 @@ const OrganizationLegalPolicies = ({
                                                             )
                                                         }
                                                     }}
-                                                    className="text-xs text-primary font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center gap-1"
                                                 >
                                                     Read full document
                                                     <ArrowUpRight className="h-3 w-3" />

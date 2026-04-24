@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import useDebounce from '@e-coop-monorepo/shared/hooks'
 import { useHotkeys } from 'react-hotkeys-hook'
-
-import useDebounce from '@/hooks/use-debounce'
 
 import { MagnifyingGlassIcon } from '../icons'
 import { Input } from '../ui/input'

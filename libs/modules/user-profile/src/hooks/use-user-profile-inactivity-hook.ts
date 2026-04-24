@@ -5,9 +5,8 @@ import {
     TInactivityTimeUnit,
     TUserProfileInactivitySettings,
     logger,
-} from '@/modules/user-profile'
-
-import { getLocalStorage, setLocalStorage } from '@/hooks/use-localstorage'
+} from '@e-coop-monorepo/modules/user-profile'
+import { getLocalStorage, setLocalStorage } from '@e-coop-monorepo/shared/hooks'
 
 import {
     ACTIVITY_DEBOUNCE_TIME,

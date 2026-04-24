@@ -27,7 +27,7 @@ interface OrganizationProfileProps {
 }
 
 const XIcon = () => (
-    <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
+    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
     </svg>
 )
@@ -151,8 +151,8 @@ export const OrganizationProfile = ({
                                     )}
                                     {organization.email && (
                                         <a
-                                            href={`mailto:${organization.email}`}
                                             className="group flex items-start gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
+                                            href={`mailto:${organization.email}`}
                                         >
                                             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                                                 <Mail className="w-5 h-5 text-primary" />
@@ -169,8 +169,8 @@ export const OrganizationProfile = ({
                                     )}
                                     {organization.contact_number && (
                                         <a
-                                            href={`tel:${organization.contact_number}`}
                                             className="group flex items-start gap-4 p-4 rounded-xl bg-muted/50 hover:bg-muted transition-colors"
+                                            href={`tel:${organization.contact_number}`}
                                         >
                                             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
                                                 <Phone className="w-5 h-5 text-primary" />
@@ -220,16 +220,16 @@ export const OrganizationProfile = ({
                                     <div className="flex flex-wrap gap-3">
                                         {socialLinks.map((social, index) => (
                                             <a
-                                                key={index}
-                                                href={social.href}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
                                                 className={`
                           group flex items-center gap-3 px-5 py-3 rounded-xl border border-border bg-card
                           hover:border-transparent hover:text-primary-foreground transition-all duration-300
                           shadow-sm hover:shadow-card-hover hover-lift
                           ${social.color}
                         `}
+                                                href={social.href}
+                                                key={index}
+                                                rel="noopener noreferrer"
+                                                target="_blank"
                                             >
                                                 <social.icon />
                                                 <span className="font-medium">
@@ -286,8 +286,8 @@ export const OrganizationProfile = ({
                                 <ul className="space-y-3 mb-6">
                                     {planFeatures.map((feature, index) => (
                                         <li
-                                            key={index}
                                             className="flex items-center gap-3 text-muted-foreground"
+                                            key={index}
                                         >
                                             <CheckCircle2 className="w-5 h-5 text-accent shrink-0" />
                                             <span>{feature}</span>

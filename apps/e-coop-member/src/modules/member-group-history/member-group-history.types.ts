@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IMemberGroup } from '../member-group/member-group.types'
 import { IMemberProfile } from '../member-profile/member-profile.types'
@@ -16,4 +20,4 @@ export interface IMemberGroupHistory extends IBaseEntityMeta {
     member_group?: IMemberGroup
 }
 
-export interface IMemberGroupHistoryPaginated extends IPaginatedResult<IMemberGroupHistory> {}
+export type IMemberGroupHistoryPaginated = IPaginatedResult<IMemberGroupHistory>

@@ -7,7 +7,7 @@ import {
     useQueryClient,
 } from '@tanstack/react-query'
 
-import { TEntityId } from '@/types'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 export type HookMutationOptions<
     TQueryFnData,

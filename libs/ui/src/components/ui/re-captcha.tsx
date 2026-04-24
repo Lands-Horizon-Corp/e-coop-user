@@ -9,7 +9,7 @@ import {
 
 import { toast } from 'sonner'
 
-import { TURNSTILE_CAPTCHA_SITE_KEY } from '@/constants'
+import { TURNSTILE_CAPTCHA_SITE_KEY } from '@e-coop-monorepo/shared/constants'
 
 import {
     Dialog,

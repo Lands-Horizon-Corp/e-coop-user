@@ -3,7 +3,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { TPaymentTypeSchema } from './payment-type.validation'
@@ -28,4 +28,4 @@ export interface IPaymentType extends IAuditable, ITimeStamps {
 
 export type IPaymentTypeRequest = TPaymentTypeSchema
 
-export interface IPaymentTypePaginatedResource extends IPaginatedResult<IPaymentType> {}
+export type IPaymentTypePaginatedResource = IPaginatedResult<IPaymentType>

@@ -1,15 +1,14 @@
 import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import MemberGenderCombobox from '@/modules/member-gender/components/member-gender-combobox'
-import CivilStatusCombobox from '@/modules/member-profile/components/comboboxes/civil-status-combobox'
-import { User } from 'lucide-react'
-
+import MemberGenderCombobox from '@e-coop-monorepo/modules/member-gender/components/member-gender-combobox'
+import CivilStatusCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/civil-status-combobox'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import InputDate from '@e-coop-monorepo/ui/components/ui/input-date'
+import { User } from 'lucide-react'
 
 import { useKYCVerifyPersonalDetails } from '../../kyc.service'
 import { TKYCVerifyPersonalInfoSchema } from '../../kyc.validation'

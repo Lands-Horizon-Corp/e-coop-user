@@ -2,10 +2,10 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers/tw-utils'
 import { dataUrlToFile } from '@/modules/media'
-import useConfirmModalStore from '@/store/confirm-modal-store'
-import { useSignature } from '@/store/signature-store'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
+import { useSignature } from '@e-coop-monorepo/shared/store'
 import { format } from 'date-fns'
 import { FileWithPath } from 'react-dropzone'
 import SignaturePad from 'react-signature-canvas'
@@ -281,56 +281,48 @@ const Signature = ({
                     {disableFullScreen && (
                         <>
                             {isFullScreenMode ? (
-                                <>
-                                    <TooltipProvider>
-                                        <Tooltip>
-                                            <TooltipTrigger asChild>
-                                                <Button
-                                                    onClick={
-                                                        handleIsFullScreenMode
-                                                    }
-                                                    size={'sm'}
-                                                    variant={'ghost'}
-                                                >
-                                                    <FullscreenIcon
-                                                        className="ease-in-out hover:scale-105 hover:cursor-pointer"
-                                                        size={24}
-                                                    />
-                                                </Button>
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p className="text-xs">
-                                                    Exit Full Screen Mode
-                                                </p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </>
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <Button
+                                                onClick={handleIsFullScreenMode}
+                                                size={'sm'}
+                                                variant={'ghost'}
+                                            >
+                                                <FullscreenIcon
+                                                    className="ease-in-out hover:scale-105 hover:cursor-pointer"
+                                                    size={24}
+                                                />
+                                            </Button>
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p className="text-xs">
+                                                Exit Full Screen Mode
+                                            </p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             ) : (
-                                <>
-                                    <TooltipProvider>
-                                        <Tooltip>
-                                            <TooltipTrigger asChild>
-                                                <Button
-                                                    onClick={
-                                                        handleIsFullScreenMode
-                                                    }
-                                                    variant={'ghost'}
-                                                >
-                                                    <FullscreenExitIcon
-                                                        className="ease-in-out hover:scale-105 hover:cursor-pointer"
-                                                        size={24}
-                                                    />
-                                                </Button>
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p className="text-xs">
-                                                    Enter fullscreen mode
-                                                </p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </>
+                                <TooltipProvider>
+                                    <Tooltip>
+                                        <TooltipTrigger asChild>
+                                            <Button
+                                                onClick={handleIsFullScreenMode}
+                                                variant={'ghost'}
+                                            >
+                                                <FullscreenExitIcon
+                                                    className="ease-in-out hover:scale-105 hover:cursor-pointer"
+                                                    size={24}
+                                                />
+                                            </Button>
+                                        </TooltipTrigger>
+                                        <TooltipContent>
+                                            <p className="text-xs">
+                                                Enter fullscreen mode
+                                            </p>
+                                        </TooltipContent>
+                                    </Tooltip>
+                                </TooltipProvider>
                             )}
                         </>
                     )}
@@ -383,15 +375,13 @@ const Signature = ({
                 )}
                 {currentMode === SignatureModes.DRAW &&
                     isSignaturePadisEmpty && (
-                        <>
-                            <Button
-                                className="text-xs"
-                                onClick={handleGetSignatureTrimmedData}
-                                size={'sm'}
-                            >
-                                render
-                            </Button>
-                        </>
+                        <Button
+                            className="text-xs"
+                            onClick={handleGetSignatureTrimmedData}
+                            size={'sm'}
+                        >
+                            render
+                        </Button>
                     )}
                 {currentMode === SignatureModes.CAPTURE && (
                     <Button

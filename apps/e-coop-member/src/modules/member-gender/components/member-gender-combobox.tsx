@@ -1,8 +1,7 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { Check } from 'lucide-react'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
 import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
@@ -19,8 +18,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/components/ui/popover'
-
-import { TEntityId } from '@/types'
+import { Check } from 'lucide-react'
 
 import {
     TMemberGenderHookMode,
@@ -90,49 +88,44 @@ const MemberGenderCombobox = React.forwardRef<
         })
 
         return (
-            <>
-                <Popover modal onOpenChange={setOpen} open={open}>
-                    <PopoverTrigger asChild>
-                        <Button
-                            {...other}
-                            aria-expanded={open}
-                            className={cn(
-                                'w-full justify-between px-3',
-                                className
-                            )}
-                            disabled={disabled || isLoading}
-                            ref={ref}
-                            role="combobox"
-                            variant="outline"
-                        >
-                            {value ? (
-                                data?.find((option) => option.id === value)
-                                    ?.name
-                            ) : (
-                                <span className="text-muted-foreground">
-                                    {placeholder}
-                                </span>
-                            )}
-                            <ChevronDownIcon className="opacity-50" />
-                        </Button>
-                    </PopoverTrigger>
-                    <PopoverContent className="max-h-[--radix-popover-content-available-height] w-[--radix-popover-trigger-width] p-0">
-                        <Command>
-                            <CommandInput
-                                className="h-9"
-                                placeholder="Search Member Gender..."
-                            />
-                            {isLoading ? (
+            <Popover modal onOpenChange={setOpen} open={open}>
+                <PopoverTrigger asChild>
+                    <Button
+                        {...other}
+                        aria-expanded={open}
+                        className={cn('w-full justify-between px-3', className)}
+                        disabled={disabled || isLoading}
+                        ref={ref}
+                        role="combobox"
+                        variant="outline"
+                    >
+                        {value ? (
+                            data?.find((option) => option.id === value)?.name
+                        ) : (
+                            <span className="text-muted-foreground">
+                                {placeholder}
+                            </span>
+                        )}
+                        <ChevronDownIcon className="opacity-50" />
+                    </Button>
+                </PopoverTrigger>
+                <PopoverContent className="max-h-[--radix-popover-content-available-height] w-[--radix-popover-trigger-width] p-0">
+                    <Command>
+                        <CommandInput
+                            className="h-9"
+                            placeholder="Search Member Gender..."
+                        />
+                        {isLoading ? (
+                            <CommandEmpty>
+                                <LoadingSpinner className="mr-2 inline-block" />{' '}
+                                Loading...
+                            </CommandEmpty>
+                        ) : (
+                            <CommandList className="ecoop-scroll">
                                 <CommandEmpty>
-                                    <LoadingSpinner className="mr-2 inline-block" />{' '}
-                                    Loading...
+                                    No Member Gender found.
                                 </CommandEmpty>
-                            ) : (
-                                <CommandList className="ecoop-scroll">
-                                    <CommandEmpty>
-                                        No Member Gender found.
-                                    </CommandEmpty>
-                                    {/* {memberGenderComboboxCreateProps && (
+                                {/* {memberGenderComboboxCreateProps && (
                                         <>
                                             <CommandGroup>
                                                 <CommandItem
@@ -148,34 +141,33 @@ const MemberGenderCombobox = React.forwardRef<
                                             <CommandSeparator />
                                         </>
                                     )} */}
-                                    <CommandGroup>
-                                        {data?.map((option) => (
-                                            <CommandItem
-                                                key={option.id}
-                                                onSelect={() => {
-                                                    setOpen(false)
-                                                    onChange?.(option)
-                                                }}
-                                                value={option.name}
-                                            >
-                                                {option.name}
-                                                <Check
-                                                    className={cn(
-                                                        'ml-auto',
-                                                        value === option.id
-                                                            ? 'opacity-100'
-                                                            : 'opacity-0'
-                                                    )}
-                                                />
-                                            </CommandItem>
-                                        ))}
-                                    </CommandGroup>
-                                </CommandList>
-                            )}
-                        </Command>
-                    </PopoverContent>
-                </Popover>
-            </>
+                                <CommandGroup>
+                                    {data?.map((option) => (
+                                        <CommandItem
+                                            key={option.id}
+                                            onSelect={() => {
+                                                setOpen(false)
+                                                onChange?.(option)
+                                            }}
+                                            value={option.name}
+                                        >
+                                            {option.name}
+                                            <Check
+                                                className={cn(
+                                                    'ml-auto',
+                                                    value === option.id
+                                                        ? 'opacity-100'
+                                                        : 'opacity-0'
+                                                )}
+                                            />
+                                        </CommandItem>
+                                    ))}
+                                </CommandGroup>
+                            </CommandList>
+                        )}
+                    </Command>
+                </PopoverContent>
+            </Popover>
         )
     }
 )

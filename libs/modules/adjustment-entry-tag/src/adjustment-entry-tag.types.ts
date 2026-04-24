@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAdjustmentEntry } from '../adjustment-entry'
 
@@ -22,4 +26,4 @@ export interface IAdjustmentEntryTagRequest {
     icon: string
 }
 
-export interface IAdjustmentEntryTagPaginated extends IPaginatedResult<IAdjustmentEntryTag> {}
+export type IAdjustmentEntryTagPaginated = IPaginatedResult<IAdjustmentEntryTag>

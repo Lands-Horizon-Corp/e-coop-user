@@ -4,7 +4,7 @@ import { Fragment, useMemo } from 'react'
 
 import { Link, useRouterState } from '@tanstack/react-router'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import {
     Breadcrumb,

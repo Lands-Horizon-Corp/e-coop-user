@@ -1,12 +1,4 @@
-import {
-    Calendar,
-    CreditCard,
-    Globe,
-    Mail,
-    MapPin,
-    Sparkles,
-} from 'lucide-react'
-
+import { formatNumber } from '@e-coop-monorepo/shared/helpers'
 import {
     BuildingBranchIcon,
     EmailIcon,
@@ -20,8 +12,15 @@ import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import { Card } from '@e-coop-monorepo/ui/components/ui/card'
 import TruncatedText from '@e-coop-monorepo/ui/components/ui/truncated-text'
+import {
+    Calendar,
+    CreditCard,
+    Globe,
+    Mail,
+    MapPin,
+    Sparkles,
+} from 'lucide-react'
 
-import { formatNumber } from '@/helpers/number-utils'
 import { IOrganization } from '../../organization.types'
 import OrganizationLegalPolicies from './organization-legal-policies'
 
@@ -31,9 +30,9 @@ interface OrganizationDetailsProps {
 
 const XIcon = ({ className }: { className?: string }) => (
     <svg
-        viewBox="0 0 24 24"
         className={className || 'h-4 w-4'}
         fill="currentColor"
+        viewBox="0 0 24 24"
     >
         <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
     </svg>
@@ -123,8 +122,8 @@ export const OrganizationDetails = ({
                             </h1>
                             {organization.is_private && (
                                 <Badge
-                                    variant="secondary"
                                     className="bg-background/80 backdrop-blur-sm border border-border"
+                                    variant="secondary"
                                 >
                                     Private
                                 </Badge>
@@ -132,8 +131,8 @@ export const OrganizationDetails = ({
                         </div>
 
                         <TruncatedText
-                            maxLength={300}
                             className="text-muted-foreground  overflow-y-auto max-h-52 ecoop-scroll "
+                            maxLength={300}
                             text={organization.description}
                         />
 
@@ -143,9 +142,9 @@ export const OrganizationDetails = ({
                                     {organization.organization_categories.map(
                                         (cat) => (
                                             <Badge
+                                                className="bg-background/50 backdrop-blur-sm border-primary/20 text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                                                 key={cat.id}
                                                 variant="outline"
-                                                className="bg-background/50 backdrop-blur-sm border-primary/20 text-foreground hover:bg-primary hover:text-primary-foreground transition-all duration-300"
                                             >
                                                 {cat.name}
                                             </Badge>
@@ -162,17 +161,17 @@ export const OrganizationDetails = ({
                                 const IconComponent = social.icon
                                 return (
                                     <Button
-                                        key={index}
-                                        variant="outline"
-                                        size="icon"
-                                        className={`h-11 w-11 rounded-full bg-background/80 backdrop-blur-sm border-border/50 hover:text-white hover:border-transparent transition-all duration-300 ${social.color}`}
                                         asChild
+                                        className={`h-11 w-11 rounded-full bg-background/80 backdrop-blur-sm border-border/50 hover:text-white hover:border-transparent transition-all duration-300 ${social.color}`}
+                                        key={index}
+                                        size="icon"
+                                        variant="outline"
                                     >
                                         <a
-                                            href={social.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
                                             aria-label={social.label}
+                                            href={social.url}
+                                            rel="noopener noreferrer"
+                                            target="_blank"
                                         >
                                             <IconComponent className="h-5 w-5" />
                                         </a>
@@ -204,8 +203,8 @@ export const OrganizationDetails = ({
                             <div className="space-y-4">
                                 {contactInfo.map((item, index) => (
                                     <div
-                                        key={index}
                                         className="flex items-start gap-3 group/item"
+                                        key={index}
                                     >
                                         <div className="p-2.5 rounded-xl bg-muted/50 text-muted-foreground group-hover/item:bg-primary group-hover/item:text-primary-foreground transition-colors duration-300">
                                             <item.icon className="h-4 w-4" />
@@ -216,8 +215,8 @@ export const OrganizationDetails = ({
                                             </p>
                                             {item.isLink ? (
                                                 <a
-                                                    href={item.href}
                                                     className="text-sm font-medium text-foreground hover:text-primary transition-colors truncate block"
+                                                    href={item.href}
                                                 >
                                                     {item.value}
                                                 </a>

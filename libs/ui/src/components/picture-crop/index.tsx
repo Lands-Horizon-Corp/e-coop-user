@@ -3,9 +3,10 @@ import { useState } from 'react'
 import Cropper, { Area } from 'react-easy-crop'
 import { toast } from 'sonner'
 
-import { withCatchAsync } from '@/helpers/function-utils'
-import { getCroppedImg } from '@/helpers/picture-crop-helper'
-import { cn } from '@/helpers/tw-utils'
+import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
+import { getCroppedImg } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import {
     FlipHorizontalIcon,
@@ -23,8 +24,6 @@ import LoadingSpinner from '@/components/spinners/loading-spinner'
 import ActionTooltip from '@/components/tooltips/action-tooltip'
 import { Button } from '@/components/ui/button'
 import { Slider } from '@/components/ui/slider'
-
-import { IClassProps } from '@/types'
 
 interface Props extends IClassProps {
     image: string

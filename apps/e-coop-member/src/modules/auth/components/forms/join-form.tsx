@@ -4,20 +4,25 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@/helpers'
-import { toInputDateString } from '@/helpers/date-utils'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
 import {
     IMemberProfile,
     IQuickCreateMemberProfile,
     QuickCreateMemberProfileSchema,
-} from '@/modules/member-profile'
-import CivilStatusCombobox from '@/modules/member-profile/components/comboboxes/civil-status-combobox'
-import { CountryCombobox } from '@/modules/member-profile/components/comboboxes/country-combobox'
-import MemberGenderCombobox from '@/modules/member-profile/components/comboboxes/member-gender-combobox'
-
+} from '@e-coop-monorepo/modules/member-profile'
+import CivilStatusCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/civil-status-combobox'
+import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
+import MemberGenderCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/member-gender-combobox'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
-import { KeySharpIcon, UserIcon, VerifiedPatchIcon } from '@e-coop-monorepo/ui/components/icons'
+import {
+    KeySharpIcon,
+    UserIcon,
+    VerifiedPatchIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import { Checkbox } from '@e-coop-monorepo/ui/components/ui/checkbox'
 import { Form, FormItem } from '@e-coop-monorepo/ui/components/ui/form'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
@@ -27,10 +32,6 @@ import { Label } from '@e-coop-monorepo/ui/components/ui/label'
 import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
 import { PhoneInput } from '@e-coop-monorepo/ui/components/ui/phone-input'
 import { Separator } from '@e-coop-monorepo/ui/components/ui/separator'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-
-import { IClassProps, IForm } from '@/types'
 
 import { useQuickRegisterMember } from '../../auth.service'
 import {

@@ -1,6 +1,11 @@
 import z from 'zod'
 
-import { IAuditable, IPaginatedResult, ITimeStamps, TEntityId } from '@/types'
+import {
+    IAuditable,
+    IPaginatedResult,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IMedia } from '../media'
 import { IOrganization } from '../organization/organization.types'
@@ -17,4 +22,4 @@ export interface IOrganizationMedia extends IAuditable, ITimeStamps {
 }
 export type IOrganizationMediaRequest = z.infer<typeof OrganizationMediaSchema>
 
-export interface IOrganizationMediaPaginated extends IPaginatedResult<IOrganizationMedia> {}
+export type IOrganizationMediaPaginated = IPaginatedResult<IOrganizationMedia>

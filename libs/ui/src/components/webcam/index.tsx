@@ -2,7 +2,8 @@ import { forwardRef, useCallback, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import Webcam from 'react-webcam'
 
 import {
@@ -13,12 +14,10 @@ import {
 import LoadingSpinner from '@/components/spinners/loading-spinner'
 import { Button } from '@/components/ui/button'
 
-import { IClassProps } from '@/types'
-
 import ActionTooltip from '../tooltips/action-tooltip'
 import CameraDevicePicker from './camera-device-picker'
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const WebCam = forwardRef<Webcam, Props>(({ className }: Props, ref) => {
     const [camActive, setCamActive] = useState(false)

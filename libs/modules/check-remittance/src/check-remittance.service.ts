@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/shared/providers'
 
 import type {
     ICheckRemittance,

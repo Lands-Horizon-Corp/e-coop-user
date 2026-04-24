@@ -1,13 +1,12 @@
 import { useState } from 'react'
 
-import { IAccount } from '@/modules/account'
-import { useAuthUserWithOrgBranch } from '@/modules/authentication/authgentication.store'
-import { IMemberProfile } from '@/modules/member-profile'
-import { useGetAllPaymentType } from '@/modules/payment-type'
-import { quickPaymentORResolver } from '@/modules/transaction/transaction.utils'
-import { useTransactionReverseSecurityStore } from '@/store/transaction-reverse-security-store'
-
-import { useModalState } from '@/hooks/use-modal-state'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication/authgentication.store'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { useGetAllPaymentType } from '@e-coop-monorepo/modules/payment-type'
+import { quickPaymentORResolver } from '@e-coop-monorepo/modules/transaction/transaction.utils'
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { useTransactionReverseSecurityStore } from '@e-coop-monorepo/shared/store'
 
 import { TPaymentMode } from '../quick-transfer.types'
 

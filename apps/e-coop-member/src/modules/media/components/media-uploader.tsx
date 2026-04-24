@@ -3,18 +3,21 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { AxiosProgressEvent } from 'axios'
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers'
-import { dateAgo, toReadableDate } from '@/helpers/date-utils'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import { type Accept, type DropzoneOptions, useDropzone } from 'react-dropzone'
-
-import { DownloadIcon, TrashIcon, UploadIcon } from '@e-coop-monorepo/ui/components/icons'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import {
+    DownloadIcon,
+    TrashIcon,
+    UploadIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
 import ActionTooltip from '@e-coop-monorepo/ui/components/tooltips/action-tooltip'
 import { AspectRatio } from '@e-coop-monorepo/ui/components/ui/aspect-ratio'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import { Progress } from '@e-coop-monorepo/ui/components/ui/progress'
+import { type Accept, type DropzoneOptions, useDropzone } from 'react-dropzone'
 
 import {
     TDownloadMediaProp,

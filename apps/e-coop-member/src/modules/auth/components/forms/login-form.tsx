@@ -4,10 +4,11 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@/helpers'
-import { allErrorMessageExtractor } from '@/helpers/error-message-extractor'
-import { IMemberProfile } from '@/modules/member-profile'
-
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { allErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import { FingerPrintIcon } from '@e-coop-monorepo/ui/components/icons'
 import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
@@ -16,10 +17,6 @@ import FormErrorMessage from '@e-coop-monorepo/ui/components/ui/form-error-messa
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-
-import { IClassProps, IForm } from '@/types'
 
 import { IUserLoginRequest } from '../../auth-types'
 import { useSignIn } from '../../auth.service'

@@ -1,8 +1,7 @@
 import { createFileRoute, useRouter } from '@tanstack/react-router'
 
 import COOKIE_ICON from '@/assets/cookie-icon.svg'
-import LoginForm from '@/modules/auth/components/forms/login-form'
-
+import LoginForm from '@e-coop-monorepo/modules/auth/components/forms/login-form'
 import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
 import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 

@@ -1,10 +1,13 @@
 import z from 'zod'
 
-import { IAccount } from '@/modules/account'
-import { IMemberProfile } from '@/modules/member-profile'
-import { IMutualFund } from '@/modules/mutual-fund'
-
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IMutualFund } from '@e-coop-monorepo/modules/mutual-fund'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { MutualFundEntrySchema } from './mutual-fund-entry.validation'
 
@@ -23,4 +26,4 @@ export interface IMutualFundEntry extends IBaseEntityMeta {
 
 export type IMutualFundEntryRequest = z.infer<typeof MutualFundEntrySchema>
 
-export interface IMutualFundEntryPaginated extends IPaginatedResult<IMutualFundEntry> {}
+export type IMutualFundEntryPaginated = IPaginatedResult<IMutualFundEntry>

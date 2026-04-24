@@ -12,8 +12,8 @@ import {
     rgbToHsl,
     rgbaToHex,
     rgbaToHsla,
-} from '@/helpers'
-import { cn } from '@/helpers'
+} from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 import { HexAlphaColorPicker, HexColorPicker } from 'react-colorful'
 
 import { Button } from '@/components/ui/button'

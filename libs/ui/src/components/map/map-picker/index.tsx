@@ -3,9 +3,13 @@
 import type React from 'react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-import { GOOGLE_MAPS_API_KEY, GOOGLE_MAPS_ID } from '@/constants'
-import { cn } from '@/helpers'
-import { useTheme } from '@/providers/theme/provider/theme-provider'
+import {
+    GOOGLE_MAPS_API_KEY,
+    GOOGLE_MAPS_ID,
+} from '@e-coop-monorepo/shared/constants'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useInternalState } from '@e-coop-monorepo/shared/hooks'
+import { useTheme } from '@e-coop-monorepo/shared/providers'
 
 import CopyTextButton from '@/components/copy-text-button'
 import {
@@ -34,8 +38,6 @@ import {
 } from '@/components/ui/dialog'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-
-import { useInternalState } from '@/hooks/use-internal-state'
 
 import MapView, { MapLocation } from '..'
 import { useMap } from '../map.provider'

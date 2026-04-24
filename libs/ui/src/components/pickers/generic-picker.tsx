@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useInternalState } from '@e-coop-monorepo/shared/hooks'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { MagnifyingGlassIcon } from '@/components/icons'
 import Modal, { IModalProps } from '@/components/modals/modal'
@@ -13,10 +15,6 @@ import {
     CommandList,
 } from '@/components/ui/command'
 import { Input } from '@/components/ui/input'
-
-import { useInternalState } from '@/hooks/use-internal-state'
-
-import { TEntityId } from '@/types'
 
 interface GenericPickerProps<T extends { id: TEntityId }> extends IModalProps {
     items: T[]

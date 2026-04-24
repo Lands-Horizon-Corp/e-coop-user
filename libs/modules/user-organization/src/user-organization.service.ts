@@ -5,18 +5,17 @@ import {
 } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import { groupBy, withCatchAsync } from '@/helpers/function-utils'
-import { Logger } from '@/helpers/loggers'
+import { groupBy, withCatchAsync } from '@e-coop-monorepo/shared/helpers'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@/providers/repositories/mutation-factory'
-
-import { TAPIQueryOptions, TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IBranch, getBranchesByOrganizationId } from '../branch'
 import { employeeBaseKey } from '../employee'

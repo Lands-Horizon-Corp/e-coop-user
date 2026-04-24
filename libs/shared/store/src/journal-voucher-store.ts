@@ -1,7 +1,6 @@
-import { IJournalVoucherEntryRequest } from '@/modules/journal-voucher-entry'
+import { IJournalVoucherEntryRequest } from '@e-coop-monorepo/modules/journal-voucher-entry'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
-
-import { TEntityId } from '@/types'
 
 export interface IJournalVoucherStore {
     selectedJournalVoucherEntry: IJournalVoucherEntryRequest[]

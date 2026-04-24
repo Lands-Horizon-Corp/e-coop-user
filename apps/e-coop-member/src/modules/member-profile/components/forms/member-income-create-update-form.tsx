@@ -3,10 +3,11 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@/helpers'
-import { toInputDateString } from '@/helpers/date-utils'
-import { CurrencyInput } from '@/modules/currency'
-
+import { CurrencyInput } from '@e-coop-monorepo/modules/currency'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
 import { Form } from '@e-coop-monorepo/ui/components/ui/form'
@@ -14,10 +15,6 @@ import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapp
 import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import InputDate from '@e-coop-monorepo/ui/components/ui/input-date'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-
-import { IClassProps, IForm, TEntityId } from '@/types'
 
 import { IMemberIncomeRequest } from '../../member-profile.types'
 import { MemberIncomeSchema } from '../../member-profile.validation'

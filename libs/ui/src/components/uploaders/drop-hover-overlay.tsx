@@ -1,6 +1,5 @@
-import { cn } from '@/helpers/tw-utils'
-
-import type { IBaseProps } from '@/types'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 interface Props extends IBaseProps {
     shown?: boolean

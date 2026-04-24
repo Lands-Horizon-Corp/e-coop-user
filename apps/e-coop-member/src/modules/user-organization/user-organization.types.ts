@@ -1,5 +1,9 @@
-import { USER_ORG_APPLICATION_STATUS } from '@/constants'
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IBranch } from '../branch'
@@ -101,8 +105,8 @@ export interface IUserOrganizationSettings {
     time_machine_time?: string
 }
 
-export interface IUserOrganizationSettingsRequest extends IUserOrganizationSettings {}
+export type IUserOrganizationSettingsRequest = IUserOrganizationSettings
 
-export interface IUserOrganizationPaginated<
-    TUser = IUserBase,
-> extends IPaginatedResult<IUserOrganization<TUser>> {}
+export type IUserOrganizationPaginated<TUser = IUserBase> = IPaginatedResult<
+    IUserOrganization<TUser>
+>

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { AdjustIcon } from '../icons'
 import ImageDisplay from '../image-display'

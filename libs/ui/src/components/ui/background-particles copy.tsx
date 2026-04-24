@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 interface MousePosition {
     x: number

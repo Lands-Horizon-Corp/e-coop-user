@@ -5,7 +5,7 @@ import {
     TCivilStatus,
     TEntityId,
     TGeneralStatus,
-} from '@/types'
+} from '@e-coop-monorepo/shared/types'
 
 import { TMemberAddressSchema } from '../member-address/member-address.validation'
 import { IMemberCenter } from './components/comboboxes/member-center-combobox'
@@ -249,4 +249,4 @@ export type IMemberpRofileIdentityRequest = TMemberProfileIdentitySchema
 export type IMemberProfileEducationalAttainmentRequest =
     TMemberEducationalAttainmentSchema
 
-export interface IMemberProfilePaginated extends IPaginatedResult<IMemberProfile> {}
+export type IMemberProfilePaginated = IPaginatedResult<IMemberProfile>

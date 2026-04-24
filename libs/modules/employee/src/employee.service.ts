@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { Logger } from '@/helpers/loggers'
 import {
     API,
     IUserOrganization,
@@ -11,15 +10,15 @@ import {
     deleteUserOrganizationById,
     // deleteUserOrganizationById,
     userOrganizationAPIRoute,
-} from '@/modules/user-organization'
-import { HookQueryOptions } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/user-organization'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
-} from '@/providers/repositories/mutation-factory'
-
-import { TAPIQueryOptions, TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IEmployee } from '../user'
 import { IEmployeeCreateRequest } from './employee.types'

@@ -1,4 +1,4 @@
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 interface ElectricLineProps {
     className?: string

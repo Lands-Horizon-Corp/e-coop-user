@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IAdjustmentEntryTag } from '../adjustment-entry-tag'
@@ -61,7 +65,7 @@ export interface IAdjustmentEntryTotal {
     is_balanced: boolean
 }
 
-export interface IAdjustmentEntryPaginated extends IPaginatedResult<IAdjustmentEntry> {}
+export type IAdjustmentEntryPaginated = IPaginatedResult<IAdjustmentEntry>
 
 export type TAdjustmentEntryHookMode = 'all' | 'currency' | 'currency-employee'
 

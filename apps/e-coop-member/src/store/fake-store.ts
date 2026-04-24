@@ -1,7 +1,6 @@
-import { IMemberProfile } from '@/modules/member-profile'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
-
-import { TEntityId } from '@/types'
 
 export interface IForgetPasswordEntry {
     id: TEntityId

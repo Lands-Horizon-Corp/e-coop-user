@@ -1,6 +1,5 @@
-import { cn } from '@/helpers/tw-utils'
-
-import { IClassProps } from '@/types'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import { ErrorExclamationIcon } from '../icons'
 

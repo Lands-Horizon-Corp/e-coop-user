@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
-import { createAPIRepository } from '@/providers/repositories/api-crud-factory'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 import {
     IInvitationCode,

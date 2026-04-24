@@ -6,7 +6,7 @@ import {
     descriptionSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { InterestRateByAmountSchema } from '../interest-rate-by-amount'
 import { InterestRateByDateSchema } from '../interest-rate-by-date'

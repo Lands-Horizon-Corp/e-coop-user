@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IMedia } from '../media/media.types'
 import { IUserBase } from '../user'
@@ -22,4 +26,4 @@ export interface ITimesheet extends IBaseEntityMeta {
 
 export type ITimesheetInOutRequest = z.infer<typeof TimesheetRequestSchema>
 
-export interface IPaginatedTimesheet extends IPaginatedResult<ITimesheet> {}
+export type IPaginatedTimesheet = IPaginatedResult<ITimesheet>

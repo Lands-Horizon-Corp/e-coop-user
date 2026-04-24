@@ -5,8 +5,8 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
-import { entityIdSchema } from '@/validation'
+} from '@e-coop-monorepo/shared/types'
+import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 import { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header'
 import { IInterestRateScheme } from '../interest-rate-scheme'

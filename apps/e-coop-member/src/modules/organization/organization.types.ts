@@ -1,4 +1,8 @@
-import { IAuditable, ITimeStamps, TEntityId } from '@/types/common'
+import {
+    IAuditable,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ICurrency } from '../currency'
 import { IMedia } from '../media/media.types'

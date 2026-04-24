@@ -1,4 +1,4 @@
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { ImageIcon } from '@/components/icons'
 

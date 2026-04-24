@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { GenderSchema } from './member-gender.validation'
 
@@ -13,4 +17,4 @@ export interface IMemberGender extends IBaseEntityMeta {
 
 export type IMemberGenderRequest = z.infer<typeof GenderSchema>
 
-export interface IMemberGenderPaginated extends IPaginatedResult<IMemberGender> {}
+export type IMemberGenderPaginated = IPaginatedResult<IMemberGender>

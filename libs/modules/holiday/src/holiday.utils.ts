@@ -1,4 +1,4 @@
-import { TEntityId } from '@/types'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { THolidayHookMode } from './holiday.types'
 

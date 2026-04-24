@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { LoanPurposeSchema } from './loan-purpose.validation'
 
@@ -11,4 +14,4 @@ export interface ILoanPurpose extends IBaseEntityMeta {
 
 export type ILoanPurposeRequest = z.infer<typeof LoanPurposeSchema>
 
-export interface ILoanPurposePaginated extends IPaginatedResult<ILoanPurpose> {}
+export type ILoanPurposePaginated = IPaginatedResult<ILoanPurpose>

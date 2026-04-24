@@ -4,7 +4,7 @@ import {
     descriptionSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
 

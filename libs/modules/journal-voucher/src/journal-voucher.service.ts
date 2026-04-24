@@ -1,18 +1,17 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { Logger } from '@/helpers/loggers'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     createMutationInvalidateFn,
     updateMutationInvalidationFn,
-} from '@/providers/repositories/mutation-factory'
-
-import { TAPIQueryOptions, TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     IJournalVoucher,
@@ -128,7 +127,7 @@ export const useFilteredPaginatedJournalVoucher = ({
             Boolean
         ),
         queryFn: async () => {
-            const url: string = `${journalVoucherAPIRoute}/${mode ? mode : ''}/search`
+            const url = `${journalVoucherAPIRoute}/${mode ? mode : ''}/search`
             const finalUrl = qs.stringifyUrl(
                 {
                     url,

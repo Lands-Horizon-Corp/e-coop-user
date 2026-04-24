@@ -14,7 +14,7 @@
 // } from '@/components/icons'
 // import { Button } from '@/components/ui/button'
 
-// import usePWA from '@/hooks/pwa-hook'
+// import usePWA from '@e-coop-monorepo/shared/hooks'
 
 // import {
 //     EMAIL,

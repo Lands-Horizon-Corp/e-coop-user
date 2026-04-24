@@ -1,8 +1,7 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { Check } from 'lucide-react'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon, PlusIcon } from '@e-coop-monorepo/ui/components/icons'
 import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
@@ -20,8 +19,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/components/ui/popover'
-
-import { TEntityId } from '@/types'
+import { Check } from 'lucide-react'
 
 import { useGetAll } from '../member-occupation.service'
 import { IMemberOccupation } from '../member-occupation.types'
@@ -30,10 +28,10 @@ import {
     MemberOccupationCreateUpdateFormModal,
 } from './member-occupation-create-update-form'
 
-export interface IMemberOccupationComboboxCreateProps extends Pick<
+export type IMemberOccupationComboboxCreateProps = Pick<
     IMemberOccupationCreateUpdateFormProps,
     'defaultValues' | 'disabledFields' | 'hiddenFields'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

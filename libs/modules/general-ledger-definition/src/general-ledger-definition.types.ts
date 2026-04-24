@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, TEntityId } from '@/types/common'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
@@ -33,6 +33,6 @@ export interface IGeneralLedgerDefinition extends IBaseEntityMeta {
     balance?: number
 }
 
-export interface IGeneralLedgerDefinitionRequest extends z.infer<
+export type IGeneralLedgerDefinitionRequest = z.infer<
     typeof GeneralLedgerDefinitionSchema
-> {}
+>

@@ -1,4 +1,4 @@
-import { IAuditable, TEntityId } from '@/types'
+import { IAuditable, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IUserOrganization } from '../user-organization'
 import {
@@ -60,13 +60,10 @@ export function hasPermission({
         : actions.some(evaluateAction)
 }
 // Extract only CRUD PERMS and returned as object of actions
-export interface GetCrudPermissionOpts<
+export type GetCrudPermissionOpts<
     TResourceData extends IAuditable = IAuditable,
     TUser extends { user_id: TEntityId } = IUserOrganization,
-> extends Omit<
-    IHasPermissionOpts<TResourceData, TUser>,
-    'action' | 'conditionLogic'
-> {}
+> = Omit<IHasPermissionOpts<TResourceData, TUser>, 'action' | 'conditionLogic'>
 
 // HELPER UTIL FUNC
 export const getActionDetails = (action: TPermissionAction) => {

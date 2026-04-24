@@ -3,7 +3,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranch } from '../branch/branch.types'
 import { IOrganization } from '../organization'
@@ -47,4 +47,4 @@ export interface IInvitationCodeRequest {
     description: string
 }
 
-export interface IInvitationCodePaginated extends IPaginatedResult<IInvitationCode> {}
+export type IInvitationCodePaginated = IPaginatedResult<IInvitationCode>

@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccountTransaction } from '../account-transaction/account-transaction.types'
 import { IAccount } from '../account/account.types'
@@ -27,4 +31,5 @@ export type IAccountTransactionEntryRequest = z.infer<
     typeof AccountTransactionEntrySchema
 >
 
-export interface IAccountTransactionEntryPaginated extends IPaginatedResult<IAccountTransactionEntry> {}
+export type IAccountTransactionEntryPaginated =
+    IPaginatedResult<IAccountTransactionEntry>

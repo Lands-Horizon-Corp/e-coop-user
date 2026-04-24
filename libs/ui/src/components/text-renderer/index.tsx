@@ -1,8 +1,7 @@
 // this component sanitizes and display any content including html, text
-import { sanitizeHtml } from '@/helpers/sanitizer'
-import { cn } from '@/helpers/tw-utils'
-
-import { IClassProps } from '@/types'
+import { sanitizeHtml } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 interface Props extends IClassProps {
     expandedClassName?: string

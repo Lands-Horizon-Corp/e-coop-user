@@ -1,5 +1,5 @@
 // import z from 'zod'
-import { IBaseEntityMeta } from '@/types'
+import { IBaseEntityMeta } from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 

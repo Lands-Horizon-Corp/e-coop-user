@@ -1,5 +1,9 @@
-import { IPaginatedResult } from '@/types/common'
-import { IAuditable, ITimeStamps, TEntityId } from '@/types/common'
+import { IPaginatedResult } from '@e-coop-monorepo/shared/types'
+import {
+    IAuditable,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ICurrency } from '../currency'
 
@@ -69,6 +73,6 @@ export interface ISubscriptionPlanRequest {
     currency_id?: TEntityId | null
 }
 
-export interface ISubscriptionPlanPaginated extends IPaginatedResult<ISubscriptionPlan> {}
+export type ISubscriptionPlanPaginated = IPaginatedResult<ISubscriptionPlan>
 
 export type TSubscriptionPlanMode = 'all' | 'timezone'

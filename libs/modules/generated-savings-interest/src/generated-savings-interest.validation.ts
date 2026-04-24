@@ -4,7 +4,7 @@ import {
     EntityIdSchema,
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 import { differenceInDays } from 'date-fns'
 
 import { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constant'

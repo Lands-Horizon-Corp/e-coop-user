@@ -1,13 +1,12 @@
-import { dateAgo, toReadableDate } from '@/helpers/date-utils'
 import {
     TDownloadMediaProp,
     downloadMedia,
     formatBytes,
     getFileCategory,
     getFileInfo,
-} from '@/modules/media'
-import MediaResourceFileIcon from '@/modules/media/components/media-resource-file-icon'
-
+} from '@e-coop-monorepo/modules/media'
+import MediaResourceFileIcon from '@e-coop-monorepo/modules/media/components/media-resource-file-icon'
+import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { DownloadIcon, TrashIcon } from '@e-coop-monorepo/ui/components/icons'
 import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 import ActionTooltip from '@e-coop-monorepo/ui/components/tooltips/action-tooltip'

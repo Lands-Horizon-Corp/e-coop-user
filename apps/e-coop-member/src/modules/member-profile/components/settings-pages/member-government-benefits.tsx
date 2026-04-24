@@ -2,7 +2,12 @@ import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
+import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 import {
     AlertCircle,
     Calendar,
@@ -16,12 +21,6 @@ import {
     Plus,
     X,
 } from 'lucide-react'
-
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
-import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-import { Label } from '@e-coop-monorepo/ui/components/ui/label'
-import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 
 import { IMemberProfile } from '../../member-profile.types'
 import { CountryCombobox } from '../comboboxes/country-combobox'

@@ -1,9 +1,8 @@
 import { createFileRoute, useRouter, useSearch } from '@tanstack/react-router'
 
 import COOKIE_ICON from '@/assets/cookie-icon.svg'
-import { IUserPasswordResetRequest } from '@/modules/auth'
-import ResetPasswordForm from '@/modules/auth/components/forms/reset-password-form'
-
+import { IUserPasswordResetRequest } from '@e-coop-monorepo/modules/auth'
+import ResetPasswordForm from '@e-coop-monorepo/modules/auth/components/forms/reset-password-form'
 import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
 import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 

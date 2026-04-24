@@ -1,5 +1,5 @@
-import { IBank, IBankRequest } from '@/modules/bank'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+import { IBank, IBankRequest } from '@e-coop-monorepo/modules/bank'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory<
     IBank,

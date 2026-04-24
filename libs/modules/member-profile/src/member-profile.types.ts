@@ -1,5 +1,4 @@
-import { TSex } from '@/constants'
-
+import { TSex } from '@e-coop-monorepo/shared/constants'
 import {
     IAuditable,
     IPaginatedResult,
@@ -7,7 +6,7 @@ import {
     TCivilStatus,
     TEntityId,
     TGeneralStatus,
-} from '@/types'
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IBranch } from '../branch'
@@ -221,7 +220,7 @@ export interface IMemberProfile extends ITimeStamps, IAuditable {
     latitude?: number
 }
 
-export interface IMemberProfilePaginated extends IPaginatedResult<IMemberProfile> {}
+export type IMemberProfilePaginated = IPaginatedResult<IMemberProfile>
 
 export type IMemberProfilePicker = Pick<
     IMemberProfile,

@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router'
 
-import { useGetOrganizationById } from '@/modules/organization'
+import { useGetOrganizationById } from '@e-coop-monorepo/modules/organization'
 
 import ImageDisplay from '@/components/image-display'
 

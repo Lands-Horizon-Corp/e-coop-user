@@ -3,7 +3,7 @@ import { useState } from 'react'
 import {
     PAGINATION_INITIAL_INDEX,
     PAGINATION_INITIAL_PAGE_SIZE,
-} from '@/constants'
+} from '@e-coop-monorepo/shared/constants'
 
 export type TPagination = { pageSize: number; pageIndex: number }
 

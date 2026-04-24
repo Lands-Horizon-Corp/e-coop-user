@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { MemberGroupSchema } from './member-group.validation'
 
@@ -15,4 +19,4 @@ export type IMemberGroupRequest = z.infer<typeof MemberGroupSchema>
 // organization_id: TEntityId
 // branch_id: TEntityId
 
-export interface IMemberGroupPaginated extends IPaginatedResult<IMemberGroup> {}
+export type IMemberGroupPaginated = IPaginatedResult<IMemberGroup>

@@ -1,4 +1,8 @@
-import { IAuditable, ITimeStamps, TEntityId } from '@/types/common'
+import {
+    IAuditable,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IMemberProfile } from '../member-profile/member-profile.types'
 import { ACCOUNT_CLOSURE_REASONS } from './member-close-remark.constants'

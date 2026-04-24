@@ -1,8 +1,10 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers'
-
-import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import {
+    CheckIcon,
+    ChevronDownIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     Command,

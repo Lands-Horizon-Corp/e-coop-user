@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IGeneratedReport } from '../generated-report/generated-report.types'
 import { IMedia } from '../media'
@@ -25,4 +29,5 @@ export type IGeneratedReportsDownloadUsersRequest = z.infer<
     typeof GeneratedReportsDownloadUsersSchema
 >
 
-export interface IGeneratedReportsDownloadUsersPaginated extends IPaginatedResult<IGeneratedReportsDownloadUsers> {}
+export type IGeneratedReportsDownloadUsersPaginated =
+    IPaginatedResult<IGeneratedReportsDownloadUsers>

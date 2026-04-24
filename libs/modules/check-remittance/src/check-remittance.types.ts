@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IBank } from '../bank'
 import { ICurrency } from '../currency'
@@ -37,4 +41,4 @@ export interface ICheckRemittance extends IBaseEntityMeta {
 
 export type ICheckRemittanceRequest = z.infer<typeof CheckRemittanceSchema>
 
-export interface ICheckRemittancePaginated extends IPaginatedResult<ICheckRemittance> {}
+export type ICheckRemittancePaginated = IPaginatedResult<ICheckRemittance>

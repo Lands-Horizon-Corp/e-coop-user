@@ -1,11 +1,11 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     ITimeDepositType,
     ITimeDepositTypeCreateRequest,
     ITimeDepositTypeRequest,
-} from '@/modules/time-deposit-type'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
-import { createMutationFactory } from '@/providers/repositories/mutation-factory'
+} from '@e-coop-monorepo/modules/time-deposit-type'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

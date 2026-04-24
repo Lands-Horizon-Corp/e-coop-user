@@ -1,4 +1,4 @@
-import type { ICONS } from '@/constants'
+import type { ICONS } from '@e-coop-monorepo/shared/constants'
 import {
     AiOutlineDownload as DownloadIcon,
     AiOutlineFullscreenExit as FullscreenExitIcon,

@@ -1,10 +1,10 @@
-import { IUserBase, TUserType } from '@/modules/user'
+import { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
 import {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranch } from '../branch'
 import { IOrganization } from '../organization'
@@ -43,4 +43,4 @@ export interface IFootstepRequest {
     module: string
 }
 
-export interface IFootstepPaginated extends IPaginatedResult<IFootstep> {}
+export type IFootstepPaginated = IPaginatedResult<IFootstep>

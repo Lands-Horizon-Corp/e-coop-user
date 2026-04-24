@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { descriptionSchema, entityIdSchema } from '@/validation'
+import {
+    descriptionSchema,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 export const generalLedgerTagSchema = z.object({
     general_ledger_id: entityIdSchema,

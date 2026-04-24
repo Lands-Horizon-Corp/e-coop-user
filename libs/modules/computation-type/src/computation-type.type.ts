@@ -1,4 +1,8 @@
-import { IPaginatedResult, ITimeStamps, TEntityId } from '@/types'
+import {
+    IPaginatedResult,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 export interface IAccountsComputationTypeRequest {
     id: TEntityId
@@ -16,4 +20,5 @@ export interface IAccountsComputationType extends ITimeStamps {
     updatedBy: TEntityId
 }
 
-export interface IAccountsComputationTypePaginated extends IPaginatedResult<IAccountsComputationType> {}
+export type IAccountsComputationTypePaginated =
+    IPaginatedResult<IAccountsComputationType>
