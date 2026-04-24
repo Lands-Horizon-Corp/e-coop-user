@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import {
     IGeneralLedgerAccountGrouping,
     IGeneralLedgerAccountGroupingRequest,
-} from '@/modules/general-ledger-account-grouping'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/general-ledger-account-grouping'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const { apiCrudHooks } = createDataLayerFactory<
     IGeneralLedgerAccountGrouping,

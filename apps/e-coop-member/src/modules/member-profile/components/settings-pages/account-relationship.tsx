@@ -6,13 +6,7 @@ import {
     IMemberJointAccount,
     IMemberProfile,
     IMemberRelativeAccount,
-} from '@/modules/member-profile/member-profile.types'
-import { Plus, Users } from 'lucide-react'
-import { FileText, Pencil } from 'lucide-react'
-import { X } from 'lucide-react'
-import { Calendar, Heart, User } from 'lucide-react'
-import { ImagePlus, PenTool } from 'lucide-react'
-
+} from '@e-coop-monorepo/modules/member-profile/member-profile.types'
 import { UserPlusIcon } from '@e-coop-monorepo/ui/components/icons'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
@@ -25,6 +19,11 @@ import {
     SelectValue,
 } from '@e-coop-monorepo/ui/components/ui/select'
 import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
+import { Plus, Users } from 'lucide-react'
+import { FileText, Pencil } from 'lucide-react'
+import { X } from 'lucide-react'
+import { Calendar, Heart, User } from 'lucide-react'
+import { ImagePlus, PenTool } from 'lucide-react'
 
 import { TRelationship } from '../comboboxes/relationship-combobox'
 import { FAMILY_RELATIONSHIP } from '../comboboxes/relationship-combobox'

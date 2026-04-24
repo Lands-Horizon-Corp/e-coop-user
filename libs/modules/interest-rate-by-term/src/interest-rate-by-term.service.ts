@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     IInterestRateByTerm,
     IInterestRateByTermRequest,
-} from '@/modules/interest-rate-by-term'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/interest-rate-by-term'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

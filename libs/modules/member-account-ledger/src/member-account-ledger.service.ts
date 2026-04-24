@@ -1,6 +1,6 @@
-import { Logger } from '@/helpers/loggers'
-import type { IMemberAccountingLedger } from '@/modules/member-account-ledger'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+import type { IMemberAccountingLedger } from '@e-coop-monorepo/modules/member-account-ledger'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

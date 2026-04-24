@@ -4,7 +4,7 @@ import {
     dateToISOTransformer,
     entityIdSchema,
     stringDateSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 export const MemberIncomeSchema = z.object({
     id: z.string().optional(),

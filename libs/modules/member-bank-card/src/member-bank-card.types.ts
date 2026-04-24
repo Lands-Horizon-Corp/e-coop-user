@@ -5,8 +5,8 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
-import { entityIdSchema } from '@/validation'
+} from '@e-coop-monorepo/shared/types'
+import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 import { IBank } from '../bank'
 import { IMemberProfile } from '../member-profile/member-profile.types'

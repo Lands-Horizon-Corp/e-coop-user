@@ -1,14 +1,14 @@
 // import { useState } from 'react'
 
-// import { cn } from '@/helpers'
-// import { IMemberProfile } from '@/modules/member-profile'
-// import MemberPicker from '@/modules/member-profile/components/member-picker'
-// import { IQRMemberProfileDecodedResult } from '@/modules/qr-crypto'
+// import { cn } from '@e-coop-monorepo/shared/helpers'
+// import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+// import MemberPicker from '@e-coop-monorepo/modules/member-profile/components/member-picker'
+// import { IQRMemberProfileDecodedResult } from '@e-coop-monorepo/modules/qr-crypto'
 // import {
 //     TransactionMemberProfile,
 //     TransactionViewNoMemberSelected,
-// } from '@/modules/transaction'
-// import { IPickerBaseProps } from '@/types/component-types/picker'
+// } from '@e-coop-monorepo/modules/transaction'
+// import { IPickerBaseProps } from '@e-coop-monorepo/shared/types'
 // import { EyeIcon, ScanLineIcon } from 'lucide-react'
 // import { useHotkeys } from 'react-hotkeys-hook'
 

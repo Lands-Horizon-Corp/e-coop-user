@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     ITimeDepositComputation,
     ITimeDepositComputationRequest,
-} from '@/modules/time-deposit-computation'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/time-deposit-computation'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { PASSWORD_MIN_LENGTH } from '@/constants'
+import { PASSWORD_MIN_LENGTH } from '@e-coop-monorepo/shared/constants'
 import {
     contactNumberSchema,
     emailSchema,
@@ -12,7 +12,7 @@ import {
     passwordSchema,
     stringDateSchema,
     userNameSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 import { isBefore, startOfDay } from 'date-fns'
 
 // Define the Zod schema for UserLoginRequest

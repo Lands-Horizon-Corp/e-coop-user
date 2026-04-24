@@ -5,9 +5,9 @@
 
 // import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-// import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-// import { useVerifyPassword } from '@/modules/authentication'
-// import useActionSecurityStore from '@/store/action-security-store'
+// import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+// import { useVerifyPassword } from '@e-coop-monorepo/modules/authentication'
+// import useActionSecurityStore from '@e-coop-monorepo/shared/store'
 
 // import { ShieldCheckIcon, ShieldLockIcon } from '@/components/icons'
 // import Modal from '@/components/modals/modal'

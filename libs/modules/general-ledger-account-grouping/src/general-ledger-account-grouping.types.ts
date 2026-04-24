@@ -3,7 +3,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IGeneralLedgerDefinition } from '../general-ledger-definition/general-ledger-definition.types'
 
@@ -36,4 +36,5 @@ export interface IGeneralLedgerAccountGroupingRequest {
     to_code?: number
 }
 
-export interface IPaginatedGeneralLedgerAccountGroupingRequest extends IPaginatedResult<IGeneralLedgerAccountGrouping> {}
+export type IPaginatedGeneralLedgerAccountGroupingRequest =
+    IPaginatedResult<IGeneralLedgerAccountGrouping>

@@ -1,5 +1,10 @@
-import { IS_STAGING, SOKETI_HOST, SOKETI_KEY, SOKETI_PORT } from '@/constants'
-import logger from '@/helpers/loggers/logger'
+import {
+    IS_STAGING,
+    SOKETI_HOST,
+    SOKETI_KEY,
+    SOKETI_PORT,
+} from '@e-coop-monorepo/shared/constants'
+import logger from '@e-coop-monorepo/shared/helpers'
 import Pusher, { type Options } from 'pusher-js'
 import { create } from 'zustand'
 

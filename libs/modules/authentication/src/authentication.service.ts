@@ -1,14 +1,13 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
-import { createAPIRepository } from '@/providers/repositories/api-crud-factory'
-import { HookQueryOptions } from '@/providers/repositories/data-layer-factory'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
 import {
     HookMutationOptions,
     createMutationFactory,
-} from '@/providers/repositories/mutation-factory'
-
-import { TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IUserBase } from '../user'
 import {

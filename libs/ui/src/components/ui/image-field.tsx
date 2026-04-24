@@ -1,14 +1,13 @@
 import { ReactElement, forwardRef, useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { IMedia } from '@/modules/media'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import { ImageIcon, UploadIcon, XIcon } from '@/components/icons'
 import ImageDisplay from '@/components/image-display'
 import SingleImageUploaderModal from '@/components/single-image-uploader/single-image-uploader-modal'
 import { Button, ButtonProps } from '@/components/ui/button'
-
-import { IClassProps } from '@/types'
 
 interface ImageFieldProps
     extends Omit<ButtonProps, 'onChange' | 'value'>, IClassProps {

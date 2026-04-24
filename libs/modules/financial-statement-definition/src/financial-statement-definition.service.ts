@@ -1,5 +1,5 @@
-import { Logger } from '@/helpers/loggers'
-import { createGLSFSService } from '@/modules/gl-fs/gl-fs.services'
+import { createGLSFSService } from '@e-coop-monorepo/modules/gl-fs/gl-fs.services'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 
 import { ConnectAccountType } from '../gl-fs'
 import {

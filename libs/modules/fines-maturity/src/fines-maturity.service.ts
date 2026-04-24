@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     IFinesMaturity,
     IFinesMaturityRequest,
-} from '@/modules/fines-maturity'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/fines-maturity'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

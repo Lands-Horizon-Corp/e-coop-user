@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { entityIdSchema, stringDateWithTransformSchema } from '@/validation'
+import {
+    entityIdSchema,
+    stringDateWithTransformSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 import { AccountTransactionEntrySchema } from '../account-transaction-entry'
 

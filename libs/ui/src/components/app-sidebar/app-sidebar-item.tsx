@@ -2,12 +2,11 @@ import React from 'react'
 
 import { useLocation, useRouter } from '@tanstack/react-router'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { VariantProps } from 'class-variance-authority'
 
 import { ChevronRightIcon } from '@/components/icons'
-
-import { useModalState } from '@/hooks/use-modal-state'
 
 import {
     Collapsible,

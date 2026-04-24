@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IComputationSheet } from '../computation-sheet'
@@ -20,4 +24,5 @@ export type IIncludeNegativeAccountsRequest = z.infer<
     typeof IncludeNegativeAccountsSchema
 >
 
-export interface IIncludeNegativeAccountsPaginated extends IPaginatedResult<IIncludeNegativeAccounts> {}
+export type IIncludeNegativeAccountsPaginated =
+    IPaginatedResult<IIncludeNegativeAccounts>

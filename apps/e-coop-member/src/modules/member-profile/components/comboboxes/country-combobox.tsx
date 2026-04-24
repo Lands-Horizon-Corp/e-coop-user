@@ -8,11 +8,12 @@ import React, {
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@/helpers/tw-utils'
-import { countries } from 'country-data-list'
-import { CircleFlag } from 'react-circle-flags'
-
-import { ArrowChevronDown, CheckIcon, GlobeIcon } from '@e-coop-monorepo/ui/components/icons'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import {
+    ArrowChevronDown,
+    CheckIcon,
+    GlobeIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import {
     Command,
     CommandEmpty,
@@ -26,6 +27,8 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/components/ui/popover'
+import { countries } from 'country-data-list'
+import { CircleFlag } from 'react-circle-flags'
 
 export interface Country {
     alpha2: string
@@ -63,10 +66,7 @@ const countryFuse = new Fuse(availableCountries, {
  * @param limit - Maximum number of results to return (default: 10)
  * @returns Array of matching countries
  */
-export const searchCountries = (
-    query: string,
-    limit: number = 10
-): Country[] => {
+export const searchCountries = (query: string, limit = 10): Country[] => {
     if (!query.trim()) {
         return availableCountries.slice(0, limit)
     }

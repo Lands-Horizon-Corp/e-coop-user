@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import {
     LoanLedgerSchema,
@@ -22,6 +25,6 @@ export interface ILoanLedger extends IBaseEntityMeta {
 
 export type ILoanLedgerRequest = z.infer<typeof LoanLedgerSchema>
 
-export interface ILoanLedgerPaginated extends IPaginatedResult<ILoanLedger> {}
+export type ILoanLedgerPaginated = IPaginatedResult<ILoanLedger>
 
 export type ILoanLedgerChangeLineRequest = TLoanLedgerChangeLineSchema

@@ -1,4 +1,4 @@
-import { TEntityId } from '@/types'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 // Type of QR content identifier
 export type TQrContentType =
@@ -51,20 +51,17 @@ export interface IQRMemberProfile {
     email: string
 }
 
-export interface IQrUserDecodedResult extends IQrScanResult<
-    IQrMemberIdData,
-    'user-qr'
-> {}
+export type IQrUserDecodedResult = IQrScanResult<IQrMemberIdData, 'user-qr'>
 
-export interface IQrInvitationCodeDecodedResult extends IQrScanResult<
+export type IQrInvitationCodeDecodedResult = IQrScanResult<
     IQRInvitationCode,
     'invitation-code-qr'
-> {}
+>
 
-export interface IQRMemberProfileDecodedResult extends IQrScanResult<
+export type IQRMemberProfileDecodedResult = IQrScanResult<
     IQRMemberProfile,
     'member-qr'
-> {}
+>
 
 export interface IOperationCallbacks<
     TDataSuccess = unknown,

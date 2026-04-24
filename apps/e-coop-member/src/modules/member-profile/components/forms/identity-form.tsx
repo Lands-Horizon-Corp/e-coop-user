@@ -3,15 +3,21 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@/helpers'
-import { toInputDateString } from '@/helpers/date-utils'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import CivilStatusCombobox from '@/modules/member-profile/components/comboboxes/civil-status-combobox'
-import { CountryCombobox } from '@/modules/member-profile/components/comboboxes/country-combobox'
-import MemberGenderCombobox from '@/modules/member-profile/components/comboboxes/member-gender-combobox'
-
+import CivilStatusCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/civil-status-combobox'
+import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
+import MemberGenderCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/member-gender-combobox'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
-import { CameraFillIcon, FilesIcon, UserIcon } from '@e-coop-monorepo/ui/components/icons'
+import {
+    CameraFillIcon,
+    FilesIcon,
+    UserIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 import SignatureField from '@e-coop-monorepo/ui/components/signature/signature-field'
 import SingleImageUploaderModal from '@e-coop-monorepo/ui/components/single-image-uploader/single-image-uploader-modal'
@@ -24,11 +30,6 @@ import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import InputDate from '@e-coop-monorepo/ui/components/ui/input-date'
 import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-import { useModalState } from '@/hooks/use-modal-state'
-
-import { IClassProps, IForm, TEntityId } from '@/types'
 
 import { useUpdateMemberProfileIdentity } from '../../member-profile.service'
 import {

@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IBrowseReference } from '../browse-reference'
 import { InterestRateByDateSchema } from './interest-rate-by-date.validation'
@@ -18,4 +22,4 @@ export type IInterestRateByDateRequest = z.infer<
     typeof InterestRateByDateSchema
 >
 
-export interface IInterestRateByDatePaginated extends IPaginatedResult<IInterestRateByDate> {}
+export type IInterestRateByDatePaginated = IPaginatedResult<IInterestRateByDate>

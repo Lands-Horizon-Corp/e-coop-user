@@ -1,12 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
-
-import { TAPIQueryOptions } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
 
 import { getCurrentCurrencyByTimezone } from '../currency'
 import type {

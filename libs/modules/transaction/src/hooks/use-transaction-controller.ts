@@ -6,20 +6,18 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { useAuthUserWithOrgBranch } from '@/modules/authentication/authgentication.store'
+import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication/authgentication.store'
 import {
     TTransactionFormSchema,
     TransactionFromSchema,
     useGetTransactionById,
-} from '@/modules/transaction'
-import { useTransactionBatchStore } from '@/modules/transaction-batch/store/transaction-batch-store'
-import { useTransactionReverseSecurityStore } from '@/store/transaction-reverse-security-store'
+} from '@e-coop-monorepo/modules/transaction'
+import { useTransactionBatchStore } from '@e-coop-monorepo/modules/transaction-batch/store/transaction-batch-store'
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { useQeueryHookCallback } from '@e-coop-monorepo/shared/hooks'
+import { useTransactionReverseSecurityStore } from '@e-coop-monorepo/shared/store'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { useHotkeys } from 'react-hotkeys-hook'
-
-import { useModalState } from '@/hooks/use-modal-state'
-import { useQeueryHookCallback } from '@/hooks/use-query-hook-cb'
-
-import { TEntityId } from '@/types'
 
 import { paymentORResolver } from '../transaction.utils'
 

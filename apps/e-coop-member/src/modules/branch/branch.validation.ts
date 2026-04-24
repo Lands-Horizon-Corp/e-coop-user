@@ -4,7 +4,7 @@ import {
     descriptionSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { branchTypeEnum } from './branch.types'
 

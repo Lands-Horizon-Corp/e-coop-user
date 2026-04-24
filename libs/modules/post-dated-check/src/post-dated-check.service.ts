@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     IPostDatedCheck,
     IPostDatedCheckRequest,
-} from '@/modules/post-dated-check'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/post-dated-check'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

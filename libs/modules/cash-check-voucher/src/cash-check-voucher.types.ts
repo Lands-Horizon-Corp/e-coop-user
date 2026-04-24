@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import {
@@ -229,7 +233,7 @@ export type TCashCheckSignatureRequest = z.infer<
 export type TCashCheckVoucherPrintRequest = z.infer<
     typeof CashCheckVoucherPrintSchema
 >
-export interface ICashCheckVoucherPaginated extends IPaginatedResult<ICashCheckVoucher> {}
+export type ICashCheckVoucherPaginated = IPaginatedResult<ICashCheckVoucher>
 
 export type TORCashCheckSettings = Omit<
     ICashCheckVoucherGeneralORSettings,

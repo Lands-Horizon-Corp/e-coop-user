@@ -5,7 +5,7 @@ import {
     descriptionTransformerSanitizer,
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { IAccount } from '../account'
 

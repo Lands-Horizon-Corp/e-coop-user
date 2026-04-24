@@ -1,10 +1,13 @@
 import z from 'zod'
 
-import { IAccount } from '@/modules/account'
-import { ICurrency } from '@/modules/currency'
-import { IMemberProfile } from '@/modules/member-profile'
-
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { UnbalanceAccountSchema } from './unbalance-account.validation'
 
@@ -33,4 +36,4 @@ export interface IUnbalanceAccount extends IBaseEntityMeta {
 
 export type IUnbalanceAccountRequest = z.infer<typeof UnbalanceAccountSchema>
 
-export interface IUnbalanceAccountPaginated extends IPaginatedResult<IUnbalanceAccount> {}
+export type IUnbalanceAccountPaginated = IPaginatedResult<IUnbalanceAccount>

@@ -1,13 +1,14 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { DashboardSchema } from './dashboard.validation'
 
-export interface IDashboard extends IBaseEntityMeta {
-    //add here
-}
+export type IDashboard = IBaseEntityMeta
 
 export type IDashboardRequest = z.infer<typeof DashboardSchema>
 
-export interface IDashboardPaginated extends IPaginatedResult<IDashboard> {}
+export type IDashboardPaginated = IPaginatedResult<IDashboard>

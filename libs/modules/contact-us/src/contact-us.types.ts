@@ -1,4 +1,4 @@
-import { ITimeStamps, TEntityId } from '@/types/common'
+import { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
 
 export interface IContactUsRequest {
     id?: TEntityId

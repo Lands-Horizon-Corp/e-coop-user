@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IMedia } from '../media'
 import { FeedMediaSchema } from './feed-media.validation'
@@ -13,4 +17,4 @@ export interface IFeedMedia extends IBaseEntityMeta {
 
 export type IFeedMediaRequest = z.infer<typeof FeedMediaSchema>
 
-export interface IFeedMediaPaginated extends IPaginatedResult<IFeedMedia> {}
+export type IFeedMediaPaginated = IPaginatedResult<IFeedMedia>

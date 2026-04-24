@@ -1,10 +1,8 @@
 import { useRouter } from '@tanstack/react-router'
 import { toast } from 'sonner'
 
-import useConfirmModalStore from '@/store/confirm-modal-store'
-import { useFakeStore } from '@/store/fake-store'
-import { HelpCircle, LogOut, Settings } from 'lucide-react'
-
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
+import { useFakeStore } from '@e-coop-monorepo/shared/store'
 import {
     BadgeCheckFillIcon,
     BadgeExclamationFillIcon,
@@ -22,6 +20,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui/components/ui/dropdown-menu'
+import { HelpCircle, LogOut, Settings } from 'lucide-react'
 
 import { useSignOut } from '..'
 

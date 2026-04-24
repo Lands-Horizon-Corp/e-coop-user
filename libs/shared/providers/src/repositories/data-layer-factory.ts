@@ -1,7 +1,7 @@
 import { type QueryObserverOptions, useQuery } from '@tanstack/react-query'
 
-import type { TAPIQueryOptions } from '@/types/api'
-import type { IPaginatedResult, TEntityId } from '@/types/common'
+import type { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
+import type { IPaginatedResult, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { createAPIRepository } from './api-crud-factory'
 import {

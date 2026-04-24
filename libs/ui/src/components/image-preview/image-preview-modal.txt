@@ -3,7 +3,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import * as ImagePreviewPrimitive from '@radix-ui/react-dialog'
 
 import { cn } from '@/helpers'
-import { useImagePreview } from '@/store/image-preview-store'
+import { useImagePreview } from '@e-coop-monorepo/shared/store'
 
 import { DownloadProps } from '@/types'
 

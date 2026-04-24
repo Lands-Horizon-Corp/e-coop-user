@@ -3,10 +3,8 @@ import { useEffect, useState } from 'react'
 import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import { Mail } from 'lucide-react'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import {
@@ -14,6 +12,7 @@ import {
     InputOTPGroup,
     InputOTPSlot,
 } from '@e-coop-monorepo/ui/components/ui/input-otp'
+import { Mail } from 'lucide-react'
 
 import {
     TKYCVerifyEmailSchema,

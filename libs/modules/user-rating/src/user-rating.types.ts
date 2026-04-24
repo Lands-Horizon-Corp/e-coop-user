@@ -1,4 +1,4 @@
-import { IBaseEntityMeta, TEntityId } from '@/types/common'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IUser } from '../user/user.types'
 

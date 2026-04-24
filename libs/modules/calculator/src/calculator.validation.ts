@@ -4,7 +4,7 @@ import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { WithModeOfPaymentSchema } from '../loan-transaction'
 import {

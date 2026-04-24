@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { LoanClearanceAnalysisSchema } from './loan-clearance-analysis.validation'
 
@@ -17,4 +21,5 @@ export type ILoanClearanceAnalysisRequest = z.infer<
     typeof LoanClearanceAnalysisSchema
 >
 
-export interface ILoanClearanceAnalysisPaginated extends IPaginatedResult<ILoanClearanceAnalysis> {}
+export type ILoanClearanceAnalysisPaginated =
+    IPaginatedResult<ILoanClearanceAnalysis>

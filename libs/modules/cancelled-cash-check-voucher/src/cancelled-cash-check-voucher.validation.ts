@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { descriptionTransformerSanitizer } from '@/validation'
+import { descriptionTransformerSanitizer } from '@e-coop-monorepo/shared/validation'
 
 export const CancelledCashCheckVoucherSchema = z.object({
     check_number: z

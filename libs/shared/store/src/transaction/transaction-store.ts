@@ -1,17 +1,16 @@
 import { Dispatch, SetStateAction } from 'react'
 
-import { IAccount } from '@/modules/account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import {
     IGeneralLedger,
     IGeneralLedgerPaginated,
-} from '@/modules/general-ledger'
-import { IMemberJointAccount } from '@/modules/member-joint-account'
-import { IMemberProfile } from '@/modules/member-profile'
-import { IQRMemberProfile } from '@/modules/qr-crypto'
-import { TPaymentMode } from '@/modules/quick-transfer'
+} from '@e-coop-monorepo/modules/general-ledger'
+import { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IQRMemberProfile } from '@e-coop-monorepo/modules/qr-crypto'
+import { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
-
-import { TEntityId } from '@/types'
 
 export interface TransactionPropsStore {
     openMemberPicker: boolean

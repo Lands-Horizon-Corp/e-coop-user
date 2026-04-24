@@ -3,12 +3,10 @@ import { useMemo } from 'react'
 import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { ORGANIZATION_ID } from '@/constants'
-import { cn } from '@/helpers'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import { useGetOrganizationById } from '@/modules/organization'
-import { FileText } from 'lucide-react'
-
+import { useGetOrganizationById } from '@e-coop-monorepo/modules/organization'
+import { ORGANIZATION_ID } from '@e-coop-monorepo/shared/constants'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import {
     CookieBiteIcon,
     RefreshIcon,
@@ -27,6 +25,7 @@ import { Checkbox } from '@e-coop-monorepo/ui/components/ui/checkbox'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import { Label } from '@e-coop-monorepo/ui/components/ui/label'
 import { ScrollArea } from '@e-coop-monorepo/ui/components/ui/scroll-area'
+import { FileText } from 'lucide-react'
 
 import { useKYCRegister } from '../..'
 import { KYCRegisterSchema, TKYCAgreeTermsSchema } from '../../kyc.validation'

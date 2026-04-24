@@ -2,25 +2,24 @@ import { ReactNode } from 'react'
 
 import { Link, useLocation } from '@tanstack/react-router'
 
-import { cn } from '@/helpers/tw-utils'
-import UserAvatarMenu from '@/modules/auth/components/user-avatar-menu'
+import UserAvatarMenu from '@e-coop-monorepo/modules/auth/components/user-avatar-menu'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+// import PageBreadCrumb from '@/components/pages-breadcrumbs'
+// import AppSidebarToggle from '@/components/ui/app-sidebar/app-sidebar-toggle'
+// import { Button } from '@/components/ui/button'
 
-// import { useAuthStore } from '@/modules/authentication/authgentication.store'
-// import GeneratedReportsButton from '@/modules/generated-report/components/generated-reports/generated-reports-button'
-// import { NotificationNav } from '@/modules/notification/components/notification'
-// import TransactionBatchNavButton from '@/modules/transaction-batch/components/batch-nav-button'
-// import NavProfileMenu from '@/modules/user-profile/components/nav/nav-profile-menu'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
+
+// import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
+// import GeneratedReportsButton from '@e-coop-monorepo/modules/generated-report/components/generated-reports/generated-reports-button'
+// import { NotificationNav } from '@e-coop-monorepo/modules/notification/components/notification'
+// import TransactionBatchNavButton from '@e-coop-monorepo/modules/transaction-batch/components/batch-nav-button'
+// import NavProfileMenu from '@e-coop-monorepo/modules/user-profile/components/nav/nav-profile-menu'
 // import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 import NavThemeToggle from '@/components/nav/nav-components/nav-theme-toggle'
 import NavContainer from '@/components/nav/nav-container'
 import RootNav from '@/components/nav/root-nav'
-
-// import PageBreadCrumb from '@/components/pages-breadcrumbs'
-// import AppSidebarToggle from '@/components/ui/app-sidebar/app-sidebar-toggle'
-// import { Button } from '@/components/ui/button'
-
-import { IClassProps } from '@/types'
 
 type NavLink = {
     name: string

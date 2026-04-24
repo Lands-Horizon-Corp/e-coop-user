@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { descriptionTransformerSanitizer, entityIdSchema } from '@/validation'
+import {
+    descriptionTransformerSanitizer,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 export const BatchFundingSchema = z.object({
     name: z.string().min(1, 'Name is required'),

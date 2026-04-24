@@ -4,7 +4,7 @@ import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { ChargesRateByRangeOrMinimumAmountSchema } from '../charges-rate-by-range-or-minimum-amount'
 import { ChargesRateByTermSchema } from '../charges-rate-by-term'

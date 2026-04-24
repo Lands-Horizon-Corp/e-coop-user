@@ -1,14 +1,13 @@
 import { MouseEvent } from 'react'
 
-import { cn } from '@/helpers'
-import useConfirmModalStore from '@/store/confirm-modal-store'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import LoadingSpinner from '@/components/spinners/loading-spinner'
 import { Button } from '@/components/ui/button'
 import FormErrorMessage from '@/components/ui/form-error-message'
 import { Separator } from '@/components/ui/separator'
-
-import { IClassProps } from '@/types'
 
 interface IFormResetSubmitFooterProps extends IClassProps {
     readOnly?: boolean

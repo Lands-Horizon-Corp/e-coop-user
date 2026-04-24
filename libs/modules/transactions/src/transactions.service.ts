@@ -1,9 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
-import { HookQueryOptions } from '@/providers/repositories/data-layer-factory'
-
-import { TAPIQueryOptions } from '@/types'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
 
 import {
     ITransactionPaginated,

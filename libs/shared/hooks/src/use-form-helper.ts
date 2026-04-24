@@ -8,7 +8,7 @@ import {
     UseFormReturn,
 } from 'react-hook-form'
 
-import useConfirmModalStore from '@/store/confirm-modal-store'
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 
 import { usePreventExit } from './use-prevent-exit'
 

@@ -7,13 +7,12 @@ import type {
     TFilterPayload,
     TFinalFilter,
     TSearchFilter,
-} from '@/contexts/filter-context'
-import { toReadableDate } from '@/helpers/date-utils'
-import { toBase64 } from '@/helpers/encoding-utils'
+} from '@e-coop-monorepo/shared/contexts'
+import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
+import { toBase64 } from '@e-coop-monorepo/shared/helpers'
+import useDebounce from '@e-coop-monorepo/shared/hooks'
 
-import useDebounce from '@/hooks/use-debounce'
-
-// import logger from '@/helpers/loggers/logger'
+// import logger from '@e-coop-monorepo/shared/helpers'
 
 const useFilterState = ({
     debounceFinalFilterMs,

@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     ILoanGuaranteedFundPerMonth,
     ILoanGuaranteedFundPerMonthRequest,
-} from '@/modules/loan-guaranteed-fund-per-month'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/loan-guaranteed-fund-per-month'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

@@ -4,7 +4,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IMemberClassification } from '../member-classification/member-classification.types'
 import { IMemberProfile } from '../member-profile/member-profile.types'
@@ -25,4 +25,5 @@ export interface IMemberClassificationHistory
     member_profile?: IMemberProfile
 }
 
-export interface IMemberClassificationHistoryPaginated extends IPaginatedResult<IMemberClassificationHistory> {}
+export type IMemberClassificationHistoryPaginated =
+    IPaginatedResult<IMemberClassificationHistory>

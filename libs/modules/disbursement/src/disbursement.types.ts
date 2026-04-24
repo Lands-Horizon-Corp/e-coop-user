@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types/common'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ICurrency } from '../currency'
 import { TDisbursementSchema } from './disbursement.validation'
@@ -17,4 +21,4 @@ export interface IDisbursement extends IBaseEntityMeta {
 
 export type IDisbursementRequest = TDisbursementSchema
 
-export interface IDisbursementPaginated extends IPaginatedResult<IDisbursement> {}
+export type IDisbursementPaginated = IPaginatedResult<IDisbursement>

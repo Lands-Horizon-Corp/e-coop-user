@@ -1,8 +1,7 @@
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { CalendarDate } from '@internationalized/date'
 import { DateField, DateInput, DateSegment } from 'react-aria-components'
-
-import { IClassProps } from '@/types'
 
 interface Props extends IClassProps {
     value?: CalendarDate | undefined | null

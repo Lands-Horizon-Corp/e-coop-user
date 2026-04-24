@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     IGeneralAccountGroupingNetSurplusPositive,
     IGeneralAccountGroupingNetSurplusPositiveRequest,
-} from '@/modules/general-account-grouping-net-surplus-positive'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/general-account-grouping-net-surplus-positive'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

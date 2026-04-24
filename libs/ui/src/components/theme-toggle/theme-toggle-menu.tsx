@@ -1,8 +1,8 @@
 import { useCallback } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { useTheme } from '@/providers/theme/provider/theme-provider'
-import type { IBaseProps } from '@/types/component-types/base-component'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useTheme } from '@e-coop-monorepo/shared/providers'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 import { MoonIcon, SunIcon, SunMoonIcon } from '@/components/icons'
 import { Button } from '@/components/ui/button'

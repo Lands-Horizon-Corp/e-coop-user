@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IAuditable, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IAuditable,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { CurrencySchema } from './currency.validation'
 
@@ -22,6 +26,6 @@ export interface ICurrency extends IAuditable {
 
 export type ICurrencyRequest = z.infer<typeof CurrencySchema>
 
-export interface ICurrencyPaginated extends IPaginatedResult<ICurrency> {}
+export type ICurrencyPaginated = IPaginatedResult<ICurrency>
 
 export type TCurrencyHookMode = 'all' | 'available' | 'blotter-available'

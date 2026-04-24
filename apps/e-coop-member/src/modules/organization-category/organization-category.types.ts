@@ -1,4 +1,8 @@
-import { IAuditable, ITimeStamps, TEntityId } from '@/types'
+import {
+    IAuditable,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ICategory } from '../category'
 import { IOrganization } from '../organization/organization.types'

@@ -281,8 +281,7 @@ const Signature = ({
                     {disableFullScreen && (
                         <>
                             {isFullScreenMode ? (
-                                <>
-                                    <TooltipProvider>
+                                <TooltipProvider>
                                         <Tooltip>
                                             <TooltipTrigger asChild>
                                                 <Button
@@ -305,10 +304,8 @@ const Signature = ({
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
-                                </>
                             ) : (
-                                <>
-                                    <TooltipProvider>
+                                <TooltipProvider>
                                         <Tooltip>
                                             <TooltipTrigger asChild>
                                                 <Button
@@ -330,7 +327,6 @@ const Signature = ({
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
-                                </>
                             )}
                         </>
                     )}
@@ -383,15 +379,13 @@ const Signature = ({
                 )}
                 {currentMode === SignatureModes.DRAW &&
                     isSignaturePadisEmpty && (
-                        <>
-                            <Button
+                        <Button
                                 className="text-xs"
                                 onClick={handleGetSignatureTrimmedData}
                                 size={'sm'}
                             >
                                 render
                             </Button>
-                        </>
                     )}
                 {currentMode === SignatureModes.CAPTURE && (
                     <Button

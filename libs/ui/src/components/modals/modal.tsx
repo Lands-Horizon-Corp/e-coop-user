@@ -2,11 +2,8 @@ import { type ReactNode } from 'react'
 
 import type * as DialogPrimitive from '@radix-ui/react-dialog'
 
-import { cn } from '@/helpers/tw-utils'
-import type {
-    IBaseProps,
-    IClassProps,
-} from '@/types/component-types/base-component'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import type { IBaseProps, IClassProps } from '@e-coop-monorepo/shared/types'
 
 import {
     Dialog,

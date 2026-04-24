@@ -3,7 +3,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { ICurrency } from '../currency'
 import { IMedia } from '../media/media.types'
@@ -95,7 +95,7 @@ export type IOrganizationEditRequest = TOrganizationEditSchema
 //     currency_id?: TEntityId
 // }
 
-export interface IOrganizationPaginated extends IPaginatedResult<IOrganization> {}
+export type IOrganizationPaginated = IPaginatedResult<IOrganization>
 
 export interface ICreateOrganizationResponse {
     organization: IOrganization

@@ -1,6 +1,6 @@
 import type { AxiosError } from 'axios'
 
-import { isObjectEmpty } from '@/helpers/function-utils'
+import { isObjectEmpty } from '@e-coop-monorepo/shared/helpers'
 
 export const axiosErrorMessageExtractor = (
     error: AxiosError<{ message?: string; error?: string }>

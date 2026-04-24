@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 interface FlickeringGridProps extends React.HTMLAttributes<HTMLDivElement> {
     squareSize?: number

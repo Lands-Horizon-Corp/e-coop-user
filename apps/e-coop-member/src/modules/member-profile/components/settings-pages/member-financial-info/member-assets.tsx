@@ -2,15 +2,15 @@ import { forwardRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { toReadableDate } from '@/helpers/date-utils'
-import { formatNumber } from '@/helpers/number-utils'
 import {
     IMemberAsset,
     IMemberProfile,
     useDeleteMemberProfileAsset,
-} from '@/modules/member-profile'
-import useConfirmModalStore from '@/store/confirm-modal-store'
-
+} from '@e-coop-monorepo/modules/member-profile'
+import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
+import { formatNumber } from '@e-coop-monorepo/shared/helpers'
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 import {
     CalendarDotsIcon,
     MoneyIcon,
@@ -24,8 +24,6 @@ import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spin
 import TextRenderer from '@e-coop-monorepo/ui/components/text-renderer'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import { Separator } from '@e-coop-monorepo/ui/components/ui/separator'
-
-import { useModalState } from '@/hooks/use-modal-state'
 
 import { MemberAssetCreateUpdateFormModal } from '../../forms/member-asset-create-update-form'
 import EmptyListIndicator from '../empty-list-indicator'

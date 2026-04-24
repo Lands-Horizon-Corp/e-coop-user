@@ -1,8 +1,7 @@
-import { IGeneralLedger } from '@/modules/general-ledger'
-import { TPaymentMode } from '@/modules/quick-transfer'
+import { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
+import { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
-
-import { TEntityId } from '@/types'
 
 type TData = {
     generalLedger?: IGeneralLedger

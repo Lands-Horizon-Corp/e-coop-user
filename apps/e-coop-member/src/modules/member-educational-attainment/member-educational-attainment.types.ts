@@ -3,7 +3,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IBranch } from '../branch'
 import { IMemberProfile } from '../member-profile/member-profile.types'
@@ -44,4 +44,5 @@ export interface IMemberEducationalAttainment extends ITimeStamps, IAuditable {
     // history?: IMemberEducationalAttainmentHistory[]
 }
 
-export interface IMemberEducationalAttainmentPaginated extends IPaginatedResult<IMemberEducationalAttainment> {}
+export type IMemberEducationalAttainmentPaginated =
+    IPaginatedResult<IMemberEducationalAttainment>

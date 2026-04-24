@@ -1,22 +1,19 @@
 import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers'
-import { toDateTimeFormatFile } from '@/helpers/date-utils'
-import { useUploadMedia } from '@/modules/media'
-import { ScanFace } from 'lucide-react'
-import Webcam from 'react-webcam'
-
+import { useUploadMedia } from '@e-coop-monorepo/modules/media'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { toDateTimeFormatFile } from '@e-coop-monorepo/shared/helpers'
+import { useCamera } from '@e-coop-monorepo/shared/hooks'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import {
     CheckFillIcon,
     FingerPrintIcon,
     RotateLeftIcon,
 } from '@e-coop-monorepo/ui/components/icons'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-
-import { useCamera } from '@/hooks/use-camera'
-
-import { TEntityId } from '@/types'
+import { ScanFace } from 'lucide-react'
+import Webcam from 'react-webcam'
 
 import { useKYCVerifySelfie } from '../..'
 import { IKYCSelfieRequest } from '../../kyc.types'

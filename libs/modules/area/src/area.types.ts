@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { AreaSchema } from './area.validation'
 
@@ -14,4 +18,4 @@ export interface IArea extends IBaseEntityMeta {
 
 export type IAreaRequest = z.infer<typeof AreaSchema>
 
-export interface IAreaPaginated extends IPaginatedResult<IArea> {}
+export type IAreaPaginated = IPaginatedResult<IArea>

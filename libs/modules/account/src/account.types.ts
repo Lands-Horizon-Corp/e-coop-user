@@ -3,7 +3,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { TIcon } from '@/components/icons'
 
@@ -241,7 +241,7 @@ export interface IAccountHistory extends IAccount {
 
 export type IAccountRequest = TAccountFormValues
 
-export interface IAccountPaginated extends IPaginatedResult<IAccount> {}
+export type IAccountPaginated = IPaginatedResult<IAccount>
 
 export type TPaginatedAccountHookMode =
     | 'withdraw'

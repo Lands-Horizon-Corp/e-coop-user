@@ -17,7 +17,7 @@ import {
     permanentAddressSchema,
     stringDateSchema,
     userNameSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 import { isBefore, startOfDay } from 'date-fns'
 
 import { MemberAddressSchema } from '../member-address/member-address.validation'

@@ -3,7 +3,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IDisbursement } from '../disbursement/disbursement.types'
 import { ITransactionBatch } from '../transaction-batch'
@@ -40,6 +40,8 @@ export interface IDisbursementTransactionRequest {
     amount: number
 }
 
-export interface IDisbursementTransactionPaginated extends IPaginatedResult<IDisbursementTransaction> {}
+export type IDisbursementTransactionPaginated =
+    IPaginatedResult<IDisbursementTransaction>
 
-export interface IDisbursementTransactionPaginated extends IPaginatedResult<IDisbursementTransaction> {}
+export type IDisbursementTransactionPaginated =
+    IPaginatedResult<IDisbursementTransaction>

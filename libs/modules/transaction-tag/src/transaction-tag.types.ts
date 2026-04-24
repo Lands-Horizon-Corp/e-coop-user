@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 export const TRANSACTION_TAG_CATEGORIES = [
     'accounting',
@@ -32,4 +36,4 @@ export interface ITransactionTagRequest {
     icon: string
 }
 
-export interface ITransactionTagPaginated extends IPaginatedResult<ITransactionTag> {}
+export type ITransactionTagPaginated = IPaginatedResult<ITransactionTag>

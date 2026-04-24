@@ -1,5 +1,5 @@
-import { cn } from '@/helpers'
-import { useInfoModalStore } from '@/store/info-modal-store'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useInfoModalStore } from '@e-coop-monorepo/shared/store'
 
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'

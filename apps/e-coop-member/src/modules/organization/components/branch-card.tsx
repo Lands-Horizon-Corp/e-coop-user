@@ -1,8 +1,7 @@
-import { IBranch } from '@/modules/branch'
-import { Building2, ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
-
-import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
 import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
+import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+import { Building2, ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
 
 interface BranchCardProps {
     branch: IBranch
@@ -30,10 +29,10 @@ export const BranchCard = ({ branch }: BranchCardProps) => {
                                 </div>
                             )}
                         </div>
-                        <div className='flex items-center space-x-2 '>
+                        <div className="flex items-center space-x-2 ">
                             <ImageDisplay
-                            className='rounded-sm'
-                            src={branch.media.download_url}
+                                className="rounded-sm"
+                                src={branch.media.download_url}
                             />
                             <h3 className="text-xl font-semibold text-foreground group-hover:text-primary transition-colors duration-300">
                                 {branch.name}
@@ -77,8 +76,8 @@ export const BranchCard = ({ branch }: BranchCardProps) => {
                                 <Mail className="w-4 h-4 text-muted-foreground group-hover/item:text-primary transition-colors duration-300" />
                             </div>
                             <a
-                                href={`mailto:${branch.email}`}
                                 className="text-sm text-primary hover:text-primary/80 hover:underline underline-offset-2 transition-colors duration-300"
+                                href={`mailto:${branch.email}`}
                             >
                                 {branch.email}
                             </a>
@@ -91,8 +90,8 @@ export const BranchCard = ({ branch }: BranchCardProps) => {
                                 <Phone className="w-4 h-4 text-muted-foreground group-hover/item:text-primary transition-colors duration-300" />
                             </div>
                             <a
-                                href={`tel:${branch.contact_number}`}
                                 className="text-sm text-foreground/80 hover:text-primary transition-colors duration-300"
+                                href={`tel:${branch.contact_number}`}
                             >
                                 {branch.contact_number}
                             </a>

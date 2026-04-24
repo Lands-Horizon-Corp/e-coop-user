@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { IGeneralLedger } from '../general-ledger'
 import { ILoanAccount } from '../loan-account'
@@ -58,4 +61,4 @@ export interface ILoanGuide extends IBaseEntityMeta {
 
 export type ILoanGuideRequest = z.infer<typeof LoanGuideSchema>
 
-export interface ILoanGuidePaginated extends IPaginatedResult<ILoanGuide> {}
+export type ILoanGuidePaginated = IPaginatedResult<ILoanGuide>

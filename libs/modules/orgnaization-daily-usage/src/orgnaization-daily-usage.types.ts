@@ -1,4 +1,4 @@
-import { TEntityId } from '@/types/common'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IOrganization } from '../organization'
 

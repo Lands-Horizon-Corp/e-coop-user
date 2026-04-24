@@ -1,12 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { Logger } from '@/helpers/loggers'
-import APIService from '@/providers/api'
-import { createAPIRepository } from '@/providers/repositories/api-crud-factory'
-import { HookQueryOptions } from '@/providers/repositories/data-layer-factory'
-
-import { TAPIQueryOptions, TEntityId } from '@/types'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import APIService from '@e-coop-monorepo/shared/providers'
+import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IMemberGeneralLedgerTotal } from '../general-ledger'
 import {
@@ -91,7 +90,7 @@ export const useFilteredPaginatedMemberAccountingLedger = ({
             query,
         ],
         queryFn: async () => {
-            let url: string = `${route}/branch/search`
+            let url = `${route}/branch/search`
 
             if (mode === 'member') {
                 url = `${route}/member-profile/${memberProfileId}/search`

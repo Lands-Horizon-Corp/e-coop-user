@@ -1,7 +1,10 @@
 import z from 'zod'
 
-import { EntityIdSchema, descriptionTransformerSanitizer } from '@/validation'
-import { entityIdSchema } from '@/validation'
+import {
+    EntityIdSchema,
+    descriptionTransformerSanitizer,
+} from '@e-coop-monorepo/shared/validation'
+import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 import { CashCheckVoucherEntrySchema } from '../cash-check-voucher-entry'
 

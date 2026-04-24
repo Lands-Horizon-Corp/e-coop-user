@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { FinancialStatementTitleSchema } from './financial-statement-title.validation'
 
@@ -19,4 +23,5 @@ export type IFinancialStatementTitleRequest = z.infer<
     typeof FinancialStatementTitleSchema
 >
 
-export interface IFinancialStatementTitlePaginated extends IPaginatedResult<IFinancialStatementTitle> {}
+export type IFinancialStatementTitlePaginated =
+    IPaginatedResult<IFinancialStatementTitle>

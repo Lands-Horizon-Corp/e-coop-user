@@ -3,7 +3,7 @@ import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { ICurrency } from '../currency'
 import { ITimeDepositComputation } from '../time-deposit-computation'

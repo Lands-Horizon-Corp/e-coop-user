@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { LoanTermsAndConditionAmountReceiptSchema } from './loan-terms-and-condition-amount-receipt.validation'
@@ -16,4 +20,5 @@ export type ILoanTermsAndConditionAmountReceiptRequest = z.infer<
     typeof LoanTermsAndConditionAmountReceiptSchema
 >
 
-export interface ILoanTermsAndConditionAmountReceiptPaginated extends IPaginatedResult<ILoanTermsAndConditionAmountReceipt> {}
+export type ILoanTermsAndConditionAmountReceiptPaginated =
+    IPaginatedResult<ILoanTermsAndConditionAmountReceipt>

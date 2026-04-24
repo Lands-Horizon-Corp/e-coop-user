@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { ITimeStamps, TEntityId } from '@/types/common'
+import { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IMedia } from '../media/media.types'
 

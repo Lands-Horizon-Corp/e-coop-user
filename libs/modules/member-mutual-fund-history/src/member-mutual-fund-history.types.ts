@@ -1,7 +1,11 @@
 import z from 'zod'
 
-import { IOrgBranchIdentity, ITimeStamps, TEntityId } from '@/types/common'
-import { entityIdSchema } from '@/validation'
+import {
+    IOrgBranchIdentity,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
+import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 import { IMemberProfile } from '../member-profile/member-profile.types'
 

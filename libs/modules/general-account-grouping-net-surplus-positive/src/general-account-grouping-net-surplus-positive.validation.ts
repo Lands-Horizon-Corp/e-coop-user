@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { descriptionSchema, entityIdSchema } from '@/validation'
+import {
+    descriptionSchema,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 export const generalAccountGroupingNetSurplusPositiveSchema = z.object({
     name: z.string().min(1).max(255),

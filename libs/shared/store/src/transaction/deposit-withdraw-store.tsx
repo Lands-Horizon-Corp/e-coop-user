@@ -1,7 +1,7 @@
 import { Dispatch, SetStateAction } from 'react'
 
-import { IAccount } from '@/modules/account'
-import { IMemberProfile } from '@/modules/member-profile'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { create } from 'zustand'
 
 export interface DepositWithdrawStore {

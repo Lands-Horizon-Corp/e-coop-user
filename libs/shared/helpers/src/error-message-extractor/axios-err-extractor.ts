@@ -1,7 +1,7 @@
 import { AxiosError } from 'axios'
 
-import { axiosErrorMessageExtractor } from '@/helpers/axios-helpers/axios-error-extractor'
-import { IErrorResponse } from '@/types/api'
+import { axiosErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'
+import { IErrorResponse } from '@e-coop-monorepo/shared/types'
 
 import { TErrorMessageExtractor } from '.'
 

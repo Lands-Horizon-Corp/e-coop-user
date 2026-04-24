@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { TMockCloanInputSchema } from '../calculator'
@@ -28,7 +32,7 @@ export interface IComputationSheet extends IBaseEntityMeta {
 
 export type IComputationSheetRequest = z.infer<typeof ComputationSheetSchema>
 
-export interface IComputationSheetPaginated extends IPaginatedResult<IComputationSheet> {}
+export type IComputationSheetPaginated = IPaginatedResult<IComputationSheet>
 
 // FOR CALCULATOR USE ONLY
 // Payload for computing amortization of a specific computation sheet

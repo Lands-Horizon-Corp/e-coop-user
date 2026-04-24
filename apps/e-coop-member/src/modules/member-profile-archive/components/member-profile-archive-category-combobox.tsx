@@ -1,8 +1,7 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { Check } from 'lucide-react'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
 import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
@@ -19,8 +18,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/components/ui/popover'
-
-import { TEntityId } from '@/types'
+import { Check } from 'lucide-react'
 
 import { useGetMemberProfileArchiveCategory } from '../member-profile-archive.service'
 

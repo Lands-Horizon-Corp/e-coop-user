@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IMemberProfile } from '../member-profile'
@@ -67,4 +71,4 @@ export type IMutualFundPostRequest = TMutualFundViewPostRequestSchema
 
 export type IMutualFundPrintRequest = TMutualFundPrintSchema
 
-export interface IMutualFundPaginated extends IPaginatedResult<IMutualFund> {}
+export type IMutualFundPaginated = IPaginatedResult<IMutualFund>

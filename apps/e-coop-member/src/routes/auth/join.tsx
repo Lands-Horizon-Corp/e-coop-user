@@ -1,9 +1,8 @@
 import { createFileRoute, useRouter } from '@tanstack/react-router'
 
 // import COOKIE_ICON from '@/assets/cookie-icon.svg'
-import KYCRegisterForm from '@/modules/kyc/components/registration-form'
-
-// import JoinForm from '@/modules/auth/components/forms/join-form'
+import KYCRegisterForm from '@e-coop-monorepo/modules/kyc/components/registration-form'
+// import JoinForm from '@e-coop-monorepo/modules/auth/components/forms/join-form'
 
 import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
 

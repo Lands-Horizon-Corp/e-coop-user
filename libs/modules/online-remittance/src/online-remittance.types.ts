@@ -1,4 +1,4 @@
-import { IBaseEntityMeta, TEntityId } from '@/types'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IBank } from '../bank'
 import { ICurrency } from '../currency'

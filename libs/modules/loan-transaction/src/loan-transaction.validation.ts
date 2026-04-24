@@ -4,7 +4,7 @@ import {
     EntityIdSchema,
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { ComakerCollateralSchema } from '../comaker-collateral'
 import { ComakerMemberProfileSchema } from '../comaker-member-profile'

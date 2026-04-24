@@ -1,6 +1,6 @@
 import { useRouter } from '@tanstack/react-router'
 
-import { useAuthStore } from '@/modules/auth/authgentication.store'
+import { useAuthStore } from '@e-coop-monorepo/modules/auth/authgentication.store'
 
 import ImageDisplay from '@/components/image-display'
 import { Button } from '@/components/ui/button'

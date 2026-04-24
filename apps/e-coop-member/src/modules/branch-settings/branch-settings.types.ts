@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { ICurrency } from '../currency'
@@ -95,7 +99,7 @@ export interface IBranchSettings extends IBaseEntityMeta {
 
 export type IBranchSettingsRequest = z.infer<typeof BranchSettingsSchema>
 
-export interface IBranchSettingsPaginated extends IPaginatedResult<IBranchSettings> {}
+export type IBranchSettingsPaginated = IPaginatedResult<IBranchSettings>
 
 //  FOR BRANCH SETTINGS CURRENCY
 

@@ -1,4 +1,7 @@
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IMemberProfile } from '../member-profile'
@@ -29,4 +32,5 @@ export interface ICashCheckVoucherEntry extends IBaseEntityMeta {
 
 export type ICashCheckVoucherEntryRequest = TCashCheckVoucherEntrySchema
 
-export interface ICashCheckVoucherEntryPaginated extends IPaginatedResult<ICashCheckVoucherEntry> {}
+export type ICashCheckVoucherEntryPaginated =
+    IPaginatedResult<ICashCheckVoucherEntry>

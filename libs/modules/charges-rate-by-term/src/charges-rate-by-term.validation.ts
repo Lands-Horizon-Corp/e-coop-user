@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { EntityIdSchema, PercentageSchema, entityIdSchema } from '@/validation'
+import {
+    EntityIdSchema,
+    PercentageSchema,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 import { LOAN_MODE_OF_PAYMENT } from '../loan-transaction/loan.constants'
 

@@ -1,9 +1,8 @@
 import { UseNavigateResult } from '@tanstack/react-router'
 
-import { ICategory } from '@/modules/category'
+import { ICategory } from '@e-coop-monorepo/modules/category'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
-
-import { TEntityId } from '@/types'
 
 export interface CategoryDataStore {
     selectedCategories: ICategory[]

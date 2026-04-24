@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IJournalVoucherORSettings } from '../branch-settings'
 import { ICurrency } from '../currency'
@@ -85,7 +89,7 @@ export type TPrintMode = 'print' | 'print-undo' | 'approve'
 
 export type TJournalActionMode = 'approve-undo' | 'release' | 'print-only'
 
-export interface IJournalVoucherPaginated extends IPaginatedResult<IJournalVoucher> {}
+export type IJournalVoucherPaginated = IPaginatedResult<IJournalVoucher>
 
 export type TORJournalVoucherSettings = Omit<
     IJournalVoucherORSettings,

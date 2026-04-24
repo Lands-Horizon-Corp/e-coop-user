@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ICurrency } from '../currency'
 import { HolidaySchema } from './holiday.validation'
@@ -17,7 +21,7 @@ export interface IHoliday extends IBaseEntityMeta {
 
 export type IHolidayRequest = z.infer<typeof HolidaySchema>
 
-export interface IHolidayPaginated extends IPaginatedResult<IHoliday> {}
+export type IHolidayPaginated = IPaginatedResult<IHoliday>
 
 export interface IHolidayYears {
     year: number

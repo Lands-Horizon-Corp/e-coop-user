@@ -1,6 +1,6 @@
-import { Logger } from '@/helpers/loggers'
-import type { IFunds, IFundsRequest } from '@/modules/funds'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+import type { IFunds, IFundsRequest } from '@e-coop-monorepo/modules/funds'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

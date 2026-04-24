@@ -1,9 +1,9 @@
-import { Logger } from '@/helpers/loggers'
 import type {
     ITransactionTag,
     ITransactionTagRequest,
-} from '@/modules/transaction-tag'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/modules/transaction-tag'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 const {
     apiCrudHooks,

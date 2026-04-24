@@ -1,5 +1,5 @@
-import { TColumnDataTypes } from '@/contexts/filter-context'
-import { ColumnTypeResolver } from '@/helpers/resolver/column-type-resolver'
+import { TColumnDataTypes } from '@e-coop-monorepo/shared/contexts'
+import { ColumnTypeResolver } from '@e-coop-monorepo/shared/helpers'
 import { ColumnDef, Table } from '@tanstack/react-table'
 
 export interface IColumnReportFilter {

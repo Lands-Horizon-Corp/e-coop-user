@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 export interface IJournalVoucherTag extends IBaseEntityMeta {
     journal_voucher_id?: TEntityId
@@ -18,4 +22,4 @@ export type IJournalVoucherTagRequest = {
     icon?: string
 }
 
-export interface IJournalVoucherTagPaginated extends IPaginatedResult<IJournalVoucherTag> {}
+export type IJournalVoucherTagPaginated = IPaginatedResult<IJournalVoucherTag>

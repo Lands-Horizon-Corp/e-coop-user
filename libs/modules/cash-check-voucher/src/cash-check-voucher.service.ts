@@ -1,17 +1,16 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { Logger } from '@/helpers/loggers'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
+} from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@/providers/repositories/mutation-factory'
-
-import { TAPIQueryOptions, TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { createMutationInvalidateFn } from '../../providers/repositories/mutation-factory'
 import type {
@@ -126,7 +125,7 @@ export const useFilteredPaginatedCashCheckVoucher = ({
             Boolean
         ),
         queryFn: async () => {
-            const url: string = `${cashCheckVoucherAPIRoute}/${mode ? mode : ''}/search`
+            const url = `${cashCheckVoucherAPIRoute}/${mode ? mode : ''}/search`
             const finalUrl = qs.stringifyUrl(
                 {
                     url,

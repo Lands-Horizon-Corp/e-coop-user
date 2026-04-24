@@ -1,7 +1,6 @@
-import { cn } from '@/helpers'
-import { IMedia } from '@/modules/media'
-import { IconType } from 'react-icons/lib'
-
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import {
     BookOpenIcon,
     CodeFileFillIcon,
@@ -17,8 +16,7 @@ import {
     TextFileFillIcon,
     VideoFileFillIcon,
 } from '@e-coop-monorepo/ui/components/icons'
-
-import { IClassProps } from '@/types'
+import { IconType } from 'react-icons/lib'
 
 import { getFileCategory, getFileInfo } from '../'
 

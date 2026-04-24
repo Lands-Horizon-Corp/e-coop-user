@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { descriptionTransformerSanitizer, entityIdSchema } from '@/validation'
+import {
+    descriptionTransformerSanitizer,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 export const IncludeNegativeAccountsSchema = z.object({
     id: entityIdSchema.optional(),

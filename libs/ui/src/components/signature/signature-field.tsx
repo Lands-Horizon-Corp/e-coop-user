@@ -1,7 +1,7 @@
 import { ReactElement, forwardRef, useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { IMedia } from '@/modules/media'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { SignatureLightIcon, XIcon } from '@/components/icons'
 import ImageDisplay from '@/components/image-display'

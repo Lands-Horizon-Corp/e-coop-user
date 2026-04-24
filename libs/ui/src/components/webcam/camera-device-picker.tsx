@@ -1,8 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import { withCatchAsync } from '@/helpers/function-utils'
-import { cn } from '@/helpers/tw-utils'
+import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 import { CameraIcon, RefreshIcon } from '@/components/icons'
 import LoadingSpinner from '@/components/spinners/loading-spinner'
@@ -14,8 +15,6 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
-
-import { IBaseProps } from '@/types'
 
 interface Props extends IBaseProps {
     currentCamId: string | undefined

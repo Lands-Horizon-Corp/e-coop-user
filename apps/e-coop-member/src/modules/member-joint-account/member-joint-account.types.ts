@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, TEntityId } from '@/types/common'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IMedia } from '../media/media.types'
 import { IMemberProfile } from '../member-profile/member-profile.types'

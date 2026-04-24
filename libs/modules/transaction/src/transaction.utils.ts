@@ -1,4 +1,4 @@
-import { mmddyyyy } from '@/helpers/date-utils'
+import { mmddyyyy } from '@e-coop-monorepo/shared/helpers'
 
 import { buildOR } from '../or-builder'
 import { TPaymentMode } from '../quick-transfer'

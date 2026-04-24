@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { calculateUploadProgress } from '@/helpers/axios-helpers/axios-progress-helper'
-import { IMedia, useUploadMedia } from '@/modules/media'
+import { IMedia, useUploadMedia } from '@e-coop-monorepo/modules/media'
+import { calculateUploadProgress } from '@e-coop-monorepo/shared/helpers'
 
 import Signature from '.'
 import ImageDisplay from '../image-display'
@@ -72,13 +72,11 @@ const SignaturePickerUploader = ({ onSignatureUpload }: Props) => {
                     </Button>
                 </>
             ) : (
-                <>
-                    <Signature
-                        className=" border-0 bg-transparent p-0"
-                        hideDownload
-                        onSignatureChange={(signature) => setFile(signature)}
-                    />
-                </>
+                <Signature
+                    className=" border-0 bg-transparent p-0"
+                    hideDownload
+                    onSignatureChange={(signature) => setFile(signature)}
+                />
             )}
         </div>
     )

@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { entityIdSchema } from '@/validation'
+import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 export const interestRateByTermsHeaderSchema = z.object({
     member_classification_interest_rate_id: entityIdSchema,

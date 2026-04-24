@@ -1,4 +1,7 @@
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { TPermission } from '../permission/permission.types'
 import { TPermissionTemplateSchema } from './permission-template.validation'
@@ -11,6 +14,6 @@ export interface IPermissionTemplate extends IBaseEntityMeta {
 
 export type IPermissionTemplateRequest = TPermissionTemplateSchema
 
-export interface IPermissionTemplatePaginated extends IPaginatedResult<IPermissionTemplate> {}
+export type IPermissionTemplatePaginated = IPaginatedResult<IPermissionTemplate>
 
-export interface IPermissionTemplatePaginated extends IPaginatedResult<IPermissionTemplate> {}
+export type IPermissionTemplatePaginated = IPaginatedResult<IPermissionTemplate>

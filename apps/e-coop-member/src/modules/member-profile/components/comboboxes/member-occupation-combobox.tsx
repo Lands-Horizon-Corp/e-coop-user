@@ -1,8 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { Check } from 'lucide-react'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
 import { ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
@@ -18,6 +16,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/components/ui/popover'
+import { Check } from 'lucide-react'
 
 export interface IMemberOccupation {
     id: string

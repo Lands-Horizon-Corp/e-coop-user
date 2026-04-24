@@ -1,5 +1,5 @@
-import { CIVIL_STATUS, GENERAL_STATUS } from '@/constants'
-import { IBranch } from '@/modules/branch'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { CIVIL_STATUS, GENERAL_STATUS } from '@e-coop-monorepo/shared/constants'
 
 import { IOrganization } from '../modules/organization'
 import { IUserBase } from '../modules/user/user.types'

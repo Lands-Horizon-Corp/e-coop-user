@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IChargesRateByRangeOrMinimumAmount } from '../charges-rate-by-range-or-minimum-amount'
 import { IChargesRateByTerm } from '../charges-rate-by-term'
@@ -88,7 +92,7 @@ export type ICharegesRateSchemeCreateRequest = TChargesRateCreateSchemeSchema
 
 export type IChargesRateSchemeRequest = TChargesRateSchemeSchema
 
-export interface IChargesRateSchemePaginated extends IPaginatedResult<IChargesRateScheme> {}
+export type IChargesRateSchemePaginated = IPaginatedResult<IChargesRateScheme>
 
 // FOR SERVICE HOOKS
 

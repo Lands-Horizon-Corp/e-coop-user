@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { Button } from './button'
 

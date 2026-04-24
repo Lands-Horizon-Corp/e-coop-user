@@ -2,15 +2,15 @@
 import * as React from 'react'
 import { forwardRef, useEffect, useRef, useState } from 'react'
 
-import { cn, formatDate } from '@/helpers'
-import { formatBytes } from '@/modules/media'
+import { formatBytes } from '@e-coop-monorepo/modules/media'
+import { cn, formatDate } from '@e-coop-monorepo/shared/helpers'
 import {
     DownloadProps,
     ImageContainerProps,
     ImagePreviewActionProps,
     ImagePreviewButtonActionProps,
     ImagePreviewPanelProps,
-} from '@/types/component-types/image-preview'
+} from '@e-coop-monorepo/shared/types'
 import useEmblaCarousel from 'embla-carousel-react'
 
 import {
@@ -285,6 +285,7 @@ export const ImageContainer = ({
                     <a
                         className="py-1 text-xs "
                         href={media.download_url}
+                        rel="noreferrer"
                         target="_blank"
                     >
                         Open in Browser

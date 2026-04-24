@@ -2,6 +2,22 @@
 
 import { useState } from 'react'
 
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from '@e-coop-monorepo/ui/components/ui/card'
+import {
+    Dialog,
+    DialogContent,
+    DialogDescription,
+    DialogTitle,
+} from '@e-coop-monorepo/ui/components/ui/dialog'
 import {
     Activity,
     AlertCircle,
@@ -46,24 +62,6 @@ import {
     XAxis,
     YAxis,
 } from 'recharts'
-
-import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@e-coop-monorepo/ui/components/ui/card'
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogTitle,
-} from '@e-coop-monorepo/ui/components/ui/dialog'
-
-import { useModalState } from '@/hooks/use-modal-state'
 
 import { CoopBackground } from '../home/components/coop-bg'
 import Organization from '../organization/pages'

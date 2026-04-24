@@ -1,4 +1,8 @@
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { IMemberProfile } from '../member-profile'
@@ -26,7 +30,8 @@ export interface IMemberAccountingLedger extends IBaseEntityMeta {
     hold_out?: string
 }
 
-export interface IMemberAccountingLedgerPaginated extends IPaginatedResult<IMemberAccountingLedger> {}
+export type IMemberAccountingLedgerPaginated =
+    IPaginatedResult<IMemberAccountingLedger>
 
 export interface IMemberAccountingLedgerTotal {
     total_share_capital_plus_fixed_savings: number

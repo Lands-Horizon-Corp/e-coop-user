@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { EntityIdSchema } from '@/validation'
+import { EntityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 export const HolidaySchema = z.object({
     name: z.string().min(1, 'Holiday name is required'),

@@ -1,4 +1,4 @@
-import { SoftwareUpdates } from '@/modules/feedback'
+import { SoftwareUpdates } from '@e-coop-monorepo/modules/feedback'
 
 import { BugIcon, PlantGrowthIcon } from '@/components/icons'
 

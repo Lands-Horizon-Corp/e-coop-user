@@ -2,10 +2,9 @@ import { ReactNode } from 'react'
 
 import { useRouter, useSearch } from '@tanstack/react-router'
 
-import { cn } from '@/helpers'
-import { useAuthMember } from '@/store/fake-store'
-import { IconType } from 'react-icons/lib'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useAuthMember } from '@e-coop-monorepo/shared/store'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
 import {
     GraduationCapIcon,
@@ -16,10 +15,17 @@ import {
     UserTagIcon,
     Users3Icon,
 } from '@e-coop-monorepo/ui/components/icons'
-import { ScrollArea, ScrollBar } from '@e-coop-monorepo/ui/components/ui/scroll-area'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@e-coop-monorepo/ui/components/ui/tabs'
-
-import { IClassProps } from '@/types'
+import {
+    ScrollArea,
+    ScrollBar,
+} from '@e-coop-monorepo/ui/components/ui/scroll-area'
+import {
+    Tabs,
+    TabsContent,
+    TabsList,
+    TabsTrigger,
+} from '@e-coop-monorepo/ui/components/ui/tabs'
+import { IconType } from 'react-icons/lib'
 
 import IdentityForm from '../components/forms/identity-form'
 import AccountRelationship from '../components/settings-pages/account-relationship'
@@ -135,7 +141,7 @@ const SettingsTabs: {
     },
 ]
 
-interface Props extends IClassProps {}
+type Props = IClassProps
 
 const MemberProfileSettingsPage = ({ className }: Props) => {
     const router = useRouter()

@@ -1,4 +1,9 @@
-import { IAuditable, IPaginatedResult, ITimeStamps, TEntityId } from '@/types'
+import {
+    IAuditable,
+    IPaginatedResult,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IBatchFundingRequest } from '../batch-funding'
 import { IBranch } from '../branch'
@@ -76,7 +81,7 @@ export interface ITransactionBatch
     currency: ICurrency
 }
 
-export interface ITransactionBatchMinimal extends Omit<
+export type ITransactionBatchMinimal = Omit<
     ITransactionBatch,
     | 'total_cash_collection'
     | 'total_deposit_entry'
@@ -93,7 +98,7 @@ export interface ITransactionBatchMinimal extends Omit<
     | 'total_actual_remittance'
     | 'total_actual_supposed_comparison'
     | keyof ITransactionBatchSignatures
-> {}
+>
 
 export type TTransactionBatchFullorMin =
     | ITransactionBatch
@@ -186,4 +191,4 @@ export interface ITransactionBatchHistoryTotal {
     deposit_entry_credit_total: number
 }
 
-export interface ITransactionBatchPaginated extends IPaginatedResult<ITransactionBatch> {}
+export type ITransactionBatchPaginated = IPaginatedResult<ITransactionBatch>

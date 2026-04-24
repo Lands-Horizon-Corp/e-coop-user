@@ -1,8 +1,8 @@
-import { IAuthContext } from '@/modules/authentication'
-import { IBranch } from '@/modules/branch'
-import { IOrganization } from '@/modules/organization'
-import { IUserBase } from '@/modules/user'
-import { IUserOrganization } from '@/modules/user-organization'
+import { IAuthContext } from '@e-coop-monorepo/modules/authentication'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { create } from 'zustand'
 
 import {

@@ -9,7 +9,7 @@ import {
     passwordSchema,
     stringDateSchema,
     userNameSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 import { isBefore, startOfDay } from 'date-fns'
 
 export const WithPassword = z.discriminatedUnion('with_password', [

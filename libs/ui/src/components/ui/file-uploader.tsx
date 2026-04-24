@@ -2,8 +2,8 @@ import { useCallback, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers/tw-utils'
-import { formatBytes } from '@/modules/media'
+import { formatBytes } from '@e-coop-monorepo/modules/media'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 import {
     DropzoneOptions,
     FileRejection,

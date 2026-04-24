@@ -4,7 +4,7 @@ import {
     EntityIdSchema,
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { MutualFundAdditionalMembersSchema } from '../mutual-fund-additional-members'
 import { MutualFundTableSchema } from '../mutual-fund-table'

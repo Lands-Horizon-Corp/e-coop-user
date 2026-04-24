@@ -5,7 +5,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { MemberCenterSchema } from './member-center.validation'
 
@@ -18,4 +18,4 @@ export interface IMemberCenter extends ITimeStamps, IAuditable {
     description: string
 }
 
-export interface IMemberCenterPaginated extends IPaginatedResult<IMemberCenter> {}
+export type IMemberCenterPaginated = IPaginatedResult<IMemberCenter>

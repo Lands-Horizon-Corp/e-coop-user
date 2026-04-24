@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ICollateral } from '../collateral'
 import { ComakerCollateralSchema } from './comaker-collateral.validation'
@@ -17,4 +21,4 @@ export interface IComakerCollateral extends IBaseEntityMeta {
 
 export type IComakerCollateralRequest = z.infer<typeof ComakerCollateralSchema>
 
-export interface IComakerCollateralPaginated extends IPaginatedResult<IComakerCollateral> {}
+export type IComakerCollateralPaginated = IPaginatedResult<IComakerCollateral>

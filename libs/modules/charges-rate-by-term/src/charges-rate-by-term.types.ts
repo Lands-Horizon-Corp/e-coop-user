@@ -1,4 +1,4 @@
-import { IBaseEntityMeta, TEntityId } from '@/types/common'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IChargesRateScheme } from '../charges-rate-scheme'
 import { TLoanModeOfPayment } from '../loan-transaction'

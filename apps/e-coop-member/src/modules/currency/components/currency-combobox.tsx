@@ -1,15 +1,17 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers/tw-utils'
 import {
     ICurrency,
     TCurrencyHookMode,
     useGetAllCurrency,
-} from '@/modules/currency'
-import { findCountry } from '@/modules/member-profile/components/comboboxes/country-combobox'
-import { CircleFlag } from 'react-circle-flags'
-
-import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
+} from '@e-coop-monorepo/modules/currency'
+import { findCountry } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
+import {
+    CheckIcon,
+    ChevronDownIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
@@ -25,8 +27,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/components/ui/popover'
-
-import { TEntityId } from '@/types'
+import { CircleFlag } from 'react-circle-flags'
 
 type TFormatDisplay =
     | 'emoji-name-code' // 🇵🇭 Philippine Peso (PHP)
@@ -169,103 +170,95 @@ const CurrencyCombobox = ({
     }
 
     return (
-        <>
-            <Popover modal onOpenChange={setOpen} open={open}>
-                <PopoverTrigger asChild>
-                    <Button
-                        aria-expanded={open}
-                        className={cn(
-                            'w-full flex items-center px-3',
-                            className
-                        )}
-                        disabled={disabled || isLoading}
-                        role="combobox"
-                        variant="outline"
-                    >
-                        {selectedCurrency ? (
-                            formatCurrencyDisplay(
-                                formatDisplay,
-                                selectedCurrency
-                            )
-                        ) : (
-                            <span className="text-muted-foreground">
-                                {placeholder}
-                            </span>
-                        )}
-                        <ChevronDownIcon className="opacity-50 shrink-0" />
-                    </Button>
-                </PopoverTrigger>
-                <PopoverContent className="max-h-[--radix-popover-content-available-height] w-[--radix-popover-trigger-width] p-0">
-                    <Command>
-                        <CommandInput
-                            className="h-9"
-                            placeholder="Search Currency..."
-                        />
-                        {isLoading ? (
-                            <CommandEmpty>
-                                <LoadingSpinner className="mr-2 inline-block" />{' '}
-                                Loading...
-                            </CommandEmpty>
-                        ) : (
-                            <CommandList className="ecoop-scroll">
-                                <CommandEmpty>No Currency found.</CommandEmpty>
-                                <CommandGroup>
-                                    {data?.map((option) => (
-                                        <CommandItem
-                                            key={option.id}
-                                            onSelect={() => {
-                                                setOpen(false)
-                                                onChange?.(option)
-                                            }}
-                                            value={`${option.name} ${option.currency_code} ${option.country}`}
-                                        >
-                                            <div className="flex items-center gap-2 min-w-0 flex-1">
-                                                {(option.iso_3166_alpha2 ||
-                                                    option.country) && (
-                                                    <CircleFlag
-                                                        className={cn(
-                                                            'inline-flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full'
-                                                        )}
-                                                        countryCode={(
-                                                            option?.iso_3166_alpha2 ||
-                                                            findCountry(
-                                                                option?.country ||
-                                                                    ''
-                                                            )?.alpha2 ||
-                                                            'US'
-                                                        ).toLowerCase()}
-                                                        height={20}
-                                                    />
-                                                )}
-                                                <div className="flex flex-col min-w-0">
-                                                    <span className="truncate font-medium">
-                                                        {option.name} (
-                                                        {option.currency_code})
-                                                    </span>
-                                                    <span className="truncate text-xs text-muted-foreground">
-                                                        {option.country}
-                                                        {option.symbol &&
-                                                            ` • ${option.symbol}`}
-                                                    </span>
-                                                </div>
+        <Popover modal onOpenChange={setOpen} open={open}>
+            <PopoverTrigger asChild>
+                <Button
+                    aria-expanded={open}
+                    className={cn('w-full flex items-center px-3', className)}
+                    disabled={disabled || isLoading}
+                    role="combobox"
+                    variant="outline"
+                >
+                    {selectedCurrency ? (
+                        formatCurrencyDisplay(formatDisplay, selectedCurrency)
+                    ) : (
+                        <span className="text-muted-foreground">
+                            {placeholder}
+                        </span>
+                    )}
+                    <ChevronDownIcon className="opacity-50 shrink-0" />
+                </Button>
+            </PopoverTrigger>
+            <PopoverContent className="max-h-[--radix-popover-content-available-height] w-[--radix-popover-trigger-width] p-0">
+                <Command>
+                    <CommandInput
+                        className="h-9"
+                        placeholder="Search Currency..."
+                    />
+                    {isLoading ? (
+                        <CommandEmpty>
+                            <LoadingSpinner className="mr-2 inline-block" />{' '}
+                            Loading...
+                        </CommandEmpty>
+                    ) : (
+                        <CommandList className="ecoop-scroll">
+                            <CommandEmpty>No Currency found.</CommandEmpty>
+                            <CommandGroup>
+                                {data?.map((option) => (
+                                    <CommandItem
+                                        key={option.id}
+                                        onSelect={() => {
+                                            setOpen(false)
+                                            onChange?.(option)
+                                        }}
+                                        value={`${option.name} ${option.currency_code} ${option.country}`}
+                                    >
+                                        <div className="flex items-center gap-2 min-w-0 flex-1">
+                                            {(option.iso_3166_alpha2 ||
+                                                option.country) && (
+                                                <CircleFlag
+                                                    className={cn(
+                                                        'inline-flex size-5 shrink-0 items-center justify-center overflow-hidden rounded-full'
+                                                    )}
+                                                    countryCode={(
+                                                        option?.iso_3166_alpha2 ||
+                                                        findCountry(
+                                                            option?.country ||
+                                                                ''
+                                                        )?.alpha2 ||
+                                                        'US'
+                                                    ).toLowerCase()}
+                                                    height={20}
+                                                />
+                                            )}
+                                            <div className="flex flex-col min-w-0">
+                                                <span className="truncate font-medium">
+                                                    {option.name} (
+                                                    {option.currency_code})
+                                                </span>
+                                                <span className="truncate text-xs text-muted-foreground">
+                                                    {option.country}
+                                                    {option.symbol &&
+                                                        ` • ${option.symbol}`}
+                                                </span>
                                             </div>
-                                            <CheckIcon
-                                                className={cn(
-                                                    'ml-auto flex-shrink-0',
-                                                    value === option.id
-                                                        ? 'opacity-100'
-                                                        : 'opacity-0'
-                                                )}
-                                            />
-                                        </CommandItem>
-                                    ))}
-                                </CommandGroup>
-                            </CommandList>
-                        )}
-                    </Command>
-                </PopoverContent>
-            </Popover>
-        </>
+                                        </div>
+                                        <CheckIcon
+                                            className={cn(
+                                                'ml-auto flex-shrink-0',
+                                                value === option.id
+                                                    ? 'opacity-100'
+                                                    : 'opacity-0'
+                                            )}
+                                        />
+                                    </CommandItem>
+                                ))}
+                            </CommandGroup>
+                        </CommandList>
+                    )}
+                </Command>
+            </PopoverContent>
+        </Popover>
     )
 }
 

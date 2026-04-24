@@ -1,5 +1,5 @@
-import { Logger } from '@/helpers/loggers'
-import { createDataLayerFactory } from '@/providers/repositories/data-layer-factory'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 import type {
     IMutualFundTable,

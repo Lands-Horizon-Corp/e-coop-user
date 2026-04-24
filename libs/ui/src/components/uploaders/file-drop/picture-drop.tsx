@@ -2,13 +2,12 @@ import { DragEvent, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 import { ImageIcon } from '@/components/icons'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-
-import { IBaseProps } from '@/types'
 
 interface Props extends IBaseProps {
     onFileSelect: (files: FileList) => void

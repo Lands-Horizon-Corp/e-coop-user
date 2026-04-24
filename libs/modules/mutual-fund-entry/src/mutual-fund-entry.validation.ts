@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { EntityIdSchema, entityIdSchema } from '@/validation'
+import {
+    EntityIdSchema,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 export const MutualFundEntrySchema = z.object({
     id: entityIdSchema.optional(),

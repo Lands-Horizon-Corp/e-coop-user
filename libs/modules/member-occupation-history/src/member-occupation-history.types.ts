@@ -4,7 +4,7 @@ import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@/types/common'
+} from '@e-coop-monorepo/shared/types'
 
 import { IMemberOccupation } from '../member-occupation/member-occupation.types'
 import { IMemberProfile } from '../member-profile/member-profile.types'
@@ -23,4 +23,5 @@ export interface IMemberOccupationHistory
     member_occupation?: IMemberOccupation
 }
 
-export interface IMemberOccupationHistoryPaginated extends IPaginatedResult<IMemberOccupationHistory> {}
+export type IMemberOccupationHistoryPaginated =
+    IPaginatedResult<IMemberOccupationHistory>

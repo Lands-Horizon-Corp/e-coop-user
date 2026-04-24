@@ -1,8 +1,7 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers/tw-utils'
-import { Check } from 'lucide-react'
-
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon, PlusIcon } from '@e-coop-monorepo/ui/components/icons'
 import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
@@ -20,8 +19,7 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/components/ui/popover'
-
-import { TEntityId } from '@/types'
+import { Check } from 'lucide-react'
 
 import { useGetAllMemberTypes } from '../member-type.service'
 import { IMemberType } from '../member-type.types'
@@ -30,10 +28,10 @@ import {
     TMemberTypeForm,
 } from './forms/member-type-create-update-form'
 
-export interface IMemberTypeComboboxCreateProps extends Pick<
+export type IMemberTypeComboboxCreateProps = Pick<
     TMemberTypeForm,
     'name' | 'prefix' | 'description'
-> {}
+>
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

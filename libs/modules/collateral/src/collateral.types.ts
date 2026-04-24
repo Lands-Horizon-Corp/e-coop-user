@@ -1,4 +1,7 @@
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { TCollateralSchema } from './collateral.validation'
 
@@ -11,4 +14,4 @@ export interface ICollateral extends IBaseEntityMeta {
 
 export type ICollateralRequest = TCollateralSchema
 
-export interface ICollateralPaginated extends IPaginatedResult<ICollateral> {}
+export type ICollateralPaginated = IPaginatedResult<ICollateral>

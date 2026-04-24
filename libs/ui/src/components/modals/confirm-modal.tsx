@@ -1,5 +1,5 @@
-import { cn } from '@/helpers/tw-utils'
-import useConfirmModalStore from '@/store/confirm-modal-store'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 
 import Modal from '@/components/modals/modal'
 import { Button } from '@/components/ui/button'

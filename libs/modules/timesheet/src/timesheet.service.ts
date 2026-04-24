@@ -1,13 +1,16 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@/helpers/loggers'
+import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
     createDataLayerFactory,
-} from '@/providers/repositories/data-layer-factory'
-import { createMutationFactory } from '@/providers/repositories/mutation-factory'
-
-import { IPaginatedResult, TAPIQueryOptions, TEntityId } from '@/types'
+} from '@e-coop-monorepo/shared/providers'
+import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
+import {
+    IPaginatedResult,
+    TAPIQueryOptions,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ITimesheet, ITimesheetInOutRequest } from './timesheet.types'
 

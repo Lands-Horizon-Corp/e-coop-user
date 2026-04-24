@@ -1,13 +1,12 @@
 import { ReactNode } from 'react'
 
-import { useDeleteById } from '@/modules/member-occupation/member-occupation.service'
-import { IMemberOccupation } from '@/modules/member-occupation/member-occupation.types'
-import useConfirmModalStore from '@/store/confirm-modal-store'
-import { Row } from '@tanstack/react-table'
-
+import { useDeleteById } from '@e-coop-monorepo/modules/member-occupation/member-occupation.service'
+import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation/member-occupation.types'
+import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 import RowActionsGroup from '@e-coop-monorepo/ui/components/data-table/data-table-row-actions'
 import DataTableRowContext from '@e-coop-monorepo/ui/components/data-table/data-table-row-context'
 import { useTableRowActionStore } from '@e-coop-monorepo/ui/components/data-table/store/data-table-action-store'
+import { Row } from '@tanstack/react-table'
 
 import { MemberOccupationCreateUpdateFormModal } from '../../member-occupation-create-update-form'
 import { IMemberOccupationTableActionComponentProp } from './columns'
@@ -115,23 +114,21 @@ export const MemberOccupationRowContext = ({
         useMemberOccupationActions({ row, onDeleteSuccess })
 
     return (
-        <>
-            <DataTableRowContext
-                onDelete={{
-                    text: 'Delete',
-                    isAllowed: !isDeletingMemberOccupation,
-                    onClick: handleDelete,
-                }}
-                onEdit={{
-                    text: 'Edit',
-                    isAllowed: true,
-                    onClick: handleEdit,
-                }}
-                row={row}
-            >
-                {children}
-            </DataTableRowContext>
-        </>
+        <DataTableRowContext
+            onDelete={{
+                text: 'Delete',
+                isAllowed: !isDeletingMemberOccupation,
+                onClick: handleDelete,
+            }}
+            onEdit={{
+                text: 'Edit',
+                isAllowed: true,
+                onClick: handleEdit,
+            }}
+            row={row}
+        >
+            {children}
+        </DataTableRowContext>
     )
 }
 

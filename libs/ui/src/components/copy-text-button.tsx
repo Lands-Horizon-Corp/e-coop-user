@@ -2,9 +2,8 @@ import { useCallback, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers/tw-utils'
-
-import { IBaseProps } from '@/types'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 import { CheckIcon, CopyIcon } from './icons'
 

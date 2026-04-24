@@ -1,4 +1,8 @@
-import { IAuditable, ITimeStamps, TEntityId } from '@/types'
+import {
+    IAuditable,
+    ITimeStamps,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
 import { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'

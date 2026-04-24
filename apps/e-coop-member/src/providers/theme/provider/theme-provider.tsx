@@ -11,7 +11,7 @@ import {
     removeLocalStorage,
     setLocalStorage,
     useLocalStorage,
-} from '@/hooks/use-localstorage'
+} from '@e-coop-monorepo/shared/hooks'
 
 export type Theme = 'dark' | 'light' | 'system'
 export type ResolvedTheme = 'dark' | 'light'

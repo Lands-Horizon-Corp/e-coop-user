@@ -5,13 +5,14 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@/helpers'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
-import { MemberAddressSchema } from '@/modules/member-address/member-address.validation'
-import { IMemberAddressRequest } from '@/modules/member-profile'
-import { CountryCombobox } from '@/modules/member-profile/components/comboboxes/country-combobox'
-import { MapPin, MoreVertical, Pencil, Plus, Star, Trash2 } from 'lucide-react'
-
+import { MemberAddressSchema } from '@e-coop-monorepo/modules/member-address/member-address.validation'
+import { IMemberAddressRequest } from '@e-coop-monorepo/modules/member-profile'
+import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
 import MapView, { MapLocation } from '@e-coop-monorepo/ui/components/map'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
@@ -27,11 +28,7 @@ import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapp
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'
 import { Switch } from '@e-coop-monorepo/ui/components/ui/switch'
 import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
-
-import { useFormHelper } from '@/hooks/use-form-helper'
-import { useModalState } from '@/hooks/use-modal-state'
-
-import { IClassProps, IForm } from '@/types'
+import { MapPin, MoreVertical, Pencil, Plus, Star, Trash2 } from 'lucide-react'
 
 import { useKYCVerifyAddresses } from '../..'
 import { IKYCVerifyAddressesRequest } from '../../kyc.types'

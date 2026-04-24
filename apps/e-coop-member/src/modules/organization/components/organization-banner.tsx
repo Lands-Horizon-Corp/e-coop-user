@@ -1,7 +1,9 @@
-import { cn } from '@/helpers'
-import AnimateRevealEffect from '@/modules/home/components/animate-reveal-effect'
-
-import { BuildingBranchIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui/components/icons'
+import AnimateRevealEffect from '@e-coop-monorepo/modules/home/components/animate-reveal-effect'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import {
+    BuildingBranchIcon,
+    MagnifyingGlassIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import TruncatedText from '@e-coop-monorepo/ui/components/ui/truncated-text'
@@ -72,23 +74,23 @@ export const OrganizationBanner = ({
 
                 <div className="max-w-2xl">
                     <TruncatedText
-                        maxLength={300}
                         className="text-muted-foreground text-lg leading-relaxed"
+                        maxLength={300}
                         text={organization.description}
                     />
                 </div>
 
                 <div className="mt-10 flex flex-wrap justify-center gap-4">
                     <Button
-                        size="lg"
                         className="rounded-full px-10 font-bold h-12"
+                        size="lg"
                     >
                         Join Organization
                     </Button>
                     <Button
+                        className="rounded-full px-10 font-bold h-12"
                         size="lg"
                         variant="outline"
-                        className="rounded-full px-10 font-bold h-12"
                     >
                         Discover More
                         <MagnifyingGlassIcon className="ml-2 h-5 w-5" />

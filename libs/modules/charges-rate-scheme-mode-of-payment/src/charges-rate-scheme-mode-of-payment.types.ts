@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { ChargesRateSchemeModeOfPaymentSchema } from './charges-rate-scheme-mode-of-payment.validation'
 
@@ -36,4 +39,5 @@ export type IChargesRateSchemeModeOfPaymentRequest = z.infer<
     typeof ChargesRateSchemeModeOfPaymentSchema
 >
 
-export interface IChargesRateSchemeModeOfPaymentPaginated extends IPaginatedResult<IChargesRateSchemeModeOfPayment> {}
+export type IChargesRateSchemeModeOfPaymentPaginated =
+    IPaginatedResult<IChargesRateSchemeModeOfPayment>

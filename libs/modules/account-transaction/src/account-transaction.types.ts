@@ -1,6 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+} from '@e-coop-monorepo/shared/types'
 
 import { IAccountTransactionEntry } from '../account-transaction-entry'
 import { ACCOUNT_TRANSACTION_SOURCE } from './account-transaction-constants'
@@ -39,4 +42,4 @@ export interface IAccountTransactionLedger {
     credit: number
 }
 
-export interface IAccountTransactionPaginated extends IPaginatedResult<IAccountTransaction> {}
+export type IAccountTransactionPaginated = IPaginatedResult<IAccountTransaction>

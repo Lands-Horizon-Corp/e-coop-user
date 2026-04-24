@@ -1,6 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, IPaginatedResult, TEntityId } from '@/types'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 import { ILoanTransaction } from '../loan-transaction'
 import { IMemberProfile } from '../member-profile'
@@ -21,4 +25,5 @@ export type IComakerMemberProfileRequest = z.infer<
     typeof ComakerMemberProfileSchema
 >
 
-export interface IComakerMemberProfilePaginated extends IPaginatedResult<IComakerMemberProfile> {}
+export type IComakerMemberProfilePaginated =
+    IPaginatedResult<IComakerMemberProfile>

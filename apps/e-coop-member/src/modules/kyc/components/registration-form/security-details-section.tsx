@@ -1,15 +1,16 @@
 import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { cn } from '@/helpers'
-import { serverRequestErrExtractor } from '@/helpers/error-message-extractor'
 import {
     ChecklistTemplate,
     ValueChecklistMeter,
-} from '@/modules/auth/components/value-checklist-indicator'
-import { Lock } from 'lucide-react'
-
-import { EmailIcon, VerifiedPatchIcon } from '@e-coop-monorepo/ui/components/icons'
+} from '@e-coop-monorepo/modules/auth/components/value-checklist-indicator'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import {
+    EmailIcon,
+    VerifiedPatchIcon,
+} from '@e-coop-monorepo/ui/components/icons'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import { FormItem } from '@e-coop-monorepo/ui/components/ui/form'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
@@ -20,6 +21,7 @@ import {
 } from '@e-coop-monorepo/ui/components/ui/input-group'
 import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
 import { PhoneInput } from '@e-coop-monorepo/ui/components/ui/phone-input'
+import { Lock } from 'lucide-react'
 
 import { TKYCVerifySecurityDetailsSchema, useKYCSecurityDetails } from '../..'
 

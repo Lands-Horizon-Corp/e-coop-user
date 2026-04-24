@@ -1,7 +1,18 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs'
 
-import { cn } from '@/helpers/tw-utils'
-import { useTheme } from '@/providers/theme/provider/theme-provider'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { useTheme } from '@e-coop-monorepo/shared/providers'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
+import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from '@e-coop-monorepo/ui/components/ui/card'
 import {
     ArrowDownRight,
     ArrowUpRight,
@@ -19,19 +30,6 @@ import {
     XAxis,
     YAxis,
 } from 'recharts'
-
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
-import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@e-coop-monorepo/ui/components/ui/card'
-
-import { IClassProps } from '@/types'
 
 import { Account } from '../dashboard'
 

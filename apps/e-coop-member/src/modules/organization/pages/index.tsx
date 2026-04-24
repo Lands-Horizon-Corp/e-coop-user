@@ -52,7 +52,7 @@ const Organization = () => {
                 squareSize={4}
             /> */}
             <CoopBackground/>
-            <CoopBackground variant="geometric" opacity={0.3} />
+            <CoopBackground opacity={0.3} variant="geometric" />
             <OrganizationBanner organization={Organization} />
 
             <MediaCarousel medias={Organization.organization_medias} />

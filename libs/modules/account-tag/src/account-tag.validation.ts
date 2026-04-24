@@ -3,7 +3,7 @@ import z from 'zod'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 import { TTagCategory } from '../tag-template'
 

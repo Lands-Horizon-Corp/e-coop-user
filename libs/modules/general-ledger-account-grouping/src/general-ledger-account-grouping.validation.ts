@@ -3,7 +3,7 @@ import z from 'zod'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,
-} from '@/validation'
+} from '@e-coop-monorepo/shared/validation'
 
 export const GeneralLedgerAccountsGroupingSchema = z.object({
     name: z.string().min(1, 'Name is required'),
