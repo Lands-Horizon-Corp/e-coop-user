@@ -1,12 +1,12 @@
 {
-  "extends": "./tsconfig.json",
-  "files": [],
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "outDir": "../../dist/out-tsc",
     "declaration": true,
     "types": ["node"],
     "jsx": "react-jsx",
-    "ignoreDeprecations": "6.0"
+    "ignoreDeprecations": "6.0",
+
   },
   "include": [
     "**/*.ts",
