@@ -19,14 +19,33 @@
         "allowImportingTsExtensions": true,
         "noEmit": true,
         "paths": {
-            "@e-coop-monorepo/shared/helpers": ["libs/shared/src/helpers/index.ts"],
             "@e-coop-monorepo/shared": ["libs/shared/src/index.ts"],
             "@e-coop-monorepo/shared/*": ["libs/shared/src/*"],
             "@e-coop-monorepo/ui": ["libs/ui/src/index.ts"],
             "@e-coop-monorepo/ui/*": ["libs/ui/src/*"],
             "@e-coop-monorepo/modules": ["libs/modules/src/index.ts"],
-            "@e-coop-monorepo/modules/*": ["libs/modules/src/*"]
-            
+            "@e-coop-monorepo/modules/*": ["libs/modules/src/*"],
+            "@e-coop-monorepo/shared/constants": [
+                "libs/shared/constants/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/contexts": [
+                "libs/shared/contexts/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/hooks": ["libs/shared/hooks/src/index.ts"],
+            "@e-coop-monorepo/shared/policies": [
+                "libs/shared/policies/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/providers": [
+                "libs/shared/providers/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/store": ["libs/shared/store/src/index.ts"],
+            "@e-coop-monorepo/shared/types": ["libs/shared/types/src/index.ts"],
+            "@e-coop-monorepo/shared/validation": [
+                "libs/shared/validation/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/helpers": [
+                "libs/shared/helpers/src/index.ts"
+            ]
         },
         "strict": true
     },
