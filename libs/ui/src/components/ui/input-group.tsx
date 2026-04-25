@@ -3,7 +3,7 @@
 import * as React from "react"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from "@e-coop-monorepo/ui/components/lib/utils"
+import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { Button } from "@e-coop-monorepo/ui/components/ui/button"
 import { Input } from "@e-coop-monorepo/ui/components/ui/input"
 import { Textarea } from "@e-coop-monorepo/ui/components/ui/textarea"

@@ -1,6 +1,6 @@
 import { Slider as SliderPrimitive } from "@base-ui/react/slider"
 
-import { cn } from "@e-coop-monorepo/ui/components/lib/utils"
+import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 function Slider({
   className,

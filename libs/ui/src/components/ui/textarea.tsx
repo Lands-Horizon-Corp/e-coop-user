@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import { cn } from "@e-coop-monorepo/ui/components/lib/utils"
+import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 function Textarea({ className, ...props }: React.ComponentProps<"textarea">) {
   return (

@@ -1,6 +1,12 @@
 import { ReactNode } from 'react'
 
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
+export interface IModalState {
+    open: boolean
+    onOpenChange: (value: boolean | ((prev: boolean) => boolean)) => void
+    openModal: () => void
+    close: () => void
+    toggle: () => void
+}
 
 export interface IPickerBaseProps<T = unknown> {
     value?: T
@@ -9,7 +15,7 @@ export interface IPickerBaseProps<T = unknown> {
     disabled?: boolean
     placeholder?: string
     triggerClassName?: string
-    modalState?: ReturnType<typeof useModalState>
+    modalState?: IModalState
 
     customComponent?: ReactNode
     triggerVariant?:
