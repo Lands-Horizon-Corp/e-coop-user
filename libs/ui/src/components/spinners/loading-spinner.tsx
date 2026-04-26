@@ -1,7 +1,7 @@
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
-import { LoadingCircleIcon } from '@/components/icons'
+import { LoadingCircleIcon } from '@e-coop-monorepo/ui'
 
 type Props = IClassProps
 
@@ -16,4 +16,4 @@ const LoadingSpinner = ({ className }: Props) => {
     )
 }
 
-export default LoadingSpinner
+export { LoadingSpinner }

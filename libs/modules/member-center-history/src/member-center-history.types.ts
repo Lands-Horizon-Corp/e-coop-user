@@ -5,9 +5,9 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBranch } from '../branch'
-import { IMemberCenter } from '../member-center/member-center.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { IMemberCenter } from '@e-coop-monorepo/modules/member-center'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberCenterHistory extends ITimeStamps, IAuditable {
     id: TEntityId

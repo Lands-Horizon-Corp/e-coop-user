@@ -11,7 +11,7 @@ import type {
     ILoanLedgerChangeLineRequest,
     ILoanLedgerRequest,
 } from '../loan-ledger'
-import { loanTransactionBaseKey } from '../loan-transaction'
+import { loanTransactionBaseKey } from '@e-coop-monorepo/modules/loan-transaction'
 
 const {
     apiCrudHooks,

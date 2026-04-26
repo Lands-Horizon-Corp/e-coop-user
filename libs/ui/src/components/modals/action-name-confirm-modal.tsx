@@ -3,9 +3,9 @@ import { useState } from 'react'
 import { compareIgnoreCase } from '@e-coop-monorepo/modules/timesheet/components/worktimer/utils'
 import { AlertCircle, CheckCircle2 } from 'lucide-react'
 
-import Modal, { IModalProps } from '@/components/modals/modal'
-import { Button, ButtonVariantType } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui'
+import { Button, ButtonVariantType } from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
 
 interface NameConfirmationProps extends IModalProps {
     name: string

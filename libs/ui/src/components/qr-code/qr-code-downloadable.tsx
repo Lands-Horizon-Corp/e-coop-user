@@ -6,16 +6,16 @@ import {
     useDownloadElement,
 } from '@e-coop-monorepo/shared/hooks'
 
-import { ChevronDownIcon, DownloadIcon } from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
+import { ChevronDownIcon, DownloadIcon } from '@e-coop-monorepo/ui'
+import LoadingSpinner from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@e-coop-monorepo/ui'
 
 import QrCode, { IQrCodeProps } from './qr-code'
 

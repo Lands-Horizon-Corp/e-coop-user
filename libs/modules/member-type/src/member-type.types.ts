@@ -7,8 +7,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBranch } from '../branch'
-import { IBrowseReference } from '../browse-reference'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
 import { MemberTypeSchema } from './member-type.validation'
 
 export interface IMemberType extends ITimeStamps, IAuditable {

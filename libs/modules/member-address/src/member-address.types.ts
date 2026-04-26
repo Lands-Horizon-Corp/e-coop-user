@@ -2,8 +2,8 @@ import z from 'zod'
 
 import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IArea } from '../area'
-// import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IArea } from '@e-coop-monorepo/modules/area'
+// import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { HOME_TYPES } from './member-address.constants'
 import { MemberAddressSchema } from './member-address.validation'
 

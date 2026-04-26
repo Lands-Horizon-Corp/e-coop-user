@@ -6,7 +6,7 @@ import {
     stringDateSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { userAccountTypeSchema } from '../user'
+import { userAccountTypeSchema } from '@e-coop-monorepo/modules/user'
 
 export const InviationCodeSchema = z.object({
     code: z.string().min(1, 'invitation code is required'),

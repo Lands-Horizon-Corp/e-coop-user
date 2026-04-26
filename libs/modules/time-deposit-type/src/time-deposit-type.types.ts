@@ -5,8 +5,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ICurrency } from '../currency'
-import { ITimeDepositComputation } from '../time-deposit-computation'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { ITimeDepositComputation } from '@e-coop-monorepo/modules/time-deposit-computation'
 import {
     TTimeDepositTypeCreateSchema,
     TTimeDepositTypeSchema,

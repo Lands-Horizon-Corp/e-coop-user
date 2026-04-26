@@ -10,7 +10,7 @@ import type {
     ICheckRemittance,
     ICheckRemittanceRequest,
 } from '../check-remittance'
-import { useDeleteById } from '../subscription-plan'
+import { useDeleteById } from '@e-coop-monorepo/modules/subscription-plan'
 
 const {
     apiCrudHooks,

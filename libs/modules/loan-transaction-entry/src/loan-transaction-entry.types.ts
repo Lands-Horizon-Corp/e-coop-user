@@ -6,7 +6,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberProfile } from '../member-profile'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { LOAN_TRANSACTION_ENTRY_TYPE } from './loan-transaction-constant'
 import { TLoanTransactionEntrySchema } from './loan-transaction-entry.validation'
 

@@ -10,9 +10,9 @@ import {
     CameraFlipIcon,
     CameraOffIcon,
     CameraSelectIcon,
-} from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
+    LoadingSpinner,
+    Button,
+} from '@e-coop-monorepo/ui'
 
 import ActionTooltip from '../tooltips/action-tooltip'
 import CameraDevicePicker from './camera-device-picker'

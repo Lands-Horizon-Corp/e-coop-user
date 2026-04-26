@@ -6,7 +6,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBrowseReference } from '../browse-reference'
+import { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
 import { InterestRateByDateSchema } from './interest-rate-by-date.validation'
 
 export interface IInterestRateByDate extends IBaseEntityMeta {

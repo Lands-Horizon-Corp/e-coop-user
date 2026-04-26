@@ -9,7 +9,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IUserBase } from '../user'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import {
     IAuthContext,
     IChangePasswordRequest,

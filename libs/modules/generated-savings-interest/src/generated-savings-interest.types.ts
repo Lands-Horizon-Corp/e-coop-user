@@ -4,10 +4,10 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IGeneratedSavingsInterestEntry } from '../generated-savings-interest-entry'
-import { IMemberType } from '../member-type'
-import { IUserBase } from '../user'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IGeneratedSavingsInterestEntry } from '@e-coop-monorepo/modules/generated-savings-interest-entry'
+import { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constant'
 import {
     TGeneratedSavingsInterestPostSchema,

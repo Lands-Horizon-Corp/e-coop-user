@@ -1,5 +1,5 @@
 import { TORJournalVoucherSettings } from '../journal-voucher'
-import { buildOR } from '../or-builder'
+import { buildOR } from '@e-coop-monorepo/modules/or-builder'
 
 export const isAllowedInputJournalVoucherOR = (
     orOptions?: TORJournalVoucherSettings

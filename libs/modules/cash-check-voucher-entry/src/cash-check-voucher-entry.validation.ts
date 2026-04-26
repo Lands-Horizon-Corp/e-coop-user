@@ -5,7 +5,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { IAccount, TAccountType } from '../account'
+import { IAccount, TAccountType } from '@e-coop-monorepo/modules/account'
 
 export const CashCheckVoucherEntrySchema = z
     .object({

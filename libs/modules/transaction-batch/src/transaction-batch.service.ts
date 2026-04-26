@@ -9,8 +9,8 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { ICashCount, ICashCountBatchRequest } from '../cash-count'
-import { cashCountAPIRoute } from '../cash-count/cash-count.service'
+import { ICashCount, ICashCountBatchRequest } from '@e-coop-monorepo/modules/cash-count'
+import { cashCountAPIRoute } from '@e-coop-monorepo/modules/cash-count'
 import type {
     ITransactionBatch,
     ITransactionBatchDepositInBankRequest,

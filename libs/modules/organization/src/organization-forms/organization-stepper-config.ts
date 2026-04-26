@@ -3,7 +3,7 @@ import { Path } from 'react-hook-form'
 import {
     StepConfig,
     StepValidation,
-} from '../../../components/form-stepper/form-stepper'
+} from '@e-coop-monorepo/ui'
 import { TOrganizationSchema } from '../organization.validation'
 
 export const organizationSteps: StepConfig[] = [

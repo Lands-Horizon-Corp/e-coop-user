@@ -6,7 +6,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ICurrency } from '../currency'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
 import { HolidaySchema } from './holiday.validation'
 
 export interface IHoliday extends IBaseEntityMeta {

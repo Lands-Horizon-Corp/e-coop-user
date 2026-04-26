@@ -1,7 +1,7 @@
 // import z from 'zod'
 import { IBaseEntityMeta } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 
 // import { LoanAmortizationScheduleSchema } from './loan-amortization-schedule.validation'
 

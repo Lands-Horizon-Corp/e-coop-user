@@ -7,11 +7,11 @@ import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
 import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMemberGeneralLedgerTotal } from '../general-ledger'
+import { IMemberGeneralLedgerTotal } from '@e-coop-monorepo/modules/general-ledger'
 import {
     IMemberAccountingLedgerPaginated,
     IMemberAccountingLedgerTotal,
-} from '../member-account-ledger'
+} from '@e-coop-monorepo/modules/member-account-ledger'
 
 // ⚙️🛠️ API SERVICE HERE
 

@@ -6,7 +6,7 @@ import {
     stringDateWithTransformSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { FamilyRelationshipSchema } from '../member-relative-account'
+import { FamilyRelationshipSchema } from '@e-coop-monorepo/modules/member-relative-account'
 
 export const MemberJointAccountSchema = z.object({
     id: z.string().optional(),

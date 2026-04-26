@@ -9,14 +9,14 @@
 // import { useVerifyPassword } from '@e-coop-monorepo/modules/authentication'
 // import useActionSecurityStore from '@e-coop-monorepo/shared/store'
 
-// import { ShieldCheckIcon, ShieldLockIcon } from '@/components/icons'
-// import Modal from '@/components/modals/modal'
-// import LoadingSpinner from '@/components/spinners/loading-spinner'
-// import { Button } from '@/components/ui/button'
-// import { Form } from '@/components/ui/form'
-// import FormErrorMessage from '@/components/ui/form-error-message'
-// import FormFieldWrapper from '@/components/ui/form-field-wrapper'
-// import PasswordInput from '@/components/ui/password-input'
+// import { ShieldCheckIcon, ShieldLockIcon } from '@e-coop-monorepo/ui'
+// import Modal from '@e-coop-monorepo/ui'
+// import LoadingSpinner from '@e-coop-monorepo/ui'
+// import { Button } from '@e-coop-monorepo/ui'
+// import { Form } from '@e-coop-monorepo/ui'
+// import FormErrorMessage from '@e-coop-monorepo/ui'
+// import FormFieldWrapper from '@e-coop-monorepo/ui'
+// import PasswordInput from '@e-coop-monorepo/ui'
 
 // const actionSecurityFormSchema = z.object({
 //     password: z.string().min(1, 'Password is required'),

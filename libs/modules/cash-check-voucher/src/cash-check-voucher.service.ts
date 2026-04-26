@@ -12,7 +12,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { createMutationInvalidateFn } from '../../providers/repositories/mutation-factory'
+import { createMutationInvalidateFn } from '@e-coop-monorepo/shared/providers/repositories/mutation-factory'
 import type {
     ICashCheckVoucher,
     ICashCheckVoucherPaginated,
@@ -22,7 +22,7 @@ import type {
     TCashCheckVoucherPrintMode,
     TCashCheckVoucherPrintRequest,
 } from '../cash-check-voucher'
-import { getPaginatedJournalVoucher } from '../journal-voucher'
+import { getPaginatedJournalVoucher } from '@e-coop-monorepo/modules/journal-voucher'
 
 const {
     apiCrudHooks,

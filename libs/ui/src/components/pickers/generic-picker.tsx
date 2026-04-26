@@ -4,17 +4,17 @@ import { cn } from '@e-coop-monorepo/shared/helpers'
 import { useInternalState } from '@e-coop-monorepo/shared/hooks'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { MagnifyingGlassIcon } from '@/components/icons'
-import Modal, { IModalProps } from '@/components/modals/modal'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
+import { MagnifyingGlassIcon } from '@e-coop-monorepo/ui'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui'
+import LoadingSpinner from '@e-coop-monorepo/ui'
 import {
     Command,
     CommandEmpty,
     CommandGroup,
     CommandItem,
     CommandList,
-} from '@/components/ui/command'
-import { Input } from '@/components/ui/input'
+} from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
 
 interface GenericPickerProps<T extends { id: TEntityId }> extends IModalProps {
     items: T[]

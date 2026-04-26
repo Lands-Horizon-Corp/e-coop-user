@@ -4,11 +4,11 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IFootstep } from '../footstep'
-import { IMedia } from '../media/media.types'
-import { INotification } from '../notification'
-import { IQrScanResult } from '../qr-crypto'
-import { IUserOrganization } from '../user-organization'
+import { IFootstep } from '@e-coop-monorepo/modules/footstep'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { INotification } from '@e-coop-monorepo/modules/notification'
+import { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { USER_TYPE } from './user.constants'
 
 export type TUserType = (typeof USER_TYPE)[number] // move User module

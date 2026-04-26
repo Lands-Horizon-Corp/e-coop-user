@@ -8,8 +8,8 @@ import {
 } from '@e-coop-monorepo/shared/types'
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
-import { IMemberProfile } from '../member-profile/member-profile.types'
-import { IUser } from '../user/user.types'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IUser } from '@e-coop-monorepo/modules/user'
 
 export interface IMemberVerificationRequest {
     member_profile_id: TEntityId

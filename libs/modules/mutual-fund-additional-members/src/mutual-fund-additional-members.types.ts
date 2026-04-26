@@ -5,8 +5,8 @@ import {
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberType } from '../member-type'
-import { IMutualFund } from '../mutual-fund/mutual-fund.types'
+import { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import { IMutualFund } from '@e-coop-monorepo/modules/mutual-fund'
 import { MutualFundAdditionalMembersSchema } from './mutual-fund-additional-members.validation'
 
 export interface IMutualFundAdditionalMembers extends IBaseEntityMeta {

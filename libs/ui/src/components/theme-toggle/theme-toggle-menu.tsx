@@ -4,14 +4,14 @@ import { cn } from '@e-coop-monorepo/shared/helpers'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 
-import { MoonIcon, SunIcon, SunMoonIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import { MoonIcon, SunIcon, SunMoonIcon } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@e-coop-monorepo/ui'
 
 type StartPosition =
     | 'center'
@@ -214,12 +214,12 @@ export const ThemeToggleMenu = ({
 
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger>
                 <Button
                     className={cn('rounded-lg', className)}
-                    hoverVariant="primary"
+                    // hoverVariant="primary"
                     size="icon-sm"
-                    variant="outline-ghost"
+                    variant="ghost"
                 >
                     <SunIcon className="h-[1.2rem] w-[1.2rem] rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
                     <MoonIcon className="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />

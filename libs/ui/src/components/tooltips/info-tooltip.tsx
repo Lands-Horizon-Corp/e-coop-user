@@ -5,9 +5,10 @@ import { cn } from '@e-coop-monorepo/shared/helpers'
 import {
     Tooltip,
     TooltipContent,
+    TooltipProvider,
     TooltipPortal,
     TooltipTrigger,
-} from '@/components/ui/tooltip'
+} from '@e-coop-monorepo/ui'
 
 import { InfoIcon } from '../icons'
 
@@ -33,33 +34,35 @@ const InfoTooltip = ({
     alignOffset = 0,
 }: InfoTooltipProps) => {
     return (
-        <Tooltip delayDuration={delayDuration}>
-            <TooltipTrigger asChild>
-                {children || (
-                    <span
-                        className={cn(
-                            'inline-flex size-3 cursor-help items-center justify-center rounded-full bg-muted text-xs font-medium text-muted-foreground hover:bg-muted-foreground/20',
-                            className
-                        )}
+        <TooltipProvider delay={delayDuration}>
+            <Tooltip>
+                <TooltipTrigger >
+                    {children || (
+                        <span
+                            className={cn(
+                                'inline-flex size-3 cursor-help items-center justify-center rounded-full bg-muted text-xs font-medium text-muted-foreground hover:bg-muted-foreground/20',
+                                className
+                            )}
+                        >
+                            <InfoIcon className="inline size-full" />
+                        </span>
+                    )}
+                </TooltipTrigger>
+                <TooltipPortal>
+                    <TooltipContent
+                        align={align}
+                        alignOffset={alignOffset}
+                        className="text-xs px-1.5 rounded-lg border text-foreground bg-background"
+                        side={side}
+                        sideOffset={sideOffset}
+                        style={{ zIndex: 99999 }}
                     >
-                        <InfoIcon className="inline size-full" />
-                    </span>
-                )}
-            </TooltipTrigger>
-            <TooltipPortal>
-                <TooltipContent
-                    align={align}
-                    alignOffset={alignOffset}
-                    className="text-xs px-1.5 rounded-lg border text-foreground bg-background"
-                    side={side}
-                    sideOffset={sideOffset}
-                    style={{ zIndex: 99999 }}
-                >
-                    <div>{content}</div>
-                </TooltipContent>
-            </TooltipPortal>
-        </Tooltip>
+                        <div>{content}</div>
+                    </TooltipContent>
+                </TooltipPortal>
+            </Tooltip>
+        </TooltipProvider>
     )
 }
 
-export default InfoTooltip
+export { InfoTooltip }

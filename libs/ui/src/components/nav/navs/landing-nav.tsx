@@ -5,12 +5,12 @@ import { Link, useLocation } from '@tanstack/react-router'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import { HiBars3 } from 'react-icons/hi2'
 
-import { CalculatorIcon } from '@/components/icons'
-import NavAuthGroup from '@/components/nav/nav-components/nav-auth-group'
-import NavEcoopLogo from '@/components/nav/nav-components/nav-ecoop-logo'
-import NavThemeToggle from '@/components/nav/nav-components/nav-theme-toggle'
-import NavContainer from '@/components/nav/nav-container'
-import RootNav from '@/components/nav/root-nav'
+import { CalculatorIcon } from '@e-coop-monorepo/ui'
+import NavAuthGroup from '@e-coop-monorepo/ui'
+import NavEcoopLogo from '@e-coop-monorepo/ui'
+import NavThemeToggle from '@e-coop-monorepo/ui'
+import NavContainer from '@e-coop-monorepo/ui'
+import RootNav from '@e-coop-monorepo/ui'
 import {
     Sheet,
     SheetClose,
@@ -18,7 +18,7 @@ import {
     SheetHeader,
     SheetTitle,
     SheetTrigger,
-} from '@/components/ui/sheet'
+} from '@e-coop-monorepo/ui'
 
 type NavLink = {
     name: string

@@ -20,7 +20,7 @@ import {
 } from '@e-coop-monorepo/shared/validation'
 import { isBefore, startOfDay } from 'date-fns'
 
-import { MemberAddressSchema } from '../member-address/member-address.validation'
+import { MemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
 
 export const BaseMemberAccountSchema = z.object({
     id: entityIdSchema.optional(),

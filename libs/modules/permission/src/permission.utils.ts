@@ -1,6 +1,6 @@
 import { IAuditable, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IUserOrganization } from '../user-organization'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import {
     PERMISSION_ALL_ACTIONS,
     PERMISSION_BASE_ACTIONS,

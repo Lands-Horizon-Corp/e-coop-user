@@ -7,7 +7,7 @@ import {
     InputGroupAddon,
     InputGroupButton,
     InputGroupInput,
-} from '@/components/ui/input-group'
+} from '@e-coop-monorepo/ui'
 
 import { EyeIcon, EyeOffIcon } from '../icons'
 import { InputProps } from './input'

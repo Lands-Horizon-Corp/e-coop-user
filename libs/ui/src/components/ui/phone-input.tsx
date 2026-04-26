@@ -5,22 +5,21 @@ import * as RPNInput from 'react-phone-number-input'
 import { type Value } from 'react-phone-number-input'
 import flags from 'react-phone-number-input/flags'
 
-import { Button } from '@/components/ui/button'
-import {
+import { 
+    Button,
     Command,
     CommandEmpty,
     CommandGroup,
     CommandInput,
     CommandItem,
     CommandList,
-} from '@/components/ui/command'
-import { Input, InputProps } from '@/components/ui/input'
-import {
+    Input, 
+    InputProps,
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from '@/components/ui/popover'
-import { ScrollArea } from '@/components/ui/scroll-area'
+    ScrollArea
+ } from '@e-coop-monorepo/ui'
 
 import { ArrowChevronDown, CheckIcon } from '../icons'
 
@@ -98,7 +97,7 @@ const CountrySelect = ({
 
     return (
         <Popover modal>
-            <PopoverTrigger asChild>
+            <PopoverTrigger>
                 <Button
                     className={cn(
                         'flex gap-1 rounded-e-none rounded-s-lg bg-white/50 px-3 dark:bg-secondary/70'

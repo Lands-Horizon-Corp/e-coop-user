@@ -2,7 +2,7 @@ import z from 'zod'
 
 import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { MemberContactReferenceSchema } from './member-contact-reference.validation'
 
 // LATEST FROM ERD

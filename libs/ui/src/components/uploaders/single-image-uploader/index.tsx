@@ -1,18 +1,18 @@
 import { useState } from 'react'
 
-import { useUploadMedia } from '@/modules/media/media.service'
-import { IMedia } from '@/modules/media/media.types'
+import { useUploadMedia } from '@e-coop-monorepo/modules/media'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import { calculateUploadProgress } from '@e-coop-monorepo/shared/helpers'
 import { base64ImagetoFile } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 
-import { AdjustIcon } from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import PictureCrop from '@/components/picture-crop'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import ActionTooltip from '@/components/tooltips/action-tooltip'
-import { Button } from '@/components/ui/button'
-import { Progress } from '@/components/ui/progress'
+import { AdjustIcon } from '@e-coop-monorepo/ui'
+import {ImageDisplay} from '@e-coop-monorepo/ui'
+import {PictureCrop} from '@e-coop-monorepo/ui'
+import {LoadingSpinner} from '@e-coop-monorepo/ui'
+import {ActionTooltip} from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { Progress } from '@e-coop-monorepo/ui'
 
 import SingleImageUploadOption from './upload-options'
 

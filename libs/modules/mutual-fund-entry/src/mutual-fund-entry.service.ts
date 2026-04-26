@@ -11,7 +11,7 @@ import type {
     IMutualFundEntry,
     IMutualFundEntryRequest,
 } from '../mutual-fund-entry'
-import { mutualFundBaseKey } from '../mutual-fund/mutual-fund.service'
+import { mutualFundBaseKey } from '@e-coop-monorepo/modules/mutual-fund'
 
 const {
     apiCrudHooks,

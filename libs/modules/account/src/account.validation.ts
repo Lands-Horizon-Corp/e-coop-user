@@ -8,8 +8,8 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { FINANCIAL_STATEMENT_TYPE } from '../financial-statement-definition'
-import { GENERAL_LEDGER_TYPE } from '../general-ledger/general-ledger.constants'
+import { FINANCIAL_STATEMENT_TYPE } from '@e-coop-monorepo/modules/financial-statement-definition'
+import { GENERAL_LEDGER_TYPE } from '@e-coop-monorepo/modules/general-ledger'
 import {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,
     ACCOUNT_INTEREST_STANDARD_COMPUTATION,

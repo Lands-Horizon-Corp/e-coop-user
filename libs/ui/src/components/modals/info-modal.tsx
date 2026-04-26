@@ -1,8 +1,8 @@
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import { useInfoModalStore } from '@e-coop-monorepo/shared/store'
 
-import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
+import { Button } from '@e-coop-monorepo/ui'
+import { Separator } from '@e-coop-monorepo/ui'
 
 import Modal from './modal'
 

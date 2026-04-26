@@ -6,7 +6,7 @@ import {
     PencilOutlineIcon,
     PlusIcon,
     TrashIcon,
-} from '@/components/icons'
+} from '@e-coop-monorepo/ui'
 
 import { TPermissionAction } from './permission.types'
 

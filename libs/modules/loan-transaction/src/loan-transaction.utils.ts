@@ -1,4 +1,4 @@
-import { buildOR } from '../or-builder'
+import { buildOR } from '@e-coop-monorepo/modules/or-builder'
 import {
     ILoanTransactionStatusDates,
     TLoanStatusType,

@@ -7,7 +7,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBranch } from '../branch'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { MemberOccupationSchema } from './member-occupation.validation'
 
 export interface IMemberOccupation extends ITimeStamps, IAuditable {

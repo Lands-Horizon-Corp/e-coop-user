@@ -1,5 +1,5 @@
 import { TORAdjustmentVoucherSettings } from '.'
-import { buildOR } from '../or-builder'
+import { buildOR } from '@e-coop-monorepo/modules/or-builder'
 
 export const isAllowedInputAdjustmentVoucherOR = (
     orOptions?: TORAdjustmentVoucherSettings

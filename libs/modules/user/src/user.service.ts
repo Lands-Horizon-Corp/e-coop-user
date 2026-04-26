@@ -7,7 +7,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import type { IUserBase } from './user.types'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<

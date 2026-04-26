@@ -12,8 +12,8 @@ import type {
     IAccountHistory,
     IAccountHistoryRequest,
 } from '../account-history'
-import { accountBaseQueryKey } from '../account/account.service'
-import { IAccount } from '../account/account.types'
+import { accountBaseQueryKey } from '@e-coop-monorepo/modules/account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 
 const {
     apiCrudHooks,

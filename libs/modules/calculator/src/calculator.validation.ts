@@ -6,11 +6,11 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { WithModeOfPaymentSchema } from '../loan-transaction'
+import { WithModeOfPaymentSchema } from '@e-coop-monorepo/modules/loan-transaction'
 import {
     LOAN_MODE_OF_PAYMENT,
     WEEKDAYS,
-} from '../loan-transaction/loan.constants'
+} from '@e-coop-monorepo/modules/loan-transaction'
 
 export const CalculatorSchema = z.object({
     id: entityIdSchema.optional(),

@@ -4,8 +4,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account/account.types'
-import { TTagCategory } from '../tag-template'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
 
 export interface IAccountTag extends IBaseEntityMeta {
     account_id: TEntityId

@@ -4,7 +4,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { ACCOUNT_CLOSURE_REASONS } from './member-close-remark.constants'
 
 export type TAccountClosureReasonType = (typeof ACCOUNT_CLOSURE_REASONS)[number]

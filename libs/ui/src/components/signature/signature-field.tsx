@@ -3,9 +3,9 @@ import { ReactElement, forwardRef, useState } from 'react'
 import { IMedia } from '@e-coop-monorepo/modules/media'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 
-import { SignatureLightIcon, XIcon } from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import { Button, ButtonProps } from '@/components/ui/button'
+import { SignatureLightIcon, XIcon } from '@e-coop-monorepo/ui'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import { Button, ButtonProps } from '@e-coop-monorepo/ui'
 
 import { SignaturePickerUploaderModal } from './signature-picker-uploader'
 

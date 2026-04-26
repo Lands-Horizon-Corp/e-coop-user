@@ -5,14 +5,14 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { ICurrency } from '../currency'
-import { TGeneralLedgerSource } from '../general-ledger'
-import { IMedia } from '../media/media.types'
-import { IMemberJointAccount } from '../member-joint-account'
-import { IMemberProfile } from '../member-profile'
-import { ITransactionBatch } from '../transaction-batch'
-import { IUserBase } from '../user/user.types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { TGeneralLedgerSource } from '@e-coop-monorepo/modules/general-ledger'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import { TTransactionSchema } from './transaction.validation'
 
 export interface ITransactionRequest {

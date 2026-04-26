@@ -5,9 +5,9 @@ import { toast } from 'sonner'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
-import { ImageIcon } from '@/components/icons'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { ImageIcon } from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
+import { Label } from '@e-coop-monorepo/ui'
 
 interface Props extends IBaseProps {
     onFileSelect: (files: FileList) => void

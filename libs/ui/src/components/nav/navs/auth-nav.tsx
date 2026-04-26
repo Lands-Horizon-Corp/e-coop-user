@@ -1,8 +1,8 @@
-import NavAuthGroup from '@/components/nav/nav-components/nav-auth-group'
-import NavEcoopLogo from '@/components/nav/nav-components/nav-ecoop-logo'
-import NavThemeToggle from '@/components/nav/nav-components/nav-theme-toggle'
-import NavContainer from '@/components/nav/nav-container'
-import RootNav from '@/components/nav/root-nav'
+import NavAuthGroup from '@e-coop-monorepo/ui'
+import NavEcoopLogo from '@e-coop-monorepo/ui'
+import NavThemeToggle from '@e-coop-monorepo/ui'
+import NavContainer from '@e-coop-monorepo/ui'
+import RootNav from '@e-coop-monorepo/ui'
 
 const AuthNav = () => {
     return (

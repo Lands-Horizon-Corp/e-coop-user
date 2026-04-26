@@ -11,7 +11,7 @@ import { cn } from '@e-coop-monorepo/shared/helpers'
 import { useInternalState } from '@e-coop-monorepo/shared/hooks'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 
-import CopyTextButton from '@/components/copy-text-button'
+import CopyTextButton from '@e-coop-monorepo/ui'
 import {
     BuildingIcon,
     CloseIcon,
@@ -20,24 +20,24 @@ import {
     NavigationIcon,
     PinLocationIcon,
     TargetArrowIcon,
-} from '@/components/icons'
-import { Button } from '@/components/ui/button'
+} from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 import {
     Command,
     CommandEmpty,
     CommandGroup,
     CommandItem,
     CommandList,
-} from '@/components/ui/command'
+} from '@e-coop-monorepo/ui'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
-} from '@/components/ui/dialog'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+} from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
+import { Label } from '@e-coop-monorepo/ui'
 
 import MapView, { MapLocation } from '..'
 import { useMap } from '../map.provider'

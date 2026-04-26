@@ -5,12 +5,12 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBatchFundingRequest } from '../batch-funding'
-import { IBranch } from '../branch'
-import { ICurrency } from '../currency'
-import { IMedia } from '../media'
-import { IOrganization } from '../organization'
-import { IUserBase } from '../user'
+import { IBatchFundingRequest } from '@e-coop-monorepo/modules/batch-funding'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import { TDepositInBankSchema } from './transaction-batch.validation'
 
 export type TBatchBalanceStatus =

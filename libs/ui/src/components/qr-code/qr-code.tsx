@@ -4,7 +4,7 @@ import { cn } from '@e-coop-monorepo/shared/helpers'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { QRCodeSVG } from 'qrcode.react'
 
-import { QrCodeIcon } from '@/components/icons'
+import { QrCodeIcon } from '@e-coop-monorepo/ui'
 
 export interface IQrCodeProps extends IClassProps {
     value: string

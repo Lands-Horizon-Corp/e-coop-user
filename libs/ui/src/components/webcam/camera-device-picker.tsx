@@ -5,8 +5,8 @@ import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
-import { CameraIcon, RefreshIcon } from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
+import { CameraIcon, RefreshIcon } from '@e-coop-monorepo/ui'
+import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -14,7 +14,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@e-coop-monorepo/ui'
 
 interface Props extends IBaseProps {
     currentCamId: string | undefined
@@ -69,7 +69,7 @@ const CameraDevicePicker = ({ onPick, currentCamId, children }: Props) => {
 
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger>
                 <span>{children}</span>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" side="bottom">

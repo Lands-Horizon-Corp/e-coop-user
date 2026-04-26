@@ -11,8 +11,8 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { IAccount } from '../account'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberDeductionEntryRequest {
     member_profile_id: TEntityId

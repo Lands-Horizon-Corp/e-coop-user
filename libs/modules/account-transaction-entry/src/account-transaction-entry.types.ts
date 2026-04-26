@@ -6,8 +6,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccountTransaction } from '../account-transaction/account-transaction.types'
-import { IAccount } from '../account/account.types'
+import { IAccountTransaction } from '@e-coop-monorepo/modules/account-transaction'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import { AccountTransactionEntrySchema } from './account-transaction-entry.validation'
 
 export interface IAccountTransactionEntry extends IBaseEntityMeta {

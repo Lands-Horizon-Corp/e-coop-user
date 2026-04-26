@@ -5,7 +5,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import { TPaymentTypeSchema } from './payment-type.validation'
 
 export type PaymentTypeEnum = 'cash' | 'check' | 'online'

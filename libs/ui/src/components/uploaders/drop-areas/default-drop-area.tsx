@@ -1,6 +1,6 @@
 import { cn } from '@e-coop-monorepo/shared/helpers'
 
-import { ImageIcon } from '@/components/icons'
+import { ImageIcon } from '@e-coop-monorepo/ui'
 
 import DropHoverOverlay from '../drop-hover-overlay'
 import { IDropAreaProps } from './type'

@@ -10,7 +10,7 @@ import {
     IMemberProfile,
     apiCrudService,
     memberProfileBaseKey,
-} from '../member-profile'
+} from '@e-coop-monorepo/modules/member-profile'
 import { IMemberProfileUserAccountRequest } from './member-user-account.types'
 
 const { API, route } = apiCrudService

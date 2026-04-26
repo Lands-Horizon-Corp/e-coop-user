@@ -7,7 +7,7 @@ import {
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IFeedComment, IFeedCommentRequest } from '../feed-comment'
-import { feedBaseKey } from '../feed/feed.service'
+import { feedBaseKey } from '@e-coop-monorepo/modules/feed'
 
 const {
     // apiCrudHooks,

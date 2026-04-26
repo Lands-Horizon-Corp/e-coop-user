@@ -6,7 +6,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberRecruitedMembers extends ITimeStamps {
     id: TEntityId

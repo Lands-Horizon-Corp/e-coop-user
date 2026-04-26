@@ -4,10 +4,10 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IGeneratedReportsDownloadUsers } from '../generated-reports-download-users/generated-reports-download-users.types'
-import { IMedia } from '../media'
-import { IUser } from '../user'
-import { TPaperSizeName } from './components/forms/paper-size-selector'
+import { IGeneratedReportsDownloadUsers } from '@e-coop-monorepo/modules/generated-reports-download-users'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IUser } from '@e-coop-monorepo/modules/user'
+import { TPaperSizeName } from '@e-coop-monorepo/ui'
 import { TPaperSizeUnit } from './generated-reports.constants'
 
 export const ACCOUNT_MODEL_NAMES = [

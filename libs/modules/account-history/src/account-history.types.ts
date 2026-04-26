@@ -2,7 +2,7 @@ import z from 'zod'
 
 import { IPaginatedResult, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account/account.types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import { AccountHistorySchema } from './account-history.validation'
 
 // export const HISTORY_CHANGE_TYPE = ['created', 'updated', 'deleted'] as const

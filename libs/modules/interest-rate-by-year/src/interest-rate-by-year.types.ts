@@ -5,7 +5,7 @@ import {
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBrowseReference } from '../browse-reference'
+import { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
 import { InterestRateByYearSchema } from './interest-rate-by-year.validation'
 
 export interface IInterestRateByYear extends IBaseEntityMeta {

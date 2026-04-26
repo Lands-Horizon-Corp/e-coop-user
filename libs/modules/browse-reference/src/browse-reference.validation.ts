@@ -8,9 +8,9 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { InterestRateByAmountSchema } from '../interest-rate-by-amount'
-import { InterestRateByDateSchema } from '../interest-rate-by-date'
-import { InterestRateByYearSchema } from '../interest-rate-by-year'
+import { InterestRateByAmountSchema } from '@e-coop-monorepo/modules/interest-rate-by-amount'
+import { InterestRateByDateSchema } from '@e-coop-monorepo/modules/interest-rate-by-date'
+import { InterestRateByYearSchema } from '@e-coop-monorepo/modules/interest-rate-by-year'
 import { INTEREST_TYPE } from './browse-reference.constant'
 
 // import { INTEREST_TYPE } from './member-type-reference.constant'

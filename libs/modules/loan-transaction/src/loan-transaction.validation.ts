@@ -6,12 +6,12 @@ import {
     stringDateWithTransformSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { ComakerCollateralSchema } from '../comaker-collateral'
-import { ComakerMemberProfileSchema } from '../comaker-member-profile'
-import { LoanClearanceAnalysisSchema } from '../loan-clearance-analysis'
-import { LoanClearanceAnalysisInstitutionSchema } from '../loan-clearance-analysis-institution'
-import { LoanTermsAndConditionAmountReceiptSchema } from '../loan-terms-and-condition-amount-receipt'
-import { LoanTermsAndConditionSuggestedPaymentSchema } from '../loan-terms-and-condition-suggested-payment'
+import { ComakerCollateralSchema } from '@e-coop-monorepo/modules/comaker-collateral'
+import { ComakerMemberProfileSchema } from '@e-coop-monorepo/modules/comaker-member-profile'
+import { LoanClearanceAnalysisSchema } from '@e-coop-monorepo/modules/loan-clearance-analysis'
+import { LoanClearanceAnalysisInstitutionSchema } from '@e-coop-monorepo/modules/loan-clearance-analysis-institution'
+import { LoanTermsAndConditionAmountReceiptSchema } from '@e-coop-monorepo/modules/loan-terms-and-condition-amount-receipt'
+import { LoanTermsAndConditionSuggestedPaymentSchema } from '@e-coop-monorepo/modules/loan-terms-and-condition-suggested-payment'
 import {
     LOAN_ADJUSTMENT_TYPE,
     LOAN_COLLECTOR_PLACE,

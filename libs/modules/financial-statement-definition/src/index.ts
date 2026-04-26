@@ -1,6 +1,6 @@
 export * from './financial-statement-definition.types'
 export * from './financial-statement-definition.validation'
-export * from './components'
+export * from '@e-coop-monorepo/ui'
 export * from './financial-statement-definition.service'
-// export * from './pages/components'
+// export * from '@e-coop-monorepo/ui'
 export * from './financial-statement-definition.constants'

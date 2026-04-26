@@ -5,10 +5,10 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBranch } from '../branch/branch.types'
-import { IOrganization } from '../organization'
-import { TPermission } from '../permission'
-import { TUserType } from '../user'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
+import { TPermission } from '@e-coop-monorepo/modules/permission'
+import { TUserType } from '@e-coop-monorepo/modules/user'
 
 // Invitation Code Resource
 export interface IInvitationCode extends ITimeStamps, IAuditable {

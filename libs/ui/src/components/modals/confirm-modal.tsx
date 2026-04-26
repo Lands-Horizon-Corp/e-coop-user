@@ -1,9 +1,9 @@
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 
-import Modal from '@/components/modals/modal'
-import { Button } from '@/components/ui/button'
-import { Separator } from '@/components/ui/separator'
+import Modal from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { Separator } from '@e-coop-monorepo/ui'
 
 const ConfirmModal = () => {
     const { isOpen, modalData, onConfirm, onClose, onCancel } =

@@ -16,21 +16,21 @@ import {
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import { HexAlphaColorPicker, HexColorPicker } from 'react-colorful'
 
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Label } from '@/components/ui/label'
+import { Button } from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
+import { Label } from '@e-coop-monorepo/ui'
 import {
     Popover,
     PopoverContent,
     PopoverTrigger,
-} from '@/components/ui/popover'
+} from '@e-coop-monorepo/ui'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@/components/ui/select'
+} from '@e-coop-monorepo/ui'
 
 import { LoadingSpinnerIcon, PipetteIcon } from '../icons'
 

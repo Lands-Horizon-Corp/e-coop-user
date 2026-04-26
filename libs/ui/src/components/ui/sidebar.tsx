@@ -5,24 +5,21 @@ import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { useIsMobile } from "@e-coop-monorepo/ui/components/hooks/use-mobile"
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Button } from "@e-coop-monorepo/ui/components/ui/button"
-import { Input } from "@e-coop-monorepo/ui/components/ui/input"
-import { Separator } from "@e-coop-monorepo/ui/components/ui/separator"
+import { useIsMobile } from "@e-coop-monorepo/shared/hooks"
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Button, Input, Separator, Skeleton } from "@e-coop-monorepo/ui"
 import {
   Sheet,
   SheetContent,
   SheetDescription,
   SheetHeader,
   SheetTitle,
-} from "@e-coop-monorepo/ui/components/ui/sheet"
-import { Skeleton } from "@e-coop-monorepo/ui/components/ui/skeleton"
+} from "@e-coop-monorepo/ui"
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
-} from "@e-coop-monorepo/ui/components/ui/tooltip"
+} from "@e-coop-monorepo/ui"
 import { PanelLeftIcon } from "lucide-react"
 
 const SIDEBAR_COOKIE_NAME = "sidebar_state"

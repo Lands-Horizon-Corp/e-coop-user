@@ -6,8 +6,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media'
-import { IUser } from '../user'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IUser } from '@e-coop-monorepo/modules/user'
 import { FeedCommentSchema } from './feed-comment.validation'
 
 export interface IFeedComment extends IBaseEntityMeta {

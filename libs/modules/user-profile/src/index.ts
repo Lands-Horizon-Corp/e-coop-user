@@ -1,4 +1,4 @@
-export * from './components'
+export * from '@e-coop-monorepo/ui'
 export * from './user-profile.service'
 export * from './hooks/use-user-profile-inactivity-hook'
 export * from './user-profile.types'

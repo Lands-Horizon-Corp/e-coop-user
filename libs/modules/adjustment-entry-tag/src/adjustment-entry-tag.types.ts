@@ -4,7 +4,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAdjustmentEntry } from '../adjustment-entry'
+import { IAdjustmentEntry } from '@e-coop-monorepo/modules/adjustment-entry'
 
 export interface IAdjustmentEntryTag extends IBaseEntityMeta {
     adjustment_entry_id: TEntityId

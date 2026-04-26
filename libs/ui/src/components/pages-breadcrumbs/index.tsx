@@ -14,13 +14,13 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb'
+} from '@e-coop-monorepo/ui'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@e-coop-monorepo/ui'
 
 import { ChevronRightIcon, HomeFillIcon } from '../icons'
 import PageNavigator from './page-navigator'

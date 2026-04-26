@@ -6,7 +6,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { JournalVoucherEntrySchema } from '../journal-voucher-entry'
+import { JournalVoucherEntrySchema } from '@e-coop-monorepo/modules/journal-voucher-entry'
 
 export const JournalVoucherSchema = z.object({
     id: z.string().optional(),

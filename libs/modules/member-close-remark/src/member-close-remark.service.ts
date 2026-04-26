@@ -5,8 +5,8 @@ import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import { HookMutationOptions } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { memberProfileAPIRoute } from '../member-profile/member-profile.service'
-import type { IMemberProfile } from '../member-profile/member-profile.types'
+import { memberProfileAPIRoute } from '@e-coop-monorepo/modules/member-profile'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import type {
     IMemberCloseRemark,
     IMemberCloseRemarkRequest,

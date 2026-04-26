@@ -10,7 +10,7 @@ import {
     IHasPermissionOpts,
     getCrudPermissions,
     hasPermission,
-} from '../permission/permission.utils'
+} from '@e-coop-monorepo/modules/permission'
 
 type TAuthStoreStatus = 'loading' | 'authorized' | 'unauthorized' | 'error'
 

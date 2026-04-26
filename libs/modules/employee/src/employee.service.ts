@@ -20,7 +20,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IEmployee } from '../user'
+import { IEmployee } from '@e-coop-monorepo/modules/user'
 import { IEmployeeCreateRequest } from './employee.types'
 
 /**

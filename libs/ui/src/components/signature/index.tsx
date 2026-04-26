@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { dataUrlToFile } from '@/modules/media'
+import { dataUrlToFile } from '@e-coop-monorepo/modules/media'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 import { useSignature } from '@e-coop-monorepo/shared/store'
@@ -16,7 +16,7 @@ import {
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from '@/components/ui/tooltip'
+} from '@e-coop-monorepo/ui'
 
 import {
     CameraIcon,

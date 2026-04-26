@@ -6,8 +6,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IComputationSheet } from '../computation-sheet'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IComputationSheet } from '@e-coop-monorepo/modules/computation-sheet'
 import { IncludeNegativeAccountsSchema } from './include-negative-accounts.validation'
 
 export interface IIncludeNegativeAccounts extends IBaseEntityMeta {

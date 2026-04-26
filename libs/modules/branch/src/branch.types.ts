@@ -5,10 +5,10 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBranchSettings } from '../branch-settings'
-import { ICurrency } from '../currency'
-import { IMedia } from '../media'
-import { IOrganization } from '../organization'
+import { IBranchSettings } from '@e-coop-monorepo/modules/branch-settings'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
 import { TBranchSchema } from './branch.validation'
 
 export enum branchTypeEnum {

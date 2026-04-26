@@ -2,7 +2,7 @@ import { ReactNode } from 'react'
 
 import { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media/media.types'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 
 export interface IFeedbackRequest {
     id?: TEntityId | null

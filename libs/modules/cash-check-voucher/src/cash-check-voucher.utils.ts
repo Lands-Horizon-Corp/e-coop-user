@@ -1,4 +1,4 @@
-import { buildOR } from '../or-builder'
+import { buildOR } from '@e-coop-monorepo/modules/or-builder'
 import { TORCashCheckSettings } from './cash-check-voucher.types'
 
 export const isAllowedInputCashCheckOR = (orOptions?: TORCashCheckSettings) => {

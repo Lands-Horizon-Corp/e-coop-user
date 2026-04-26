@@ -6,7 +6,7 @@ import {
     TooltipPortal,
     TooltipProvider,
     TooltipTrigger,
-} from '@/components/ui/tooltip'
+} from '@e-coop-monorepo/ui'
 
 export interface IActionTooltipProps {
     tooltipContent: string | ReactNode
@@ -24,9 +24,9 @@ const ActionTooltip = ({
     delayDuration,
 }: IActionTooltipProps) => {
     return (
-        <TooltipProvider>
-            <Tooltip delayDuration={delayDuration}>
-                <TooltipTrigger asChild>{children}</TooltipTrigger>
+        <TooltipProvider delay={delayDuration}>
+            <Tooltip>
+                <TooltipTrigger>{children}</TooltipTrigger>
                 <TooltipPortal>
                     <TooltipContent align={align} side={side}>
                         <p>{tooltipContent}</p>
@@ -37,4 +37,4 @@ const ActionTooltip = ({
     )
 }
 
-export default ActionTooltip
+export { ActionTooltip}

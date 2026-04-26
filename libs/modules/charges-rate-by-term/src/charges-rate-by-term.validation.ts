@@ -6,7 +6,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { LOAN_MODE_OF_PAYMENT } from '../loan-transaction/loan.constants'
+import { LOAN_MODE_OF_PAYMENT } from '@e-coop-monorepo/modules/loan-transaction'
 
 export const ChargesRateByTermSchema = z.object({
     id: EntityIdSchema('Charges Rate By Term id is invalid').optional(),

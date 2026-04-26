@@ -5,8 +5,8 @@ import Fuse from 'fuse.js'
 
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import { ArrowRightIcon, MagnifyingGlassIcon } from '@/components/icons'
-import { Button } from '@/components/ui/button'
+import { ArrowRightIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 import {
     CommandDialog,
     CommandEmpty,
@@ -16,7 +16,7 @@ import {
     CommandList,
     CommandSeparator,
     CommandShortcut,
-} from '@/components/ui/command'
+} from '@e-coop-monorepo/ui'
 
 import { useSidebar } from '../sidebar'
 import { TQuickSearchGroup } from './types'

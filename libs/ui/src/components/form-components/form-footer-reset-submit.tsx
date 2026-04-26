@@ -4,10 +4,10 @@ import { cn } from '@e-coop-monorepo/shared/helpers'
 import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import { Button } from '@/components/ui/button'
-import FormErrorMessage from '@/components/ui/form-error-message'
-import { Separator } from '@/components/ui/separator'
+import LoadingSpinner from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import FormErrorMessage from '@e-coop-monorepo/ui'
+import { Separator } from '@e-coop-monorepo/ui'
 
 interface IFormResetSubmitFooterProps extends IClassProps {
     readOnly?: boolean

@@ -3,7 +3,7 @@
 import * as React from "react"
 import { Drawer as DrawerPrimitive } from "vaul"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 function Drawer({
   ...props

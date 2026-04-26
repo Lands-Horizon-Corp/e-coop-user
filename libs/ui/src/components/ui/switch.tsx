@@ -1,6 +1,6 @@
 import { Switch as SwitchPrimitive } from "@base-ui/react/switch"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 function Switch({
   className,

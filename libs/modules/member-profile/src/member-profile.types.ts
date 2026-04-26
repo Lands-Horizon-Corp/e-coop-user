@@ -8,56 +8,56 @@ import {
     TGeneralStatus,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IBranch } from '../branch'
-import { IMemberPassbookSettings } from '../branch-settings'
-import { IMedia } from '../media/media.types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { IMemberPassbookSettings } from '@e-coop-monorepo/modules/branch-settings'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import {
     IMemberAddress,
     IMemberAddressRequest,
-} from '../member-address/member-address.types'
+} from '@e-coop-monorepo/modules/member-address'
 import {
     IMemberAsset,
     IMemberAssetRequest,
-} from '../member-asset/member-asset.types'
-import { IMemberCenter } from '../member-center/member-center.types'
-import { IMemberClassification } from '../member-classification/member-classification.types'
+} from '@e-coop-monorepo/modules/member-asset'
+import { IMemberCenter } from '@e-coop-monorepo/modules/member-center'
+import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
 import {
     IMemberCloseRemark,
     IMemberCloseRemarkRequest,
-} from '../member-close-remark/member-close-remark.types'
+} from '@e-coop-monorepo/modules/member-close-remark'
 import {
     IMemberContactReference,
     IMemberContactReferenceRequest,
-} from '../member-contact-reference/member-contact-reference.types'
-import { IMemberDepartment } from '../member-department/member-department.types'
-import { IMemberDescriptionRequest } from '../member-description-schema/member-description-schema.types'
-import { IMemberEducationalAttainment } from '../member-educational-attainment/member-educational-attainment.types'
+} from '@e-coop-monorepo/modules/member-contact-reference'
+import { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
+import { IMemberDescriptionRequest } from '@e-coop-monorepo/modules/member-description-schema'
+import { IMemberEducationalAttainment } from '@e-coop-monorepo/modules/member-educational-attainment'
 import {
     IMemberExpense,
     IMemberExpenseRequest,
-} from '../member-expense/member-expense.types'
-import { IMemberGender } from '../member-gender/member-gender.types'
+} from '@e-coop-monorepo/modules/member-expense'
+import { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
 import {
     IMemberGovernmentBenefit,
     IMemberGovernmentBenefitRequest,
-} from '../member-government-benefit/member-government-benefit.types'
-import { IMemberGroup } from '../member-group/member-group.types'
-import { IMemberIncome } from '../member-income'
+} from '@e-coop-monorepo/modules/member-government-benefit'
+import { IMemberGroup } from '@e-coop-monorepo/modules/member-group'
+import { IMemberIncome } from '@e-coop-monorepo/modules/member-income'
 import {
     IMemberJointAccount,
     IMemberJointAccountRequest,
-} from '../member-joint-account/member-joint-account.types'
-import { IMemberOccupation } from '../member-occupation/member-occupation.types'
-// import { IMemberRecruitedMembers } from '../member-recruits/member-recruits.types'
+} from '@e-coop-monorepo/modules/member-joint-account'
+import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
+// import { IMemberRecruitedMembers } from '@e-coop-monorepo/modules/member-recruits'
 import {
     IMemberRelativeAccount,
     IMemberRelativeAccountRequest,
-} from '../member-relative-account/member-relative-account.types'
-import { IMemberType } from '../member-type/member-type.types'
-import { IOrganization } from '../organization'
-import { IQrScanResult } from '../qr-crypto'
-import { IUserBase } from '../user/user.types'
+} from '@e-coop-monorepo/modules/member-relative-account'
+import { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
+import { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import {
     TMemberProfileMembershipInfoSchema,
     TMemberProfilePersonalInfoSchema,

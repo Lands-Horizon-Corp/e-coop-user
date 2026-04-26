@@ -1,8 +1,8 @@
 import { IMedia, formatBytes } from '@e-coop-monorepo/modules/media'
 
-import FileTypeIcon from '../../modules/media/components/file-type'
+import {FileTypeIcon} from '@e-coop-monorepo/modules/media'
 import { DotMediumIcon, TrashIcon } from '../icons'
-import ImageDisplay from '../image-display'
+import {ImageDisplay} from '../image-display'
 import { AspectRatio } from '../ui/aspect-ratio'
 import { Button } from '../ui/button'
 import { Progress } from '../ui/progress'
@@ -55,7 +55,7 @@ const FileItem = ({
                 <Button
                     className="size-fit rounded-md p-1 hover:text-destructive-foreground"
                     disabled={uploadDetails?.isUploading}
-                    hoverVariant="destructive"
+                    // hoverVariant="destructive"
                     onClick={onRemoveFile}
                     size="icon"
                     variant="secondary"
@@ -72,7 +72,7 @@ const FileItem = ({
                     </p>
                     <Progress
                         className="h-0.5"
-                        value={uploadDetails?.progress}
+                        value={uploadDetails?.progress ?? null}
                     />
                 </div>
             )}

@@ -6,13 +6,13 @@ import * as SheetPrimitive from '@radix-ui/react-dialog'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import type { IBaseProps, IClassProps } from '@e-coop-monorepo/shared/types'
 
-import { Separator } from '@/components/ui/separator'
+import { Separator } from '@e-coop-monorepo/ui'
 import {
     Sheet,
     SheetContent,
     SheetDescription,
     SheetTitle,
-} from '@/components/ui/sheet'
+} from '@e-coop-monorepo/ui'
 
 // import GeneralShortcutsWrapper from '../shorcuts/general-shortcuts-wrapper'
 

@@ -76,9 +76,18 @@ export * from './components/ui/use-isFocused'
 // 🧱 ROOT COMPONENTS
 // ==========================================
 export * from './components/copy-text-button'
+export * from './components/cookie-consent'
+export * from './components/copy-url'
 export * from './components/ecoop-logo'
+export * from './components/hightlight-match'
+export * from './components/icon-container'
 export * from './components/image-display'
+export * from './components/image-match'
+export * from './components/image-name-display'
 export * from './components/image'
+export * from './components/live-toggle'
+export * from './components/switch-form-field'
+export * from './components/text-display'
 
 
 // ==========================================
@@ -94,13 +103,11 @@ export * from './components/app-sidebar/app-sidebar-utils'
 export * from './components/app-sidebar/types'
 
 // backgrounds
+export * from './components/backgrounds'
 export * from './components/backgrounds/flickering-grid'
 export * from './components/backgrounds/flowing-grid'
 export * from './components/backgrounds/random-arrows'
 export * from './components/backgrounds/random-dots'
-export * from './components/backgrounds/aurora-background'
-export * from './components/backgrounds/particles-background'
-export * from './components/backgrounds/scroll-progress'
 
 // animations
 export * from './components/animations/animated-section'
@@ -118,12 +125,19 @@ export * from './components/buttons/refresh-button'
 // containers
 export * from './components/containers/page-container'
 
+// data-table
+export { default as DataTable } from './components/data-table'
+export * from './components/data-table'
+
 // footers
 export * from './components/footers/auth-footer'
 export * from './components/footers/common-links'
 
 // form-components
 export * from './components/form-components/form-footer-reset-submit'
+
+// form-stepper
+export * from './components/form-stepper/form-stepper'
 
 // icons
 export * from './components/icons'
@@ -149,6 +163,7 @@ export * from './components/nav/nav-container'
 export * from './components/nav/root-nav'
 
 // pages-breadcrumbs
+export { default as PageBreadCrumb } from './components/pages-breadcrumbs'
 export * from './components/pages-breadcrumbs'
 export * from './components/pages-breadcrumbs/page-navigator'
 
@@ -161,12 +176,21 @@ export * from './components/pickers/generic-picker'
 // export * from './components/pickers/member-picker-with-scanner'
 
 // picture-crop
+export { default as PictureCrop } from './components/picture-crop'
 export * from './components/picture-crop'
+
+// policies
+export { default as OrganizationPolicies } from './components/policies'
+export * from './components/policies'
 
 // qr-code
 export * from './components/qr-code'
 export * from './components/qr-code/qr-code-downloadable'
 export * from './components/qr-code/qr-code'
+
+// qrcode-scanner
+export { default as QrCodeScanner } from './components/qrcode-scanner'
+export * from './components/qrcode-scanner'
 
 // search
 export * from './components/search/generic-search-input'
@@ -203,6 +227,10 @@ export * from './components/theme-toggle/theme-toggle-menu'
 // tooltips
 export * from './components/tooltips/action-tooltip'
 export * from './components/tooltips/info-tooltip'
+
+// webcam
+export { default as WebCam } from './components/webcam'
+export * from './components/webcam'
 
 // additional ui files present in components/ui
 export * from './components/ui/alert-dialog'

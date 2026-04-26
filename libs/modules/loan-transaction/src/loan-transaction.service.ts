@@ -11,8 +11,8 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IComakerMemberProfile } from '../comaker-member-profile'
-import { ILoanGuide } from '../loan-guide'
+import { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
+import { ILoanGuide } from '@e-coop-monorepo/modules/loan-guide'
 // import { IAmortizationSchedule } from '../amortization'
 import type {
     IAllMembersLoanSummaryResponse,

@@ -4,13 +4,13 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IChargesRateByRangeOrMinimumAmount } from '../charges-rate-by-range-or-minimum-amount'
-import { IChargesRateByTerm } from '../charges-rate-by-term'
-import { IChargesRateSchemeAccount } from '../charges-rate-scheme-account'
-import { IChargesRateSchemeModeOfPayment } from '../charges-rate-scheme-mode-of-payment'
-import { ICurrency } from '../currency'
-import { TLoanModeOfPayment } from '../loan-transaction'
-import { IMemberType } from '../member-type'
+import { IChargesRateByRangeOrMinimumAmount } from '@e-coop-monorepo/modules/charges-rate-by-range-or-minimum-amount'
+import { IChargesRateByTerm } from '@e-coop-monorepo/modules/charges-rate-by-term'
+import { IChargesRateSchemeAccount } from '@e-coop-monorepo/modules/charges-rate-scheme-account'
+import { IChargesRateSchemeModeOfPayment } from '@e-coop-monorepo/modules/charges-rate-scheme-mode-of-payment'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { TLoanModeOfPayment } from '@e-coop-monorepo/modules/loan-transaction'
+import { IMemberType } from '@e-coop-monorepo/modules/member-type'
 import {
     TChargesRateCreateSchemeSchema,
     TChargesRateSchemeSchema,

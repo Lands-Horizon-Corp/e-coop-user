@@ -4,10 +4,9 @@ import { IMedia } from '@e-coop-monorepo/modules/media'
 import { cn } from '@e-coop-monorepo/shared/helpers'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
-import { ImageIcon, UploadIcon, XIcon } from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import SingleImageUploaderModal from '@/components/single-image-uploader/single-image-uploader-modal'
-import { Button, ButtonProps } from '@/components/ui/button'
+import { ImageIcon, UploadIcon, XIcon, ImageDisplay, SingleImageUploaderModal,
+    Button, ButtonProps
+ } from '@e-coop-monorepo/ui'
 
 interface ImageFieldProps
     extends Omit<ButtonProps, 'onChange' | 'value'>, IClassProps {

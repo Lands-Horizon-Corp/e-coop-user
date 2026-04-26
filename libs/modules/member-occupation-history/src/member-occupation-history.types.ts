@@ -6,8 +6,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberOccupation } from '../member-occupation/member-occupation.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberOccupationHistoryRequest {
     member_profile_id: TEntityId

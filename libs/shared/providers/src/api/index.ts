@@ -93,3 +93,4 @@ const API = {
 }
 
 export default API
+export { API as APIService }

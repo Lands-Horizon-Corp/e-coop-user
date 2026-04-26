@@ -7,10 +7,10 @@ import { cn } from '@e-coop-monorepo/shared/helpers'
 import { IClassProps, TEntityId } from '@e-coop-monorepo/shared/types'
 import { IconType } from 'react-icons/lib'
 
-import { ImageIcon, TrashIcon } from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
-import { SignaturePickerUploaderModal } from '@/components/signature/signature-picker-uploader'
-import { Button } from '@/components/ui/button'
+import { ImageIcon, TrashIcon } from '@e-coop-monorepo/ui'
+import {ImageDisplay} from '@e-coop-monorepo/ui'
+import { SignaturePickerUploaderModal } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 
 export interface SignatureUploadField extends IClassProps {
     id?: string
@@ -79,7 +79,7 @@ export const SignatureUploadField = forwardRef<
                                 {mediaImage.file_name ?? 'unknown file'}
                                 <Button
                                     className="size-fit p-1"
-                                    hoverVariant="destructive"
+                                    // hoverVariant="destructive"
                                     onClick={(e) => {
                                         onChange?.(undefined)
                                         e.stopPropagation()

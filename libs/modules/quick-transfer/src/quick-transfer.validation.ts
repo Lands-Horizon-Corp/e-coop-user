@@ -5,7 +5,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { PaymentWithTransactionSchema } from '../transaction'
+import { PaymentWithTransactionSchema } from '@e-coop-monorepo/modules/transaction'
 
 export const QuickWithdrawSchema = PaymentWithTransactionSchema.extend({
     member_profile_id: EntityIdSchema('Member').min(1),

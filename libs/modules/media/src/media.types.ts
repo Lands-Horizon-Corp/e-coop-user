@@ -4,7 +4,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IUserBase } from '../user'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 
 export interface IMedia extends ITimeStamps, IAuditable {
     id: TEntityId

@@ -6,8 +6,8 @@ import {
   type Locale,
 } from "react-day-picker"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Button, buttonVariants } from "@e-coop-monorepo/ui/components/ui/button"
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Button, buttonVariants } from "@e-coop-monorepo/ui"
 import { ChevronLeftIcon, ChevronRightIcon, ChevronDownIcon } from "lucide-react"
 
 function Calendar({

@@ -20,7 +20,7 @@ import type {
     TModeGeneratedReport,
     TModelName,
 } from '../generated-report'
-import { IMedia } from '../media'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 
 const {
     apiCrudHooks,

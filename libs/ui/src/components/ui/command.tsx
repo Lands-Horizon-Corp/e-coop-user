@@ -3,18 +3,18 @@
 import * as React from "react"
 import { Command as CommandPrimitive } from "cmdk"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
   Dialog,
   DialogContent,
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from "@e-coop-monorepo/ui/components/ui/dialog"
+} from "@e-coop-monorepo/ui"
 import {
   InputGroup,
   InputGroupAddon,
-} from "@e-coop-monorepo/ui/components/ui/input-group"
+} from "@e-coop-monorepo/ui"
 import { SearchIcon, CheckIcon } from "lucide-react"
 
 function Command({

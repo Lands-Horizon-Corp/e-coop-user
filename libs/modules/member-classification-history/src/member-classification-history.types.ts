@@ -6,8 +6,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberClassification } from '../member-classification/member-classification.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberClassificationHistoryRequest {
     member_classification_id: TEntityId

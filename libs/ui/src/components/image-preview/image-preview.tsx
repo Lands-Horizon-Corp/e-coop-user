@@ -24,9 +24,9 @@ import {
     RotateRightIcon,
     ZoomInIcon,
     ZoomOutIcon,
-} from '@/components/icons'
+} from '@e-coop-monorepo/ui'
 // Local Components
-import { useCarousel } from '@/components/ui/carousel'
+import { useCarousel } from '@e-coop-monorepo/ui'
 
 import { Button } from '../ui/button'
 import { Card } from '../ui/card'

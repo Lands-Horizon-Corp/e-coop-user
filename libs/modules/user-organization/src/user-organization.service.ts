@@ -17,10 +17,10 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IBranch, getBranchesByOrganizationId } from '../branch'
-import { employeeBaseKey } from '../employee'
-import { TimeMachineRequest } from '../transaction-batch'
-import { IUserBase } from '../user/user.types'
+import { IBranch, getBranchesByOrganizationId } from '@e-coop-monorepo/modules/branch'
+import { employeeBaseKey } from '@e-coop-monorepo/modules/employee'
+import { TimeMachineRequest } from '@e-coop-monorepo/modules/transaction-batch'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import {
     IOrgUserOrganizationGroup,
     IUserOrganization,

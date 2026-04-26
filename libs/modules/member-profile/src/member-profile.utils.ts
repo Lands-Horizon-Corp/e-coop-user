@@ -1,5 +1,5 @@
 import { TMemberPassbookGenerateSettings } from '.'
-import { buildOR } from '../or-builder'
+import { buildOR } from '@e-coop-monorepo/modules/or-builder'
 
 export const isAllowedInputMemberProfilePB = (
     pbOptions?: TMemberPassbookGenerateSettings

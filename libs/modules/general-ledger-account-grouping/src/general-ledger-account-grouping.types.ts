@@ -5,7 +5,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IGeneralLedgerDefinition } from '../general-ledger-definition/general-ledger-definition.types'
+import { IGeneralLedgerDefinition } from '@e-coop-monorepo/modules/general-ledger-definition'
 
 export type TAccountingPrincipleType = 'positive' | 'negative'
 

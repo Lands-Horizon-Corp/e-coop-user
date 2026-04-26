@@ -1,7 +1,7 @@
 import { createGLSFSService } from '@e-coop-monorepo/modules/gl-fs/gl-fs.services'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 
-import { ConnectAccountType } from '../gl-fs'
+import { ConnectAccountType } from '@e-coop-monorepo/modules/gl-fs'
 import {
     IFinancialStatementDefinition,
     IFinancialStatementDefinitionRequest,

@@ -5,8 +5,8 @@ import {
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IGeneralLedger } from '../general-ledger'
-import { ILoanAccount } from '../loan-account'
+import { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
+import { ILoanAccount } from '@e-coop-monorepo/modules/loan-account'
 import { LOAN_SCHEDULE_STATUS } from './loan-guide-constant'
 import { LoanGuideSchema } from './loan-guide.validation'
 

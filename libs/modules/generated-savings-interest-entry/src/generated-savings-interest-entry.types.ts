@@ -4,9 +4,9 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IGeneratedSavingsInterest } from '../generated-savings-interest'
-import { IMemberProfile } from '../member-profile'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IGeneratedSavingsInterest } from '@e-coop-monorepo/modules/generated-savings-interest'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { TGeneratedSavingsInterestEntrySchema } from './generated-savings-interest-entry.validation'
 
 export interface IGeneratedSavingsInterestEntry extends IBaseEntityMeta {

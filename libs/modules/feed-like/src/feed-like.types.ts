@@ -6,7 +6,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IUser } from '../user'
+import { IUser } from '@e-coop-monorepo/modules/user'
 import { FeedLikeSchema } from './feed-like.validation'
 
 export interface IFeedLike extends IBaseEntityMeta {

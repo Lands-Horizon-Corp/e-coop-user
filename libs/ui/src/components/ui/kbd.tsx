@@ -1,4 +1,4 @@
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 function Kbd({ className, ...props }: React.ComponentProps<"kbd">) {
   return (

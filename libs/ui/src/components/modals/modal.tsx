@@ -11,8 +11,8 @@ import {
     DialogDescription,
     type DialogExtraProps,
     DialogTitle,
-} from '@/components/ui/dialog'
-import { Separator } from '@/components/ui/separator'
+} from '@e-coop-monorepo/ui'
+import { Separator } from '@e-coop-monorepo/ui'
 
 export interface IModalClassNames extends DialogExtraProps, IClassProps {
     titleClassName?: string

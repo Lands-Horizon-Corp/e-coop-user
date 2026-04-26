@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { DropzoneOptions, useDropzone } from 'react-dropzone'
 
-import { Input } from '@/components/ui/input'
+import { Input } from '@e-coop-monorepo/ui'
 
 import DefaultDropArea from '../drop-areas/default-drop-area'
 

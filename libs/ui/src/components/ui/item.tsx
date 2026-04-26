@@ -3,8 +3,8 @@ import { mergeProps } from "@base-ui/react/merge-props"
 import { useRender } from "@base-ui/react/use-render"
 import { cva, type VariantProps } from "class-variance-authority"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Separator } from "@e-coop-monorepo/ui/components/ui/separator"
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Separator } from "@e-coop-monorepo/ui"
 
 function ItemGroup({ className, ...props }: React.ComponentProps<"div">) {
   return (

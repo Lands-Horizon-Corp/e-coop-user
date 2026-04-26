@@ -11,7 +11,7 @@ import {
     useDropzone,
 } from 'react-dropzone'
 
-import FileTypeIcon from '../../modules/media/components/file-type'
+import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
 import {
     HardDriveUploadIcon,
     ReplaceIcon,

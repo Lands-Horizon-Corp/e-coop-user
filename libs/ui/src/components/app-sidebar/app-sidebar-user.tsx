@@ -10,19 +10,19 @@ import {
     ChevronsUpDownIcon,
     FingerprintOffIcon,
     SettingsIcon,
-} from '@/components/icons'
-import ImageDisplay from '@/components/image-display'
+} from '@e-coop-monorepo/ui'
+import ImageDisplay from '@e-coop-monorepo/ui'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu'
+} from '@e-coop-monorepo/ui'
 import {
     SidebarMenu,
     SidebarMenuButton,
     SidebarMenuItem,
-} from '@/components/ui/sidebar'
+} from '@e-coop-monorepo/ui'
 
 const AppSidebarUser = () => {
     const router = useRouter()

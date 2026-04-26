@@ -20,7 +20,7 @@ import type {
 import {
     createGeneratedSavingsInterest,
     generatedSavingsInterestBaseKey,
-} from '../generated-savings-interest/generated-savings-interest.service'
+} from '@e-coop-monorepo/modules/generated-savings-interest'
 
 const {
     apiCrudHooks,

@@ -5,7 +5,7 @@ import {
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { TIcon } from '@/components/icons'
+import { TIcon } from '@e-coop-monorepo/ui'
 
 import { TagTemplateSchema } from './tag-template.validation'
 import { TAG_CATEGORY } from './tag.constants'

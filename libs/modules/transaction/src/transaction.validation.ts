@@ -7,7 +7,7 @@ import {
     stringDateWithTransformSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { IAccount } from '../account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 
 export const PaymentWithTransactionSchema = z
     .object({

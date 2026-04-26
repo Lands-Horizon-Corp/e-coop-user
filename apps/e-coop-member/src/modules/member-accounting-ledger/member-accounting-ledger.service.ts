@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import APIService from '@e-coop-monorepo/shared/providers'
+import { APIService } from '@e-coop-monorepo/shared/providers'
 import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
 import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'

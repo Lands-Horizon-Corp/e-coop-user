@@ -1,7 +1,7 @@
 import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media/media.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberIncomeRequest {
     media_id?: TEntityId

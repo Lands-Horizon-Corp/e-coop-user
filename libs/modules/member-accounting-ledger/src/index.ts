@@ -1,1 +1,1 @@
-export * from './components'
+export * from '@e-coop-monorepo/ui'

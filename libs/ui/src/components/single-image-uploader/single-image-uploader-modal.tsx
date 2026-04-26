@@ -1,5 +1,5 @@
 import Modal, { IModalProps } from '../modals/modal'
-import SingleImageUpload, {
+import { SingleImageUpload,
     ISingleImageUploadProps,
 } from './single-image-uploader'
 
@@ -18,4 +18,4 @@ const SingleImageUploaderModal = ({
     )
 }
 
-export default SingleImageUploaderModal
+export {SingleImageUploaderModal}

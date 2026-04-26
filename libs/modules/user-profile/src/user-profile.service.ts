@@ -2,7 +2,7 @@ import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 
-import { IUserBase } from '../user/user.types'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import {
     IUserProfileGeneralRequest,
     IUserProfilePhotoUpdateRequest,

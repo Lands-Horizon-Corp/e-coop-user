@@ -8,7 +8,7 @@ import {
 } from '@e-coop-monorepo/shared/types'
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberDamayanExtensionEntryRequest {
     member_profile_id: TEntityId

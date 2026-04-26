@@ -5,7 +5,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ITimeDepositType } from '../time-deposit-type'
+import { ITimeDepositType } from '@e-coop-monorepo/modules/time-deposit-type'
 import { TTimeDepositComputationSchema } from './time-deposit-computation.validation'
 
 export interface ITimeDepositComputation

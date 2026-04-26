@@ -12,9 +12,9 @@
 // import { EyeIcon, ScanLineIcon } from 'lucide-react'
 // import { useHotkeys } from 'react-hotkeys-hook'
 
-// import QrCodeScanner from '@/components/qrcode-scanner'
-// import LoadingSpinner from '@/components/spinners/loading-spinner'
-// import { Button } from '@/components/ui/button'
+// import QrCodeScanner from '@e-coop-monorepo/ui'
+// import LoadingSpinner from '@e-coop-monorepo/ui'
+// import { Button } from '@e-coop-monorepo/ui'
 
 // interface MemberProfilePickerWithScannerProps extends Partial<
 //     IPickerBaseProps<IMemberProfile>

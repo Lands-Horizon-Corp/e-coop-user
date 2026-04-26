@@ -4,8 +4,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberDepartment } from '../member-department/member-department.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberDepartmentHistoryRequest {
     member_department_id: TEntityId

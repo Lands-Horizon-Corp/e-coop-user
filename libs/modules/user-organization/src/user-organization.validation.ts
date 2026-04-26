@@ -5,7 +5,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { USER_TYPE } from '../user/user.constants'
+import { USER_TYPE } from '@e-coop-monorepo/modules/user'
 
 export const UserOrgPermissionSchema = z.object({
     permission_name: z.string().min(1, 'Permission name is required'),

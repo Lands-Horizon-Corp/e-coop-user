@@ -5,9 +5,9 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IMemberProfile } from '../member-profile'
-import { IUser } from '../user/user.types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IUser } from '@e-coop-monorepo/modules/user'
 
 export interface ICollectorsMemberAccountEntryRequest {
     collector_user_id?: TEntityId

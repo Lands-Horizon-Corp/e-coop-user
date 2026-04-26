@@ -1,6 +1,6 @@
 import { Tooltip as TooltipPrimitive } from "@base-ui/react/tooltip"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 function TooltipProvider({
   delay = 0,
@@ -14,6 +14,8 @@ function TooltipProvider({
     />
   )
 }
+
+const TooltipPortal = TooltipPrimitive.Portal
 
 function Tooltip({ ...props }: TooltipPrimitive.Root.Props) {
   return <TooltipPrimitive.Root data-slot="tooltip" {...props} />
@@ -61,4 +63,4 @@ function TooltipContent({
   )
 }
 
-export { Tooltip, TooltipTrigger, TooltipContent, TooltipProvider }
+export { Tooltip, TooltipTrigger, TooltipPortal, TooltipContent, TooltipProvider }

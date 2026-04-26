@@ -5,7 +5,7 @@ import {
     descriptionTransformerSanitizer,
 } from '@e-coop-monorepo/shared/validation'
 
-import { TTagCategory } from '../tag-template'
+import { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
 
 export const AccountTagSchema = z.object({
     account_id: z.string().min(1, 'Account is required'),

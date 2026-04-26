@@ -2,9 +2,9 @@ import z from 'zod'
 
 import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media/media.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
-import { TRelationship } from '../member-relative-account'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { TRelationship } from '@e-coop-monorepo/modules/member-relative-account'
 import { MemberJointAccountSchema } from './member-joint-account.validation'
 
 // LATEST FROM ERD

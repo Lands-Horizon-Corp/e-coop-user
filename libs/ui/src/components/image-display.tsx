@@ -2,7 +2,7 @@ import { forwardRef } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers'
 
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '@e-coop-monorepo/ui'
 
 import { Image2Icon } from './icons'
 
@@ -63,4 +63,4 @@ const ImageDisplay = forwardRef<HTMLImageElement, ImageDisplayProps>(
     }
 )
 
-export default ImageDisplay
+export { ImageDisplay}

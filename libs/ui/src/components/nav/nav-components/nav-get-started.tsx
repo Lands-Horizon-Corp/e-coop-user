@@ -1,9 +1,9 @@
 import { useRouter } from '@tanstack/react-router'
 
-import { useAuthStore } from '@e-coop-monorepo/modules/auth/authgentication.store'
+import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
 
-import ImageDisplay from '@/components/image-display'
-import { Button } from '@/components/ui/button'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 
 const NavGetStarted = () => {
     const { navigate } = useRouter()

@@ -11,7 +11,7 @@ import {
     FormItem,
     FormLabel,
     FormMessage,
-} from '@/components/ui/form'
+} from '@e-coop-monorepo/ui'
 
 export interface FormFieldWrapperProps<
     T extends FieldValues = FieldValues,

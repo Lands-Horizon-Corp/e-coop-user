@@ -14,10 +14,10 @@ import {
     TextStrikethroughLightIcon,
     ToolbarItalicIcon,
     UndoIcon,
-} from '@/components/icons'
-import ActionTooltip from '@/components/tooltips/action-tooltip'
-import { Button } from '@/components/ui/button'
-import { Toggle } from '@/components/ui/toggle'
+} from '@e-coop-monorepo/ui'
+import {ActionTooltip} from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { Toggle } from '@e-coop-monorepo/ui'
 
 import { THeadingLevel } from '.'
 

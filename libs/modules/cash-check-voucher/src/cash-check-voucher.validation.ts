@@ -6,7 +6,7 @@ import {
 } from '@e-coop-monorepo/shared/validation'
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
-import { CashCheckVoucherEntrySchema } from '../cash-check-voucher-entry'
+import { CashCheckVoucherEntrySchema } from '@e-coop-monorepo/modules/cash-check-voucher-entry'
 
 export const CashCheckVoucherSchema = z.object({
     id: z.string().optional(),

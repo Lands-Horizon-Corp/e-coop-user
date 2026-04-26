@@ -5,10 +5,10 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { ILoanTransaction } from '../loan-transaction'
-import { IMemberProfile } from '../member-profile'
-import { IUser } from '../user'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IUser } from '@e-coop-monorepo/modules/user'
 import { TJournalVoucherEntrySchema } from './journal-voucher-entry.validation'
 
 export interface IJournalVoucherEntry extends IBaseEntityMeta {

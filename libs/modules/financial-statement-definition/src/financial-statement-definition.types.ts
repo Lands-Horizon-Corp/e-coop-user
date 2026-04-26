@@ -4,7 +4,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
 import { IFinancialStatementDefinitionSchema } from './financial-statement-definition.validation'
 

@@ -5,9 +5,9 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBank } from '../bank/bank.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
-import { IUser } from '../user/user.types'
+import { IBank } from '@e-coop-monorepo/modules/bank'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IUser } from '@e-coop-monorepo/modules/user'
 
 export interface IPostDatedCheckRequest {
     member_profile_id?: TEntityId

@@ -4,7 +4,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberProfile } from '../member-profile'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberDescriptionRequest {
     id?: TEntityId

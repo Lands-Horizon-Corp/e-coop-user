@@ -6,11 +6,11 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBank } from '../bank'
-import { ICurrency } from '../currency'
-import { IMedia } from '../media'
-import { ITransactionBatch } from '../transaction-batch'
-import { IUserBase } from '../user'
+import { IBank } from '@e-coop-monorepo/modules/bank'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import { CheckRemittanceSchema } from './check-remittance.validation'
 
 export interface ICheckRemittance extends IBaseEntityMeta {

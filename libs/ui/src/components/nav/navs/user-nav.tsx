@@ -4,9 +4,9 @@ import { Link, useLocation } from '@tanstack/react-router'
 
 import UserAvatarMenu from '@e-coop-monorepo/modules/auth/components/user-avatar-menu'
 import { cn } from '@e-coop-monorepo/shared/helpers'
-// import PageBreadCrumb from '@/components/pages-breadcrumbs'
-// import AppSidebarToggle from '@/components/ui/app-sidebar/app-sidebar-toggle'
-// import { Button } from '@/components/ui/button'
+// import PageBreadCrumb from '@e-coop-monorepo/ui'
+// import AppSidebarToggle from '@e-coop-monorepo/ui'
+// import { Button } from '@e-coop-monorepo/ui'
 
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
@@ -17,9 +17,9 @@ import { IClassProps } from '@e-coop-monorepo/shared/types'
 // import NavProfileMenu from '@e-coop-monorepo/modules/user-profile/components/nav/nav-profile-menu'
 // import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-import NavThemeToggle from '@/components/nav/nav-components/nav-theme-toggle'
-import NavContainer from '@/components/nav/nav-container'
-import RootNav from '@/components/nav/root-nav'
+import NavThemeToggle from '@e-coop-monorepo/ui'
+import NavContainer from '@e-coop-monorepo/ui'
+import RootNav from '@e-coop-monorepo/ui'
 
 type NavLink = {
     name: string

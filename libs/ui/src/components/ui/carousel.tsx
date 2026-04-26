@@ -5,8 +5,8 @@ import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from "embla-carousel-react"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Button } from "@e-coop-monorepo/ui/components/ui/button"
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Button } from "@e-coop-monorepo/ui"
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react"
 
 type CarouselApi = UseEmblaCarouselType[1]

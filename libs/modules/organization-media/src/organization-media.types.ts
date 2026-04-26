@@ -7,8 +7,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media'
-import { IOrganization } from '../organization/organization.types'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
 import { OrganizationMediaSchema } from './organization-media.validation'
 
 export interface IOrganizationMedia extends IAuditable, ITimeStamps {

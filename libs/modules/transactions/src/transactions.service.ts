@@ -8,7 +8,7 @@ import {
     ITransactionPaginated,
     getPaginated,
     transactionAPIRoute,
-} from '../transaction'
+} from '@e-coop-monorepo/modules/transaction'
 
 export type TTransactionHookMode =
     | 'current-branch'

@@ -6,8 +6,8 @@ import {
     stringDateWithTransformSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { MutualFundAdditionalMembersSchema } from '../mutual-fund-additional-members'
-import { MutualFundTableSchema } from '../mutual-fund-table'
+import { MutualFundAdditionalMembersSchema } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
+import { MutualFundTableSchema } from '@e-coop-monorepo/modules/mutual-fund-table'
 import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
 
 export const MutualFundSchema = z.object({

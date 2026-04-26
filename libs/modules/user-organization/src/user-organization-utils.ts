@@ -1,4 +1,4 @@
-import { useAuthStore } from '../authentication/authgentication.store'
+import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
 
 export const getTimeMachineValue = () => {
     return (

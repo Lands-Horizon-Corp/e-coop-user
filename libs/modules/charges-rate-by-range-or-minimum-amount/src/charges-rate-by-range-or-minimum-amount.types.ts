@@ -5,7 +5,7 @@ import {
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IChargesRateScheme } from '../charges-rate-scheme'
+import { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
 import { ChargesRateByRangeOrMinimumAmountSchema } from './charges-rate-by-range-or-minimum-amount.validation'
 
 export interface IChargesRateByRangeOrMinimumAmount extends IBaseEntityMeta {

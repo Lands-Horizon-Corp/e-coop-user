@@ -1,7 +1,7 @@
 import * as React from "react"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Button } from "@e-coop-monorepo/ui/components/ui/button"
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Button } from "@e-coop-monorepo/ui"
 import { ChevronLeftIcon, ChevronRightIcon, MoreHorizontalIcon } from "lucide-react"
 
 function Pagination({ className, ...props }: React.ComponentProps<"nav">) {

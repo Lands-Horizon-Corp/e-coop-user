@@ -8,7 +8,7 @@ import {
 import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IUserOrganization } from '../user-organization'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { IBranch, IBranchRequest } from './branch.types'
 
 /**

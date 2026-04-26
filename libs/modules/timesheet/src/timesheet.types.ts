@@ -6,8 +6,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media/media.types'
-import { IUserBase } from '../user'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import { TimesheetRequestSchema } from './timeshee.validation'
 
 export interface ITimesheet extends IBaseEntityMeta {

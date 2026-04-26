@@ -4,7 +4,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ICurrency } from '../currency'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
 import { TDisbursementSchema } from './disbursement.validation'
 
 export interface IDisbursement extends IBaseEntityMeta {

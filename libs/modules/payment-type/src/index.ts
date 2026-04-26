@@ -1,5 +1,5 @@
 export * from './payment-type.types'
 export * from './payment-type.service'
 export * from './payment-type.validation'
-export * from './components'
+export * from '@e-coop-monorepo/ui'
 export * from './pages'

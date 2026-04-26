@@ -19,11 +19,11 @@ import {
     RotateBoxRightIcon,
     ZoomInIcon,
     ZoomOutIcon,
-} from '@/components/icons'
-import LoadingSpinner from '@/components/spinners/loading-spinner'
-import ActionTooltip from '@/components/tooltips/action-tooltip'
-import { Button } from '@/components/ui/button'
-import { Slider } from '@/components/ui/slider'
+} from '@e-coop-monorepo/ui'
+import LoadingSpinner from '@e-coop-monorepo/ui'
+import ActionTooltip from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { Slider } from '@e-coop-monorepo/ui'
 
 interface Props extends IClassProps {
     image: string

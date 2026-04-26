@@ -5,9 +5,9 @@ import {
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IFeedComment } from '../feed-comment'
-import { IFeedLike } from '../feed-like'
-import { IFeedMedia } from '../feed-media'
+import { IFeedComment } from '@e-coop-monorepo/modules/feed-comment'
+import { IFeedLike } from '@e-coop-monorepo/modules/feed-like'
+import { IFeedMedia } from '@e-coop-monorepo/modules/feed-media'
 import { FeedSchema } from './feed.validation'
 
 export interface IFeed extends IBaseEntityMeta {

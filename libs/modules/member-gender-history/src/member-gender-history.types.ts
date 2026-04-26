@@ -4,8 +4,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberGender } from '../member-gender/member-gender.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberGenderHistoryRequest {
     member_profile_id: TEntityId

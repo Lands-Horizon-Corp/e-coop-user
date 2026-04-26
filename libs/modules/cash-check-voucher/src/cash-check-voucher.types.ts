@@ -6,22 +6,22 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import {
     ICashCheckVoucherGeneralORSettings,
     ICashVoucherORSettings,
-} from '../branch-settings'
+} from '@e-coop-monorepo/modules/branch-settings'
 import {
     ICashCheckVoucherEntry,
     ICashCheckVoucherEntryRequest,
-} from '../cash-check-voucher-entry'
-import { ICashCheckVoucherTag } from '../cash-check-voucher-tag'
-import { ICurrency } from '../currency'
-import { IMedia } from '../media'
-import { IMemberProfile } from '../member-profile'
-import { ITransactionBatch } from '../transaction-batch'
-import { IUser } from '../user'
-import { IUserOrganizationSettings } from '../user-organization'
+} from '@e-coop-monorepo/modules/cash-check-voucher-entry'
+import { ICashCheckVoucherTag } from '@e-coop-monorepo/modules/cash-check-voucher-tag'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import { IUser } from '@e-coop-monorepo/modules/user'
+import { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
 import {
     CashCheckSignatureSchema,
     CashCheckVoucherPrintSchema,

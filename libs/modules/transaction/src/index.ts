@@ -1,5 +1,5 @@
 export * from './transaction.types'
 export * from './transaction.service'
-export * from './components'
+export * from '@e-coop-monorepo/ui'
 export * from './pages'
 export * from './transaction.validation'

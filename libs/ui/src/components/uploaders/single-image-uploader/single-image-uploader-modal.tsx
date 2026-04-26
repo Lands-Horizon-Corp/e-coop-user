@@ -1,4 +1,4 @@
-import Modal, { IModalProps } from '@/components/modals/modal'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui'
 
 import SingleImageUpload, { ISingleImageUploadProps } from '.'
 

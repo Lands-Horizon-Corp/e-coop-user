@@ -6,11 +6,11 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { ICurrency } from '../currency'
-import { IMemberGender } from '../member-gender'
-import { IMemberType } from '../member-type'
-import { IUnbalanceAccount } from '../unbalance-account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
+import { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import { IUnbalanceAccount } from '@e-coop-monorepo/modules/unbalance-account'
 import {
     BranchSettingRequestSchema,
     TBranchSettingsCurrencySchema,

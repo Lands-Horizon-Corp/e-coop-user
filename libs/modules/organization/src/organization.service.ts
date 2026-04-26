@@ -11,7 +11,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { ICategory } from '../category'
+import { ICategory } from '@e-coop-monorepo/modules/category'
 import {
     IOrganization,
     IOrganizationEditRequest,

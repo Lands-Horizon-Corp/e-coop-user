@@ -4,13 +4,13 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IAdjustmentEntryTag } from '../adjustment-entry-tag'
-import { IAdjustmentVoucherSettings } from '../branch-settings'
-import { IMemberProfile } from '../member-profile'
-import { IPaymentType } from '../payment-type'
-import { IUser } from '../user'
-import { IUserOrganizationSettings } from '../user-organization'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IAdjustmentEntryTag } from '@e-coop-monorepo/modules/adjustment-entry-tag'
+import { IAdjustmentVoucherSettings } from '@e-coop-monorepo/modules/branch-settings'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
+import { IUser } from '@e-coop-monorepo/modules/user'
+import { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
 
 export interface IAdjustmentEntry extends IBaseEntityMeta {
     //add here

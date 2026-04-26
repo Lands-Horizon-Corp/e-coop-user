@@ -6,7 +6,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media/media.types'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import { BankSchema } from './bank.validation'
 
 export interface IBank extends IBaseEntityMeta {

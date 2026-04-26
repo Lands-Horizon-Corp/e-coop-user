@@ -14,12 +14,12 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IGeneralLedger, generalLedgerBaseKey } from '../general-ledger'
+import { IGeneralLedger, generalLedgerBaseKey } from '@e-coop-monorepo/modules/general-ledger'
 import {
     IPaymentQuickRequest,
     IPaymentRequest,
     TPaymentMode,
-} from '../quick-transfer'
+} from '@e-coop-monorepo/modules/quick-transfer'
 import {
     ITransaction,
     ITransactionRequest,

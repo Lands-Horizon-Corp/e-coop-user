@@ -14,7 +14,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { TGeneralLedgerType } from '../general-ledger'
+import { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
 import {
     IAccount,
     IAccountPaginated,

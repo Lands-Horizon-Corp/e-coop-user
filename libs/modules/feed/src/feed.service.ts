@@ -4,7 +4,7 @@ import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IFeed, IFeedRequest } from '../feed'
-import { IFeedComment, IFeedCommentRequest } from '../feed-comment'
+import { IFeedComment, IFeedCommentRequest } from '@e-coop-monorepo/modules/feed-comment'
 
 const {
     apiCrudHooks,

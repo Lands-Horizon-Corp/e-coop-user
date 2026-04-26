@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 
-import { IUserOrganization } from '../user-organization'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import {
     PERMISSION_BASE_ACTIONS,
     generateBaseAction,

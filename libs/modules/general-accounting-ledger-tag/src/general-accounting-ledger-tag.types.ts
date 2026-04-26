@@ -5,7 +5,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TTagCategory } from '../tag-template'
+import { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
 
 export interface IGeneralLedgerTagRequest {
     general_ledger_id: TEntityId

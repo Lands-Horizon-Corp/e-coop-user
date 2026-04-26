@@ -1,6 +1,6 @@
 import { Separator as SeparatorPrimitive } from "@base-ui/react/separator"
 
-import { cn } from from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 function Separator({
   className,

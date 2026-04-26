@@ -6,12 +6,12 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IMemberProfile } from '../member-profile'
-import { IMutualFundAdditionalMembers } from '../mutual-fund-additional-members'
-import { IMutualFundEntry } from '../mutual-fund-entry'
-import { IMutualFundTable } from '../mutual-fund-table'
-import { IUser } from '../user'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IMutualFundAdditionalMembers } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
+import { IMutualFundEntry } from '@e-coop-monorepo/modules/mutual-fund-entry'
+import { IMutualFundTable } from '@e-coop-monorepo/modules/mutual-fund-table'
+import { IUser } from '@e-coop-monorepo/modules/user'
 import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
 import {
     MutualFundSchema,

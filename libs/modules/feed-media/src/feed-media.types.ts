@@ -6,7 +6,7 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import { FeedMediaSchema } from './feed-media.validation'
 
 export interface IFeedMedia extends IBaseEntityMeta {
