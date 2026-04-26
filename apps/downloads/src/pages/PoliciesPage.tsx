@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Link2 } from "lucide-react";
-import { allPolicies, policyList, type Policy, type PolicySection } from "@e-coop/utils/policies";
+import { allPolicies, policyList, type Policy, type PolicySection } from "@e-coop-monorepo/shared/policies";
 
 export default function PoliciesPage() {
   const { policyId = "privacy" } = useParams();

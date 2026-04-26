@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogTitle,
-} from '@e-coop-monorepo/ui/components/ui/dialog'
+} from '@e-coop-monorepo/ui'
 
 const ConnectionProvider = ({ interval = 10_000 }: { interval?: number }) => {
     const [isConnected, setIsConnected] = useState(true)
@@ -33,10 +32,6 @@ const ConnectionProvider = ({ interval = 10_000 }: { interval?: number }) => {
             <DialogContent
                 className="pointer-events-none flex max-w-[90vw] flex-col items-center !rounded-2xl shadow-center-md backdrop-blur focus:outline-none sm:w-fit sm:max-w-[32rem]"
                 onContextMenu={() => false}
-                overlayClassName={cn(
-                    'backdrop-blur ease-in-out ![animation-duration:1s]',
-                    isConnected && 'backdrop-blur-none'
-                )}
                 showCloseButton={false}
             >
                 <DialogTitle className="text-xl">Connection Lost</DialogTitle>

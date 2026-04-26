@@ -10,34 +10,34 @@
     "resolveJsonModule": true,
     "strict": true,
     "types": ["vite/client", "vitest"],
-    "paths": {
-      // 1. Ensure the app can read the global aliases
-      "@e-coop/utils": ["../../libs/utils/src/index.ts"],
-      "@e-coop/utils/*": ["../../libs/utils/src/*"],
-      "@e-coop-monorepo/ui": ["../../libs/ui/src/index.ts"],
-      "@e-coop-monorepo/ui/*": ["../../libs/ui/src/*"],
+    // "paths": {
+    //   // 1. Ensure the app can read the global aliases
+    //   "@e-coop/utils": ["../../libs/utils/src/index.ts"],
+    //   "@e-coop/utils/*": ["../../libs/utils/src/*"],
+    //   "@e-coop-monorepo/ui": ["../../libs/ui/src/index.ts"],
+    //   "@e-coop-monorepo/ui/*": ["../../libs/ui/src/*"],
       
-      // 2. The Migration Hack (routes old local imports to the new libs)
-      "@/helpers": ["../../libs/shared/src/helpers/index.ts"],
-      "@/helpers/*": ["../../libs/shared/src/helpers/*"],
-      "@/hooks": ["../../libs/shared/src/hooks/index.ts"],
-      "@/hooks/*": ["../../libs/shared/src/hooks/*"],
-      "@/validation": ["../../libs/shared/src/validation/index.ts"],
-      "@/validation/*": ["../../libs/shared/src/validation/*"],
-      "@/types": ["../../libs/shared/src/types/index.ts"],
-      "@/types/*": ["../../libs/shared/src/types/*"],
-      "@/contexts": ["../../libs/shared/src/contexts/index.ts"],
-      "@/contexts/*": ["../../libs/shared/src/contexts/*"],
-      "@/constants": ["../../libs/shared/src/constants/index.ts"],
-      "@/constants/*": ["../../libs/shared/src/constants/*"],
-      "@/providers/*": ["./src/providers/*"],
+    //   // 2. The Migration Hack (routes old local imports to the new libs)
+    //   "@/helpers": ["../../libs/shared/src/helpers/index.ts"],
+    //   "@/helpers/*": ["../../libs/shared/src/helpers/*"],
+    //   "@/hooks": ["../../libs/shared/src/hooks/index.ts"],
+    //   "@/hooks/*": ["../../libs/shared/src/hooks/*"],
+    //   "@/validation": ["../../libs/shared/src/validation/index.ts"],
+    //   "@/validation/*": ["../../libs/shared/src/validation/*"],
+    //   "@/types": ["../../libs/shared/src/types/index.ts"],
+    //   "@/types/*": ["../../libs/shared/src/types/*"],
+    //   "@/contexts": ["../../libs/shared/src/contexts/index.ts"],
+    //   "@/contexts/*": ["../../libs/shared/src/contexts/*"],
+    //   "@/constants": ["../../libs/shared/src/constants/index.ts"],
+    //   "@/constants/*": ["../../libs/shared/src/constants/*"],
+    //   "@/providers/*": ["./src/providers/*"],
       
-      // 👇 UI Migration Hack pointing to your Shadcn components
-      "@/components/*": ["../../libs/ui/src/components/*"],
+    //   // 👇 UI Migration Hack pointing to your Shadcn components
+    //   "@/components/*": ["../../libs/ui/src/components/*"],
       
-      // 3. The fallback for local app files
-      "@/*": ["./src/*"]
-    }
+    //   // 3. The fallback for local app files
+    //   "@/*": ["./src/*"]
+    // }
   },
   "files": [],
   "include": [

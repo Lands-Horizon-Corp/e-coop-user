@@ -3,12 +3,13 @@ import { useState } from 'react'
 import {
     QueryClient,
     QueryClientProvider,
+    type QueryKey,
     matchQuery,
 } from '@tanstack/react-query'
 import { MutationCache } from '@tanstack/react-query'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 
-import MapProvider from '@e-coop-monorepo/ui/components/map/map.provider'
+import {MapProvider} from '@e-coop-monorepo/ui'
 import { ThemeProvider } from './providers/theme/provider/theme-provider'
 // import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 
@@ -49,19 +50,28 @@ const AppContent = () => {
 }
 
 const App = () => {
+    const getInvalidates = (meta: unknown): QueryKey[] => {
+        if (!meta || typeof meta !== 'object') {
+            return []
+        }
+
+        const invalidates = (meta as { invalidates?: unknown }).invalidates
+
+        return Array.isArray(invalidates) ? (invalidates as QueryKey[]) : []
+    }
+
     const [queryClient] = useState(
         new QueryClient({
             mutationCache: new MutationCache({
                 onSuccess: (_data, _variables, _context, mutation) => {
-                    if (
-                        mutation.meta?.invalidates &&
-                        mutation.meta?.invalidates.length > 0
-                    ) {
+                    const invalidates = getInvalidates(mutation.meta)
+
+                    if (invalidates.length > 0) {
                         queryClient.invalidateQueries({
                             predicate: (query) =>
                                 // invalidate all matching tags at once
                                 // or everything if no meta is provided
-                                mutation.meta?.invalidates?.some((queryKey) =>
+                                invalidates.some((queryKey) =>
                                     matchQuery({ queryKey }, query)
                                 ) ?? true,
                         })

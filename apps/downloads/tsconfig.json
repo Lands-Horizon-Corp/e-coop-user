@@ -9,12 +9,10 @@
     "strict": true,
     "noImplicitAny": true,
     "types": ["vite/client", "vitest"],
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["src/*"]
-    }
+    // "paths": {
+    //   "@/*": ["src/*"]
+    // }
   },
-  "files": ["src/App.tsx"],
   "include": [
     "vite.config.mts",
     "src/**/*.ts",

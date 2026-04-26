@@ -9,18 +9,56 @@ export interface IForgetPasswordEntry {
 }
 
 interface IFakeStore {
-    authMember: IMemberProfile | null
-    members: IMemberProfile[]
+    authMember: IFakeMemberProfile | null
+    members: IFakeMemberProfile[]
     forgetPasswordRequest: IForgetPasswordEntry | null
 
     // actions
-    setAuthMember: (member: IMemberProfile | null) => void
-    addMember: (member: IMemberProfile) => void
-    updateMember: (id: string, updated: Partial<IMemberProfile>) => void
+    setAuthMember: (member: IFakeMemberProfile | null) => void
+    addMember: (member: IFakeMemberProfile) => void
+    updateMember: (id: string, updated: Partial<IFakeMemberProfile>) => void
     removeMember: (id: string) => void
 
     setForgetPasswordRequest: (req: IForgetPasswordEntry | null) => void
 }
+
+type IFakeMemberProfile = Partial<IMemberProfile> & {
+    key: string
+}
+
+type TOrganization = IMemberProfile['organization']
+type TBranch = IMemberProfile['branch']
+type TMedia = NonNullable<IMemberProfile['media']>
+
+const now = new Date().toISOString()
+const mockOrganization = { id: 'org-001' } as TOrganization
+const mockBranch = { id: 'branch-001' } as TBranch
+
+const baseEntityMeta = {
+    organization_id: mockOrganization.id,
+    organization: mockOrganization,
+    branch_id: mockBranch.id,
+    branch: mockBranch,
+    created_at: now,
+    updated_at: now,
+}
+
+const createMedia = (id: string, url: string): TMedia => ({
+    id,
+    file_name: 'mock-image',
+    file_size: 0,
+    file_type: 'image/jpeg',
+    storage_key: id,
+    bucket_name: 'mock',
+    download_url: url,
+    created_at: now,
+    updated_at: now,
+})
+
+const createMemberProfileRef = (
+    id: string,
+    fullName = 'Unknown'
+): IMemberProfile => ({ id, full_name: fullName } as IMemberProfile)
 
 export const useFakeStore = create<IFakeStore>((set) => ({
     authMember: {
@@ -36,6 +74,7 @@ export const useFakeStore = create<IFakeStore>((set) => ({
             'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnL4VfLzoaz2l7pnGodjh_yKlDhiDk5cNz3g&s',
 
         member_gender: {
+            ...baseEntityMeta,
             id: 'male',
             name: 'Male',
             description: 'Male gender',
@@ -55,8 +94,13 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
         member_educational_attainments: [
             {
+                ...baseEntityMeta,
                 id: 'educ-001',
                 member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                member_profile: createMemberProfileRef(
+                    '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    'Zaldy Co Sr.'
+                ),
                 school_name: 'University of the Philippines',
                 school_year: 2004,
                 program_course: 'BS Business Administration',
@@ -67,12 +111,17 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
         member_incomes: [
             {
+                ...baseEntityMeta,
                 id: 'income-001',
                 member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
                 name: 'Business Profit',
                 amount: 50000,
                 release_date: '2025-01-10',
-                media_url: 'https://picsum.photos/200?random=111',
+                media_id: 'media-income-001',
+                media: createMedia(
+                    'media-income-001',
+                    'https://picsum.photos/200?random=111'
+                ),
                 created_at: '2025-12-10T14:58:29.358Z',
                 updated_at: '2025-12-10T14:58:29.358Z',
             },
@@ -80,8 +129,13 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
         member_expenses: [
             {
+                ...baseEntityMeta,
                 id: 'expense-001',
                 member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                member_profile: createMemberProfileRef(
+                    '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    'Zaldy Co Sr.'
+                ),
                 name: 'Business Supplies',
                 amount: 10000,
                 description: 'Monthly purchase of materials.',
@@ -92,8 +146,13 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
         member_assets: [
             {
+                ...baseEntityMeta,
                 id: 'addr-001',
                 member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                member_profile: createMemberProfileRef(
+                    '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    'Zaldy Co Sr.'
+                ),
                 name: 'Airbnb Apartment',
                 description: '123 Mabuhay St., Brgy. Pag-asa',
 
@@ -107,9 +166,9 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
         member_addresses: [
             {
+                ...baseEntityMeta,
                 id: 'addr-001',
-                member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
-                label: 'Home Address',
+                label: 'House',
                 address: '123 Mabuhay St., Brgy. Pag-asa',
                 country_code: 'PH',
 
@@ -129,10 +188,18 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
         member_relative_accounts: [
             {
+                ...baseEntityMeta,
                 id: 'relative-001',
-                full_name: 'Carla Co',
                 member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                member_profile: createMemberProfileRef(
+                    '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    'Zaldy Co Sr.'
+                ),
                 relative_member_profile_id: 'rel-001',
+                relative_member_profile: createMemberProfileRef(
+                    'rel-001',
+                    'Carla Co'
+                ),
                 family_relationship: 'Daughter',
                 description: 'Immediate family member.',
                 created_at: '2025-12-10T14:58:29.358Z',
@@ -142,11 +209,24 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
         member_government_benefits: [
             {
+                ...baseEntityMeta,
                 id: 'govbenefit-001',
                 member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                member_profile: createMemberProfileRef(
+                    '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    'Zaldy Co Sr.'
+                ),
 
-                front_media_url: 'https://picsum.photos/200?random=401',
-                back_media_url: 'https://picsum.photos/200?random=402',
+                front_media_id: 'media-gov-front-001',
+                front_media: createMedia(
+                    'media-gov-front-001',
+                    'https://picsum.photos/200?random=401'
+                ),
+                back_media_id: 'media-gov-back-001',
+                back_media: createMedia(
+                    'media-gov-back-001',
+                    'https://picsum.photos/200?random=402'
+                ),
 
                 name: 'PhilHealth ID',
                 country_code: 'PH',
@@ -158,11 +238,24 @@ export const useFakeStore = create<IFakeStore>((set) => ({
                 updated_at: '2025-12-10T14:58:29.358Z',
             },
             {
+                ...baseEntityMeta,
                 id: 'govbenefit-002',
                 member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                member_profile: createMemberProfileRef(
+                    '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    'Zaldy Co Sr.'
+                ),
 
-                front_media_url: 'https://picsum.photos/200?random=403',
-                back_media_url: 'https://picsum.photos/200?random=404',
+                front_media_id: 'media-gov-front-002',
+                front_media: createMedia(
+                    'media-gov-front-002',
+                    'https://picsum.photos/200?random=403'
+                ),
+                back_media_id: 'media-gov-back-002',
+                back_media: createMedia(
+                    'media-gov-back-002',
+                    'https://picsum.photos/200?random=404'
+                ),
 
                 name: 'National ID',
                 country_code: 'PH',
@@ -190,6 +283,7 @@ export const useFakeStore = create<IFakeStore>((set) => ({
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnL4VfLzoaz2l7pnGodjh_yKlDhiDk5cNz3g&s',
 
             member_gender: {
+                ...baseEntityMeta,
                 id: 'male',
                 name: 'Male',
                 description: 'Male gender',
@@ -197,11 +291,24 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_government_benefits: [
                 {
+                    ...baseEntityMeta,
                     id: 'govbenefit-001',
                     member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    member_profile: createMemberProfileRef(
+                        '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                        'Zaldy Co Sr.'
+                    ),
 
-                    front_media_url: 'https://picsum.photos/200?random=401',
-                    back_media_url: 'https://picsum.photos/200?random=402',
+                    front_media_id: 'media-gov-front-001',
+                    front_media: createMedia(
+                        'media-gov-front-001',
+                        'https://picsum.photos/200?random=401'
+                    ),
+                    back_media_id: 'media-gov-back-001',
+                    back_media: createMedia(
+                        'media-gov-back-001',
+                        'https://picsum.photos/200?random=402'
+                    ),
 
                     name: 'PhilHealth ID',
                     country_code: 'PH',
@@ -213,11 +320,24 @@ export const useFakeStore = create<IFakeStore>((set) => ({
                     updated_at: '2025-12-10T14:58:29.358Z',
                 },
                 {
+                    ...baseEntityMeta,
                     id: 'govbenefit-002',
                     member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    member_profile: createMemberProfileRef(
+                        '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                        'Zaldy Co Sr.'
+                    ),
 
-                    front_media_url: 'https://picsum.photos/200?random=403',
-                    back_media_url: 'https://picsum.photos/200?random=404',
+                    front_media_id: 'media-gov-front-002',
+                    front_media: createMedia(
+                        'media-gov-front-002',
+                        'https://picsum.photos/200?random=403'
+                    ),
+                    back_media_id: 'media-gov-back-002',
+                    back_media: createMedia(
+                        'media-gov-back-002',
+                        'https://picsum.photos/200?random=404'
+                    ),
 
                     name: 'National ID',
                     country_code: 'PH',
@@ -233,8 +353,13 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_assets: [
                 {
+                    ...baseEntityMeta,
                     id: 'addr-001',
                     member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    member_profile: createMemberProfileRef(
+                        '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                        'Zaldy Co Sr.'
+                    ),
                     name: 'Airbnb Apartment',
                     description: '123 Mabuhay St., Brgy. Pag-asa',
 
@@ -260,8 +385,13 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_educational_attainments: [
                 {
+                    ...baseEntityMeta,
                     id: 'educ-001',
                     member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    member_profile: createMemberProfileRef(
+                        '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                        'Zaldy Co Sr.'
+                    ),
                     school_name: 'University of the Philippines',
                     school_year: 2004,
                     program_course: 'BS Business Administration',
@@ -272,12 +402,17 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_incomes: [
                 {
+                    ...baseEntityMeta,
                     id: 'income-001',
                     member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
                     name: 'Business Profit',
                     amount: 50000,
                     release_date: '2025-01-10',
-                    media_url: 'https://picsum.photos/200?random=111',
+                    media_id: 'media-income-001',
+                    media: createMedia(
+                        'media-income-001',
+                        'https://picsum.photos/200?random=111'
+                    ),
                     created_at: '2025-12-10T14:58:29.358Z',
                     updated_at: '2025-12-10T14:58:29.358Z',
                 },
@@ -285,8 +420,13 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_expenses: [
                 {
+                    ...baseEntityMeta,
                     id: 'expense-001',
                     member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    member_profile: createMemberProfileRef(
+                        '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                        'Zaldy Co Sr.'
+                    ),
                     name: 'Business Supplies',
                     amount: 10000,
                     description: 'Monthly purchase of materials.',
@@ -297,9 +437,9 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_addresses: [
                 {
+                    ...baseEntityMeta,
                     id: 'addr-001',
-                    member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
-                    label: 'Home Address',
+                    label: 'House',
                     address: '123 Mabuhay St., Brgy. Pag-asa',
                     country_code: 'PH',
 
@@ -319,10 +459,18 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_relative_accounts: [
                 {
+                    ...baseEntityMeta,
                     id: 'relative-001',
-                    full_name: 'Carla Co',
                     member_profile_id: '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                    member_profile: createMemberProfileRef(
+                        '4958b013-f377-4077-8b14-d9edd16eb5cc',
+                        'Zaldy Co Sr.'
+                    ),
                     relative_member_profile_id: 'rel-001',
+                    relative_member_profile: createMemberProfileRef(
+                        'rel-001',
+                        'Carla Co'
+                    ),
                     family_relationship: 'Daughter',
                     description: 'Immediate family member.',
                     created_at: '2025-12-10T14:58:29.358Z',
@@ -345,6 +493,7 @@ export const useFakeStore = create<IFakeStore>((set) => ({
             civil_status: 'single',
 
             member_gender: {
+                ...baseEntityMeta,
                 id: 'female',
                 name: 'Female',
                 description: 'Female gender',
@@ -363,6 +512,7 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_incomes: [
                 {
+                    ...baseEntityMeta,
                     id: crypto.randomUUID(),
                     member_profile_id: 'inc1',
                     name: 'Salary',
@@ -375,9 +525,9 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_addresses: [
                 {
+                    ...baseEntityMeta,
                     id: crypto.randomUUID(),
-                    member_profile_id: 'addr1',
-                    label: 'Home',
+                    label: 'House',
                     address: '123 Main St',
                     country_code: 'PH',
                     city: 'Quezon City',
@@ -401,6 +551,7 @@ export const useFakeStore = create<IFakeStore>((set) => ({
             status: 'pending',
 
             member_gender: {
+                ...baseEntityMeta,
                 id: 'male',
                 name: 'Male',
                 description: 'Male gender',
@@ -438,12 +589,14 @@ export const useFakeStore = create<IFakeStore>((set) => ({
             status: 'verified',
 
             member_gender: {
+                ...baseEntityMeta,
                 id: 'female',
                 name: 'Female',
                 description: 'Female gender',
             },
 
             member_department: {
+                ...baseEntityMeta,
                 id: 'dept-1',
                 name: 'Finance',
                 description: 'Handles financial operations',
@@ -452,7 +605,10 @@ export const useFakeStore = create<IFakeStore>((set) => ({
             member_type: {
                 id: 'regular',
                 name: 'Regular Member',
+                prefix: 'REG',
                 description: 'Full membership',
+                created_at: now,
+                updated_at: now,
             },
 
             is_closed: false,
@@ -467,8 +623,10 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
             member_contact_references: [
                 {
+                    ...baseEntityMeta,
                     id: crypto.randomUUID(),
                     member_profile_id: 'ref1',
+                    member_profile: createMemberProfileRef('ref1'),
                     name: 'Mother',
                     contact_number: '+639555555555',
                     description: 'Emergency contact',
@@ -491,6 +649,7 @@ export const useFakeStore = create<IFakeStore>((set) => ({
             status: 'verified',
 
             member_gender: {
+                ...baseEntityMeta,
                 id: 'male',
                 name: 'Male',
                 description: 'Male gender',
@@ -544,7 +703,7 @@ export const useFakeStore = create<IFakeStore>((set) => ({
 
 // USE only kapag sure ka na user ay existing
 export const useAuthMember = <
-    TMember extends IMemberProfile = IMemberProfile,
+    TMember extends IFakeMemberProfile = IFakeMemberProfile,
 >() => {
     const { authMember, ...rest } = useFakeStore((s) => s)
 
