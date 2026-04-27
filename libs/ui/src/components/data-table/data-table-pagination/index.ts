@@ -1,1 +1,1 @@
-export { default as DataTablePagination } from "./index.tsx";
+export { default as DataTablePagination } from "./data-table-pagination";

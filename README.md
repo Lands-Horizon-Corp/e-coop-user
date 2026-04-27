@@ -36,7 +36,77 @@ e-coop-user/
 │       └── member-profile/      # Example: Contains specific services, Zod schemas, API logic
 └── tools/scripts/               # Internal Developer Platform (Custom automation scripts)
 
+## Getting Started
+Prerequisites
+To guarantee deterministic builds across all machines and CI environments, this project is strictly locked. DO NOT use npm or yarn.
 
+Node.js: Ensure you are running the Node version specified in the .nvmrc file (Node v20+).
+
+Bun: Install Bun globally.
+
+Windows: powershell -c "irm bun.sh/install.ps1 | iex"
+
+Mac/Linux: curl -fsSL https://bun.sh/install | bash
+
+Installation
+Clone the repository and install dependencies using Bun:
+
+Bash
+git clone <repository-url>
+cd e-coop-user
+bun install
+Running an App
+Start the Vite development server for a specific application:
+
+Bash
+bun run dev:downloads    # Starts the downloads portal
+bun run dev:admin        # Starts the admin portal
+bun run dev:member       # Starts the member portal
+
+Developer Workflow & Commands
+We have engineered custom NPM scripts to automate scaffolding, validation, and testing.
+
+1. Unified Validation Pipelines
+Before committing, run our all-in-one pipeline commands. These sequentially run the code formatter, ESLint, Vitest, and the Vite build.
+
+bun run dick:all - Formats, lints, tests, and builds ALL projects.
+
+bun run dick:downloads - Runs the pipeline specifically for the downloads app.
+
+bun run validate:all - Prettier check + full typecheck (tsc -b) and Vite build.
+
+2. Scaffolding New Features (Do Not Manually Create Folders!)
+To maintain strict Nx wiring and tsconfig.base.json aliases, always use the generators:
+
+Add a new Feature Module:
+
+Bash
+bun run g:modules <module-name>
+Add a new Shared Library:
+
+Bash
+bun run g:shared <lib-name>
+3. Custom Automation Tools (IDP)
+If you run into import boundary errors or need to validate the monorepo graph, use our custom Node.js scripts located in tools/scripts/:
+
+bun run check:module-imports: Scans the AST to ensure no files are using illegal relative paths, enforcing the use of @e-coop-monorepo/* aliases.
+
+bun run fix:ui-imports: Automatically rewrites broken or legacy UI/utility aliases.
+
+bun run check:modules-types: Runs isolated type-checking for every dynamic module.
+
+Git & Commit Standards
+We enforce strict commit message formats to keep our history clean and trigger automated CI/CD workflows properly.
+
+Format your commits as follows:
+
+feat(ticket-number): description of the new feature
+
+fix(ticket-number): description of the bug fix
+
+chore: routine maintenance or dependency updates
+
+Note: Husky is installed (bun run prep) and will block invalid commit messages.
 
 
 

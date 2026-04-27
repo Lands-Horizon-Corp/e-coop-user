@@ -2,7 +2,8 @@ import { type ReactNode } from 'react'
 
 import * as SheetPrimitive from '@radix-ui/react-dialog'
 
-import { cn } from '@/helpers/tw-utils'import type {
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import type {
     IBaseProps,
     IClassProps,
 } from '@e-coop-monorepo/shared/types'

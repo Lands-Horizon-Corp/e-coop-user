@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import ActionSecurityModal from '@/components/modals/action-security-modal'
+import {ActionSecurityModal} from '@e-coop-monorepo/ui'
 
 export function ActionSecurityProvider({ children }: { children?: ReactNode }) {
     return (

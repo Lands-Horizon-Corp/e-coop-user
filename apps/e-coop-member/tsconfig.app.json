@@ -12,6 +12,7 @@
     "declaration": true,
     "declarationMap": true,
     "noEmit": false,
+    "allowJs": false,
     "allowImportingTsExtensions": false
   },
   "exclude": [
@@ -28,5 +29,5 @@
     "vitest.config.ts",
     "vitest.config.mts"
   ],
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx","src/**/*.json", "../../libs/ui/src/lib/types/reports/report-base.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.json", "../../libs/ui/src/lib/types/reports/report-base.tsx"]
 }

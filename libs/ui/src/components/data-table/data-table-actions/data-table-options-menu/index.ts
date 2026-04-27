@@ -1,4 +1,4 @@
-export { default as DataTableOptionsMenu } from "./index.tsx";
+export { default as DataTableOptionsMenu } from "./data-table-options-menu";
 export { default as DataTableFilterLogicOption } from "./filter-logic-option";
 export { default as DataTableScrollOption } from "./scroll-option";
 

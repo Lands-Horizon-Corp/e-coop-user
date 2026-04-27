@@ -7,7 +7,7 @@ import {
     AuroraBackground,
     ParticlesBackground,
     ScrollProgress,
-} from '@/components/effects'
+} from '@e-coop-monorepo/ui'
 import {
     ContactSection,
     DownloadSection,
@@ -17,11 +17,11 @@ import {
     PreviewSection,
     ServicesSections,
     TestimonialSection,
-} from '@/components/sections'
+} from './components/sections'
 
 import logo from './assets/logo.png'
 import Navbar from './components/Navbar'
-import PoliciesPage from './components/policies/PoliciesPage'
+import PoliciesPage from './pages/PoliciesPage'
 import HomeHero from './components/sections/HomeHero'
 
 // Landing page component

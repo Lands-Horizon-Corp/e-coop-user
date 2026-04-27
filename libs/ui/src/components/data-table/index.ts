@@ -1,4 +1,4 @@
-export { DataTable } from "./index.tsx";
+export { DataTable } from "./data-table";
 export { default as DataTableBody } from "./data-table-body";
 export { default as DataTableFooter } from "./data-table-footer";
 export { default as DataTableHeader } from "./data-table-header";
