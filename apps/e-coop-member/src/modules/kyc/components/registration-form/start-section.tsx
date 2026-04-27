@@ -1,6 +1,5 @@
-import { ArrowRight, Ban, Lock, Scale, Shield, Users } from 'lucide-react'
-
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { ArrowRight, Ban, Lock, Scale, Shield, Users } from 'lucide-react'
 
 interface BenefitItemProps {
     icon: React.ReactNode

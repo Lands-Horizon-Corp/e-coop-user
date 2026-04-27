@@ -1,11 +1,11 @@
 import z from 'zod'
 
+import { IAccountTransactionEntry } from '@e-coop-monorepo/modules/account-transaction-entry'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccountTransactionEntry } from '@e-coop-monorepo/modules/account-transaction-entry'
 import { ACCOUNT_TRANSACTION_SOURCE } from './account-transaction-constants'
 import {
     AccountTransactionSchema,

@@ -2,8 +2,7 @@ import { ReactNode } from 'react'
 
 import { ControllerProps, FieldValues, Path } from 'react-hook-form'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     FormDescription,
     FormField,

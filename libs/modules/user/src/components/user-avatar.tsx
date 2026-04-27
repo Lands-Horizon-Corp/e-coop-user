@@ -1,8 +1,6 @@
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-
-import { Avatar, AvatarFallback, AvatarImage } from '@e-coop-monorepo/ui'
-
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import { Avatar, AvatarFallback, AvatarImage } from '@e-coop-monorepo/ui'
 
 interface Props extends IBaseProps {
     src: string
@@ -38,4 +36,4 @@ const UserAvatar = ({
     )
 }
 
-export { UserAvatar}
+export { UserAvatar }

@@ -2,9 +2,8 @@ import { type ReactNode } from 'react'
 
 import type * as DialogPrimitive from '@radix-ui/react-dialog'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import type { IBaseProps, IClassProps } from '@e-coop-monorepo/shared/types'
-
 import {
     Dialog,
     DialogContent,
@@ -70,4 +69,4 @@ const Modal = ({
     )
 }
 
-export {Modal}
+export { Modal }

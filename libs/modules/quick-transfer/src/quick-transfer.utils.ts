@@ -4,6 +4,7 @@ import {
     IWithdrawSetting,
 } from '@e-coop-monorepo/modules/branch-settings'
 import { TORBuilderOptions } from '@e-coop-monorepo/modules/or-builder'
+
 import { TPaymentMode } from './quick-transfer.types'
 
 type TORSettingResult =

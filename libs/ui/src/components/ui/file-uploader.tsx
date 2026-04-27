@@ -3,7 +3,8 @@ import { useCallback, useState } from 'react'
 import { toast } from 'sonner'
 
 import { formatBytes } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     DropzoneOptions,
     FileRejection,
@@ -11,7 +12,6 @@ import {
     useDropzone,
 } from 'react-dropzone'
 
-import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
 import {
     HardDriveUploadIcon,
     ReplaceIcon,

@@ -1,13 +1,13 @@
 import z from 'zod'
 
+import { MutualFundAdditionalMembersSchema } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
+import { MutualFundTableSchema } from '@e-coop-monorepo/modules/mutual-fund-table'
 import {
     EntityIdSchema,
     entityIdSchema,
     stringDateWithTransformSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { MutualFundAdditionalMembersSchema } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
-import { MutualFundTableSchema } from '@e-coop-monorepo/modules/mutual-fund-table'
 import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
 
 export const MutualFundSchema = z.object({

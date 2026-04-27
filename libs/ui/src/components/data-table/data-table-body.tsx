@@ -1,8 +1,6 @@
 import { ReactNode } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Row, flexRender } from '@tanstack/react-table'
-
 import {
     Empty,
     EmptyDescription,
@@ -11,6 +9,7 @@ import {
     EmptyTitle,
 } from '@e-coop-monorepo/ui'
 import { TableBody, TableCell, TableRow } from '@e-coop-monorepo/ui'
+import { Row, flexRender } from '@tanstack/react-table'
 
 import { MagnifyingGlassIcon } from '../icons'
 import { getPinningStyles } from './data-table-utils'

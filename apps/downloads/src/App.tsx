@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react'
 
-import { AnimatePresence, motion } from 'framer-motion'
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
-
 import {
     AuroraBackground,
     ParticlesBackground,
     ScrollProgress,
 } from '@e-coop-monorepo/ui'
+import { AnimatePresence, motion } from 'framer-motion'
+import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
+
+import logo from './assets/logo.png'
+import Navbar from './components/Navbar'
 import {
     ContactSection,
     DownloadSection,
@@ -18,11 +20,8 @@ import {
     ServicesSections,
     TestimonialSection,
 } from './components/sections'
-
-import logo from './assets/logo.png'
-import Navbar from './components/Navbar'
-import PoliciesPage from './pages/PoliciesPage'
 import HomeHero from './components/sections/HomeHero'
+import PoliciesPage from './pages/PoliciesPage'
 
 // Landing page component
 function LandingPage() {

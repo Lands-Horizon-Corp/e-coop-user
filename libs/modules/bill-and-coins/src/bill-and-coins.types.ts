@@ -1,13 +1,13 @@
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
 import {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
 import { TBillsAndCoinSchema } from './bill-and-coins.validation'
 
 export type IBillsAndCoinRequest = TBillsAndCoinSchema

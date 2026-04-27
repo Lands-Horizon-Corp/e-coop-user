@@ -1,11 +1,10 @@
+import { IGroceryComputationSheet } from '@e-coop-monorepo/modules/grocery-computation-sheet'
 import {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IGroceryComputationSheet } from '@e-coop-monorepo/modules/grocery-computation-sheet'
 
 export interface IGroceryComputationSheetMonthlyRequest {
     grocery_computation_sheet_id: TEntityId

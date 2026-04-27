@@ -1,11 +1,10 @@
 import { useRef } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     UseDownloadOptions,
     useDownloadElement,
 } from '@e-coop-monorepo/shared/hooks'
-
 import { ChevronDownIcon, DownloadIcon } from '@e-coop-monorepo/ui'
 import LoadingSpinner from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'

@@ -1,13 +1,12 @@
 import z from 'zod'
 
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
     stringDateWithTransformSchema,
 } from '@e-coop-monorepo/shared/validation'
-
-import { IAccount } from '@e-coop-monorepo/modules/account'
 
 export const PaymentWithTransactionSchema = z
     .object({

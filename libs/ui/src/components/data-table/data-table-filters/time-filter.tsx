@@ -8,7 +8,6 @@ import {
     useFilter,
 } from '@/contexts/filter-context'
 import logger from '@/helpers/loggers/logger'
-
 import TimePicker from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {

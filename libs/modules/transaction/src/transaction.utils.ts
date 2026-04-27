@@ -1,5 +1,3 @@
-import { mmddyyyy } from '@e-coop-monorepo/shared/helpers'
-
 import { buildOR } from '@e-coop-monorepo/modules/or-builder'
 import { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
 import {
@@ -7,6 +5,7 @@ import {
     toORBuilderOptions,
 } from '@e-coop-monorepo/modules/quick-transfer'
 import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import { mmddyyyy } from '@e-coop-monorepo/shared/helpers'
 
 export const receiptPrefix = (num: number): string => {
     if (num <= 26) return ''

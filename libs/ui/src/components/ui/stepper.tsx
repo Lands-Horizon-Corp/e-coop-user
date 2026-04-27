@@ -3,7 +3,7 @@ import { createContext, useContext } from 'react'
 
 import { Slot } from '@radix-ui/react-slot'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 import { CheckIcon, LoadingCircleIcon } from '../icons'
 

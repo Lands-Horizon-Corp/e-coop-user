@@ -3,13 +3,12 @@ import { ReactNode } from 'react'
 import { Link, useLocation } from '@tanstack/react-router'
 
 import UserAvatarMenu from '@e-coop-monorepo/modules/auth/components/user-avatar-menu'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 // import PageBreadCrumb from '@e-coop-monorepo/ui'
 // import AppSidebarToggle from '@e-coop-monorepo/ui'
 // import { Button } from '@e-coop-monorepo/ui'
 
 import { IClassProps } from '@e-coop-monorepo/shared/types'
-
 // import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
 // import GeneratedReportsButton from '@e-coop-monorepo/modules/generated-report/components/generated-reports/generated-reports-button'
 // import { NotificationNav } from '@e-coop-monorepo/modules/notification/components/notification'

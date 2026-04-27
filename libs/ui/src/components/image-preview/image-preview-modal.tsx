@@ -4,7 +4,6 @@ import * as ImagePreviewPrimitive from '@radix-ui/react-dialog'
 
 import { cn } from '@/helpers'
 import { useImagePreview } from '@/store/image-preview-store'
-
 import { DownloadProps } from '@e-coop-monorepo/shared/types'
 
 import { XIcon } from '../icons'

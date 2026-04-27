@@ -1,3 +1,6 @@
+import { Particles } from '@e-coop-monorepo/ui/components/ui/background-particles'
+import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+import { Card } from '@e-coop-monorepo/ui/components/ui/card'
 import {
     Award,
     Building,
@@ -7,10 +10,6 @@ import {
     TrendingUp,
     Users,
 } from 'lucide-react'
-
-import { Particles } from '@e-coop-monorepo/ui/components/ui/background-particles'
-import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
-import { Card } from '@e-coop-monorepo/ui/components/ui/card'
 
 import AnimateRevealEffect from '../components/animate-reveal-effect'
 import { CoopBackground } from '../components/coop-bg'

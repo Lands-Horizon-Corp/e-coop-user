@@ -1,7 +1,4 @@
-import type {
-    IChargesRateSchemeAccount,
-    IChargesRateSchemeAccountRequest,
-} from '@e-coop-monorepo/modules/charges-rate-scheme-account'
+import { IChargesRateSchemeAccount, IChargesRateSchemeAccountRequest } from './charges-rate-scheme-account.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

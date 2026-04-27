@@ -1,4 +1,4 @@
-import { readdirSync, readFileSync, writeFileSync } from 'fs'
+import { readFileSync, readdirSync, writeFileSync } from 'fs'
 import path from 'path'
 import { fileURLToPath } from 'url'
 
@@ -91,8 +91,6 @@ for (const filePath of files) {
     }
 }
 
-console.log(
-    `\nFixed duplicate 'from' in ${duplicateFromFixCount} import(s).`
-)
+console.log(`\nFixed duplicate 'from' in ${duplicateFromFixCount} import(s).`)
 console.log(`Fixed cn import typo in ${cnFixCount} file(s).`)
 console.log(`Rewrote alias imports in ${aliasFixCount} file(s).`)

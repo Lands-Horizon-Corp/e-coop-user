@@ -1,6 +1,5 @@
-import { DateRange } from 'react-day-picker'
-
 import { Calendar } from '@e-coop-monorepo/ui'
+import { DateRange } from 'react-day-picker'
 
 import { CaptionLayout } from './date-time-picker'
 

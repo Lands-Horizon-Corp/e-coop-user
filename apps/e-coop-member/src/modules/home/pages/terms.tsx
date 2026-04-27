@@ -1,8 +1,7 @@
-import { CheckCircle2 } from 'lucide-react'
-
 import { Particles } from '@e-coop-monorepo/ui/components/ui/background-particles'
 import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
 import { Card } from '@e-coop-monorepo/ui/components/ui/card'
+import { CheckCircle2 } from 'lucide-react'
 
 import { CoopBackground } from '../components/coop-bg'
 

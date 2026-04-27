@@ -1,7 +1,6 @@
 import { Navigate, useSearch } from '@tanstack/react-router'
 
 import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
-
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 interface IGuestGuardProps extends Omit<IBaseProps, 'className'> {

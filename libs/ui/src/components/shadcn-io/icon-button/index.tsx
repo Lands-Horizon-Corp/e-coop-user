@@ -2,7 +2,7 @@
 
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     AnimatePresence,
     type HTMLMotionProps,

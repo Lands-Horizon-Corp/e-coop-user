@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { CheckIcon, XIcon } from '@e-coop-monorepo/ui/components/icons'
 import { Progress } from '@e-coop-monorepo/ui/components/ui/progress'

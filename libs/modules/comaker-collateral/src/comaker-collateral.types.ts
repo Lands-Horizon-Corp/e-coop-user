@@ -1,12 +1,12 @@
 import z from 'zod'
 
+import { ICollateral } from '@e-coop-monorepo/modules/collateral'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ICollateral } from '@e-coop-monorepo/modules/collateral'
 import { ComakerCollateralSchema } from './comaker-collateral.validation'
 
 export interface IComakerCollateral extends IBaseEntityMeta {

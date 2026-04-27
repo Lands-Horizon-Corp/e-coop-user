@@ -7,7 +7,6 @@ import {
     useSendHeartbeatOffline,
     useSendHeartbeatOnline,
 } from '@e-coop-monorepo/modules/heartbeat'
-
 import { IChildProps } from '@e-coop-monorepo/shared/types'
 
 interface Props extends IChildProps {}

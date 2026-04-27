@@ -1,7 +1,5 @@
 import { ReactNode } from 'react'
 
-import { Row } from '@tanstack/react-table'
-
 import {
     CheckIcon,
     DotsVerticalIcon,
@@ -18,6 +16,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui'
+import { Row } from '@tanstack/react-table'
 
 export interface IRowActionOption {
     text: string

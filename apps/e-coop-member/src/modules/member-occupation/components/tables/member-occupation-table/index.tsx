@@ -9,7 +9,7 @@ import {
 } from '@/modules/member-occupation/member-occupation.service'
 import { IMemberOccupation } from '@/modules/member-occupation/member-occupation.types'
 import FilterContext from '@e-coop-monorepo/shared/contexts'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import useDatableFilterState from '@e-coop-monorepo/shared/hooks'
 import { usePagination } from '@e-coop-monorepo/shared/hooks'
 import DataTable from '@e-coop-monorepo/ui/components/data-table'

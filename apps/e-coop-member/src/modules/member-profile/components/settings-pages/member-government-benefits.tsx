@@ -2,7 +2,7 @@ import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
 import { Input } from '@e-coop-monorepo/ui/components/ui/input'

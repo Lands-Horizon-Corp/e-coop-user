@@ -1,7 +1,4 @@
-import type {
-    IGroceryComputationSheet,
-    IGroceryComputationSheetRequest,
-} from '@e-coop-monorepo/modules/grocery-computation-sheet'
+import { IGroceryComputationSheet, IGroceryComputationSheetRequest } from './grocery-computation-sheet.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

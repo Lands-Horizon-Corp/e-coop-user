@@ -1,7 +1,6 @@
 import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import { ColumnDef } from '@tanstack/react-table'
-
 import { ITimeStamps } from '@e-coop-monorepo/shared/types'
+import { ColumnDef } from '@tanstack/react-table'
 
 import DataTableColumnHeader from './data-table-column-header'
 import ColumnActions from './data-table-column-header/column-actions'

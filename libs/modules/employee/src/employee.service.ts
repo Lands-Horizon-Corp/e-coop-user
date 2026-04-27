@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
+import { IEmployee } from '@e-coop-monorepo/modules/user'
 import {
     API,
     IUserOrganization,
@@ -20,7 +21,6 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IEmployee } from '@e-coop-monorepo/modules/user'
 import { IEmployeeCreateRequest } from './employee.types'
 
 /**

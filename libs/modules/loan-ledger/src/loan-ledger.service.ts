@@ -1,3 +1,4 @@
+import { loanTransactionBaseKey } from '@e-coop-monorepo/modules/loan-transaction'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import {
@@ -11,7 +12,6 @@ import type {
     ILoanLedgerChangeLineRequest,
     ILoanLedgerRequest,
 } from '../loan-ledger'
-import { loanTransactionBaseKey } from '@e-coop-monorepo/modules/loan-transaction'
 
 const {
     apiCrudHooks,

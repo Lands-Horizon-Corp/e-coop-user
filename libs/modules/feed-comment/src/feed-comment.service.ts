@@ -1,3 +1,4 @@
+import { feedBaseKey } from '@e-coop-monorepo/modules/feed'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import {
@@ -7,7 +8,6 @@ import {
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IFeedComment, IFeedCommentRequest } from '../feed-comment'
-import { feedBaseKey } from '@e-coop-monorepo/modules/feed'
 
 const {
     // apiCrudHooks,

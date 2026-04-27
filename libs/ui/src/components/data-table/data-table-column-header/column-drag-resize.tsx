@@ -1,7 +1,6 @@
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Header, Table } from '@tanstack/react-table'
-
 import { DragHandleIcon } from '@e-coop-monorepo/ui'
+import { Header, Table } from '@tanstack/react-table'
 
 interface Props<TData, TValue> {
     table: Table<TData>

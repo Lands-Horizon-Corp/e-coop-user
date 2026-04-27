@@ -1,11 +1,10 @@
+import { IMemberGroup } from '@e-coop-monorepo/modules/member-group'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IMemberGroup } from '@e-coop-monorepo/modules/member-group'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberGroupHistoryRequest {
     member_profile_id: TEntityId

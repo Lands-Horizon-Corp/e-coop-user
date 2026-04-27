@@ -1,7 +1,4 @@
-import type {
-    IInterestRateByTerm,
-    IInterestRateByTermRequest,
-} from '@e-coop-monorepo/modules/interest-rate-by-term'
+import { IInterestRateByTerm, IInterestRateByTermRequest } from './interest-rate-by-term.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

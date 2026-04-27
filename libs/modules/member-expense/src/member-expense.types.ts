@@ -1,9 +1,9 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
-
 import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+
 import { MemberExpenseSchema } from './member-expense.validation'
 
 // LATEST FROM ERD

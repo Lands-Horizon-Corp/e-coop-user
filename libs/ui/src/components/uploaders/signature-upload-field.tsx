@@ -3,14 +3,13 @@ import { forwardRef, useState } from 'react'
 import { toast } from 'sonner'
 
 import { IMedia } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps, TEntityId } from '@e-coop-monorepo/shared/types'
-import { IconType } from 'react-icons/lib'
-
 import { ImageIcon, TrashIcon } from '@e-coop-monorepo/ui'
-import {ImageDisplay} from '@e-coop-monorepo/ui'
+import { ImageDisplay } from '@e-coop-monorepo/ui'
 import { SignaturePickerUploaderModal } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
+import { IconType } from 'react-icons/lib'
 
 export interface SignatureUploadField extends IClassProps {
     id?: string

@@ -1,13 +1,12 @@
 import { CSSProperties } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
-import { Column, Header, Table } from '@tanstack/react-table'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { PushPinSlashIcon } from '@e-coop-monorepo/ui'
 import ActionTooltip from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
+import { Column, Header, Table } from '@tanstack/react-table'
 
 import ColumnResizeHandle from './column-drag-resize'
 

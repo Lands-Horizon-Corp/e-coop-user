@@ -1,12 +1,11 @@
 import { MouseEvent } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
-import {useConfirmModalStore} from '@e-coop-monorepo/shared/store'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { useConfirmModalStore } from '@e-coop-monorepo/shared/store'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
-
-import {LoadingSpinner} from '@e-coop-monorepo/ui'
+import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
-import {FormErrorMessage} from '@e-coop-monorepo/ui'
+import { FormErrorMessage } from '@e-coop-monorepo/ui'
 import { Separator } from '@e-coop-monorepo/ui'
 
 interface IFormResetSubmitFooterProps extends IClassProps {
@@ -112,4 +111,4 @@ const FormFooterResetSubmit = ({
     )
 }
 
-export {FormFooterResetSubmit}
+export { FormFooterResetSubmit }

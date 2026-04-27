@@ -1,12 +1,11 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     Tooltip,
     TooltipContent,
-    TooltipProvider,
     TooltipPortal,
+    TooltipProvider,
     TooltipTrigger,
 } from '@e-coop-monorepo/ui'
 
@@ -36,7 +35,7 @@ const InfoTooltip = ({
     return (
         <TooltipProvider delay={delayDuration}>
             <Tooltip>
-                <TooltipTrigger >
+                <TooltipTrigger>
                     {children || (
                         <span
                             className={cn(

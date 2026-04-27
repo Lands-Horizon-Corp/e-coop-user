@@ -1,19 +1,17 @@
 import { ReactNode } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Table } from '@tanstack/react-table'
-import { useHotkeys } from 'react-hotkeys-hook'
-
-import {DataTableActiveFilters} from '@e-coop-monorepo/ui'
-import {DataTableDeleteSelected} from '@e-coop-monorepo/ui'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
+import { DataTableActiveFilters } from '@e-coop-monorepo/ui'
+import { DataTableDeleteSelected } from '@e-coop-monorepo/ui'
 import { type IDataTableDeleteSelectedProps } from '@e-coop-monorepo/ui'
-import {DataTableExport} from '@e-coop-monorepo/ui'
+import { DataTableExport } from '@e-coop-monorepo/ui'
 import { type IDataTableExportProps } from '@e-coop-monorepo/ui'
-import {DataTableOptionsMenu} from '@e-coop-monorepo/ui'
+import { DataTableOptionsMenu } from '@e-coop-monorepo/ui'
 import { type IDataTableScrollableOptionProps } from '@e-coop-monorepo/ui'
 import { Separator } from '@e-coop-monorepo/ui'
-
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import { Table } from '@tanstack/react-table'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 import RefreshButton, { IRefreshButtonProps } from '../buttons/refresh-button'
 import DatatableColumnVisibility from './data-table-actions/data-table-column-visibility'
@@ -131,10 +129,7 @@ const DataTableToolbar = <TData,>({
                             className="h-full min-h-7"
                             orientation="vertical"
                         />
-                        <DataTableExport
-                            table={table}
-                            {...exportActionProps}
-                        />
+                        <DataTableExport table={table} {...exportActionProps} />
                     </>
                 )}
                 {createActionProps && !hideCreateButton && (

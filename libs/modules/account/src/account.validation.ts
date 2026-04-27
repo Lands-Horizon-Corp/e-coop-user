@@ -1,5 +1,7 @@
 import z from 'zod'
 
+import { FINANCIAL_STATEMENT_TYPE } from '@e-coop-monorepo/modules/financial-statement-definition'
+import { GENERAL_LEDGER_TYPE } from '@e-coop-monorepo/modules/general-ledger'
 import { ICONS } from '@e-coop-monorepo/shared/constants'
 import {
     DaySchema,
@@ -8,8 +10,6 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { FINANCIAL_STATEMENT_TYPE } from '@e-coop-monorepo/modules/financial-statement-definition'
-import { GENERAL_LEDGER_TYPE } from '@e-coop-monorepo/modules/general-ledger'
 import {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,
     ACCOUNT_INTEREST_STANDARD_COMPUTATION,

@@ -1,6 +1,6 @@
 import { AxiosError } from 'axios'
 
-import { axiosErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'
+import { axiosErrorMessageExtractor } from '../axios-helpers/axios-error-extractor';
 import { IErrorResponse } from '@e-coop-monorepo/shared/types'
 
 import { TErrorMessageExtractor } from '.'

@@ -1,6 +1,5 @@
 import { cn } from '@/helpers'
 import NavProfileMenu from '@e-coop-monorepo/modules/user-profile'
-
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import NavEcoopLogo from '../nav-components/nav-ecoop-logo'

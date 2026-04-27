@@ -1,5 +1,3 @@
-import { IconType } from 'react-icons/lib'
-
 import {
     ExportIcon,
     EyeIcon,
@@ -7,6 +5,7 @@ import {
     PlusIcon,
     TrashIcon,
 } from '@e-coop-monorepo/ui'
+import { IconType } from 'react-icons/lib'
 
 import { TPermissionAction } from './permission.types'
 

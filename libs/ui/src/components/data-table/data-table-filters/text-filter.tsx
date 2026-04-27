@@ -5,7 +5,6 @@ import {
     filterModeMap,
     useFilter,
 } from '@/contexts/filter-context'
-
 import { Button } from '@e-coop-monorepo/ui'
 import { DebouncedInput } from '@e-coop-monorepo/ui'
 import {

@@ -1,13 +1,12 @@
 import z from 'zod'
 
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
-
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberMutualFundHistoryRequest {
     member_profile_id: TEntityId

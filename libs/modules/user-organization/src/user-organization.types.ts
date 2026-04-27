@@ -1,3 +1,9 @@
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
+import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
+import { TPermission } from '@e-coop-monorepo/modules/permission'
+import { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
 import { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
 import {
     IBaseEntityMeta,
@@ -5,12 +11,6 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import { TPermission } from '@e-coop-monorepo/modules/permission'
-import { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
 import {
     TTimeMachineSchema,
     TUserOrganizationSettingsSchema,

@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
 import {

@@ -1,17 +1,12 @@
 import { useState } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { format, isAfter } from 'date-fns'
-import { type DateRange } from 'react-day-picker'
-
 import DateRangePicker from '@e-coop-monorepo/ui'
 import { CalendarIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
+import { format, isAfter } from 'date-fns'
+import { type DateRange } from 'react-day-picker'
 
 import DateTimeSetter from '../../date-time-pickers/date-time-setter'
 

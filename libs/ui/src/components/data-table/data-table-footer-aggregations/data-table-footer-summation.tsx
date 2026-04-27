@@ -2,9 +2,8 @@ import { ReactNode, useMemo } from 'react'
 
 import { formatNumber } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Column, Header, Table } from '@tanstack/react-table'
-
 import { IClassProps } from '@e-coop-monorepo/shared/types'
+import { Column, Header, Table } from '@tanstack/react-table'
 
 interface DataTableFooterSummationProps<TData, TValue> extends IClassProps {
     totalLabel?: string | ReactNode

@@ -6,7 +6,7 @@ import {
     useGetAllCurrency,
 } from '@e-coop-monorepo/modules/currency'
 import { findCountry } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 import {
     CheckIcon,

@@ -1,7 +1,4 @@
-import type {
-    IPostDatedCheck,
-    IPostDatedCheckRequest,
-} from '@e-coop-monorepo/modules/post-dated-check'
+import { IPostDatedCheck, IPostDatedCheckRequest } from './post-dated-check.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

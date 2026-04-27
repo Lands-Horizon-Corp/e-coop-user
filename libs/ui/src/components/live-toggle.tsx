@@ -1,6 +1,6 @@
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useLiveMonitoringStore } from '@e-coop-monorepo/shared/store'
-
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { DotBigIcon, PlayIcon, StopIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -9,8 +9,6 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@e-coop-monorepo/ui'
-
-import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 interface LiveToggleProps extends IClassProps {
     size?: 'sm' | 'default' | 'lg' | 'xs'

@@ -1,5 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 
+import { accountBaseQueryKey } from '@e-coop-monorepo/modules/account'
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -12,8 +14,6 @@ import type {
     IAccountHistory,
     IAccountHistoryRequest,
 } from '../account-history'
-import { accountBaseQueryKey } from '@e-coop-monorepo/modules/account'
-import { IAccount } from '@e-coop-monorepo/modules/account'
 
 const {
     apiCrudHooks,

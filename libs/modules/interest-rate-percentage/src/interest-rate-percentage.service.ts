@@ -1,7 +1,4 @@
-import type {
-    IInterestRatePercentage,
-    IInterestRatePercentageRequest,
-} from '@e-coop-monorepo/modules/interest-rate-percentage'
+import { IInterestRatePercentage, IInterestRatePercentageRequest } from './interest-rate-percentage.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

@@ -1,13 +1,13 @@
 import z from 'zod'
 
+import { IFeedComment } from '@e-coop-monorepo/modules/feed-comment'
+import { IFeedLike } from '@e-coop-monorepo/modules/feed-like'
+import { IFeedMedia } from '@e-coop-monorepo/modules/feed-media'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IFeedComment } from '@e-coop-monorepo/modules/feed-comment'
-import { IFeedLike } from '@e-coop-monorepo/modules/feed-like'
-import { IFeedMedia } from '@e-coop-monorepo/modules/feed-media'
 import { FeedSchema } from './feed.validation'
 
 export interface IFeed extends IBaseEntityMeta {

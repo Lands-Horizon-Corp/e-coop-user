@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -20,7 +21,6 @@ import type {
     TModeGeneratedReport,
     TModelName,
 } from '../generated-report'
-import { IMedia } from '@e-coop-monorepo/modules/media'
 
 const {
     apiCrudHooks,

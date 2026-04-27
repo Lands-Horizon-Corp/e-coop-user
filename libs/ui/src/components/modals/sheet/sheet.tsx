@@ -3,9 +3,8 @@ import { type ReactNode } from 'react'
 import * as SheetPrimitive from '@radix-ui/react-dialog'
 
 // import { SHORTCUT_SCOPES } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import type { IBaseProps, IClassProps } from '@e-coop-monorepo/shared/types'
-
 import { Separator } from '@e-coop-monorepo/ui'
 import {
     Sheet,

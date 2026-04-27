@@ -3,8 +3,6 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import Fuse from 'fuse.js'
 
-import { useHotkeys } from 'react-hotkeys-hook'
-
 import { ArrowRightIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -17,6 +15,7 @@ import {
     CommandSeparator,
     CommandShortcut,
 } from '@e-coop-monorepo/ui'
+import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useSidebar } from '../sidebar'
 import { TQuickSearchGroup } from './types'

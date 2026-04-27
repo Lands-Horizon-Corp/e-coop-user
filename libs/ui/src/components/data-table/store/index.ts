@@ -1,1 +1,1 @@
-export * from "./data-table-action-store";
+export * from './data-table-action-store'

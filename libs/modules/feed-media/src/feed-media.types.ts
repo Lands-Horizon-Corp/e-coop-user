@@ -1,12 +1,12 @@
 import z from 'zod'
 
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
 import { FeedMediaSchema } from './feed-media.validation'
 
 export interface IFeedMedia extends IBaseEntityMeta {

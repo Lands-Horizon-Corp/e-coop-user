@@ -1,11 +1,10 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     SortableContext,
     horizontalListSortingStrategy,
 } from '@dnd-kit/sortable'
-import { HeaderGroup, flexRender } from '@tanstack/react-table'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { TableHead, TableHeader, TableRow } from '@e-coop-monorepo/ui'
+import { HeaderGroup, flexRender } from '@tanstack/react-table'
 
 import { getPinningStyles } from './data-table-utils'
 

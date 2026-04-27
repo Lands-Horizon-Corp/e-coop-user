@@ -14,9 +14,9 @@ import {
 import GovernmentIdCombobox from '@e-coop-monorepo/modules/member-government-benefit/components/government-id-combobox'
 import { IGovernmentId } from '@e-coop-monorepo/modules/member-profile'
 import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 // import TextEditor from '@e-coop-monorepo/ui/components/ui/text-editor'
 
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'

@@ -1,6 +1,6 @@
 // import { ReactNode } from 'react'
 
-// import { cn } from '@e-coop-monorepo/shared/helpers'
+// import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 // import { IMedia } from '@e-coop-monorepo/modules/media'
 
 // import ImageDisplay from '../image-display'

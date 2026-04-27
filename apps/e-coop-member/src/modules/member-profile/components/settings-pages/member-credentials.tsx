@@ -2,19 +2,6 @@ import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import {
-    AlertTriangle,
-    CheckCircle2,
-    Eye,
-    EyeOff,
-    Key,
-    Lock,
-    Pencil,
-    QrCode,
-    Shield,
-} from 'lucide-react'
-import { QRCodeSVG } from 'qrcode.react'
-
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
 import {
     Card,
@@ -30,6 +17,18 @@ import {
     InputOTPSlot,
 } from '@e-coop-monorepo/ui/components/ui/input-otp'
 import { Label } from '@e-coop-monorepo/ui/components/ui/label'
+import {
+    AlertTriangle,
+    CheckCircle2,
+    Eye,
+    EyeOff,
+    Key,
+    Lock,
+    Pencil,
+    QrCode,
+    Shield,
+} from 'lucide-react'
+import { QRCodeSVG } from 'qrcode.react'
 
 import { cn } from '@/lib/utils'
 

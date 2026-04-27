@@ -1,8 +1,8 @@
 import { IMedia, formatBytes } from '@e-coop-monorepo/modules/media'
+import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
 
-import {FileTypeIcon} from '@e-coop-monorepo/modules/media'
 import { DotMediumIcon, TrashIcon } from '../icons'
-import {ImageDisplay} from '../image-display'
+import { ImageDisplay } from '../image-display'
 import { AspectRatio } from '../ui/aspect-ratio'
 import { Button } from '../ui/button'
 import { Progress } from '../ui/progress'

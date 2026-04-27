@@ -2,6 +2,10 @@ import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
+import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import { Label } from '@e-coop-monorepo/ui/components/ui/label'
+import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 import {
     Calendar,
     FileText,
@@ -13,11 +17,6 @@ import {
     TrendingUp,
     X,
 } from 'lucide-react'
-
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-import { Label } from '@e-coop-monorepo/ui/components/ui/label'
-import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
 
 import {
     IMemberAsset,

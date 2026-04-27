@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { CalendarDate } from '@internationalized/date'
 import { DateField, DateInput, DateSegment } from 'react-aria-components'

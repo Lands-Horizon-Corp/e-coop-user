@@ -2,16 +2,15 @@ import { useState } from 'react'
 
 import { IMedia, useUploadMedia } from '@e-coop-monorepo/modules/media'
 import { base64ImagetoFile } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { AdjustIcon } from '@e-coop-monorepo/ui'
-import {PictureCrop} from '@e-coop-monorepo/ui'
-import {LoadingSpinner} from '@e-coop-monorepo/ui'
+import { PictureCrop } from '@e-coop-monorepo/ui'
+import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { Progress } from '@e-coop-monorepo/ui'
 
-import {ImageDisplay} from '../image-display'
-import {ActionTooltip} from '../tooltips/action-tooltip'
+import { ImageDisplay } from '../image-display'
+import { ActionTooltip } from '../tooltips/action-tooltip'
 import SingleImageUploadOption from './upload-options'
 
 export interface ISingleImageUploadProps {
@@ -156,4 +155,4 @@ const SingleImageUpload = ({
     )
 }
 
-export { SingleImageUpload}
+export { SingleImageUpload }

@@ -58,7 +58,7 @@ const createMedia = (id: string, url: string): TMedia => ({
 const createMemberProfileRef = (
     id: string,
     fullName = 'Unknown'
-): IMemberProfile => ({ id, full_name: fullName } as IMemberProfile)
+): IMemberProfile => ({ id, full_name: fullName }) as IMemberProfile
 
 export const useFakeStore = create<IFakeStore>((set) => ({
     authMember: {

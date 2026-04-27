@@ -1,4 +1,4 @@
-import type { IFunds, IFundsRequest } from '@e-coop-monorepo/modules/funds'
+import { IFunds, IFundsRequest } from './funds.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

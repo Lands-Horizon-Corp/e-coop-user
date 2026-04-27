@@ -1,9 +1,3 @@
-import {
-    IBaseEntityMeta,
-    IPaginatedResult,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-
 import { IAccount } from '@e-coop-monorepo/modules/account'
 import { IBank } from '@e-coop-monorepo/modules/bank'
 import { ICurrency } from '@e-coop-monorepo/modules/currency'
@@ -11,9 +5,15 @@ import { IMedia } from '@e-coop-monorepo/modules/media'
 import { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
 import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
 import { ITransaction } from '@e-coop-monorepo/modules/transaction'
+import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
 import { IUserBase } from '@e-coop-monorepo/modules/user'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
+
 import {
     GENERAL_LEDGER_SOURCES,
     GENERAL_LEDGER_TYPE,

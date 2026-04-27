@@ -1,5 +1,11 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
-import { AuroraBackground, ParticlesBackground, ScrollProgress } from '@e-coop-monorepo/ui'
+
+import {
+    AuroraBackground,
+    ParticlesBackground,
+    ScrollProgress,
+} from '@e-coop-monorepo/ui'
+
 import logo from '../assets/logo.png'
 import Navbar from '../components/Navbar'
 import Footer from '../components/sections/Footer'
@@ -13,10 +19,10 @@ function RootComponent() {
         <div className="relative min-h-screen text-white bg-[#0a0a0a] overflow-x-hidden">
             {/* Scroll progress indicator */}
             <ScrollProgress />
-            
+
             {/* Aurora background */}
             <AuroraBackground />
-            
+
             {/* Particle overlay */}
             <ParticlesBackground />
 

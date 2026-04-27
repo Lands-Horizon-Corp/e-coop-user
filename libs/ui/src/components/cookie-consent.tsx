@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react'
 
 import CookieSvg from '@/assets/cookie-icon.svg'
-import { cn } from '@e-coop-monorepo/shared/helpers'
-import { addYears } from 'date-fns'
-import Cookies from 'js-cookie'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { Alert, AlertDescription } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
+import { addYears } from 'date-fns'
+import Cookies from 'js-cookie'
 
 import Image from './image'
 

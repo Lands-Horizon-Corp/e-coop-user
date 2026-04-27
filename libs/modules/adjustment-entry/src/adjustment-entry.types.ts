@@ -1,9 +1,3 @@
-import {
-    IBaseEntityMeta,
-    IPaginatedResult,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-
 import { IAccount } from '@e-coop-monorepo/modules/account'
 import { IAdjustmentEntryTag } from '@e-coop-monorepo/modules/adjustment-entry-tag'
 import { IAdjustmentVoucherSettings } from '@e-coop-monorepo/modules/branch-settings'
@@ -11,6 +5,11 @@ import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
 import { IUser } from '@e-coop-monorepo/modules/user'
 import { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 
 export interface IAdjustmentEntry extends IBaseEntityMeta {
     //add here

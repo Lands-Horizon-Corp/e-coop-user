@@ -1,8 +1,7 @@
 import { ReactElement, forwardRef, useState } from 'react'
 
 import { IMedia } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { SignatureLightIcon, XIcon } from '@e-coop-monorepo/ui'
 import ImageDisplay from '@e-coop-monorepo/ui'
 import { Button, ButtonProps } from '@e-coop-monorepo/ui'

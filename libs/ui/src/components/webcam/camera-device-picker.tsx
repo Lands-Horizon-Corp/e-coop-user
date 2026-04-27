@@ -2,9 +2,8 @@ import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
 import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
-
 import { CameraIcon, RefreshIcon } from '@e-coop-monorepo/ui'
 import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import {

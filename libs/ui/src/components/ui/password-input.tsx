@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     InputGroup,
     InputGroupAddon,

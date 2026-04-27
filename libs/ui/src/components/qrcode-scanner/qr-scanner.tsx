@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
-import { cn } from '@/helpers/tw-utils'import { Scanner, outline, useDevices } from '@yudiel/react-qr-scanner'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Scanner, outline, useDevices } from '@yudiel/react-qr-scanner'
 
 import { CameraIcon } from '../icons'
 import { Button } from '../ui/button'

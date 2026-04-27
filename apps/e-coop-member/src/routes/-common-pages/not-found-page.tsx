@@ -1,6 +1,6 @@
 import { NotFoundRouteProps, useRouter } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
 import {

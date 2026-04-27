@@ -2,12 +2,11 @@ import { useCallback, useRef } from 'react'
 
 import { toast } from 'sonner'
 
-import Webcam from 'react-webcam'
-
 import { CameraFillIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@e-coop-monorepo/ui'
-import {WebCam} from '@e-coop-monorepo/ui'
+import { WebCam } from '@e-coop-monorepo/ui'
+import Webcam from 'react-webcam'
 
 import PictureDrop from './picture-drop'
 

@@ -1,7 +1,5 @@
 import { PAGE_SIZES_DENSE } from '@e-coop-monorepo/shared/constants'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Table } from '@tanstack/react-table'
-
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
@@ -16,6 +14,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@e-coop-monorepo/ui'
+import { Table } from '@tanstack/react-table'
 
 interface DataTablePaginationProps<TData> {
     className?: string

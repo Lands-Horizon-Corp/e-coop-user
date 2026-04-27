@@ -1,6 +1,5 @@
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Table } from '@tanstack/react-table'
-
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { MixerHorizontalIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -9,8 +8,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui'
-
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import { Table } from '@tanstack/react-table'
 
 import DataTableFilterLogicOption, {
     IDataTableFilterLogicOptionProps,
@@ -32,7 +30,7 @@ const DataTableOptionsMenu = <T,>({
 }: Props<T>) => {
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger  >
+            <DropdownMenuTrigger>
                 <Button
                     className={cn('rounded-md', className)}
                     size="icon"

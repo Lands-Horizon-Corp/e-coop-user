@@ -1,7 +1,4 @@
-import type {
-    IFinesMaturity,
-    IFinesMaturityRequest,
-} from '@e-coop-monorepo/modules/fines-maturity'
+import { IFinesMaturity, IFinesMaturityRequest } from './fines-maturity.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

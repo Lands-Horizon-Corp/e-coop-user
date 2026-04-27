@@ -1,16 +1,15 @@
 import z from 'zod'
 
-import {
-    EntityIdSchema,
-    descriptionTransformerSanitizer,
-    entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
-
 import { WithModeOfPaymentSchema } from '@e-coop-monorepo/modules/loan-transaction'
 import {
     LOAN_MODE_OF_PAYMENT,
     WEEKDAYS,
 } from '@e-coop-monorepo/modules/loan-transaction'
+import {
+    EntityIdSchema,
+    descriptionTransformerSanitizer,
+    entityIdSchema,
+} from '@e-coop-monorepo/shared/validation'
 
 export const CalculatorSchema = z.object({
     id: entityIdSchema.optional(),

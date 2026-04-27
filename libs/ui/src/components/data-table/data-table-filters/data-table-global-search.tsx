@@ -5,13 +5,11 @@ import {
     TSearchFilter,
     useFilter,
 } from '@/contexts/filter-context'
-
+import { KeysOfOrString } from '@e-coop-monorepo/shared/types'
 import { ChevronLeftIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui'
 import ActionTooltip from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { DebouncedInput } from '@e-coop-monorepo/ui'
-
-import { KeysOfOrString } from '@e-coop-monorepo/shared/types'
 
 export interface IGlobalSearchTargets<T> {
     field: (string & {}) | keyof T

@@ -4,15 +4,13 @@ import { toast } from 'sonner'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import {useConfirmModalStore} from '@e-coop-monorepo/shared/store'
-import { Table } from '@tanstack/react-table'
-
+import { useConfirmModalStore } from '@e-coop-monorepo/shared/store'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { TrashIcon } from '@e-coop-monorepo/ui'
-import {LoadingSpinner} from '@e-coop-monorepo/ui'
+import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import { Badge } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
-
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import { Table } from '@tanstack/react-table'
 
 export interface IDataTableDeleteSelectedProps<T> extends IClassProps {
     table: Table<T>

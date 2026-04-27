@@ -1,7 +1,4 @@
-import type {
-    ITransactionTag,
-    ITransactionTagRequest,
-} from '@e-coop-monorepo/modules/transaction-tag'
+import { ITransactionTag, ITransactionTagRequest } from './transaction-tag.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

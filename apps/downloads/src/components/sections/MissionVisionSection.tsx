@@ -1,7 +1,6 @@
+import { AnimatedSection } from '@e-coop-monorepo/ui'
 import { motion } from 'framer-motion'
 import { ArrowRight, Eye, Target } from 'lucide-react'
-
-import { AnimatedSection } from '@e-coop-monorepo/ui'
 
 export default function MissionVisionSection() {
     return (

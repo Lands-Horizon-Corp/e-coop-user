@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 type Props = IBaseProps

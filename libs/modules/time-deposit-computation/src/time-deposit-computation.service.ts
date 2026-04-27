@@ -1,7 +1,4 @@
-import type {
-    ITimeDepositComputation,
-    ITimeDepositComputationRequest,
-} from '@e-coop-monorepo/modules/time-deposit-computation'
+import { ITimeDepositComputation, ITimeDepositComputationRequest } from './time-deposit-computation.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

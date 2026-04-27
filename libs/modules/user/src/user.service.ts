@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -7,7 +8,6 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
 import type { IUserBase } from './user.types'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<

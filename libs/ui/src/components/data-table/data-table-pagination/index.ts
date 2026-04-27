@@ -1,1 +1,1 @@
-export { default as DataTablePagination } from "./data-table-pagination";
+export { default as DataTablePagination } from './data-table-pagination'

@@ -1,6 +1,7 @@
 import Modal, { IModalProps } from '../modals/modal'
-import { SingleImageUpload,
+import {
     ISingleImageUploadProps,
+    SingleImageUpload,
 } from './single-image-uploader'
 
 interface Props extends IModalProps {
@@ -18,4 +19,4 @@ const SingleImageUploaderModal = ({
     )
 }
 
-export {SingleImageUploaderModal}
+export { SingleImageUploaderModal }

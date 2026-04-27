@@ -1,7 +1,5 @@
 import { ReactNode } from 'react'
 
-import { Row } from '@tanstack/react-table'
-
 import {
     CheckIcon,
     EyeNoneIcon,
@@ -16,6 +14,7 @@ import {
     ContextMenuSeparator,
     ContextMenuTrigger,
 } from '@e-coop-monorepo/ui'
+import { Row } from '@tanstack/react-table'
 
 export interface IRowActionOption {
     text: string
@@ -50,7 +49,7 @@ const DataTableRowContext = <TData,>({
 
     return (
         <ContextMenu>
-            <ContextMenuTrigger >{children}</ContextMenuTrigger>
+            <ContextMenuTrigger>{children}</ContextMenuTrigger>
             <ContextMenuContent>
                 <ContextMenuLabel>Actions</ContextMenuLabel>
                 <ContextMenuSeparator />

@@ -1,7 +1,4 @@
-import type {
-    IGeneralAccountGroupingNetSurplusNegative,
-    IGeneralAccountGroupingNetSurplusNegativeRequest,
-} from '@e-coop-monorepo/modules/general-account-grouping-net-surplus-negative'
+import { IGeneralAccountGroupingNetSurplusNegative, IGeneralAccountGroupingNetSurplusNegativeRequest } from './general-account-grouping-net-surplus-negative.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

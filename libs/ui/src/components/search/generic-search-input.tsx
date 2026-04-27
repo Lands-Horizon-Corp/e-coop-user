@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import useDebounce from '@e-coop-monorepo/shared/hooks'
 import { useHotkeys } from 'react-hotkeys-hook'
 

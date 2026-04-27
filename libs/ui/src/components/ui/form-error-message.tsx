@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import { ErrorExclamationIcon } from '../icons'
@@ -23,4 +23,4 @@ const FormErrorMessage = ({ className, errorMessage }: Props) => {
     )
 }
 
-export {FormErrorMessage}
+export { FormErrorMessage }

@@ -1,9 +1,8 @@
 import { forwardRef } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { type VariantProps, cva } from 'class-variance-authority'
-
 import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import { type VariantProps, cva } from 'class-variance-authority'
 
 const yesNoVariants = cva(
     'inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2',

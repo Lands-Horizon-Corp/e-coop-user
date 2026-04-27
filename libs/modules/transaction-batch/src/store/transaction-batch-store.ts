@@ -1,7 +1,4 @@
-import {
-    ITransactionBatch,
-    ITransactionBatchMinimal,
-} from '@e-coop-monorepo/modules/transaction-batch'
+import { ITransactionBatch, ITransactionBatchMinimal } from '../transaction-batch.types';
 import { create } from 'zustand'
 
 interface ITransactionBatchStoreContent {

@@ -1,11 +1,11 @@
 import z from 'zod'
 
+import { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
 import { ChargesRateByRangeOrMinimumAmountSchema } from './charges-rate-by-range-or-minimum-amount.validation'
 
 export interface IChargesRateByRangeOrMinimumAmount extends IBaseEntityMeta {

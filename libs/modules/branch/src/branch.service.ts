@@ -1,5 +1,6 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -8,7 +9,6 @@ import {
 import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { IBranch, IBranchRequest } from './branch.types'
 
 /**

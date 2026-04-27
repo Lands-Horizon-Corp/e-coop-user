@@ -2,7 +2,7 @@ import { Resolver, UseFormReturn, useForm } from 'react-hook-form'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import { ChevronLeftIcon } from '@e-coop-monorepo/ui/components/icons'

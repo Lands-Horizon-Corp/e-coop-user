@@ -1,8 +1,7 @@
 import { useCallback } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import type { Table } from '@tanstack/react-table'
-
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { ColumnOutlineIcon, EyeIcon, EyeNoneIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -15,8 +14,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui'
-
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { Table } from '@tanstack/react-table'
 
 interface DataTableViewOptionsProps<TData> extends IClassProps {
     table: Table<TData>
@@ -40,7 +38,7 @@ const DatatableColumnVisibility = <TData,>({
 
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger  >
+            <DropdownMenuTrigger>
                 <Button
                     className={cn('rounded-md', className)}
                     size="icon"

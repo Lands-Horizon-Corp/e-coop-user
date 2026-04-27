@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import type {
     IMutualFundAdditionalMembers,
     IMutualFundAdditionalMembersRequest,
-} from '../mutual-fund-additional-members'
+} from './mutual-fund-additional-members.types'
 
 const {
     apiCrudHooks,

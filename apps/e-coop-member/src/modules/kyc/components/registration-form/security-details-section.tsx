@@ -5,8 +5,8 @@ import {
     ChecklistTemplate,
     ValueChecklistMeter,
 } from '@e-coop-monorepo/modules/auth/components/value-checklist-indicator'
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     EmailIcon,
     VerifiedPatchIcon,

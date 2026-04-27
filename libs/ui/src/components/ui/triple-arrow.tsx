@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 import { ArrowUpLongIcon } from '../icons'
 
@@ -91,4 +91,4 @@ const TripleArrow: React.FC<TripleArrowProps> = ({
         </div>
     )
 }
-export {TripleArrow}
+export { TripleArrow }

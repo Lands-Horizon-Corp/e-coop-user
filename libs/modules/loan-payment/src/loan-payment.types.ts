@@ -1,6 +1,5 @@
-import { TEntityId } from '@e-coop-monorepo/shared/types'
-
 import { IAccount } from '@e-coop-monorepo/modules/account'
+import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 // import { ILoanPaymentSchedule } from '@e-coop-monorepo/modules/loan-transaction'
 

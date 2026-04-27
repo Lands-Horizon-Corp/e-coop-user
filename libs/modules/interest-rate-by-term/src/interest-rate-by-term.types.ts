@@ -1,11 +1,10 @@
+import { IMemberClassificationInterestRate } from '@e-coop-monorepo/modules/member-classification-interest-rate'
 import {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IMemberClassificationInterestRate } from '@e-coop-monorepo/modules/member-classification-interest-rate'
 
 export interface IInterestRateByTermRequest {
     name?: string

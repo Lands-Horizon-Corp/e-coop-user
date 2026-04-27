@@ -1,3 +1,5 @@
+import { loanTransactionBaseKey } from '@e-coop-monorepo/modules/loan-transaction'
+import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import {
@@ -12,8 +14,6 @@ import type {
     ILoanTransactionEntry,
     ILoanTransactionEntryRequest,
 } from '../loan-transaction-entry'
-import { loanTransactionBaseKey } from '@e-coop-monorepo/modules/loan-transaction'
-import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
 
 const {
     apiCrudHooks,

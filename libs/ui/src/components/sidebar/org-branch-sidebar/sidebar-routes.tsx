@@ -1,6 +1,5 @@
 import { hasPermissionFromAuth } from '@e-coop-monorepo/modules/authentication'
 import { TUserType } from '@e-coop-monorepo/modules/user'
-
 import {
     BankDuoToneIcon,
     BankIcon,

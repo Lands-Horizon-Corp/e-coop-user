@@ -11,8 +11,6 @@ import {
     ImagePreviewButtonActionProps,
     ImagePreviewPanelProps,
 } from '@e-coop-monorepo/shared/types'
-import useEmblaCarousel from 'embla-carousel-react'
-
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
@@ -27,6 +25,7 @@ import {
 } from '@e-coop-monorepo/ui'
 // Local Components
 import { useCarousel } from '@e-coop-monorepo/ui'
+import useEmblaCarousel from 'embla-carousel-react'
 
 import { Button } from '../ui/button'
 import { Card } from '../ui/card'

@@ -1,6 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
-import { type Editor } from '@tiptap/react'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     BlockQuoteIcon,
     CodeBlockIcon,
@@ -15,9 +13,10 @@ import {
     ToolbarItalicIcon,
     UndoIcon,
 } from '@e-coop-monorepo/ui'
-import {ActionTooltip} from '@e-coop-monorepo/ui'
+import { ActionTooltip } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { Toggle } from '@e-coop-monorepo/ui'
+import { type Editor } from '@tiptap/react'
 
 import { THeadingLevel } from '.'
 

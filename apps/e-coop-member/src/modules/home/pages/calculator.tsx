@@ -3,14 +3,6 @@
 import type React from 'react'
 import { useState } from 'react'
 
-import {
-    Calendar,
-    DollarSign,
-    FileText,
-    Percent,
-    TrendingUp,
-} from 'lucide-react'
-
 import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
 import { Particles } from '@e-coop-monorepo/ui/components/ui/background-particles'
 import { Button } from '@e-coop-monorepo/ui/components/ui/button'
@@ -30,6 +22,13 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@e-coop-monorepo/ui/components/ui/select'
+import {
+    Calendar,
+    DollarSign,
+    FileText,
+    Percent,
+    TrendingUp,
+} from 'lucide-react'
 
 import { CoopBackground } from '../components/coop-bg'
 

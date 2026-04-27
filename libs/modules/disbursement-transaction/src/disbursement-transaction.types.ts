@@ -1,13 +1,12 @@
+import { IDisbursement } from '@e-coop-monorepo/modules/disbursement'
+import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import { IEmployee } from '@e-coop-monorepo/modules/user'
 import {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IDisbursement } from '@e-coop-monorepo/modules/disbursement'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IEmployee } from '@e-coop-monorepo/modules/user'
 
 export interface IDisbursementTransaction extends ITimeStamps, IAuditable {
     id: TEntityId

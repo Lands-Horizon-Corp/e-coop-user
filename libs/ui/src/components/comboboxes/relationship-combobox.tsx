@@ -1,11 +1,10 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import {
     FAMILY_RELATIONSHIP,
     TRelationship,
 } from '@e-coop-monorepo/modules/member-relative-account'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -16,11 +15,7 @@ import {
     CommandItem,
     CommandList,
 } from '@e-coop-monorepo/ui'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 
 // Assuming this is where your type and const are
 
@@ -48,7 +43,7 @@ const RelationshipCombobox = ({
 
     return (
         <Popover modal onOpenChange={setOpen} open={open}>
-            <PopoverTrigger  >
+            <PopoverTrigger>
                 <Button
                     {...other}
                     aria-expanded={open}

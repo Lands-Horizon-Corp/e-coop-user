@@ -1,5 +1,6 @@
 import z from 'zod'
 
+import { IBranch } from '@e-coop-monorepo/modules/branch'
 import {
     IAuditable,
     IPaginatedResult,
@@ -7,7 +8,6 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { MemberOccupationSchema } from './member-occupation.validation'
 
 export interface IMemberOccupation extends ITimeStamps, IAuditable {

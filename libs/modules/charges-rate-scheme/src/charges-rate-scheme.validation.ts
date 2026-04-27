@@ -1,16 +1,16 @@
 import z from 'zod'
 
+import { ChargesRateByRangeOrMinimumAmountSchema } from '@e-coop-monorepo/modules/charges-rate-by-range-or-minimum-amount'
+import { ChargesRateByTermSchema } from '@e-coop-monorepo/modules/charges-rate-by-term'
+import { chargesRateSchemeAccountSchema } from '@e-coop-monorepo/modules/charges-rate-scheme-account'
+import { ChargesRateSchemeModeOfPaymentSchema } from '@e-coop-monorepo/modules/charges-rate-scheme-mode-of-payment'
+import { LOAN_MODE_OF_PAYMENT } from '@e-coop-monorepo/modules/loan-transaction'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { ChargesRateByRangeOrMinimumAmountSchema } from '@e-coop-monorepo/modules/charges-rate-by-range-or-minimum-amount'
-import { ChargesRateByTermSchema } from '@e-coop-monorepo/modules/charges-rate-by-term'
-import { chargesRateSchemeAccountSchema } from '@e-coop-monorepo/modules/charges-rate-scheme-account'
-import { ChargesRateSchemeModeOfPaymentSchema } from '@e-coop-monorepo/modules/charges-rate-scheme-mode-of-payment'
-import { LOAN_MODE_OF_PAYMENT } from '@e-coop-monorepo/modules/loan-transaction'
 import { CHARGES_RATE_SCHEME_TYPE } from './charges-rate.constant'
 
 export const ChargesRateCreateSchemeSchema = z.object({

@@ -1,3 +1,5 @@
+import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     IAuditable,
     IOrgBranchIdentity,
@@ -5,9 +7,6 @@ import {
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberClassificationHistoryRequest {
     member_classification_id: TEntityId

@@ -1,16 +1,15 @@
-import { IAuthContext } from '@e-coop-monorepo/modules/authentication'
+import { IAuthContext } from './authentication.types';
 import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
-import { create } from 'zustand'
-
 import {
     GetCrudPermissionOpts,
     IHasPermissionOpts,
     getCrudPermissions,
     hasPermission,
 } from '@e-coop-monorepo/modules/permission'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import { create } from 'zustand'
 
 type TAuthStoreStatus = 'loading' | 'authorized' | 'unauthorized' | 'error'
 

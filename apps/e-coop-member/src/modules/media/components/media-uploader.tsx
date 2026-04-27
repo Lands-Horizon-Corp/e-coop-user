@@ -3,9 +3,9 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { AxiosProgressEvent } from 'axios'
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     DownloadIcon,
     TrashIcon,

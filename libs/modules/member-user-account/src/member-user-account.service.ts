@@ -1,3 +1,8 @@
+import {
+    IMemberProfile,
+    apiCrudService,
+    memberProfileBaseKey,
+} from '@e-coop-monorepo/modules/member-profile'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     createMutationFactory,
@@ -6,11 +11,6 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import {
-    IMemberProfile,
-    apiCrudService,
-    memberProfileBaseKey,
-} from '@e-coop-monorepo/modules/member-profile'
 import { IMemberProfileUserAccountRequest } from './member-user-account.types'
 
 const { API, route } = apiCrudService

@@ -1,7 +1,7 @@
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
-
 import { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
 import { TLoanModeOfPayment } from '@e-coop-monorepo/modules/loan-transaction'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+
 import { TChargesRateByTermSchema } from './charges-rate-by-term.validation'
 
 export type TChargesModeOfPaymentType =

@@ -1,6 +1,5 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
-
 import { LoadingCircleIcon } from '@e-coop-monorepo/ui'
 
 type Props = IClassProps

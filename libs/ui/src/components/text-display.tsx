@@ -1,5 +1,4 @@
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 import CopyWrapper from './wrappers/copy-wrapper'

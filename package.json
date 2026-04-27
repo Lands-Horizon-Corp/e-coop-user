@@ -42,8 +42,9 @@
         "lint": "eslint .",
         "el": "nx eslint .",
         "lf": "nx eslint .",
-        "elf": "nx eslint . --fix",
-        "fmt": "nx eslint . --fix && nx prettier . -w",
+        
+        "elf": "nx run-many -t lint",
+        "fmt": "nx format:write && nx run-many -t lint --fix",
         "test": "vitest run .",
         "testw": "vitest",
         "preview": "vite preview --port $PORT --host",

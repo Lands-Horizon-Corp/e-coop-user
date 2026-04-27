@@ -1,5 +1,7 @@
 import z from 'zod'
 
+import { IBank } from '@e-coop-monorepo/modules/bank'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     IAuditable,
     IOrgBranchIdentity,
@@ -7,9 +9,6 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
-
-import { IBank } from '@e-coop-monorepo/modules/bank'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberBankCardRequest {
     account_number: string

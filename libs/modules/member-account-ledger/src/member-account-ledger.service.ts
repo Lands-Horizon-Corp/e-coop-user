@@ -1,4 +1,4 @@
-import type { IMemberAccountingLedger } from '@e-coop-monorepo/modules/member-account-ledger'
+import { IMemberAccountingLedger } from './member-account-ledger.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

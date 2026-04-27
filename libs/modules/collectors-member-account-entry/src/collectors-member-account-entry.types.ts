@@ -1,13 +1,12 @@
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IUser } from '@e-coop-monorepo/modules/user'
 import {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IUser } from '@e-coop-monorepo/modules/user'
 
 export interface ICollectorsMemberAccountEntryRequest {
     collector_user_id?: TEntityId

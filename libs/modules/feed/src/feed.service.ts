@@ -1,10 +1,13 @@
+import {
+    IFeedComment,
+    IFeedCommentRequest,
+} from '@e-coop-monorepo/modules/feed-comment'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IFeed, IFeedRequest } from '../feed'
-import { IFeedComment, IFeedCommentRequest } from '@e-coop-monorepo/modules/feed-comment'
 
 const {
     apiCrudHooks,

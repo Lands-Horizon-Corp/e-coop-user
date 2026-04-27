@@ -1,17 +1,17 @@
 import z from 'zod'
 
-import {
-    IBaseEntityMeta,
-    IPaginatedResult,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-
 import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { ICurrency } from '@e-coop-monorepo/modules/currency'
 import { IMedia } from '@e-coop-monorepo/modules/media'
 import { IOrganization } from '@e-coop-monorepo/modules/organization'
 import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
 import { IUserBase } from '@e-coop-monorepo/modules/user'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
+
 import { BatchFundingSchema } from './batch-funding.validation'
 
 export interface IBatchFunding extends IBaseEntityMeta {

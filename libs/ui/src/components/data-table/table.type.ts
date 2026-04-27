@@ -1,9 +1,8 @@
 import { ReactNode } from 'react'
 
 import { TFilterObject } from '@e-coop-monorepo/shared/contexts'
-import { ColumnDef, Row } from '@tanstack/react-table'
-
 import { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'
+import { ColumnDef, Row } from '@tanstack/react-table'
 
 export interface TableProps<T> extends IClassProps {
     persistKey?: string[]

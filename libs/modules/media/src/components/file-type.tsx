@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FileTypeIcons } from '@e-coop-monorepo/ui'
+
 import { getFileType } from '../media.utils'
 
 interface FileTypeIconProps {
@@ -14,4 +15,4 @@ const FileTypeIcon: React.FC<FileTypeIconProps> = ({ file }) => {
     return <div className="file-type-icon">{IconComponent}</div>
 }
 
-export { FileTypeIcon}
+export { FileTypeIcon }

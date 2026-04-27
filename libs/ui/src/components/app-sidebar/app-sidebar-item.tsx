@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useLocation, useRouter } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { VariantProps } from 'class-variance-authority'
 

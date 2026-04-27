@@ -37,4 +37,4 @@ const ActionTooltip = ({
     )
 }
 
-export { ActionTooltip}
+export { ActionTooltip }

@@ -3,17 +3,18 @@ import { useMemo } from 'react'
 import { useParams, useRouter } from '@tanstack/react-router'
 
 import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication'
-import {BranchModalDisplay} from '@e-coop-monorepo/modules/branch'
+import { BranchModalDisplay } from '@e-coop-monorepo/modules/branch'
 import { TUserType } from '@e-coop-monorepo/modules/user'
-
+import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { IBaseProps } from '@e-coop-monorepo/shared/types'
 // import { useHotkeys } from 'react-hotkeys-hook'
 
-import {EcoopLogo} from '@e-coop-monorepo/ui'
+import { EcoopLogo } from '@e-coop-monorepo/ui'
 import { BuildingIcon, UserLockIcon } from '@e-coop-monorepo/ui'
-import {ActionTooltip} from '@e-coop-monorepo/ui'
-import {AppSidebarItem} from '@e-coop-monorepo/ui'
-import {AppSidebarQuickNavigate} from '@e-coop-monorepo/ui'
-import {AppSidebarUser} from '@e-coop-monorepo/ui'
+import { ActionTooltip } from '@e-coop-monorepo/ui'
+import { AppSidebarItem } from '@e-coop-monorepo/ui'
+import { AppSidebarQuickNavigate } from '@e-coop-monorepo/ui'
+import { AppSidebarUser } from '@e-coop-monorepo/ui'
 import { flatSidebarGroupItem } from '@e-coop-monorepo/ui'
 import { Badge } from '@e-coop-monorepo/ui'
 import { Separator } from '@e-coop-monorepo/ui'
@@ -31,10 +32,6 @@ import {
     SidebarRail,
     // useSidebar,
 } from '@e-coop-monorepo/ui'
-
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 import { generateSidebarGroups } from './sidebar-routes'
 

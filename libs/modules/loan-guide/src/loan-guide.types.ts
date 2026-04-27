@@ -1,12 +1,12 @@
 import z from 'zod'
 
+import { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
+import { ILoanAccount } from '@e-coop-monorepo/modules/loan-account'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
-import { ILoanAccount } from '@e-coop-monorepo/modules/loan-account'
 import { LOAN_SCHEDULE_STATUS } from './loan-guide-constant'
 import { LoanGuideSchema } from './loan-guide.validation'
 

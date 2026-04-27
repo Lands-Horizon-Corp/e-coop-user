@@ -8,7 +8,7 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import MediaUploader from '@e-coop-monorepo/modules/media/components/media-uploader'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'

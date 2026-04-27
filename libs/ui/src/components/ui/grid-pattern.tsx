@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 /**
  * InteractiveGridPattern is a component that renders a grid pattern with interactive squares.

@@ -123,4 +123,4 @@ const TimePicker: React.FC<TimePickerProps> = ({
     )
 }
 
-export {TimePicker}
+export { TimePicker }

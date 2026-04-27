@@ -1,7 +1,4 @@
-import type {
-    ILoanGuaranteedFund,
-    ILoanGuaranteedFundRequest,
-} from '@e-coop-monorepo/modules/loan-guaranteed-fund'
+import { ILoanGuaranteedFund, ILoanGuaranteedFundRequest } from './loan-guaranteed-fund.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 

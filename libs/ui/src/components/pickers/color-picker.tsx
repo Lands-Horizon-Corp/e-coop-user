@@ -13,17 +13,11 @@ import {
     rgbaToHex,
     rgbaToHsla,
 } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers'
-import { HexAlphaColorPicker, HexColorPicker } from 'react-colorful'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import { Input } from '@e-coop-monorepo/ui'
 import { Label } from '@e-coop-monorepo/ui'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 import {
     Select,
     SelectContent,
@@ -31,6 +25,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@e-coop-monorepo/ui'
+import { HexAlphaColorPicker, HexColorPicker } from 'react-colorful'
 
 import { LoadingSpinnerIcon, PipetteIcon } from '../icons'
 

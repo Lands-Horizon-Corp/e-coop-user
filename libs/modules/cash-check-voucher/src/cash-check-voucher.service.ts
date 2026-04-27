@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
+import { getPaginatedJournalVoucher } from '@e-coop-monorepo/modules/journal-voucher'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -10,9 +11,9 @@ import {
     createMutationFactory,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
+import { createMutationInvalidateFn } from '@e-coop-monorepo/shared/providers/repositories/mutation-factory'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { createMutationInvalidateFn } from '@e-coop-monorepo/shared/providers/repositories/mutation-factory'
 import type {
     ICashCheckVoucher,
     ICashCheckVoucherPaginated,
@@ -22,7 +23,6 @@ import type {
     TCashCheckVoucherPrintMode,
     TCashCheckVoucherPrintRequest,
 } from '../cash-check-voucher'
-import { getPaginatedJournalVoucher } from '@e-coop-monorepo/modules/journal-voucher'
 
 const {
     apiCrudHooks,

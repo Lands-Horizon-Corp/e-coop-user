@@ -1,8 +1,6 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
-import { ImageDisplay } from '@e-coop-monorepo/ui'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
+import { ImageDisplay } from '@e-coop-monorepo/ui'
 
 interface Props extends IClassProps {
     src?: string

@@ -1,10 +1,9 @@
+import { IFinancialStatementDefinition } from '@e-coop-monorepo/modules/financial-statement-definition'
 import {
     IAuditable,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IFinancialStatementDefinition } from '@e-coop-monorepo/modules/financial-statement-definition'
 
 export interface IFinancialStatementAccountGrouping
     extends IAuditable, ITimeStamps {

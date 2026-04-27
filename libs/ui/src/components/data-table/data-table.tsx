@@ -1,6 +1,5 @@
 import { ReactNode } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import {
     DndContext,
     DragEndEvent,
@@ -13,9 +12,9 @@ import {
 } from '@dnd-kit/core'
 import { restrictToHorizontalAxis } from '@dnd-kit/modifiers'
 import { arrayMove } from '@dnd-kit/sortable'
-import { Row, Table as TableInstance } from '@tanstack/react-table'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'
+import { Row, Table as TableInstance } from '@tanstack/react-table'
 
 import { Table } from '../ui/table'
 import DataTableBody from './data-table-body'
@@ -123,4 +122,4 @@ const DataTable = <TData,>({
     )
 }
 
-export {DataTable}
+export { DataTable }

@@ -1,3 +1,4 @@
+import { mutualFundBaseKey } from '@e-coop-monorepo/modules/mutual-fund'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import {
@@ -11,7 +12,6 @@ import type {
     IMutualFundEntry,
     IMutualFundEntryRequest,
 } from '../mutual-fund-entry'
-import { mutualFundBaseKey } from '@e-coop-monorepo/modules/mutual-fund'
 
 const {
     apiCrudHooks,

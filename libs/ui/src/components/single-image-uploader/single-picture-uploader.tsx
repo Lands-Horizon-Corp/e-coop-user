@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
 import { AdjustIcon } from '../icons'
-import {ImageDisplay} from '../image-display'
+import { ImageDisplay } from '../image-display'
 import Modal, { IModalProps } from '../modals/modal'
 import PictureCrop from '../picture-crop'
-import {ActionTooltip }from '../tooltips/action-tooltip'
+import { ActionTooltip } from '../tooltips/action-tooltip'
 import { Button } from '../ui/button'
 import PictureDrop from './picture-drop'
 

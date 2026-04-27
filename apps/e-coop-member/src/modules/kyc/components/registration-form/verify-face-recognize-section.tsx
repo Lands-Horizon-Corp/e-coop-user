@@ -2,8 +2,8 @@ import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { useUploadMedia } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import { toDateTimeFormatFile } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useCamera } from '@e-coop-monorepo/shared/hooks'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 import {

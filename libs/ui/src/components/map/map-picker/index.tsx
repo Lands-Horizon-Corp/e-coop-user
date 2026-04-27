@@ -7,10 +7,9 @@ import {
     GOOGLE_MAPS_API_KEY,
     GOOGLE_MAPS_ID,
 } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useInternalState } from '@e-coop-monorepo/shared/hooks'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
-
 import CopyTextButton from '@e-coop-monorepo/ui'
 import {
     BuildingIcon,

@@ -1,12 +1,12 @@
 import z from 'zod'
 
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
 import { HolidaySchema } from './holiday.validation'
 
 export interface IHoliday extends IBaseEntityMeta {

@@ -1,9 +1,3 @@
-import {
-    IBaseEntityMeta,
-    IPaginatedResult,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-
 import { IChargesRateByRangeOrMinimumAmount } from '@e-coop-monorepo/modules/charges-rate-by-range-or-minimum-amount'
 import { IChargesRateByTerm } from '@e-coop-monorepo/modules/charges-rate-by-term'
 import { IChargesRateSchemeAccount } from '@e-coop-monorepo/modules/charges-rate-scheme-account'
@@ -11,6 +5,12 @@ import { IChargesRateSchemeModeOfPayment } from '@e-coop-monorepo/modules/charge
 import { ICurrency } from '@e-coop-monorepo/modules/currency'
 import { TLoanModeOfPayment } from '@e-coop-monorepo/modules/loan-transaction'
 import { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
+
 import {
     TChargesRateCreateSchemeSchema,
     TChargesRateSchemeSchema,

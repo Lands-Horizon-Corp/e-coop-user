@@ -2,9 +2,7 @@ import { ReactNode, useState } from 'react'
 
 import { Link, useLocation } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
-import { HiBars3 } from 'react-icons/hi2'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { CalculatorIcon } from '@e-coop-monorepo/ui'
 import NavAuthGroup from '@e-coop-monorepo/ui'
 import NavEcoopLogo from '@e-coop-monorepo/ui'
@@ -19,6 +17,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from '@e-coop-monorepo/ui'
+import { HiBars3 } from 'react-icons/hi2'
 
 type NavLink = {
     name: string

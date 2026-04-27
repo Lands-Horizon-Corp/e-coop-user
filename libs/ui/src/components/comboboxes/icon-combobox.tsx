@@ -13,11 +13,7 @@ import {
     CommandItem,
     CommandList,
 } from '@e-coop-monorepo/ui'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 
 interface Props {
     value?: TIcon
@@ -70,7 +66,7 @@ const IconCombobox = forwardRef<HTMLButtonElement, Props>(
 
         return (
             <Popover modal onOpenChange={setOpen} open={open}>
-                <PopoverTrigger  >
+                <PopoverTrigger>
                     <Button
                         aria-expanded={open}
                         className={cn('w-full justify-between px-3', className)}

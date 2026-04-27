@@ -2,6 +2,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
+import { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { downloadFile } from '@e-coop-monorepo/shared/helpers'
 import {
@@ -14,7 +15,6 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
 import {
     IAccount,
     IAccountPaginated,

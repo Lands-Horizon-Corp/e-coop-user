@@ -1,5 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 
+import { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
+import { ILoanGuide } from '@e-coop-monorepo/modules/loan-guide'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -11,8 +13,6 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
-import { ILoanGuide } from '@e-coop-monorepo/modules/loan-guide'
 // import { IAmortizationSchedule } from '../amortization'
 import type {
     IAllMembersLoanSummaryResponse,

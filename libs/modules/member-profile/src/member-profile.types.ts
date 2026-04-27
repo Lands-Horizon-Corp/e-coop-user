@@ -1,13 +1,3 @@
-import { TSex } from '@e-coop-monorepo/shared/constants'
-import {
-    IAuditable,
-    IPaginatedResult,
-    ITimeStamps,
-    TCivilStatus,
-    TEntityId,
-    TGeneralStatus,
-} from '@e-coop-monorepo/shared/types'
-
 import { IAccount } from '@e-coop-monorepo/modules/account'
 import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { IMemberPassbookSettings } from '@e-coop-monorepo/modules/branch-settings'
@@ -58,6 +48,16 @@ import { IMemberType } from '@e-coop-monorepo/modules/member-type'
 import { IOrganization } from '@e-coop-monorepo/modules/organization'
 import { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
 import { IUserBase } from '@e-coop-monorepo/modules/user'
+import { TSex } from '@e-coop-monorepo/shared/constants'
+import {
+    IAuditable,
+    IPaginatedResult,
+    ITimeStamps,
+    TCivilStatus,
+    TEntityId,
+    TGeneralStatus,
+} from '@e-coop-monorepo/shared/types'
+
 import {
     TMemberProfileMembershipInfoSchema,
     TMemberProfilePersonalInfoSchema,

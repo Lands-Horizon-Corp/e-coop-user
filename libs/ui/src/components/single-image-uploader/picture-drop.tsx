@@ -2,9 +2,8 @@ import { DragEvent, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
-
 import { ImageIcon } from '@e-coop-monorepo/ui'
 import { Input } from '@e-coop-monorepo/ui'
 import { Label } from '@e-coop-monorepo/ui'

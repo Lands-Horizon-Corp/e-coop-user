@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
+import { memberTypeBaseQueryKey } from '@e-coop-monorepo/modules/member-type'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -11,7 +12,6 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { memberTypeBaseQueryKey } from '@e-coop-monorepo/modules/member-type'
 import type {
     IBrowseReference,
     IBrowseReferencePaginated,

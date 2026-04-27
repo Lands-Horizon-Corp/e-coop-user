@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
+import { useDeleteById } from '@e-coop-monorepo/modules/subscription-plan'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -10,7 +11,6 @@ import type {
     ICheckRemittance,
     ICheckRemittanceRequest,
 } from '../check-remittance'
-import { useDeleteById } from '@e-coop-monorepo/modules/subscription-plan'
 
 const {
     apiCrudHooks,

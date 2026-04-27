@@ -1,13 +1,13 @@
 import z from 'zod'
 
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
 import { TimesheetRequestSchema } from './timeshee.validation'
 
 export interface ITimesheet extends IBaseEntityMeta {

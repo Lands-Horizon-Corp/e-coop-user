@@ -1,6 +1,6 @@
 // this component sanitizes and display any content including html, text
 import { sanitizeHtml } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 interface Props extends IClassProps {

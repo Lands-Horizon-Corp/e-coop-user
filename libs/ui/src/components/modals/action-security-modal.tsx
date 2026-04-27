@@ -1,22 +1,21 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import { useForm, type ControllerRenderProps } from 'react-hook-form'
+import { type ControllerRenderProps, useForm } from 'react-hook-form'
 import z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useVerifyPassword } from '@e-coop-monorepo/modules/authentication'
-import {useActionSecurityStore} from '@e-coop-monorepo/shared/store'
-
+import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
+import { useActionSecurityStore } from '@e-coop-monorepo/shared/store'
 import { ShieldCheckIcon, ShieldLockIcon } from '@e-coop-monorepo/ui'
-import {Modal} from '@e-coop-monorepo/ui'
-import {LoadingSpinner} from '@e-coop-monorepo/ui'
+import { Modal } from '@e-coop-monorepo/ui'
+import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { Form } from '@e-coop-monorepo/ui'
-import {FormErrorMessage} from '@e-coop-monorepo/ui'
-import {FormFieldWrapper} from '@e-coop-monorepo/ui'
-import {PasswordInput} from '@e-coop-monorepo/ui'
+import { FormErrorMessage } from '@e-coop-monorepo/ui'
+import { FormFieldWrapper } from '@e-coop-monorepo/ui'
+import { PasswordInput } from '@e-coop-monorepo/ui'
 
 const actionSecurityFormSchema = z.object({
     password: z.string().min(1, 'Password is required'),
@@ -107,15 +106,14 @@ const ActionSecurityModal = () => {
                             <FormFieldWrapper
                                 control={form.control}
                                 name="password"
-                                render={
-                                    ({
-                                        field,
-                                    }: {
-                                        field: ControllerRenderProps<
-                                            TFormType,
-                                            'password'
-                                        >
-                                    }) => (
+                                render={({
+                                    field,
+                                }: {
+                                    field: ControllerRenderProps<
+                                        TFormType,
+                                        'password'
+                                    >
+                                }) => (
                                     <PasswordInput
                                         {...field}
                                         autoComplete="off"
@@ -144,4 +142,4 @@ const ActionSecurityModal = () => {
     )
 }
 
-export {ActionSecurityModal}
+export { ActionSecurityModal }

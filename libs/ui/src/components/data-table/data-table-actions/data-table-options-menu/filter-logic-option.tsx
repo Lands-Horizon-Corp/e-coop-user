@@ -1,3 +1,4 @@
+import { TFilterLogic } from '@e-coop-monorepo/shared/contexts'
 import { FunnelIcon } from '@e-coop-monorepo/ui'
 import {
     DropdownMenuGroup,
@@ -5,8 +6,6 @@ import {
     DropdownMenuRadioGroup,
     DropdownMenuRadioItem,
 } from '@e-coop-monorepo/ui'
-
-import { TFilterLogic } from '@e-coop-monorepo/shared/contexts'
 
 export interface IDataTableFilterLogicOptionProps {
     filterLogic: TFilterLogic

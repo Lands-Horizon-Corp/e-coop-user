@@ -1,17 +1,17 @@
 import z from 'zod'
 
-import {
-    IBaseEntityMeta,
-    IPaginatedResult,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-
 import { IAccount } from '@e-coop-monorepo/modules/account'
 import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { IMutualFundAdditionalMembers } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
 import { IMutualFundEntry } from '@e-coop-monorepo/modules/mutual-fund-entry'
 import { IMutualFundTable } from '@e-coop-monorepo/modules/mutual-fund-table'
 import { IUser } from '@e-coop-monorepo/modules/user'
+import {
+    IBaseEntityMeta,
+    IPaginatedResult,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
+
 import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
 import {
     MutualFundSchema,

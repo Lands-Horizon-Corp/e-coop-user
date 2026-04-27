@@ -1,12 +1,12 @@
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import { IUser } from '@e-coop-monorepo/modules/user'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUser } from '@e-coop-monorepo/modules/user'
 import { TCashCheckVoucherEntrySchema } from './cash-check-voucher-entry.validation'
 
 export interface ICashCheckVoucherEntry extends IBaseEntityMeta {

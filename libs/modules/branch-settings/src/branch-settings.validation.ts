@@ -1,8 +1,7 @@
 import z from 'zod'
 
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
-
 import { UnbalanceAccountSchema } from '@e-coop-monorepo/modules/unbalance-account'
+import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 export const BranchSettingRequestSchema = z.object({
     withdraw_allow_user_input: z.boolean(),

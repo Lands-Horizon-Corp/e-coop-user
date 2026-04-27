@@ -1,7 +1,9 @@
 import React, { memo } from 'react'
 import { useMemo } from 'react'
 
-import { cn } from '@/helpers/tw-utils'import ImageDisplay from '../image-display'
+import { cn } from '@/helpers/tw-utils'
+
+import ImageDisplay from '../image-display'
 
 export const useRandomGradient = (colorPalette: string[]) => {
     return useMemo(() => getRandomGradient(colorPalette), [colorPalette])

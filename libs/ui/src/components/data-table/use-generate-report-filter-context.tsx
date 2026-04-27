@@ -6,10 +6,8 @@ import {
     TFinalFilter,
 } from '@e-coop-monorepo/shared/contexts'
 import { toBase64 } from '@e-coop-monorepo/shared/helpers'
-
-import { useDataTableSorting } from '@e-coop-monorepo/ui'
-
 import { TSortingState } from '@e-coop-monorepo/shared/types'
+import { useDataTableSorting } from '@e-coop-monorepo/ui'
 
 type TGenerateReportProps = {
     defaultFilter: TFinalFilter

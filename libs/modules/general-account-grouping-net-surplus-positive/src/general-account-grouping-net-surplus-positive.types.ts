@@ -1,11 +1,10 @@
+import { IAccount } from '@e-coop-monorepo/modules/account'
 import {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { IAccount } from '@e-coop-monorepo/modules/account'
 
 export interface IGeneralAccountGroupingNetSurplusPositiveRequest {
     name: string

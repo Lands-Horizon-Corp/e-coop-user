@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 
-// import { cn } from '@e-coop-monorepo/shared/helpers'
+// import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 // import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 // import MemberPicker from '@e-coop-monorepo/modules/member-profile/components/member-picker'
 // import { IQRMemberProfileDecodedResult } from '@e-coop-monorepo/modules/qr-crypto'

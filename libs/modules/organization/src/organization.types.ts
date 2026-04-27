@@ -1,3 +1,9 @@
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IOrganizationCategory } from '@e-coop-monorepo/modules/organization-category'
+import { IOrganizationMedia } from '@e-coop-monorepo/modules/organization-media'
+import { ISubscriptionPlan } from '@e-coop-monorepo/modules/subscription-plan'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import {
     IAuditable,
     IPaginatedResult,
@@ -5,12 +11,6 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IOrganizationCategory } from '@e-coop-monorepo/modules/organization-category'
-import { IOrganizationMedia } from '@e-coop-monorepo/modules/organization-media'
-import { ISubscriptionPlan } from '@e-coop-monorepo/modules/subscription-plan'
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import {
     TOrganizationEditSchema,
     TOrganizationSchema,

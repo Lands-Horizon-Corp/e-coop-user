@@ -1,11 +1,10 @@
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IUserBase } from '@e-coop-monorepo/modules/user'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
 
 export interface ICashCount extends IBaseEntityMeta {
     id: TEntityId

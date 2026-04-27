@@ -5,12 +5,10 @@ import { Navigate, useRouter } from '@tanstack/react-router'
 import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
 import { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
 import { UserAvatar } from '@e-coop-monorepo/modules/user'
-
+import { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { BadgeExclamationFillIcon } from '@e-coop-monorepo/ui'
 import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
-
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 interface Props extends IBaseProps {
     allowNoUserType?: boolean

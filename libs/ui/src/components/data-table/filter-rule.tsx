@@ -4,8 +4,6 @@ import {
     filterModeMap,
 } from '@e-coop-monorepo/shared/contexts'
 import { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
-import { DateRange } from 'react-day-picker'
-
 import { DateRangePicker } from '@e-coop-monorepo/ui'
 import { TrashIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
@@ -17,6 +15,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@e-coop-monorepo/ui'
+import { DateRange } from 'react-day-picker'
 
 interface FilterRuleProps {
     filter: TFinalFilter

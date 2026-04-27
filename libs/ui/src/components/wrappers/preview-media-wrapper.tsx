@@ -1,7 +1,7 @@
 import React, { MouseEvent, ReactElement, cloneElement } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IMedia } from '@e-coop-monorepo/modules/media'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useImagePreview } from '@e-coop-monorepo/shared/store'
 
 type WithClickWrapperProps<T extends HTMLElement> = {

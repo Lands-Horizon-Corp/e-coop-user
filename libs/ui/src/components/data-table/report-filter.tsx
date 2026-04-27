@@ -6,18 +6,12 @@ import {
     TFinalFilter,
 } from '@e-coop-monorepo/shared/contexts'
 import { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
-import { Check, Copy, Plus, X } from 'lucide-react'
-
 import { ArrowDownIcon, ArrowUpIcon, SortIcon } from '@e-coop-monorepo/ui'
-import {InfoTooltip} from '@e-coop-monorepo/ui'
+import { InfoTooltip } from '@e-coop-monorepo/ui'
 import { Badge } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { Card, CardContent, CardHeader, CardTitle } from '@e-coop-monorepo/ui'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 import {
     Select,
     SelectContent,
@@ -25,9 +19,9 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@e-coop-monorepo/ui'
-
 import { useGeneratedReportFilter } from '@e-coop-monorepo/ui'
 import { FilterRule } from '@e-coop-monorepo/ui'
+import { Check, Copy, Plus, X } from 'lucide-react'
 
 interface FilterBuilderUIProps {
     columns: IColumnReportFilter[]
@@ -205,7 +199,7 @@ export function GeneratedReportFilter({
                                     content="Add sorting to your filter"
                                     delayDuration={1000}
                                 >
-                                    <PopoverTrigger  >
+                                    <PopoverTrigger>
                                         <Button
                                             className="h-8"
                                             size="icon"

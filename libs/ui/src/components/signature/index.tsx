@@ -3,20 +3,19 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { toast } from 'sonner'
 
 import { dataUrlToFile } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 import { useSignature } from '@e-coop-monorepo/shared/store'
-import { format } from 'date-fns'
-import { FileWithPath } from 'react-dropzone'
-import SignaturePad from 'react-signature-canvas'
-import Webcam from 'react-webcam'
-
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
 } from '@e-coop-monorepo/ui'
+import { format } from 'date-fns'
+import { FileWithPath } from 'react-dropzone'
+import SignaturePad from 'react-signature-canvas'
+import Webcam from 'react-webcam'
 
 import {
     CameraIcon,

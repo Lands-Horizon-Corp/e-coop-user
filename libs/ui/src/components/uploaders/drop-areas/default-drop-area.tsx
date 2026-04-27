@@ -1,5 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { ImageIcon } from '@e-coop-monorepo/ui'
 
 import DropHoverOverlay from '../drop-hover-overlay'

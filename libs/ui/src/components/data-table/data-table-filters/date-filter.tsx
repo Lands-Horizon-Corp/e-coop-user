@@ -5,8 +5,6 @@ import {
     filterModeMap,
     useFilter,
 } from '@/contexts/filter-context'
-import { isDate } from 'date-fns'
-
 import InputDatePicker from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -16,6 +14,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@e-coop-monorepo/ui'
+import { isDate } from 'date-fns'
 
 import DateRange from './date-range'
 

@@ -1,10 +1,10 @@
 import z from 'zod'
 
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
-
 import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { IMedia } from '@e-coop-monorepo/modules/media'
 import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+
 import { MemberAssetSchema } from './member-asset-validation'
 
 export interface IMemberAsset extends IBaseEntityMeta {

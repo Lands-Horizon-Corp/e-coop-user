@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { findCountry } from '@e-coop-monorepo/ui/components/comboboxes/country-combobox'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { CircleFlag } from 'react-circle-flags'

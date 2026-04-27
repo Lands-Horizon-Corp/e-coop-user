@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon } from '@e-coop-monorepo/ui/components/icons'
 import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'

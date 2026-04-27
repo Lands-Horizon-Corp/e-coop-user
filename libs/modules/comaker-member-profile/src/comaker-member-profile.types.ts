@@ -1,13 +1,13 @@
 import z from 'zod'
 
+import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { ComakerMemberProfileSchema } from './comaker-member-profile.validation'
 
 export interface IComakerMemberProfile extends IBaseEntityMeta {

@@ -1,8 +1,7 @@
 import { z } from 'zod'
 
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
-
 import { GENERAL_LEDGER_TYPE } from '@e-coop-monorepo/modules/general-ledger'
+import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 export const GeneralLedgerTypeEnumSchema = z.enum(GENERAL_LEDGER_TYPE)
 

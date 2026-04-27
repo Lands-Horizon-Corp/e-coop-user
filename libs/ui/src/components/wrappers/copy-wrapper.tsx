@@ -3,9 +3,8 @@ import React, { useRef, useState } from 'react'
 import { toast } from 'sonner'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { CheckIcon, CopyIcon } from '@e-coop-monorepo/ui'
-
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import { CheckIcon, CopyIcon } from '@e-coop-monorepo/ui'
 
 interface CopyToClipboardProps extends IBaseProps {
     copyMsg?: string

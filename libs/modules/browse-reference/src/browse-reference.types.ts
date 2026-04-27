@@ -1,14 +1,14 @@
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { IInterestRateByAmount } from '@e-coop-monorepo/modules/interest-rate-by-amount'
+import { IInterestRateByDate } from '@e-coop-monorepo/modules/interest-rate-by-date'
+import { IInterestRateByYear } from '@e-coop-monorepo/modules/interest-rate-by-year'
+import { IMemberType } from '@e-coop-monorepo/modules/member-type'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IInterestRateByAmount } from '@e-coop-monorepo/modules/interest-rate-by-amount'
-import { IInterestRateByDate } from '@e-coop-monorepo/modules/interest-rate-by-date'
-import { IInterestRateByYear } from '@e-coop-monorepo/modules/interest-rate-by-year'
-import { IMemberType } from '@e-coop-monorepo/modules/member-type'
 import { INTEREST_TYPE } from './browse-reference.constant'
 import { TBrowseReferenceSchema } from './browse-reference.validation'
 

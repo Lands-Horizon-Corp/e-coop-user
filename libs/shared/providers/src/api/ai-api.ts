@@ -1,15 +1,11 @@
-import axios, {
-    type AxiosRequestConfig,
-    type AxiosResponse,
-} from 'axios'
+import axios, { type AxiosRequestConfig, type AxiosResponse } from 'axios'
 
 export interface IRequestParams {
     [key: string]: unknown
 }
 
-
 export const AI_API = {
-      async uploadFile<R = unknown>(
+    async uploadFile<R = unknown>(
         url: string,
         formData: FormData,
         params?: IRequestParams,

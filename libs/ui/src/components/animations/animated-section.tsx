@@ -1,6 +1,12 @@
 import { useRef } from 'react'
 
-import { type Variants, motion, useInView, useScroll, useTransform } from 'framer-motion'
+import {
+    type Variants,
+    motion,
+    useInView,
+    useScroll,
+    useTransform,
+} from 'framer-motion'
 
 type AnimationType =
     | 'fadeUp'

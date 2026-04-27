@@ -1,15 +1,15 @@
 import z from 'zod'
 
+import { IGeneratedReport } from '@e-coop-monorepo/modules/generated-report'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IUser } from '@e-coop-monorepo/modules/user'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IGeneratedReport } from '@e-coop-monorepo/modules/generated-report'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { GeneratedReportsDownloadUsersSchema } from './generated-reports-download-users.validation'
 
 export interface IGeneratedReportsDownloadUsers extends IBaseEntityMeta {

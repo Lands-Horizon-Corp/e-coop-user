@@ -1,8 +1,7 @@
 import * as React from 'react'
 
 import { SEX, TSex } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/helpers'
-
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -13,11 +12,7 @@ import {
     CommandItem,
     CommandList,
 } from '@e-coop-monorepo/ui'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,
@@ -48,7 +43,7 @@ const SexCombobox = React.forwardRef<HTMLButtonElement, Props>(
 
         return (
             <Popover modal onOpenChange={setOpen} open={open}>
-                <PopoverTrigger  >
+                <PopoverTrigger>
                     <Button
                         {...other}
                         aria-expanded={open}

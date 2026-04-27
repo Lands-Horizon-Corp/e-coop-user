@@ -3,8 +3,8 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { cn } from '@e-coop-monorepo/shared/helpers'
 import { allErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import { FingerPrintIcon } from '@e-coop-monorepo/ui/components/icons'

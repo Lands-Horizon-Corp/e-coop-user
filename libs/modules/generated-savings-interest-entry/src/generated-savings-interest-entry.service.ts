@@ -1,5 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 
+import {
+    createGeneratedSavingsInterest,
+    generatedSavingsInterestBaseKey,
+} from '@e-coop-monorepo/modules/generated-savings-interest'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     HookQueryOptions,
@@ -17,10 +21,6 @@ import type {
     IGeneratedSavingsInterestEntryDailyBalanceView,
     IGeneratedSavingsInterestEntryRequest,
 } from '../generated-savings-interest-entry'
-import {
-    createGeneratedSavingsInterest,
-    generatedSavingsInterestBaseKey,
-} from '@e-coop-monorepo/modules/generated-savings-interest'
 
 const {
     apiCrudHooks,

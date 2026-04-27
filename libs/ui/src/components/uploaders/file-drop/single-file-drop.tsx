@@ -3,9 +3,8 @@ import { ReactNode } from 'react'
 import { toast } from 'sonner'
 
 import { IClassProps } from '@e-coop-monorepo/shared/types'
-import { DropzoneOptions, useDropzone } from 'react-dropzone'
-
 import { Input } from '@e-coop-monorepo/ui'
+import { DropzoneOptions, useDropzone } from 'react-dropzone'
 
 import DefaultDropArea from '../drop-areas/default-drop-area'
 

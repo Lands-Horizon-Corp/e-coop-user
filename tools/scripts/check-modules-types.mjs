@@ -1,6 +1,6 @@
-import { readdirSync, existsSync } from 'fs'
-import path from 'path'
 import { spawnSync } from 'child_process'
+import { existsSync, readdirSync } from 'fs'
+import path from 'path'
 import { fileURLToPath } from 'url'
 
 const __filename = fileURLToPath(import.meta.url)

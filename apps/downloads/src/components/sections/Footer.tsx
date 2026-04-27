@@ -1,31 +1,33 @@
+import { AnimatedSection } from '@e-coop-monorepo/ui'
 import { motion } from 'framer-motion'
 import { ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
-
-import { AnimatedSection } from '@e-coop-monorepo/ui'
 
 interface FooterProps {
     logo: string
 }
 
 const quickLinks = [
-  { label: "Get started", href: "#download" },
-  { label: "Terms and Conditions", href: "/policies/terms" },
-  { label: "Privacy Policy", href: "/policies/privacy" },
-  { label: "Terms of use", href: "/policies/terms" },
-  { label: "Cookie policy", href: "/policies/cookies" },
-  { label: "Data Protection Policy", href: "/policies/data-protection" },
-  { label: "Risk Management Policy", href: "/policies/risk-management" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Developers", href: "#" },
-];
+    { label: 'Get started', href: '#download' },
+    { label: 'Terms and Conditions', href: '/policies/terms' },
+    { label: 'Privacy Policy', href: '/policies/privacy' },
+    { label: 'Terms of use', href: '/policies/terms' },
+    { label: 'Cookie policy', href: '/policies/cookies' },
+    { label: 'Data Protection Policy', href: '/policies/data-protection' },
+    { label: 'Risk Management Policy', href: '/policies/risk-management' },
+    { label: 'FAQ', href: '#faq' },
+    { label: 'Developers', href: '#' },
+]
 
 const policies = [
-  { label: "AML and CTF Policy", href: "/policies/aml-ctf" },
-  { label: "Know Your Customer (KYC) Policy", href: "/policies/kyc" },
-  { label: "Complaint Handling and Dispute Resolution Policy", href: "/policies/complaints" },
-  { label: "Fair and Charges Policy", href: "/policies/fee-charges" },
-  { label: "Security Policy", href: "/policies/security" },
-];
+    { label: 'AML and CTF Policy', href: '/policies/aml-ctf' },
+    { label: 'Know Your Customer (KYC) Policy', href: '/policies/kyc' },
+    {
+        label: 'Complaint Handling and Dispute Resolution Policy',
+        href: '/policies/complaints',
+    },
+    { label: 'Fair and Charges Policy', href: '/policies/fee-charges' },
+    { label: 'Security Policy', href: '/policies/security' },
+]
 
 const socialLinks = [
     { label: 'Facebook', href: '#' },
