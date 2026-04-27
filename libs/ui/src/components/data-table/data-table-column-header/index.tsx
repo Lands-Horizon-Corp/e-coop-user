@@ -1,6 +1,7 @@
 import { CSSProperties } from 'react'
 
-import { cn } from '@/helpers/tw-utils'import { useSortable } from '@dnd-kit/sortable'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 import { Column, Header, Table } from '@tanstack/react-table'
 

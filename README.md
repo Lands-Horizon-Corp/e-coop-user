@@ -1,3 +1,46 @@
+# 🏢 E-Coop Enterprise Monorepo (v2.0)
+
+Welcome to the E-Coop Enterprise Monorepo. This repository houses the entire E-Coop ecosystem, including our user-facing portals (`downloads`, `admin`, `member`, `core`) and shared libraries. 
+
+This project was refactored from a legacy polyrepo structure into a unified **Nx Workspace** to ensure code consistency, eliminate duplication, and provide a lightning-fast developer experience.
+
+---
+
+## 🛠️ Tech Stack
+
+Our 2026 bleeding-edge tech stack is highly optimized for performance and type safety:
+* **Package Manager:** [Bun v1.3.9](https://bun.sh/)
+* **Monorepo Build System:** [Nx v22](https://nx.dev/)
+* **Frontend Core:** React 19 + Vite 7 + TypeScript
+* **State & Data:** Zustand (Client State), TanStack Query (Server State), TanStack Router
+* **Styling & UI:** Tailwind CSS v4, Base UI (Nova Design System), Radix Primitives
+* **Forms & Validation:** React Hook Form + Zod
+
+---
+
+## 🏗️ Architecture: Thin Apps, Thick Libraries
+
+We strictly follow the **Clean Architecture** pattern. Applications do not contain business logic. Instead, logic flows downwards from thin deployments into thick, feature-driven libraries.
+
+```text
+e-coop-user/
+├── apps/                        # The "Thin" Layer (Deployments)
+│   ├── downloads/               # Vite + Router configuration only
+│   ├── e-coop-admin/            
+│   ├── e-coop-member/           
+│   └── e-coop-core/             
+├── libs/                        # The "Thick" Layer (Code Warehouse)
+│   ├── ui/                      # Base UI Presenters (Dumb components, no state)
+│   ├── shared/                  # Global utilities, hooks, and types
+│   └── modules/                 # Feature-driven business logic (Entities & Use Cases)
+│       └── member-profile/      # Example: Contains specific services, Zod schemas, API logic
+└── tools/scripts/               # Internal Developer Platform (Custom automation scripts)
+
+
+
+
+
+
 # ECoopMonorepo
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
