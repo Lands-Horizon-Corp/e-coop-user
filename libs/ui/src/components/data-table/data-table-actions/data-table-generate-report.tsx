@@ -1,12 +1,12 @@
-import { TFinalFilter } from '@/contexts/filter-context'
-import { toReadableDate } from '@/helpers/date-utils'
+import { TFinalFilter } from '@e-coop-monorepo/shared/contexts'
+import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { TModelName } from '@e-coop-monorepo/modules/generated-report'
-import GeneratedReportCreateFormModal from '@e-coop-monorepo/modules/generated-report'
+import {GeneratedReportCreateFormModal} from '@e-coop-monorepo/modules/generated-report'
 import { Table } from '@tanstack/react-table'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { ReportsIcon } from '@e-coop-monorepo/ui'
-import LoadingSpinner from '@e-coop-monorepo/ui'
+import {LoadingSpinner} from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
@@ -14,7 +14,7 @@ import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import {
     GenerateReportFilterContext,
     useDataGenerateReportFilter,
-} from '../../../modules/generated-report/components/filters/context/use-generate-report-filter-context'
+} from '@e-coop-monorepo/ui'
 
 export interface IDataTableExportProps<TData> {
     table: Table<TData>
@@ -105,4 +105,4 @@ const DataTableExport = <TData,>({
     )
 }
 
-export default DataTableExport
+export {DataTableExport}

@@ -1,9 +1,9 @@
 import { useState } from 'react'
 
-import { isObject } from '@/helpers'
+import { isObject } from '@e-coop-monorepo/shared/helpers'
 import { isAfter } from 'date-fns'
 
-import TimePicker from '@e-coop-monorepo/ui'
+import {TimePicker} from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 
 export type TimeRange = { from: Date | undefined; to?: Date }
@@ -39,7 +39,7 @@ const TimeRange = ({
                     <TimePicker
                         date={timeRange?.from || baseDate}
                         hideTimeFieldLabels
-                        onChange={(newDate) => {
+                        onChange={(newDate: any) => {
                             const updatedRange = { ...timeRange, from: newDate }
                             setTimeRange(updatedRange)
                         }}
@@ -50,7 +50,7 @@ const TimeRange = ({
                     <TimePicker
                         date={timeRange?.to || baseDate}
                         hideTimeFieldLabels
-                        onChange={(newDate) => {
+                        onChange={(newDate: Date | undefined) => {
                             setTimeRange((prev) => ({
                                 from: prev?.from ? prev.from : newDate,
                                 to: newDate,

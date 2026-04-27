@@ -1,7 +1,7 @@
 import { Table } from '@tanstack/react-table'
 
 import { DashSquareDottedIcon } from '@e-coop-monorepo/ui'
-import ActionTooltip from '@e-coop-monorepo/ui'
+import {ActionTooltip} from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 
 import { IClassProps } from '@e-coop-monorepo/shared/types'

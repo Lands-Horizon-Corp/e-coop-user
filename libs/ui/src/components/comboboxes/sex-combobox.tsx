@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { SEX, TSex } from '@/constants'
-import { cn } from '@/helpers'
+import { SEX, TSex } from '@e-coop-monorepo/shared/constants'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
@@ -48,7 +48,7 @@ const SexCombobox = React.forwardRef<HTMLButtonElement, Props>(
 
         return (
             <Popover modal onOpenChange={setOpen} open={open}>
-                <PopoverTrigger asChild>
+                <PopoverTrigger  >
                     <Button
                         {...other}
                         aria-expanded={open}

@@ -1,4 +1,5 @@
-import { cn } from '@/helpers/tw-utils'import { Table } from '@tanstack/react-table'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Table } from '@tanstack/react-table'
 
 import { MixerHorizontalIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
@@ -31,7 +32,7 @@ const DataTableOptionsMenu = <T,>({
 }: Props<T>) => {
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger  >
                 <Button
                     className={cn('rounded-md', className)}
                     size="icon"

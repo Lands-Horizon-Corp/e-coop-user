@@ -1,7 +1,8 @@
 import { ReactNode, useMemo } from 'react'
 
-import { formatNumber } from '@/helpers'
-import { cn } from '@/helpers/tw-utils'import { Column, Header, Table } from '@tanstack/react-table'
+import { formatNumber } from '@e-coop-monorepo/shared/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Column, Header, Table } from '@tanstack/react-table'
 
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 

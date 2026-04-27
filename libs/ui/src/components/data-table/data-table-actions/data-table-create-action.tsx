@@ -1,7 +1,8 @@
-import { cn } from '@/helpers/tw-utils'import { IconType } from 'react-icons/lib'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { IconType } from 'react-icons/lib'
 
 import { PlusIcon } from '@e-coop-monorepo/ui'
-import LoadingSpinner from '@e-coop-monorepo/ui'
+import {LoadingSpinner} from '@e-coop-monorepo/ui'
 import { Button, ButtonProps } from '@e-coop-monorepo/ui'
 
 export interface IDataTableCreateActionProps extends Omit<
@@ -30,8 +31,8 @@ const DataTableCreateAction = ({
             className={cn('gap-x-1 rounded-md', className)}
             disabled={disabled || isLoading}
             onClick={onClick}
-            size={other.size ?? 'sm'}
-            variant={other.variant ?? 'default'}
+            size="sm"
+            variant="default"
         >
             {isLoading ? (
                 <LoadingSpinner />

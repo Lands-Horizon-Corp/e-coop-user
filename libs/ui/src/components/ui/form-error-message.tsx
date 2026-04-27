@@ -23,4 +23,4 @@ const FormErrorMessage = ({ className, errorMessage }: Props) => {
     )
 }
 
-export default FormErrorMessage
+export {FormErrorMessage}

@@ -1,4 +1,4 @@
-import { dateAgo, toReadableDate } from '@/helpers/date-utils'
+import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { ColumnDef } from '@tanstack/react-table'
 
 import { ITimeStamps } from '@e-coop-monorepo/shared/types'

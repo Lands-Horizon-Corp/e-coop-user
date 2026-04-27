@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { TFilterObject } from '@/contexts/filter-context'
+import { TFilterObject } from '@e-coop-monorepo/shared/contexts'
 import { ColumnDef, Row } from '@tanstack/react-table'
 
 import { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'

@@ -8,7 +8,8 @@ import React, {
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@/helpers/tw-utils'import { countries } from 'country-data-list'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { countries } from 'country-data-list'
 import { CircleFlag } from 'react-circle-flags'
 
 import {
@@ -215,7 +216,6 @@ const CountryComboboxComponent = (
             </PopoverTrigger>
             <PopoverContent
                 className="min-w-[--radix-popper-anchor-width] p-0"
-                collisionPadding={10}
                 side="bottom"
             >
                 <Command

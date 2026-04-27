@@ -51,6 +51,8 @@ const TimePicker: React.FC<TimePickerProps> = ({
             )}
             <Select
                 onValueChange={(selectedValue) => {
+                    if (selectedValue == null) return
+
                     const parsedValue =
                         typeof items[0].value === 'number'
                             ? parseInt(selectedValue, 10)
@@ -121,4 +123,4 @@ const TimePicker: React.FC<TimePickerProps> = ({
     )
 }
 
-export default TimePicker
+export {TimePicker}

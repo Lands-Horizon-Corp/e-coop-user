@@ -49,8 +49,8 @@ const DataTableRowContext = <TData,>({
     }
 
     return (
-        <ContextMenu modal={modal}>
-            <ContextMenuTrigger asChild>{children}</ContextMenuTrigger>
+        <ContextMenu>
+            <ContextMenuTrigger >{children}</ContextMenuTrigger>
             <ContextMenuContent>
                 <ContextMenuLabel>Actions</ContextMenuLabel>
                 <ContextMenuSeparator />

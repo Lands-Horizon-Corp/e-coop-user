@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 import {
     FAMILY_RELATIONSHIP,
     TRelationship,
@@ -48,7 +48,7 @@ const RelationshipCombobox = ({
 
     return (
         <Popover modal onOpenChange={setOpen} open={open}>
-            <PopoverTrigger asChild>
+            <PopoverTrigger  >
                 <Button
                     {...other}
                     aria-expanded={open}

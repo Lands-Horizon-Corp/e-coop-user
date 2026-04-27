@@ -1,4 +1,5 @@
-import { cn } from '@/helpers/tw-utils'import { format } from 'date-fns'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { format } from 'date-fns'
 
 import { Button } from '@e-coop-monorepo/ui'
 import {
@@ -8,7 +9,7 @@ import {
 } from '@e-coop-monorepo/ui'
 
 import { CalendarIcon } from '../icons'
-import DateTimePicker, { CaptionLayout } from './date-time-picker'
+import { DateTimePicker, CaptionLayout } from './date-time-picker'
 
 type InputDatePickerProps = {
     id?: string
@@ -32,7 +33,7 @@ const InputDatePicker = ({
 }: InputDatePickerProps) => {
     return (
         <Popover modal>
-            <PopoverTrigger asChild>
+            <PopoverTrigger >
                 <Button
                     className={cn(
                         'w-full pl-3 text-left font-normal',

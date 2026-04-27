@@ -1,5 +1,5 @@
 import { ReloadIcon } from '@e-coop-monorepo/ui'
-import LoadingSpinner from '@e-coop-monorepo/ui'
+import {LoadingSpinner} from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 
 export interface IRefreshButtonProps {

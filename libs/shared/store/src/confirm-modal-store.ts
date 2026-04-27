@@ -87,4 +87,4 @@ const useConfirmModalStore = create<IConfirmModalStore>((set) => ({
     },
 }))
 
-export default useConfirmModalStore
+export {useConfirmModalStore}

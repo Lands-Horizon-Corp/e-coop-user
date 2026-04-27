@@ -126,8 +126,10 @@ export * from './components/buttons/refresh-button'
 export * from './components/containers/page-container'
 
 // data-table
-export { default as DataTable } from './components/data-table'
 export * from './components/data-table'
+
+//date-time-pickers
+export * from './components/date-time-pickers'
 
 // footers
 export * from './components/footers/auth-footer'
@@ -152,11 +154,7 @@ export * from './components/map/map.provider'
 export * from './components/map/map.utils'
 
 // modals
-export * from './components/modals/action-name-confirm-modal'
-// export * from './components/modals/action-security-modal'
-export * from './components/modals/confirm-modal'
-export * from './components/modals/info-modal'
-export * from './components/modals/modal'
+export * from './components/modals'
 
 // nav
 export * from './components/nav/nav-container'

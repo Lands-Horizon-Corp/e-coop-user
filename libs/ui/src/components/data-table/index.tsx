@@ -1,6 +1,7 @@
 import { ReactNode } from 'react'
 
-import { cn } from '@/helpers/tw-utils'import {
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import {
     DndContext,
     DragEndEvent,
     KeyboardSensor,
@@ -82,41 +83,44 @@ const DataTable = <TData,>({
             onDragEnd={handleDragEnd}
             sensors={sensors}
         >
-            <Table
-                className="table-fixed border-separate border-spacing-0 [&_td]:border-border [&_tfoot_td]:border-t [&_th]:border-b [&_th]:border-border [&_tr:not(:last-child)_td]:border-b [&_tr]:border-none"
-                style={
-                    isStaticWidth
-                        ? {
-                              width: table.getTotalSize(),
-                          }
-                        : {}
-                }
-                wrapperClassName={cn(
+            <div
+                className={cn(
                     'ecoop-scroll bg-popover ring-offset-0 shadow dark:bg-secondary/10 rounded-lg -z-0',
                     className,
                     !isScrollable ? 'h-fit max-h-none min-h-fit' : 'h-full grow'
                 )}
             >
-                <DataTableHeader
-                    columnOrder={table.getState().columnOrder}
-                    headerGroups={table.getHeaderGroups()}
-                    isStickyHeader={isStickyHeader}
-                />
-                <DataTableBody
-                    colCount={table.getVisibleLeafColumns().length}
-                    onDoubleClick={onDoubleClick}
-                    onRowClick={onRowClick}
-                    rowClassName={rowClassName}
-                    RowContextComponent={RowContextComponent}
-                    rows={table.getRowModel().rows}
-                />
-                <DataTableFooter
-                    isStickyFooter={isStickyFooter && isScrollable}
-                    table={table}
-                />
-            </Table>
+                <Table
+                    className="table-fixed border-separate border-spacing-0 [&_td]:border-border [&_tfoot_td]:border-t [&_th]:border-b [&_th]:border-border [&_tr:not(:last-child)_td]:border-b [&_tr]:border-none"
+                    style={
+                        isStaticWidth
+                            ? {
+                                  width: table.getTotalSize(),
+                              }
+                            : {}
+                    }
+                >
+                    <DataTableHeader
+                        columnOrder={table.getState().columnOrder}
+                        headerGroups={table.getHeaderGroups()}
+                        isStickyHeader={isStickyHeader}
+                    />
+                    <DataTableBody
+                        colCount={table.getVisibleLeafColumns().length}
+                        onDoubleClick={onDoubleClick}
+                        onRowClick={onRowClick}
+                        rowClassName={rowClassName}
+                        RowContextComponent={RowContextComponent}
+                        rows={table.getRowModel().rows}
+                    />
+                    <DataTableFooter
+                        isStickyFooter={isStickyFooter && isScrollable}
+                        table={table}
+                    />
+                </Table>
+            </div>
         </DndContext>
     )
 }
 
-export default DataTable
+export {DataTable}

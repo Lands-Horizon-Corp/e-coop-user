@@ -91,4 +91,4 @@ const TripleArrow: React.FC<TripleArrowProps> = ({
         </div>
     )
 }
-export default TripleArrow
+export {TripleArrow}

@@ -1,14 +1,15 @@
 import { ReactNode } from 'react'
 
-import { cn } from '@/helpers/tw-utils'import { Table } from '@tanstack/react-table'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Table } from '@tanstack/react-table'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import DataTableActiveFilters from '@e-coop-monorepo/ui'
-import DataTableDeleteSelected from '@e-coop-monorepo/ui'
+import {DataTableActiveFilters} from '@e-coop-monorepo/ui'
+import {DataTableDeleteSelected} from '@e-coop-monorepo/ui'
 import { type IDataTableDeleteSelectedProps } from '@e-coop-monorepo/ui'
-import DataTableExportButton from '@e-coop-monorepo/ui'
+import {DataTableExport} from '@e-coop-monorepo/ui'
 import { type IDataTableExportProps } from '@e-coop-monorepo/ui'
-import DataTableOptionsMenu from '@e-coop-monorepo/ui'
+import {DataTableOptionsMenu} from '@e-coop-monorepo/ui'
 import { type IDataTableScrollableOptionProps } from '@e-coop-monorepo/ui'
 import { Separator } from '@e-coop-monorepo/ui'
 
@@ -130,7 +131,7 @@ const DataTableToolbar = <TData,>({
                             className="h-full min-h-7"
                             orientation="vertical"
                         />
-                        <DataTableExportButton
+                        <DataTableExport
                             table={table}
                             {...exportActionProps}
                         />

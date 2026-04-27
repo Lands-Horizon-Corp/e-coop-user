@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import { cn } from '@/helpers'
-import { toReadableDateShort } from '@/helpers/date-utils'
+import { cn } from '@e-coop-monorepo/shared/helpers'
+import { toReadableDateShort } from '@e-coop-monorepo/shared/helpers'
 import { CalendarIcon } from 'lucide-react'
 import { DateRange } from 'react-day-picker'
 
@@ -41,7 +41,7 @@ export function DateRangePicker({
 
     return (
         <Popover onOpenChange={setIsOpen} open={isOpen}>
-            <PopoverTrigger asChild>
+            <PopoverTrigger >
                 <Button
                     className={cn(
                         'justify-start text-left font-normal',

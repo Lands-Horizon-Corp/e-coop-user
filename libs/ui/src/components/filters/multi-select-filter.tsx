@@ -1,4 +1,4 @@
-import { cn } from '@/helpers'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { Button } from '@e-coop-monorepo/ui'
 import {

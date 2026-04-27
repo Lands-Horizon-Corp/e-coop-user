@@ -1,4 +1,5 @@
-import { cn } from '@/helpers/tw-utils'import {
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import {
     SortableContext,
     horizontalListSortingStrategy,
 } from '@dnd-kit/sortable'

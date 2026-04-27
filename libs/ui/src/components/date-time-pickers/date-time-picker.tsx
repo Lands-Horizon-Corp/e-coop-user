@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import DateTimeSetter from '@e-coop-monorepo/ui'
+import {DateTimeSetter} from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { Calendar } from '@e-coop-monorepo/ui'
 
@@ -62,4 +62,4 @@ const DateTimePicker = ({
     )
 }
 
-export default DateTimePicker
+export {DateTimePicker}

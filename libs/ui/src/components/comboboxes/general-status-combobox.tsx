@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { GENERAL_STATUS } from '@/constants'
-import { cn } from '@/helpers'
+import { GENERAL_STATUS } from '@e-coop-monorepo/shared/constants'
+import { cn } from '@e-coop-monorepo/shared/helpers'
 
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
@@ -52,7 +52,7 @@ const GeneralStatusCombobox = React.forwardRef<HTMLButtonElement, Props>(
 
         return (
             <Popover modal onOpenChange={setOpen} open={open}>
-                <PopoverTrigger asChild>
+                <PopoverTrigger>
                     <Button
                         {...other}
                         aria-expanded={open}

@@ -1,8 +1,9 @@
 import { useMemo } from 'react'
 
-import { useFilter } from '@/contexts/filter-context'
-import { cn } from '@/helpers/tw-utils'import { FunnelFilledIcon, FunnelIcon, XIcon } from '@e-coop-monorepo/ui'
-import ActionTooltip from '@e-coop-monorepo/ui'
+import { useFilter } from '@e-coop-monorepo/shared/contexts'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { FunnelFilledIcon, FunnelIcon, XIcon } from '@e-coop-monorepo/ui'
+import {ActionTooltip} from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
     DropdownMenu,
@@ -50,7 +51,7 @@ const DataTableActiveFilters = ({ className }: IClassProps) => {
             )}
         >
             <DropdownMenu>
-                <DropdownMenuTrigger asChild>
+                <DropdownMenuTrigger  >
                     <Button
                         className="inline-flex cursor-pointer items-center duration-200 ease-in-out text-muted-foreground/70 hover:text-foreground"
                         variant="secondary"

@@ -1,5 +1,6 @@
-import { PAGE_SIZES_DENSE } from '@/constants'
-import { cn } from '@/helpers/tw-utils'import { Table } from '@tanstack/react-table'
+import { PAGE_SIZES_DENSE } from '@e-coop-monorepo/shared/constants'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Table } from '@tanstack/react-table'
 
 import {
     ChevronLeftIcon,

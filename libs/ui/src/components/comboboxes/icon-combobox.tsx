@@ -2,7 +2,8 @@ import { forwardRef, useMemo, useState } from 'react'
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@/helpers/tw-utils'import { CheckIcon, ChevronDownIcon, IconMap, TIcon } from '@e-coop-monorepo/ui'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { CheckIcon, ChevronDownIcon, IconMap, TIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {
     Command,
@@ -69,7 +70,7 @@ const IconCombobox = forwardRef<HTMLButtonElement, Props>(
 
         return (
             <Popover modal onOpenChange={setOpen} open={open}>
-                <PopoverTrigger asChild>
+                <PopoverTrigger  >
                     <Button
                         aria-expanded={open}
                         className={cn('w-full justify-between px-3', className)}

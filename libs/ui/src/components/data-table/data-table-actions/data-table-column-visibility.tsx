@@ -1,6 +1,7 @@
 import { useCallback } from 'react'
 
-import { cn } from '@/helpers/tw-utils'import type { Table } from '@tanstack/react-table'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import type { Table } from '@tanstack/react-table'
 
 import { ColumnOutlineIcon, EyeIcon, EyeNoneIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
@@ -39,7 +40,7 @@ const DatatableColumnVisibility = <TData,>({
 
     return (
         <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger  >
                 <Button
                     className={cn('rounded-md', className)}
                     size="icon"

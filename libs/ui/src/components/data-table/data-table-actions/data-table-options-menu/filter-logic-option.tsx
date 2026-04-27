@@ -6,7 +6,7 @@ import {
     DropdownMenuRadioItem,
 } from '@e-coop-monorepo/ui'
 
-import { TFilterLogic } from '../../../../contexts/filter-context'
+import { TFilterLogic } from '@e-coop-monorepo/shared/contexts'
 
 export interface IDataTableFilterLogicOptionProps {
     filterLogic: TFilterLogic

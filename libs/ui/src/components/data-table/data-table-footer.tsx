@@ -1,4 +1,5 @@
-import { cn } from '@/helpers/tw-utils'import { Table, flexRender } from '@tanstack/react-table'
+import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { Table, flexRender } from '@tanstack/react-table'
 
 import { TableCell, TableFooter, TableRow } from '@e-coop-monorepo/ui'
 
