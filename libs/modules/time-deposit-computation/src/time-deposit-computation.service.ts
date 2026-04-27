@@ -1,6 +1,10 @@
-import { ITimeDepositComputation, ITimeDepositComputationRequest } from './time-deposit-computation.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+
+import {
+    ITimeDepositComputation,
+    ITimeDepositComputationRequest,
+} from './time-deposit-computation.types'
 
 const {
     apiCrudHooks,

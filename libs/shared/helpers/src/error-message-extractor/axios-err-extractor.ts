@@ -1,9 +1,9 @@
 import { AxiosError } from 'axios'
 
-import { axiosErrorMessageExtractor } from '../axios-helpers/axios-error-extractor';
 import { IErrorResponse } from '@e-coop-monorepo/shared/types'
 
 import { TErrorMessageExtractor } from '.'
+import { axiosErrorMessageExtractor } from '../axios-helpers/axios-error-extractor'
 
 // AxiosError's constructor signature is not compatible with the generic
 // `new (...args: unknown[]) => Error` type, so cast it to satisfy TS.

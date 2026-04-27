@@ -17,7 +17,7 @@ import type {
     IMutualFundPrintRequest,
     IMutualFundRequest,
     IMutualFundView,
-} from '../mutual-fund'
+} from './mutual-fund.types'
 
 const {
     apiCrudHooks,

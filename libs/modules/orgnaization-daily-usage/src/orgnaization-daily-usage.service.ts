@@ -1,6 +1,10 @@
-import { IOrganizationDailyUsage, IOrganizationDailyUsageRequest } from './orgnaization-daily-usage.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+
+import {
+    IOrganizationDailyUsage,
+    IOrganizationDailyUsageRequest,
+} from './orgnaization-daily-usage.types'
 
 const {
     apiCrudHooks,

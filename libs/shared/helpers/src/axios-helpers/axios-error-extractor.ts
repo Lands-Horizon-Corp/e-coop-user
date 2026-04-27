@@ -1,6 +1,6 @@
 import type { AxiosError } from 'axios'
 
-import { isObjectEmpty } from '../function-utils';
+import { isObjectEmpty } from '../function-utils'
 
 export const axiosErrorMessageExtractor = (
     error: AxiosError<{ message?: string; error?: string }>

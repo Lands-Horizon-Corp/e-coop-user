@@ -1,6 +1,10 @@
-import { IAccountsComputationType, IAccountsComputationTypeRequest } from './computation-type.type';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+
+import {
+    IAccountsComputationType,
+    IAccountsComputationTypeRequest,
+} from './computation-type.type'
 
 const {
     apiCrudHooks,

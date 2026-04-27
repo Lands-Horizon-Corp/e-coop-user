@@ -1,6 +1,10 @@
-import { IGeneralLedgerTag, IGeneralLedgerTagRequest } from './general-accounting-ledger-tag.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+
+import {
+    IGeneralLedgerTag,
+    IGeneralLedgerTagRequest,
+} from './general-accounting-ledger-tag.types'
 
 const {
     apiCrudHooks,

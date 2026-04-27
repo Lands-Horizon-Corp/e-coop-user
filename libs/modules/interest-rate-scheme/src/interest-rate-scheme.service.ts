@@ -1,6 +1,10 @@
-import { IInterestRateScheme, IInterestRateSchemeRequest } from './interest-rate-scheme.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+
+import {
+    IInterestRateScheme,
+    IInterestRateSchemeRequest,
+} from './interest-rate-scheme.types'
 
 const {
     apiCrudHooks,

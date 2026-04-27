@@ -1,6 +1,10 @@
-import { ILoanGuaranteedFund, ILoanGuaranteedFundRequest } from './loan-guaranteed-fund.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+
+import {
+    ILoanGuaranteedFund,
+    ILoanGuaranteedFundRequest,
+} from './loan-guaranteed-fund.types'
 
 const {
     apiCrudHooks,

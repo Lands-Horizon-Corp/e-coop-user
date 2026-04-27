@@ -1,6 +1,10 @@
-import { IGeneralLedgerAccountGrouping, IGeneralLedgerAccountGroupingRequest } from './general-ledger-account-grouping.types';
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
+
+import {
+    IGeneralLedgerAccountGrouping,
+    IGeneralLedgerAccountGroupingRequest,
+} from './general-ledger-account-grouping.types'
 
 const { apiCrudHooks } = createDataLayerFactory<
     IGeneralLedgerAccountGrouping,
