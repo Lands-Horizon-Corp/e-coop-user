@@ -12,12 +12,7 @@ import {
     useDropzone,
 } from 'react-dropzone'
 
-import {
-    HardDriveUploadIcon,
-    ReplaceIcon,
-    TrashIcon,
-    UploadIcon,
-} from '../icons'
+import { HardDriveUploadIcon, ReplaceIcon, TrashIcon, UploadIcon } from '../icons/index'
 import { Button } from './button'
 import { ScrollArea } from './scroll-area'
 

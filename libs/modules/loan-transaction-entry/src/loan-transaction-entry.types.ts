@@ -1,5 +1,5 @@
-import { IAccount } from '@e-coop-monorepo/modules/account/account.types'
-import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction/loan-transaction.types'
+import { IAccount } from '@e-coop-monorepo/modules/account'
+import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
 import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     IBaseEntityMeta,

@@ -6,7 +6,7 @@ import { cn } from '@/helpers'
 import { useImagePreview } from '@/store/image-preview-store'
 import { DownloadProps } from '@e-coop-monorepo/shared/types'
 
-import { XIcon } from '../icons'
+import { XIcon } from '../icons/index'
 import {
     Carousel,
     CarouselApi,

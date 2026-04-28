@@ -8,7 +8,7 @@ import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 import { getCurrentLocation, getDistance } from '@e-coop-monorepo/ui'
 
-import { IUserOrganization } from '../user-organization'
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { IBranch, IBranchRequest } from './branch.types'
 
 /**

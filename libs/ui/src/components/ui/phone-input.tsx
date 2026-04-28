@@ -20,8 +20,7 @@ import * as RPNInput from 'react-phone-number-input'
 import { type Value } from 'react-phone-number-input'
 import flags from 'react-phone-number-input/flags'
 
-import { ArrowChevronDown, CheckIcon } from '../icons'
-
+import { ArrowChevronDown, CheckIcon } from '../icons/index'
 type PhoneInputProps = Omit<
     React.InputHTMLAttributes<HTMLInputElement>,
     'onChange' | 'value'

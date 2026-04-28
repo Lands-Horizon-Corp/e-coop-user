@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { Scanner, outline, useDevices } from '@yudiel/react-qr-scanner'
 
-import { CameraIcon } from '../icons'
+import { CameraIcon } from '../icons/index'
 import { Button } from '../ui/button'
 import {
     DropdownMenu,

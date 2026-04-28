@@ -1,3 +1,5 @@
+import { IBranch } from '@e-coop-monorepo/modules/branch'
+import { IOrganization } from '@e-coop-monorepo/modules/organization'
 import { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
 import {
     IBaseEntityMeta,
@@ -6,8 +8,6 @@ import {
 } from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
-import { IBranch } from '../branch'
-import { IOrganization } from '../organization'
 import { IPaymentType } from '../payment-type/payment-type.types'
 import { TPermission } from '../permission'
 import { IUserBase, TUserType } from '../user/user.types'

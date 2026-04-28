@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { MemberAddressSchema } from '@e-coop-monorepo/modules/member-address/member-address.validation'
+import { MemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
 import { IMemberAddressRequest } from '@e-coop-monorepo/modules/member-profile'
 import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'

@@ -10,7 +10,7 @@ import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 import { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header'
 import { IInterestRateScheme } from '../interest-rate-scheme'
-import { IMemberClassification } from '../member-classification/member-classification.types'
+import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
 
 export interface IMemberClassificationInterestRateRequest {
     name: string

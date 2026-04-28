@@ -7,7 +7,7 @@ import {
     TGeneralStatus,
 } from '@e-coop-monorepo/shared/types'
 
-import { TMemberAddressSchema } from '../member-address/member-address.validation'
+import { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
 import { IMemberCenter } from './components/comboboxes/member-center-combobox'
 import { IMemberClassification } from './components/comboboxes/member-classification-combobox'
 import { IMemberGender } from './components/comboboxes/member-gender-combobox'

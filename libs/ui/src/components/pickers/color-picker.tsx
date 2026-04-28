@@ -27,8 +27,7 @@ import {
 } from '@e-coop-monorepo/ui'
 import { HexAlphaColorPicker, HexColorPicker } from 'react-colorful'
 
-import { LoadingSpinnerIcon, PipetteIcon } from '../icons'
-
+import { LoadingSpinnerIcon, PipetteIcon } from '../icons/index'
 export const colorSchema = z
     .string()
     .regex(

@@ -8,7 +8,7 @@ import type {
     IBranchSettings,
     IBranchSettingsCurrencyRequest,
     IBranchSettingsRequest,
-} from '../branch-settings'
+} from './branch-settings.types'
 
 const {
     apiCrudHooks,

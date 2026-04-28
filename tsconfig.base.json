@@ -40,7 +40,6 @@
             "@e-coop-monorepo/shared/validation": [
                 "libs/shared/validation/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/helpers/tw-utils": ["libs/shared/helpers/src/tw-utils.ts"],
             "@e-coop-monorepo/shared/helpers": [
                 "libs/shared/helpers/src/index.ts"
             ],

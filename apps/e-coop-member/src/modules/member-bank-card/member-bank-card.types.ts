@@ -9,7 +9,7 @@ import {
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
 import { IBank } from '../bank'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberBankCardRequest {
     account_number: string

@@ -1,21 +1,21 @@
+import { resizeImage } from '@e-coop-monorepo/modules/media'
+import { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
+import { IMemberGovernmentBenefitRequest } from '@e-coop-monorepo/modules/member-profile'
 import { imageCompressed } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
+import type { IKyc } from './kyc.types'
 // import { Logger } from '@e-coop-monorepo/shared/helpers'
 
 import type {
-    IKyc,
     TKYCRegisterSchema,
     TKYCVerifyEmailSchema,
     TKYCVerifyPersonalInfoSchema,
     TKYCVerifyPhoneSchema,
     TKYCVerifySecurityDetailsSchema,
-} from '../kyc'
-import { resizeImage } from '../media'
-import { TMemberAddressSchema } from '../member-address/member-address.validation'
-import { IMemberGovernmentBenefitRequest } from '../member-profile'
+} from './kyc.validation'
 
 const {
     // apiCrudHooks,

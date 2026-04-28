@@ -21,7 +21,7 @@ import {
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui'
 
-import { ChevronRightIcon, HomeFillIcon } from '../icons'
+import { ChevronRightIcon, HomeFillIcon } from '../icons/index'
 import PageNavigator from './page-navigator'
 
 type Props = {

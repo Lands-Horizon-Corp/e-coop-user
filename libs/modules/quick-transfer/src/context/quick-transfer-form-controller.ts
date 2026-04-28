@@ -4,7 +4,7 @@ import { IAccount } from '@e-coop-monorepo/modules/account'
 import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication/authgentication.store'
 import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { useGetAllPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import { quickPaymentORResolver } from '@e-coop-monorepo/modules/transaction/transaction.utils'
+import { quickPaymentORResolver } from '@e-coop-monorepo/modules/transaction'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { useTransactionReverseSecurityStore } from '@e-coop-monorepo/shared/store'
 

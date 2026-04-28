@@ -1,5 +1,4 @@
-import { HandsHelpingIcon, IconMap } from './icons'
-
+import { HandsHelpingIcon, IconMap } from './icons/index'
 export const IconContainer = ({
     name,
     className,

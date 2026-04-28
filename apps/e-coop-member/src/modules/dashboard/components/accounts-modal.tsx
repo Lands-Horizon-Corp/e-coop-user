@@ -31,7 +31,7 @@ import {
     YAxis,
 } from 'recharts'
 
-import { Account } from '../dashboard'
+import { Account } from '../dashboard.types'
 
 const balanceHistoryData = [
     { day: 'Day 1', balance: 20 },

@@ -6,12 +6,12 @@ import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { VariantProps } from 'class-variance-authority'
 
+import { ChevronRightIcon } from '../icons/index'
 import {
     Collapsible,
     CollapsibleContent,
     CollapsibleTrigger,
-} from '../collapsible'
-import { ChevronRightIcon } from '../icons'
+} from '../ui/collapsible'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
 import {
     SidebarMenuButton,

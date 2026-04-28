@@ -1,8 +1,9 @@
 import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '../media/media.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { TMemberGovernmentBenefitSchema } from './member-government-benefit.validation'
+import { IGovernmentId } from './member-government-benefit.interfaces'
 
 // LATEST FROM ERD
 export type IMemberGovernmentBenefitRequest = TMemberGovernmentBenefitSchema
@@ -27,12 +28,4 @@ export interface IMemberGovernmentBenefit extends IBaseEntityMeta {
     description: string
 }
 
-export interface IGovernmentId {
-    name: string
-    has_expiry_date: boolean
 
-    field_name: string
-    has_number: boolean
-
-    regex: string
-}

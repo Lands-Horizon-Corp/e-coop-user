@@ -6,7 +6,7 @@ import {
     IMemberJointAccount,
     IMemberProfile,
     IMemberRelativeAccount,
-} from '@e-coop-monorepo/modules/member-profile/member-profile.types'
+} from '@e-coop-monorepo/modules/member-profile'
 import { UserPlusIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { Input } from '@e-coop-monorepo/ui'

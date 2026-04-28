@@ -4,8 +4,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IMemberGroup } from '../member-group/member-group.types'
-import { IMemberProfile } from '../member-profile/member-profile.types'
+import { IMemberGroup } from '@e-coop-monorepo/modules/member-group'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberGroupHistoryRequest {
     member_profile_id: TEntityId

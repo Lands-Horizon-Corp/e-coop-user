@@ -9,8 +9,7 @@ import {
     TooltipTrigger,
 } from '@e-coop-monorepo/ui'
 
-import { InfoIcon } from '../icons'
-
+import { InfoIcon } from '../icons/index'
 interface InfoTooltipProps {
     content: React.ReactNode
     children?: React.ReactNode

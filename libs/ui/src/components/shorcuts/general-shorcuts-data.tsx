@@ -1,21 +1,4 @@
-import {
-    ArrowIcon,
-    BackIcon,
-    BookIcon,
-    CloseIcon,
-    CommandIcon,
-    EyeIcon,
-    FocusIcon,
-    HistoryIcon,
-    MagnifyingGlassIcon,
-    MoneyStackIcon,
-    ReloadIcon,
-    ReportsIcon,
-    ResetIcon,
-    ScanQrIcon,
-    UserIcon,
-    ViewIcon,
-} from '../icons'
+import { ArrowIcon, BackIcon, BookIcon, CloseIcon, CommandIcon, EyeIcon, FocusIcon, HistoryIcon, MagnifyingGlassIcon, MoneyStackIcon, ReloadIcon, ReportsIcon, ResetIcon, ScanQrIcon, UserIcon, ViewIcon } from '../icons/index'
 import { TGroupShorcuts } from './general-shorcuts.type'
 
 export const ShortcutsData: TGroupShorcuts[] = [

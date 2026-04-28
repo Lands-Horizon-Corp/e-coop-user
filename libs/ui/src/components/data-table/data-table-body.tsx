@@ -11,7 +11,7 @@ import {
 import { TableBody, TableCell, TableRow } from '@e-coop-monorepo/ui'
 import { Row, flexRender } from '@tanstack/react-table'
 
-import { MagnifyingGlassIcon } from '../icons'
+import { MagnifyingGlassIcon } from '../icons/index'
 import { getPinningStyles } from './data-table-utils'
 
 const DataTableBody = <TData,>({

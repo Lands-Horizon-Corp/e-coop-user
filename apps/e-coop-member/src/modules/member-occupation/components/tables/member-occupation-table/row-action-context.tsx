@@ -1,7 +1,7 @@
 import { ReactNode } from 'react'
 
-import { useDeleteById } from '@e-coop-monorepo/modules/member-occupation/member-occupation.service'
-import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation/member-occupation.types'
+import { useDeleteById } from '@e-coop-monorepo/modules/member-occupation'
+import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
 import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 import RowActionsGroup from '@e-coop-monorepo/ui'
 import DataTableRowContext from '@e-coop-monorepo/ui'

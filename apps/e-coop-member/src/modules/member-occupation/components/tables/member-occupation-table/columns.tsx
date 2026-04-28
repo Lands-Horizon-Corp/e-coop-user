@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation/member-occupation.types'
+import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
 import DataTableColumnHeader from '@e-coop-monorepo/ui'
 import ColumnActions from '@e-coop-monorepo/ui'
 import { createUpdateColumns } from '@e-coop-monorepo/ui'

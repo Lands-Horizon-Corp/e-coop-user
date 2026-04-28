@@ -8,7 +8,7 @@ import { useTheme } from '@e-coop-monorepo/shared/providers'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { GoogleMap, type GoogleMapProps } from '@react-google-maps/api'
 
-import { SadFaceIcon } from '../icons'
+import { SadFaceIcon } from '../icons/index'
 import { useMap } from './map.provider'
 import { constructGoogleMapsViewUrl } from './map.utils'
 

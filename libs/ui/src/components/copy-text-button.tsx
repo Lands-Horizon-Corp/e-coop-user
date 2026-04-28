@@ -5,8 +5,7 @@ import { toast } from 'sonner'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 
-import { CheckIcon, CopyIcon } from './icons'
-
+import { CheckIcon, CopyIcon } from './icons/index'
 interface Props<TErr = Error> extends IBaseProps {
     textContent: string
     copyInterval?: number

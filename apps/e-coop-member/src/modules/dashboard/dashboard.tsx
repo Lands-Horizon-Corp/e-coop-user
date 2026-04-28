@@ -63,8 +63,8 @@ import {
     YAxis,
 } from 'recharts'
 
-import { CoopBackground } from '../home/components/coop-bg'
-import Organization from '../organization/pages'
+import { CoopBackground } from '@e-coop-monorepo/modules/home/components/coop-bg'
+import Organization from '@e-coop-monorepo/modules/organization/pages'
 import AccountModal from './components/accounts-modal'
 import QrCodeModal from './components/modal-qr'
 

@@ -1,5 +1,7 @@
 import z from 'zod'
 
+import { ICurrency } from '@e-coop-monorepo/modules/currency'
+import { IMemberType } from '@e-coop-monorepo/modules/member-type'
 import {
     IBaseEntityMeta,
     IPaginatedResult,
@@ -7,8 +9,6 @@ import {
 } from '@e-coop-monorepo/shared/types'
 
 import { IAccount } from '../account'
-import { ICurrency } from '../currency'
-import { IMemberType } from '../member-type'
 import { IUnbalanceAccount } from '../unbalance-account'
 import {
     BranchSettingsSchema,

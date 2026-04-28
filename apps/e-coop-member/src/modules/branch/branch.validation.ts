@@ -6,7 +6,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { branchTypeEnum } from './branch.types'
+import { branchTypeEnum } from './branch.enums'
 
 export const branchSchema = z.object({
     id: entityIdSchema.optional(),

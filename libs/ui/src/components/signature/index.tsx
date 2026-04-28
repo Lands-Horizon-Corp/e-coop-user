@@ -17,15 +17,7 @@ import { FileWithPath } from 'react-dropzone'
 import SignaturePad from 'react-signature-canvas'
 import Webcam from 'react-webcam'
 
-import {
-    CameraIcon,
-    DownloadIcon,
-    DrawIcon,
-    FullscreenExitIcon,
-    FullscreenIcon,
-    HardDriveUploadIcon,
-    SmallBrushIcon,
-} from '../icons'
+import { CameraIcon, DownloadIcon, DrawIcon, FullscreenExitIcon, FullscreenIcon, HardDriveUploadIcon, SmallBrushIcon } from '../icons/index'
 import Image from '../image'
 import { Button } from '../ui/button'
 import { Separator } from '../ui/separator'

@@ -3,7 +3,7 @@ import z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { IMedia } from '@e-coop-monorepo/modules/media/media.types'
+import { IMedia } from '@e-coop-monorepo/modules/media'
 import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'

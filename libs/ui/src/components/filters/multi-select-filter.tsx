@@ -9,8 +9,7 @@ import {
     CommandList,
 } from '@e-coop-monorepo/ui'
 
-import { CheckIcon } from '../icons'
-
+import { CheckIcon } from '../icons/index'
 export interface IMultiSelectOption<TValue> {
     label: string
     value: TValue

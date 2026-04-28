@@ -1,7 +1,7 @@
 import z from 'zod'
 
-import { IMedia } from '@e-coop-monorepo/modules/media/media.types'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile/member-profile.types'
+import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     IBaseEntityMeta,
     IPaginatedResult,

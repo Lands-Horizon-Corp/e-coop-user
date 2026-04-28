@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
-import { AdjustIcon } from '../icons'
+import { AdjustIcon } from '../icons/index'
 import { ImageDisplay } from '../image-display'
 import Modal, { IModalProps } from '../modals/modal'
 import PictureCrop from '../picture-crop'

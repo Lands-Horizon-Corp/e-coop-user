@@ -3,8 +3,7 @@ import { forwardRef } from 'react'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { Avatar, AvatarFallback, AvatarImage } from '@e-coop-monorepo/ui'
 
-import { Image2Icon } from './icons'
-
+import { Image2Icon } from './icons/index'
 interface IBaseProps {
     className?: string
     style?: React.CSSProperties

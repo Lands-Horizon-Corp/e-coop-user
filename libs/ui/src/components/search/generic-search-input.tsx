@@ -4,7 +4,7 @@ import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import useDebounce from '@e-coop-monorepo/shared/hooks'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import { MagnifyingGlassIcon } from '../icons'
+import { MagnifyingGlassIcon } from '../icons/index'
 import { Input } from '../ui/input'
 
 type GenericSearchInputProps = {

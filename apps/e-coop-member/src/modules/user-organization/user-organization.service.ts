@@ -5,6 +5,8 @@ import {
 } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
+import { getBranchesByOrganizationId } from '@e-coop-monorepo/modules/branch'
+import { IBranch } from '@e-coop-monorepo/modules/branch'
 import { groupBy, withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
@@ -17,7 +19,6 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IBranch, getBranchesByOrganizationId } from '../branch'
 import { IUserBase } from '../user/user.types'
 import {
     IOrgUserOrganizationGroup,

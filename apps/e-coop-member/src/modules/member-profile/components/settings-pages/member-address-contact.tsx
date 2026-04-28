@@ -2,7 +2,7 @@ import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile/member-profile.types'
+import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { Button } from '@e-coop-monorepo/ui'
 import { Input } from '@e-coop-monorepo/ui'
 import { Label } from '@e-coop-monorepo/ui'

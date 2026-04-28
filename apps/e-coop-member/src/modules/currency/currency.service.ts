@@ -11,7 +11,7 @@ import {
     type ICurrency,
     type ICurrencyRequest,
     type TCurrencyHookMode,
-} from '../currency'
+} from './currency.types'
 
 const {
     apiCrudHooks,

@@ -3,7 +3,7 @@ import { Button } from '@e-coop-monorepo/ui'
 import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 import { format } from 'date-fns'
 
-import { CalendarIcon } from '../icons'
+import { CalendarIcon } from '../icons/index'
 import { CaptionLayout, DateTimePicker } from './date-time-picker'
 
 type InputDatePickerProps = {

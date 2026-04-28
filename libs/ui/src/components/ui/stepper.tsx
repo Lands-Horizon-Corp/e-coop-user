@@ -5,8 +5,7 @@ import { Slot } from '@radix-ui/react-slot'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
-import { CheckIcon, LoadingCircleIcon } from '../icons'
-
+import { CheckIcon, LoadingCircleIcon } from '../icons/index'
 // Types
 type StepperContextValue = {
     activeStep: number

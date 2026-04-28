@@ -1,6 +1,6 @@
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 
-import { MagnifyingGlassIcon } from '../icons'
+import { MagnifyingGlassIcon } from '../icons/index'
 import {
     Empty,
     EmptyDescription,

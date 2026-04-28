@@ -21,8 +21,7 @@ import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 import { countries } from 'country-data-list'
 import { CircleFlag } from 'react-circle-flags'
 
-import { ArrowChevronDown, CheckIcon, GlobeIcon } from '../icons'
-
+import { ArrowChevronDown, CheckIcon, GlobeIcon } from '../icons/index'
 export interface Country {
     alpha2: string
     alpha3: string

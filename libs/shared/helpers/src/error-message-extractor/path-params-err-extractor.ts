@@ -1,7 +1,6 @@
 import { SearchParamError } from '@tanstack/react-router'
 
-import { TErrorMessageExtractor } from '.'
-
+import { TErrorMessageExtractor } from './index'
 export const searchParamErrExtractor: TErrorMessageExtractor = [
     SearchParamError as unknown as new (...args: unknown[]) => Error,
     (err: Error) => {

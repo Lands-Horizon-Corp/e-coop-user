@@ -5,7 +5,7 @@ import attachmentSheet from '@/assets/images/file-thumbnails/attachment-sheet.sv
 import attachmentTxt from '@/assets/images/file-thumbnails/attachment-txt.svg'
 import attachmentVideo from '@/assets/images/file-thumbnails/attachment-video.svg'
 
-import { FileXIcon, ImageIcon } from '../icons'
+import { FileXIcon, ImageIcon } from '../icons/index'
 import Image from '../image'
 
 export const FileTypeIcons = {

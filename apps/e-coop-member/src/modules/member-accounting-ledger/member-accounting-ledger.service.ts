@@ -11,7 +11,7 @@ import { IMemberGeneralLedgerTotal } from '../general-ledger'
 import {
     IMemberAccountingLedgerPaginated,
     IMemberAccountingLedgerTotal,
-} from '../member-account-ledger'
+} from '@e-coop-monorepo/modules/member-account-ledger'
 
 // ⚙️🛠️ API SERVICE HERE
 
