@@ -1,9 +1,9 @@
 import { Outlet, createFileRoute } from '@tanstack/react-router'
 
-// import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
+// import { FlickeringGrid } from '@e-coop-monorepo/ui'
 // import LandingFooter from '@e-coop-monorepo/modules/home/pages/footer'
 
-import AuthNav from '@e-coop-monorepo/ui/components/nav/navs/auth-nav'
+import AuthNav from '@e-coop-monorepo/ui'
 
 const AuthLayout = () => {
     return (

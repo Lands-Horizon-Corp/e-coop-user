@@ -3,21 +3,21 @@
 import { useState } from 'react'
 
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Badge } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@e-coop-monorepo/ui/components/ui/card'
+} from '@e-coop-monorepo/ui'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogTitle,
-} from '@e-coop-monorepo/ui/components/ui/dialog'
+} from '@e-coop-monorepo/ui'
 import {
     Activity,
     AlertCircle,

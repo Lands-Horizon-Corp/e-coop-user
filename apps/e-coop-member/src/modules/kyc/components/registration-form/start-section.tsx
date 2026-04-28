@@ -1,4 +1,4 @@
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Button } from '@e-coop-monorepo/ui'
 import { ArrowRight, Ban, Lock, Scale, Shield, Users } from 'lucide-react'
 
 interface BenefitItemProps {

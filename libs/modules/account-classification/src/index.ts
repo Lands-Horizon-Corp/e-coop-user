@@ -1,5 +1,4 @@
 export * from './account-classification.service'
 export * from './account-classification.types'
 export * from './account-classification.validation'
-export * from '@e-coop-monorepo/ui'
 export * from './pages'

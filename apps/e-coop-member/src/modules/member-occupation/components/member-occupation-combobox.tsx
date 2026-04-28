@@ -2,9 +2,9 @@ import * as React from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
-import { ChevronDownIcon, PlusIcon } from '@e-coop-monorepo/ui/components/icons'
-import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { ChevronDownIcon, PlusIcon } from '@e-coop-monorepo/ui'
+import LoadingSpinner from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 import {
     Command,
     CommandEmpty,
@@ -13,12 +13,8 @@ import {
     CommandItem,
     CommandList,
     CommandSeparator,
-} from '@e-coop-monorepo/ui/components/ui/command'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/components/ui/popover'
+} from '@e-coop-monorepo/ui'
+import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 import { Check } from 'lucide-react'
 
 import { useGetAll } from '../member-occupation.service'

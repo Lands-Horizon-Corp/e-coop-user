@@ -5,7 +5,7 @@ import { MemberOccupationCreateUpdateFormModal } from '@e-coop-monorepo/modules/
 import MemberOccupationTable from '@e-coop-monorepo/modules/member-occupation/components/tables/member-occupation-table'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { useSubscribe } from '@e-coop-monorepo/shared/hooks'
-import PageContainer from '@e-coop-monorepo/ui/components/containers/page-container'
+import PageContainer from '@e-coop-monorepo/ui'
 
 const MemberOccupationPage = () => {
     const createModal = useModalState()

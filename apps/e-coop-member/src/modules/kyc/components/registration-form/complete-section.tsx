@@ -1,6 +1,6 @@
 import { UseFormReturn } from 'react-hook-form'
 
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { Button } from '@e-coop-monorepo/ui'
 import { ArrowRight, CheckCircle2, PartyPopper } from 'lucide-react'
 
 import { IKYCRegisterRequest } from '../../kyc.types'

@@ -2,9 +2,8 @@ import { ReactNode } from 'react'
 
 import { toast } from 'sonner'
 
+import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
 import { create } from 'zustand'
-
-import { useAuthStore } from '../modules/authentication/authgentication.store.ts'
 
 interface IConfirmModalOnOpenData {
     title: string | ReactNode

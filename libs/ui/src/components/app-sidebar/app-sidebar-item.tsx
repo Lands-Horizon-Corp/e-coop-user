@@ -12,15 +12,15 @@ import {
     CollapsibleTrigger,
 } from '../collapsible'
 import { ChevronRightIcon } from '../icons'
-import { Popover, PopoverContent, PopoverTrigger } from '../popover'
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
 import {
     SidebarMenuButton,
     SidebarMenuItem,
     SidebarMenuSub,
     sidebarMenuButtonVariants,
     useSidebar,
-} from '../sidebar'
-import { TooltipContent } from '../tooltip'
+} from '../ui/sidebar'
+import { TooltipContent } from '../ui/tooltip'
 import { sidebarRouteMatcher } from './app-sidebar-utils'
 import { INavItem } from './types'
 

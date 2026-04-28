@@ -12,12 +12,12 @@ import {
     DownloadIcon,
     HardDriveIcon,
     TrashIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
-import ActionTooltip from '@e-coop-monorepo/ui/components/tooltips/action-tooltip'
-import { AspectRatio } from '@e-coop-monorepo/ui/components/ui/aspect-ratio'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import PreviewMediaWrapper from '@e-coop-monorepo/ui/components/wrappers/preview-media-wrapper'
+} from '@e-coop-monorepo/ui'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import ActionTooltip from '@e-coop-monorepo/ui'
+import { AspectRatio } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import PreviewMediaWrapper from '@e-coop-monorepo/ui'
 
 import { IMemberProfileArchive } from '../member-profile-archive.types'
 

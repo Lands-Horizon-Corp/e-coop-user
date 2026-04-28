@@ -3,15 +3,11 @@ import { UseFormReturn } from 'react-hook-form'
 import { IBranch, useGetAllBranch } from '@e-coop-monorepo/modules/branch'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
-import {
-    BuildingBranchIcon,
-    EmailIcon,
-    PhoneIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
-import { redirectToGoogleMapsDirection } from '@e-coop-monorepo/ui/components/map/map.utils'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import { BuildingBranchIcon, EmailIcon, PhoneIcon } from '@e-coop-monorepo/ui'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import { redirectToGoogleMapsDirection } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import FormFieldWrapper from '@e-coop-monorepo/ui'
 
 import { TKYCBranchSchema } from '../../kyc.validation'
 

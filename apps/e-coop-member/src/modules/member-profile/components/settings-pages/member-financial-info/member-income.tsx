@@ -16,11 +16,11 @@ import {
     PencilFillIcon,
     PlusIcon,
     TrashIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
-import LoadingSpinner from '@e-coop-monorepo/ui/components/spinners/loading-spinner'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import { Separator } from '@e-coop-monorepo/ui/components/ui/separator'
+} from '@e-coop-monorepo/ui'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import LoadingSpinner from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { Separator } from '@e-coop-monorepo/ui'
 
 import { MemberIncomeCreateUpdateFormModal } from '../../forms/member-income-create-update-form'
 import EmptyListIndicator from '../empty-list-indicator'

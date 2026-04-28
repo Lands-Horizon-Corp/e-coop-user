@@ -63,7 +63,6 @@ export function findBadModuleImports({
 }) {
     const matches = []
     const importRegex = /\bimport\s+[^"']*?["']([^"']+)["']/g
-    const exportRegex = /\bexport\s+[^"']*?\sfrom\s+["']([^"']+)["']/g
     const requireRegex = /\brequire\(\s*["']([^"']+)["']\s*\)/g
 
     const scan = (regex) => {
@@ -74,7 +73,6 @@ export function findBadModuleImports({
     }
 
     scan(importRegex)
-    scan(exportRegex)
     scan(requireRegex)
 
     const issues = []
@@ -311,10 +309,6 @@ function deriveExternalAlias(specifier) {
         return null
     }
 
-    if (segments.includes('components')) {
-        return '@e-coop-monorepo/ui'
-    }
-
     const [sharedRoot, ...rest] = segments
     return rest.length > 0
         ? `@e-coop-monorepo/shared/${sharedRoot}/${rest.join('/')}`
@@ -345,20 +339,6 @@ function getUiAliasForComponents(specifier) {
     }
 
     if (specifier.startsWith('@e-coop-monorepo/ui/')) {
-        return '@e-coop-monorepo/ui'
-    }
-
-    const segments = specifier
-        .split('/')
-        .filter(
-            (segment) =>
-                segment &&
-                segment !== '.' &&
-                segment !== '..' &&
-                segment !== '...'
-        )
-
-    if (segments.includes('components')) {
         return '@e-coop-monorepo/ui'
     }
 

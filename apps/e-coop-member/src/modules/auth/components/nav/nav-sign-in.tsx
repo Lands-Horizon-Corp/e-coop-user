@@ -1,8 +1,8 @@
 import { Link } from '@tanstack/react-router'
 
 import { useFakeStore } from '@e-coop-monorepo/shared/store'
-import { FingerPrintIcon } from '@e-coop-monorepo/ui/components/icons'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+import { FingerPrintIcon } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 
 const NavSignIn = () => {
     const { authMember } = useFakeStore()

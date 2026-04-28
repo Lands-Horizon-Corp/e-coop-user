@@ -2,7 +2,7 @@ import { toast } from 'sonner'
 
 import { arrayMove } from '@dnd-kit/sortable'
 import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IGeneralLedgerDefinition } from '@e-coop-monorepo/modules/general-ledger-definition'
+import { IGeneralLedgerDefinition } from '../../general-ledger-definition.types';
 import { UpdateAccountOrder } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
 

@@ -2,8 +2,8 @@ import { useMemo } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
-import { CheckIcon, XIcon } from '@e-coop-monorepo/ui/components/icons'
-import { Progress } from '@e-coop-monorepo/ui/components/ui/progress'
+import { CheckIcon, XIcon } from '@e-coop-monorepo/ui'
+import { Progress } from '@e-coop-monorepo/ui'
 
 export interface Requirement {
     regex: RegExp

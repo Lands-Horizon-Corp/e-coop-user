@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { FileTypeIcons } from '@e-coop-monorepo/ui/components/ui/FileTypeIcons'
+import { FileTypeIcons } from '@e-coop-monorepo/ui'
 
 import { getFileType } from '../media.utils'
 

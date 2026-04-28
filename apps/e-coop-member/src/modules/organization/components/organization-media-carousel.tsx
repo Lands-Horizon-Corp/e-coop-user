@@ -7,7 +7,7 @@ import {
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from '@e-coop-monorepo/ui/components/ui/carousel'
+} from '@e-coop-monorepo/ui'
 import { Images } from 'lucide-react'
 
 interface MediaCarouselProps {

@@ -9,17 +9,17 @@ import {
     BadgeQuestionFillIcon,
     BoxesStackedIcon,
     HouseIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
-import InfoTooltip from '@e-coop-monorepo/ui/components/tooltips/info-tooltip'
-import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+} from '@e-coop-monorepo/ui'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import InfoTooltip from '@e-coop-monorepo/ui'
+import { Badge } from '@e-coop-monorepo/ui'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/components/ui/dropdown-menu'
+} from '@e-coop-monorepo/ui'
 import { HelpCircle, LogOut, Settings } from 'lucide-react'
 
 import { useSignOut } from '..'

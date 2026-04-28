@@ -1,11 +1,8 @@
 import { useCallback, useEffect, useRef } from 'react'
 
-import {
-    IUserProfileInactivitySettings,
-    TInactivityTimeUnit,
-    TUserProfileInactivitySettings,
-    logger,
-} from '@e-coop-monorepo/modules/user-profile'
+import { IUserProfileInactivitySettings, TInactivityTimeUnit } from '../user-profile.types';
+import { TUserProfileInactivitySettings } from '../user-profile.validation';
+import { logger } from '../user-profile.service';
 import { getLocalStorage, setLocalStorage } from '@e-coop-monorepo/shared/hooks'
 
 import {

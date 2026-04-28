@@ -2,10 +2,10 @@ import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-import { Label } from '@e-coop-monorepo/ui/components/ui/label'
-import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
+import { Button } from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
+import { Label } from '@e-coop-monorepo/ui'
+import { Textarea } from '@e-coop-monorepo/ui'
 import {
     Calendar,
     FileText,

@@ -17,21 +17,17 @@ import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
-import {
-    KeySharpIcon,
-    UserIcon,
-    VerifiedPatchIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import { Checkbox } from '@e-coop-monorepo/ui/components/ui/checkbox'
-import { Form, FormItem } from '@e-coop-monorepo/ui/components/ui/form'
-import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
-import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-import InputDate from '@e-coop-monorepo/ui/components/ui/input-date'
-import { Label } from '@e-coop-monorepo/ui/components/ui/label'
-import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
-import { PhoneInput } from '@e-coop-monorepo/ui/components/ui/phone-input'
-import { Separator } from '@e-coop-monorepo/ui/components/ui/separator'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui'
+import { KeySharpIcon, UserIcon, VerifiedPatchIcon } from '@e-coop-monorepo/ui'
+import { Checkbox } from '@e-coop-monorepo/ui'
+import { Form, FormItem } from '@e-coop-monorepo/ui'
+import FormFieldWrapper from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
+import InputDate from '@e-coop-monorepo/ui'
+import { Label } from '@e-coop-monorepo/ui'
+import PasswordInput from '@e-coop-monorepo/ui'
+import { PhoneInput } from '@e-coop-monorepo/ui'
+import { Separator } from '@e-coop-monorepo/ui'
 
 import { useQuickRegisterMember } from '../../auth.service'
 import {

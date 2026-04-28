@@ -3,13 +3,13 @@ import { ErrorComponentProps, useRouter } from '@tanstack/react-router'
 import { allErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
-import { FlickeringGrid } from '@e-coop-monorepo/ui/components/backgrounds/flickering-grid'
+import { FlickeringGrid } from '@e-coop-monorepo/ui'
 import {
     ArrowLeftIcon,
     BracketErrorIcon,
     RefreshIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
+} from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
 
 interface Props extends IBaseProps, ErrorComponentProps {}
 

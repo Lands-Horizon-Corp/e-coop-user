@@ -1,6 +1,6 @@
 import { IBranch } from '@e-coop-monorepo/modules/branch'
-import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
-import { Badge } from '@e-coop-monorepo/ui/components/ui/badge'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import { Badge } from '@e-coop-monorepo/ui'
 import { Building2, ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
 
 interface BranchCardProps {

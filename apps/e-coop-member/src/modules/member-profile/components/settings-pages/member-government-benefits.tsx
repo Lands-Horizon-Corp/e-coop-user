@@ -3,11 +3,11 @@ import { ReactNode, useState } from 'react'
 import { toast } from 'sonner'
 
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import ImageField from '@e-coop-monorepo/ui/components/ui/image-field'
-import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-import { Label } from '@e-coop-monorepo/ui/components/ui/label'
-import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
+import { Button } from '@e-coop-monorepo/ui'
+import ImageField from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
+import { Label } from '@e-coop-monorepo/ui'
+import { Textarea } from '@e-coop-monorepo/ui'
 import {
     AlertCircle,
     Calendar,

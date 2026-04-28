@@ -1,8 +1,20 @@
-import { SoftwareUpdates } from '@e-coop-monorepo/modules/feedback'
-
-import { BugIcon, PlantGrowthIcon } from '@/components/icons'
-
 import { APP_VERSION } from './envs'
+
+export type TSoftwareUpdateEntryStatus = 'general' | 'bug' | 'feature'
+
+export interface SoftwareUpdates {
+    name: string
+    version: string
+    description: string
+    date: Date
+    updates: SoftwareUpdateEntry[]
+}
+
+export interface SoftwareUpdateEntry {
+    text: string
+    updateStatus: TSoftwareUpdateEntryStatus
+    Icon?: 'plant' | 'bug'
+}
 
 export const softwareUpdates: SoftwareUpdates = {
     name: 'e-Coop Beta',
@@ -13,12 +25,12 @@ export const softwareUpdates: SoftwareUpdates = {
         {
             text: 'Improved loading times by optimizing database queries.',
             updateStatus: 'general',
-            Icon: <PlantGrowthIcon />,
+            Icon: 'plant',
         },
         {
             text: 'Resolved a bug in the reporting feature.',
             updateStatus: 'bug',
-            Icon: <BugIcon />,
+            Icon: 'bug',
         },
     ],
 }

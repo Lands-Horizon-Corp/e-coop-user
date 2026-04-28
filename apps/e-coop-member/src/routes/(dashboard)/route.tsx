@@ -3,7 +3,7 @@ import { createFileRoute } from '@tanstack/react-router'
 
 import AuthGuard from '@e-coop-monorepo/modules/auth/components/auth-guard'
 import LandingFooter from '@e-coop-monorepo/modules/home/pages/footer'
-import UserNav from '@e-coop-monorepo/ui/components/nav/navs/user-nav'
+import UserNav from '@e-coop-monorepo/ui'
 
 const DashboardLayout = () => {
     return (

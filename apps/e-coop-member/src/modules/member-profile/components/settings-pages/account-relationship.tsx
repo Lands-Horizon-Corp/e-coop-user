@@ -7,18 +7,18 @@ import {
     IMemberProfile,
     IMemberRelativeAccount,
 } from '@e-coop-monorepo/modules/member-profile/member-profile.types'
-import { UserPlusIcon } from '@e-coop-monorepo/ui/components/icons'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import { Input } from '@e-coop-monorepo/ui/components/ui/input'
-import { Label } from '@e-coop-monorepo/ui/components/ui/label'
+import { UserPlusIcon } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
+import { Label } from '@e-coop-monorepo/ui'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/components/ui/select'
-import { Textarea } from '@e-coop-monorepo/ui/components/ui/textarea'
+} from '@e-coop-monorepo/ui'
+import { Textarea } from '@e-coop-monorepo/ui'
 import { Plus, Users } from 'lucide-react'
 import { FileText, Pencil } from 'lucide-react'
 import { X } from 'lucide-react'

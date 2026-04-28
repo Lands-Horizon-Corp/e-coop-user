@@ -15,7 +15,7 @@ import {
     SpreadSheetFileIcon,
     TextFileFillIcon,
     VideoFileFillIcon,
-} from '@e-coop-monorepo/ui/components/icons'
+} from '@e-coop-monorepo/ui'
 import { IconType } from 'react-icons/lib'
 
 import { getFileCategory, getFileInfo } from '../'

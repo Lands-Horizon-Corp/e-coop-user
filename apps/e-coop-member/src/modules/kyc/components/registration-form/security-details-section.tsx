@@ -7,20 +7,17 @@ import {
 } from '@e-coop-monorepo/modules/auth/components/value-checklist-indicator'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import {
-    EmailIcon,
-    VerifiedPatchIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import { FormItem } from '@e-coop-monorepo/ui/components/ui/form'
-import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
+import { EmailIcon, VerifiedPatchIcon } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { FormItem } from '@e-coop-monorepo/ui'
+import FormFieldWrapper from '@e-coop-monorepo/ui'
 import {
     InputGroup,
     InputGroupAddon,
     InputGroupInput,
-} from '@e-coop-monorepo/ui/components/ui/input-group'
-import PasswordInput from '@e-coop-monorepo/ui/components/ui/password-input'
-import { PhoneInput } from '@e-coop-monorepo/ui/components/ui/phone-input'
+} from '@e-coop-monorepo/ui'
+import PasswordInput from '@e-coop-monorepo/ui'
+import { PhoneInput } from '@e-coop-monorepo/ui'
 import { Lock } from 'lucide-react'
 
 import { TKYCVerifySecurityDetailsSchema, useKYCSecurityDetails } from '../..'

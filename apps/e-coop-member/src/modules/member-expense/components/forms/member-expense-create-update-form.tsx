@@ -9,12 +9,12 @@ import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui/components/form-components/form-footer-reset-submit'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
-import TextEditor from '@e-coop-monorepo/ui/components/text-editor'
-import { Form } from '@e-coop-monorepo/ui/components/ui/form'
-import FormFieldWrapper from '@e-coop-monorepo/ui/components/ui/form-field-wrapper'
-import { Input } from '@e-coop-monorepo/ui/components/ui/input'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui'
+import TextEditor from '@e-coop-monorepo/ui'
+import { Form } from '@e-coop-monorepo/ui'
+import FormFieldWrapper from '@e-coop-monorepo/ui'
+import { Input } from '@e-coop-monorepo/ui'
 
 import {
     useCreateMemberProfileExpense,

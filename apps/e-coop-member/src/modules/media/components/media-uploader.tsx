@@ -6,17 +6,13 @@ import { toast } from 'sonner'
 import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
-import {
-    DownloadIcon,
-    TrashIcon,
-    UploadIcon,
-} from '@e-coop-monorepo/ui/components/icons'
-import ImageDisplay from '@e-coop-monorepo/ui/components/image-display'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/components/modals/modal'
-import ActionTooltip from '@e-coop-monorepo/ui/components/tooltips/action-tooltip'
-import { AspectRatio } from '@e-coop-monorepo/ui/components/ui/aspect-ratio'
-import { Button } from '@e-coop-monorepo/ui/components/ui/button'
-import { Progress } from '@e-coop-monorepo/ui/components/ui/progress'
+import { DownloadIcon, TrashIcon, UploadIcon } from '@e-coop-monorepo/ui'
+import ImageDisplay from '@e-coop-monorepo/ui'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui'
+import ActionTooltip from '@e-coop-monorepo/ui'
+import { AspectRatio } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui'
+import { Progress } from '@e-coop-monorepo/ui'
 import { type Accept, type DropzoneOptions, useDropzone } from 'react-dropzone'
 
 import {
