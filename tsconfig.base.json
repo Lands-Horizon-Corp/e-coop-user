@@ -576,6 +576,9 @@
             ],
             "@e-coop-monorepo/shared/tw-utils": [
                 "libs/shared/tw-utils/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/loggers": [
+                "libs/shared/loggers/src/index.ts"
             ]
         },
         "strict": true

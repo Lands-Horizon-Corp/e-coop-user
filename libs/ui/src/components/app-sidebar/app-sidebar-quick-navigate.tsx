@@ -17,7 +17,7 @@ import {
 } from '@e-coop-monorepo/ui'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import { useSidebar } from '../sidebar'
+import { useSidebar } from '../ui/sidebar'
 import { TQuickSearchGroup } from './types'
 
 interface Props {

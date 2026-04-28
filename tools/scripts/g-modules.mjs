@@ -4,11 +4,13 @@ import { spawnSync } from 'node:child_process'
 import {
     existsSync,
     mkdirSync,
+    readFileSync,
     readdirSync,
     renameSync,
     rmSync,
     rmdirSync,
     statSync,
+    writeFileSync,
 } from 'node:fs'
 import path from 'node:path'
 
@@ -46,8 +48,8 @@ function runNxGenerate() {
         `--directory=libs/modules/${folderName}`,
         `--importPath=@e-coop-monorepo/modules/${folderName}`,
         '--bundler=none',
-        '--linter=none',
-        '--unitTestRunner=none',
+        '--linter=eslint',
+        '--unitTestRunner=vitest',
         '--no-interactive',
     ]
 
@@ -62,12 +64,32 @@ function runNxGenerate() {
     }
 }
 
-function removeGeneratedScaffold() {
-    const generatedIndex = path.join(projectSrc, 'index.ts')
+function flattenGeneratedScaffold() {
     const generatedLib = path.join(projectSrc, 'lib')
+    const generatedIndex = path.join(projectSrc, 'index.ts')
+    const generatedSource = path.join(generatedLib, `${folderName}.ts`)
+    const generatedSpec = path.join(generatedLib, `${folderName}.spec.ts`)
+    const projectSource = path.join(projectSrc, `${folderName}.ts`)
+    const projectSpec = path.join(projectSrc, `${folderName}.spec.ts`)
+
+    if (existsSync(generatedSource)) {
+        renameSync(generatedSource, projectSource)
+    }
+
+    if (existsSync(generatedSpec)) {
+        renameSync(generatedSpec, projectSpec)
+    }
 
     if (existsSync(generatedIndex)) {
-        rmSync(generatedIndex, { force: true })
+        const indexContents = readFileSync(generatedIndex, 'utf8')
+        const updatedIndex = indexContents.replace(
+            `./lib/${folderName}`,
+            `./${folderName}`
+        )
+
+        if (updatedIndex !== indexContents) {
+            writeFileSync(generatedIndex, updatedIndex)
+        }
     }
 
     if (existsSync(generatedLib)) {
@@ -157,7 +179,7 @@ if (!existsSync(projectRoot)) {
     runNxGenerate()
 }
 
-removeGeneratedScaffold()
+flattenGeneratedScaffold()
 migrateLegacyModule()
 
 console.log(`Module project is ready: libs/modules/${folderName}`)

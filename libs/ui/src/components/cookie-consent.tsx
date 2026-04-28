@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react'
 
 import CookieSvg from '@/assets/cookie-icon.svg'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Button } from '@e-coop-monorepo/ui'
 import { addYears } from 'date-fns'
 import Cookies from 'js-cookie'
 
 import Image from './image'
-import { Alert, AlertDescription } from './ui'
+import { Alert, AlertDescription } from './ui/alert'
+import { Button } from './ui/button'
 
 const CookieConsent = () => {
     const [accepted, setAccepted] = useState(true)
