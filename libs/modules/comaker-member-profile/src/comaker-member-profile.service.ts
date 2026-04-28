@@ -7,7 +7,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import type { IComakerMemberProfile, IComakerMemberProfileRequest } from '.'
+import type { IComakerMemberProfile, IComakerMemberProfileRequest } from './comaker-member-profile.types'
 
 const {
     apiCrudHooks,

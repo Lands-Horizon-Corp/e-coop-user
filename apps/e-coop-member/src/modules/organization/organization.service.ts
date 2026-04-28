@@ -2,7 +2,7 @@ import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
 // import { Logger } from '@e-coop-monorepo/shared/helpers'
 
-import type { IOrganization, IOrganizationRequest } from '../organization'
+import type { IOrganization, IOrganizationRequest } from './organization.types'
 
 const {
     apiCrudHooks,

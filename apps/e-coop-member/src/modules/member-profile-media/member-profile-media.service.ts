@@ -16,7 +16,7 @@ import type {
     IMemberProfileMedia,
     IMemberProfileMediaBulkRequest,
     IMemberProfileMediaRequest,
-} from '../member-profile-media'
+} from './member-profile-media.types'
 
 const {
     apiCrudHooks,

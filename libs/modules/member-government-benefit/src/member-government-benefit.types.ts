@@ -3,11 +3,10 @@ import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { TMemberGovernmentBenefitSchema } from './member-government-benefit.validation'
+import { IGovernmentId } from './member-government-benefit.interfaces'
 
 // LATEST FROM ERD
 export type IMemberGovernmentBenefitRequest = TMemberGovernmentBenefitSchema
-
-// LATEST FROM ERD
 export interface IMemberGovernmentBenefit extends IBaseEntityMeta {
     id: TEntityId
 
@@ -27,12 +26,4 @@ export interface IMemberGovernmentBenefit extends IBaseEntityMeta {
     description: string
 }
 
-export interface IGovernmentId {
-    name: string
-    has_expiry_date: boolean
 
-    field_name: string
-    has_number: boolean
-
-    regex: string
-}

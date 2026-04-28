@@ -10,12 +10,7 @@ import {
 } from '@e-coop-monorepo/shared/types'
 
 import { TBranchSchema } from './branch.validation'
-
-export enum branchTypeEnum {
-    CooperativeBranch = 'cooperative branch',
-    BusinessBranch = 'business branch',
-    BankingBranch = 'banking branch',
-}
+import { branchTypeEnum } from './branch.enums'
 
 // Resource
 export interface IBranch extends ITimeStamps, IAuditable {

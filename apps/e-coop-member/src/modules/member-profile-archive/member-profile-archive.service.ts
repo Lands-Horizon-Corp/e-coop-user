@@ -17,7 +17,7 @@ import type {
     IMemberProfileArchiveBulkRequest,
     IMemberProfileArchiveCategory,
     IMemberProfileArchiveRequest,
-} from '../member-profile-archive'
+} from './member-profile-archive.types'
 
 const {
     apiCrudHooks,

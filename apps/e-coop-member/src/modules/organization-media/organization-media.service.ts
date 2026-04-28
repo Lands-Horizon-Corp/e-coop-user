@@ -13,7 +13,7 @@ import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 import type {
     IOrganizationMedia,
     IOrganizationMediaRequest,
-} from '../organization-media'
+} from './organization-media.types'
 
 const {
     apiCrudHooks,

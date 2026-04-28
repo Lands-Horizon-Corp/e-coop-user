@@ -18,7 +18,7 @@ import { Button } from '@e-coop-monorepo/ui'
 import { Toggle } from '@e-coop-monorepo/ui'
 import { type Editor } from '@tiptap/react'
 
-import { THeadingLevel } from './index'
+import { THeadingLevel } from './text-editor.types'
 type ToolbarProps = {
     editor: Editor | null
     toggleHeading: (level: THeadingLevel) => void

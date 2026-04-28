@@ -8,6 +8,8 @@ import StarterKit from '@tiptap/starter-kit'
 
 import Toolbar from './toolbar'
 
+import { THeadingLevel } from './text-editor.types'
+
 interface Props extends IBaseProps {
     content?: string
     disabled?: boolean
@@ -23,7 +25,6 @@ interface Props extends IBaseProps {
     editable?: boolean
 }
 
-export type THeadingLevel = 1 | 2 | 3 | 4
 
 const TextEditor = forwardRef<HTMLDivElement, Props>(
     (

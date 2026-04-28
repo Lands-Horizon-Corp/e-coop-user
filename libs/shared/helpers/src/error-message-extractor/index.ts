@@ -1,19 +1,11 @@
 import { axiosErrExtractor } from './axios-err-extractor'
 import { searchParamErrExtractor } from './path-params-err-extractor'
 import { zodErrExtractor } from './zod-err-extractor'
-
-export type TErrorMessageExtractor = [
-    new (...args: unknown[]) => Error, // Error, AxiosError, or any other error
-    (error: Error) => string,
-]
-
-type TErrorMessageExtractors = Array<TErrorMessageExtractor>
-
-type TExtractErrorMessageParams = {
-    error: unknown
-    errorMessageExtractors?: TErrorMessageExtractors
-    showUnknownErrorMessage?: boolean
-}
+import {
+    TErrorMessageExtractor,
+    TErrorMessageExtractors,
+    TExtractErrorMessageParams,
+} from './error-message-extractor.types'
 
 export const extractErrorMessage = ({
     error,

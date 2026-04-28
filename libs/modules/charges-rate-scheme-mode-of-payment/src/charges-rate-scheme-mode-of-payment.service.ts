@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import type {
     IChargesRateSchemeModeOfPayment,
     IChargesRateSchemeModeOfPaymentRequest,
-} from '.'
+} from './charges-rate-scheme-mode-of-payment.types'
 
 const {
     apiCrudHooks,
