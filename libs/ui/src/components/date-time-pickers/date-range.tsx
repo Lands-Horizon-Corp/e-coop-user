@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { toReadableDateShort } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import { Calendar } from '@e-coop-monorepo/ui'
 import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'

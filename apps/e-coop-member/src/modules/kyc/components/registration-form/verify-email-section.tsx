@@ -4,7 +4,7 @@ import { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import FormFieldWrapper from '@e-coop-monorepo/ui'
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@e-coop-monorepo/ui'

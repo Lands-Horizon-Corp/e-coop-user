@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     Button,
     Command,
@@ -21,6 +21,7 @@ import { type Value } from 'react-phone-number-input'
 import flags from 'react-phone-number-input/flags'
 
 import { ArrowChevronDown, CheckIcon } from '../icons/index'
+
 type PhoneInputProps = Omit<
     React.InputHTMLAttributes<HTMLInputElement>,
     'onChange' | 'value'

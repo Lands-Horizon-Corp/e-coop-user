@@ -2,8 +2,8 @@ import { ReactNode } from 'react'
 
 import { useRouter, useSearch } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useAuthMember } from '@e-coop-monorepo/shared/store'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import PageContainer from '@e-coop-monorepo/ui'
 import {

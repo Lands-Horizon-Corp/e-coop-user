@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 interface RandomCodeProps {
     className?: string

@@ -1,6 +1,6 @@
 import { mergeProps } from '@base-ui/react/merge-props'
 import { useRender } from '@base-ui/react/use-render'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Separator } from '@e-coop-monorepo/ui'
 import { type VariantProps, cva } from 'class-variance-authority'
 

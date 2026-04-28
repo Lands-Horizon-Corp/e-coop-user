@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
 import { useFilter } from '@e-coop-monorepo/shared/contexts'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { FunnelFilledIcon, FunnelIcon, XIcon } from '@e-coop-monorepo/ui'
 import { ActionTooltip } from '@e-coop-monorepo/ui'

@@ -1,5 +1,5 @@
 import { PAGE_SIZES_DENSE } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     ChevronLeftIcon,
     ChevronRightIcon,

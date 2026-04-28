@@ -1,5 +1,5 @@
 import AnimateRevealEffect from '@e-coop-monorepo/modules/home/components/animate-reveal-effect'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { BuildingBranchIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui'
 import ImageDisplay from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'

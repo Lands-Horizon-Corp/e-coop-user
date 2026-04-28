@@ -2,7 +2,7 @@ import {
     SortableContext,
     horizontalListSortingStrategy,
 } from '@dnd-kit/sortable'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { TableHead, TableHeader, TableRow } from '@e-coop-monorepo/ui'
 import { HeaderGroup, flexRender } from '@tanstack/react-table'
 

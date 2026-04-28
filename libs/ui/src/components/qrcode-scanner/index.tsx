@@ -6,7 +6,7 @@ import {
     IQrScanResult,
     useQrDecryptData,
 } from '@e-coop-monorepo/modules/qr-crypto'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IDetectedBarcode } from '@yudiel/react-qr-scanner'
 
 import Modal, { IModalProps } from '../modals/modal'

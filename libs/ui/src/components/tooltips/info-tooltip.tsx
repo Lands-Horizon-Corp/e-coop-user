@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     Tooltip,
     TooltipContent,
@@ -10,6 +10,7 @@ import {
 } from '@e-coop-monorepo/ui'
 
 import { InfoIcon } from '../icons/index'
+
 interface InfoTooltipProps {
     content: React.ReactNode
     children?: React.ReactNode

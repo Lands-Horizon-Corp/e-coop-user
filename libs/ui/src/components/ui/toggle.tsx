@@ -1,7 +1,7 @@
 'use client'
 
 import { Toggle as TogglePrimitive } from '@base-ui/react/toggle'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 const toggleVariants = cva(

@@ -8,7 +8,7 @@ import React, {
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     Command,
     CommandEmpty,
@@ -22,6 +22,7 @@ import { countries } from 'country-data-list'
 import { CircleFlag } from 'react-circle-flags'
 
 import { ArrowChevronDown, CheckIcon, GlobeIcon } from '../icons/index'
+
 export interface Country {
     alpha2: string
     alpha3: string

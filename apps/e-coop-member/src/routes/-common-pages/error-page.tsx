@@ -1,7 +1,7 @@
 import { ErrorComponentProps, useRouter } from '@tanstack/react-router'
 
 import { allErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { FlickeringGrid } from '@e-coop-monorepo/ui'
 import {

@@ -2,7 +2,7 @@ import { ReactNode, useState } from 'react'
 
 import { Link, useLocation } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { CalculatorIcon } from '@e-coop-monorepo/ui'
 import NavAuthGroup from '@e-coop-monorepo/ui'
 import NavEcoopLogo from '@e-coop-monorepo/ui'

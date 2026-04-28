@@ -1,7 +1,8 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import { ErrorExclamationIcon } from '../icons/index'
+
 interface Props extends IClassProps {
     errorMessage?: string
 }

@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { SEX, TSex } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {

@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Avatar as AvatarPrimitive } from '@base-ui/react/avatar'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 function Avatar({
     className,

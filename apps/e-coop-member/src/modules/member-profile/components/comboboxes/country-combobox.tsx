@@ -8,7 +8,7 @@ import React, {
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { ArrowChevronDown, CheckIcon, GlobeIcon } from '@e-coop-monorepo/ui'
 import {
     Command,

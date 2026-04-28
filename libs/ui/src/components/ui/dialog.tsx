@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Dialog as DialogPrimitive } from '@base-ui/react/dialog'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import { XIcon } from 'lucide-react'
 

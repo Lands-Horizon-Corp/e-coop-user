@@ -6,7 +6,7 @@ import { toast } from 'sonner'
 import { useGetOrganizationById } from '@e-coop-monorepo/modules/organization'
 import { ORGANIZATION_ID } from '@e-coop-monorepo/shared/constants'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     CookieBiteIcon,
     RefreshIcon,

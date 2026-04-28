@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 
 import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { DownloadIcon, TrashIcon, UploadIcon } from '@e-coop-monorepo/ui'
 import ImageDisplay from '@e-coop-monorepo/ui'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui'

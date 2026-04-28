@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Label, Separator } from '@e-coop-monorepo/ui'
 import { type VariantProps, cva } from 'class-variance-authority'
 

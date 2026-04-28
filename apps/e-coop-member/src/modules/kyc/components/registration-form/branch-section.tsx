@@ -1,7 +1,7 @@
 import { UseFormReturn } from 'react-hook-form'
 
 import { IBranch, useGetAllBranch } from '@e-coop-monorepo/modules/branch'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { BuildingBranchIcon, EmailIcon, PhoneIcon } from '@e-coop-monorepo/ui'
 import ImageDisplay from '@e-coop-monorepo/ui'

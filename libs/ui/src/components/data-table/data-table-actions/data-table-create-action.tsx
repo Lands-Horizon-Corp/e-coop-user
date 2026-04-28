@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { PlusIcon } from '@e-coop-monorepo/ui'
 import { LoadingSpinner } from '@e-coop-monorepo/ui'
 import { Button, ButtonProps } from '@e-coop-monorepo/ui'

@@ -12,7 +12,7 @@ import {
 } from '@dnd-kit/core'
 import { restrictToHorizontalAxis } from '@dnd-kit/modifiers'
 import { arrayMove } from '@dnd-kit/sortable'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'
 import { Row, Table as TableInstance } from '@tanstack/react-table'
 

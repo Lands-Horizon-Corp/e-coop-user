@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import {
     Command,
@@ -10,6 +10,7 @@ import {
 } from '@e-coop-monorepo/ui'
 
 import { CheckIcon } from '../icons/index'
+
 export interface IMultiSelectOption<TValue> {
     label: string
     value: TValue

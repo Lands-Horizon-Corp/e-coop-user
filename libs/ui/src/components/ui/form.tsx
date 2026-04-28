@@ -13,7 +13,7 @@ import {
 import * as LabelPrimitive from '@radix-ui/react-label'
 import { Slot } from '@radix-ui/react-slot'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Label } from '@e-coop-monorepo/ui'
 
 const Form = FormProvider

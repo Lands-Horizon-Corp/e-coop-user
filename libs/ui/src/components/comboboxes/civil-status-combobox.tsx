@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { CIVIL_STATUS } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { TCivilStatus } from '@e-coop-monorepo/shared/types'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'

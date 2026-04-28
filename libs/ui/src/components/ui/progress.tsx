@@ -1,7 +1,7 @@
 'use client'
 
 import { Progress as ProgressPrimitive } from '@base-ui/react/progress'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 function Progress({
     className,

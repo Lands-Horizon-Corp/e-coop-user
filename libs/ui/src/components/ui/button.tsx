@@ -1,5 +1,5 @@
 import { Button as ButtonPrimitive } from '@base-ui/react/button'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 export type ButtonProps = React.ComponentProps<'button'>

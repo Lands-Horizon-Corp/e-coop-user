@@ -13,7 +13,7 @@ import {
     rgbaToHex,
     rgbaToHsla,
 } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import { Input } from '@e-coop-monorepo/ui'
 import { Label } from '@e-coop-monorepo/ui'
@@ -28,6 +28,7 @@ import {
 import { HexAlphaColorPicker, HexColorPicker } from 'react-colorful'
 
 import { LoadingSpinnerIcon, PipetteIcon } from '../icons/index'
+
 export const colorSchema = z
     .string()
     .regex(

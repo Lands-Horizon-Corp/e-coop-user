@@ -1,5 +1,5 @@
 import { Tooltip as TooltipPrimitive } from '@base-ui/react/tooltip'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 function TooltipProvider({
     delay = 0,

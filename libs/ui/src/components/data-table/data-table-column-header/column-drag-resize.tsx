@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { DragHandleIcon } from '@e-coop-monorepo/ui'
 import { Header, Table } from '@tanstack/react-table'
 

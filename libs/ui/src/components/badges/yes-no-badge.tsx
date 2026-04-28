@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { type VariantProps, cva } from 'class-variance-authority'
 

@@ -1,6 +1,6 @@
 import { NotFoundRouteProps, useRouter } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { FlickeringGrid } from '@e-coop-monorepo/ui'
 import { ArrowLeftIcon, SignPostIcon } from '@e-coop-monorepo/ui'

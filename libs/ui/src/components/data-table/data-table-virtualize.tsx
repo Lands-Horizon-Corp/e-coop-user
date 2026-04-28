@@ -1,7 +1,7 @@
 /** This table is virtualized, incase big data needs to be displayed */
 import { useRef } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import {
     TableBody,

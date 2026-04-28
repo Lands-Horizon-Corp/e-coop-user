@@ -10,8 +10,8 @@ import {
     useUpdateMemberTypeById,
 } from '@e-coop-monorepo/modules/member-type'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui'

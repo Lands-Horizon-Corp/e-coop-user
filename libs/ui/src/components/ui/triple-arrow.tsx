@@ -1,6 +1,7 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 import { ArrowUpLongIcon } from '../icons/index'
+
 type ArrowSize =
     | 'xs'
     | 'sm'

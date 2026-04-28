@@ -6,7 +6,7 @@ import {
     ValueChecklistMeter,
 } from '@e-coop-monorepo/modules/auth/components/value-checklist-indicator'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { EmailIcon, VerifiedPatchIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import { FormItem } from '@e-coop-monorepo/ui'

@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { Toggle as TogglePrimitive } from '@base-ui/react/toggle'
 import { ToggleGroup as ToggleGroupPrimitive } from '@base-ui/react/toggle-group'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { toggleVariants } from '@e-coop-monorepo/ui'
 import { type VariantProps } from 'class-variance-authority'
 

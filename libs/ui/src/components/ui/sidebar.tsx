@@ -4,8 +4,8 @@ import * as React from 'react'
 
 import { mergeProps } from '@base-ui/react/merge-props'
 import { useRender } from '@base-ui/react/use-render'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useIsMobile } from '@e-coop-monorepo/shared/hooks'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button, Input, Separator, Skeleton } from '@e-coop-monorepo/ui'
 import {
     Sheet,

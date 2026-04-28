@@ -2,7 +2,7 @@ import { forwardRef, useMemo, useState } from 'react'
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { CheckIcon, ChevronDownIcon, IconMap, TIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {

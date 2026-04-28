@@ -3,7 +3,7 @@
 import * as React from 'react'
 
 import { AlertDialog as AlertDialogPrimitive } from '@base-ui/react/alert-dialog'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 
 function AlertDialog({ ...props }: AlertDialogPrimitive.Root.Props) {

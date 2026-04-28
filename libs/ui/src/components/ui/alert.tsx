@@ -1,6 +1,6 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 const alertVariants = cva(

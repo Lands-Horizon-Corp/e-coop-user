@@ -4,7 +4,7 @@ import {
     FAMILY_RELATIONSHIP,
     TRelationship,
 } from '@e-coop-monorepo/modules/member-relative-account'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'
 import {

@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 
 import { formatBytes } from '@e-coop-monorepo/modules/media'
 import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     DropzoneOptions,
     FileRejection,
@@ -12,7 +12,12 @@ import {
     useDropzone,
 } from 'react-dropzone'
 
-import { HardDriveUploadIcon, ReplaceIcon, TrashIcon, UploadIcon } from '../icons/index'
+import {
+    HardDriveUploadIcon,
+    ReplaceIcon,
+    TrashIcon,
+    UploadIcon,
+} from '../icons/index'
 import { Button } from './button'
 import { ScrollArea } from './scroll-area'
 

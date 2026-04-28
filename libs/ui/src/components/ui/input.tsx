@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Input as InputPrimitive } from '@base-ui/react/input'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 export type InputProps = React.ComponentProps<'input'>
 

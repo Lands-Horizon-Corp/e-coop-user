@@ -3,7 +3,7 @@ import { ReactNode } from 'react'
 import { Link, useLocation } from '@tanstack/react-router'
 
 import UserAvatarMenu from '@e-coop-monorepo/modules/auth/components/user-avatar-menu'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 // import PageBreadCrumb from '@e-coop-monorepo/ui'
 // import AppSidebarToggle from '@e-coop-monorepo/ui'
 // import { Button } from '@e-coop-monorepo/ui'

@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 
 import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { getCroppedImg } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import {
     FlipHorizontalIcon,

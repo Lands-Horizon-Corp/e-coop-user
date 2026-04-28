@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { CheckIcon, CopyIcon } from '@e-coop-monorepo/ui'
 

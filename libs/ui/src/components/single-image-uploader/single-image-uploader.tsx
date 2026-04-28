@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { IMedia, useUploadMedia } from '@e-coop-monorepo/modules/media'
 import { base64ImagetoFile } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { AdjustIcon } from '@e-coop-monorepo/ui'
 import { PictureCrop } from '@e-coop-monorepo/ui'
 import { LoadingSpinner } from '@e-coop-monorepo/ui'

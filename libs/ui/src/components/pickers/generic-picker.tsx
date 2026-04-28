@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import { useInternalState } from '@e-coop-monorepo/shared/hooks'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 import { MagnifyingGlassIcon } from '@e-coop-monorepo/ui'
 import Modal, { IModalProps } from '@e-coop-monorepo/ui'

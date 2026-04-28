@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { ChevronLeftIcon, ChevronRightIcon } from '@e-coop-monorepo/ui'
 import { Button } from '@e-coop-monorepo/ui'

@@ -4,7 +4,7 @@ import * as React from 'react'
 
 import { Menu as MenuPrimitive } from '@base-ui/react/menu'
 import { Menubar as MenubarPrimitive } from '@base-ui/react/menubar'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     DropdownMenu,
     DropdownMenuContent,

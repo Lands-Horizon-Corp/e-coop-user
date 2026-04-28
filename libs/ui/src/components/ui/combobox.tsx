@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Combobox as ComboboxPrimitive } from '@base-ui/react'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import {
     InputGroup,

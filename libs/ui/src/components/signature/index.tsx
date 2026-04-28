@@ -3,9 +3,9 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import { toast } from 'sonner'
 
 import { dataUrlToFile } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import useConfirmModalStore from '@e-coop-monorepo/shared/store'
 import { useSignature } from '@e-coop-monorepo/shared/store'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     Tooltip,
     TooltipContent,
@@ -17,7 +17,15 @@ import { FileWithPath } from 'react-dropzone'
 import SignaturePad from 'react-signature-canvas'
 import Webcam from 'react-webcam'
 
-import { CameraIcon, DownloadIcon, DrawIcon, FullscreenExitIcon, FullscreenIcon, HardDriveUploadIcon, SmallBrushIcon } from '../icons/index'
+import {
+    CameraIcon,
+    DownloadIcon,
+    DrawIcon,
+    FullscreenExitIcon,
+    FullscreenIcon,
+    HardDriveUploadIcon,
+    SmallBrushIcon,
+} from '../icons/index'
 import Image from '../image'
 import { Button } from '../ui/button'
 import { Separator } from '../ui/separator'

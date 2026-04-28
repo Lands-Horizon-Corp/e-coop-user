@@ -1,7 +1,7 @@
 'use client'
 
 import { PreviewCard as PreviewCardPrimitive } from '@base-ui/react/preview-card'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 function HoverCard({ ...props }: PreviewCardPrimitive.Root.Props) {
     return <PreviewCardPrimitive.Root data-slot="hover-card" {...props} />

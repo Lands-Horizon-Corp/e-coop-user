@@ -1,0 +1,9 @@
+{
+    "name": "tw-utils",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/shared/tw-utils/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project tw-utils --web",
+    "targets": {}
+}

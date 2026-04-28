@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Button } from '@e-coop-monorepo/ui'
 import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
 import { format } from 'date-fns'

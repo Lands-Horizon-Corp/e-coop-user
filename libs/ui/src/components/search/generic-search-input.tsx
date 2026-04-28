@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
 import useDebounce from '@e-coop-monorepo/shared/hooks'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { MagnifyingGlassIcon } from '../icons/index'

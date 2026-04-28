@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
 import { DataTableActiveFilters } from '@e-coop-monorepo/ui'
 import { DataTableDeleteSelected } from '@e-coop-monorepo/ui'

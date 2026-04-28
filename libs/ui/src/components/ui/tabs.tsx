@@ -1,5 +1,5 @@
 import { Tabs as TabsPrimitive } from '@base-ui/react/tabs'
-import { cn } from '@e-coop-monorepo/shared/helpers/tw-utils'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 function Tabs({
