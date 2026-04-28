@@ -1,7 +1,10 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 
-import type { IComakerCollateral, IComakerCollateralRequest } from './comaker-collateral.types'
+import type {
+    IComakerCollateral,
+    IComakerCollateralRequest,
+} from './comaker-collateral.types'
 
 const {
     apiCrudHooks,

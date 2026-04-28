@@ -144,13 +144,18 @@ export const PERMISSION_ALL_RESOURCE_ACTION = [
         resource: 'AccountTag',
         label: 'Account Tags',
         description: 'Manage Account Tags of an Account',
-        supportedActions: ['Read'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'AccountTransaction',
         label: 'Account Transactions',
         description: 'View Transactions of an account',
-        supportedActions: ['Read', 'Create'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Create',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
 
     // ADJUSTMENT
@@ -158,33 +163,48 @@ export const PERMISSION_ALL_RESOURCE_ACTION = [
         resource: 'AdjustmentEntry',
         label: 'Adjustment Entry',
         description: 'View Adjustment Entry',
-        supportedActions: ['Read', 'Create', 'Export'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Create',
+            'Export',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     // APPROVAL PAGE
     {
         resource: 'Approvals',
         label: 'Approvals',
         description: 'Access Approval Page/Module',
-        supportedActions: ['Read'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     // MAIN APPROVAL
     {
         resource: 'ApprovalsEndBatch',
         label: 'Approval Endbatch Access',
         description: 'Allow access to Approval > End Batch',
-        supportedActions: ['Read', 'Update'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Update',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsBlotterView',
         label: 'Approval Blotter View Request',
         description: 'Blotter view request in approvals',
-        supportedActions: ['Read', 'Update'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Update',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsUser',
         label: 'Approval Users View',
         description: 'Allow access for user join requests',
-        supportedActions: ['Read', 'Update'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Update',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsMemberProfile',
@@ -198,33 +218,46 @@ export const PERMISSION_ALL_RESOURCE_ACTION = [
         resource: 'ApprovalsJV',
         label: 'Approval Journal Voucher',
         description: 'Allow read for Approval > Journal Voucher',
-        supportedActions: ['Read'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsJVDraft',
         label: 'Approval Journal Voucher Draft',
         description: 'Allow read for Approval > Journal Voucher > Draft',
-        supportedActions: ['Read'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsJVPrinted',
         label: 'Approval Journal Voucher Print',
         description: 'Allow read/action for Approval > Journal Voucher > Print',
-        supportedActions: ['Read', 'Update'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Update',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsJVApproved',
         label: 'Approval Journal Voucher Approved',
         description:
             'Allow read/action for Approval > Journal Voucher > Approved',
-        supportedActions: ['Read', 'Update'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Update',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsJVReleased',
         label: 'Approval JV Release ',
         description:
             'Allow read/action for Approval > Journal Voucher > Released',
-        supportedActions: ['Read', 'Update'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+            'Update',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
 
     // APPROVAL > CASH VOUCHER
@@ -232,7 +265,9 @@ export const PERMISSION_ALL_RESOURCE_ACTION = [
         resource: 'ApprovalsCashVoucher',
         label: 'Approval Cash Voucher',
         description: 'Allow read for Approval > Cash Voucher',
-        supportedActions: ['Read'] as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions: [
+            'Read',
+        ] as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
     {
         resource: 'ApprovalsCashVoucherDraft',
@@ -316,7 +351,8 @@ export const PERMISSION_ALL_RESOURCE_ACTION = [
         resource: 'PaymentType',
         label: 'Payment Type Module',
         description: 'Allow access/action for payment type module',
-        supportedActions: generateBaseAction() as (typeof PERMISSION_BASE_ACTIONS)[number][],
+        supportedActions:
+            generateBaseAction() as (typeof PERMISSION_BASE_ACTIONS)[number][],
     },
 
     // JOURNAL VOUCHER

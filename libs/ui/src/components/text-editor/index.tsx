@@ -6,9 +6,8 @@ import Placeholder from '@tiptap/extension-placeholder'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 
-import Toolbar from './toolbar'
-
 import { THeadingLevel } from './text-editor.types'
+import Toolbar from './toolbar'
 
 interface Props extends IBaseProps {
     content?: string
@@ -24,7 +23,6 @@ interface Props extends IBaseProps {
     isAllowedHorizontalRule?: boolean
     editable?: boolean
 }
-
 
 const TextEditor = forwardRef<HTMLDivElement, Props>(
     (

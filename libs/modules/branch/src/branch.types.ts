@@ -9,8 +9,8 @@ import {
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TBranchSchema } from './branch.validation'
 import { branchTypeEnum } from './branch.enums'
+import { TBranchSchema } from './branch.validation'
 
 // Resource
 export interface IBranch extends ITimeStamps, IAuditable {
