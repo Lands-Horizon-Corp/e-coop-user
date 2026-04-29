@@ -1,6 +1,6 @@
 import { Path } from 'react-hook-form'
 
-import { IClassProps } from './base-component'
+import { IClassProps } from '@e-coop-monorepo/shared/types'
 
 export interface IForm<
     TDefaultVals,

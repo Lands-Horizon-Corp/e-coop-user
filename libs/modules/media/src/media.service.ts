@@ -6,7 +6,8 @@ import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { HookMutationOptions } from '@e-coop-monorepo/shared/providers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
-import { IMedia } from '@e-coop-monorepo/shared/types'
+
+import { IMedia } from './media.types'
 
 const { apiCrudService } = createDataLayerFactory({
     url: '/api/v1/media',
