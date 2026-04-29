@@ -31,6 +31,9 @@ export default defineConfig([
             '@nx/enforce-module-boundaries': [
                 'error',
                 {
+                    allowCircularSelfDependency: true,
+                    checkNestedDependencies: true,
+                    ignoreTypeOnlyImports: true,
                     enforceBuildableLibDependency: true,
                     allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
                     depConstraints: [
