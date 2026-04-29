@@ -579,6 +579,9 @@
             ],
             "@e-coop-monorepo/shared/loggers": [
                 "libs/shared/loggers/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/guards": [
+                "libs/shared/guards/src/index.ts"
             ]
         },
         "strict": true

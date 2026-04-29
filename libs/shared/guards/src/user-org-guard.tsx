@@ -9,9 +9,9 @@ import {
 } from '@e-coop-monorepo/modules/heartbeat'
 import { IChildProps } from '@e-coop-monorepo/shared/types'
 
-interface Props extends IChildProps {}
+// interface Props extends IChildProps {}
 
-const UserOrgGuard = ({ children }: Props) => {
+const UserOrgGuard = ({ children }: IChildProps) => {
     const sendOnline = useSendHeartbeatOnline()
     const sendOffline = useSendHeartbeatOffline()
 
