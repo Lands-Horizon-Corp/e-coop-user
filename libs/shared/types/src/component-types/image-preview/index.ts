@@ -1,6 +1,6 @@
 import { MutableRefObject } from 'react'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
+import { IMedia } from '../../media.types'
 
 export interface ImagePreviewProps {
     hideCloseButton?: boolean

@@ -1,7 +1,8 @@
 import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
 import { CIVIL_STATUS, GENERAL_STATUS } from '@e-coop-monorepo/shared/constants'
+
+import { IOrganization } from './organization.types'
+import { IUserBase } from './user.types'
 
 export type TEntityId = string
 
