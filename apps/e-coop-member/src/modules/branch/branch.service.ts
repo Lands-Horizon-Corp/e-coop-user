@@ -7,7 +7,7 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
-import { getCurrentLocation, getDistance } from '@e-coop-monorepo/ui'
+import { getCurrentLocation, getDistance } from '@e-coop-monorepo/ui/core'
 
 import { IBranch, IBranchRequest } from './branch.types'
 

@@ -12,19 +12,19 @@ import {
     RefreshIcon,
     ShieldIcon,
     Users3FillIcon,
-} from '@e-coop-monorepo/ui'
-import TextRenderer from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import TextRenderer from '@e-coop-monorepo/ui/core'
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
-import { Checkbox } from '@e-coop-monorepo/ui'
-import FormFieldWrapper from '@e-coop-monorepo/ui'
-import { Label } from '@e-coop-monorepo/ui'
-import { ScrollArea } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
+import { Checkbox } from '@e-coop-monorepo/ui/core'
+import FormFieldWrapper from '@e-coop-monorepo/ui/core'
+import { Label } from '@e-coop-monorepo/ui/core'
+import { ScrollArea } from '@e-coop-monorepo/ui/core'
 import { FileText } from 'lucide-react'
 
 import { useKYCRegister } from '../..'

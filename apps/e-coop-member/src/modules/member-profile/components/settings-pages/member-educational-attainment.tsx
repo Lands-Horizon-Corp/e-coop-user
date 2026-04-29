@@ -2,17 +2,17 @@ import { ReactNode, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { Button } from '@e-coop-monorepo/ui'
-import { Input } from '@e-coop-monorepo/ui'
-import { Label } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui/core'
+import { Input } from '@e-coop-monorepo/ui/core'
+import { Label } from '@e-coop-monorepo/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui'
-import { Textarea } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import { Textarea } from '@e-coop-monorepo/ui/core'
 import {
     Award,
     BookOpen,

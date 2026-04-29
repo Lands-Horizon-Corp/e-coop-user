@@ -1,14 +1,14 @@
 import { ReactNode } from 'react'
 
 import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
-import DataTableColumnHeader from '@e-coop-monorepo/ui'
-import ColumnActions from '@e-coop-monorepo/ui'
-import { createUpdateColumns } from '@e-coop-monorepo/ui'
-import { IGlobalSearchTargets } from '@e-coop-monorepo/ui'
-import TextFilter from '@e-coop-monorepo/ui'
-import HeaderToggleSelect from '@e-coop-monorepo/ui'
-import { PushPinSlashIcon } from '@e-coop-monorepo/ui'
-import { Checkbox } from '@e-coop-monorepo/ui'
+import DataTableColumnHeader from '@e-coop-monorepo/ui/core'
+import ColumnActions from '@e-coop-monorepo/ui/core'
+import { createUpdateColumns } from '@e-coop-monorepo/ui/core'
+import { IGlobalSearchTargets } from '@e-coop-monorepo/ui/core'
+import TextFilter from '@e-coop-monorepo/ui/core'
+import HeaderToggleSelect from '@e-coop-monorepo/ui/core'
+import { PushPinSlashIcon } from '@e-coop-monorepo/ui/core'
+import { Checkbox } from '@e-coop-monorepo/ui/core'
 import { ColumnDef, Row } from '@tanstack/react-table'
 
 export const memberOccupationGlobalSearchTargets: IGlobalSearchTargets<IMemberOccupation>[] =

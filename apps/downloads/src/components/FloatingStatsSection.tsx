@@ -1,6 +1,6 @@
 import React, { memo } from 'react'
 
-import { MemoizedStatCard } from '@e-coop-monorepo/ui'
+import { MemoizedStatCard } from '@e-coop-monorepo/ui/core'
 
 import { STAT_CARDS } from '../constants/heroSection'
 

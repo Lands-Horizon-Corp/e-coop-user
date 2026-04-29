@@ -17,6 +17,7 @@ interface IConfirmModalStore {
 
 const useActionSecurityStore = create<IConfirmModalStore>((set) => ({
     isOpen: false,
+    // eslint-disable-next-line @typescript-eslint/no-empty-function
     modalData: { title: '', description: '', onSuccess: () => {} },
     onOpenSecurityAction: (newModalData) => {
         // const {

@@ -2,22 +2,24 @@
 
 import { useState } from 'react'
 
+import { CoopBackground } from '@e-coop-monorepo/modules/home/components/coop-bg'
+import Organization from '@e-coop-monorepo/modules/organization/pages'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { Badge } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
+import { Badge } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogTitle,
-} from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
 import {
     Activity,
     AlertCircle,
@@ -63,8 +65,6 @@ import {
     YAxis,
 } from 'recharts'
 
-import { CoopBackground } from '@e-coop-monorepo/modules/home/components/coop-bg'
-import Organization from '@e-coop-monorepo/modules/organization/pages'
 import AccountModal from './components/accounts-modal'
 import QrCodeModal from './components/modal-qr'
 

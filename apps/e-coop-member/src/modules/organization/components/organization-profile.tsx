@@ -1,7 +1,7 @@
-import { Badge } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
-import { Card, CardContent } from '@e-coop-monorepo/ui'
-import { Separator } from '@e-coop-monorepo/ui'
+import { Badge } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
+import { Card, CardContent } from '@e-coop-monorepo/ui/core'
+import { Separator } from '@e-coop-monorepo/ui/core'
 import {
     ArrowRight,
     Calendar,

@@ -1,9 +1,12 @@
 import AnimateRevealEffect from '@e-coop-monorepo/modules/home/components/animate-reveal-effect'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { BuildingBranchIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui'
-import ImageDisplay from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
-import TruncatedText from '@e-coop-monorepo/ui'
+import {
+    BuildingBranchIcon,
+    MagnifyingGlassIcon,
+} from '@e-coop-monorepo/ui/core'
+import ImageDisplay from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
+import TruncatedText from '@e-coop-monorepo/ui/core'
 
 import { IOrganization } from '../organization.types'
 

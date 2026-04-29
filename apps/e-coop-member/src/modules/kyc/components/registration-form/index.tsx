@@ -5,9 +5,9 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
-import { ChevronLeftIcon } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
-import { Form } from '@e-coop-monorepo/ui'
+import { ChevronLeftIcon } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
+import { Form } from '@e-coop-monorepo/ui/core'
 
 import {
     IKYCRegisterRequest,

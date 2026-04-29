@@ -1,6 +1,6 @@
 import { Path } from 'react-hook-form'
 
-import { StepConfig, StepValidation } from '@e-coop-monorepo/ui'
+import { StepConfig, StepValidation } from '@e-coop-monorepo/ui/core'
 
 import { TOrganizationSchema } from '../organization.validation'
 

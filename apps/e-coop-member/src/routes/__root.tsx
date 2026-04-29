@@ -7,9 +7,9 @@ import {
     InfoFillCircleIcon,
     NotAllowedIcon,
     WarningFillIcon,
-} from '@e-coop-monorepo/ui'
-import ConfirmModal from '@e-coop-monorepo/ui'
-import LoadingSpinner from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import ConfirmModal from '@e-coop-monorepo/ui/core'
+import LoadingSpinner from '@e-coop-monorepo/ui/core'
 
 // import { AxiosError } from 'axios'
 // import { DndProvider } from 'react-dnd'
@@ -22,18 +22,18 @@ import LoadingSpinner from '@e-coop-monorepo/ui'
 // import { ActionSecurityProvider } from '@e-coop-monorepo/shared/providers'
 // import ConnectionProvider from '@e-coop-monorepo/shared/providers'
 
-// import CookieConsent from '@e-coop-monorepo/ui'
+// import CookieConsent from '@e-coop-monorepo/ui/core'
 // import {
 //     CheckFillIcon,
 //     InfoFillCircleIcon,
 //     NotAllowedIcon,
 //     WarningFillIcon,
-// } from '@e-coop-monorepo/ui'
-// import ImagePreviewModal from '@e-coop-monorepo/ui'
-// import ConfirmModal from '@e-coop-monorepo/ui'
-// import InfoModal from '@e-coop-monorepo/ui'
-// import LoadingSpinner from '@e-coop-monorepo/ui'
-// import { Toaster } from '@e-coop-monorepo/ui'
+// } from '@e-coop-monorepo/ui/core'
+// import ImagePreviewModal from '@e-coop-monorepo/ui/core'
+// import ConfirmModal from '@e-coop-monorepo/ui/core'
+// import InfoModal from '@e-coop-monorepo/ui/core'
+// import LoadingSpinner from '@e-coop-monorepo/ui/core'
+// import { Toaster } from '@e-coop-monorepo/ui/core'
 
 // import { useNatsConnect } from '@e-coop-monorepo/shared/hooks'
 // import { useQeueryHookCallback } from '@e-coop-monorepo/shared/hooks'

@@ -18,12 +18,12 @@ import {
     PlusIcon,
     TrashIcon,
     WoodSignsIcon,
-} from '@e-coop-monorepo/ui'
-import ImageDisplay from '@e-coop-monorepo/ui'
-import LoadingSpinner from '@e-coop-monorepo/ui'
-import TextRenderer from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
-import { Separator } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import ImageDisplay from '@e-coop-monorepo/ui/core'
+import LoadingSpinner from '@e-coop-monorepo/ui/core'
+import TextRenderer from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
+import { Separator } from '@e-coop-monorepo/ui/core'
 
 import { MemberAssetCreateUpdateFormModal } from '../../forms/member-asset-create-update-form'
 import EmptyListIndicator from '../empty-list-indicator'

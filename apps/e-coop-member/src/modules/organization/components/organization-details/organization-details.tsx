@@ -7,11 +7,11 @@ import {
     InstagramIcon,
     PhoneIcon,
     YoutubeIcon,
-} from '@e-coop-monorepo/ui'
-import { Badge } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
-import { Card } from '@e-coop-monorepo/ui'
-import TruncatedText from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import { Badge } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
+import { Card } from '@e-coop-monorepo/ui/core'
+import TruncatedText from '@e-coop-monorepo/ui/core'
 import {
     Calendar,
     CreditCard,

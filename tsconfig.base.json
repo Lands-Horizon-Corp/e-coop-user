@@ -19,7 +19,6 @@
         "allowImportingTsExtensions": true,
         "noEmit": true,
         "paths": {
-            "@e-coop-monorepo/ui": ["libs/ui/src/index.ts"],
             "@e-coop-monorepo/shared/constants": [
                 "libs/shared/constants/src/index.ts"
             ],
@@ -580,12 +579,13 @@
             "@e-coop-monorepo/shared/loggers": [
                 "libs/shared/loggers/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/guards": [
-                "libs/shared/guards/src/index.ts"
-            ],
             "@e-coop-monorepo/shared/repositories": [
                 "libs/shared/repositories/src/index.ts"
-            ]
+            ],
+            "@e-coop-monorepo/ui-smart": ["libs/ui-smart/src/index.ts"],
+            "@e-coop-monorepo/ui/core": ["libs/ui/core/src/index.ts"],
+            "@e-coop-monorepo/ui/modals": ["libs/ui/modals/src/index.ts"],
+            "@e-coop-monorepo/ui/guards": ["libs/ui/guards/src/index.ts"]
         },
         "strict": true
     },

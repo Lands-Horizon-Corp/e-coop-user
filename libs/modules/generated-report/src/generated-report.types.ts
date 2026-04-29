@@ -6,7 +6,7 @@ import {
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-import { TPaperSizeName } from '@e-coop-monorepo/ui'
+import { TPaperSizeName } from '@e-coop-monorepo/ui/core'
 
 import { TPaperSizeUnit } from './generated-reports.constants'
 

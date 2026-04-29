@@ -4,7 +4,7 @@ import {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
-import { TIcon } from '@e-coop-monorepo/ui'
+import { TIcon } from '@e-coop-monorepo/ui/core'
 
 import { TagTemplateSchema } from './tag-template.validation'
 import { TAG_CATEGORY } from './tag.constants'

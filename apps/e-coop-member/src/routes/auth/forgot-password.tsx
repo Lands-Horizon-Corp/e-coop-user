@@ -3,8 +3,8 @@ import { createFileRoute, useRouter, useSearch } from '@tanstack/react-router'
 import COOKIE_ICON from '@/assets/cookie-icon.svg'
 import { IUserForgotPasswordRequest } from '@e-coop-monorepo/modules/auth'
 import ForgotPasswordForm from '@e-coop-monorepo/modules/auth/components/forms/forgot-password-form'
-import PageContainer from '@e-coop-monorepo/ui'
-import ImageDisplay from '@e-coop-monorepo/ui'
+import PageContainer from '@e-coop-monorepo/ui/core'
+import ImageDisplay from '@e-coop-monorepo/ui/core'
 
 export const Route = createFileRoute('/auth/forgot-password')({
     component: RouteComponent,

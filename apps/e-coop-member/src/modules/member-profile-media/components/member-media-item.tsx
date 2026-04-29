@@ -7,12 +7,12 @@ import {
 } from '@e-coop-monorepo/modules/media'
 import MediaResourceFileIcon from '@e-coop-monorepo/modules/media/components/media-resource-file-icon'
 import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import { DownloadIcon, TrashIcon } from '@e-coop-monorepo/ui'
-import ImageDisplay from '@e-coop-monorepo/ui'
-import ActionTooltip from '@e-coop-monorepo/ui'
-import { AspectRatio } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
-import PreviewMediaWrapper from '@e-coop-monorepo/ui'
+import { DownloadIcon, TrashIcon } from '@e-coop-monorepo/ui/core'
+import ImageDisplay from '@e-coop-monorepo/ui/core'
+import ActionTooltip from '@e-coop-monorepo/ui/core'
+import { AspectRatio } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
+import PreviewMediaWrapper from '@e-coop-monorepo/ui/core'
 
 import { IMemberProfileMedia } from '../member-profile-media.types'
 

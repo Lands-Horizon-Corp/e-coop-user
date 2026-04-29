@@ -4,7 +4,7 @@ import {
     PencilOutlineIcon,
     PlusIcon,
     TrashIcon,
-} from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
 import { IconType } from 'react-icons/lib'
 
 // Avoid importing types from permission.types to prevent circular dependency

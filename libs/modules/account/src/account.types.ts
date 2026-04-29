@@ -13,7 +13,7 @@ import {
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-import { TIcon } from '@e-coop-monorepo/ui'
+import { TIcon } from '@e-coop-monorepo/ui/core'
 
 import {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,

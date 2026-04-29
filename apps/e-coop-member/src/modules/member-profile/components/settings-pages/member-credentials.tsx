@@ -2,17 +2,17 @@ import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { Button } from '@e-coop-monorepo/ui'
+import { Button } from '@e-coop-monorepo/ui/core'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@e-coop-monorepo/ui'
-import { Input } from '@e-coop-monorepo/ui'
-import { InputOTP, InputOTPGroup, InputOTPSlot } from '@e-coop-monorepo/ui'
-import { Label } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import { Input } from '@e-coop-monorepo/ui/core'
+import { InputOTP, InputOTPGroup, InputOTPSlot } from '@e-coop-monorepo/ui/core'
+import { Label } from '@e-coop-monorepo/ui/core'
 import {
     AlertTriangle,
     CheckCircle2,

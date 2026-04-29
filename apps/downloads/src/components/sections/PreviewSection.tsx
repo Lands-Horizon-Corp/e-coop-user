@@ -1,4 +1,4 @@
-import { AnimatedSection } from '@e-coop-monorepo/ui'
+import { AnimatedSection } from '@e-coop-monorepo/ui/core'
 import { motion } from 'framer-motion'
 
 import dashboardImage from '../../assets/dashboard2.png'

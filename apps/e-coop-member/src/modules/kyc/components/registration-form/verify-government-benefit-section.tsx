@@ -16,26 +16,26 @@ import { IGovernmentId } from '@e-coop-monorepo/modules/member-profile'
 import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
 import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-// import TextEditor from '@e-coop-monorepo/ui'
+// import TextEditor from '@e-coop-monorepo/ui/core'
 
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui'
-import { Form } from '@e-coop-monorepo/ui'
-import FormFieldWrapper from '@e-coop-monorepo/ui'
-import ImageField from '@e-coop-monorepo/ui'
-import { Input } from '@e-coop-monorepo/ui'
-import InputDate from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import { Form } from '@e-coop-monorepo/ui/core'
+import FormFieldWrapper from '@e-coop-monorepo/ui/core'
+import ImageField from '@e-coop-monorepo/ui/core'
+import { Input } from '@e-coop-monorepo/ui/core'
+import InputDate from '@e-coop-monorepo/ui/core'
 import { CreditCard, MoreVertical, Pencil, Plus, Trash2 } from 'lucide-react'
 
 import {

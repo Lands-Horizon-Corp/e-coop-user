@@ -9,7 +9,11 @@ import React, {
 import Fuse from 'fuse.js'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { ArrowChevronDown, CheckIcon, GlobeIcon } from '@e-coop-monorepo/ui'
+import {
+    ArrowChevronDown,
+    CheckIcon,
+    GlobeIcon,
+} from '@e-coop-monorepo/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -17,8 +21,12 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui'
-import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+} from '@e-coop-monorepo/ui/core'
 import { countries } from 'country-data-list'
 import { CircleFlag } from 'react-circle-flags'
 

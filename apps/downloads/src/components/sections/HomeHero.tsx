@@ -1,6 +1,6 @@
 import React, { memo, useMemo } from 'react'
 
-import { MemoizedFeatureCard } from '@e-coop-monorepo/ui'
+import { MemoizedFeatureCard } from '@e-coop-monorepo/ui/core'
 import { Download, Shield } from 'lucide-react'
 
 import {

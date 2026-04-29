@@ -2,8 +2,8 @@ import { createFileRoute, useRouter } from '@tanstack/react-router'
 
 import COOKIE_ICON from '@/assets/cookie-icon.svg'
 import LoginForm from '@e-coop-monorepo/modules/auth/components/forms/login-form'
-import PageContainer from '@e-coop-monorepo/ui'
-import ImageDisplay from '@e-coop-monorepo/ui'
+import PageContainer from '@e-coop-monorepo/ui/core'
+import ImageDisplay from '@e-coop-monorepo/ui/core'
 
 export const Route = createFileRoute('/auth/sign-in')({
     component: RouteComponent,

@@ -3,8 +3,8 @@ import * as React from 'react'
 import { CIVIL_STATUS } from '@e-coop-monorepo/shared/constants'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { TCivilStatus } from '@e-coop-monorepo/shared/types'
-import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
+import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -12,8 +12,12 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui'
-import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+} from '@e-coop-monorepo/ui/core'
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

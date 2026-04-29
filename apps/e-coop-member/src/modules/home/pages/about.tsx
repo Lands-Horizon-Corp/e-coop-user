@@ -1,6 +1,6 @@
-import { Particles } from '@e-coop-monorepo/ui'
-import { Badge } from '@e-coop-monorepo/ui'
-import { Card } from '@e-coop-monorepo/ui'
+import { Particles } from '@e-coop-monorepo/ui/core'
+import { Badge } from '@e-coop-monorepo/ui/core'
+import { Card } from '@e-coop-monorepo/ui/core'
 import {
     Award,
     Building,

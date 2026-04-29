@@ -10,8 +10,8 @@ import {
     CheckFillIcon,
     FingerPrintIcon,
     RotateLeftIcon,
-} from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
 import { ScanFace } from 'lucide-react'
 import Webcam from 'react-webcam'
 

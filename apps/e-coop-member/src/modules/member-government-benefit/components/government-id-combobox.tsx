@@ -1,9 +1,9 @@
 import * as React from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { ChevronDownIcon } from '@e-coop-monorepo/ui'
-import LoadingSpinner from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
+import { ChevronDownIcon } from '@e-coop-monorepo/ui/core'
+import LoadingSpinner from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -11,8 +11,12 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui'
-import { Popover, PopoverContent, PopoverTrigger } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import {
+    Popover,
+    PopoverContent,
+    PopoverTrigger,
+} from '@e-coop-monorepo/ui/core'
 import { Check } from 'lucide-react'
 
 import { useGetAllGovernmentIds } from '../member-government-benefit.service'

@@ -3,16 +3,16 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui'
-import { Badge } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import { Badge } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
 import {
     ArrowDownRight,
     ArrowUpRight,

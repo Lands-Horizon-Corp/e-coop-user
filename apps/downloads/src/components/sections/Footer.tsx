@@ -1,4 +1,4 @@
-import { AnimatedSection } from '@e-coop-monorepo/ui'
+import { AnimatedSection } from '@e-coop-monorepo/ui/core'
 import { motion } from 'framer-motion'
 import { ExternalLink, Mail, MapPin, Phone } from 'lucide-react'
 

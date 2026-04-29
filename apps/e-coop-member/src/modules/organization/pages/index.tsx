@@ -4,7 +4,7 @@ import { useGetBranchesByOrganizationId } from '@e-coop-monorepo/modules/branch'
 import { CoopBackground } from '@e-coop-monorepo/modules/home'
 import Themes from '@e-coop-monorepo/modules/settings'
 import { CustomThemeColors, useTheme } from '@e-coop-monorepo/shared/providers'
-import { FlowingGrid } from '@e-coop-monorepo/ui'
+import { FlowingGrid } from '@e-coop-monorepo/ui/core'
 
 import { OrganizationBanner } from '../components/organization-banner'
 import { BranchList } from '../components/organization-branch-list'

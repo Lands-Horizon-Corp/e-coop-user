@@ -12,13 +12,17 @@ import FilterContext from '@e-coop-monorepo/shared/contexts'
 import useDatableFilterState from '@e-coop-monorepo/shared/hooks'
 import { usePagination } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import DataTable from '@e-coop-monorepo/ui'
-import DataTablePagination from '@e-coop-monorepo/ui'
-import DataTableToolbar, { IDataTableToolbarProps } from '@e-coop-monorepo/ui'
-import { TableRowActionStoreProvider } from '@e-coop-monorepo/ui'
-import { TableProps } from '@e-coop-monorepo/ui'
-import { useDataTableSorting } from '@e-coop-monorepo/ui'
-import useDataTableState, { useResolvedColumnOrder } from '@e-coop-monorepo/ui'
+import DataTable from '@e-coop-monorepo/ui/core'
+import DataTablePagination from '@e-coop-monorepo/ui/core'
+import DataTableToolbar, {
+    IDataTableToolbarProps,
+} from '@e-coop-monorepo/ui/core'
+import { TableRowActionStoreProvider } from '@e-coop-monorepo/ui/core'
+import { TableProps } from '@e-coop-monorepo/ui/core'
+import { useDataTableSorting } from '@e-coop-monorepo/ui/core'
+import useDataTableState, {
+    useResolvedColumnOrder,
+} from '@e-coop-monorepo/ui/core'
 import {
     getCoreRowModel,
     getSortedRowModel,

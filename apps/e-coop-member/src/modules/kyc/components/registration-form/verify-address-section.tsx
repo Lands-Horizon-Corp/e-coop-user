@@ -13,21 +13,21 @@ import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui'
-import MapView, { MapLocation } from '@e-coop-monorepo/ui'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui'
-import { Button } from '@e-coop-monorepo/ui'
+import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
+import MapView, { MapLocation } from '@e-coop-monorepo/ui/core'
+import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import { Button } from '@e-coop-monorepo/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui'
-import { Form } from '@e-coop-monorepo/ui'
-import FormFieldWrapper from '@e-coop-monorepo/ui'
-import { Input } from '@e-coop-monorepo/ui'
-import { Switch } from '@e-coop-monorepo/ui'
-import { Textarea } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import { Form } from '@e-coop-monorepo/ui/core'
+import FormFieldWrapper from '@e-coop-monorepo/ui/core'
+import { Input } from '@e-coop-monorepo/ui/core'
+import { Switch } from '@e-coop-monorepo/ui/core'
+import { Textarea } from '@e-coop-monorepo/ui/core'
 import { MapPin, MoreVertical, Pencil, Plus, Star, Trash2 } from 'lucide-react'
 
 import { useKYCVerifyAddresses } from '../..'

@@ -7,9 +7,9 @@ import {
     RefreshCwIcon,
     ShieldIcon,
     Users3Icon,
-} from '@e-coop-monorepo/ui'
-import Modal from '@e-coop-monorepo/ui'
-import { Card } from '@e-coop-monorepo/ui'
+} from '@e-coop-monorepo/ui/core'
+import Modal from '@e-coop-monorepo/ui/core'
+import { Card } from '@e-coop-monorepo/ui/core'
 import { ArrowUpRight, ChevronRight, Shield } from 'lucide-react'
 import { IconType } from 'react-icons/lib'
 

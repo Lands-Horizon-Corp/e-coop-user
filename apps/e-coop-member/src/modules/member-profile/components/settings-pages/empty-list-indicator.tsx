@@ -1,6 +1,6 @@
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { IClassProps } from '@e-coop-monorepo/shared/types'
-import { GhostIcon } from '@e-coop-monorepo/ui'
+import { GhostIcon } from '@e-coop-monorepo/ui/core'
 
 interface Props extends IClassProps {
     message?: string
