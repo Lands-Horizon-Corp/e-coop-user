@@ -4,7 +4,7 @@ import {
     HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
-import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
+import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {

@@ -1,14 +1,14 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
+import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import {
     HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
-import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
+import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 import { getCurrentLocation, getDistance } from '@e-coop-monorepo/ui'
 
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { IBranch, IBranchRequest } from './branch.types'
 
 /**

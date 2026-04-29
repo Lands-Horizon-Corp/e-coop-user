@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
+import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
 
 import { IOperationCallbacks } from './qr-crypto.types'
 

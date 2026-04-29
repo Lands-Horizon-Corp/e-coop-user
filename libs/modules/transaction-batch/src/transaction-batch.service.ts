@@ -6,12 +6,12 @@ import {
 } from '@e-coop-monorepo/modules/cash-count'
 import { cashCountAPIRoute } from '@e-coop-monorepo/modules/cash-count'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
-import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {

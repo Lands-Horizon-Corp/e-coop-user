@@ -13,12 +13,12 @@ import {
     userOrganizationAPIRoute,
 } from '@e-coop-monorepo/modules/user-organization'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import { IEmployeeCreateRequest } from './employee.types'

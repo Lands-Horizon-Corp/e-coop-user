@@ -1,9 +1,9 @@
-import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     createMutationInvalidateFn,
 } from '@e-coop-monorepo/shared/providers'
+import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import {
     TEntityId,
     UdpateGeneralLedgerOrder,

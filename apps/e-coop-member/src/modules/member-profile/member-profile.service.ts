@@ -1,5 +1,5 @@
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
-import { createMutationFactory } from '@e-coop-monorepo/shared/providers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
 import { useFakeStore } from '@e-coop-monorepo/shared/store'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 

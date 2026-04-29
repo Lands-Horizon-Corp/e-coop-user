@@ -6,7 +6,7 @@ import {
     transactionAPIRoute,
 } from '@e-coop-monorepo/modules/transaction'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 import { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
 
 export type TTransactionHookMode =

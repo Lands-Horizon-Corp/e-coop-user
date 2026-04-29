@@ -1,10 +1,10 @@
 import { feedBaseKey } from '@e-coop-monorepo/modules/feed'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IFeedComment, IFeedCommentRequest } from '../feed-comment'

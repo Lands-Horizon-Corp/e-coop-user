@@ -8,8 +8,8 @@ import {
 } from '@e-coop-monorepo/modules/member-account-ledger'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import APIService from '@e-coop-monorepo/shared/providers'
-import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
-import { HookQueryOptions } from '@e-coop-monorepo/shared/providers'
+import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
+import { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 // ⚙️🛠️ API SERVICE HERE

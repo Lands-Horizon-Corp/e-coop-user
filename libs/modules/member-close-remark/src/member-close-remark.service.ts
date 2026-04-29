@@ -3,8 +3,8 @@ import { useMutation } from '@tanstack/react-query'
 import { memberProfileAPIRoute } from '@e-coop-monorepo/modules/member-profile'
 import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import { HookMutationOptions } from '@e-coop-monorepo/shared/providers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
