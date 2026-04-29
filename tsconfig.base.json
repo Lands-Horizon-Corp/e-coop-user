@@ -26,8 +26,8 @@
                 "libs/shared/contexts/src/index.ts"
             ],
             "@e-coop-monorepo/shared/hooks": ["libs/shared/hooks/src/index.ts"],
-            "@e-coop-monorepo/shared/policies": [
-                "libs/shared/policies/src/index.ts"
+            "@e-coop-monorepo/shared/download-policies": [
+                "libs/shared/download-policies/src/index.ts"
             ],
             "@e-coop-monorepo/shared/providers": [
                 "libs/shared/providers/src/index.ts"
@@ -585,7 +585,32 @@
             "@e-coop-monorepo/ui-smart": ["libs/ui-smart/src/index.ts"],
             "@e-coop-monorepo/ui/core": ["libs/ui/core/src/index.ts"],
             "@e-coop-monorepo/ui/modals": ["libs/ui/modals/src/index.ts"],
-            "@e-coop-monorepo/ui/guards": ["libs/ui/guards/src/index.ts"]
+            "@e-coop-monorepo/ui/guards": ["libs/ui/guards/src/index.ts"],
+            "@e-coop-monorepo/ui/sidebar": ["libs/ui/sidebar/src/index.ts"],
+            "@e-coop-monorepo/ui/app-sidebar": [
+                "libs/ui/app-sidebar/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/wrappers": ["libs/ui/wrappers/src/index.ts"],
+            "@e-coop-monorepo/ui/data-table": [
+                "libs/ui/data-table/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/map": ["libs/ui/map/src/index.ts"],
+            "@e-coop-monorepo/ui/signature": ["libs/ui/signature/src/index.ts"],
+            "@e-coop-monorepo/ui/comboboxes": [
+                "libs/ui/comboboxes/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/nav": ["libs/ui/nav/src/index.ts"],
+            "@e-coop-monorepo/ui/policies": ["libs/ui/policies/src/index.ts"],
+            "@e-coop-monorepo/ui/templates": ["libs/ui/templates/src/index.ts"],
+            "@e-coop-monorepo/ui/ecoop-logo": [
+                "libs/ui/ecoop-logo/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/qrcode-scanner": [
+                "libs/ui/qrcode-scanner/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/image-preview": [
+                "libs/ui/image-preview/src/index.ts"
+            ]
         },
         "strict": true
     },

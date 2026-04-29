@@ -77,7 +77,7 @@ export * from './components/ui/use-isFocused'
 export * from './components/copy-text-button'
 export * from './components/cookie-consent'
 export * from './components/copy-url'
-export * from './components/ecoop-logo'
+// export * from './components/ecoop-logo'
 export * from './components/hightlight-match'
 export * from './components/icon-container'
 export * from './components/image-display'
@@ -93,12 +93,12 @@ export * from './components/text-display'
 // ==========================================
 
 // app-sidebar
-export * from './components/app-sidebar/app-sidebar-item'
-export * from './components/app-sidebar/app-sidebar-quick-navigate'
-export * from './components/app-sidebar/app-sidebar-toggle'
-export * from './components/app-sidebar/app-sidebar-user'
-export * from './components/app-sidebar/app-sidebar-utils'
-export * from './components/app-sidebar/types'
+// export * from './components/app-sidebar/app-sidebar-item'
+// export * from './components/app-sidebar/app-sidebar-quick-navigate'
+// export * from './components/app-sidebar/app-sidebar-toggle'
+// export * from './components/app-sidebar/app-sidebar-user'
+// export * from './components/app-sidebar/app-sidebar-utils'
+// export * from './components/app-sidebar/types'
 
 // backgrounds
 export * from './components/backgrounds'
@@ -115,7 +115,7 @@ export * from './components/cards/feature-card'
 export * from './components/cards/stat-card'
 
 // bank
-export * from './components/bank/bank.service'
+// export * from './components/bank/bank.service'
 
 // buttons
 export * from './components/buttons/refresh-button'
@@ -124,7 +124,7 @@ export * from './components/buttons/refresh-button'
 export * from './components/containers/page-container'
 
 // data-table
-export * from './components/data-table'
+// export * from './components/data-table'
 
 //date-time-pickers
 export * from './components/date-time-pickers'
@@ -143,20 +143,20 @@ export * from './components/form-stepper/form-stepper'
 export * from './components/icons'
 
 // image-preview
-export * from './components/image-preview/image-preview'
+// export * from './components/image-preview/image-preview'
 
 // map
-export * from './components/map'
-export * from './components/map/map.config'
-export * from './components/map/map.provider'
-export * from './components/map/map.utils'
+// export * from './components/map'
+// export * from './components/map/map.config'
+// export * from './components/map/map.provider'
+// export * from './components/map/map.utils'
 
-// modals
-export * from './components/modals'
+// // modals
+// export * from './components/modals'
 
-// nav
-export * from './components/nav/nav-container'
-export * from './components/nav/root-nav'
+// // nav
+// export * from './components/nav/nav-container'
+// export * from './components/nav/root-nav'
 
 // pages-breadcrumbs
 export { default as PageBreadCrumb } from './components/pages-breadcrumbs'
@@ -176,28 +176,28 @@ export { default as PictureCrop } from './components/picture-crop'
 export * from './components/picture-crop'
 
 // policies
-export { default as OrganizationPolicies } from './components/policies'
-export * from './components/policies'
+// export { default as OrganizationPolicies } from './components/policies'
+// export * from './components/policies'
 
 // qr-code
 export * from './components/qr-code'
 export * from './components/qr-code/qr-code-downloadable'
 export * from './components/qr-code/qr-code'
 
-// qrcode-scanner
-export { default as QrCodeScanner } from './components/qrcode-scanner'
-export * from './components/qrcode-scanner'
+// // qrcode-scanner
+// export { default as QrCodeScanner } from './components/qrcode-scanner'
+// export * from './components/qrcode-scanner'
 
 // search
 export * from './components/search/generic-search-input'
 
-// signature
-export * from './components/signature'
-export * from './components/signature/capture-signature'
-export * from './components/signature/draw-signature'
-export * from './components/signature/signature-field'
-export * from './components/signature/signature-picker-uploader'
-export * from './components/signature/upload-signature'
+// // signature
+// export * from './components/signature'
+// export * from './components/signature/capture-signature'
+// export * from './components/signature/draw-signature'
+// export * from './components/signature/signature-field'
+// export * from './components/signature/signature-picker-uploader'
+// export * from './components/signature/upload-signature'
 
 // single-image-uploader
 export * from './components/single-image-uploader/picture-drop'
@@ -210,7 +210,7 @@ export * from './components/single-image-uploader/upload-options'
 export * from './components/spinners/loading-spinner'
 
 // text-editor
-export * from './components/text-editor'
+export { default as TextEditor } from './components/text-editor'
 export * from './components/text-editor/toolbar'
 
 // text-renderer

@@ -1,0 +1,9 @@
+{
+    "name": "ecoop-logo",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/ui/ecoop-logo/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project ecoop-logo --web",
+    "targets": {}
+}

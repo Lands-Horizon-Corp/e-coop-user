@@ -1,0 +1,9 @@
+{
+    "name": "image-preview",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/ui/image-preview/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project image-preview --web",
+    "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "qrcode-scanner",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/ui/qrcode-scanner/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project qrcode-scanner --web",
+    "targets": {}
+}

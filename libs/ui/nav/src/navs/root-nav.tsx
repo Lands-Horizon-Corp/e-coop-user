@@ -1,0 +1,17 @@
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { IBaseProps } from '@e-coop-monorepo/shared/types'
+
+const RootNav = ({ className, children }: IBaseProps) => {
+    return (
+        <nav
+            className={cn(
+                'flex items-center justify-between gap-x-2 px-4 lg:px-16 fixed top-0 z-20 w-full backdrop-blur-2xl',
+                className
+            )}
+        >
+            {children}
+        </nav>
+    )
+}
+
+export default RootNav

@@ -1,0 +1,9 @@
+{
+    "name": "download-policies",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/shared/download-policies/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project download-policies --web",
+    "targets": {}
+}
