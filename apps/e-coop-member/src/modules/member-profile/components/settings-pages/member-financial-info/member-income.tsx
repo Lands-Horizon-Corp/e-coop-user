@@ -2,10 +2,9 @@ import { forwardRef } from 'react'
 
 import type {
     IMemberIncome,
-    IMemberProfile} from '@e-coop-monorepo/modules/member-profile';
-import {
-    useDeleteMemberProfileIncome,
+    IMemberProfile,
 } from '@e-coop-monorepo/modules/member-profile'
+import { useDeleteMemberProfileIncome } from '@e-coop-monorepo/modules/member-profile'
 import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
 import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { formatNumber } from '@e-coop-monorepo/shared/helpers'

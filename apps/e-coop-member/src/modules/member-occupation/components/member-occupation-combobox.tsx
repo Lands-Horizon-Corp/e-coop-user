@@ -23,11 +23,8 @@ import { Check } from 'lucide-react'
 
 import { useGetAll } from '../member-occupation.service'
 import type { IMemberOccupation } from '../member-occupation.types'
-import type {
-    IMemberOccupationCreateUpdateFormProps} from './member-occupation-create-update-form';
-import {
-    MemberOccupationCreateUpdateFormModal,
-} from './member-occupation-create-update-form'
+import type { IMemberOccupationCreateUpdateFormProps } from './member-occupation-create-update-form'
+import { MemberOccupationCreateUpdateFormModal } from './member-occupation-create-update-form'
 
 export type IMemberOccupationComboboxCreateProps = Pick<
     IMemberOccupationCreateUpdateFormProps,

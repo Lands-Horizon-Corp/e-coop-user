@@ -3,13 +3,8 @@ import { forwardRef, useMemo, useState } from 'react'
 import Fuse from 'fuse.js'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type {
-    TIcon} from '@e-coop-monorepo/ui/core';
-import {
-    CheckIcon,
-    ChevronDownIcon,
-    IconMap
-} from '@e-coop-monorepo/ui/core'
+import type { TIcon } from '@e-coop-monorepo/ui/core'
+import { CheckIcon, ChevronDownIcon, IconMap } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {
     Command,

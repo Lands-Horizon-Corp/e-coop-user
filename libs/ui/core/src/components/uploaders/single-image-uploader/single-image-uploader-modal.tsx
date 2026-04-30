@@ -1,7 +1,7 @@
-import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import type { IModalProps } from '@e-coop-monorepo/ui/core'
 import Modal from '@e-coop-monorepo/ui/core'
 
-import type { ISingleImageUploadProps } from '.';
+import type { ISingleImageUploadProps } from '.'
 import SingleImageUpload from '.'
 
 interface Props extends IModalProps {

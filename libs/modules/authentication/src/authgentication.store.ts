@@ -2,7 +2,8 @@ import type { IBranch } from '@e-coop-monorepo/modules/branch'
 import type { IOrganization } from '@e-coop-monorepo/modules/organization'
 import type {
     GetCrudPermissionOpts,
-    IHasPermissionOpts} from '@e-coop-monorepo/modules/permission';
+    IHasPermissionOpts,
+} from '@e-coop-monorepo/modules/permission'
 import {
     getCrudPermissions,
     hasPermission,

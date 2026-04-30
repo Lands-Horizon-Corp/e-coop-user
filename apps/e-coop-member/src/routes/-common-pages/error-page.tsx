@@ -1,4 +1,4 @@
-import type { ErrorComponentProps} from '@tanstack/react-router';
+import type { ErrorComponentProps } from '@tanstack/react-router'
 import { useRouter } from '@tanstack/react-router'
 
 import { allErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'

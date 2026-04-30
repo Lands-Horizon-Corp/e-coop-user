@@ -38,7 +38,7 @@ import {
 import { Input } from '@e-coop-monorepo/ui/core'
 import { Label } from '@e-coop-monorepo/ui/core'
 
-import type { MapLocation } from '..';
+import type { MapLocation } from '..'
 import MapView from '..'
 import { useMap } from '../map.provider'
 import {

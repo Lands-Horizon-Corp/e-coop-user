@@ -28,7 +28,7 @@ import { ScrollArea } from '@e-coop-monorepo/ui/core'
 import { FileText } from 'lucide-react'
 
 import { useKYCRegister } from '../..'
-import type { TKYCAgreeTermsSchema } from '../../kyc.validation';
+import type { TKYCAgreeTermsSchema } from '../../kyc.validation'
 import { KYCRegisterSchema } from '../../kyc.validation'
 
 interface AgreeTermRegisterSectionProps {

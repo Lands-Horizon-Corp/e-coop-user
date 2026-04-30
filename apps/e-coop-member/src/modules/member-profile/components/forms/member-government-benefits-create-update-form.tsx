@@ -7,9 +7,13 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type {
+    IClassProps,
+    IForm,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import type { IModalProps } from '@e-coop-monorepo/ui/core'
 import Modal from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
@@ -22,11 +26,8 @@ import type {
     IGovernmentId,
     IMemberGovernmentBenefitRequest,
 } from '../../member-profile.types'
-import type {
-    TMemberGovernmentBenefitSchema} from '../../member-profile.validation';
-import {
-    MemberGovernmentBenefitSchema
-} from '../../member-profile.validation'
+import type { TMemberGovernmentBenefitSchema } from '../../member-profile.validation'
+import { MemberGovernmentBenefitSchema } from '../../member-profile.validation'
 import { CountryCombobox } from '../comboboxes/country-combobox'
 import GovernmentIdCombobox, {
     mockGovernmentIds,

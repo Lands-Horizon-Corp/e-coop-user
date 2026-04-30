@@ -4,7 +4,7 @@ import { useInternalState } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import { MagnifyingGlassIcon } from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import type { IModalProps } from '@e-coop-monorepo/ui/core'
 import Modal from '@e-coop-monorepo/ui/core'
 import LoadingSpinner from '@e-coop-monorepo/ui/core'
 import {

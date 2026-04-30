@@ -1,4 +1,4 @@
-import type { DragEvent} from 'react';
+import type { DragEvent } from 'react'
 import { useState } from 'react'
 
 import { toast } from 'sonner'

@@ -3,11 +3,9 @@ import { useState } from 'react'
 import type {
     IFilterComponentProps,
     TFilterModes,
-    TSearchFilter} from '@/contexts/filter-context';
-import {
-    filterModeMap,
-    useFilter,
+    TSearchFilter,
 } from '@/contexts/filter-context'
+import { filterModeMap, useFilter } from '@/contexts/filter-context'
 import logger from '@/helpers/loggers/logger'
 import TimePicker from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'

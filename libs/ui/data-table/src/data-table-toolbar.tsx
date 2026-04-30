@@ -13,18 +13,14 @@ import { Separator } from '@e-coop-monorepo/ui/core'
 import type { Table } from '@tanstack/react-table'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import type { IRefreshButtonProps } from '../buttons/refresh-button';
+import type { IRefreshButtonProps } from '../buttons/refresh-button'
 import RefreshButton from '../buttons/refresh-button'
 import DatatableColumnVisibility from './data-table-actions/data-table-column-visibility'
-import type {
-    IDataTableCreateActionProps,
-} from './data-table-actions/data-table-create-action';
+import type { IDataTableCreateActionProps } from './data-table-actions/data-table-create-action'
 import DataTableCreateAction from './data-table-actions/data-table-create-action'
 import type { IDataTableFilterLogicOptionProps } from './data-table-actions/data-table-options-menu/filter-logic-option'
 import DataTableUnselect from './data-table-actions/data-table-unselect'
-import type {
-    IGlobalSearchProps,
-} from './data-table-filters/data-table-global-search';
+import type { IGlobalSearchProps } from './data-table-filters/data-table-global-search'
 import DataTableGlobalSearch from './data-table-filters/data-table-global-search'
 
 export interface IDataTableToolbarProps<TData> extends IClassProps {

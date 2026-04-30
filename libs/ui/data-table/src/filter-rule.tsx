@@ -1,9 +1,8 @@
 import type {
     TColumnDataTypes,
-    TFinalFilter} from '@e-coop-monorepo/shared/contexts';
-import {
-    filterModeMap,
+    TFinalFilter,
 } from '@e-coop-monorepo/shared/contexts'
+import { filterModeMap } from '@e-coop-monorepo/shared/contexts'
 import type { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
 import { DateRangePicker } from '@e-coop-monorepo/ui/core'
 import { TrashIcon } from '@e-coop-monorepo/ui/core'

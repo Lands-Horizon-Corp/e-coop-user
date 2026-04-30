@@ -16,11 +16,8 @@ import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useGetTransactionById } from '../transaction.service'
 import { paymentORResolver } from '../transaction.utils'
-import type {
-    TTransactionFormSchema} from '../transaction.validation';
-import {
-    TransactionFromSchema,
-} from '../transaction.validation'
+import type { TTransactionFormSchema } from '../transaction.validation'
+import { TransactionFromSchema } from '../transaction.validation'
 
 // Navigation helper
 const useTransactionNavigation = (fullPath: string) => {

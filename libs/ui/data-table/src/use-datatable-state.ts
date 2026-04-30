@@ -2,7 +2,11 @@ import { useCallback, useEffect, useState } from 'react'
 
 import { APP_VERSION } from '@e-coop-monorepo/shared/constants'
 import { getLocalStorage, setLocalStorage } from '@e-coop-monorepo/shared/hooks'
-import type { ColumnDef, OnChangeFn, RowSelectionState } from '@tanstack/react-table'
+import type {
+    ColumnDef,
+    OnChangeFn,
+    RowSelectionState,
+} from '@tanstack/react-table'
 
 export type TDataTableDisplayType = 'Default' | 'Full'
 

@@ -1,7 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type {
-    ITransactionPaginated} from '@e-coop-monorepo/modules/transaction';
+import type { ITransactionPaginated } from '@e-coop-monorepo/modules/transaction'
 import {
     getPaginated,
     transactionAPIRoute,

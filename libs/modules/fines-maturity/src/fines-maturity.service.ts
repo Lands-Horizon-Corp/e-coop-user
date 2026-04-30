@@ -1,7 +1,10 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import type { IFinesMaturity, IFinesMaturityRequest } from './fines-maturity.types'
+import type {
+    IFinesMaturity,
+    IFinesMaturityRequest,
+} from './fines-maturity.types'
 
 const {
     apiCrudHooks,

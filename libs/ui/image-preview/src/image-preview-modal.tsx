@@ -7,17 +7,11 @@ import { useImagePreview } from '@/store/image-preview-store'
 import type { DownloadProps } from '@e-coop-monorepo/shared/types'
 
 import { XIcon } from '../icons/index'
-import type {
-    CarouselApi} from '../ui/carousel';
-import {
-    Carousel,
-    CarouselContent,
-    CarouselItem,
-} from '../ui/carousel'
+import type { CarouselApi } from '../ui/carousel'
+import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
 import { Dialog, DialogContent, DialogTitle } from '../ui/dialog'
 import { TooltipProvider } from '../ui/tooltip'
-import type {
-    CarouselOptions} from './image-preview';
+import type { CarouselOptions } from './image-preview'
 import {
     ImageContainer,
     ImagePreviewActions,

@@ -1,4 +1,4 @@
-import type { ReactNode} from 'react';
+import type { ReactNode } from 'react'
 import { useRef } from 'react'
 
 import { Navigate, useLocation } from '@tanstack/react-router'

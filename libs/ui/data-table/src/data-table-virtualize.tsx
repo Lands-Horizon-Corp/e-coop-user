@@ -11,7 +11,7 @@ import {
     TableRow,
     Table as UITable,
 } from '@e-coop-monorepo/ui/core'
-import type { Row, Table} from '@tanstack/react-table';
+import type { Row, Table } from '@tanstack/react-table'
 import { flexRender } from '@tanstack/react-table'
 import { useVirtualizer } from '@tanstack/react-virtual'
 

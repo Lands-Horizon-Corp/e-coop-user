@@ -23,11 +23,8 @@ import { Check } from 'lucide-react'
 
 import { useGetAllMemberTypes } from '../member-type.service'
 import type { IMemberType } from '../member-type.types'
-import type {
-    TMemberTypeForm} from './forms/member-type-create-update-form';
-import {
-    MemberTypeCreateUpdateFormModal
-} from './forms/member-type-create-update-form'
+import type { TMemberTypeForm } from './forms/member-type-create-update-form'
+import { MemberTypeCreateUpdateFormModal } from './forms/member-type-create-update-form'
 
 export type IMemberTypeComboboxCreateProps = Pick<
     TMemberTypeForm,

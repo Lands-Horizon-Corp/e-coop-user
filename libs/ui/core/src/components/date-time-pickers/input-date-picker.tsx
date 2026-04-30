@@ -8,7 +8,7 @@ import {
 import { format } from 'date-fns'
 
 import { CalendarIcon } from '../icons/index'
-import type { CaptionLayout} from './date-time-picker';
+import type { CaptionLayout } from './date-time-picker'
 import { DateTimePicker } from './date-time-picker'
 
 type InputDatePickerProps = {

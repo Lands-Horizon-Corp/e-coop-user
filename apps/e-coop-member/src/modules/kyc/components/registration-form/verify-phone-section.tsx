@@ -10,12 +10,8 @@ import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@e-coop-monorepo/ui/core'
 import { Phone } from 'lucide-react'
 
-import type {
-    TKYCVerifyPhoneSchema} from '../..';
-import {
-    useKYCResendPhoneOTP,
-    useKYCVerifyPhone,
-} from '../..'
+import type { TKYCVerifyPhoneSchema } from '../..'
+import { useKYCResendPhoneOTP, useKYCVerifyPhone } from '../..'
 
 interface VerifyPhoneSectionProps {
     form: UseFormReturn<TKYCVerifyPhoneSchema>

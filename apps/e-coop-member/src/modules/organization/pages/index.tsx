@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { useGetBranchesByOrganizationId } from '@e-coop-monorepo/modules/branch'
 import { CoopBackground } from '@e-coop-monorepo/modules/home'
 import Themes from '@e-coop-monorepo/modules/settings'
-import type { CustomThemeColors} from '@e-coop-monorepo/shared/providers';
+import type { CustomThemeColors } from '@e-coop-monorepo/shared/providers'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 import { FlowingGrid } from '@e-coop-monorepo/ui/core'
 

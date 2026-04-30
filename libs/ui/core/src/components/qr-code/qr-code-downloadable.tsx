@@ -1,10 +1,7 @@
 import { useRef } from 'react'
 
-import type {
-    UseDownloadOptions} from '@e-coop-monorepo/shared/hooks';
-import {
-    useDownloadElement,
-} from '@e-coop-monorepo/shared/hooks'
+import type { UseDownloadOptions } from '@e-coop-monorepo/shared/hooks'
+import { useDownloadElement } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { ChevronDownIcon, DownloadIcon } from '@e-coop-monorepo/ui/core'
 import LoadingSpinner from '@e-coop-monorepo/ui/core'
@@ -17,7 +14,7 @@ import {
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui/core'
 
-import type { IQrCodeProps } from './qr-code';
+import type { IQrCodeProps } from './qr-code'
 import QrCode from './qr-code'
 
 interface Props

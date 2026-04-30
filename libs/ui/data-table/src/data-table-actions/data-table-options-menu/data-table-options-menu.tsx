@@ -10,13 +10,9 @@ import {
 } from '@e-coop-monorepo/ui/core'
 import type { Table } from '@tanstack/react-table'
 
-import type {
-    IDataTableFilterLogicOptionProps,
-} from './filter-logic-option';
+import type { IDataTableFilterLogicOptionProps } from './filter-logic-option'
 import DataTableFilterLogicOption from './filter-logic-option'
-import type {
-    IDataTableScrollableOptionProps,
-} from './scroll-option';
+import type { IDataTableScrollableOptionProps } from './scroll-option'
 import DataTableScrollOption from './scroll-option'
 
 interface Props<T> extends IClassProps {

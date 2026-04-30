@@ -1,5 +1,5 @@
-import type { MouseEvent, ReactElement} from 'react';
-import type React from 'react';
+import type { MouseEvent, ReactElement } from 'react'
+import type React from 'react'
 import { cloneElement } from 'react'
 
 import type { IMedia } from '@e-coop-monorepo/modules/media'

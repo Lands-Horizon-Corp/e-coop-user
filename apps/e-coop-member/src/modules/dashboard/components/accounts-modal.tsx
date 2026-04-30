@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import type { IModalProps } from '@e-coop-monorepo/ui/core'
 import Modal from '@e-coop-monorepo/ui/core'
 import { Badge } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'

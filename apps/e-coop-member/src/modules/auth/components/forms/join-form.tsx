@@ -6,10 +6,9 @@ import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import type {
     IMemberProfile,
-    IQuickCreateMemberProfile} from '@e-coop-monorepo/modules/member-profile';
-import {
-    QuickCreateMemberProfileSchema,
+    IQuickCreateMemberProfile,
 } from '@e-coop-monorepo/modules/member-profile'
+import { QuickCreateMemberProfileSchema } from '@e-coop-monorepo/modules/member-profile'
 import CivilStatusCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/civil-status-combobox'
 import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
 import MemberGenderCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/member-gender-combobox'

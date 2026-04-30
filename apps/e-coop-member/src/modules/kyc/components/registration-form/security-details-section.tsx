@@ -20,7 +20,7 @@ import PasswordInput from '@e-coop-monorepo/ui/core'
 import { PhoneInput } from '@e-coop-monorepo/ui/core'
 import { Lock } from 'lucide-react'
 
-import type { TKYCVerifySecurityDetailsSchema} from '../..';
+import type { TKYCVerifySecurityDetailsSchema } from '../..'
 import { useKYCSecurityDetails } from '../..'
 
 interface SecurityDetailSectionProps {

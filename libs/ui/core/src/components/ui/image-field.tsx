@@ -1,11 +1,10 @@
-import type { ReactElement} from 'react';
+import type { ReactElement } from 'react'
 import { forwardRef, useState } from 'react'
 
 import type { IMedia } from '@e-coop-monorepo/modules/media'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import type {
-    ButtonProps} from '@e-coop-monorepo/ui/core';
+import type { ButtonProps } from '@e-coop-monorepo/ui/core'
 import {
     Button,
     ImageDisplay,

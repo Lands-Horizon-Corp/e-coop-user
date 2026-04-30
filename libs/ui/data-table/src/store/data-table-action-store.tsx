@@ -1,8 +1,8 @@
-import type { ReactNode} from 'react';
+import type { ReactNode } from 'react'
 import { createContext, useContext, useMemo } from 'react'
 
 import { useStore } from 'zustand'
-import type { StoreApi} from 'zustand/vanilla';
+import type { StoreApi } from 'zustand/vanilla'
 import { createStore } from 'zustand/vanilla'
 
 export type RowActionType = string

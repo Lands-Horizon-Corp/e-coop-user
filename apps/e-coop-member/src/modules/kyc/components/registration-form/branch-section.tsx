@@ -1,6 +1,6 @@
 import type { UseFormReturn } from 'react-hook-form'
 
-import type { IBranch} from '@e-coop-monorepo/modules/branch';
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
 import { useGetAllBranch } from '@e-coop-monorepo/modules/branch'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'

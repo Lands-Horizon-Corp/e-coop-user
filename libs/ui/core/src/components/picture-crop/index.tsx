@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import type { Area } from 'react-easy-crop';
+import type { Area } from 'react-easy-crop'
 import Cropper from 'react-easy-crop'
 import { toast } from 'sonner'
 

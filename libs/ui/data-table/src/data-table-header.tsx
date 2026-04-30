@@ -4,7 +4,7 @@ import {
 } from '@dnd-kit/sortable'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { TableHead, TableHeader, TableRow } from '@e-coop-monorepo/ui/core'
-import type { HeaderGroup} from '@tanstack/react-table';
+import type { HeaderGroup } from '@tanstack/react-table'
 import { flexRender } from '@tanstack/react-table'
 
 import { getPinningStyles } from './data-table-utils'

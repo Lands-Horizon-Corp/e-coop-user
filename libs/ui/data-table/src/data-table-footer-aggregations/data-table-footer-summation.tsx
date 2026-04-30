@@ -1,4 +1,4 @@
-import type { ReactNode} from 'react';
+import type { ReactNode } from 'react'
 import { useMemo } from 'react'
 
 import { formatNumber } from '@e-coop-monorepo/shared/helpers'

@@ -4,7 +4,7 @@ import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type {
     CurrencyInputProps as BaseCurrencyInputProps,
     CurrencyInputOnChangeValues,
-} from 'react-currency-input-field';
+} from 'react-currency-input-field'
 import CurrencyInputField from 'react-currency-input-field'
 
 import type { ICurrency } from '../currency.types'

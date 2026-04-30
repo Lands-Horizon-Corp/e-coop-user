@@ -9,10 +9,14 @@ import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type {
+    IClassProps,
+    IForm,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 import RelationshipCombobox from '@e-coop-monorepo/ui/core'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import type { IModalProps } from '@e-coop-monorepo/ui/core'
 import Modal from '@e-coop-monorepo/ui/core'
 import TextEditor from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'

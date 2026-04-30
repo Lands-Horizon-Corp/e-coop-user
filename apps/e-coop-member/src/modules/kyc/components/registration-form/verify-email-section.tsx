@@ -10,12 +10,8 @@ import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@e-coop-monorepo/ui/core'
 import { Mail } from 'lucide-react'
 
-import type {
-    TKYCVerifyEmailSchema} from '../..';
-import {
-    useKYCResendEmailOTP,
-    useKYCVerifyEmail,
-} from '../..'
+import type { TKYCVerifyEmailSchema } from '../..'
+import { useKYCResendEmailOTP, useKYCVerifyEmail } from '../..'
 
 interface VerifyEmailSectionProps {
     form: UseFormReturn<TKYCVerifyEmailSchema>

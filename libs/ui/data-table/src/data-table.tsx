@@ -1,7 +1,6 @@
 import type { ReactNode } from 'react'
 
-import type {
-    DragEndEvent} from '@dnd-kit/core';
+import type { DragEndEvent } from '@dnd-kit/core'
 import {
     DndContext,
     KeyboardSensor,

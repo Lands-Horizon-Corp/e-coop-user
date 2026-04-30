@@ -4,12 +4,9 @@ import type {
     ControllerProps,
     FieldError,
     FieldPath,
-    FieldValues} from 'react-hook-form';
-import {
-    Controller,
-    FormProvider,
-    useFormContext,
+    FieldValues,
 } from 'react-hook-form'
+import { Controller, FormProvider, useFormContext } from 'react-hook-form'
 
 import type * as LabelPrimitive from '@radix-ui/react-label'
 import { Slot } from '@radix-ui/react-slot'

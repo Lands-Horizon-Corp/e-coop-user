@@ -8,10 +8,9 @@ import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type {
     DropzoneOptions,
     FileRejection,
-    FileWithPath} from 'react-dropzone';
-import {
-    useDropzone,
+    FileWithPath,
 } from 'react-dropzone'
+import { useDropzone } from 'react-dropzone'
 
 import {
     HardDriveUploadIcon,

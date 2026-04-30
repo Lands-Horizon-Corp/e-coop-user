@@ -1,4 +1,4 @@
-import type { ResolvedTheme} from '@e-coop-monorepo/shared/providers';
+import type { ResolvedTheme } from '@e-coop-monorepo/shared/providers'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IClassProps } from '@e-coop-monorepo/shared/types'

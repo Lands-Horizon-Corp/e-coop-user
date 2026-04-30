@@ -1,8 +1,5 @@
-import type {
-    TFootstepLevel} from '@e-coop-monorepo/modules/footstep';
-import {
-    createFootstep,
-} from '@e-coop-monorepo/modules/footstep'
+import type { TFootstepLevel } from '@e-coop-monorepo/modules/footstep'
+import { createFootstep } from '@e-coop-monorepo/modules/footstep'
 import { IS_STAGING } from '@e-coop-monorepo/shared/constants'
 
 /* eslint-disable no-console */

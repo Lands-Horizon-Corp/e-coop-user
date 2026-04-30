@@ -2,15 +2,12 @@ import { useCallback } from 'react'
 
 import { toast } from 'sonner'
 
-import type {
-    IQrScanResult} from '@e-coop-monorepo/modules/qr-crypto';
-import {
-    useQrDecryptData,
-} from '@e-coop-monorepo/modules/qr-crypto'
+import type { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
+import { useQrDecryptData } from '@e-coop-monorepo/modules/qr-crypto'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IDetectedBarcode } from '@yudiel/react-qr-scanner'
 
-import type { IModalProps } from '../modals/modal';
+import type { IModalProps } from '../modals/modal'
 import Modal from '../modals/modal'
 import LoadingSpinner from '../spinners/loading-spinner'
 import QrScanner from './qr-scanner'

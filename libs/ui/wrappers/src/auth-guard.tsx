@@ -1,15 +1,12 @@
-import type { ReactNode} from 'react';
+import type { ReactNode } from 'react'
 import { useCallback, useRef } from 'react'
 
 import { Navigate, useLocation, useRouter } from '@tanstack/react-router'
 import { AxiosError } from 'axios'
 
 import LOADING_ARTWORK_GIF from '@/assets/gifs/e-coop-artwork-loading.gif'
-import type {
-    IAuthContext} from '@e-coop-monorepo/modules/authentication';
-import {
-    useAuthContext,
-} from '@e-coop-monorepo/modules/authentication'
+import type { IAuthContext } from '@e-coop-monorepo/modules/authentication'
+import { useAuthContext } from '@e-coop-monorepo/modules/authentication'
 import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
 import type { IUserBase } from '@e-coop-monorepo/modules/user'
 import { UserAvatar } from '@e-coop-monorepo/modules/user'

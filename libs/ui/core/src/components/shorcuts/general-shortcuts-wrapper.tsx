@@ -1,12 +1,5 @@
-import type {
-    FC,
-    ReactNode} from 'react';
-import {
-    createContext,
-    useContext,
-    useEffect,
-    useState,
-} from 'react'
+import type { FC, ReactNode } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 
 import { SHORTCUT_SCOPES } from '@/constants'
 import { useHotkeysContext } from 'react-hotkeys-hook'

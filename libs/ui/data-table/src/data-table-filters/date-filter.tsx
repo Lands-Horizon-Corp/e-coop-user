@@ -1,11 +1,9 @@
 import type {
     IFilterComponentProps,
     TFilterModes,
-    TSearchFilter} from '@/contexts/filter-context';
-import {
-    filterModeMap,
-    useFilter,
+    TSearchFilter,
 } from '@/contexts/filter-context'
+import { filterModeMap, useFilter } from '@/contexts/filter-context'
 import InputDatePicker from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {

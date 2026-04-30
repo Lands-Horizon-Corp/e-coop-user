@@ -20,11 +20,8 @@ import {
 } from '@e-coop-monorepo/ui/core'
 import { Check } from 'lucide-react'
 
-import type {
-    TMemberGenderHookMode} from '../member-gender.service';
-import {
-    useGetAllMemberGender,
-} from '../member-gender.service'
+import type { TMemberGenderHookMode } from '../member-gender.service'
+import { useGetAllMemberGender } from '../member-gender.service'
 import type { IMemberGender } from '../member-gender.types'
 
 // import {

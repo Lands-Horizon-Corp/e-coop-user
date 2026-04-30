@@ -7,9 +7,13 @@ import { CurrencyInput } from '@e-coop-monorepo/modules/currency'
 import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type {
+    IClassProps,
+    IForm,
+    TEntityId,
+} from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import type { IModalProps } from '@e-coop-monorepo/ui/core'
 import Modal from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
@@ -18,11 +22,8 @@ import { Input } from '@e-coop-monorepo/ui/core'
 import InputDate from '@e-coop-monorepo/ui/core'
 import TextEditor from '@e-coop-monorepo/ui/core'
 
-import type {
-    IMemberAssetRequest} from '../../member-profile.validation';
-import {
-    MemberAssetSchema,
-} from '../../member-profile.validation'
+import type { IMemberAssetRequest } from '../../member-profile.validation'
+import { MemberAssetSchema } from '../../member-profile.validation'
 
 type TMemberAssetFormValues = z.infer<typeof MemberAssetSchema>
 

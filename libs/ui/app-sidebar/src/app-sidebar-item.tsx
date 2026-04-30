@@ -13,8 +13,7 @@ import {
     CollapsibleTrigger,
 } from '../ui/collapsible'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
-import type {
-    sidebarMenuButtonVariants} from '../ui/sidebar';
+import type { sidebarMenuButtonVariants } from '../ui/sidebar'
 import {
     SidebarMenuButton,
     SidebarMenuItem,

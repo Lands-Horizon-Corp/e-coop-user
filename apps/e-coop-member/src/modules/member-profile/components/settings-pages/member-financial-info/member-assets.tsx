@@ -4,10 +4,9 @@ import { toast } from 'sonner'
 
 import type {
     IMemberAsset,
-    IMemberProfile} from '@e-coop-monorepo/modules/member-profile';
-import {
-    useDeleteMemberProfileAsset,
+    IMemberProfile,
 } from '@e-coop-monorepo/modules/member-profile'
+import { useDeleteMemberProfileAsset } from '@e-coop-monorepo/modules/member-profile'
 import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { formatNumber } from '@e-coop-monorepo/shared/helpers'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'

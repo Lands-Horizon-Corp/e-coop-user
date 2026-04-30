@@ -1,5 +1,4 @@
-import type {
-    TDownloadMediaProp} from '@e-coop-monorepo/modules/media';
+import type { TDownloadMediaProp } from '@e-coop-monorepo/modules/media'
 import {
     downloadMedia,
     formatBytes,

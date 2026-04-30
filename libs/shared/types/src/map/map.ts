@@ -1,6 +1,6 @@
 import type { Dispatch, SetStateAction } from 'react'
 
-import type { LatLngExpression, LatLngLiteral } from 'leaflet';
+import type { LatLngExpression, LatLngLiteral } from 'leaflet'
 import type L from 'leaflet'
 import type { MapContainerProps } from 'react-leaflet'
 

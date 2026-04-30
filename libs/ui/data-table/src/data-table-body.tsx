@@ -9,7 +9,7 @@ import {
     EmptyTitle,
 } from '@e-coop-monorepo/ui/core'
 import { TableBody, TableCell, TableRow } from '@e-coop-monorepo/ui/core'
-import type { Row} from '@tanstack/react-table';
+import type { Row } from '@tanstack/react-table'
 import { flexRender } from '@tanstack/react-table'
 
 import { MagnifyingGlassIcon } from '../icons/index'

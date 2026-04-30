@@ -1,14 +1,13 @@
 import { useEffect } from 'react'
 
-import type { UseFormReturn} from 'react-hook-form';
+import type { UseFormReturn } from 'react-hook-form'
 import { useFieldArray, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type {
-    TMemberGovernmentBenefitSchema} from '@e-coop-monorepo/modules/member-government-benefit';
+import type { TMemberGovernmentBenefitSchema } from '@e-coop-monorepo/modules/member-government-benefit'
 import {
     MemberGovernmentBenefitSchema,
     useGetAllGovernmentIds,
@@ -25,7 +24,7 @@ import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import type { IModalProps } from '@e-coop-monorepo/ui/core'
 import Modal from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {
@@ -41,11 +40,8 @@ import { Input } from '@e-coop-monorepo/ui/core'
 import InputDate from '@e-coop-monorepo/ui/core'
 import { CreditCard, MoreVertical, Pencil, Plus, Trash2 } from 'lucide-react'
 
-import type {
-    IKYCVerifyGovernmentBenefitsRequest} from '../..';
-import {
-    useKYCVerifyGovernmentBenefits,
-} from '../..'
+import type { IKYCVerifyGovernmentBenefitsRequest } from '../..'
+import { useKYCVerifyGovernmentBenefits } from '../..'
 import type { TKYCVerifyGovernmentBenefitsSchema } from '../../kyc.validation'
 
 interface VerifyGovernmentBenefitsSectionProps {

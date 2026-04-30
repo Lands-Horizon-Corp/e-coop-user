@@ -2,10 +2,9 @@ import { forwardRef, useState } from 'react'
 
 import type {
     IMemberExpense,
-    IMemberProfile} from '@e-coop-monorepo/modules/member-profile';
-import {
-    useDeleteMemberProfileExpense,
+    IMemberProfile,
 } from '@e-coop-monorepo/modules/member-profile'
+import { useDeleteMemberProfileExpense } from '@e-coop-monorepo/modules/member-profile'
 import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
 import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { formatNumber } from '@e-coop-monorepo/shared/helpers'

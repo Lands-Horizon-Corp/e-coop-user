@@ -1,4 +1,4 @@
-import type { NotFoundRouteProps} from '@tanstack/react-router';
+import type { NotFoundRouteProps } from '@tanstack/react-router'
 import { useRouter } from '@tanstack/react-router'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'

@@ -14,9 +14,7 @@ import { usePagination } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import DataTable from '@e-coop-monorepo/ui/core'
 import DataTablePagination from '@e-coop-monorepo/ui/core'
-import type {
-    IDataTableToolbarProps,
-} from '@e-coop-monorepo/ui/core';
+import type { IDataTableToolbarProps } from '@e-coop-monorepo/ui/core'
 import DataTableToolbar from '@e-coop-monorepo/ui/core'
 import { TableRowActionStoreProvider } from '@e-coop-monorepo/ui/core'
 import type { TableProps } from '@e-coop-monorepo/ui/core'
@@ -30,8 +28,7 @@ import {
     useReactTable,
 } from '@tanstack/react-table'
 
-import type {
-    IMemberOccupationTableColumnProps} from './columns';
+import type { IMemberOccupationTableColumnProps } from './columns'
 import memberOccupationColumns, {
     memberOccupationGlobalSearchTargets,
 } from './columns'

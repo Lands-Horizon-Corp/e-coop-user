@@ -2,10 +2,9 @@ import * as React from 'react'
 
 import type {
     ICurrency,
-    TCurrencyHookMode} from '@e-coop-monorepo/modules/currency';
-import {
-    useGetAllCurrency,
+    TCurrencyHookMode,
 } from '@e-coop-monorepo/modules/currency'
+import { useGetAllCurrency } from '@e-coop-monorepo/modules/currency'
 import { findCountry } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
