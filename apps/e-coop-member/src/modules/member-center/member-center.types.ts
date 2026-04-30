@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { MemberCenterSchema } from './member-center.validation'
+import type { MemberCenterSchema } from './member-center.validation'
 
 export type IMemberCenterRequest = z.infer<typeof MemberCenterSchema>
 

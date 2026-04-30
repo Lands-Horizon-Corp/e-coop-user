@@ -1,18 +1,20 @@
 import { useEffect } from 'react'
 
-import { UseFormReturn, useFieldArray, useForm } from 'react-hook-form'
+import type { UseFormReturn} from 'react-hook-form';
+import { useFieldArray, useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type {
+    TMemberGovernmentBenefitSchema} from '@e-coop-monorepo/modules/member-government-benefit';
 import {
     MemberGovernmentBenefitSchema,
-    TMemberGovernmentBenefitSchema,
     useGetAllGovernmentIds,
 } from '@e-coop-monorepo/modules/member-government-benefit'
 import GovernmentIdCombobox from '@e-coop-monorepo/modules/member-government-benefit/components/government-id-combobox'
-import { IGovernmentId } from '@e-coop-monorepo/modules/member-profile'
+import type { IGovernmentId } from '@e-coop-monorepo/modules/member-profile'
 import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
 import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
@@ -21,9 +23,10 @@ import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {
     DropdownMenu,
@@ -38,11 +41,12 @@ import { Input } from '@e-coop-monorepo/ui/core'
 import InputDate from '@e-coop-monorepo/ui/core'
 import { CreditCard, MoreVertical, Pencil, Plus, Trash2 } from 'lucide-react'
 
+import type {
+    IKYCVerifyGovernmentBenefitsRequest} from '../..';
 import {
-    IKYCVerifyGovernmentBenefitsRequest,
     useKYCVerifyGovernmentBenefits,
 } from '../..'
-import { TKYCVerifyGovernmentBenefitsSchema } from '../../kyc.validation'
+import type { TKYCVerifyGovernmentBenefitsSchema } from '../../kyc.validation'
 
 interface VerifyGovernmentBenefitsSectionProps {
     form: UseFormReturn<TKYCVerifyGovernmentBenefitsSchema>

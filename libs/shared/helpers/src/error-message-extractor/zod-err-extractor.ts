@@ -1,6 +1,6 @@
 import { ZodError } from 'zod'
 
-import { TErrorMessageExtractor } from './error-message-extractor.types'
+import type { TErrorMessageExtractor } from './error-message-extractor.types'
 
 export const zodErrExtractor: TErrorMessageExtractor = [
     ZodError as unknown as new (...args: unknown[]) => Error,

@@ -1,11 +1,11 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import { Navigate, useRouter } from '@tanstack/react-router'
 
 import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
-import { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
+import type { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
 import { UserAvatar } from '@e-coop-monorepo/modules/user'
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { BadgeExclamationFillIcon } from '@e-coop-monorepo/ui/core'
 import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'

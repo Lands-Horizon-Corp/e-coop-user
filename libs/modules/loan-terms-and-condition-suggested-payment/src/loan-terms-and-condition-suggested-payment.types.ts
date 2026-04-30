@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { LoanTermsAndConditionSuggestedPaymentSchema } from './loan-terms-and-condition-suggested-payment.validation'
+import type { LoanTermsAndConditionSuggestedPaymentSchema } from './loan-terms-and-condition-suggested-payment.validation'
 
 export interface ILoanTermsAndConditionSuggestedPayment extends IBaseEntityMeta {
     loan_transaction_id: TEntityId

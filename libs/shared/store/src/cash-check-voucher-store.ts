@@ -1,5 +1,5 @@
-import { ICashCheckVoucherEntryRequest } from '@e-coop-monorepo/modules/cash-check-voucher-entry'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { ICashCheckVoucherEntryRequest } from '@e-coop-monorepo/modules/cash-check-voucher-entry'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
 
 export interface ICashCheckVoucherStore {

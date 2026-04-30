@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { LoanStatusSchema } from './loan-status.validation'
+import type { LoanStatusSchema } from './loan-status.validation'
 
 export interface ILoanStatus extends IBaseEntityMeta {
     name: string

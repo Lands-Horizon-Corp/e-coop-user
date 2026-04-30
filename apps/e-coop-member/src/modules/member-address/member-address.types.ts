@@ -1,9 +1,9 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { MemberAddressSchema } from './member-address.validation'
+import type { MemberAddressSchema } from './member-address.validation'
 
 export interface IMemberAddress extends IBaseEntityMeta {
     id: TEntityId

@@ -1,4 +1,4 @@
-import { TFilterLogic } from '@e-coop-monorepo/shared/contexts'
+import type { TFilterLogic } from '@e-coop-monorepo/shared/contexts'
 import { FunnelIcon } from '@e-coop-monorepo/ui/core'
 import {
     DropdownMenuGroup,

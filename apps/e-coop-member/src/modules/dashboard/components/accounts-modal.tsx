@@ -2,8 +2,9 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs'
 
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import { Badge } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {
@@ -31,7 +32,7 @@ import {
     YAxis,
 } from 'recharts'
 
-import { Account } from '../dashboard.types'
+import type { Account } from '../dashboard.types'
 
 const balanceHistoryData = [
     { day: 'Day 1', balance: 20 },

@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { ChargesRateSchemeModeOfPaymentSchema } from './charges-rate-scheme-mode-of-payment.validation'
+import type { ChargesRateSchemeModeOfPaymentSchema } from './charges-rate-scheme-mode-of-payment.validation'
 
 export interface IChargesRateSchemeModeOfPayment extends IBaseEntityMeta {
     charges_rate_scheme_id: string

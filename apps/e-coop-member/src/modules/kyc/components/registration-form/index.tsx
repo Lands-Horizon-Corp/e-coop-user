@@ -1,15 +1,16 @@
-import { Resolver, UseFormReturn, useForm } from 'react-hook-form'
+import type { Resolver, UseFormReturn} from 'react-hook-form';
+import { useForm } from 'react-hook-form'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import { ChevronLeftIcon } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 
-import {
+import type {
     IKYCRegisterRequest,
     IKYCSelfieRequest,
     IKYCVerifyAddressesRequest,
@@ -19,11 +20,12 @@ import {
     IKYCVerifyPhoneRequest,
     IKYCVerifySecurityDetailsRequest,
 } from '../../kyc.types'
-import {
-    KYCDiscriminatedRegisterSchema,
+import type {
     TKYCAgreeTermsSchema,
     TKYCBranchSchema,
-    TKYCRegisterSchema,
+    TKYCRegisterSchema} from '../../kyc.validation';
+import {
+    KYCDiscriminatedRegisterSchema
 } from '../../kyc.validation'
 import AgreeTermRegisterSection from './agree-term-register-section'
 import BranchSection from './branch-section'

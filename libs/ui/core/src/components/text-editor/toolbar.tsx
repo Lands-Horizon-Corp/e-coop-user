@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils''
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
     BlockQuoteIcon,
     CodeBlockIcon,
@@ -18,7 +18,7 @@ import { Button } from '@e-coop-monorepo/ui/core'
 import { Toggle } from '@e-coop-monorepo/ui/core'
 import { type Editor } from '@tiptap/react'
 
-import { THeadingLevel } from './text-editor.types'
+import type { THeadingLevel } from './text-editor.types'
 
 type ToolbarProps = {
     editor: Editor | null

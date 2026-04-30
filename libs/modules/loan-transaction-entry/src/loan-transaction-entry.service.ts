@@ -1,5 +1,5 @@
 import { loanTransactionBaseKey } from '@e-coop-monorepo/modules/loan-transaction'
-import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
+import type { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     createMutationFactory,
@@ -8,7 +8,7 @@ import {
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     ILoanTransactionEntry,

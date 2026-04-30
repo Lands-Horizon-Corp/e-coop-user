@@ -1,7 +1,7 @@
 import { forwardRef, useCallback, useEffect, useState } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 
 interface ImageProps
     extends

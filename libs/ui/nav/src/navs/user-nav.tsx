@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import { Link, useLocation } from '@tanstack/react-router'
 
@@ -8,7 +8,7 @@ import { cn } from '@e-coop-monorepo/shared/tw-utils'
 // import AppSidebarToggle from '@e-coop-monorepo/ui/core'
 // import { Button } from '@e-coop-monorepo/ui/core'
 
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 // import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
 // import GeneratedReportsButton from '@e-coop-monorepo/modules/generated-report/components/generated-reports/generated-reports-button'
 // import { NotificationNav } from '@e-coop-monorepo/modules/notification/components/notification'

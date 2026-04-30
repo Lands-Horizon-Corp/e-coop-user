@@ -1,17 +1,17 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBank } from '@e-coop-monorepo/modules/bank'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import {
+import type { IBank } from '@e-coop-monorepo/modules/bank'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { CheckRemittanceSchema } from './check-remittance.validation'
+import type { CheckRemittanceSchema } from './check-remittance.validation'
 
 export interface ICheckRemittance extends IBaseEntityMeta {
     id: TEntityId

@@ -1,9 +1,9 @@
 import z from 'zod'
 
-import { IInterestRateByTermsHeaderResponse } from '@e-coop-monorepo/modules/interest-rate-by-terms-header'
-import { IInterestRateScheme } from '@e-coop-monorepo/modules/interest-rate-scheme'
-import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
-import {
+import type { IInterestRateByTermsHeaderResponse } from '@e-coop-monorepo/modules/interest-rate-by-terms-header'
+import type { IInterestRateScheme } from '@e-coop-monorepo/modules/interest-rate-scheme'
+import type { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,

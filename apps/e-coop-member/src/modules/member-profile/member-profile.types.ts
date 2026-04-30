@@ -1,4 +1,5 @@
-import {
+import type { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     ITimeStamps,
@@ -7,16 +8,15 @@ import {
     TGeneralStatus,
 } from '@e-coop-monorepo/shared/types'
 
-import { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
-import { IMemberCenter } from './components/comboboxes/member-center-combobox'
-import { IMemberClassification } from './components/comboboxes/member-classification-combobox'
-import { IMemberGender } from './components/comboboxes/member-gender-combobox'
-import { IMemberGroup } from './components/comboboxes/member-group-combobox'
-import { IMemberOccupation } from './components/comboboxes/member-occupation-combobox'
-import { IMemberType } from './components/comboboxes/member-type-combobox'
-import { FAMILY_RELATIONSHIP } from './components/comboboxes/relationship-combobox'
-import { EDUCATIONAL_ATTAINMENT } from './member-constant'
-import {
+import type { IMemberCenter } from './components/comboboxes/member-center-combobox'
+import type { IMemberClassification } from './components/comboboxes/member-classification-combobox'
+import type { IMemberGender } from './components/comboboxes/member-gender-combobox'
+import type { IMemberGroup } from './components/comboboxes/member-group-combobox'
+import type { IMemberOccupation } from './components/comboboxes/member-occupation-combobox'
+import type { IMemberType } from './components/comboboxes/member-type-combobox'
+import type { FAMILY_RELATIONSHIP } from './components/comboboxes/relationship-combobox'
+import type { EDUCATIONAL_ATTAINMENT } from './member-constant'
+import type {
     TMemberContactReferenceSchema,
     TMemberEducationalAttainmentSchema,
     TMemberExpenseSchema,

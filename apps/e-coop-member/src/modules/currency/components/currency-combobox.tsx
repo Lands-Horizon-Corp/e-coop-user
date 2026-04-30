@@ -1,13 +1,14 @@
 import * as React from 'react'
 
-import {
+import type {
     ICurrency,
-    TCurrencyHookMode,
+    TCurrencyHookMode} from '@e-coop-monorepo/modules/currency';
+import {
     useGetAllCurrency,
 } from '@e-coop-monorepo/modules/currency'
 import { findCountry } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/core'
 import LoadingSpinner from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'

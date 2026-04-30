@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
@@ -10,8 +10,9 @@ import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 import { InputOTP, InputOTPGroup, InputOTPSlot } from '@e-coop-monorepo/ui/core'
 import { Mail } from 'lucide-react'
 
+import type {
+    TKYCVerifyEmailSchema} from '../..';
 import {
-    TKYCVerifyEmailSchema,
     useKYCResendEmailOTP,
     useKYCVerifyEmail,
 } from '../..'

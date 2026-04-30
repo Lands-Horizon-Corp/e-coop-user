@@ -1,7 +1,7 @@
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IMemberCenter } from '@e-coop-monorepo/modules/member-center'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IMemberCenter } from '@e-coop-monorepo/modules/member-center'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,

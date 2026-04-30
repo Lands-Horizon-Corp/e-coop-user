@@ -1,7 +1,7 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import {
+import type {
     IGeneralLedgerTag,
     IGeneralLedgerTagRequest,
 } from './general-accounting-ledger-tag.types'

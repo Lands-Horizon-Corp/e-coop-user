@@ -1,12 +1,12 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TPaymentTypeSchema } from './payment-type.validation'
+import type { TPaymentTypeSchema } from './payment-type.validation'
 
 export type PaymentTypeEnum = 'cash' | 'check' | 'online'
 

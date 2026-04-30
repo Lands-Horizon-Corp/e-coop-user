@@ -1,10 +1,10 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { MemberExpenseSchema } from './member-expense.validation'
+import type { MemberExpenseSchema } from './member-expense.validation'
 
 // LATEST FROM ERD
 export type IMemberExpenseRequest = z.infer<typeof MemberExpenseSchema>

@@ -1,4 +1,4 @@
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 import {
     ArrowDownIcon,
     ArrowUpIcon,
@@ -18,7 +18,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui/core'
-import { Column, Table } from '@tanstack/react-table'
+import type { Column, Table } from '@tanstack/react-table'
 
 interface Props<TData, TValue> extends IBaseProps {
     table: Table<TData>

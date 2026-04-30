@@ -1,18 +1,19 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { ICategory } from '@e-coop-monorepo/modules/category'
+import type { ICategory } from '@e-coop-monorepo/modules/category'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     IOrganization,
     IOrganizationEditRequest,
     IOrganizationRequest,

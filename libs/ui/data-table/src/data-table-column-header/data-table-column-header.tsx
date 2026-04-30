@@ -1,4 +1,4 @@
-import { CSSProperties } from 'react'
+import type { CSSProperties } from 'react'
 
 import { useSortable } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
@@ -6,7 +6,7 @@ import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { PushPinSlashIcon } from '@e-coop-monorepo/ui/core'
 import ActionTooltip from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
-import { Column, Header, Table } from '@tanstack/react-table'
+import type { Column, Header, Table } from '@tanstack/react-table'
 
 import ColumnResizeHandle from './column-drag-resize'
 

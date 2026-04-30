@@ -1,16 +1,16 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { TMockCloanInputSchema } from '@e-coop-monorepo/modules/calculator'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { ILoanAmortizationSchedule } from '@e-coop-monorepo/modules/loan-amortization-schedule'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { TMockCloanInputSchema } from '@e-coop-monorepo/modules/calculator'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { ILoanAmortizationSchedule } from '@e-coop-monorepo/modules/loan-amortization-schedule'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ComputationSheetSchema } from './computation-sheet.validation'
+import type { ComputationSheetSchema } from './computation-sheet.validation'
 
 export interface IComputationSheet extends IBaseEntityMeta {
     name: string

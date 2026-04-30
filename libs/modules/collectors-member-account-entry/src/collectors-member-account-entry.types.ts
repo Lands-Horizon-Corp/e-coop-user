@@ -1,7 +1,7 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IUser } from '@e-coop-monorepo/modules/user'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,

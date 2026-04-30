@@ -1,7 +1,8 @@
-import {
+import type {
     IFilterComponentProps,
     TFilterModes,
-    TSearchFilter,
+    TSearchFilter} from '@/contexts/filter-context';
+import {
     filterModeMap,
     useFilter,
 } from '@/contexts/filter-context'

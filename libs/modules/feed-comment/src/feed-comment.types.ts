@@ -1,14 +1,14 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import {
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IUser } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { FeedCommentSchema } from './feed-comment.validation'
+import type { FeedCommentSchema } from './feed-comment.validation'
 
 export interface IFeedComment extends IBaseEntityMeta {
     feed_id: TEntityId

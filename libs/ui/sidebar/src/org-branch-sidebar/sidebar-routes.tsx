@@ -1,5 +1,5 @@
 import { hasPermissionFromAuth } from '@e-coop-monorepo/modules/authentication'
-import { TUserType } from '@e-coop-monorepo/modules/user'
+import type { TUserType } from '@e-coop-monorepo/modules/user'
 import {
     BankDuoToneIcon,
     BankIcon,
@@ -45,7 +45,7 @@ import {
     Users3LineIcon,
     WrenchIcon,
 } from '@e-coop-monorepo/ui/core'
-import {
+import type {
     INavGroupItem,
     INavItem,
     INavItemDropdown,

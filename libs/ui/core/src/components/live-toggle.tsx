@@ -1,6 +1,6 @@
 import { useLiveMonitoringStore } from '@e-coop-monorepo/shared/store'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { DotBigIcon, PlayIcon, StopIcon } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {

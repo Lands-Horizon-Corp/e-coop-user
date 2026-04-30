@@ -1,5 +1,5 @@
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 export interface IVoucherPayToRequest {
     name?: string

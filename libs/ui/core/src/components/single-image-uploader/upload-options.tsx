@@ -11,7 +11,7 @@ import {
     TabsTrigger,
 } from '@e-coop-monorepo/ui/core'
 import { WebCam } from '@e-coop-monorepo/ui/core'
-import Webcam from 'react-webcam'
+import type Webcam from 'react-webcam'
 
 import PictureDrop from './picture-drop'
 

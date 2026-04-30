@@ -1,7 +1,8 @@
 import { useRef } from 'react'
 
+import type {
+    UseDownloadOptions} from '@e-coop-monorepo/shared/hooks';
 import {
-    UseDownloadOptions,
     useDownloadElement,
 } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
@@ -16,7 +17,8 @@ import {
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui/core'
 
-import QrCode, { IQrCodeProps } from './qr-code'
+import type { IQrCodeProps } from './qr-code';
+import QrCode from './qr-code'
 
 interface Props
     extends

@@ -1,5 +1,5 @@
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,

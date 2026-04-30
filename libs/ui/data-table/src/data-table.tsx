@@ -1,8 +1,9 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
+import type {
+    DragEndEvent} from '@dnd-kit/core';
 import {
     DndContext,
-    DragEndEvent,
     KeyboardSensor,
     MouseSensor,
     TouchSensor,
@@ -13,8 +14,8 @@ import {
 import { restrictToHorizontalAxis } from '@dnd-kit/modifiers'
 import { arrayMove } from '@dnd-kit/sortable'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'
-import { Row, Table as TableInstance } from '@tanstack/react-table'
+import type { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'
+import type { Row, Table as TableInstance } from '@tanstack/react-table'
 
 import { Table } from '../ui/table'
 import DataTableBody from './data-table-body'

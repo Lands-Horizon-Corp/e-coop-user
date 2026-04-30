@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
-import { TIcon } from '@e-coop-monorepo/ui/core'
+import type { TIcon } from '@e-coop-monorepo/ui/core'
 
-import { TagTemplateSchema } from './tag-template.validation'
-import { TAG_CATEGORY } from './tag.constants'
+import type { TagTemplateSchema } from './tag-template.validation'
+import type { TAG_CATEGORY } from './tag.constants'
 
 export type TTagCategory = (typeof TAG_CATEGORY)[number]
 

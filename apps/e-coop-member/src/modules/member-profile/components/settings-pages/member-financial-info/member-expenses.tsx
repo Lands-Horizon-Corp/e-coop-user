@@ -1,8 +1,9 @@
 import { forwardRef, useState } from 'react'
 
-import {
+import type {
     IMemberExpense,
-    IMemberProfile,
+    IMemberProfile} from '@e-coop-monorepo/modules/member-profile';
+import {
     useDeleteMemberProfileExpense,
 } from '@e-coop-monorepo/modules/member-profile'
 import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'

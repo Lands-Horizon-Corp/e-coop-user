@@ -1,6 +1,6 @@
-import { Path, UseFormReturn } from 'react-hook-form'
+import type { Path, UseFormReturn } from 'react-hook-form'
 
-import { TOrganizationSchema } from '../organization.validation'
+import type { TOrganizationSchema } from '../organization.validation'
 import { organizationStepValidations } from './organization-stepper-config'
 
 export const useOrganizationFormStepperNavigation = (

@@ -2,9 +2,10 @@ import { forwardRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import {
+import type {
     IMemberAsset,
-    IMemberProfile,
+    IMemberProfile} from '@e-coop-monorepo/modules/member-profile';
+import {
     useDeleteMemberProfileAsset,
 } from '@e-coop-monorepo/modules/member-profile'
 import { toReadableDate } from '@e-coop-monorepo/shared/helpers'

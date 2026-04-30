@@ -1,6 +1,6 @@
-import { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,

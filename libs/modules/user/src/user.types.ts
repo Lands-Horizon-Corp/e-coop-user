@@ -1,15 +1,15 @@
-import { IFootstep } from '@e-coop-monorepo/modules/footstep'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { INotification } from '@e-coop-monorepo/modules/notification'
-import { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
-import {
+import type { IFootstep } from '@e-coop-monorepo/modules/footstep'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { INotification } from '@e-coop-monorepo/modules/notification'
+import type { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
+import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { USER_TYPE } from './user.constants'
+import type { USER_TYPE } from './user.constants'
 
 export type TUserType = (typeof USER_TYPE)[number] // move User module
 

@@ -1,7 +1,7 @@
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
-import {
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,

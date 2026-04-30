@@ -1,6 +1,6 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,

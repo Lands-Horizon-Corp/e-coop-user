@@ -1,10 +1,10 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { GeneralLedgerDefinitionSchema } from './general-ledger-definition.validation'
+import type { GeneralLedgerDefinitionSchema } from './general-ledger-definition.validation'
 
 export interface IGeneralLedgerDefinition extends IBaseEntityMeta {
     general_ledger_definition_entry_id?: TEntityId

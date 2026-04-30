@@ -7,16 +7,17 @@ import { CurrencyInput } from '@e-coop-monorepo/modules/currency'
 import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 import ImageField from '@e-coop-monorepo/ui/core'
 import { Input } from '@e-coop-monorepo/ui/core'
 import InputDate from '@e-coop-monorepo/ui/core'
 
-import { IMemberIncomeRequest } from '../../member-profile.types'
+import type { IMemberIncomeRequest } from '../../member-profile.types'
 import { MemberIncomeSchema } from '../../member-profile.validation'
 
 export interface IMemberIncomeFormProps

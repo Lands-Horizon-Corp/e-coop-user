@@ -1,38 +1,38 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IAccountHistory } from '@e-coop-monorepo/modules/account-history'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IAccountHistory } from '@e-coop-monorepo/modules/account-history'
+import type {
     ICashCheckVoucherGeneralORSettings,
     ILoanVoucherORSettings,
 } from '@e-coop-monorepo/modules/branch-settings'
-import { IComakerCollateral } from '@e-coop-monorepo/modules/comaker-collateral'
-import { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
-import { ILoanAccount } from '@e-coop-monorepo/modules/loan-account'
-import { ILoanAmortizationSchedule } from '@e-coop-monorepo/modules/loan-amortization-schedule'
-import { ILoanClearanceAnalysis } from '@e-coop-monorepo/modules/loan-clearance-analysis'
-import { ILoanClearanceAnalysisInstitution } from '@e-coop-monorepo/modules/loan-clearance-analysis-institution'
-import { ILoanPurpose } from '@e-coop-monorepo/modules/loan-purpose'
-import { ILoanStatus } from '@e-coop-monorepo/modules/loan-status'
-import { ILoanTag } from '@e-coop-monorepo/modules/loan-tag'
-import { ILoanTermsAndConditionAmountReceipt } from '@e-coop-monorepo/modules/loan-terms-and-condition-amount-receipt'
-import { ILoanTermsAndConditionSuggestedPayment } from '@e-coop-monorepo/modules/loan-terms-and-condition-suggested-payment'
-import { ILoanTransactionEntry } from '@e-coop-monorepo/modules/loan-transaction-entry'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IMemberAccountingLedger } from '@e-coop-monorepo/modules/member-account-ledger'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
-import {
+import type { IComakerCollateral } from '@e-coop-monorepo/modules/comaker-collateral'
+import type { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
+import type { ILoanAccount } from '@e-coop-monorepo/modules/loan-account'
+import type { ILoanAmortizationSchedule } from '@e-coop-monorepo/modules/loan-amortization-schedule'
+import type { ILoanClearanceAnalysis } from '@e-coop-monorepo/modules/loan-clearance-analysis'
+import type { ILoanClearanceAnalysisInstitution } from '@e-coop-monorepo/modules/loan-clearance-analysis-institution'
+import type { ILoanPurpose } from '@e-coop-monorepo/modules/loan-purpose'
+import type { ILoanStatus } from '@e-coop-monorepo/modules/loan-status'
+import type { ILoanTag } from '@e-coop-monorepo/modules/loan-tag'
+import type { ILoanTermsAndConditionAmountReceipt } from '@e-coop-monorepo/modules/loan-terms-and-condition-amount-receipt'
+import type { ILoanTermsAndConditionSuggestedPayment } from '@e-coop-monorepo/modules/loan-terms-and-condition-suggested-payment'
+import type { ILoanTransactionEntry } from '@e-coop-monorepo/modules/loan-transaction-entry'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMemberAccountingLedger } from '@e-coop-monorepo/modules/member-account-ledger'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     LoanEditTransactionSchema,
     LoanTransactionSchema,
     TLoanTransactionAdjustmentSchema,
@@ -40,7 +40,7 @@ import {
     TLoanTransactionSignatureSchema,
     TLoanTransactionSuggestedSchema,
 } from './loan-transaction.validation'
-import {
+import type {
     COMPUTATION_TYPE,
     LOAN_ADJUSTMENT_TYPE,
     LOAN_AMORTIZATION_TYPE,

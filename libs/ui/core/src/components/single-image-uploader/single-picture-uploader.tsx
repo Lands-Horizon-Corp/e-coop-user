@@ -4,7 +4,8 @@ import { cn } from '@e-coop-monorepo/shared/tw-utils'
 
 import { AdjustIcon } from '../icons/index'
 import { ImageDisplay } from '../image-display'
-import Modal, { IModalProps } from '../modals/modal'
+import type { IModalProps } from '../modals/modal';
+import Modal from '../modals/modal'
 import PictureCrop from '../picture-crop'
 import { ActionTooltip } from '../tooltips/action-tooltip'
 import { Button } from '../ui/button'

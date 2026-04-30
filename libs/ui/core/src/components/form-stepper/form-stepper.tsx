@@ -1,6 +1,6 @@
 import { useRef } from 'react'
 
-import { FieldValues, Path, UseFormReturn } from 'react-hook-form'
+import type { FieldValues, Path, UseFormReturn } from 'react-hook-form'
 
 import { cn } from '@/helpers'
 import { CheckFillIcon } from '@e-coop-monorepo/ui/core'

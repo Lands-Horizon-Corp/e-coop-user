@@ -1,19 +1,21 @@
-import { ReactNode, useCallback, useRef } from 'react'
+import type { ReactNode} from 'react';
+import { useCallback, useRef } from 'react'
 
 import { Navigate, useLocation, useRouter } from '@tanstack/react-router'
 import { AxiosError } from 'axios'
 
 import LOADING_ARTWORK_GIF from '@/assets/gifs/e-coop-artwork-loading.gif'
+import type {
+    IAuthContext} from '@e-coop-monorepo/modules/authentication';
 import {
-    IAuthContext,
     useAuthContext,
 } from '@e-coop-monorepo/modules/authentication'
 import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
 import { UserAvatar } from '@e-coop-monorepo/modules/user'
 import { useSubscribe } from '@e-coop-monorepo/shared/hooks'
 import { useQeueryHookCallback } from '@e-coop-monorepo/shared/hooks'
-import { IBaseProps, TPageType } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps, TPageType } from '@e-coop-monorepo/shared/types'
 import {
     ArrowRightIcon,
     BadgeExclamationFillIcon,

@@ -2,7 +2,7 @@ import { useCallback, useRef } from 'react'
 
 import { dataUrlToFile } from '@e-coop-monorepo/modules/media'
 import { format } from 'date-fns'
-import Webcam from 'react-webcam'
+import type Webcam from 'react-webcam'
 
 export const useCamera = () => {
     const camRef = useRef<Webcam>(null)

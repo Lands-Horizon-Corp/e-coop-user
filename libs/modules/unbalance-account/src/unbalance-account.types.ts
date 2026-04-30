@@ -1,15 +1,15 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { UnbalanceAccountSchema } from './unbalance-account.validation'
+import type { UnbalanceAccountSchema } from './unbalance-account.validation'
 
 export interface IUnbalanceAccount extends IBaseEntityMeta {
     currency_id: TEntityId

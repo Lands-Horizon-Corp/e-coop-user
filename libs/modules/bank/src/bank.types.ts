@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import {
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { BankSchema } from './bank.validation'
+import type { BankSchema } from './bank.validation'
 
 export interface IBank extends IBaseEntityMeta {
     id: TEntityId

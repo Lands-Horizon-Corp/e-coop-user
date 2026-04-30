@@ -1,6 +1,7 @@
 import * as React from 'react'
 
-import { SEX, TSex } from '@e-coop-monorepo/shared/constants'
+import type { TSex } from '@e-coop-monorepo/shared/constants';
+import { SEX } from '@e-coop-monorepo/shared/constants'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'

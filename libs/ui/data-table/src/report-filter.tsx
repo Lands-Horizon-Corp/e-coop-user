@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-import {
+import type {
     TFilterLogic,
     TFilterPayload,
     TFinalFilter,
 } from '@e-coop-monorepo/shared/contexts'
-import { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
+import type { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
 import { ArrowDownIcon, ArrowUpIcon, SortIcon } from '@e-coop-monorepo/ui/core'
 import { InfoTooltip } from '@e-coop-monorepo/ui/core'
 import { Badge } from '@e-coop-monorepo/ui/core'

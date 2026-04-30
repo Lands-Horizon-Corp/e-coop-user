@@ -1,8 +1,9 @@
 import * as React from 'react'
 
+import type {
+    TRelationship} from '@e-coop-monorepo/modules/member-relative-account';
 import {
-    FAMILY_RELATIONSHIP,
-    TRelationship,
+    FAMILY_RELATIONSHIP
 } from '@e-coop-monorepo/modules/member-relative-account'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/core'

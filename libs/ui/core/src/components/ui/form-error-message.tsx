@@ -1,5 +1,5 @@
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 
 import { ErrorExclamationIcon } from '../icons/index'
 

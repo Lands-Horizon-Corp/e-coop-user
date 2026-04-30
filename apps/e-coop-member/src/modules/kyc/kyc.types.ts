@@ -1,9 +1,9 @@
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     TKYCRegisterSchema,
     TKYCSelfieSchema,
     TKYCVerifyAddressesSchema,

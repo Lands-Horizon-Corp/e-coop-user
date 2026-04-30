@@ -1,6 +1,6 @@
-import { ICategory } from '@e-coop-monorepo/modules/category'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import {
+import type { ICategory } from '@e-coop-monorepo/modules/category'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,

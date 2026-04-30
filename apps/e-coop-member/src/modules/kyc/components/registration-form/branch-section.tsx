@@ -1,8 +1,9 @@
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 
-import { IBranch, useGetAllBranch } from '@e-coop-monorepo/modules/branch'
+import type { IBranch} from '@e-coop-monorepo/modules/branch';
+import { useGetAllBranch } from '@e-coop-monorepo/modules/branch'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import {
     BuildingBranchIcon,
     EmailIcon,
@@ -13,7 +14,7 @@ import { redirectToGoogleMapsDirection } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 
-import { TKYCBranchSchema } from '../../kyc.validation'
+import type { TKYCBranchSchema } from '../../kyc.validation'
 
 interface PersonalInfoStepProps {
     form: UseFormReturn<TKYCBranchSchema>

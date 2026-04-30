@@ -1,7 +1,7 @@
-import { IDisbursement } from '@e-coop-monorepo/modules/disbursement'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IEmployee } from '@e-coop-monorepo/modules/user'
-import {
+import type { IDisbursement } from '@e-coop-monorepo/modules/disbursement'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IEmployee } from '@e-coop-monorepo/modules/user'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,

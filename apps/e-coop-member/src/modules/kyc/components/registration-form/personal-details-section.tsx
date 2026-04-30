@@ -1,4 +1,4 @@
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import MemberGenderCombobox from '@e-coop-monorepo/modules/member-gender/components/member-gender-combobox'
@@ -11,7 +11,7 @@ import InputDate from '@e-coop-monorepo/ui/core'
 import { User } from 'lucide-react'
 
 import { useKYCVerifyPersonalDetails } from '../../kyc.service'
-import { TKYCVerifyPersonalInfoSchema } from '../../kyc.validation'
+import type { TKYCVerifyPersonalInfoSchema } from '../../kyc.validation'
 
 interface PersonalInfoStepProps {
     form: UseFormReturn<TKYCVerifyPersonalInfoSchema>

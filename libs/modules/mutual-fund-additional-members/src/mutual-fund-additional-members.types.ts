@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import { IMutualFund } from '@e-coop-monorepo/modules/mutual-fund'
-import {
+import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type { IMutualFund } from '@e-coop-monorepo/modules/mutual-fund'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { MutualFundAdditionalMembersSchema } from './mutual-fund-additional-members.validation'
+import type { MutualFundAdditionalMembersSchema } from './mutual-fund-additional-members.validation'
 
 export interface IMutualFundAdditionalMembers extends IBaseEntityMeta {
     mutual_fund_id: string

@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { useGetOrganizationById } from '@e-coop-monorepo/modules/organization'
@@ -28,7 +28,8 @@ import { ScrollArea } from '@e-coop-monorepo/ui/core'
 import { FileText } from 'lucide-react'
 
 import { useKYCRegister } from '../..'
-import { KYCRegisterSchema, TKYCAgreeTermsSchema } from '../../kyc.validation'
+import type { TKYCAgreeTermsSchema } from '../../kyc.validation';
+import { KYCRegisterSchema } from '../../kyc.validation'
 
 interface AgreeTermRegisterSectionProps {
     form: UseFormReturn<TKYCAgreeTermsSchema>

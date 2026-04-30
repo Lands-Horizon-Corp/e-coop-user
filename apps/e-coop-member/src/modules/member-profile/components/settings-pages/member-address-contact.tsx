@@ -1,8 +1,9 @@
-import { ReactNode, useState } from 'react'
+import type { ReactNode} from 'react';
+import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { Button } from '@e-coop-monorepo/ui/core'
 import { Input } from '@e-coop-monorepo/ui/core'
 import { Label } from '@e-coop-monorepo/ui/core'

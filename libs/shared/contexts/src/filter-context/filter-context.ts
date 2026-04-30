@@ -1,6 +1,6 @@
 import { createContext } from 'react'
 
-import { KeysOfOrString } from '@e-coop-monorepo/shared/types'
+import type { KeysOfOrString } from '@e-coop-monorepo/shared/types'
 
 export type TFilterLogic = 'AND' | 'OR'
 

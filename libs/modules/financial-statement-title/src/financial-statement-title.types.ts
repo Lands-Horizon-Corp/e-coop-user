@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { FinancialStatementTitleSchema } from './financial-statement-title.validation'
+import type { FinancialStatementTitleSchema } from './financial-statement-title.validation'
 
 export interface IFinancialStatementTitle extends IBaseEntityMeta {
     id: TEntityId

@@ -1,5 +1,5 @@
-import { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
-import {
+import type { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,

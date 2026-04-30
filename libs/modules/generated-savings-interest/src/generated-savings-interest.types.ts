@@ -1,15 +1,15 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IGeneratedSavingsInterestEntry } from '@e-coop-monorepo/modules/generated-savings-interest-entry'
-import { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IGeneratedSavingsInterestEntry } from '@e-coop-monorepo/modules/generated-savings-interest-entry'
+import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constant'
-import {
+import type { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constant'
+import type {
     TGeneratedSavingsInterestPostSchema,
     TGeneratedSavingsInterestPrintSchema,
     TGeneratedSavingsInterestSchema,

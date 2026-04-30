@@ -1,11 +1,11 @@
-import {
+import type {
     IBranchSettings,
     IDepositSetting,
     IWithdrawSetting,
 } from '@e-coop-monorepo/modules/branch-settings'
-import { TORBuilderOptions } from '@e-coop-monorepo/modules/or-builder'
+import type { TORBuilderOptions } from '@e-coop-monorepo/modules/or-builder'
 
-import { TPaymentMode } from './quick-transfer.types'
+import type { TPaymentMode } from './quick-transfer.types'
 
 type TORSettingResult =
     | { mode: 'withdraw'; setting: IWithdrawSetting }

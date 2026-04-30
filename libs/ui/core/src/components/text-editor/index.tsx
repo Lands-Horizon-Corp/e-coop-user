@@ -1,12 +1,12 @@
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 import Placeholder from '@tiptap/extension-placeholder'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'
 
-import { THeadingLevel } from './text-editor.types'
+import type { THeadingLevel } from './text-editor.types'
 import Toolbar from './toolbar'
 
 interface Props extends IBaseProps {

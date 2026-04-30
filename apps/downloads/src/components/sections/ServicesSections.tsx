@@ -1,4 +1,7 @@
-import { Variants, motion } from 'framer-motion'
+import type { Variants} from 'framer-motion';
+import { motion } from 'framer-motion'
+import type {
+    LucideIcon} from 'lucide-react';
 import {
     ArrowRightLeft,
     Banknote,
@@ -6,7 +9,6 @@ import {
     Database,
     Fingerprint,
     Landmark,
-    LucideIcon,
     PiggyBank,
     ShieldCheck,
     TrendingUp,

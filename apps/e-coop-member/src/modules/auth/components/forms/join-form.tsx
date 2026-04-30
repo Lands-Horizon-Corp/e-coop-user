@@ -4,9 +4,10 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import {
+import type {
     IMemberProfile,
-    IQuickCreateMemberProfile,
+    IQuickCreateMemberProfile} from '@e-coop-monorepo/modules/member-profile';
+import {
     QuickCreateMemberProfileSchema,
 } from '@e-coop-monorepo/modules/member-profile'
 import CivilStatusCombobox from '@e-coop-monorepo/modules/member-profile/components/comboboxes/civil-status-combobox'
@@ -16,7 +17,7 @@ import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
 import {
     KeySharpIcon,

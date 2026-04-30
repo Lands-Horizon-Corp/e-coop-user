@@ -1,8 +1,8 @@
-import { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
-import { TLoanModeOfPayment } from '@e-coop-monorepo/modules/loan-transaction'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
+import type { TLoanModeOfPayment } from '@e-coop-monorepo/modules/loan-transaction'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { TChargesRateByTermSchema } from './charges-rate-by-term.validation'
+import type { TChargesRateByTermSchema } from './charges-rate-by-term.validation'
 
 export type TChargesModeOfPaymentType =
     | 'daily'

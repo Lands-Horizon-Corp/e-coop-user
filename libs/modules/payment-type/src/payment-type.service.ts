@@ -1,7 +1,7 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import { IPaymentType, IPaymentTypeRequest } from './payment-type.types'
+import type { IPaymentType, IPaymentTypeRequest } from './payment-type.types'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IPaymentType,

@@ -1,10 +1,11 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import { toast } from 'sonner'
 
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { Input } from '@e-coop-monorepo/ui/core'
-import { DropzoneOptions, useDropzone } from 'react-dropzone'
+import type { DropzoneOptions} from 'react-dropzone';
+import { useDropzone } from 'react-dropzone'
 
 import DefaultDropArea from '../drop-areas/default-drop-area'
 

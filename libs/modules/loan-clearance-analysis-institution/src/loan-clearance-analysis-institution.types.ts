@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { LoanClearanceAnalysisInstitutionSchema } from './loan-clearance-analysis-institution.validation'
+import type { LoanClearanceAnalysisInstitutionSchema } from './loan-clearance-analysis-institution.validation'
 
 export interface ILoanClearanceAnalysisInstitution extends IBaseEntityMeta {
     loan_transaction_id?: TEntityId

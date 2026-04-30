@@ -3,10 +3,10 @@ import qs from 'query-string'
 
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import API from '@e-coop-monorepo/shared/providers'
-import { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
+import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
 
-import { IAPIKey, IAPIList } from './developer.types'
+import type { IAPIKey, IAPIList } from './developer.types'
 
 // ⚙️🛠️ API SERVICE HERE
 

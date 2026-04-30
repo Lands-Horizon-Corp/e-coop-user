@@ -1,7 +1,7 @@
 import { downloadFile } from '@e-coop-monorepo/shared/helpers'
 import Pica from 'pica'
 
-import { IMedia } from './media.types'
+import type { IMedia } from './media.types'
 
 export const formatBytes = (bytes: number) => {
     if (bytes === 0) return '0 Bytes'

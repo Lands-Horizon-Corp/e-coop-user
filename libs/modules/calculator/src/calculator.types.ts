@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { CalculatorSchema } from './calculator.validation'
+import type { CalculatorSchema } from './calculator.validation'
 
 export type ICalculator = IBaseEntityMeta
 

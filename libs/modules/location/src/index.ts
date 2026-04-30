@@ -1,6 +1,6 @@
 import barangays from './data/barangays.json'
 import municipalities from './data/cities-municipalities.json'
-import { IBarangay } from './location.types'
+import type { IBarangay } from './location.types'
 
 const barangaysByMunicipalityName = new Map<string, IBarangay[]>()
 const municipalityCodeToName = new Map<string, string>()

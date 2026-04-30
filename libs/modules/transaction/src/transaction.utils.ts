@@ -1,10 +1,10 @@
 import { buildOR } from '@e-coop-monorepo/modules/or-builder'
-import { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
+import type { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
 import {
     QuickTransferOR,
     toORBuilderOptions,
 } from '@e-coop-monorepo/modules/quick-transfer'
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { mmddyyyy } from '@e-coop-monorepo/shared/helpers'
 
 export const receiptPrefix = (num: number): string => {

@@ -1,6 +1,6 @@
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IPaginatedResult } from '@e-coop-monorepo/shared/types'
-import {
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IPaginatedResult } from '@e-coop-monorepo/shared/types'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,

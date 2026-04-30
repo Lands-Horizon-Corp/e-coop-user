@@ -1,11 +1,11 @@
-import {
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IAccount } from '../account'
 
 export interface IMemberAccountingLedger extends IBaseEntityMeta {
     id: TEntityId

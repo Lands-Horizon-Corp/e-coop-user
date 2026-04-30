@@ -1,4 +1,4 @@
-import { Policy } from './types'
+import type { Policy } from './types'
 
 export const dataProtectionPolicy: Policy = {
     id: 'data-protection',

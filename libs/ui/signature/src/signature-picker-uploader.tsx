@@ -2,12 +2,14 @@ import { useMemo, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { IMedia, useUploadMedia } from '@e-coop-monorepo/modules/media'
+import type { IMedia} from '@e-coop-monorepo/modules/media';
+import { useUploadMedia } from '@e-coop-monorepo/modules/media'
 import { calculateUploadProgress } from '@e-coop-monorepo/shared/helpers'
 
 import Signature from '.'
 import { ImageDisplay } from '../image-display'
-import Modal, { IModalProps } from '../modals/modal'
+import type { IModalProps } from '../modals/modal';
+import Modal from '../modals/modal'
 import { Button } from '../ui/button'
 import FileItem from '../uploaders/file-item'
 

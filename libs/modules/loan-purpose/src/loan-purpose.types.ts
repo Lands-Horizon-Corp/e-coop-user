@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { LoanPurposeSchema } from './loan-purpose.validation'
+import type { LoanPurposeSchema } from './loan-purpose.validation'
 
 export interface ILoanPurpose extends IBaseEntityMeta {
     description: string

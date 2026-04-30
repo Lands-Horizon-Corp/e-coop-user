@@ -1,5 +1,5 @@
-import { TUserType } from '@e-coop-monorepo/modules/user'
-import { IconType } from 'react-icons/lib'
+import type { TUserType } from '@e-coop-monorepo/modules/user'
+import type { IconType } from 'react-icons/lib'
 
 export type TNavItemType = 'dropdown' | 'item'
 

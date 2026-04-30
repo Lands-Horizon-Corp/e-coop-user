@@ -1,6 +1,6 @@
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { IOrganizationCategory } from '@e-coop-monorepo/modules/organization-category'
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IOrganizationCategory } from '@e-coop-monorepo/modules/organization-category'
 
 export const filterOrganizations = (
     organizations: IOrganization[],

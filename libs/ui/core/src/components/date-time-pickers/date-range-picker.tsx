@@ -1,7 +1,7 @@
 import { Calendar } from '@e-coop-monorepo/ui/core'
-import { DateRange } from 'react-day-picker'
+import type { DateRange } from 'react-day-picker'
 
-import { CaptionLayout } from './date-time-picker'
+import type { CaptionLayout } from './date-time-picker'
 
 type DateRangePickerProps = {
     value: DateRange | undefined

@@ -1,5 +1,5 @@
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 
 const RootNav = ({ className, children }: IBaseProps) => {
     return (

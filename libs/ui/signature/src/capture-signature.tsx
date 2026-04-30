@@ -1,6 +1,6 @@
-import { MutableRefObject } from 'react'
+import type { MutableRefObject } from 'react'
 
-import Webcam from 'react-webcam'
+import type Webcam from 'react-webcam'
 
 import WebCam from '../webcam'
 

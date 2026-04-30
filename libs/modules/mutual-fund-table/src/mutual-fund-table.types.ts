@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { MutualFundTableSchema } from './mutual-fund-table.validation'
+import type { MutualFundTableSchema } from './mutual-fund-table.validation'
 
 export interface IMutualFundTable extends IBaseEntityMeta {
     months_from: number

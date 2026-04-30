@@ -18,7 +18,7 @@ import {
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useSidebar } from '../ui/sidebar'
-import { TQuickSearchGroup } from './types'
+import type { TQuickSearchGroup } from './types'
 
 interface Props {
     groups: TQuickSearchGroup[]

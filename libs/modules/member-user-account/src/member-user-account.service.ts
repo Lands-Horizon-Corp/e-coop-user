@@ -1,5 +1,6 @@
+import type {
+    IMemberProfile} from '@e-coop-monorepo/modules/member-profile';
 import {
-    IMemberProfile,
     apiCrudService,
     memberProfileBaseKey,
 } from '@e-coop-monorepo/modules/member-profile'
@@ -9,9 +10,9 @@ import {
     createMutationInvalidateFn,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMemberProfileUserAccountRequest } from './member-user-account.types'
+import type { IMemberProfileUserAccountRequest } from './member-user-account.types'
 
 const { API, route } = apiCrudService
 

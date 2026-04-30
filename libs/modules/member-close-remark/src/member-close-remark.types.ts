@@ -1,11 +1,11 @@
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ACCOUNT_CLOSURE_REASONS } from './member-close-remark.constants'
+import type { ACCOUNT_CLOSURE_REASONS } from './member-close-remark.constants'
 
 export type TAccountClosureReasonType = (typeof ACCOUNT_CLOSURE_REASONS)[number]
 

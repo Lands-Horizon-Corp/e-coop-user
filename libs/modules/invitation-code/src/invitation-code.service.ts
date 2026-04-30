@@ -4,7 +4,7 @@ import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import {
+import type {
     IInvitationCode,
     IInvitationCodeRequest,
 } from './invitation-code.types'

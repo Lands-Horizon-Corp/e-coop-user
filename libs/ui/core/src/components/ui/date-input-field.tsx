@@ -1,6 +1,6 @@
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
-import { CalendarDate } from '@internationalized/date'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { CalendarDate } from '@internationalized/date'
 import { DateField, DateInput, DateSegment } from 'react-aria-components'
 
 interface Props extends IClassProps {

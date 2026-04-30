@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
-import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     IGovernmentId,

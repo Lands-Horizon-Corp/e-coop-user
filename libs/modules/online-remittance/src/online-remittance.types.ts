@@ -1,11 +1,11 @@
-import { IBank } from '@e-coop-monorepo/modules/bank'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IBank } from '@e-coop-monorepo/modules/bank'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { TOnlineRemittanceSchema } from './online-remittance.validation'
+import type { TOnlineRemittanceSchema } from './online-remittance.validation'
 
 export interface IOnlineRemittance extends IBaseEntityMeta {
     id: TEntityId

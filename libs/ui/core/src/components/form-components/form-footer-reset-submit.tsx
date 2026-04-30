@@ -1,8 +1,8 @@
-import { MouseEvent } from 'react'
+import type { MouseEvent } from 'react'
 
 import { useConfirmModalStore } from '@e-coop-monorepo/shared/store'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import { FormErrorMessage } from '@e-coop-monorepo/ui/core'

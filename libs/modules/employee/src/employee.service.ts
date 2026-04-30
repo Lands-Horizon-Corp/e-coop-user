@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { IEmployee } from '@e-coop-monorepo/modules/user'
+import type { IEmployee } from '@e-coop-monorepo/modules/user'
+import type {
+    IUserOrganization,
+    IUserOrganizationPaginated} from '@e-coop-monorepo/modules/user-organization';
 import {
     API,
-    IUserOrganization,
-    IUserOrganizationPaginated,
     createUserOrganization,
     deleteManyUserOrganization,
     deleteUserOrganizationById,
@@ -18,10 +19,10 @@ import {
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
-import { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IEmployeeCreateRequest } from './employee.types'
+import type { IEmployeeCreateRequest } from './employee.types'
 
 /**
  * 👻 Ghost Module: Employee

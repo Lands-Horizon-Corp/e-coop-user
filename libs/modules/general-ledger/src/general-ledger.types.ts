@@ -1,20 +1,20 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IBank } from '@e-coop-monorepo/modules/bank'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import { ITransaction } from '@e-coop-monorepo/modules/transaction'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IBank } from '@e-coop-monorepo/modules/bank'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
+import type { ITransaction } from '@e-coop-monorepo/modules/transaction'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     GENERAL_LEDGER_SOURCES,
     GENERAL_LEDGER_TYPE,
 } from './general-ledger.constants'

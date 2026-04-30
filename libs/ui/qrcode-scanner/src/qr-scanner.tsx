@@ -14,7 +14,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '../ui/dropdown-menu'
-import { IQrScannerProps } from './types'
+import type { IQrScannerProps } from './types'
 
 const QrScanner = (props: IQrScannerProps) => {
     const [deviceId, setDeviceId] = useState<string | undefined>(undefined)

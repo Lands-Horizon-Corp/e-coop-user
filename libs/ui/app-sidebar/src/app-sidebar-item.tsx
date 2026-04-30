@@ -4,7 +4,7 @@ import { useLocation, useRouter } from '@tanstack/react-router'
 
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { VariantProps } from 'class-variance-authority'
+import type { VariantProps } from 'class-variance-authority'
 
 import { ChevronRightIcon } from '../icons/index'
 import {
@@ -13,16 +13,17 @@ import {
     CollapsibleTrigger,
 } from '../ui/collapsible'
 import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover'
+import type {
+    sidebarMenuButtonVariants} from '../ui/sidebar';
 import {
     SidebarMenuButton,
     SidebarMenuItem,
     SidebarMenuSub,
-    sidebarMenuButtonVariants,
     useSidebar,
 } from '../ui/sidebar'
-import { TooltipContent } from '../ui/tooltip'
+import type { TooltipContent } from '../ui/tooltip'
 import { sidebarRouteMatcher } from './app-sidebar-utils'
-import { INavItem } from './types'
+import type { INavItem } from './types'
 
 // adjust import path as needed
 

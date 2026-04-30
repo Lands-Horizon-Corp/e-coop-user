@@ -1,6 +1,8 @@
-import Modal, { IModalProps } from '../modals/modal'
+import type { IModalProps } from '../modals/modal';
+import Modal from '../modals/modal'
+import type {
+    ISingleImageUploadProps} from './single-image-uploader';
 import {
-    ISingleImageUploadProps,
     SingleImageUpload,
 } from './single-image-uploader'
 

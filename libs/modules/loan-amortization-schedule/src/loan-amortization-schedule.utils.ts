@@ -1,4 +1,4 @@
-import { ILoanAmortizationSchedule } from './loan-amortization-schedule.types'
+import type { ILoanAmortizationSchedule } from './loan-amortization-schedule.types'
 
 export const scheduleToTableRow = (
     loanSchedules: ILoanAmortizationSchedule[]

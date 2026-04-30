@@ -4,19 +4,21 @@ import * as ImagePreviewPrimitive from '@radix-ui/react-dialog'
 
 import { cn } from '@/helpers'
 import { useImagePreview } from '@/store/image-preview-store'
-import { DownloadProps } from '@e-coop-monorepo/shared/types'
+import type { DownloadProps } from '@e-coop-monorepo/shared/types'
 
 import { XIcon } from '../icons/index'
+import type {
+    CarouselApi} from '../ui/carousel';
 import {
     Carousel,
-    CarouselApi,
     CarouselContent,
     CarouselItem,
 } from '../ui/carousel'
 import { Dialog, DialogContent, DialogTitle } from '../ui/dialog'
 import { TooltipProvider } from '../ui/tooltip'
+import type {
+    CarouselOptions} from './image-preview';
 import {
-    CarouselOptions,
     ImageContainer,
     ImagePreviewActions,
     ImagePreviewNext,

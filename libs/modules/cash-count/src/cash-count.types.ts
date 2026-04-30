@@ -1,6 +1,6 @@
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import {
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,

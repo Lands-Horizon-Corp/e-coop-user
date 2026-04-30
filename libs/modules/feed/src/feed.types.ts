@@ -1,14 +1,14 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IFeedComment } from '@e-coop-monorepo/modules/feed-comment'
-import { IFeedLike } from '@e-coop-monorepo/modules/feed-like'
-import { IFeedMedia } from '@e-coop-monorepo/modules/feed-media'
-import {
+import type { IFeedComment } from '@e-coop-monorepo/modules/feed-comment'
+import type { IFeedLike } from '@e-coop-monorepo/modules/feed-like'
+import type { IFeedMedia } from '@e-coop-monorepo/modules/feed-media'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { FeedSchema } from './feed.validation'
+import type { FeedSchema } from './feed.validation'
 
 export interface IFeed extends IBaseEntityMeta {
     description: string

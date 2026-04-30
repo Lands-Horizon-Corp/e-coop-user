@@ -1,5 +1,5 @@
-import { IMemberClassificationInterestRate } from '@e-coop-monorepo/modules/member-classification-interest-rate'
-import {
+import type { IMemberClassificationInterestRate } from '@e-coop-monorepo/modules/member-classification-interest-rate'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,

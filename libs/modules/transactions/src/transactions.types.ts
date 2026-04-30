@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TransactionsSchema } from './transactions.validation'
+import type { TransactionsSchema } from './transactions.validation'
 
 export interface ITransactions extends IBaseEntityMeta {
     id: TEntityId

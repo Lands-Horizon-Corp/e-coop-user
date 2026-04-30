@@ -1,10 +1,10 @@
-import { TPermission } from '@e-coop-monorepo/modules/permission'
-import {
+import type { TPermission } from '@e-coop-monorepo/modules/permission'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { TPermissionTemplateSchema } from './permission-template.validation'
+import type { TPermissionTemplateSchema } from './permission-template.validation'
 
 export interface IPermissionTemplate extends IBaseEntityMeta {
     name: string

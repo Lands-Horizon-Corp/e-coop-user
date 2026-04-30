@@ -1,5 +1,5 @@
-import { IGeneralLedgerDefinition } from '@e-coop-monorepo/modules/general-ledger-definition'
-import {
+import type { IGeneralLedgerDefinition } from '@e-coop-monorepo/modules/general-ledger-definition'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,

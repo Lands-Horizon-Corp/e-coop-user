@@ -5,7 +5,7 @@ import {
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     ILoanLedger,

@@ -5,12 +5,12 @@ import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { useConfirmModalStore } from '@e-coop-monorepo/shared/store'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { TrashIcon } from '@e-coop-monorepo/ui/core'
 import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
 import { Badge } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
-import { Table } from '@tanstack/react-table'
+import type { Table } from '@tanstack/react-table'
 
 export interface IDataTableDeleteSelectedProps<T> extends IClassProps {
     table: Table<T>

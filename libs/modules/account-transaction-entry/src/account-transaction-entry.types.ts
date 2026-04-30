@@ -1,14 +1,14 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IAccountTransaction } from '@e-coop-monorepo/modules/account-transaction'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IAccountTransaction } from '@e-coop-monorepo/modules/account-transaction'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { AccountTransactionEntrySchema } from './account-transaction-entry.validation'
+import type { AccountTransactionEntrySchema } from './account-transaction-entry.validation'
 
 export interface IAccountTransactionEntry extends IBaseEntityMeta {
     account_transaction_id: TEntityId

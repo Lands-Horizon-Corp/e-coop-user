@@ -1,6 +1,7 @@
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { TableCell, TableFooter, TableRow } from '@e-coop-monorepo/ui/core'
-import { Table, flexRender } from '@tanstack/react-table'
+import type { Table} from '@tanstack/react-table';
+import { flexRender } from '@tanstack/react-table'
 
 import { getPinningStyles } from './data-table-utils'
 

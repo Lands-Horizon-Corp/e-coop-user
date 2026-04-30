@@ -1,14 +1,14 @@
-import { IJournalVoucherORSettings } from '@e-coop-monorepo/modules/branch-settings'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import {
+import type { IJournalVoucherORSettings } from '@e-coop-monorepo/modules/branch-settings'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type {
     IJournalVoucherEntry,
     IJournalVoucherEntryRequest,
 } from '@e-coop-monorepo/modules/journal-voucher-entry'
-import { IJournalVoucherTag } from '@e-coop-monorepo/modules/journal-voucher-tag'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
-import {
+import type { IJournalVoucherTag } from '@e-coop-monorepo/modules/journal-voucher-tag'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,

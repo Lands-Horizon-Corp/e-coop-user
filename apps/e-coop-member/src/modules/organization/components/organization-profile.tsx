@@ -19,7 +19,7 @@ import {
     Youtube,
 } from 'lucide-react'
 
-import { IOrganization } from '../organization.types'
+import type { IOrganization } from '../organization.types'
 
 interface OrganizationProfileProps {
     organization: IOrganization

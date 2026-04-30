@@ -1,18 +1,19 @@
 import { useEffect } from 'react'
 
 import { useForm } from 'react-hook-form'
-import z from 'zod'
+import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import { CountryCombobox } from '@e-coop-monorepo/ui/core'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import TextEditor from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
@@ -25,7 +26,7 @@ import {
     useGetAllGovernmentIds,
     useUpdateMemberGovernmentBenefit,
 } from '../../member-government-benefit.service'
-import {
+import type {
     IGovernmentId,
     IMemberGovernmentBenefit,
 } from '../../member-government-benefit.types'

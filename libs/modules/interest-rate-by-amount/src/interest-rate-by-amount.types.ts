@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { InterestRateByAmountSchema } from './interest-rate-by-amount.validation'
+import type { InterestRateByAmountSchema } from './interest-rate-by-amount.validation'
 
 export interface IInterestRateByAmount extends IBaseEntityMeta {
     from_amount: number

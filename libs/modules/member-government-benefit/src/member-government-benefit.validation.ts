@@ -8,7 +8,7 @@ import {
     stringDateSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { IGovernmentId } from './member-government-benefit.interfaces'
+import type { IGovernmentId } from './member-government-benefit.interfaces'
 
 export const MemberGovernmentBenefitSchema = z
     .object({

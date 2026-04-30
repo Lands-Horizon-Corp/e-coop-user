@@ -1,55 +1,55 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IMemberPassbookSettings } from '@e-coop-monorepo/modules/branch-settings'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IMemberPassbookSettings } from '@e-coop-monorepo/modules/branch-settings'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type {
     IMemberAddress,
     IMemberAddressRequest,
 } from '@e-coop-monorepo/modules/member-address'
-import {
+import type {
     IMemberAsset,
     IMemberAssetRequest,
 } from '@e-coop-monorepo/modules/member-asset'
-import { IMemberCenter } from '@e-coop-monorepo/modules/member-center'
-import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
-import {
+import type { IMemberCenter } from '@e-coop-monorepo/modules/member-center'
+import type { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import type {
     IMemberCloseRemark,
     IMemberCloseRemarkRequest,
 } from '@e-coop-monorepo/modules/member-close-remark'
-import {
+import type {
     IMemberContactReference,
     IMemberContactReferenceRequest,
 } from '@e-coop-monorepo/modules/member-contact-reference'
-import { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
-import { IMemberDescriptionRequest } from '@e-coop-monorepo/modules/member-description-schema'
-import { IMemberEducationalAttainment } from '@e-coop-monorepo/modules/member-educational-attainment'
-import {
+import type { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
+import type { IMemberDescriptionRequest } from '@e-coop-monorepo/modules/member-description-schema'
+import type { IMemberEducationalAttainment } from '@e-coop-monorepo/modules/member-educational-attainment'
+import type {
     IMemberExpense,
     IMemberExpenseRequest,
 } from '@e-coop-monorepo/modules/member-expense'
-import { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
-import {
+import type { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
+import type {
     IMemberGovernmentBenefit,
     IMemberGovernmentBenefitRequest,
 } from '@e-coop-monorepo/modules/member-government-benefit'
-import { IMemberGroup } from '@e-coop-monorepo/modules/member-group'
-import { IMemberIncome } from '@e-coop-monorepo/modules/member-income'
-import {
+import type { IMemberGroup } from '@e-coop-monorepo/modules/member-group'
+import type { IMemberIncome } from '@e-coop-monorepo/modules/member-income'
+import type {
     IMemberJointAccount,
     IMemberJointAccountRequest,
 } from '@e-coop-monorepo/modules/member-joint-account'
-import { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
+import type { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
 // import { IMemberRecruitedMembers } from '@e-coop-monorepo/modules/member-recruits'
-import {
+import type {
     IMemberRelativeAccount,
     IMemberRelativeAccountRequest,
 } from '@e-coop-monorepo/modules/member-relative-account'
-import { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import { TSex } from '@e-coop-monorepo/shared/constants'
-import {
+import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type { TSex } from '@e-coop-monorepo/shared/constants'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
@@ -58,7 +58,7 @@ import {
     TGeneralStatus,
 } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     TMemberProfileMembershipInfoSchema,
     TMemberProfilePersonalInfoSchema,
     TQuickCreateMemberProfileSchema,

@@ -11,9 +11,9 @@ import {
 import Modal from '@e-coop-monorepo/ui/core'
 import { Card } from '@e-coop-monorepo/ui/core'
 import { ArrowUpRight, ChevronRight, Shield } from 'lucide-react'
-import { IconType } from 'react-icons/lib'
+import type { IconType } from 'react-icons/lib'
 
-import { IOrganization } from '../../organization.types'
+import type { IOrganization } from '../../organization.types'
 
 interface OrganizationLegalPoliciesProps {
     organization: IOrganization

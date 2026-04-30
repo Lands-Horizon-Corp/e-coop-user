@@ -1,7 +1,7 @@
 import { compareAsc, compareDesc, parseISO, startOfDay } from 'date-fns'
 import { formatInTimeZone, toDate } from 'date-fns-tz'
 
-import { ICurrency } from './currency.types'
+import type { ICurrency } from './currency.types'
 
 export interface ICurrencyFormatOptions {
     /**

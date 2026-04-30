@@ -2,17 +2,19 @@ import { useCallback } from 'react'
 
 import { toast } from 'sonner'
 
+import type {
+    IQrScanResult} from '@e-coop-monorepo/modules/qr-crypto';
 import {
-    IQrScanResult,
     useQrDecryptData,
 } from '@e-coop-monorepo/modules/qr-crypto'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IDetectedBarcode } from '@yudiel/react-qr-scanner'
+import type { IDetectedBarcode } from '@yudiel/react-qr-scanner'
 
-import Modal, { IModalProps } from '../modals/modal'
+import type { IModalProps } from '../modals/modal';
+import Modal from '../modals/modal'
 import LoadingSpinner from '../spinners/loading-spinner'
 import QrScanner from './qr-scanner'
-import { IQrCodeScannerProps } from './types'
+import type { IQrCodeScannerProps } from './types'
 
 const QrCodeScanner = <TData, TErr = string>({
     paused,

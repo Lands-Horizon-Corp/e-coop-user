@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {
@@ -9,7 +9,8 @@ import {
     EmptyTitle,
 } from '@e-coop-monorepo/ui/core'
 import { TableBody, TableCell, TableRow } from '@e-coop-monorepo/ui/core'
-import { Row, flexRender } from '@tanstack/react-table'
+import type { Row} from '@tanstack/react-table';
+import { flexRender } from '@tanstack/react-table'
 
 import { MagnifyingGlassIcon } from '../icons/index'
 import { getPinningStyles } from './data-table-utils'

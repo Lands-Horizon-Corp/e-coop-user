@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon } from '@e-coop-monorepo/ui/core'
 import LoadingSpinner from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
@@ -20,11 +20,12 @@ import {
 } from '@e-coop-monorepo/ui/core'
 import { Check } from 'lucide-react'
 
+import type {
+    TMemberGenderHookMode} from '../member-gender.service';
 import {
-    TMemberGenderHookMode,
     useGetAllMemberGender,
 } from '../member-gender.service'
-import { IMemberGender } from '../member-gender.types'
+import type { IMemberGender } from '../member-gender.types'
 
 // import {
 //     IMemberGenderFormProps,

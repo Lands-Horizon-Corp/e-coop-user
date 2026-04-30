@@ -1,6 +1,8 @@
-import React, { MouseEvent, ReactElement, cloneElement } from 'react'
+import type { MouseEvent, ReactElement} from 'react';
+import type React from 'react';
+import { cloneElement } from 'react'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
 import { useImagePreview } from '@e-coop-monorepo/shared/store'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 

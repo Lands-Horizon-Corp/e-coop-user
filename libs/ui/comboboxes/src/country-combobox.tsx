@@ -65,7 +65,7 @@ const countryFuse = new Fuse(availableCountries, {
  */
 export const searchCountries = (
     query: string,
-    limit: number = 10
+    limit = 10
 ): Country[] => {
     if (!query.trim()) {
         return availableCountries.slice(0, limit)

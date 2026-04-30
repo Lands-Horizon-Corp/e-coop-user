@@ -1,17 +1,18 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
-import { ILoanGuide } from '@e-coop-monorepo/modules/loan-guide'
+import type { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
+import type { ILoanGuide } from '@e-coop-monorepo/modules/loan-guide'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
-import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 // import { IAmortizationSchedule } from '../amortization'
 import type {

@@ -1,16 +1,16 @@
-import { IBranchSettings } from '@e-coop-monorepo/modules/branch-settings'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import {
+import type { IBranchSettings } from '@e-coop-monorepo/modules/branch-settings'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { branchTypeEnum } from './branch.enums'
-import { TBranchSchema } from './branch.validation'
+import type { branchTypeEnum } from './branch.enums'
+import type { TBranchSchema } from './branch.validation'
 
 // Resource
 export interface IBranch extends ITimeStamps, IAuditable {

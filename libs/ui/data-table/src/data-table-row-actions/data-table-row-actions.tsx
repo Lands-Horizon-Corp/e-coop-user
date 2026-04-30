@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import {
     CheckIcon,
@@ -16,7 +16,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui/core'
-import { Row } from '@tanstack/react-table'
+import type { Row } from '@tanstack/react-table'
 
 export interface IRowActionOption {
     text: string

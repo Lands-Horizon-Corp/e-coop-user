@@ -2,7 +2,7 @@ import { useParams, useRouter } from '@tanstack/react-router'
 
 import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication'
 import { getOrgBranchSafeURLNames } from '@e-coop-monorepo/shared/helpers'
-import { IChildProps } from '@e-coop-monorepo/shared/types'
+import type { IChildProps } from '@e-coop-monorepo/shared/types'
 import { FlickeringGrid } from '@e-coop-monorepo/ui/core'
 import {
     ArrowLeftIcon,

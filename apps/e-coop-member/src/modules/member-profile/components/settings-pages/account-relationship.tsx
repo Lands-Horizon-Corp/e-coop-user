@@ -1,8 +1,9 @@
-import { ReactNode, useState } from 'react'
+import type { ReactNode} from 'react';
+import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import {
+import type {
     IMemberJointAccount,
     IMemberProfile,
     IMemberRelativeAccount,
@@ -25,7 +26,7 @@ import { X } from 'lucide-react'
 import { Calendar, Heart, User } from 'lucide-react'
 import { ImagePlus, PenTool } from 'lucide-react'
 
-import { TRelationship } from '../comboboxes/relationship-combobox'
+import type { TRelationship } from '../comboboxes/relationship-combobox'
 import { FAMILY_RELATIONSHIP } from '../comboboxes/relationship-combobox'
 
 interface AccountSectionProps {

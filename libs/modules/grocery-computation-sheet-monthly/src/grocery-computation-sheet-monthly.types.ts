@@ -1,5 +1,5 @@
-import { IGroceryComputationSheet } from '@e-coop-monorepo/modules/grocery-computation-sheet'
-import {
+import type { IGroceryComputationSheet } from '@e-coop-monorepo/modules/grocery-computation-sheet'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,

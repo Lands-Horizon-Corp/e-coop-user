@@ -1,7 +1,7 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import {
+import type {
     IFinancialStatementAccountGrouping,
     IFinancialStatementAccountGroupingRequest,
 } from './financial-statement-account-grouping.types'

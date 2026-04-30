@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
-import z from 'zod'
+import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
@@ -10,16 +10,17 @@ import MediaUploader from '@e-coop-monorepo/modules/media/components/media-uploa
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import { Input } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormErrorMessage from '@e-coop-monorepo/ui/core'
 
 import { useMemberProfileArchiveBulk } from '../../member-profile-archive.service'
-import { IMemberProfileArchiveBulkRequest } from '../../member-profile-archive.types'
+import type { IMemberProfileArchiveBulkRequest } from '../../member-profile-archive.types'
 import { MemberProfileArchiveBulkUpdateSchema } from '../../member-profile-archive.validation'
 import MemberProfileArchiveCategoryCombobox from '../member-profile-archive-category-combobox'
 

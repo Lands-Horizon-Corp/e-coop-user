@@ -4,11 +4,11 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import { allErrorMessageExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
 import { FingerPrintIcon } from '@e-coop-monorepo/ui/core'
 import LoadingSpinner from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
@@ -18,7 +18,7 @@ import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 import { Input } from '@e-coop-monorepo/ui/core'
 import PasswordInput from '@e-coop-monorepo/ui/core'
 
-import { IUserLoginRequest } from '../../auth-types'
+import type { IUserLoginRequest } from '../../auth-types'
 import { useSignIn } from '../../auth.service'
 import { UserLoginRequestSchema } from '../../auth.validation'
 

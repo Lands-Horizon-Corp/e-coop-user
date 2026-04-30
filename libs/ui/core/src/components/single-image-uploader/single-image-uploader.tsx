@@ -1,6 +1,7 @@
 import { useState } from 'react'
 
-import { IMedia, useUploadMedia } from '@e-coop-monorepo/modules/media'
+import type { IMedia} from '@e-coop-monorepo/modules/media';
+import { useUploadMedia } from '@e-coop-monorepo/modules/media'
 import { base64ImagetoFile } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { AdjustIcon } from '@e-coop-monorepo/ui/core'

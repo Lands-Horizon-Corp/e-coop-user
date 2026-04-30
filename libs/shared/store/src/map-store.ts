@@ -1,5 +1,5 @@
-import { Pin } from '@e-coop-monorepo/shared/types'
-import { MapContainerProps } from 'react-leaflet'
+import type { Pin } from '@e-coop-monorepo/shared/types'
+import type { MapContainerProps } from 'react-leaflet'
 import { create } from 'zustand'
 
 interface MapStoreState {

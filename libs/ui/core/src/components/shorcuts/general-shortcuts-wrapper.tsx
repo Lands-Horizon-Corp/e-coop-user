@@ -1,6 +1,7 @@
-import {
+import type {
     FC,
-    ReactNode,
+    ReactNode} from 'react';
+import {
     createContext,
     useContext,
     useEffect,

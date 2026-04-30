@@ -4,9 +4,9 @@ import { downloadFile } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     IAccountClassification,
     IAccountClassificationRequest,
 } from './account-classification.types'

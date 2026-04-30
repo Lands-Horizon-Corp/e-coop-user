@@ -3,7 +3,7 @@ import { toast } from 'sonner'
 
 import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { CameraIcon, RefreshIcon } from '@e-coop-monorepo/ui/core'
 import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
 import {

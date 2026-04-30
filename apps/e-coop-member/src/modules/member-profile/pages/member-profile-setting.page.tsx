@@ -1,10 +1,10 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import { useRouter, useSearch } from '@tanstack/react-router'
 
 import { useAuthMember } from '@e-coop-monorepo/shared/store'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import PageContainer from '@e-coop-monorepo/ui/core'
 import {
     GraduationCapIcon,
@@ -22,7 +22,7 @@ import {
     TabsList,
     TabsTrigger,
 } from '@e-coop-monorepo/ui/core'
-import { IconType } from 'react-icons/lib'
+import type { IconType } from 'react-icons/lib'
 
 import IdentityForm from '../components/forms/identity-form'
 import AccountRelationship from '../components/settings-pages/account-relationship'
@@ -31,7 +31,7 @@ import MemberCredentials from '../components/settings-pages/member-credentials'
 import MemberEducationalAttainmentSection from '../components/settings-pages/member-educational-attainment'
 import FinancialManagement from '../components/settings-pages/member-financial-info'
 import MemberGovernmentBenefitSection from '../components/settings-pages/member-government-benefits'
-import { IMemberProfile } from '../member-profile.types'
+import type { IMemberProfile } from '../member-profile.types'
 
 // import { IMemberProfile, useGetMemberProfileById } from '../..'
 // import MemberCloseAccountBanner from '../member-closed-account-banner'

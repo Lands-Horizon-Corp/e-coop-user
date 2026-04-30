@@ -1,11 +1,11 @@
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 import { describe, expect, it } from 'vitest'
 
 import {
     PERMISSION_BASE_ACTIONS,
     generateBaseAction,
 } from './permission.constants'
-import { TPermission, TPermissionAction } from './permission.types'
+import type { TPermission, TPermissionAction } from './permission.types'
 import {
     getCrudPermissions,
     hasPermission,

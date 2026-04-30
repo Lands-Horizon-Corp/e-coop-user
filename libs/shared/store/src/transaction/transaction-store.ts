@@ -1,15 +1,15 @@
-import { Dispatch, SetStateAction } from 'react'
+import type { Dispatch, SetStateAction } from 'react'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type {
     IGeneralLedger,
     IGeneralLedgerPaginated,
 } from '@e-coop-monorepo/modules/general-ledger'
-import { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IQRMemberProfile } from '@e-coop-monorepo/modules/qr-crypto'
-import { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IQRMemberProfile } from '@e-coop-monorepo/modules/qr-crypto'
+import type { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
 
 export interface TransactionPropsStore {

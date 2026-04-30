@@ -9,7 +9,7 @@ import {
 } from '@e-coop-monorepo/ui/core'
 
 import { EyeIcon, EyeOffIcon } from '../icons/index'
-import { InputProps } from './input'
+import type { InputProps } from './input'
 
 interface Props extends Omit<InputProps, 'type'> {
     defaultVisibility?: boolean

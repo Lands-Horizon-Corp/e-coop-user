@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-import { IUserProfileInactivitySettings } from '../user-profile.types'
+import type { IUserProfileInactivitySettings } from '../user-profile.types'
 
 type userActivityState = 'active' | 'inactive'
 

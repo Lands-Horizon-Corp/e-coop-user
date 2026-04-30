@@ -1,7 +1,7 @@
-import { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
+import type { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
 // import { IGeneratedReport } from '@e-coop-monorepo/modules/generated-report'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
 
 export interface IAuthContext<TUser = IUserBase | undefined> {
     user?: TUser

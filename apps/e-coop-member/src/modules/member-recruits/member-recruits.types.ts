@@ -1,12 +1,11 @@
 import z from 'zod'
 
-import { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
-
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberRecruitedMembers extends ITimeStamps {
     id: TEntityId

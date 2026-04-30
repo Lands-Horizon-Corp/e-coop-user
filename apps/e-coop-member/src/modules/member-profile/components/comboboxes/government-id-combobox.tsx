@@ -18,7 +18,7 @@ import {
 } from '@e-coop-monorepo/ui/core'
 import { Check } from 'lucide-react'
 
-import { IGovernmentId } from '../../member-profile.types'
+import type { IGovernmentId } from '../../member-profile.types'
 
 // Mock Government ID data
 export const mockGovernmentIds: IGovernmentId[] = [

@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react'
 
-import { FieldValues, Path, UseFormReturn } from 'react-hook-form'
+import type { FieldValues, Path, UseFormReturn } from 'react-hook-form'
 
 import FormFieldWrapper from './ui/form-field-wrapper'
 import { Label } from './ui/label'

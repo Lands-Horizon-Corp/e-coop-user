@@ -3,7 +3,7 @@ import { findCountry } from '@e-coop-monorepo/ui/core'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { CircleFlag } from 'react-circle-flags'
 
-import { ICurrency } from '../currency.types'
+import type { ICurrency } from '../currency.types'
 
 const currencyBadgeVariants = cva(
     'font-medium transition-colors duration-200 inline-flex items-center border rounded-full',

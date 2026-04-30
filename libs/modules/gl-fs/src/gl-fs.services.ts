@@ -4,12 +4,12 @@ import {
 } from '@e-coop-monorepo/shared/providers'
 import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import {
+import type {
     TEntityId,
     UdpateGeneralLedgerOrder,
 } from '@e-coop-monorepo/shared/types'
 
-import { ConnectAccountType, CreateAPIProps } from './gl-fs.types'
+import type { ConnectAccountType, CreateAPIProps } from './gl-fs.types'
 
 export const createGLSFSService = <
     TResponse extends { id: TEntityId },

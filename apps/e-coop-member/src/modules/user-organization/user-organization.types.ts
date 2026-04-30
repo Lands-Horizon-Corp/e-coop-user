@@ -1,16 +1,16 @@
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
-import {
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IPaymentType } from '../payment-type/payment-type.types'
-import { TPermission } from '../permission'
-import { IUserBase, TUserType } from '../user/user.types'
+import type { IAccount } from '../account'
+import type { IPaymentType } from '../payment-type/payment-type.types'
+import type { TPermission } from '../permission'
+import type { IUserBase, TUserType } from '../user/user.types'
 
 export interface IUserOrganizationContext<
     TUserOrganization = IUserOrganization | undefined,

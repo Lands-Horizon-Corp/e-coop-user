@@ -1,6 +1,6 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
-import { ControllerProps, FieldValues, Path } from 'react-hook-form'
+import type { ControllerProps, FieldValues, Path } from 'react-hook-form'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import {

@@ -1,16 +1,16 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { IMemberGeneralLedgerTotal } from '@e-coop-monorepo/modules/general-ledger'
-import {
+import type { IMemberGeneralLedgerTotal } from '@e-coop-monorepo/modules/general-ledger'
+import type {
     IMemberAccountingLedgerPaginated,
     IMemberAccountingLedgerTotal,
 } from '@e-coop-monorepo/modules/member-account-ledger'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import APIService from '@e-coop-monorepo/shared/providers'
 import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
-import { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 // ⚙️🛠️ API SERVICE HERE
 

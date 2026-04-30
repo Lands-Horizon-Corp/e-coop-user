@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { AreaSchema } from './area.validation'
+import type { AreaSchema } from './area.validation'
 
 export interface IArea extends IBaseEntityMeta {
     media_id: TEntityId

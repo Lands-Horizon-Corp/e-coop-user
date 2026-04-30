@@ -1,4 +1,5 @@
-import { UseFormReturn, useForm } from 'react-hook-form'
+import type { UseFormReturn} from 'react-hook-form';
+import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
@@ -11,7 +12,7 @@ import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
 import { CameraFillIcon, FilesIcon, UserIcon } from '@e-coop-monorepo/ui/core'
 import ImageDisplay from '@e-coop-monorepo/ui/core'
@@ -28,13 +29,14 @@ import InputDate from '@e-coop-monorepo/ui/core'
 import { Textarea } from '@e-coop-monorepo/ui/core'
 
 import { useUpdateMemberProfileIdentity } from '../../member-profile.service'
-import {
+import type {
     IMemberProfile,
     IMemberpRofileIdentityRequest,
 } from '../../member-profile.types'
+import type {
+    TMemberProfileIdentitySchema} from '../../member-profile.validation';
 import {
-    MemberProfileIdentitySchema,
-    TMemberProfileIdentitySchema,
+    MemberProfileIdentitySchema
 } from '../../member-profile.validation'
 
 // --- SERVICE / MUTATION HOOK (You will replace this with your actual hook)

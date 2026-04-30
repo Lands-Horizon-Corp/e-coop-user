@@ -1,6 +1,6 @@
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { THolidayHookMode } from './holiday.types'
+import type { THolidayHookMode } from './holiday.types'
 
 export const normalizeHolidayMode = (
     year: number | undefined,

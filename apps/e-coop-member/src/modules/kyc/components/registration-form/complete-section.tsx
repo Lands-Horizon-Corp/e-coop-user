@@ -1,9 +1,9 @@
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 
 import { Button } from '@e-coop-monorepo/ui/core'
 import { ArrowRight, CheckCircle2, PartyPopper } from 'lucide-react'
 
-import { IKYCRegisterRequest } from '../../kyc.types'
+import type { IKYCRegisterRequest } from '../../kyc.types'
 
 interface CompleteSectionProps {
     form: UseFormReturn<IKYCRegisterRequest>

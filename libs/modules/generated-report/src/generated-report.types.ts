@@ -1,14 +1,14 @@
-import { IGeneratedReportsDownloadUsers } from '@e-coop-monorepo/modules/generated-reports-download-users'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import {
+import type { IGeneratedReportsDownloadUsers } from '@e-coop-monorepo/modules/generated-reports-download-users'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IUser } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-import { TPaperSizeName } from '@e-coop-monorepo/ui/core'
+import type { TPaperSizeName } from '@e-coop-monorepo/ui/core'
 
-import { TPaperSizeUnit } from './generated-reports.constants'
+import type { TPaperSizeUnit } from './generated-reports.constants'
 
 export const ACCOUNT_MODEL_NAMES = [
     'AccountHistory',

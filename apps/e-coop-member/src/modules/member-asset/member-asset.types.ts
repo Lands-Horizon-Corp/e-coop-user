@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { MemberAssetSchema } from './member-asset-validation'
+import type { MemberAssetSchema } from './member-asset-validation'
 
 export interface IMemberAsset extends IBaseEntityMeta {
     id: TEntityId

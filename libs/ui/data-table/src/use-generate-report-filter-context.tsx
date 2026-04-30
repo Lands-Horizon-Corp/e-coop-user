@@ -1,12 +1,12 @@
 import { createContext, useContext, useState } from 'react'
 
-import {
+import type {
     TFilterLogic,
     TFilterPayload,
     TFinalFilter,
 } from '@e-coop-monorepo/shared/contexts'
 import { toBase64 } from '@e-coop-monorepo/shared/helpers'
-import { TSortingState } from '@e-coop-monorepo/shared/types'
+import type { TSortingState } from '@e-coop-monorepo/shared/types'
 import { useDataTableSorting } from '@e-coop-monorepo/ui/core'
 
 type TGenerateReportProps = {

@@ -1,19 +1,19 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IMutualFundAdditionalMembers } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
-import { IMutualFundEntry } from '@e-coop-monorepo/modules/mutual-fund-entry'
-import { IMutualFundTable } from '@e-coop-monorepo/modules/mutual-fund-table'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMutualFundAdditionalMembers } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
+import type { IMutualFundEntry } from '@e-coop-monorepo/modules/mutual-fund-entry'
+import type { IMutualFundTable } from '@e-coop-monorepo/modules/mutual-fund-table'
+import type { IUser } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
-import {
+import type { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
+import type {
     MutualFundSchema,
     MutualFundViewSchema,
     TMutualFundPrintSchema,

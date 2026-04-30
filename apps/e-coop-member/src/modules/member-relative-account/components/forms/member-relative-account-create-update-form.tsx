@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form'
 import { toast } from 'sonner'
-import z from 'zod'
+import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
@@ -9,10 +9,11 @@ import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import RelationshipCombobox from '@e-coop-monorepo/ui/core'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import TextEditor from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
@@ -21,7 +22,7 @@ import {
     useCreateMemberRelativeAccount,
     useUpdateMemberRelativeAccount,
 } from '../../member-relative-account.service'
-import { IMemberRelativeAccount } from '../../member-relative-account.types'
+import type { IMemberRelativeAccount } from '../../member-relative-account.types'
 import { MemberRelativeAccountSchema } from '../../member-relative-account.validation'
 
 type TMemberRelativeAccountFormValues = z.infer<

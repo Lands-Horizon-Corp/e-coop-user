@@ -1,6 +1,6 @@
 import { type ReactNode } from 'react'
 
-import * as SheetPrimitive from '@radix-ui/react-dialog'
+import type * as SheetPrimitive from '@radix-ui/react-dialog'
 
 // import { SHORTCUT_SCOPES } from '@e-coop-monorepo/shared/constants'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'

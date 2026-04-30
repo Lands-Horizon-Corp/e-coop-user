@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { TRelationship } from '@e-coop-monorepo/modules/member-relative-account'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { TRelationship } from '@e-coop-monorepo/modules/member-relative-account'
-import { MemberJointAccountSchema } from './member-joint-account.validation'
+import type { MemberJointAccountSchema } from './member-joint-account.validation'
 
 // LATEST FROM ERD
 export interface IMemberJointAccount extends IBaseEntityMeta {

@@ -5,8 +5,9 @@ import {
     generatedSavingsInterestBaseKey,
 } from '@e-coop-monorepo/modules/generated-savings-interest'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 import {
@@ -14,7 +15,7 @@ import {
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     IGeneratedSavingsInterestEntry,

@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { GenderSchema } from './member-gender.validation'
+import type { GenderSchema } from './member-gender.validation'
 
 export interface IMemberGender extends IBaseEntityMeta {
     id: TEntityId

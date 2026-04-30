@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 
-import { Input, InputProps } from './input'
+import type { InputProps } from './input';
+import { Input } from './input'
 
 interface DebouncedInputProps<T> extends Omit<
     InputProps,

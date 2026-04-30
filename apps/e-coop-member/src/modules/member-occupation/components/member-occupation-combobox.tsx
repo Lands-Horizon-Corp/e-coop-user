@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon, PlusIcon } from '@e-coop-monorepo/ui/core'
 import LoadingSpinner from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
@@ -22,9 +22,10 @@ import {
 import { Check } from 'lucide-react'
 
 import { useGetAll } from '../member-occupation.service'
-import { IMemberOccupation } from '../member-occupation.types'
+import type { IMemberOccupation } from '../member-occupation.types'
+import type {
+    IMemberOccupationCreateUpdateFormProps} from './member-occupation-create-update-form';
 import {
-    IMemberOccupationCreateUpdateFormProps,
     MemberOccupationCreateUpdateFormModal,
 } from './member-occupation-create-update-form'
 

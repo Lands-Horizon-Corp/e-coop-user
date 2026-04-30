@@ -1,4 +1,4 @@
-import {
+import type {
     TForgotPasswordFormSchema,
     TResetPasswordSchema,
     TUserLoginRequestSchema,

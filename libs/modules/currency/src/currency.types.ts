@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IAuditable,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { CurrencySchema } from './currency.validation'
+import type { CurrencySchema } from './currency.validation'
 
 export interface ICurrency extends IAuditable {
     id: TEntityId

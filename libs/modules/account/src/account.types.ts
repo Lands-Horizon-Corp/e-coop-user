@@ -1,21 +1,21 @@
-import { IAccountCategory } from '@e-coop-monorepo/modules/account-category'
-import { IAccountClassification } from '@e-coop-monorepo/modules/account-classification'
-import { IComputationSheet } from '@e-coop-monorepo/modules/computation-sheet'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { TFinancialStatementType } from '@e-coop-monorepo/modules/financial-statement-definition'
-import { IFinancialStatementTitle } from '@e-coop-monorepo/modules/financial-statement-title'
-import { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
-import { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import {
+import type { IAccountCategory } from '@e-coop-monorepo/modules/account-category'
+import type { IAccountClassification } from '@e-coop-monorepo/modules/account-classification'
+import type { IComputationSheet } from '@e-coop-monorepo/modules/computation-sheet'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { TFinancialStatementType } from '@e-coop-monorepo/modules/financial-statement-definition'
+import type { IFinancialStatementTitle } from '@e-coop-monorepo/modules/financial-statement-title'
+import type { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
+import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
-import { TIcon } from '@e-coop-monorepo/ui/core'
+import type { TIcon } from '@e-coop-monorepo/ui/core'
 
-import {
+import type {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,
     ACCOUNT_INTEREST_STANDARD_COMPUTATION,
     ACCOUNT_TYPE,
@@ -30,7 +30,7 @@ import {
     OTHER_DEDUCTION_ENTRY,
     OTHER_INFORMATION_OF_AN_ACCOUNT,
 } from './account.constants'
-import { TAccountFormValues } from './account.validation'
+import type { TAccountFormValues } from './account.validation'
 
 export type TAccountType = (typeof ACCOUNT_TYPE)[number]
 

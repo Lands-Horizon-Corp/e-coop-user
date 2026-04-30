@@ -1,16 +1,16 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IInterestRateByAmount } from '@e-coop-monorepo/modules/interest-rate-by-amount'
-import { IInterestRateByDate } from '@e-coop-monorepo/modules/interest-rate-by-date'
-import { IInterestRateByYear } from '@e-coop-monorepo/modules/interest-rate-by-year'
-import { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IInterestRateByAmount } from '@e-coop-monorepo/modules/interest-rate-by-amount'
+import type { IInterestRateByDate } from '@e-coop-monorepo/modules/interest-rate-by-date'
+import type { IInterestRateByYear } from '@e-coop-monorepo/modules/interest-rate-by-year'
+import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { INTEREST_TYPE } from './browse-reference.constant'
-import { TBrowseReferenceSchema } from './browse-reference.validation'
+import type { INTEREST_TYPE } from './browse-reference.constant'
+import type { TBrowseReferenceSchema } from './browse-reference.validation'
 
 export type TInterestType = (typeof INTEREST_TYPE)[number]
 

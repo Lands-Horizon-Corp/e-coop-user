@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-import { AxiosProgressEvent } from 'axios'
+import type { AxiosProgressEvent } from 'axios'
 import { toast } from 'sonner'
 
 import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
@@ -8,22 +8,24 @@ import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { DownloadIcon, TrashIcon, UploadIcon } from '@e-coop-monorepo/ui/core'
 import ImageDisplay from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import ActionTooltip from '@e-coop-monorepo/ui/core'
 import { AspectRatio } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import { Progress } from '@e-coop-monorepo/ui/core'
 import { type Accept, type DropzoneOptions, useDropzone } from 'react-dropzone'
 
+import type {
+    TDownloadMediaProp} from '../';
 import {
-    TDownloadMediaProp,
     downloadMedia,
     formatBytes,
     getFileCategory,
     getFileInfo,
 } from '../'
 import { useUploadMedia } from '../media.service'
-import { IMedia } from '../media.types'
+import type { IMedia } from '../media.types'
 import MediaResourceFileIcon from './media-resource-file-icon'
 
 interface BaseMediaUploaderProps {

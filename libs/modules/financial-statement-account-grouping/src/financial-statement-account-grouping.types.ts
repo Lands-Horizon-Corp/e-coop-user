@@ -1,5 +1,5 @@
-import { IFinancialStatementDefinition } from '@e-coop-monorepo/modules/financial-statement-definition'
-import {
+import type { IFinancialStatementDefinition } from '@e-coop-monorepo/modules/financial-statement-definition'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,

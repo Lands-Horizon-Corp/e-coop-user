@@ -1,5 +1,5 @@
 import { Checkbox } from '@e-coop-monorepo/ui/core'
-import { Table } from '@tanstack/react-table'
+import type { Table } from '@tanstack/react-table'
 
 interface Props<T> {
     table: Table<T>

@@ -3,7 +3,7 @@ import { forwardRef, useCallback, useState } from 'react'
 import { toast } from 'sonner'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import {
     Button,
     CameraFlipIcon,

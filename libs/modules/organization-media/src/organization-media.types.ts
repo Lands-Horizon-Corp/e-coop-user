@@ -1,15 +1,15 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import {
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { OrganizationMediaSchema } from './organization-media.validation'
+import type { OrganizationMediaSchema } from './organization-media.validation'
 
 export interface IOrganizationMedia extends IAuditable, ITimeStamps {
     id: TEntityId

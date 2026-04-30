@@ -1,10 +1,10 @@
 import { resizeImage } from '@e-coop-monorepo/modules/media'
-import { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
-import { IMemberGovernmentBenefitRequest } from '@e-coop-monorepo/modules/member-profile'
+import type { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
+import type { IMemberGovernmentBenefitRequest } from '@e-coop-monorepo/modules/member-profile'
 import { imageCompressed } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IKyc } from './kyc.types'
 // import { Logger } from '@e-coop-monorepo/shared/helpers'

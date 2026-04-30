@@ -5,10 +5,11 @@ import { toast } from 'sonner'
 import { formatBytes } from '@e-coop-monorepo/modules/media'
 import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import {
+import type {
     DropzoneOptions,
     FileRejection,
-    FileWithPath,
+    FileWithPath} from 'react-dropzone';
+import {
     useDropzone,
 } from 'react-dropzone'
 

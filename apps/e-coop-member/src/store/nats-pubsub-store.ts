@@ -1,7 +1,8 @@
 import { WS_URL } from '@e-coop-monorepo/shared/constants'
 // import logger from '@e-coop-monorepo/shared/helpers'
 // import logger from '@e-coop-monorepo/shared/helpers'
-import { NatsConnection, connect } from 'nats.ws'
+import type { NatsConnection} from 'nats.ws';
+import { connect } from 'nats.ws'
 import { create } from 'zustand'
 
 export interface INatsConnectOpts {

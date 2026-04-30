@@ -1,7 +1,7 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import {
+import type {
     ICollectorsMemberAccountEntry,
     ICollectorsMemberAccountEntryRequest,
 } from './collectors-member-account-entry.types'

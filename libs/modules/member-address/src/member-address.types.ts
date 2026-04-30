@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IArea } from '@e-coop-monorepo/modules/area'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IArea } from '@e-coop-monorepo/modules/area'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
 // import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { HOME_TYPES } from './member-address.constants'
-import { MemberAddressSchema } from './member-address.validation'
+import type { HOME_TYPES } from './member-address.constants'
+import type { MemberAddressSchema } from './member-address.validation'
 
 export interface IMemberAddress extends IBaseEntityMeta {
     id: TEntityId

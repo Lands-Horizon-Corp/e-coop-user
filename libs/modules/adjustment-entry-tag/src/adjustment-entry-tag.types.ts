@@ -1,5 +1,5 @@
-import { IAdjustmentEntry } from '@e-coop-monorepo/modules/adjustment-entry'
-import {
+import type { IAdjustmentEntry } from '@e-coop-monorepo/modules/adjustment-entry'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,

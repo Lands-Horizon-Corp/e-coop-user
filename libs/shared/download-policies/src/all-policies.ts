@@ -10,6 +10,7 @@ import { riskManagementPolicy } from './risk-management-policy'
 import { securityPolicy } from './security-policy'
 import { termsOfUsePolicy } from './terms-of-use-policy'
 import { termsPolicy } from './terms-policy'
+
 export const allPolicies = [
     privacyPolicy,
     termsPolicy,

@@ -1,6 +1,7 @@
 import z from 'zod'
 
-import {
+import type { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
@@ -8,9 +9,8 @@ import {
 } from '@e-coop-monorepo/shared/types'
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
 
-import { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header'
-import { IInterestRateScheme } from '../interest-rate-scheme'
-import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import type { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header'
+import type { IInterestRateScheme } from '../interest-rate-scheme'
 
 export interface IMemberClassificationInterestRateRequest {
     name: string

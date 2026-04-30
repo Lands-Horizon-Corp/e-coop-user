@@ -1,14 +1,13 @@
 import z from 'zod'
 
-import {
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
-
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 
 export interface IMemberDamayanExtensionEntryRequest {
     member_profile_id: TEntityId

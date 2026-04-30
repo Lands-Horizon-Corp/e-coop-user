@@ -1,6 +1,7 @@
 import z from 'zod'
 
-import {
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
@@ -11,8 +12,7 @@ import {
     entityIdSchema,
 } from '@e-coop-monorepo/shared/validation'
 
-import { IAccount } from '../account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IAccount } from '../account'
 
 export interface IMemberDeductionEntryRequest {
     member_profile_id: TEntityId

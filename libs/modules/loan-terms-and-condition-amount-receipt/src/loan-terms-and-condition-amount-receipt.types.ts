@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { LoanTermsAndConditionAmountReceiptSchema } from './loan-terms-and-condition-amount-receipt.validation'
+import type { LoanTermsAndConditionAmountReceiptSchema } from './loan-terms-and-condition-amount-receipt.validation'
 
 export interface ILoanTermsAndConditionAmountReceipt extends IBaseEntityMeta {
     loan_transaction_id?: TEntityId // auto inserted by server

@@ -52,7 +52,7 @@
         "reset:cache": "bunx nx reset",
         
         "elf": "nx run-many -t lint",
-        "fmt": "bunx nx format:write && nx run-many -t lint --fix",
+        "fmt": "bunx nx format:write && bunx nx run-many -t lint --fix",
         "test": "vitest run .",
         "testw": "vitest",
         "preview": "vite preview --port $PORT --host",

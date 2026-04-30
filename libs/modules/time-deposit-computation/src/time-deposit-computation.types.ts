@@ -1,12 +1,12 @@
-import { ITimeDepositType } from '@e-coop-monorepo/modules/time-deposit-type'
-import {
+import type { ITimeDepositType } from '@e-coop-monorepo/modules/time-deposit-type'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TTimeDepositComputationSchema } from './time-deposit-computation.validation'
+import type { TTimeDepositComputationSchema } from './time-deposit-computation.validation'
 
 export interface ITimeDepositComputation
     extends ITimeStamps, IAuditable, IOrgBranchIdentity {

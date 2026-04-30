@@ -1,7 +1,7 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { DataTableActiveFilters } from '@e-coop-monorepo/ui/core'
 import { DataTableDeleteSelected } from '@e-coop-monorepo/ui/core'
 import { type IDataTableDeleteSelectedProps } from '@e-coop-monorepo/ui/core'
@@ -10,19 +10,22 @@ import { type IDataTableExportProps } from '@e-coop-monorepo/ui/core'
 import { DataTableOptionsMenu } from '@e-coop-monorepo/ui/core'
 import { type IDataTableScrollableOptionProps } from '@e-coop-monorepo/ui/core'
 import { Separator } from '@e-coop-monorepo/ui/core'
-import { Table } from '@tanstack/react-table'
+import type { Table } from '@tanstack/react-table'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import RefreshButton, { IRefreshButtonProps } from '../buttons/refresh-button'
+import type { IRefreshButtonProps } from '../buttons/refresh-button';
+import RefreshButton from '../buttons/refresh-button'
 import DatatableColumnVisibility from './data-table-actions/data-table-column-visibility'
-import DataTableCreateAction, {
+import type {
     IDataTableCreateActionProps,
-} from './data-table-actions/data-table-create-action'
-import { IDataTableFilterLogicOptionProps } from './data-table-actions/data-table-options-menu/filter-logic-option'
+} from './data-table-actions/data-table-create-action';
+import DataTableCreateAction from './data-table-actions/data-table-create-action'
+import type { IDataTableFilterLogicOptionProps } from './data-table-actions/data-table-options-menu/filter-logic-option'
 import DataTableUnselect from './data-table-actions/data-table-unselect'
-import DataTableGlobalSearch, {
+import type {
     IGlobalSearchProps,
-} from './data-table-filters/data-table-global-search'
+} from './data-table-filters/data-table-global-search';
+import DataTableGlobalSearch from './data-table-filters/data-table-global-search'
 
 export interface IDataTableToolbarProps<TData> extends IClassProps {
     table: Table<TData>

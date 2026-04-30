@@ -1,5 +1,5 @@
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { MixerHorizontalIcon } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {
@@ -8,14 +8,16 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@e-coop-monorepo/ui/core'
-import { Table } from '@tanstack/react-table'
+import type { Table } from '@tanstack/react-table'
 
-import DataTableFilterLogicOption, {
+import type {
     IDataTableFilterLogicOptionProps,
-} from './filter-logic-option'
-import DataTableScrollOption, {
+} from './filter-logic-option';
+import DataTableFilterLogicOption from './filter-logic-option'
+import type {
     IDataTableScrollableOptionProps,
-} from './scroll-option'
+} from './scroll-option';
+import DataTableScrollOption from './scroll-option'
 
 interface Props<T> extends IClassProps {
     table: Table<T>

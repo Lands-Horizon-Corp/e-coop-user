@@ -28,7 +28,7 @@ import { QRCodeSVG } from 'qrcode.react'
 
 import { cn } from '@/lib/utils'
 
-import { IMemberProfile } from '../../member-profile.types'
+import type { IMemberProfile } from '../../member-profile.types'
 
 interface UserCredentialProps {
     memberProfile: IMemberProfile

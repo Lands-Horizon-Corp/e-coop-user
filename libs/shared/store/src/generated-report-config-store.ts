@@ -1,8 +1,8 @@
-import {
+import type {
     IGeneratedReportRequest,
     TemplateOptions,
 } from '@e-coop-monorepo/modules/generated-report/generated-report.types'
-import { IForm } from '@e-coop-monorepo/shared/types'
+import type { IForm } from '@e-coop-monorepo/shared/types'
 import { create } from 'zustand'
 
 export type TGenerateReport = Pick<

@@ -1,7 +1,7 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import {
+import type {
     IChargesRateSchemeAccount,
     IChargesRateSchemeAccountRequest,
 } from './charges-rate-scheme-account.types'

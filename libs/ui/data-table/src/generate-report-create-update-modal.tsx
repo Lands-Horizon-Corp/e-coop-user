@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 
 import { useForm } from 'react-hook-form'
-import z from 'zod'
+import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
@@ -9,20 +9,21 @@ import {
     useCreateGeneratedReport,
     useUpdateGeneratedReportById,
 } from '@e-coop-monorepo/modules/generated-report'
-import {
+import type {
     IGeneratedReport,
     IGeneratedReportRequest,
 } from '@e-coop-monorepo/modules/generated-report'
 import { GeneratedReportSchema } from '@e-coop-monorepo/modules/generated-report'
-import { IFilterState } from '@e-coop-monorepo/shared/contexts'
+import type { IFilterState } from '@e-coop-monorepo/shared/contexts'
 import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { extractColumnMetadata } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import { FormFooterResetSubmit } from '@e-coop-monorepo/ui/core'
-import { IModalProps, Modal } from '@e-coop-monorepo/ui/core'
+import type { IModalProps} from '@e-coop-monorepo/ui/core';
+import { Modal } from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import { FormErrorMessage } from '@e-coop-monorepo/ui/core'
 import { FormFieldWrapper } from '@e-coop-monorepo/ui/core'
@@ -30,7 +31,7 @@ import { Input } from '@e-coop-monorepo/ui/core'
 import { Textarea } from '@e-coop-monorepo/ui/core'
 import { useGeneratedReportFilter } from '@e-coop-monorepo/ui/core'
 import { GeneratedReportFilter } from '@e-coop-monorepo/ui/core'
-import { ColumnDef, Table } from '@tanstack/react-table'
+import type { ColumnDef, Table } from '@tanstack/react-table'
 
 type TBankFormValues = z.input<typeof GeneratedReportSchema>
 

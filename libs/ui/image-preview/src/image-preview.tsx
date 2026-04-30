@@ -4,7 +4,7 @@ import { forwardRef, useEffect, useRef, useState } from 'react'
 
 import { formatBytes } from '@e-coop-monorepo/modules/media'
 import { cn, formatDate } from '@e-coop-monorepo/shared/helpers'
-import {
+import type {
     DownloadProps,
     ImageContainerProps,
     ImagePreviewActionProps,
@@ -25,7 +25,7 @@ import {
 } from '@e-coop-monorepo/ui/core'
 // Local Components
 import { useCarousel } from '@e-coop-monorepo/ui/core'
-import useEmblaCarousel from 'embla-carousel-react'
+import type useEmblaCarousel from 'embla-carousel-react'
 
 import { Button } from '../ui/button'
 import { Card } from '../ui/card'

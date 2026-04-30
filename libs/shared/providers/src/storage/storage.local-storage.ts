@@ -1,4 +1,4 @@
-import { IStorage } from './storage.types'
+import type { IStorage } from './storage.types'
 
 export class LocalStorageStrategy implements IStorage {
     async getItem<T>(key: string, fallback?: T): Promise<T | null> {

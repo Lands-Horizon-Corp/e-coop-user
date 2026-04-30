@@ -10,7 +10,7 @@ import {
     PopoverTrigger,
 } from '@e-coop-monorepo/ui/core'
 import { CalendarIcon } from 'lucide-react'
-import { DateRange } from 'react-day-picker'
+import type { DateRange } from 'react-day-picker'
 
 interface DateRangePickerProps {
     value?: DateRange

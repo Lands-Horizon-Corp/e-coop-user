@@ -2,7 +2,7 @@
 import { useRef } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import {
     TableBody,
     TableCell,
@@ -11,7 +11,8 @@ import {
     TableRow,
     Table as UITable,
 } from '@e-coop-monorepo/ui/core'
-import { Row, Table, flexRender } from '@tanstack/react-table'
+import type { Row, Table} from '@tanstack/react-table';
+import { flexRender } from '@tanstack/react-table'
 import { useVirtualizer } from '@tanstack/react-virtual'
 
 interface Props<TData> extends IClassProps {

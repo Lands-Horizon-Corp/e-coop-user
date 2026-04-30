@@ -1,8 +1,9 @@
 import { axiosErrExtractor } from './axios-err-extractor'
+import type {
+    TExtractErrorMessageParams} from './error-message-extractor.types';
 import {
     TErrorMessageExtractor,
-    TErrorMessageExtractors,
-    TExtractErrorMessageParams,
+    TErrorMessageExtractors
 } from './error-message-extractor.types'
 import { searchParamErrExtractor } from './path-params-err-extractor'
 import { zodErrExtractor } from './zod-err-extractor'

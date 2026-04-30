@@ -1,4 +1,4 @@
-import { Policy } from './types'
+import type { Policy } from './types'
 
 export const amlCtfPolicy: Policy = {
     id: 'aml-ctf',

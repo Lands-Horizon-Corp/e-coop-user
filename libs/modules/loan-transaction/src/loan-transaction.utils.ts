@@ -1,6 +1,6 @@
 import { buildOR } from '@e-coop-monorepo/modules/or-builder'
 
-import {
+import type {
     ILoanTransactionStatusDates,
     TLoanStatusType,
     TORLoanVoucherSettings,

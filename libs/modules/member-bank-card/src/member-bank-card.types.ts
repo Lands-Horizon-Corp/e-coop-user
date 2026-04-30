@@ -1,8 +1,8 @@
 import z from 'zod'
 
-import { IBank } from '@e-coop-monorepo/modules/bank'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IBank } from '@e-coop-monorepo/modules/bank'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,

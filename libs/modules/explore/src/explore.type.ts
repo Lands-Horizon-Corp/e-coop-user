@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'
+import type { ReactNode } from 'react'
 
 export type ExploreView = 'organizations' | 'branches' | 'map'
 export type SortBy = 'recent' | 'popular' | 'name' | 'location'

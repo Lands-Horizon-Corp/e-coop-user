@@ -2,7 +2,7 @@ import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { ImageIcon } from '@e-coop-monorepo/ui/core'
 
 import DropHoverOverlay from '../drop-hover-overlay'
-import { IDropAreaProps } from './type'
+import type { IDropAreaProps } from './type'
 
 const DefaultDropArea = ({
     className,

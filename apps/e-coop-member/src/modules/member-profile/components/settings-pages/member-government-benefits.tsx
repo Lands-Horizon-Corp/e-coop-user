@@ -1,4 +1,5 @@
-import { ReactNode, useState } from 'react'
+import type { ReactNode} from 'react';
+import { useState } from 'react'
 
 import { toast } from 'sonner'
 
@@ -22,7 +23,7 @@ import {
     X,
 } from 'lucide-react'
 
-import { IMemberProfile } from '../../member-profile.types'
+import type { IMemberProfile } from '../../member-profile.types'
 import { CountryCombobox } from '../comboboxes/country-combobox'
 import GovernmentIdCombobox from '../comboboxes/government-id-combobox'
 

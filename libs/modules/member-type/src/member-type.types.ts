@@ -1,15 +1,15 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
-import {
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { MemberTypeSchema } from './member-type.validation'
+import type { MemberTypeSchema } from './member-type.validation'
 
 export interface IMemberType extends ITimeStamps, IAuditable {
     id: TEntityId

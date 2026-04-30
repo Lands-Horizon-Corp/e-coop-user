@@ -1,15 +1,15 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount, TAccountType } from '@e-coop-monorepo/modules/account'
-import { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
-import { IComputationSheet } from '@e-coop-monorepo/modules/computation-sheet'
-import {
+import type { IAccount, TAccountType } from '@e-coop-monorepo/modules/account'
+import type { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
+import type { IComputationSheet } from '@e-coop-monorepo/modules/computation-sheet'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { AutomaticLoanDeductionSchema } from './automatic-loan-deduction.validation'
+import type { AutomaticLoanDeductionSchema } from './automatic-loan-deduction.validation'
 
 export interface IAutomaticLoanDeduction extends IBaseEntityMeta {
     account_id: TEntityId

@@ -1,4 +1,5 @@
 import { HandsHelpingIcon, IconMap } from './icons/index'
+
 export const IconContainer = ({
     name,
     className,

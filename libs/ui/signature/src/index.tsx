@@ -13,9 +13,9 @@ import {
     TooltipTrigger,
 } from '@e-coop-monorepo/ui/core'
 import { format } from 'date-fns'
-import { FileWithPath } from 'react-dropzone'
-import SignaturePad from 'react-signature-canvas'
-import Webcam from 'react-webcam'
+import type { FileWithPath } from 'react-dropzone'
+import type SignaturePad from 'react-signature-canvas'
+import type Webcam from 'react-webcam'
 
 import {
     CameraIcon,

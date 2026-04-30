@@ -1,4 +1,4 @@
-import { TemplateOptions } from '@e-coop-monorepo/modules/generated-report'
+import type { TemplateOptions } from '@e-coop-monorepo/modules/generated-report'
 
 export const JournalVoucherTemplates: TemplateOptions[] = [
     {

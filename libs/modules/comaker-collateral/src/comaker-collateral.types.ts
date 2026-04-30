@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { ICollateral } from '@e-coop-monorepo/modules/collateral'
-import {
+import type { ICollateral } from '@e-coop-monorepo/modules/collateral'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ComakerCollateralSchema } from './comaker-collateral.validation'
+import type { ComakerCollateralSchema } from './comaker-collateral.validation'
 
 export interface IComakerCollateral extends IBaseEntityMeta {
     loan_transaction_id: TEntityId

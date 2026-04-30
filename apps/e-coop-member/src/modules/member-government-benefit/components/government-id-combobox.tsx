@@ -20,7 +20,7 @@ import {
 import { Check } from 'lucide-react'
 
 import { useGetAllGovernmentIds } from '../member-government-benefit.service'
-import { IGovernmentId } from '../member-government-benefit.types'
+import type { IGovernmentId } from '../member-government-benefit.types'
 
 interface Props extends Omit<
     React.ComponentPropsWithoutRef<'button'>,

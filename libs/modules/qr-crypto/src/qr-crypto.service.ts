@@ -6,7 +6,7 @@ import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
 
-import { IOperationCallbacks } from './qr-crypto.types'
+import type { IOperationCallbacks } from './qr-crypto.types'
 
 const { API, route } = createAPIRepository('/api/v1/qr-code')
 

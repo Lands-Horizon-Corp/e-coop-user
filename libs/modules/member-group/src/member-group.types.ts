@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { MemberGroupSchema } from './member-group.validation'
+import type { MemberGroupSchema } from './member-group.validation'
 
 export interface IMemberGroup extends IBaseEntityMeta {
     id: TEntityId

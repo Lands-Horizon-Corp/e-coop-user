@@ -1,28 +1,28 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type {
     ICashCheckVoucherGeneralORSettings,
     ICashVoucherORSettings,
 } from '@e-coop-monorepo/modules/branch-settings'
-import {
+import type {
     ICashCheckVoucherEntry,
     ICashCheckVoucherEntryRequest,
 } from '@e-coop-monorepo/modules/cash-check-voucher-entry'
-import { ICashCheckVoucherTag } from '@e-coop-monorepo/modules/cash-check-voucher-tag'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUser } from '@e-coop-monorepo/modules/user'
-import { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
-import {
+import type { ICashCheckVoucherTag } from '@e-coop-monorepo/modules/cash-check-voucher-tag'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     CashCheckSignatureSchema,
     CashCheckVoucherPrintSchema,
 } from './cash-check-voucher.validation'

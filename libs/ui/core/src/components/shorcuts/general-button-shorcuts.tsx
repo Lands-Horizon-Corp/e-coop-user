@@ -1,4 +1,5 @@
-import { ReactNode, useMemo } from 'react'
+import type { ReactNode} from 'react';
+import { useMemo } from 'react'
 import { useState } from 'react'
 
 import Fuse from 'fuse.js'
@@ -22,7 +23,7 @@ import {
 } from '../ui/empty'
 import { Kbd } from '../ui/kbd'
 import { ShortcutsData } from './general-shorcuts-data'
-import { TGroupShorcuts } from './general-shorcuts.type'
+import type { TGroupShorcuts } from './general-shorcuts.type'
 
 interface ShortcutItemProps {
     icon?: ReactNode

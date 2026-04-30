@@ -1,12 +1,12 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
-import { IFinancialStatementDefinitionSchema } from './financial-statement-definition.validation'
+import type { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
+import type { IFinancialStatementDefinitionSchema } from './financial-statement-definition.validation'
 
 export type TFinancialStatementType = (typeof FINANCIAL_STATEMENT_TYPE)[number]
 

@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import { ChevronDownIcon, PlusIcon } from '@e-coop-monorepo/ui/core'
 import LoadingSpinner from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
@@ -22,10 +22,11 @@ import {
 import { Check } from 'lucide-react'
 
 import { useGetAllMemberTypes } from '../member-type.service'
-import { IMemberType } from '../member-type.types'
+import type { IMemberType } from '../member-type.types'
+import type {
+    TMemberTypeForm} from './forms/member-type-create-update-form';
 import {
-    MemberTypeCreateUpdateFormModal,
-    TMemberTypeForm,
+    MemberTypeCreateUpdateFormModal
 } from './forms/member-type-create-update-form'
 
 export type IMemberTypeComboboxCreateProps = Pick<

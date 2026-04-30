@@ -1,4 +1,4 @@
-import { IStorage } from './storage.types'
+import type { IStorage } from './storage.types'
 
 export class IndexedDBStrategy implements IStorage {
     private dbName = 'e-cooperatives-suite'

@@ -1,6 +1,8 @@
 import * as React from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import type {
+    InputProps} from '@e-coop-monorepo/ui/core';
 import {
     Button,
     Command,
@@ -10,7 +12,6 @@ import {
     CommandItem,
     CommandList,
     Input,
-    InputProps,
     Popover,
     PopoverContent,
     PopoverTrigger,

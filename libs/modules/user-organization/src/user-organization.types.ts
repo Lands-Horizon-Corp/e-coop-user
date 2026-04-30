@@ -1,17 +1,17 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import { TPermission } from '@e-coop-monorepo/modules/permission'
-import { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
-import { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
+import type { TPermission } from '@e-coop-monorepo/modules/permission'
+import type { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
+import type { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     TTimeMachineSchema,
     TUserOrganizationSettingsSchema,
 } from './user-organization.validation'

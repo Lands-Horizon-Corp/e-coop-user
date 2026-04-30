@@ -1,4 +1,4 @@
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 export type CreateAPIProps = {
     url: string

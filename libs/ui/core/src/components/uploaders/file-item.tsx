@@ -1,4 +1,5 @@
-import { IMedia, formatBytes } from '@e-coop-monorepo/modules/media'
+import type { IMedia} from '@e-coop-monorepo/modules/media';
+import { formatBytes } from '@e-coop-monorepo/modules/media'
 import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
 
 import { DotMediumIcon, TrashIcon } from '../icons/index'

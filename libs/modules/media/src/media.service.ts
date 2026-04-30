@@ -1,13 +1,13 @@
 import { useMutation } from '@tanstack/react-query'
-import { AxiosProgressEvent } from 'axios'
+import type { AxiosProgressEvent } from 'axios'
 
 // import { compressImage } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { HookMutationOptions } from '@e-coop-monorepo/shared/providers'
+import type { HookMutationOptions } from '@e-coop-monorepo/shared/providers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IMedia } from './media.types'
+import type { IMedia } from './media.types'
 
 const { apiCrudService } = createDataLayerFactory({
     url: '/api/v1/media',

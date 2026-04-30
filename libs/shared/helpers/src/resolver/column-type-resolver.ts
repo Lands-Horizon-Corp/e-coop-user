@@ -1,5 +1,5 @@
-import { TColumnDataTypes } from '@e-coop-monorepo/shared/contexts'
-import { Table } from '@tanstack/react-table'
+import type { TColumnDataTypes } from '@e-coop-monorepo/shared/contexts'
+import type { Table } from '@tanstack/react-table'
 
 /**
  * ColumnTypeResolver - Automatically infers column data types from table data

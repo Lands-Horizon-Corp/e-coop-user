@@ -2,8 +2,9 @@ import { useQuery } from '@tanstack/react-query'
 
 import { useDeleteById } from '@e-coop-monorepo/modules/subscription-plan'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 

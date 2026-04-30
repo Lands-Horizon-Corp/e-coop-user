@@ -32,8 +32,6 @@ export default defineConfig([
                 'error',
                 {
                     allowCircularSelfDependency: true,
-                    checkNestedDependencies: true,
-                    ignoreTypeOnlyImports: true,
                     enforceBuildableLibDependency: true,
                     allow: ['^.*/eslint(\\.base)?\\.config\\.[cm]?[jt]s$'],
                     depConstraints: [
@@ -60,6 +58,13 @@ export default defineConfig([
             perfectionist: perfectionist,
         },
         rules: {
+            '@typescript-eslint/consistent-type-imports': [
+                'error',
+                {
+                    prefer: 'type-imports',
+                    fixStyle: 'separate-type-imports',
+                },
+            ],
             // React Hooks
             ...reactHooks.configs.recommended.rules,
             'react-refresh/only-export-components': [

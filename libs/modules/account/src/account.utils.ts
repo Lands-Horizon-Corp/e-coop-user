@@ -1,6 +1,6 @@
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { IAccount, TAccountType } from './account.types'
+import type { IAccount, TAccountType } from './account.types'
 
 export const getAccountTypePriority = (accountType: TAccountType) => {
     switch (accountType) {

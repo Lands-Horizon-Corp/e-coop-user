@@ -1,6 +1,6 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,

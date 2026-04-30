@@ -1,9 +1,9 @@
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { TCollateralSchema } from './collateral.validation'
+import type { TCollateralSchema } from './collateral.validation'
 
 export interface ICollateral extends IBaseEntityMeta {
     icon: string

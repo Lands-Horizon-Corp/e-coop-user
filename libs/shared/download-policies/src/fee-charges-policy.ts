@@ -1,4 +1,4 @@
-import { Policy } from './types'
+import type { Policy } from './types'
 
 export const feeChargesPolicy: Policy = {
     id: 'fee-charges',

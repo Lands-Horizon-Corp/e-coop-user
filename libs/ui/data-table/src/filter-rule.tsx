@@ -1,9 +1,10 @@
-import {
+import type {
     TColumnDataTypes,
-    TFinalFilter,
+    TFinalFilter} from '@e-coop-monorepo/shared/contexts';
+import {
     filterModeMap,
 } from '@e-coop-monorepo/shared/contexts'
-import { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
+import type { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
 import { DateRangePicker } from '@e-coop-monorepo/ui/core'
 import { TrashIcon } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
@@ -15,7 +16,7 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@e-coop-monorepo/ui/core'
-import { DateRange } from 'react-day-picker'
+import type { DateRange } from 'react-day-picker'
 
 interface FilterRuleProps {
     filter: TFinalFilter

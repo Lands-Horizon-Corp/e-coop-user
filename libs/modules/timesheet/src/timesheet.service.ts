@@ -1,18 +1,19 @@
 import { useQuery } from '@tanstack/react-query'
 
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
-import {
+import type {
     IPaginatedResult,
     TAPIQueryOptions,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { ITimesheet, ITimesheetInOutRequest } from './timesheet.types'
+import type { ITimesheet, ITimesheetInOutRequest } from './timesheet.types'
 
 const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory({
     url: '/api/v1/timesheet',

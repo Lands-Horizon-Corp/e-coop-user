@@ -1,6 +1,6 @@
-import { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     IOrgBranchIdentity,
     IPaginatedResult,

@@ -1,15 +1,15 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IMutualFund } from '@e-coop-monorepo/modules/mutual-fund'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMutualFund } from '@e-coop-monorepo/modules/mutual-fund'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { MutualFundEntrySchema } from './mutual-fund-entry.validation'
+import type { MutualFundEntrySchema } from './mutual-fund-entry.validation'
 
 export interface IMutualFundEntry extends IBaseEntityMeta {
     member_profile_id: TEntityId

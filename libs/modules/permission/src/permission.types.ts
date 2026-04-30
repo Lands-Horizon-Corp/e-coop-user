@@ -1,4 +1,4 @@
-import {
+import type {
     PERMISSION_ALL_ACTIONS,
     PERMISSION_ALL_RESOURCE_ACTION,
 } from './permission.constants'

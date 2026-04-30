@@ -1,9 +1,9 @@
-import { IUserBase } from '@e-coop-monorepo/modules/user'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
 
-import {
+import type {
     IUserProfileGeneralRequest,
     IUserProfilePhotoUpdateRequest,
     IUserProfileRequest,

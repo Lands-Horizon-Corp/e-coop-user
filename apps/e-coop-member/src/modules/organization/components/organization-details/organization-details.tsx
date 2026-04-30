@@ -21,7 +21,7 @@ import {
     Sparkles,
 } from 'lucide-react'
 
-import { IOrganization } from '../../organization.types'
+import type { IOrganization } from '../../organization.types'
 import OrganizationLegalPolicies from './organization-legal-policies'
 
 interface OrganizationDetailsProps {

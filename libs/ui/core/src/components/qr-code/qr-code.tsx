@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import { QrCodeIcon } from '@e-coop-monorepo/ui/core'
 import { QRCodeSVG } from 'qrcode.react'
 

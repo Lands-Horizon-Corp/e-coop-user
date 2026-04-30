@@ -1,5 +1,5 @@
 import { useForm } from 'react-hook-form'
-import z from 'zod'
+import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
@@ -8,9 +8,10 @@ import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import TextEditor from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
@@ -20,7 +21,7 @@ import {
     useCreateMemberProfileExpense,
     useUpdateMemberProfileExpense,
 } from '../../member-expense.service'
-import { IMemberExpense } from '../../member-expense.types'
+import type { IMemberExpense } from '../../member-expense.types'
 import { MemberExpenseSchema } from '../../member-expense.validation'
 
 type TMemberExpenseFormValues = z.infer<typeof MemberExpenseSchema>

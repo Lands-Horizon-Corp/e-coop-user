@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { ScrollArea } from '@radix-ui/react-scroll-area'
 
-import { IOrganizationWithPolicies } from '@e-coop-monorepo/modules/organization'
+import type { IOrganizationWithPolicies } from '@e-coop-monorepo/modules/organization'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { Checkbox } from '@e-coop-monorepo/ui/core'
 import { Popover } from '@e-coop-monorepo/ui/core'

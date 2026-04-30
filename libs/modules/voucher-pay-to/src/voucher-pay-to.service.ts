@@ -1,7 +1,7 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import { IVoucherPayTo, IVoucherPayToRequest } from './voucher-pay-to.types'
+import type { IVoucherPayTo, IVoucherPayToRequest } from './voucher-pay-to.types'
 
 const {
     apiCrudHooks,

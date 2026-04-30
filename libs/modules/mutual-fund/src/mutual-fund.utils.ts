@@ -1,4 +1,4 @@
-import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
+import type { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
 
 export const MUTUAL_FUND_COMPUTATION_TYPE_LABELS: Record<
     (typeof MUTUAL_FUND_COMPUTATION_TYPES)[number],

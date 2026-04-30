@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { MemberClassificationSchema } from './member-classification.validation'
+import type { MemberClassificationSchema } from './member-classification.validation'
 
 export interface IMemberClassification extends ITimeStamps, IAuditable {
     id: TEntityId

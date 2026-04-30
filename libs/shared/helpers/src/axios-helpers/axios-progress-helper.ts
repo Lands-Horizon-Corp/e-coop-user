@@ -1,4 +1,4 @@
-import { AxiosProgressEvent } from 'axios'
+import type { AxiosProgressEvent } from 'axios'
 
 export interface UploadProgressResult {
     progress: number

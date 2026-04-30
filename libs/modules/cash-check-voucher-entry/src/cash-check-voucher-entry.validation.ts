@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { IAccount, TAccountType } from '@e-coop-monorepo/modules/account'
+import type { IAccount, TAccountType } from '@e-coop-monorepo/modules/account'
 import {
     EntityIdSchema,
     entityIdSchema,

@@ -1,4 +1,4 @@
-import { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
 import AnimateRevealEffect from '@e-coop-monorepo/modules/home/components/animate-reveal-effect'
 import { Building2 } from 'lucide-react'
 

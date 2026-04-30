@@ -8,7 +8,7 @@ import ImageDisplay from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import TruncatedText from '@e-coop-monorepo/ui/core'
 
-import { IOrganization } from '../organization.types'
+import type { IOrganization } from '../organization.types'
 
 interface OrganizationBannerProps {
     organization: IOrganization

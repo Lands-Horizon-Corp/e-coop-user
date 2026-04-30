@@ -1,5 +1,5 @@
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import {
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type {
     IAuditable,
     ITimeStamps,
     TEntityId,

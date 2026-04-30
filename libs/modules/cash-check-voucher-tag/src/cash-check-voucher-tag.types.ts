@@ -1,11 +1,11 @@
-import z from 'zod'
+import type z from 'zod'
 
-import {
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { CashCheckVoucherTagSchema } from './cash-check-voucher-tag.validation'
+import type { CashCheckVoucherTagSchema } from './cash-check-voucher-tag.validation'
 
 export interface ICashCheckVoucherTag extends IBaseEntityMeta {
     name: string

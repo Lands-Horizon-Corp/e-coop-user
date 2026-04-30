@@ -1,6 +1,6 @@
 import AnimateRevealEffect from '@e-coop-monorepo/modules/home/components/animate-reveal-effect'
 import { CoopBackground } from '@e-coop-monorepo/modules/home/components/coop-bg'
-import { IOrganizationMedia } from '@e-coop-monorepo/modules/organization-media'
+import type { IOrganizationMedia } from '@e-coop-monorepo/modules/organization-media'
 import {
     Carousel,
     CarouselContent,

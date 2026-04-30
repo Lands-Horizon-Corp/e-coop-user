@@ -1,11 +1,11 @@
-import { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
-import { IAuditable, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import type { IAuditable, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import {
     PERMISSION_ALL_ACTIONS,
     PERMISSION_BASE_ACTIONS,
 } from './permission.constants'
-import {
+import type {
     TPermission,
     TPermissionAction,
     TPermissionResource,

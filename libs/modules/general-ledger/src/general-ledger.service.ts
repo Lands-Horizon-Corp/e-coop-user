@@ -2,13 +2,14 @@ import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
-import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import {
+import type {
     IGeneralLedger,
     IGeneralLedgerPaginated,
     IMemberGeneralLedgerTotal,

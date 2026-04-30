@@ -1,10 +1,10 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { MemberRelativeAccountSchema } from './member-relative-account.validation'
-import { FAMILY_RELATIONSHIP } from './member-relative.constants'
+import type { MemberRelativeAccountSchema } from './member-relative-account.validation'
+import type { FAMILY_RELATIONSHIP } from './member-relative.constants'
 
 export type TRelationship = (typeof FAMILY_RELATIONSHIP)[number] // move to member profile relative
 

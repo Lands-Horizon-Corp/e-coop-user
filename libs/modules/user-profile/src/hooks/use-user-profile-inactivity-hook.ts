@@ -1,8 +1,5 @@
 import { useCallback, useEffect, useRef } from 'react'
 
-import { IUserProfileInactivitySettings, TInactivityTimeUnit } from '../user-profile.types';
-import { TUserProfileInactivitySettings } from '../user-profile.validation';
-import { logger } from '../user-profile.service';
 import { getLocalStorage, setLocalStorage } from '@e-coop-monorepo/shared/hooks'
 
 import {
@@ -12,6 +9,12 @@ import {
     INACTIVITY_SETTINGS_KEY,
     POLLING_INTERVAL,
 } from '../user-profile.constants'
+import { logger } from '../user-profile.service'
+import type {
+    IUserProfileInactivitySettings,
+    TInactivityTimeUnit,
+} from '../user-profile.types'
+import type { TUserProfileInactivitySettings } from '../user-profile.validation'
 
 export const DEFAULT_INACTIVITY_SETTINGS: TUserProfileInactivitySettings = {
     enabled: false,

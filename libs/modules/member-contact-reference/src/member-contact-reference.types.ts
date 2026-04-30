@@ -1,9 +1,9 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
 
-import { MemberContactReferenceSchema } from './member-contact-reference.validation'
+import type { MemberContactReferenceSchema } from './member-contact-reference.validation'
 
 // LATEST FROM ERD
 export interface IMemberContactReference extends IBaseEntityMeta {

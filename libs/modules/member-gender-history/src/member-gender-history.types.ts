@@ -1,6 +1,6 @@
-import { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,

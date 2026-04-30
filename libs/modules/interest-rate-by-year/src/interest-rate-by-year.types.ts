@@ -1,12 +1,12 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
-import {
+import type { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
 } from '@e-coop-monorepo/shared/types'
 
-import { InterestRateByYearSchema } from './interest-rate-by-year.validation'
+import type { InterestRateByYearSchema } from './interest-rate-by-year.validation'
 
 export interface IInterestRateByYear extends IBaseEntityMeta {
     browse_reference_id: string

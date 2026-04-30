@@ -1,19 +1,19 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { TGeneralLedgerSource } from '@e-coop-monorepo/modules/general-ledger'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IPaymentRequest } from '@e-coop-monorepo/modules/quick-transfer'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { TGeneralLedgerSource } from '@e-coop-monorepo/modules/general-ledger'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMemberJointAccount } from '@e-coop-monorepo/modules/member-joint-account'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IPaymentRequest } from '@e-coop-monorepo/modules/quick-transfer'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TTransactionSchema } from './transaction.validation'
+import type { TTransactionSchema } from './transaction.validation'
 
 export interface ITransactionRequest {
     signature_media_id?: TEntityId

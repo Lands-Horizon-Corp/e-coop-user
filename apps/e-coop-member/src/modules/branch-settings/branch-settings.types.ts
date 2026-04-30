@@ -1,16 +1,16 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import {
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { IAccount } from '../account'
-import { IUnbalanceAccount } from '../unbalance-account'
-import {
+import type { IAccount } from '../account'
+import type { IUnbalanceAccount } from '../unbalance-account'
+import type {
     BranchSettingsSchema,
     TBranchSettingsCurrencySchema,
 } from './branch-settings.validation'

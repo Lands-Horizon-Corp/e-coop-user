@@ -1,5 +1,5 @@
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { IQRMemberProfile } from '@e-coop-monorepo/modules/qr-crypto'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IQRMemberProfile } from '@e-coop-monorepo/modules/qr-crypto'
 import { create } from 'zustand'
 
 interface MemberPickerStoreProps {

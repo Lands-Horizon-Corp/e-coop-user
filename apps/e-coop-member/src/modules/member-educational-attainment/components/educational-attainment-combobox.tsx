@@ -19,7 +19,7 @@ import {
 import { Check } from 'lucide-react'
 
 import { EDUCATIONAL_ATTAINMENT } from '../constants'
-import { TEducationalAttainment } from '../member-educational-attainment.types'
+import type { TEducationalAttainment } from '../member-educational-attainment.types'
 
 interface Props {
     id?: string

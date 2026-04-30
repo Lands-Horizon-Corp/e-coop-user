@@ -1,14 +1,14 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { LOAN_TRANSACTION_ENTRY_TYPE } from './loan-transaction-constant'
-import { TLoanTransactionEntrySchema } from './loan-transaction-entry.validation'
+import type { LOAN_TRANSACTION_ENTRY_TYPE } from './loan-transaction-constant'
+import type { TLoanTransactionEntrySchema } from './loan-transaction-entry.validation'
 
 export type TLoanTransactionEntryType =
     (typeof LOAN_TRANSACTION_ENTRY_TYPE)[number]

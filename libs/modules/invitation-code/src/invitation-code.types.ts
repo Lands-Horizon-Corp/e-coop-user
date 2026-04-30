@@ -1,8 +1,8 @@
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { TPermission } from '@e-coop-monorepo/modules/permission'
-import { TUserType } from '@e-coop-monorepo/modules/user'
-import {
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { TPermission } from '@e-coop-monorepo/modules/permission'
+import type { TUserType } from '@e-coop-monorepo/modules/user'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,

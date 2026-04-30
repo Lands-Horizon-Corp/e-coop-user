@@ -1,13 +1,13 @@
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { EDUCATIONAL_ATTAINMENT } from './constants'
+import type { EDUCATIONAL_ATTAINMENT } from './constants'
 
 export type TEducationalAttainment = (typeof EDUCATIONAL_ATTAINMENT)[number] // move to member educ attainment
 

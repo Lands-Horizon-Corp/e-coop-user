@@ -1,18 +1,19 @@
 import { useForm } from 'react-hook-form'
-import z from 'zod'
+import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import { CurrencyInput } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
 import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
 import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IClassProps, IForm, TEntityId } from '@e-coop-monorepo/shared/types'
 import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import Modal, { IModalProps } from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@e-coop-monorepo/ui/core';
+import Modal from '@e-coop-monorepo/ui/core'
 import { Form } from '@e-coop-monorepo/ui/core'
 import FormFieldWrapper from '@e-coop-monorepo/ui/core'
 import ImageField from '@e-coop-monorepo/ui/core'
@@ -23,7 +24,7 @@ import {
     useCreateMemberProfileIncome,
     useUpdateMemberProfileIncome,
 } from '../../member-income.service'
-import { IMemberIncome } from '../../member-income.types'
+import type { IMemberIncome } from '../../member-income.types'
 import { MemberIncomeSchema } from '../../member-income.validation'
 
 type TMemberIncomeFormValues = z.infer<typeof MemberIncomeSchema>

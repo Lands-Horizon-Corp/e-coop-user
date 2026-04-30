@@ -1,10 +1,10 @@
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useQuickTransferContext } from '../context/quick-transfer-context'
-import { TQuickWithdrawSchemaFormValues } from '../quick-transfer.validation'
+import type { TQuickWithdrawSchemaFormValues } from '../quick-transfer.validation'
 
 interface QuickTransferHotkeyProps {
     form: UseFormReturn<TQuickWithdrawSchemaFormValues>

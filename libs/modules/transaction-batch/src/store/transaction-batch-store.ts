@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-import {
+import type {
     ITransactionBatch,
     ITransactionBatchMinimal,
 } from '../transaction-batch.types'

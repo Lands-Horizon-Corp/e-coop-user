@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef } from 'react'
 
-import {
+import type {
     DefaultValues,
     FieldPath,
     FieldValues,

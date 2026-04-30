@@ -2,8 +2,9 @@ import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 import {
@@ -11,7 +12,7 @@ import {
     createMutationInvalidateFn,
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
-import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     IMemberProfile,
@@ -23,7 +24,7 @@ import type {
     IMemberProfileQuickSearchResponse,
     IMemberProfileRequest,
 } from './member-profile.types'
-import { TMemberProfileCoordinatesSchema } from './member-profile.validation'
+import type { TMemberProfileCoordinatesSchema } from './member-profile.validation'
 
 export const {
     apiCrudHooks,

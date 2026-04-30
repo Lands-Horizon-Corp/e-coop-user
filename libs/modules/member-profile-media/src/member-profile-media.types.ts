@@ -1,14 +1,14 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { MemberProfileMediaSchema } from './member-profile-media.validation'
+import type { MemberProfileMediaSchema } from './member-profile-media.validation'
 
 export interface IMemberProfileMedia extends IBaseEntityMeta {
     member_profile_id?: string

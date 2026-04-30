@@ -1,5 +1,6 @@
+import type {
+    TDownloadMediaProp} from '@e-coop-monorepo/modules/media';
 import {
-    TDownloadMediaProp,
     downloadMedia,
     formatBytes,
     getFileCategory,
@@ -14,7 +15,7 @@ import { AspectRatio } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import PreviewMediaWrapper from '@e-coop-monorepo/ui/core'
 
-import { IMemberProfileMedia } from '../member-profile-media.types'
+import type { IMemberProfileMedia } from '../member-profile-media.types'
 
 interface MemberMediaItemProps {
     memberMedia: IMemberProfileMedia

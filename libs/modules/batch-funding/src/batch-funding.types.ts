@@ -1,18 +1,18 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IBranch } from '@e-coop-monorepo/modules/branch'
-import { ICurrency } from '@e-coop-monorepo/modules/currency'
-import { IMedia } from '@e-coop-monorepo/modules/media'
-import { IOrganization } from '@e-coop-monorepo/modules/organization'
-import { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import { IUserBase } from '@e-coop-monorepo/modules/user'
-import {
+import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
+import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { BatchFundingSchema } from './batch-funding.validation'
+import type { BatchFundingSchema } from './batch-funding.validation'
 
 export interface IBatchFunding extends IBaseEntityMeta {
     id: TEntityId

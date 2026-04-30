@@ -1,13 +1,13 @@
-import { IAccount } from '@e-coop-monorepo/modules/account'
-import { IGeneratedSavingsInterest } from '@e-coop-monorepo/modules/generated-savings-interest'
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import {
+import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IGeneratedSavingsInterest } from '@e-coop-monorepo/modules/generated-savings-interest'
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TGeneratedSavingsInterestEntrySchema } from './generated-savings-interest-entry.validation'
+import type { TGeneratedSavingsInterestEntrySchema } from './generated-savings-interest-entry.validation'
 
 export interface IGeneratedSavingsInterestEntry extends IBaseEntityMeta {
     generated_savings_interest_id: TEntityId

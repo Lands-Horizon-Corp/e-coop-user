@@ -1,4 +1,4 @@
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import {
@@ -20,7 +20,8 @@ import PasswordInput from '@e-coop-monorepo/ui/core'
 import { PhoneInput } from '@e-coop-monorepo/ui/core'
 import { Lock } from 'lucide-react'
 
-import { TKYCVerifySecurityDetailsSchema, useKYCSecurityDetails } from '../..'
+import type { TKYCVerifySecurityDetailsSchema} from '../..';
+import { useKYCSecurityDetails } from '../..'
 
 interface SecurityDetailSectionProps {
     form: UseFormReturn<TKYCVerifySecurityDetailsSchema>

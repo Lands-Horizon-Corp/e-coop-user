@@ -1,7 +1,7 @@
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 
-import { IContactUs, IContactUsRequest } from './contact-us.types'
+import type { IContactUs, IContactUsRequest } from './contact-us.types'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IContactUs,

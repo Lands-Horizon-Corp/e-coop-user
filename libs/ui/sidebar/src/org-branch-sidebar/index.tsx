@@ -4,9 +4,9 @@ import { useParams, useRouter } from '@tanstack/react-router'
 
 import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication'
 import { BranchModalDisplay } from '@e-coop-monorepo/modules/branch'
-import { TUserType } from '@e-coop-monorepo/modules/user'
+import type { TUserType } from '@e-coop-monorepo/modules/user'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 // import { useHotkeys } from 'react-hotkeys-hook'
 
 import { EcoopLogo } from '@e-coop-monorepo/ui/core'

@@ -1,13 +1,13 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { ITimeDepositType } from '@e-coop-monorepo/modules/time-deposit-type'
-import {
+import type { ITimeDepositType } from '@e-coop-monorepo/modules/time-deposit-type'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { TimeDepositComputationPreMatureSchema } from './time-deposit-computation-pre-mature.validation'
+import type { TimeDepositComputationPreMatureSchema } from './time-deposit-computation-pre-mature.validation'
 
 export interface ITimeDepositComputationPreMature extends IBaseEntityMeta {
     time_deposit_type_id: TEntityId

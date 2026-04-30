@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import { GENERAL_STATUS } from '@e-coop-monorepo/shared/constants'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TGeneralStatus } from '@e-coop-monorepo/shared/types'
+import type { TGeneralStatus } from '@e-coop-monorepo/shared/types'
 import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'
 import {

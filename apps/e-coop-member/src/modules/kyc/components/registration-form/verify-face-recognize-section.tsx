@@ -1,11 +1,11 @@
-import { UseFormReturn } from 'react-hook-form'
+import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
 import { useUploadMedia } from '@e-coop-monorepo/modules/media'
 import { toDateTimeFormatFile } from '@e-coop-monorepo/shared/helpers'
 import { useCamera } from '@e-coop-monorepo/shared/hooks'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@e-coop-monorepo/shared/types'
 import {
     CheckFillIcon,
     FingerPrintIcon,
@@ -16,7 +16,7 @@ import { ScanFace } from 'lucide-react'
 import Webcam from 'react-webcam'
 
 import { useKYCVerifySelfie } from '../..'
-import { IKYCSelfieRequest } from '../../kyc.types'
+import type { IKYCSelfieRequest } from '../../kyc.types'
 
 interface VerifyFaceRecognitionSectionProps {
     form: UseFormReturn<IKYCSelfieRequest>

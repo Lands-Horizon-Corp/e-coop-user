@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
+import type { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,

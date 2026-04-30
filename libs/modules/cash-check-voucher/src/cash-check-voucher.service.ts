@@ -3,8 +3,9 @@ import qs from 'query-string'
 
 import { getPaginatedJournalVoucher } from '@e-coop-monorepo/modules/journal-voucher'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
 import {
-    HookQueryOptions,
     createDataLayerFactory,
 } from '@e-coop-monorepo/shared/providers'
 import {
@@ -12,7 +13,7 @@ import {
     updateMutationInvalidationFn,
 } from '@e-coop-monorepo/shared/providers'
 import { createMutationInvalidateFn } from '@e-coop-monorepo/shared/providers/repositories/mutation-factory'
-import { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
     ICashCheckVoucher,

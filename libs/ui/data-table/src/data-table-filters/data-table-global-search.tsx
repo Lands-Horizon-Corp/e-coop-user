@@ -1,11 +1,12 @@
 import { useState } from 'react'
 
-import {
+import type {
     TFilterModes,
-    TSearchFilter,
+    TSearchFilter} from '@/contexts/filter-context';
+import {
     useFilter,
 } from '@/contexts/filter-context'
-import { KeysOfOrString } from '@e-coop-monorepo/shared/types'
+import type { KeysOfOrString } from '@e-coop-monorepo/shared/types'
 import { ChevronLeftIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui/core'
 import ActionTooltip from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'

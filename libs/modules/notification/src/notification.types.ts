@@ -1,14 +1,14 @@
-import z from 'zod'
+import type z from 'zod'
 
-import { IUser, TUserType } from '@e-coop-monorepo/modules/user'
-import {
+import type { IUser, TUserType } from '@e-coop-monorepo/modules/user'
+import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@e-coop-monorepo/shared/types'
 
-import { NOTIFICATION_TYPE } from './notification.constant'
-import { NotificationSchema } from './notification.validation'
+import type { NOTIFICATION_TYPE } from './notification.constant'
+import type { NotificationSchema } from './notification.validation'
 
 export type TNotificationType = (typeof NOTIFICATION_TYPE)[number]
 

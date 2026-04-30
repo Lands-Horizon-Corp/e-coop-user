@@ -5,7 +5,7 @@ import React, { forwardRef, useCallback, useEffect, useRef } from 'react'
 import { GOOGLE_MAPS_ID } from '@e-coop-monorepo/shared/constants'
 import { useTheme } from '@e-coop-monorepo/shared/providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { GoogleMap, type GoogleMapProps } from '@react-google-maps/api'
 
 import { SadFaceIcon } from '../icons/index'

@@ -1,6 +1,6 @@
 import { useContext } from 'react'
 
-import { IFilterState } from './filter-context'
+import type { IFilterState } from './filter-context'
 import FilterContext from './filter-context'
 
 export const useFilter = <T = unknown, TField = string, TValue = T>() => {
