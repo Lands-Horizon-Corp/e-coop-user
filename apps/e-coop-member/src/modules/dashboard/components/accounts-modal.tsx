@@ -1,6 +1,6 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@radix-ui/react-tabs'
 
-import { useTheme } from '@e-coop-monorepo/shared/providers'
+import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IClassProps } from '@e-coop-monorepo/shared/types'
 import type { IModalProps } from '@e-coop-monorepo/ui/core'

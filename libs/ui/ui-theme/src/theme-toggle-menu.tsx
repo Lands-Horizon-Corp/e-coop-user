@@ -1,6 +1,6 @@
 import { useCallback } from 'react'
 
-import { useTheme } from '@e-coop-monorepo/shared/providers'
+import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import type { IBaseProps } from '@e-coop-monorepo/shared/types'
 import { MoonIcon, SunIcon, SunMoonIcon } from '@e-coop-monorepo/ui/core'

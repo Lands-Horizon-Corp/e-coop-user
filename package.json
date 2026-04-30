@@ -7,6 +7,7 @@
     "packageManager": "bun@1.3.9",
     "scripts": {
         "g:app": "nx g @nx/react:app $1 --directory=apps/$1 --importPath=@e-coop-monorepo/$1",
+        "g:providers": "bun tools/scripts/g-providers.mjs $1",
         "g:ui" : "bun tools/scripts/g-ui.mjs $1",
         "g:shared": "bun tools/scripts/g-shared.mjs $1",
         "g:modules": "bun tools/scripts/g-modules.mjs $1",

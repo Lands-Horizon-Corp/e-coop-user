@@ -1,6 +1,6 @@
 import qs from 'query-string'
 
-import { API } from '@e-coop-monorepo/shared/providers'
+import { API } from '@e-coop-monorepo/shared/providers/core-providers'
 import type { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
 import type { IPaginatedResult, TEntityId } from '@e-coop-monorepo/shared/types'
 

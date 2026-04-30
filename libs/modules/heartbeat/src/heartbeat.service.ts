@@ -1,7 +1,7 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import API from '@e-coop-monorepo/shared/providers'
+import API from '@e-coop-monorepo/shared/providers/core-providers'
 import type { HookMutationOptions } from '@e-coop-monorepo/shared/repositories'
 import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 

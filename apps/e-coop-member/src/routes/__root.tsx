@@ -19,8 +19,8 @@ import LoadingSpinner from '@e-coop-monorepo/ui/core'
 // import { IAuthContext, useAuthContext } from '@e-coop-monorepo/modules/authentication'
 // import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
 // import UserProfileInactivityPrompter from '@e-coop-monorepo/modules/user-profile/components/user-profile-inactivity-prompter'
-// import { ActionSecurityProvider } from '@e-coop-monorepo/shared/providers'
-// import ConnectionProvider from '@e-coop-monorepo/shared/providers'
+// import { ActionSecurityProvider } from '@e-coop-monorepo/shared/providers/core-providers'
+// import ConnectionProvider from '@e-coop-monorepo/shared/providers/core-providers'
 
 // import CookieConsent from '@e-coop-monorepo/ui/core'
 // import {

@@ -1,0 +1,9 @@
+{
+    "name": "action-security-providers",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/shared/providers/action-security-providers/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project action-security-providers --web",
+    "targets": {}
+}

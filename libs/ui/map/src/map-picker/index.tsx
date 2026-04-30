@@ -8,7 +8,7 @@ import {
     GOOGLE_MAPS_ID,
 } from '@e-coop-monorepo/shared/constants'
 import { useInternalState } from '@e-coop-monorepo/shared/hooks'
-import { useTheme } from '@e-coop-monorepo/shared/providers'
+import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
 import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import CopyTextButton from '@e-coop-monorepo/ui/core'
 import {

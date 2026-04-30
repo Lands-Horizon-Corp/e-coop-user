@@ -29,9 +29,6 @@
             "@e-coop-monorepo/shared/download-policies": [
                 "libs/shared/download-policies/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/providers": [
-                "libs/shared/providers/src/index.ts"
-            ],
             "@e-coop-monorepo/shared/store": ["libs/shared/store/src/index.ts"],
             "@e-coop-monorepo/shared/types": ["libs/shared/types/src/index.ts"],
             "@e-coop-monorepo/shared/validation": [
@@ -618,6 +615,15 @@
             ],
             "@e-coop-monorepo/ui/ui-form-components": [
                 "libs/ui/ui-form-components/src/index.ts"
+            ],
+            "@e-coop-monorepo/providers/core-providers": [
+                "libs/providers/core-providers/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/providers/core-providers": [
+                "libs/shared/providers/core-providers/src/index.ts"
+            ],
+            "@e-coop-monorepo/shared/providers/action-security-providers": [
+                "libs/shared/providers/action-security-providers/src/index.ts"
             ]
         },
         "strict": true
