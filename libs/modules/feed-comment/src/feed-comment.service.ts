@@ -1,9 +1,6 @@
 import { feedBaseKey } from '@e-coop-monorepo/modules/feed'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import {
-    createMutationFactory,
-    deleteMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/providers'
+from '@e-coop-monorepo/shared/repositories'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
