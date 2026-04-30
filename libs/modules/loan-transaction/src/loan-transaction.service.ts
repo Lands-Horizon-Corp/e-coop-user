@@ -3,9 +3,15 @@ import { useQuery } from '@tanstack/react-query'
 import type { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
 import type { ILoanGuide } from '@e-coop-monorepo/modules/loan-guide'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-from '@e-coop-monorepo/shared/repositories';
-from '@e-coop-monorepo/shared/repositories'
-from '@e-coop-monorepo/shared/repositories'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
+import {
+    createDataLayerFactory,
+} from '@e-coop-monorepo/shared/providers'
+import {
+    createMutationFactory,
+    updateMutationInvalidationFn,
+} from '@e-coop-monorepo/shared/providers'
 import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 // import { IAmortizationSchedule } from '../amortization'

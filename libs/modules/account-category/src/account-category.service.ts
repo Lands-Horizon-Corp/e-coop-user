@@ -2,8 +2,8 @@ import qs from 'query-string'
 
 import { downloadFile } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-from '@e-coop-monorepo/shared/repositories'
-from '@e-coop-monorepo/shared/repositories'
+import { createAPIRepository } from '@e-coop-monorepo/shared/providers'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/providers'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {

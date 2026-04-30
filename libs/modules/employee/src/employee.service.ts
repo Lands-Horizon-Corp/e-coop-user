@@ -14,7 +14,11 @@ import {
     userOrganizationAPIRoute,
 } from '@e-coop-monorepo/modules/user-organization'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-from '@e-coop-monorepo/shared/repositories'
+import {
+    createMutationFactory,
+    deleteMutationInvalidationFn,
+    updateMutationInvalidationFn,
+} from '@e-coop-monorepo/shared/providers'
 import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 

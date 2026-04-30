@@ -1,7 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 
-from '@e-coop-monorepo/shared/repositories';
-from '@e-coop-monorepo/shared/repositories'
+import type {
+    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
+import {
+    createDataLayerFactory,
+} from '@e-coop-monorepo/shared/providers'
 import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IMemberGender, IMemberGenderRequest } from './member-gender.types'

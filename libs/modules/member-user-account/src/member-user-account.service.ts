@@ -5,7 +5,11 @@ import {
     memberProfileBaseKey,
 } from '@e-coop-monorepo/modules/member-profile'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-from '@e-coop-monorepo/shared/repositories'
+import {
+    createMutationFactory,
+    createMutationInvalidateFn,
+    updateMutationInvalidationFn,
+} from '@e-coop-monorepo/shared/providers'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IMemberProfileUserAccountRequest } from './member-user-account.types'

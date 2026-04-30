@@ -11,7 +11,9 @@ import type {
 } from '@e-coop-monorepo/modules/member-profile'
 import type {
     HookMutationOptions} from '@e-coop-monorepo/shared/providers';
-from '@e-coop-monorepo/shared/repositories'
+import {
+    createMutationFactory,
+} from '@e-coop-monorepo/shared/providers'
 import type {
     IForgetPasswordEntry} from '@e-coop-monorepo/shared/store';
 import {
