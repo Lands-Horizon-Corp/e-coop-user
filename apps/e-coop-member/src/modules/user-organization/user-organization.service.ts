@@ -1,24 +1,17 @@
-import type {
-    UseMutationOptions} from '@tanstack/react-query';
-import {
-    useMutation,
-    useQuery,
-} from '@tanstack/react-query'
+import type { UseMutationOptions } from '@tanstack/react-query'
+import { useMutation, useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
 import { getBranchesByOrganizationId } from '@e-coop-monorepo/modules/branch'
 import type { IBranch } from '@e-coop-monorepo/modules/branch'
 import { groupBy, withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type {
-    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
-import {
-    createDataLayerFactory,
-} from '@e-coop-monorepo/shared/providers'
+import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IUserBase } from '../user/user.types'

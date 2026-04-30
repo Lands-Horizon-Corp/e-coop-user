@@ -1,11 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import type {
-    IGeneralLedger} from '@e-coop-monorepo/modules/general-ledger';
-import {
-    generalLedgerBaseKey,
-} from '@e-coop-monorepo/modules/general-ledger'
+import type { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
+import { generalLedgerBaseKey } from '@e-coop-monorepo/modules/general-ledger'
 import type {
     IPaymentQuickRequest,
     IPaymentRequest,
@@ -14,15 +11,12 @@ import type {
 import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
 import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type {
-    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
-import {
-    createDataLayerFactory,
-} from '@e-coop-monorepo/shared/providers'
+import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import {
     createMutationFactory,
     createMutationInvalidateFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {

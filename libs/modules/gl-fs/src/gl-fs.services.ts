@@ -1,7 +1,7 @@
 import {
     createMutationFactory,
     createMutationInvalidateFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import type {

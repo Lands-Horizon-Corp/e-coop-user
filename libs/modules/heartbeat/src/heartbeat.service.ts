@@ -2,10 +2,13 @@ import { useMutation, useQuery } from '@tanstack/react-query'
 
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import API from '@e-coop-monorepo/shared/providers'
-import type { HookMutationOptions } from '@e-coop-monorepo/shared/providers'
+import type { HookMutationOptions } from '@e-coop-monorepo/shared/repositories'
 import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 
-import type { HeartbeatResponse, HeartbeatStatusChange } from './heartbeat.types'
+import type {
+    HeartbeatResponse,
+    HeartbeatStatusChange,
+} from './heartbeat.types'
 
 // Service Functions
 

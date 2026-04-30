@@ -1,5 +1,4 @@
-import type {
-    IMemberProfile} from '@e-coop-monorepo/modules/member-profile';
+import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
 import {
     apiCrudService,
     memberProfileBaseKey,
@@ -9,7 +8,7 @@ import {
     createMutationFactory,
     createMutationInvalidateFn,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type { IMemberProfileUserAccountRequest } from './member-user-account.types'

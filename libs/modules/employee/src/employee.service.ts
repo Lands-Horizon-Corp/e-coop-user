@@ -4,7 +4,8 @@ import qs from 'query-string'
 import type { IEmployee } from '@e-coop-monorepo/modules/user'
 import type {
     IUserOrganization,
-    IUserOrganizationPaginated} from '@e-coop-monorepo/modules/user-organization';
+    IUserOrganizationPaginated,
+} from '@e-coop-monorepo/modules/user-organization'
 import {
     API,
     createUserOrganization,
@@ -18,7 +19,7 @@ import {
     createMutationFactory,
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
 

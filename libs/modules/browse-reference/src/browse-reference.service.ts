@@ -2,15 +2,12 @@ import { useQuery } from '@tanstack/react-query'
 
 import { memberTypeBaseQueryKey } from '@e-coop-monorepo/modules/member-type'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type {
-    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
-import {
-    createDataLayerFactory,
-} from '@e-coop-monorepo/shared/providers'
+import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {

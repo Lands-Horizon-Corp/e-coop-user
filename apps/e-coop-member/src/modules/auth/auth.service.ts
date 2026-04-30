@@ -9,16 +9,10 @@ import type {
     IMemberProfile,
     IQuickCreateMemberProfile,
 } from '@e-coop-monorepo/modules/member-profile'
-import type {
-    HookMutationOptions} from '@e-coop-monorepo/shared/providers';
-import {
-    createMutationFactory,
-} from '@e-coop-monorepo/shared/providers'
-import type {
-    IForgetPasswordEntry} from '@e-coop-monorepo/shared/store';
-import {
-    useFakeStore,
-} from '@e-coop-monorepo/shared/store'
+import type { HookMutationOptions } from '@e-coop-monorepo/shared/repositories'
+import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
+import type { IForgetPasswordEntry } from '@e-coop-monorepo/shared/store'
+import { useFakeStore } from '@e-coop-monorepo/shared/store'
 
 // FAKE SIGN IN HOOK
 export const useSignIn = ({

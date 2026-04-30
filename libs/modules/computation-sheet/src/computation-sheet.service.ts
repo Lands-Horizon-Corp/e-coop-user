@@ -2,7 +2,7 @@ import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 

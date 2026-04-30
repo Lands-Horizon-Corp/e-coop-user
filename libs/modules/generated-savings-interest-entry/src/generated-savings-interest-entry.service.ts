@@ -5,16 +5,13 @@ import {
     generatedSavingsInterestBaseKey,
 } from '@e-coop-monorepo/modules/generated-savings-interest'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type {
-    HookQueryOptions} from '@e-coop-monorepo/shared/providers';
-import {
-    createDataLayerFactory,
-} from '@e-coop-monorepo/shared/providers'
+import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
+import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/providers'
+} from '@e-coop-monorepo/shared/repositories'
 import type { TEntityId } from '@e-coop-monorepo/shared/types'
 
 import type {
