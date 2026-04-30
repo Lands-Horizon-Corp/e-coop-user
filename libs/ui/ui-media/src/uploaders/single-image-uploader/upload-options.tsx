@@ -10,17 +10,17 @@ import {
     TabsList,
     TabsTrigger,
 } from '@e-coop-monorepo/ui/core'
-import { WebCam } from '@e-coop-monorepo/ui/core'
-import type Webcam from 'react-webcam'
+import WebCam from '@e-coop-monorepo/ui/core'
+import type TWebcam from 'react-webcam'
 
-import PictureDrop from './picture-drop'
+import PictureDrop from '../file-drop/picture-drop'
 
 interface Props {
     onPhotoChoose: (imageBase64: string) => void
 }
 
 const SingleImageUploadOption = ({ onPhotoChoose }: Props) => {
-    const webcamRef = useRef<Webcam>(null)
+    const webcamRef = useRef<TWebcam>(null)
 
     const onFileSelect = (files: FileList) => {
         if (files && files.length > 0) {

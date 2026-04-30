@@ -610,6 +610,14 @@
             ],
             "@e-coop-monorepo/ui/image-preview": [
                 "libs/ui/image-preview/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/ui-media": ["libs/ui/ui-media/src/index.ts"],
+            "@e-coop-monorepo/ui/ui-theme": ["libs/ui/ui-theme/src/index.ts"],
+            "@e-coop-monorepo/ui/ui-live-toggle": [
+                "libs/ui/ui-live-toggle/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/ui-form-components": [
+                "libs/ui/ui-form-components/src/index.ts"
             ]
         },
         "strict": true
