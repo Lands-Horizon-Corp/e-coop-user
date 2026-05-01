@@ -1,1 +1,1 @@
-export * from './ui-form-components'
+export * from './form-footer-reset-submit'

@@ -4,8 +4,8 @@ import { useState } from 'react'
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@/helpers'
 import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { cn } from '@e-coop-monorepo/shared/tw-utils'
 import { MagnifyingGlassIcon } from '@e-coop-monorepo/ui/core'
 import { CommandIcon } from '@e-coop-monorepo/ui/core'
 import { Button } from '@e-coop-monorepo/ui/core'

@@ -624,6 +624,17 @@
             ],
             "@e-coop-monorepo/shared/providers/action-security-providers": [
                 "libs/shared/providers/action-security-providers/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/ui-pickers": [
+                "libs/ui/ui-pickers/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/ui-qr-code-downloadable": [
+                "libs/ui/ui-qr-code-downloadable/src/index.ts"
+            ],
+            "@e-coop-monorepo/ui/ui-webcam": ["libs/ui/ui-webcam/src/index.ts"],
+            "@e-coop-monorepo/ui/ui-search": ["libs/ui/ui-search/src/index.ts"],
+            "@e-coop-monorepo/ui/ui-shortcut": [
+                "libs/ui/ui-shortcut/src/index.ts"
             ]
         },
         "strict": true
