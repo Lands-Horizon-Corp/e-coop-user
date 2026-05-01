@@ -1,6 +1,3 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
 import type {
     CIVIL_STATUS,
     GENERAL_STATUS,
@@ -12,21 +9,41 @@ export type TGeneralStatus = (typeof GENERAL_STATUS)[number]
 
 export type TPageType = 'PUBLIC' | 'AUTHENTICATED'
 
+export interface IUserRef {
+    id: TEntityId
+    full_name?: string
+    user_name?: string
+    email?: string
+    contact_number?: string
+}
+
+export interface IOrganizationRef {
+    id: TEntityId
+    name?: string
+    organization_key?: string
+}
+
+export interface IBranchRef {
+    id: TEntityId
+    name?: string
+    code?: string
+}
+
 export interface ILongLat {
     longitude?: number
     latitude?: number
 }
 
 /* Extend interface if gusto magka ts type neto */
-export interface IAuditable {
+export interface IAuditable<TUser = IUserRef> {
     created_by_id?: TEntityId
-    created_by?: IUserBase
+    created_by?: TUser
 
     updated_by_id?: TEntityId
-    updated_by?: IUserBase
+    updated_by?: TUser
 
     deleted_by_id?: TEntityId
-    deleted_by?: IUserBase
+    deleted_by?: TUser
 }
 
 /* Only use this for entity that has branch_id */
@@ -35,23 +52,30 @@ export interface IIDentity {
     // branch: IBranch
 }
 
-export interface IOrgIdentity {
+export interface IOrgIdentity<TOrg = IOrganizationRef> {
     organization_id: TEntityId
-    organization: IOrganization
+    organization: TOrg
 }
 
 /* Identity of the entity */
-export interface IOrgBranchIdentity {
+export interface IOrgBranchIdentity<
+    TOrg = IOrganizationRef,
+    TBranch = IBranchRef,
+> {
     organization_id: TEntityId
-    organization: IOrganization
+    organization: TOrg
 
     branch_id: TEntityId
-    branch: IBranch
+    branch: TBranch
 }
 
 /* Use this only if entity has timestamps, auditable, and has org and branch */
-export interface IBaseEntityMeta
-    extends ITimeStamps, IAuditable, IOrgBranchIdentity {
+export interface IBaseEntityMeta<
+    TUser = IUserRef,
+    TOrg = IOrganizationRef,
+    TBranch = IBranchRef,
+>
+    extends ITimeStamps, IAuditable<TUser>, IOrgBranchIdentity<TOrg, TBranch> {
     id: TEntityId
 }
 
