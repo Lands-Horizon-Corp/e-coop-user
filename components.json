@@ -11,7 +11,7 @@
       "prefix": ""
     },
     "aliases": {
-      "components": "@e-coop-monorepo/ui/components",
+      "components": "@ecoop/ui/components",
       "utils": "@e-coop/utils/utils"
     }
   }

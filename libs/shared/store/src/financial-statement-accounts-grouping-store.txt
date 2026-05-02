@@ -3,7 +3,7 @@ import { toast } from 'sonner'
 import {
     IFinancialStatementDefinition,
     TFinancialStatementType,
-} from '@e-coop-monorepo/modules/financial-statement-definition'
+} from '@ecoop/modules/financial-statement-definition'
 import { arrayMove } from '@dnd-kit/sortable'
 import { create } from 'zustand'
 

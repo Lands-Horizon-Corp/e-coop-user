@@ -18110,7 +18110,7 @@
           "metadata": {
             "targetGroups": {},
             "js": {
-              "packageName": "@e-coop-monorepo/ui",
+              "packageName": "@ecoop/ui",
               "packageVersion": "0.0.1",
               "packageExports": {
                 ".": {

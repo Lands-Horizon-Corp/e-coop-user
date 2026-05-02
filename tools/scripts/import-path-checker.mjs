@@ -93,7 +93,7 @@ export function findBadModuleImports({
             continue
         }
 
-        if (normalized.startsWith('@e-coop-monorepo/')) {
+        if (normalized.startsWith('@ecoop/')) {
             continue
         }
 
@@ -108,7 +108,7 @@ export function findBadModuleImports({
                 specifier: match.specifier,
                 index: match.index,
                 moduleName,
-                expectedAlias: `@e-coop-monorepo/modules/${moduleName}`,
+                expectedAlias: `@ecoop/modules/${moduleName}`,
             })
             continue
         }
@@ -212,7 +212,7 @@ export function formatIssue({ filePath, content, issue, rootDir }) {
     const relativePath = path.relative(rootDir, filePath).replace(/\\/g, '/')
     const expected = issue.expectedAlias
         ? issue.expectedAlias
-        : `@e-coop-monorepo/modules/${issue.moduleName}`
+        : `@ecoop/modules/${issue.moduleName}`
 
     return `${relativePath}:${line} - ${issue.specifier} -> ${expected}`
 }
@@ -224,7 +224,7 @@ export function applyModuleImportFixes({ content, issues }) {
     for (const issue of issues) {
         const expected = issue.expectedAlias
             ? issue.expectedAlias
-            : `@e-coop-monorepo/modules/${issue.moduleName}`
+            : `@ecoop/modules/${issue.moduleName}`
         const escaped = escapeRegex(issue.specifier)
         const replaceRegex = new RegExp(`(["'])${escaped}\\1`, 'g')
         const nextContent = updatedContent.replace(
@@ -311,8 +311,8 @@ function deriveExternalAlias(specifier) {
 
     const [sharedRoot, ...rest] = segments
     return rest.length > 0
-        ? `@e-coop-monorepo/shared/${sharedRoot}/${rest.join('/')}`
-        : `@e-coop-monorepo/shared/${sharedRoot}`
+        ? `@ecoop/shared/${sharedRoot}/${rest.join('/')}`
+        : `@ecoop/shared/${sharedRoot}`
 }
 
 function matchModuleName({ specifier, moduleNames, filePath, modulesDir }) {
@@ -334,12 +334,12 @@ function matchModuleName({ specifier, moduleNames, filePath, modulesDir }) {
 }
 
 function getUiAliasForComponents(specifier) {
-    if (specifier === '@e-coop-monorepo/ui') {
+    if (specifier === '@ecoop/ui') {
         return null
     }
 
-    if (specifier.startsWith('@e-coop-monorepo/ui/')) {
-        return '@e-coop-monorepo/ui'
+    if (specifier.startsWith('@ecoop/ui/')) {
+        return '@ecoop/ui'
     }
 
     return null

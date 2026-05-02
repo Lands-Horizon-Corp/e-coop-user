@@ -35,7 +35,7 @@ function runNxGenerate() {
         '@nx/js:lib',
         folderName,
         `--directory=libs/shared/${folderName}`,
-        `--importPath=@e-coop-monorepo/shared/${folderName}`,
+        `--importPath=@ecoop/shared/${folderName}`,
         '--bundler=none',
         '--linter=eslint',
         '--unitTestRunner=vitest',

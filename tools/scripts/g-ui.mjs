@@ -33,7 +33,7 @@ function runNxGenerate() {
         '@nx/js:lib',
         folderName,
         `--directory=libs/ui/${folderName}`,
-        `--importPath=@e-coop-monorepo/ui/${folderName}`,
+        `--importPath=@ecoop/ui/${folderName}`,
         '--bundler=none',
         '--linter=eslint',
         '--unitTestRunner=vitest',

@@ -58,7 +58,7 @@ function rewriteModuleAliases(filePath, content) {
         return content
     }
 
-    const aliasPrefix = '@e-coop-monorepo/modules/'
+    const aliasPrefix = '@ecoop/modules/'
 
     return content.replace(
         importPattern,
@@ -123,7 +123,7 @@ function rewriteSpecifierToAlias({ filePath, specifier, currentModuleRoot }) {
 
     const targetModuleName = path.basename(targetModuleRoot)
 
-    return `@e-coop-monorepo/modules/${targetModuleName}`
+    return `@ecoop/modules/${targetModuleName}`
 }
 
 function getModuleRoot(filePath) {

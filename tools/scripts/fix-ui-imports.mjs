@@ -35,27 +35,27 @@ const cnImportPattern =
 const replacements = [
     {
         pattern: /(['"])@\/components(?:\/[^'"]*)?\1/g,
-        replace: (match, quote) => `${quote}@e-coop-monorepo/ui${quote}`,
+        replace: (match, quote) => `${quote}@ecoop/ui${quote}`,
     },
     {
         pattern: /(['"])@\/modules\/([^'"\/]+)(?:\/[^'"]*)?\1/g,
         replace: (match, quote, moduleName) =>
-            `${quote}@e-coop-monorepo/modules/${moduleName}${quote}`,
+            `${quote}@ecoop/modules/${moduleName}${quote}`,
     },
     {
         pattern: /(['"])@\/shared\/([^'"\/]+)(?:\/[^'"]*)?\1/g,
         replace: (match, quote, sharedName) =>
-            `${quote}@e-coop-monorepo/shared/${sharedName}${quote}`,
+            `${quote}@ecoop/shared/${sharedName}${quote}`,
     },
     {
         pattern: /(['"])@\/hooks(?:\/[^'"]*)?\1/g,
         replace: (match, quote) =>
-            `${quote}@e-coop-monorepo/shared/hooks${quote}`,
+            `${quote}@ecoop/shared/hooks${quote}`,
     },
     {
         pattern: /(['"])@\/types(?:\/[^'"]*)?\1/g,
         replace: (match, quote) =>
-            `${quote}@e-coop-monorepo/shared/types${quote}`,
+            `${quote}@ecoop/shared/types${quote}`,
     },
 ]
 

@@ -14,8 +14,8 @@
     //   // 1. Ensure the app can read the global aliases
     //   "@e-coop/utils": ["../../libs/utils/src/index.ts"],
     //   "@e-coop/utils/*": ["../../libs/utils/src/*"],
-    //   "@e-coop-monorepo/ui": ["../../libs/ui/src/index.ts"],
-    //   "@e-coop-monorepo/ui/*": ["../../libs/ui/src/*"],
+    //   "@ecoop/ui": ["../../libs/ui/src/index.ts"],
+    //   "@ecoop/ui/*": ["../../libs/ui/src/*"],
       
     //   // 2. The Migration Hack (routes old local imports to the new libs)
     //   "@/helpers": ["../../libs/shared/src/helpers/index.ts"],

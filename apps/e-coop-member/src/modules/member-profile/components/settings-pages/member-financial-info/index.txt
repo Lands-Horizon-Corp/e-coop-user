@@ -1,6 +1,6 @@
 import { forwardRef } from 'react'
 
-import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import { IMemberProfile } from '@ecoop/modules/member-profile'
 
 import { Separator } from '@/components/ui/separator'
 

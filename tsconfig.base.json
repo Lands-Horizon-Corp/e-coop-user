@@ -19,618 +19,621 @@
         "allowImportingTsExtensions": true,
         "noEmit": true,
         "paths": {
-            "@e-coop-monorepo/shared/constants": [
+            "@ecoop/shared/constants": [
                 "libs/shared/constants/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/contexts": [
+            "@ecoop/shared/contexts": [
                 "libs/shared/contexts/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/hooks": ["libs/shared/hooks/src/index.ts"],
-            "@e-coop-monorepo/shared/download-policies": [
+            "@ecoop/shared/hooks": ["libs/shared/hooks/src/index.ts"],
+            "@ecoop/shared/download-policies": [
                 "libs/shared/download-policies/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/store": ["libs/shared/store/src/index.ts"],
-            "@e-coop-monorepo/shared/types": ["libs/shared/types/src/index.ts"],
-            "@e-coop-monorepo/shared/validation": [
+            "@ecoop/shared/store": ["libs/shared/store/src/index.ts"],
+            "@ecoop/shared/types": ["libs/shared/types/src/index.ts"],
+            "@ecoop/shared/validation": [
                 "libs/shared/validation/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/helpers": [
+            "@ecoop/shared/helpers": [
                 "libs/shared/helpers/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/account": [
+            "@ecoop/modules/account": [
                 "libs/modules/account/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/account-category": [
+            "@ecoop/modules/account-category": [
                 "libs/modules/account-category/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/account-classification": [
+            "@ecoop/modules/account-classification": [
                 "libs/modules/account-classification/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/account-history": [
+            "@ecoop/modules/account-history": [
                 "libs/modules/account-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/account-tag": [
+            "@ecoop/modules/account-tag": [
                 "libs/modules/account-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/account-transaction": [
+            "@ecoop/modules/account-transaction": [
                 "libs/modules/account-transaction/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/account-transaction-entry": [
+            "@ecoop/modules/account-transaction-entry": [
                 "libs/modules/account-transaction-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/adjustment-entry": [
+            "@ecoop/modules/adjustment-entry": [
                 "libs/modules/adjustment-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/adjustment-entry-tag": [
+            "@ecoop/modules/adjustment-entry-tag": [
                 "libs/modules/adjustment-entry-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/approvals": [
+            "@ecoop/modules/approvals": [
                 "libs/modules/approvals/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/area": ["libs/modules/area/src/index.ts"],
-            "@e-coop-monorepo/modules/authentication": [
+            "@ecoop/modules/area": ["libs/modules/area/src/index.ts"],
+            "@ecoop/modules/authentication": [
                 "libs/modules/authentication/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/automatic-loan-deduction": [
+            "@ecoop/modules/automatic-loan-deduction": [
                 "libs/modules/automatic-loan-deduction/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/bank": ["libs/modules/bank/src/index.ts"],
-            "@e-coop-monorepo/modules/batch-funding": [
+            "@ecoop/modules/bank": ["libs/modules/bank/src/index.ts"],
+            "@ecoop/modules/batch-funding": [
                 "libs/modules/batch-funding/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/bill-and-coins": [
+            "@ecoop/modules/bill-and-coins": [
                 "libs/modules/bill-and-coins/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/branch": [
+            "@ecoop/modules/branch": [
                 "libs/modules/branch/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/branch-settings": [
+            "@ecoop/modules/branch-settings": [
                 "libs/modules/branch-settings/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/browse-exclude-include-accounts": [
+            "@ecoop/modules/browse-exclude-include-accounts": [
                 "libs/modules/browse-exclude-include-accounts/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/browse-reference": [
+            "@ecoop/modules/browse-reference": [
                 "libs/modules/browse-reference/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/calculator": [
+            "@ecoop/modules/calculator": [
                 "libs/modules/calculator/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/cancelled-cash-check-voucher": [
+            "@ecoop/modules/cancelled-cash-check-voucher": [
                 "libs/modules/cancelled-cash-check-voucher/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/cash-check-voucher": [
+            "@ecoop/modules/cash-check-voucher": [
                 "libs/modules/cash-check-voucher/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/cash-check-voucher-entry": [
+            "@ecoop/modules/cash-check-voucher-entry": [
                 "libs/modules/cash-check-voucher-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/cash-check-voucher-tag": [
+            "@ecoop/modules/cash-check-voucher-tag": [
                 "libs/modules/cash-check-voucher-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/cash-count": [
+            "@ecoop/modules/cash-count": [
                 "libs/modules/cash-count/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/category": [
+            "@ecoop/modules/category": [
                 "libs/modules/category/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/charges-rate-by-range-or-minimum-amount": [
+            "@ecoop/modules/charges-rate-by-range-or-minimum-amount": [
                 "libs/modules/charges-rate-by-range-or-minimum-amount/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/charges-rate-by-term": [
+            "@ecoop/modules/charges-rate-by-term": [
                 "libs/modules/charges-rate-by-term/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/charges-rate-scheme": [
+            "@ecoop/modules/charges-rate-scheme": [
                 "libs/modules/charges-rate-scheme/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/charges-rate-scheme-account": [
+            "@ecoop/modules/charges-rate-scheme-account": [
                 "libs/modules/charges-rate-scheme-account/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/charges-rate-scheme-mode-of-payment": [
+            "@ecoop/modules/charges-rate-scheme-mode-of-payment": [
                 "libs/modules/charges-rate-scheme-mode-of-payment/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/check-remittance": [
+            "@ecoop/modules/check-remittance": [
                 "libs/modules/check-remittance/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/collateral": [
+            "@ecoop/modules/collateral": [
                 "libs/modules/collateral/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/collectors-member-account-entry": [
+            "@ecoop/modules/collectors-member-account-entry": [
                 "libs/modules/collectors-member-account-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/comaker-collateral": [
+            "@ecoop/modules/comaker-collateral": [
                 "libs/modules/comaker-collateral/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/comaker-member-profile": [
+            "@ecoop/modules/comaker-member-profile": [
                 "libs/modules/comaker-member-profile/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/company": [
+            "@ecoop/modules/company": [
                 "libs/modules/company/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/computation-sheet": [
+            "@ecoop/modules/computation-sheet": [
                 "libs/modules/computation-sheet/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/computation-type": [
+            "@ecoop/modules/computation-type": [
                 "libs/modules/computation-type/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/contact-us": [
+            "@ecoop/modules/contact-us": [
                 "libs/modules/contact-us/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/currency": [
+            "@ecoop/modules/currency": [
                 "libs/modules/currency/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/dashboard": [
+            "@ecoop/modules/dashboard": [
                 "libs/modules/dashboard/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/developer": [
+            "@ecoop/modules/developer": [
                 "libs/modules/developer/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/disbursement": [
+            "@ecoop/modules/disbursement": [
                 "libs/modules/disbursement/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/disbursement-transaction": [
+            "@ecoop/modules/disbursement-transaction": [
                 "libs/modules/disbursement-transaction/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/employee": [
+            "@ecoop/modules/employee": [
                 "libs/modules/employee/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/explore": [
+            "@ecoop/modules/explore": [
                 "libs/modules/explore/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/feed": ["libs/modules/feed/src/index.ts"],
-            "@e-coop-monorepo/modules/feed-comment": [
+            "@ecoop/modules/feed": ["libs/modules/feed/src/index.ts"],
+            "@ecoop/modules/feed-comment": [
                 "libs/modules/feed-comment/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/feed-like": [
+            "@ecoop/modules/feed-like": [
                 "libs/modules/feed-like/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/feed-media": [
+            "@ecoop/modules/feed-media": [
                 "libs/modules/feed-media/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/feedback": [
+            "@ecoop/modules/feedback": [
                 "libs/modules/feedback/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/financial-statement-account-grouping": [
+            "@ecoop/modules/financial-statement-account-grouping": [
                 "libs/modules/financial-statement-account-grouping/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/financial-statement-definition": [
+            "@ecoop/modules/financial-statement-definition": [
                 "libs/modules/financial-statement-definition/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/financial-statement-title": [
+            "@ecoop/modules/financial-statement-title": [
                 "libs/modules/financial-statement-title/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/fines-maturity": [
+            "@ecoop/modules/fines-maturity": [
                 "libs/modules/fines-maturity/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/footstep": [
+            "@ecoop/modules/footstep": [
                 "libs/modules/footstep/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/funds": [
+            "@ecoop/modules/funds": [
                 "libs/modules/funds/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/general-account-grouping-net-surplus-negative": [
+            "@ecoop/modules/general-account-grouping-net-surplus-negative": [
                 "libs/modules/general-account-grouping-net-surplus-negative/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/general-account-grouping-net-surplus-positive": [
+            "@ecoop/modules/general-account-grouping-net-surplus-positive": [
                 "libs/modules/general-account-grouping-net-surplus-positive/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/general-accounting-ledger-tag": [
+            "@ecoop/modules/general-accounting-ledger-tag": [
                 "libs/modules/general-accounting-ledger-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/general-ledger": [
+            "@ecoop/modules/general-ledger": [
                 "libs/modules/general-ledger/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/general-ledger-account-grouping": [
+            "@ecoop/modules/general-ledger-account-grouping": [
                 "libs/modules/general-ledger-account-grouping/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/general-ledger-definition": [
+            "@ecoop/modules/general-ledger-definition": [
                 "libs/modules/general-ledger-definition/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/generated-report": [
+            "@ecoop/modules/generated-report": [
                 "libs/modules/generated-report/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/generated-reports-download-users": [
+            "@ecoop/modules/generated-reports-download-users": [
                 "libs/modules/generated-reports-download-users/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/generated-savings-interest": [
+            "@ecoop/modules/generated-savings-interest": [
                 "libs/modules/generated-savings-interest/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/generated-savings-interest-entry": [
+            "@ecoop/modules/generated-savings-interest-entry": [
                 "libs/modules/generated-savings-interest-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/gl-fs": [
+            "@ecoop/modules/gl-fs": [
                 "libs/modules/gl-fs/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/grocery-computation-sheet": [
+            "@ecoop/modules/grocery-computation-sheet": [
                 "libs/modules/grocery-computation-sheet/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/grocery-computation-sheet-monthly": [
+            "@ecoop/modules/grocery-computation-sheet-monthly": [
                 "libs/modules/grocery-computation-sheet-monthly/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/heartbeat": [
+            "@ecoop/modules/heartbeat": [
                 "libs/modules/heartbeat/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/holiday": [
+            "@ecoop/modules/holiday": [
                 "libs/modules/holiday/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/home": ["libs/modules/home/src/index.ts"],
-            "@e-coop-monorepo/modules/include-negative-accounts": [
+            "@ecoop/modules/home": ["libs/modules/home/src/index.ts"],
+            "@ecoop/modules/include-negative-accounts": [
                 "libs/modules/include-negative-accounts/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-maturity": [
+            "@ecoop/modules/interest-maturity": [
                 "libs/modules/interest-maturity/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-rate-by-amount": [
+            "@ecoop/modules/interest-rate-by-amount": [
                 "libs/modules/interest-rate-by-amount/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-rate-by-date": [
+            "@ecoop/modules/interest-rate-by-date": [
                 "libs/modules/interest-rate-by-date/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-rate-by-term": [
+            "@ecoop/modules/interest-rate-by-term": [
                 "libs/modules/interest-rate-by-term/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-rate-by-terms-header": [
+            "@ecoop/modules/interest-rate-by-terms-header": [
                 "libs/modules/interest-rate-by-terms-header/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-rate-by-year": [
+            "@ecoop/modules/interest-rate-by-year": [
                 "libs/modules/interest-rate-by-year/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-rate-percentage": [
+            "@ecoop/modules/interest-rate-percentage": [
                 "libs/modules/interest-rate-percentage/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/interest-rate-scheme": [
+            "@ecoop/modules/interest-rate-scheme": [
                 "libs/modules/interest-rate-scheme/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/invitation-code": [
+            "@ecoop/modules/invitation-code": [
                 "libs/modules/invitation-code/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/journal-voucher": [
+            "@ecoop/modules/journal-voucher": [
                 "libs/modules/journal-voucher/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/journal-voucher-entry": [
+            "@ecoop/modules/journal-voucher-entry": [
                 "libs/modules/journal-voucher-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/journal-voucher-tag": [
+            "@ecoop/modules/journal-voucher-tag": [
                 "libs/modules/journal-voucher-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-account": [
+            "@ecoop/modules/loan-account": [
                 "libs/modules/loan-account/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-amortization-schedule": [
+            "@ecoop/modules/loan-amortization-schedule": [
                 "libs/modules/loan-amortization-schedule/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-clearance-analysis": [
+            "@ecoop/modules/loan-clearance-analysis": [
                 "libs/modules/loan-clearance-analysis/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-clearance-analysis-institution": [
+            "@ecoop/modules/loan-clearance-analysis-institution": [
                 "libs/modules/loan-clearance-analysis-institution/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-guaranteed-fund": [
+            "@ecoop/modules/loan-guaranteed-fund": [
                 "libs/modules/loan-guaranteed-fund/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-guaranteed-fund-per-month": [
+            "@ecoop/modules/loan-guaranteed-fund-per-month": [
                 "libs/modules/loan-guaranteed-fund-per-month/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-guide": [
+            "@ecoop/modules/loan-guide": [
                 "libs/modules/loan-guide/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-ledger": [
+            "@ecoop/modules/loan-ledger": [
                 "libs/modules/loan-ledger/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-payment": [
+            "@ecoop/modules/loan-payment": [
                 "libs/modules/loan-payment/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-purpose": [
+            "@ecoop/modules/loan-purpose": [
                 "libs/modules/loan-purpose/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-status": [
+            "@ecoop/modules/loan-status": [
                 "libs/modules/loan-status/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-tag": [
+            "@ecoop/modules/loan-tag": [
                 "libs/modules/loan-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-terms-and-condition-amount-receipt": [
+            "@ecoop/modules/loan-terms-and-condition-amount-receipt": [
                 "libs/modules/loan-terms-and-condition-amount-receipt/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-terms-and-condition-suggested-payment": [
+            "@ecoop/modules/loan-terms-and-condition-suggested-payment": [
                 "libs/modules/loan-terms-and-condition-suggested-payment/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-transaction": [
+            "@ecoop/modules/loan-transaction": [
                 "libs/modules/loan-transaction/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/loan-transaction-entry": [
+            "@ecoop/modules/loan-transaction-entry": [
                 "libs/modules/loan-transaction-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/location": [
+            "@ecoop/modules/location": [
                 "libs/modules/location/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/media": [
+            "@ecoop/modules/media": [
                 "libs/modules/media/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-account-ledger": [
+            "@ecoop/modules/member-account-ledger": [
                 "libs/modules/member-account-ledger/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-accounting-ledger": [
+            "@ecoop/modules/member-accounting-ledger": [
                 "libs/modules/member-accounting-ledger/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-address": [
+            "@ecoop/modules/member-address": [
                 "libs/modules/member-address/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-asset": [
+            "@ecoop/modules/member-asset": [
                 "libs/modules/member-asset/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-bank-card": [
+            "@ecoop/modules/member-bank-card": [
                 "libs/modules/member-bank-card/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-center": [
+            "@ecoop/modules/member-center": [
                 "libs/modules/member-center/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-center-history": [
+            "@ecoop/modules/member-center-history": [
                 "libs/modules/member-center-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-classification": [
+            "@ecoop/modules/member-classification": [
                 "libs/modules/member-classification/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-classification-history": [
+            "@ecoop/modules/member-classification-history": [
                 "libs/modules/member-classification-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-classification-interest-rate": [
+            "@ecoop/modules/member-classification-interest-rate": [
                 "libs/modules/member-classification-interest-rate/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-close-remark": [
+            "@ecoop/modules/member-close-remark": [
                 "libs/modules/member-close-remark/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-contact-reference": [
+            "@ecoop/modules/member-contact-reference": [
                 "libs/modules/member-contact-reference/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-damayan-extension-entry": [
+            "@ecoop/modules/member-damayan-extension-entry": [
                 "libs/modules/member-damayan-extension-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-deduction-entry": [
+            "@ecoop/modules/member-deduction-entry": [
                 "libs/modules/member-deduction-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-department": [
+            "@ecoop/modules/member-department": [
                 "libs/modules/member-department/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-department-history": [
+            "@ecoop/modules/member-department-history": [
                 "libs/modules/member-department-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-description-schema": [
+            "@ecoop/modules/member-description-schema": [
                 "libs/modules/member-description-schema/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-educational-attainment": [
+            "@ecoop/modules/member-educational-attainment": [
                 "libs/modules/member-educational-attainment/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-expense": [
+            "@ecoop/modules/member-expense": [
                 "libs/modules/member-expense/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-gender": [
+            "@ecoop/modules/member-gender": [
                 "libs/modules/member-gender/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-gender-history": [
+            "@ecoop/modules/member-gender-history": [
                 "libs/modules/member-gender-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-government-benefit": [
+            "@ecoop/modules/member-government-benefit": [
                 "libs/modules/member-government-benefit/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-group": [
+            "@ecoop/modules/member-group": [
                 "libs/modules/member-group/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-group-history": [
+            "@ecoop/modules/member-group-history": [
                 "libs/modules/member-group-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-income": [
+            "@ecoop/modules/member-income": [
                 "libs/modules/member-income/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-joint-account": [
+            "@ecoop/modules/member-joint-account": [
                 "libs/modules/member-joint-account/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-mutual-fund-history": [
+            "@ecoop/modules/member-mutual-fund-history": [
                 "libs/modules/member-mutual-fund-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-occupation": [
+            "@ecoop/modules/member-occupation": [
                 "libs/modules/member-occupation/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-occupation-history": [
+            "@ecoop/modules/member-occupation-history": [
                 "libs/modules/member-occupation-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-other-information-entry": [
+            "@ecoop/modules/member-other-information-entry": [
                 "libs/modules/member-other-information-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-profile": [
+            "@ecoop/modules/member-profile": [
                 "libs/modules/member-profile/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-profile-archive": [
+            "@ecoop/modules/member-profile-archive": [
                 "libs/modules/member-profile-archive/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-profile-media": [
+            "@ecoop/modules/member-profile-media": [
                 "libs/modules/member-profile-media/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-recruits": [
+            "@ecoop/modules/member-recruits": [
                 "libs/modules/member-recruits/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-relative-account": [
+            "@ecoop/modules/member-relative-account": [
                 "libs/modules/member-relative-account/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-type": [
+            "@ecoop/modules/member-type": [
                 "libs/modules/member-type/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-type-history": [
+            "@ecoop/modules/member-type-history": [
                 "libs/modules/member-type-history/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-user-account": [
+            "@ecoop/modules/member-user-account": [
                 "libs/modules/member-user-account/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/member-verification": [
+            "@ecoop/modules/member-verification": [
                 "libs/modules/member-verification/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/mutual-fund": [
+            "@ecoop/modules/mutual-fund": [
                 "libs/modules/mutual-fund/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/mutual-fund-additional-members": [
+            "@ecoop/modules/mutual-fund-additional-members": [
                 "libs/modules/mutual-fund-additional-members/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/mutual-fund-entry": [
+            "@ecoop/modules/mutual-fund-entry": [
                 "libs/modules/mutual-fund-entry/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/mutual-fund-table": [
+            "@ecoop/modules/mutual-fund-table": [
                 "libs/modules/mutual-fund-table/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/notification": [
+            "@ecoop/modules/notification": [
                 "libs/modules/notification/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/online-remittance": [
+            "@ecoop/modules/online-remittance": [
                 "libs/modules/online-remittance/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/or-builder": [
+            "@ecoop/modules/or-builder": [
                 "libs/modules/or-builder/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/organization": [
+            "@ecoop/modules/organization": [
                 "libs/modules/organization/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/organization-category": [
+            "@ecoop/modules/organization-category": [
                 "libs/modules/organization-category/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/organization-media": [
+            "@ecoop/modules/organization-media": [
                 "libs/modules/organization-media/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/orgnaization-daily-usage": [
+            "@ecoop/modules/orgnaization-daily-usage": [
                 "libs/modules/orgnaization-daily-usage/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/payment-type": [
+            "@ecoop/modules/payment-type": [
                 "libs/modules/payment-type/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/pdf-viewer": [
+            "@ecoop/modules/pdf-viewer": [
                 "libs/modules/pdf-viewer/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/permission": [
+            "@ecoop/modules/permission": [
                 "libs/modules/permission/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/permission-template": [
+            "@ecoop/modules/permission-template": [
                 "libs/modules/permission-template/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/playground": [
+            "@ecoop/modules/playground": [
                 "libs/modules/playground/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/post-dated-check": [
+            "@ecoop/modules/post-dated-check": [
                 "libs/modules/post-dated-check/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/qr-crypto": [
+            "@ecoop/modules/qr-crypto": [
                 "libs/modules/qr-crypto/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/quick-transfer": [
+            "@ecoop/modules/quick-transfer": [
                 "libs/modules/quick-transfer/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/settings": [
+            "@ecoop/modules/settings": [
                 "libs/modules/settings/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/subscription-plan": [
+            "@ecoop/modules/subscription-plan": [
                 "libs/modules/subscription-plan/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/tag-template": [
+            "@ecoop/modules/tag-template": [
                 "libs/modules/tag-template/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/time-deposit-computation": [
+            "@ecoop/modules/time-deposit-computation": [
                 "libs/modules/time-deposit-computation/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/time-deposit-computation-pre-mature": [
+            "@ecoop/modules/time-deposit-computation-pre-mature": [
                 "libs/modules/time-deposit-computation-pre-mature/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/time-deposit-type": [
+            "@ecoop/modules/time-deposit-type": [
                 "libs/modules/time-deposit-type/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/timesheet": [
+            "@ecoop/modules/timesheet": [
                 "libs/modules/timesheet/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/transaction": [
+            "@ecoop/modules/transaction": [
                 "libs/modules/transaction/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/transaction-batch": [
+            "@ecoop/modules/transaction-batch": [
                 "libs/modules/transaction-batch/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/transaction-tag": [
+            "@ecoop/modules/transaction-tag": [
                 "libs/modules/transaction-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/unbalance-account": [
+            "@ecoop/modules/transactions": [
+                "libs/modules/transactions/src/index.ts"
+            ],
+            "@ecoop/modules/unbalance-account": [
                 "libs/modules/unbalance-account/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/user": ["libs/modules/user/src/index.ts"],
-            "@e-coop-monorepo/modules/user-organization": [
+            "@ecoop/modules/user": ["libs/modules/user/src/index.ts"],
+            "@ecoop/modules/user-organization": [
                 "libs/modules/user-organization/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/user-profile": [
+            "@ecoop/modules/user-profile": [
                 "libs/modules/user-profile/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/user-rating": [
+            "@ecoop/modules/user-rating": [
                 "libs/modules/user-rating/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/voucher-pay-to": [
+            "@ecoop/modules/voucher-pay-to": [
                 "libs/modules/voucher-pay-to/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/tw-utils": [
+            "@ecoop/shared/tw-utils": [
                 "libs/shared/tw-utils/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/loggers": [
+            "@ecoop/shared/loggers": [
                 "libs/shared/loggers/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/repositories": [
+            "@ecoop/shared/repositories": [
                 "libs/shared/repositories/src/index.ts"
             ],
-            "@e-coop-monorepo/ui-smart": ["libs/ui-smart/src/index.ts"],
-            "@e-coop-monorepo/ui/core": ["libs/ui/core/src/index.ts"],
-            "@e-coop-monorepo/ui/modals": ["libs/ui/modals/src/index.ts"],
-            "@e-coop-monorepo/ui/guards": ["libs/ui/guards/src/index.ts"],
-            "@e-coop-monorepo/ui/sidebar": ["libs/ui/sidebar/src/index.ts"],
-            "@e-coop-monorepo/ui/app-sidebar": [
+            "@ecoop/ui-smart": ["libs/ui-smart/src/index.ts"],
+            "@ecoop/ui/core": ["libs/ui/core/src/index.ts"],
+            "@ecoop/ui/modals": ["libs/ui/modals/src/index.ts"],
+            "@ecoop/ui/guards": ["libs/ui/guards/src/index.ts"],
+            "@ecoop/ui/sidebar": ["libs/ui/sidebar/src/index.ts"],
+            "@ecoop/ui/app-sidebar": [
                 "libs/ui/app-sidebar/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/wrappers": ["libs/ui/wrappers/src/index.ts"],
-            "@e-coop-monorepo/ui/data-table": [
+            "@ecoop/ui/wrappers": ["libs/ui/wrappers/src/index.ts"],
+            "@ecoop/ui/data-table": [
                 "libs/ui/data-table/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/map": ["libs/ui/map/src/index.ts"],
-            "@e-coop-monorepo/ui/signature": ["libs/ui/signature/src/index.ts"],
-            "@e-coop-monorepo/ui/comboboxes": [
+            "@ecoop/ui/map": ["libs/ui/map/src/index.ts"],
+            "@ecoop/ui/signature": ["libs/ui/signature/src/index.ts"],
+            "@ecoop/ui/comboboxes": [
                 "libs/ui/comboboxes/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/nav": ["libs/ui/nav/src/index.ts"],
-            "@e-coop-monorepo/ui/policies": ["libs/ui/policies/src/index.ts"],
-            "@e-coop-monorepo/ui/templates": ["libs/ui/templates/src/index.ts"],
-            "@e-coop-monorepo/ui/ecoop-logo": [
+            "@ecoop/ui/nav": ["libs/ui/nav/src/index.ts"],
+            "@ecoop/ui/policies": ["libs/ui/policies/src/index.ts"],
+            "@ecoop/ui/templates": ["libs/ui/templates/src/index.ts"],
+            "@ecoop/ui/ecoop-logo": [
                 "libs/ui/ecoop-logo/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/qrcode-scanner": [
+            "@ecoop/ui/qrcode-scanner": [
                 "libs/ui/qrcode-scanner/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/image-preview": [
+            "@ecoop/ui/image-preview": [
                 "libs/ui/image-preview/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/ui-media": ["libs/ui/ui-media/src/index.ts"],
-            "@e-coop-monorepo/ui/ui-theme": ["libs/ui/ui-theme/src/index.ts"],
-            "@e-coop-monorepo/ui/ui-live-toggle": [
+            "@ecoop/ui/ui-media": ["libs/ui/ui-media/src/index.ts"],
+            "@ecoop/ui/ui-theme": ["libs/ui/ui-theme/src/index.ts"],
+            "@ecoop/ui/ui-live-toggle": [
                 "libs/ui/ui-live-toggle/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/ui-form-components": [
+            "@ecoop/ui/ui-form-components": [
                 "libs/ui/ui-form-components/src/index.ts"
             ],
-            "@e-coop-monorepo/providers/core-providers": [
+            "@ecoop/providers/core-providers": [
                 "libs/providers/core-providers/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/providers/core-providers": [
+            "@ecoop/shared/providers/core-providers": [
                 "libs/shared/providers/core-providers/src/index.ts"
             ],
-            "@e-coop-monorepo/shared/providers/action-security-providers": [
+            "@ecoop/shared/providers/action-security-providers": [
                 "libs/shared/providers/action-security-providers/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/ui-pickers": [
+            "@ecoop/ui/ui-pickers": [
                 "libs/ui/ui-pickers/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/ui-qr-code-downloadable": [
+            "@ecoop/ui/ui-qr-code-downloadable": [
                 "libs/ui/ui-qr-code-downloadable/src/index.ts"
             ],
-            "@e-coop-monorepo/ui/ui-webcam": ["libs/ui/ui-webcam/src/index.ts"],
-            "@e-coop-monorepo/ui/ui-search": ["libs/ui/ui-search/src/index.ts"],
-            "@e-coop-monorepo/ui/ui-shortcut": [
+            "@ecoop/ui/ui-webcam": ["libs/ui/ui-webcam/src/index.ts"],
+            "@ecoop/ui/ui-search": ["libs/ui/ui-search/src/index.ts"],
+            "@ecoop/ui/ui-shortcut": [
                 "libs/ui/ui-shortcut/src/index.ts"
             ],
             "@ecoop/domains/iam/contracts": [

@@ -90,7 +90,7 @@ bun run g:shared <lib-name>
 3. Custom Automation Tools (IDP)
 If you run into import boundary errors or need to validate the monorepo graph, use our custom Node.js scripts located in tools/scripts/:
 
-bun run check:module-imports: Scans the AST to ensure no files are using illegal relative paths, enforcing the use of @e-coop-monorepo/* aliases.
+bun run check:module-imports: Scans the AST to ensure no files are using illegal relative paths, enforcing the use of @ecoop/* aliases.
 
 bun run fix:ui-imports: Automatically rewrites broken or legacy UI/utility aliases.
 

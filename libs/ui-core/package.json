@@ -1,5 +1,5 @@
 {
-    "name": "@e-coop-monorepo/ui",
+    "name": "@ecoop/ui",
     "version": "0.0.1",
     "main": "./index.js",
     "types": "./index.d.ts",
