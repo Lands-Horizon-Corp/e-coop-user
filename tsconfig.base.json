@@ -551,9 +551,6 @@
             "@e-coop-monorepo/modules/transaction-tag": [
                 "libs/modules/transaction-tag/src/index.ts"
             ],
-            "@e-coop-monorepo/modules/transactions": [
-                "libs/modules/transactions/src/index.ts"
-            ],
             "@e-coop-monorepo/modules/unbalance-account": [
                 "libs/modules/unbalance-account/src/index.ts"
             ],
@@ -641,6 +638,31 @@
             ],
             "@ecoop/domains/iam/modules": [
                 "libs/domains/iam/modules/src/index.ts"
+            ],
+            "@ecoop/domains/iam": ["libs/domains/iam/src/index.ts"],
+            "@ecoop/domains/member-crm": [
+                "libs/domains/member-crm/src/index.ts"
+            ],
+            "@ecoop/domains/accounting": [
+                "libs/domains/accounting/src/index.ts"
+            ],
+            "@ecoop/domains/loans": ["libs/domains/loans/src/index.ts"],
+            "@ecoop/domains/transactions": [
+                "libs/domains/transactions/src/index.ts"
+            ],
+            "@ecoop/domains/savings-investments": [
+                "libs/domains/savings-investments/src/index.ts"
+            ],
+            "@ecoop/domains/rates-computations": [
+                "libs/domains/rates-computations/src/index.ts"
+            ],
+            "@ecoop/domains/reporting": ["libs/domains/reporting/src/index.ts"],
+            "@ecoop/domains/analytics": ["libs/domains/analytics/src/index.ts"],
+            "@ecoop/domains/social-media": [
+                "libs/domains/social-media/src/index.ts"
+            ],
+            "@ecoop/domains/communications": [
+                "libs/domains/communications/src/index.ts"
             ]
         },
         "strict": true
