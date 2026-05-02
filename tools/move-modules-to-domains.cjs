@@ -199,12 +199,15 @@ function planMoves() {
     const existing = findExistingModules()
     const moves = []
 
+    function getDestination(domain, moduleName) {
+        return path.join(domainsDir, domain, 'src', moduleName)
+    }
+
     for (const [domain, modules] of Object.entries(mapping)) {
         for (const m of modules) {
             const src = path.join(modulesDir, m)
             if (fs.existsSync(src)) {
-                const destDir = path.join(domainsDir, domain)
-                const dest = path.join(destDir, m)
+                const dest = getDestination(domain, m)
                 moves.push({ module: m, src, dest, domain })
             }
         }
@@ -215,8 +218,7 @@ function planMoves() {
         for (const m of existing) {
             if (regex.test(m)) {
                 const src = path.join(modulesDir, m)
-                const destDir = path.join(domainsDir, args.to)
-                const dest = path.join(destDir, m)
+                const dest = getDestination(args.to, m)
                 if (!moves.find((x) => x.module === m))
                     moves.push({ module: m, src, dest, domain: args.to })
             }
