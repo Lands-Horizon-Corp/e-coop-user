@@ -1,4 +1,4 @@
-import { feedBaseKey } from '@e-coop-monorepo/modules/feed'
+import type { feedBaseKey } from '@e-coop-monorepo/modules/feed'
 import { Logger } from '@e-coop-monorepo/shared/helpers'
 import {
     createMutationFactory,
