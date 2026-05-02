@@ -1,9 +1,0 @@
-{
-    "name": "time-deposit-type",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/time-deposit-type/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project time-deposit-type --web",
-    "targets": {}
-}

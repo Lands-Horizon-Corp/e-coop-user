@@ -1,9 +1,0 @@
-{
-    "name": "user-organization",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/user-organization/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project user-organization --web",
-    "targets": {}
-}

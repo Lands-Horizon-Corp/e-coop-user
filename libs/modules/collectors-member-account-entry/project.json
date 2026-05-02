@@ -1,9 +1,0 @@
-{
-    "name": "collectors-member-account-entry",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/collectors-member-account-entry/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project collectors-member-account-entry --web",
-    "targets": {}
-}

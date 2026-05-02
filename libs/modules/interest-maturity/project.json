@@ -1,9 +1,0 @@
-{
-    "name": "interest-maturity",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/interest-maturity/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project interest-maturity --web",
-    "targets": {}
-}

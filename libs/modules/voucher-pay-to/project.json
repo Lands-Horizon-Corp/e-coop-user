@@ -1,9 +1,0 @@
-{
-    "name": "voucher-pay-to",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/voucher-pay-to/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project voucher-pay-to --web",
-    "targets": {}
-}

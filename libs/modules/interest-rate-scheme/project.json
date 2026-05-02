@@ -1,9 +1,0 @@
-{
-    "name": "interest-rate-scheme",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/interest-rate-scheme/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project interest-rate-scheme --web",
-    "targets": {}
-}

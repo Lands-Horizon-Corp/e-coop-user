@@ -1,9 +1,0 @@
-{
-    "name": "loan-clearance-analysis-institution",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/loan-clearance-analysis-institution/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project loan-clearance-analysis-institution --web",
-    "targets": {}
-}

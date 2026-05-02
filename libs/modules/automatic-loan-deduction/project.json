@@ -1,9 +1,0 @@
-{
-    "name": "automatic-loan-deduction",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/automatic-loan-deduction/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project automatic-loan-deduction --web",
-    "targets": {}
-}

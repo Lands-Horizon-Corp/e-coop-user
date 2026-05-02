@@ -1,9 +1,0 @@
-{
-    "name": "branch-settings",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/branch-settings/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project branch-settings --web",
-    "targets": {}
-}

@@ -1,9 +1,0 @@
-{
-    "name": "disbursement-transaction",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/disbursement-transaction/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project disbursement-transaction --web",
-    "targets": {}
-}

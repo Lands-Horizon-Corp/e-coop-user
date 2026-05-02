@@ -1,9 +1,0 @@
-{
-    "name": "browse-reference",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/browse-reference/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project browse-reference --web",
-    "targets": {}
-}

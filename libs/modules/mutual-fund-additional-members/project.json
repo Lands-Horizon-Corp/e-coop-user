@@ -1,9 +1,0 @@
-{
-    "name": "mutual-fund-additional-members",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/mutual-fund-additional-members/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project mutual-fund-additional-members --web",
-    "targets": {}
-}

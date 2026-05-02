@@ -1,9 +1,0 @@
-{
-    "name": "member-other-information-entry",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/member-other-information-entry/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project member-other-information-entry --web",
-    "targets": {}
-}

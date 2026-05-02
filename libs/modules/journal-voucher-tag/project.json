@@ -1,9 +1,0 @@
-{
-    "name": "journal-voucher-tag",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/journal-voucher-tag/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project journal-voucher-tag --web",
-    "targets": {}
-}

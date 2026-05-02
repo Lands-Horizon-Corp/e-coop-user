@@ -1,9 +1,0 @@
-{
-    "name": "area",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/area/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project area --web",
-    "targets": {}
-}

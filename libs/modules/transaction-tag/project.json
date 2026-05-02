@@ -1,9 +1,0 @@
-{
-    "name": "transaction-tag",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/transaction-tag/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project transaction-tag --web",
-    "targets": {}
-}

@@ -1,9 +1,0 @@
-{
-    "name": "generated-savings-interest",
-    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
-    "sourceRoot": "libs/modules/generated-savings-interest/src",
-    "projectType": "library",
-    "tags": [],
-    "// targets": "to see all targets run: nx show project generated-savings-interest --web",
-    "targets": {}
-}

@@ -1,3 +1,0 @@
-# loan-amortization-schedule
-
-This library was generated with [Nx](https://nx.dev).
