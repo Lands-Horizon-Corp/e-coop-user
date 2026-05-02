@@ -199,7 +199,6 @@ function planMoves() {
     const existing = findExistingModules()
     const moves = []
 
-    // From explicit mapping
     for (const [domain, modules] of Object.entries(mapping)) {
         for (const m of modules) {
             const src = path.join(modulesDir, m)
@@ -211,7 +210,6 @@ function planMoves() {
         }
     }
 
-    // If pattern provided, add matching modules
     if (args.pattern && args.to) {
         const regex = new RegExp(args.pattern)
         for (const m of existing) {
@@ -219,14 +217,12 @@ function planMoves() {
                 const src = path.join(modulesDir, m)
                 const destDir = path.join(domainsDir, args.to)
                 const dest = path.join(destDir, m)
-                // avoid duplicate
                 if (!moves.find((x) => x.module === m))
                     moves.push({ module: m, src, dest, domain: args.to })
             }
         }
     }
 
-    // Remove duplicates
     return moves.filter(
         (v, i, a) => a.findIndex((x) => x.module === v.module) === i
     )
@@ -260,16 +256,19 @@ function run() {
         return
     }
 
-    // Apply moves
     for (const m of moves) {
         try {
             if (!fs.existsSync(m.src)) {
                 console.warn(`Source missing, skipping: ${m.src}`)
                 continue
             }
-            if (!fs.existsSync(path.dirname(m.dest)))
+            if (!fs.existsSync(path.dirname(m.dest))) {
                 fs.mkdirSync(path.dirname(m.dest), { recursive: true })
-            fs.renameSync(m.src, m.dest)
+            }
+
+            fs.cpSync(m.src, m.dest, { recursive: true })
+            fs.rmSync(m.src, { recursive: true, force: true })
+
             console.log(
                 `Moved: ${path.relative(repoRoot, m.src)} -> ${path.relative(repoRoot, m.dest)}`
             )
