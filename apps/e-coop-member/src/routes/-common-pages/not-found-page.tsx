@@ -1,11 +1,11 @@
 import type { NotFoundRouteProps } from '@tanstack/react-router'
 import { useRouter } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
-import { FlickeringGrid } from '@e-coop-monorepo/ui/core'
-import { ArrowLeftIcon, SignPostIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
+import { FlickeringGrid } from '@ecoop/ui/core'
+import { ArrowLeftIcon, SignPostIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 interface Props extends IBaseProps, NotFoundRouteProps {}
 

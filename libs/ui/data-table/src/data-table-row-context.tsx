@@ -5,7 +5,7 @@ import {
     EyeNoneIcon,
     PencilFillIcon,
     TrashIcon,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import {
     ContextMenu,
     ContextMenuContent,
@@ -13,7 +13,7 @@ import {
     ContextMenuLabel,
     ContextMenuSeparator,
     ContextMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { Row } from '@tanstack/react-table'
 
 export interface IRowActionOption {

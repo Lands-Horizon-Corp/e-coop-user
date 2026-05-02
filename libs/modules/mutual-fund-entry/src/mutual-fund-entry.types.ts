@@ -1,13 +1,13 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IMutualFund } from '@e-coop-monorepo/modules/mutual-fund'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMutualFund } from '@ecoop/modules/mutual-fund'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { MutualFundEntrySchema } from './mutual-fund-entry.validation'
 

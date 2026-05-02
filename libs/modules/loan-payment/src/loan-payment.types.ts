@@ -1,7 +1,7 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IAccount } from '@ecoop/modules/account'
+import type { TEntityId } from '@ecoop/shared/types'
 
-// import { ILoanPaymentSchedule } from '@e-coop-monorepo/modules/loan-transaction'
+// import { ILoanPaymentSchedule } from '@ecoop/modules/loan-transaction'
 
 export interface ILoanPayableAccount {
     account: IAccount

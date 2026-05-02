@@ -5,7 +5,7 @@ import {
     type PolicySection,
     allPolicies,
     policyList,
-} from '@e-coop-monorepo/shared/policies'
+} from '@ecoop/shared/policies'
 import { motion } from 'framer-motion'
 import { Link2 } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'

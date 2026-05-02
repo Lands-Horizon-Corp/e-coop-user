@@ -1,13 +1,13 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IAccountHistory } from '@e-coop-monorepo/modules/account-history'
-import type { LoanTransaction } from '@e-coop-monorepo/modules/automatic-loan-deduction'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IAccountHistory } from '@ecoop/modules/account-history'
+import type { LoanTransaction } from '@ecoop/modules/automatic-loan-deduction'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { LoanAccountSchema } from './loan-account.validation'
 

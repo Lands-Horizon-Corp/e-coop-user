@@ -1,14 +1,14 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+import { Logger } from '@ecoop/shared/helpers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {
     createMutationFactory,
     createMutationInvalidateFn,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 import type {
     IIncludeNegativeAccounts,

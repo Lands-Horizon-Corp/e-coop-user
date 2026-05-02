@@ -1,17 +1,13 @@
 import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { useUploadMedia } from '@e-coop-monorepo/modules/media'
-import { toDateTimeFormatFile } from '@e-coop-monorepo/shared/helpers'
-import { useCamera } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
-import {
-    CheckFillIcon,
-    FingerPrintIcon,
-    RotateLeftIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { useUploadMedia } from '@ecoop/modules/media'
+import { toDateTimeFormatFile } from '@ecoop/shared/helpers'
+import { useCamera } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { TEntityId } from '@ecoop/shared/types'
+import { CheckFillIcon, FingerPrintIcon, RotateLeftIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import { ScanFace } from 'lucide-react'
 import Webcam from 'react-webcam'
 

@@ -1,5 +1,5 @@
-import type { IUser } from '@e-coop-monorepo/modules/user'
-import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IUser } from '@ecoop/modules/user'
+import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 export interface IUserRatingRequest {
     id?: TEntityId

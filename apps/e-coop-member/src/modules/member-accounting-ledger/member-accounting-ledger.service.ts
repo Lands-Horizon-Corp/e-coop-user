@@ -4,12 +4,12 @@ import qs from 'query-string'
 import type {
     IMemberAccountingLedgerPaginated,
     IMemberAccountingLedgerTotal,
-} from '@e-coop-monorepo/modules/member-account-ledger'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { APIService } from '@e-coop-monorepo/shared/providers/core-providers'
-import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/modules/member-account-ledger'
+import { Logger } from '@ecoop/shared/helpers'
+import { APIService } from '@ecoop/shared/providers/core-providers'
+import { createAPIRepository } from '@ecoop/shared/repositories'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 import type { IMemberGeneralLedgerTotal } from '../general-ledger'
 

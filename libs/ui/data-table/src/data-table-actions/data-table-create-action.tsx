@@ -1,8 +1,8 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { PlusIcon } from '@e-coop-monorepo/ui/core'
-import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
-import type { ButtonProps } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { PlusIcon } from '@ecoop/ui/core'
+import { LoadingSpinner } from '@ecoop/ui/core'
+import type { ButtonProps } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import type { IconType } from 'react-icons/lib'
 
 export interface IDataTableCreateActionProps extends Omit<

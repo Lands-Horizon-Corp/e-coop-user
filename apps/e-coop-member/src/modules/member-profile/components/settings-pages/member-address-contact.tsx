@@ -3,18 +3,18 @@ import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import { Label } from '@e-coop-monorepo/ui/core'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import { Button } from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import { Label } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
-import { Textarea } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Textarea } from '@ecoop/ui/core'
 import {
     Building,
     Globe,

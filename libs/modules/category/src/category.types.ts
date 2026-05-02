@@ -1,4 +1,4 @@
-import type { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface ICategory extends ITimeStamps {
     id: TEntityId

@@ -1,10 +1,10 @@
-import type { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMemberGender } from '@ecoop/modules/member-gender'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IMemberGenderHistoryRequest {
     member_profile_id: TEntityId

@@ -1,4 +1,4 @@
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@ecoop/shared/types'
 
 export type TPaymentMode = 'payment' | 'withdraw' | 'deposit'
 

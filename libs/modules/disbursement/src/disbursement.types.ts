@@ -1,9 +1,9 @@
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { ICurrency } from '@ecoop/modules/currency'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { TDisbursementSchema } from './disbursement.validation'
 

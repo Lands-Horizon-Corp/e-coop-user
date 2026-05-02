@@ -1,11 +1,11 @@
 import z from 'zod'
 
-import { FamilyRelationshipSchema } from '@e-coop-monorepo/modules/member-relative-account'
+import { FamilyRelationshipSchema } from '@ecoop/modules/member-relative-account'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const MemberJointAccountSchema = z.object({
     id: z.string().optional(),

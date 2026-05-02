@@ -1,11 +1,11 @@
 import { useRouter } from '@tanstack/react-router'
 import { toast } from 'sonner'
 
-// import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
-import useConfirmModalStore from '@e-coop-monorepo/shared/store'
-import { useFakeStore } from '@e-coop-monorepo/shared/store'
-import { FingerprintOffIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+// import { useAuthStore } from '@ecoop/modules/authentication/authgentication.store'
+import useConfirmModalStore from '@ecoop/shared/store'
+import { useFakeStore } from '@ecoop/shared/store'
+import { FingerprintOffIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 import { useSignOut } from '../../auth.service'
 

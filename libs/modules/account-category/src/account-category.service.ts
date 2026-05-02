@@ -1,10 +1,10 @@
 import qs from 'query-string'
 
-import { downloadFile } from '@e-coop-monorepo/shared/helpers'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import { downloadFile } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/helpers'
+import { createAPIRepository } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type {
     IAccountCategory,

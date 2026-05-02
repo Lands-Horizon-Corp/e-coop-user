@@ -5,7 +5,7 @@ import type {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { MemberClassificationSchema } from './member-classification.validation'
 

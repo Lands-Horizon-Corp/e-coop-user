@@ -1,4 +1,4 @@
-import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IMedia } from '@ecoop/modules/media'
 import { create } from 'zustand'
 
 interface ImagePreviewState {

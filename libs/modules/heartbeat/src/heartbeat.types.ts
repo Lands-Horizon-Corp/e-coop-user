@@ -1,5 +1,5 @@
-import type { ITimesheet } from '@e-coop-monorepo/modules/timesheet'
-import type { IUserOrganizationResponse } from '@e-coop-monorepo/modules/user-organization'
+import type { ITimesheet } from '@ecoop/modules/timesheet'
+import type { IUserOrganizationResponse } from '@ecoop/modules/user-organization'
 
 export interface HeartbeatResponse {
     user_organizations: IUserOrganizationResponse[]

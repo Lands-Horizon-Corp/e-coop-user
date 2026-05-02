@@ -1,14 +1,14 @@
 import z from 'zod'
 
-import { FINANCIAL_STATEMENT_TYPE } from '@e-coop-monorepo/modules/financial-statement-definition'
-import { GENERAL_LEDGER_TYPE } from '@e-coop-monorepo/modules/general-ledger'
-import { ICONS } from '@e-coop-monorepo/shared/constants'
+import { FINANCIAL_STATEMENT_TYPE } from '@ecoop/modules/financial-statement-definition'
+import { GENERAL_LEDGER_TYPE } from '@ecoop/modules/general-ledger'
+import { ICONS } from '@ecoop/shared/constants'
 import {
     DaySchema,
     PercentageSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 import {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,

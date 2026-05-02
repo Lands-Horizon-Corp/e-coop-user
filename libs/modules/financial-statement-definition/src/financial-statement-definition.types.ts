@@ -1,9 +1,5 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type {
-    IAuditable,
-    ITimeStamps,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 import type { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
 import type { IFinancialStatementDefinitionSchema } from './financial-statement-definition.validation'

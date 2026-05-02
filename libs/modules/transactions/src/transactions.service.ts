@@ -1,13 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type { ITransactionPaginated } from '@e-coop-monorepo/modules/transaction'
-import {
-    getPaginated,
-    transactionAPIRoute,
-} from '@e-coop-monorepo/modules/transaction'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import type { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
+import type { ITransactionPaginated } from '@ecoop/modules/transaction'
+import { getPaginated, transactionAPIRoute } from '@ecoop/modules/transaction'
+import { Logger } from '@ecoop/shared/helpers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions } from '@ecoop/shared/types'
 
 export type TTransactionHookMode =
     | 'current-branch'

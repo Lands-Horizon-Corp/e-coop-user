@@ -8,7 +8,7 @@ import {
     NUMBER_LETTER_REGEX,
     PASSWORD_MIN_LENGTH,
     SEX,
-} from '@e-coop-monorepo/shared/constants'
+} from '@ecoop/shared/constants'
 
 export const entityIdSchema = z.uuidv4()
 export const EntityIdSchema = (fieldName = 'Field') =>

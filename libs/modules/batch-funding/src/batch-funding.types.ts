@@ -1,16 +1,16 @@
 import type z from 'zod'
 
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
+import type { IUserBase } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { BatchFundingSchema } from './batch-funding.validation'
 

@@ -1,5 +1,5 @@
-import { hasPermissionFromAuth } from '@e-coop-monorepo/modules/authentication'
-import type { TUserType } from '@e-coop-monorepo/modules/user'
+import { hasPermissionFromAuth } from '@ecoop/modules/authentication'
+import type { TUserType } from '@ecoop/modules/user'
 import {
     BankDuoToneIcon,
     BankIcon,
@@ -44,13 +44,13 @@ import {
     Users3Icon,
     Users3LineIcon,
     WrenchIcon,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type {
     INavGroupItem,
     INavItem,
     INavItemDropdown,
     INavItemSingle,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 const filterNavItemsByUserType = (
     items: INavItem[],

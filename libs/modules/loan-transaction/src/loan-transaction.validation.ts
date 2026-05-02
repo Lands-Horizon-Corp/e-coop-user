@@ -1,16 +1,16 @@
 import z from 'zod'
 
-import { ComakerCollateralSchema } from '@e-coop-monorepo/modules/comaker-collateral'
-import { ComakerMemberProfileSchema } from '@e-coop-monorepo/modules/comaker-member-profile'
-import { LoanClearanceAnalysisSchema } from '@e-coop-monorepo/modules/loan-clearance-analysis'
-import { LoanClearanceAnalysisInstitutionSchema } from '@e-coop-monorepo/modules/loan-clearance-analysis-institution'
-import { LoanTermsAndConditionAmountReceiptSchema } from '@e-coop-monorepo/modules/loan-terms-and-condition-amount-receipt'
-import { LoanTermsAndConditionSuggestedPaymentSchema } from '@e-coop-monorepo/modules/loan-terms-and-condition-suggested-payment'
+import { ComakerCollateralSchema } from '@ecoop/modules/comaker-collateral'
+import { ComakerMemberProfileSchema } from '@ecoop/modules/comaker-member-profile'
+import { LoanClearanceAnalysisSchema } from '@ecoop/modules/loan-clearance-analysis'
+import { LoanClearanceAnalysisInstitutionSchema } from '@ecoop/modules/loan-clearance-analysis-institution'
+import { LoanTermsAndConditionAmountReceiptSchema } from '@ecoop/modules/loan-terms-and-condition-amount-receipt'
+import { LoanTermsAndConditionSuggestedPaymentSchema } from '@ecoop/modules/loan-terms-and-condition-suggested-payment'
 import {
     EntityIdSchema,
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 import {
     LOAN_ADJUSTMENT_TYPE,

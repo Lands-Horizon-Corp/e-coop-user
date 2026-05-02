@@ -4,7 +4,7 @@ import {
     descriptionSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 import { ACCOUNT_CLOSURE_REASONS } from './member-close-remark.constants'
 

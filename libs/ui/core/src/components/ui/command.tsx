@@ -2,15 +2,15 @@
 
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
-} from '@e-coop-monorepo/ui/core'
-import { InputGroup, InputGroupAddon } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { InputGroup, InputGroupAddon } from '@ecoop/ui/core'
 import { Command as CommandPrimitive } from 'cmdk'
 import { CheckIcon, SearchIcon } from 'lucide-react'
 

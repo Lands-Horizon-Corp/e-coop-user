@@ -1,10 +1,10 @@
 import type React from 'react'
 import { useState } from 'react'
 
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Card } from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import { Textarea } from '@e-coop-monorepo/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Card } from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import { Textarea } from '@ecoop/ui/core'
 import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 
 import { CoopBackground } from '../components/coop-bg'

@@ -1,7 +1,7 @@
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
-import { useFakeStore } from '@e-coop-monorepo/shared/store'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
+import { useFakeStore } from '@ecoop/shared/store'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type {
     IMemberProfile,

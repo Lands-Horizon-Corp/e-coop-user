@@ -1,15 +1,15 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IAdjustmentEntryTag } from '@e-coop-monorepo/modules/adjustment-entry-tag'
-import type { IAdjustmentVoucherSettings } from '@e-coop-monorepo/modules/branch-settings'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import type { IUser } from '@e-coop-monorepo/modules/user'
-import type { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IAdjustmentEntryTag } from '@ecoop/modules/adjustment-entry-tag'
+import type { IAdjustmentVoucherSettings } from '@ecoop/modules/branch-settings'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IPaymentType } from '@ecoop/modules/payment-type'
+import type { IUser } from '@ecoop/modules/user'
+import type { IUserOrganizationSettings } from '@ecoop/modules/user-organization'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IAdjustmentEntry extends IBaseEntityMeta {
     //add here

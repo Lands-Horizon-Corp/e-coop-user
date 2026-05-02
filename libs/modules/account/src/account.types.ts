@@ -1,19 +1,19 @@
-import type { IAccountCategory } from '@e-coop-monorepo/modules/account-category'
-import type { IAccountClassification } from '@e-coop-monorepo/modules/account-classification'
-import type { IComputationSheet } from '@e-coop-monorepo/modules/computation-sheet'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { TFinancialStatementType } from '@e-coop-monorepo/modules/financial-statement-definition'
-import type { IFinancialStatementTitle } from '@e-coop-monorepo/modules/financial-statement-title'
-import type { TGeneralLedgerType } from '@e-coop-monorepo/modules/general-ledger'
-import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import type { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
+import type { IAccountCategory } from '@ecoop/modules/account-category'
+import type { IAccountClassification } from '@ecoop/modules/account-classification'
+import type { IComputationSheet } from '@ecoop/modules/computation-sheet'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { TFinancialStatementType } from '@ecoop/modules/financial-statement-definition'
+import type { IFinancialStatementTitle } from '@ecoop/modules/financial-statement-title'
+import type { TGeneralLedgerType } from '@ecoop/modules/general-ledger'
+import type { IMemberType } from '@ecoop/modules/member-type'
+import type { IPaymentType } from '@ecoop/modules/payment-type'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
-import type { TIcon } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/shared/types'
+import type { TIcon } from '@ecoop/ui/core'
 
 import type {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,

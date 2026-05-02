@@ -1,14 +1,10 @@
 import { useState } from 'react'
 
-import { toReadableDateShort } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Calendar } from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+import { toReadableDateShort } from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Button } from '@ecoop/ui/core'
+import { Calendar } from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 import { CalendarIcon } from 'lucide-react'
 import type { DateRange } from 'react-day-picker'
 

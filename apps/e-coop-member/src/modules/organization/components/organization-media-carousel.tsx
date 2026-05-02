@@ -1,13 +1,13 @@
-import AnimateRevealEffect from '@e-coop-monorepo/modules/home/components/animate-reveal-effect'
-import { CoopBackground } from '@e-coop-monorepo/modules/home/components/coop-bg'
-import type { IOrganizationMedia } from '@e-coop-monorepo/modules/organization-media'
+import AnimateRevealEffect from '@ecoop/modules/home/components/animate-reveal-effect'
+import { CoopBackground } from '@ecoop/modules/home/components/coop-bg'
+import type { IOrganizationMedia } from '@ecoop/modules/organization-media'
 import {
     Carousel,
     CarouselContent,
     CarouselItem,
     CarouselNext,
     CarouselPrevious,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { Images } from 'lucide-react'
 
 interface MediaCarouselProps {

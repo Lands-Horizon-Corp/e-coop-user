@@ -6,7 +6,7 @@ import {
     TooltipPortal,
     TooltipProvider,
     TooltipTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 export interface IActionTooltipProps {
     tooltipContent: string | ReactNode

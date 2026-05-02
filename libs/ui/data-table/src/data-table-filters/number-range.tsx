@@ -1,4 +1,4 @@
-import { DebouncedInput } from '@e-coop-monorepo/ui/core'
+import { DebouncedInput } from '@ecoop/ui/core'
 
 interface Props {
     value: { from?: number; to?: number }

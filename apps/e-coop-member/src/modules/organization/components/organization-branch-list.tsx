@@ -1,5 +1,5 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import AnimateRevealEffect from '@e-coop-monorepo/modules/home/components/animate-reveal-effect'
+import type { IBranch } from '@ecoop/modules/branch'
+import AnimateRevealEffect from '@ecoop/modules/home/components/animate-reveal-effect'
 import { Building2 } from 'lucide-react'
 
 import { BranchCard } from './branch-card'

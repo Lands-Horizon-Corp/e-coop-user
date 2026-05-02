@@ -3,8 +3,8 @@ import { Fragment, useEffect, useMemo, useRef, useState } from 'react'
 import { Link } from '@tanstack/react-router'
 import Fuse from 'fuse.js'
 
-import { ArrowRightIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { ArrowRightIcon, MagnifyingGlassIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     CommandDialog,
     CommandEmpty,
@@ -14,7 +14,7 @@ import {
     CommandList,
     CommandSeparator,
     CommandShortcut,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useSidebar } from '../ui/sidebar'

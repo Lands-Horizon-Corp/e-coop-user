@@ -12,8 +12,8 @@ import {
 } from '@dnd-kit/core'
 import { restrictToHorizontalAxis } from '@dnd-kit/modifiers'
 import { arrayMove } from '@dnd-kit/sortable'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IChildProps, IClassProps } from '@ecoop/shared/types'
 import type { Row, Table as TableInstance } from '@tanstack/react-table'
 
 import { Table } from '../ui/table'

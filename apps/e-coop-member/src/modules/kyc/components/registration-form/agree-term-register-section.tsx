@@ -3,28 +3,28 @@ import { useMemo } from 'react'
 import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { useGetOrganizationById } from '@e-coop-monorepo/modules/organization'
-import { ORGANIZATION_ID } from '@e-coop-monorepo/shared/constants'
-import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { useGetOrganizationById } from '@ecoop/modules/organization'
+import { ORGANIZATION_ID } from '@ecoop/shared/constants'
+import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     CookieBiteIcon,
     RefreshIcon,
     ShieldIcon,
     Users3FillIcon,
-} from '@e-coop-monorepo/ui/core'
-import TextRenderer from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import TextRenderer from '@ecoop/ui/core'
 import {
     Accordion,
     AccordionContent,
     AccordionItem,
     AccordionTrigger,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Checkbox } from '@e-coop-monorepo/ui/core'
-import FormFieldWrapper from '@e-coop-monorepo/ui/core'
-import { Label } from '@e-coop-monorepo/ui/core'
-import { ScrollArea } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Checkbox } from '@ecoop/ui/core'
+import FormFieldWrapper from '@ecoop/ui/core'
+import { Label } from '@ecoop/ui/core'
+import { ScrollArea } from '@ecoop/ui/core'
 import { FileText } from 'lucide-react'
 
 import { useKYCRegister } from '../..'

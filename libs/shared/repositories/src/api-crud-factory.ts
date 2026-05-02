@@ -1,8 +1,8 @@
 import qs from 'query-string'
 
-import { API } from '@e-coop-monorepo/shared/providers/core-providers'
-import type { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
-import type { IPaginatedResult, TEntityId } from '@e-coop-monorepo/shared/types'
+import { API } from '@ecoop/shared/providers/core-providers'
+import type { TAPIQueryOptions } from '@ecoop/shared/types'
+import type { IPaginatedResult, TEntityId } from '@ecoop/shared/types'
 
 export interface IAPIRepository<TResponse, TRequest> {
     route: string

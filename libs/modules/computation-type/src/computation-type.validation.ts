@@ -3,7 +3,7 @@ import { z } from 'zod'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const AccountsComputationTypeRequestSchema = z.object({
     id: z.string(),

@@ -4,7 +4,7 @@ import {
     AuroraBackground,
     ParticlesBackground,
     ScrollProgress,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { AnimatePresence, motion } from 'framer-motion'
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
 

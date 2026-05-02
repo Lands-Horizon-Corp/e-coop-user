@@ -2,7 +2,7 @@
 
 import React, { useCallback, useEffect, useRef, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 
 interface MousePosition {
     x: number

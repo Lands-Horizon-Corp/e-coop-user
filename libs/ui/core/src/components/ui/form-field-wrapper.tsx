@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 
 import type { ControllerProps, FieldValues, Path } from 'react-hook-form'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     FormDescription,
     FormField,
@@ -10,7 +10,7 @@ import {
     FormItem,
     FormLabel,
     FormMessage,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 export interface FormFieldWrapperProps<
     T extends FieldValues = FieldValues,

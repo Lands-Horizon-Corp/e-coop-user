@@ -7,36 +7,36 @@ import {
     InfoFillCircleIcon,
     NotAllowedIcon,
     WarningFillIcon,
-} from '@e-coop-monorepo/ui/core'
-import ConfirmModal from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import ConfirmModal from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
 
 // import { AxiosError } from 'axios'
 // import { DndProvider } from 'react-dnd'
 // import { HTML5Backend } from 'react-dnd-html5-backend'
 
-// import { NATS_PASS, NATS_USER } from '@e-coop-monorepo/shared/constants'
-// import { IAuthContext, useAuthContext } from '@e-coop-monorepo/modules/authentication'
-// import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
-// import UserProfileInactivityPrompter from '@e-coop-monorepo/modules/user-profile/components/user-profile-inactivity-prompter'
-// import { ActionSecurityProvider } from '@e-coop-monorepo/shared/providers/core-providers'
-// import ConnectionProvider from '@e-coop-monorepo/shared/providers/core-providers'
+// import { NATS_PASS, NATS_USER } from '@ecoop/shared/constants'
+// import { IAuthContext, useAuthContext } from '@ecoop/modules/authentication'
+// import { useAuthStore } from '@ecoop/modules/authentication/authgentication.store'
+// import UserProfileInactivityPrompter from '@ecoop/modules/user-profile/components/user-profile-inactivity-prompter'
+// import { ActionSecurityProvider } from '@ecoop/shared/providers/core-providers'
+// import ConnectionProvider from '@ecoop/shared/providers/core-providers'
 
-// import CookieConsent from '@e-coop-monorepo/ui/core'
+// import CookieConsent from '@ecoop/ui/core'
 // import {
 //     CheckFillIcon,
 //     InfoFillCircleIcon,
 //     NotAllowedIcon,
 //     WarningFillIcon,
-// } from '@e-coop-monorepo/ui/core'
-// import ImagePreviewModal from '@e-coop-monorepo/ui/core'
-// import ConfirmModal from '@e-coop-monorepo/ui/core'
-// import InfoModal from '@e-coop-monorepo/ui/core'
-// import LoadingSpinner from '@e-coop-monorepo/ui/core'
-// import { Toaster } from '@e-coop-monorepo/ui/core'
+// } from '@ecoop/ui/core'
+// import ImagePreviewModal from '@ecoop/ui/core'
+// import ConfirmModal from '@ecoop/ui/core'
+// import InfoModal from '@ecoop/ui/core'
+// import LoadingSpinner from '@ecoop/ui/core'
+// import { Toaster } from '@ecoop/ui/core'
 
-// import { useNatsConnect } from '@e-coop-monorepo/shared/hooks'
-// import { useQeueryHookCallback } from '@e-coop-monorepo/shared/hooks'
+// import { useNatsConnect } from '@ecoop/shared/hooks'
+// import { useQeueryHookCallback } from '@ecoop/shared/hooks'
 
 // import ErrorPage from './-common-pages/error-page'
 // import NotFoundPage from './-common-pages/not-found-page'

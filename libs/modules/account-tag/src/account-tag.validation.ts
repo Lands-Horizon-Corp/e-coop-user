@@ -1,10 +1,10 @@
 import z from 'zod'
 
-import type { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
+import type { TTagCategory } from '@ecoop/modules/tag-template'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const AccountTagSchema = z.object({
     account_id: z.string().min(1, 'Account is required'),

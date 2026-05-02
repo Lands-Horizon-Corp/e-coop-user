@@ -10,7 +10,7 @@ import {
     passwordSchema,
     stringDateSchema,
     stringDateWithTransformSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 import { isBefore, startOfDay } from 'date-fns'
 
 import { FAMILY_RELATIONSHIP } from './components/comboboxes/relationship-combobox'

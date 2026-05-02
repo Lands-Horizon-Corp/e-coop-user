@@ -1,3 +1,3 @@
-import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { Logger } from '@ecoop/shared/helpers'
 
 export const logger = Logger.getInstance('user-rating')

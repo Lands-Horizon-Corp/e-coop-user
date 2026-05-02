@@ -1,11 +1,11 @@
 import z from 'zod'
 
-import { ICONS } from '@e-coop-monorepo/shared/constants'
+import { ICONS } from '@ecoop/shared/constants'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const LoanTagSchema = z.object({
     id: entityIdSchema.optional(),

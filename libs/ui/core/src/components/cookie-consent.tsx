@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 
 import CookieSvg from '@/assets/cookie-icon.svg'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import { addYears } from 'date-fns'
 import Cookies from 'js-cookie'
 

@@ -1,10 +1,6 @@
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IPaginatedResult } from '@e-coop-monorepo/shared/types'
-import type {
-    IAuditable,
-    ITimeStamps,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IPaginatedResult } from '@ecoop/shared/types'
+import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export type TPricingPlanMode = 'monthly' | 'yearly'
 

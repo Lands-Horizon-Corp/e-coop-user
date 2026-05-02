@@ -1,13 +1,13 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { TPermission } from '@e-coop-monorepo/modules/permission'
-import type { TUserType } from '@e-coop-monorepo/modules/user'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { TPermission } from '@ecoop/modules/permission'
+import type { TUserType } from '@ecoop/modules/user'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 // Invitation Code Resource
 export interface IInvitationCode extends ITimeStamps, IAuditable {

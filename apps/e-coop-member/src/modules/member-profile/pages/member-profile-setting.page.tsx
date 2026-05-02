@@ -2,10 +2,10 @@ import type { ReactNode } from 'react'
 
 import { useRouter, useSearch } from '@tanstack/react-router'
 
-import { useAuthMember } from '@e-coop-monorepo/shared/store'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import PageContainer from '@e-coop-monorepo/ui/core'
+import { useAuthMember } from '@ecoop/shared/store'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
+import PageContainer from '@ecoop/ui/core'
 import {
     GraduationCapIcon,
     HandCoinsIcon,
@@ -14,14 +14,9 @@ import {
     UserIcon,
     UserTagIcon,
     Users3Icon,
-} from '@e-coop-monorepo/ui/core'
-import { ScrollArea, ScrollBar } from '@e-coop-monorepo/ui/core'
-import {
-    Tabs,
-    TabsContent,
-    TabsList,
-    TabsTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { ScrollArea, ScrollBar } from '@ecoop/ui/core'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@ecoop/ui/core'
 import type { IconType } from 'react-icons/lib'
 
 import IdentityForm from '../components/forms/identity-form'

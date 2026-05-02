@@ -2,16 +2,16 @@ import { type ReactNode } from 'react'
 
 import type * as DialogPrimitive from '@radix-ui/react-dialog'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps, IClassProps } from '@e-coop-monorepo/shared/types'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps, IClassProps } from '@ecoop/shared/types'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     type DialogExtraProps,
     DialogTitle,
-} from '@e-coop-monorepo/ui/core'
-import { Separator } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Separator } from '@ecoop/ui/core'
 
 export interface IModalClassNames extends DialogExtraProps, IClassProps {
     titleClassName?: string

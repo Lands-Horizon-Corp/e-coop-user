@@ -1,8 +1,8 @@
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+} from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 import type {
     IBranchSettings,

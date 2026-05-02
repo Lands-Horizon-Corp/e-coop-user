@@ -1,5 +1,5 @@
-import type { IModalProps } from '@e-coop-monorepo/ui/core'
-import Modal from '@e-coop-monorepo/ui/core'
+import type { IModalProps } from '@ecoop/ui/core'
+import Modal from '@ecoop/ui/core'
 
 import type { ISingleImageUploadProps } from '.'
 import SingleImageUpload from '.'

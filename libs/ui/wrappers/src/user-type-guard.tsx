@@ -2,13 +2,13 @@ import type { ReactNode } from 'react'
 
 import { Navigate, useRouter } from '@tanstack/react-router'
 
-import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
-import type { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
-import { UserAvatar } from '@e-coop-monorepo/modules/user'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
-import { BadgeExclamationFillIcon } from '@e-coop-monorepo/ui/core'
-import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { useAuthStore } from '@ecoop/modules/authentication'
+import type { IUserBase, TUserType } from '@ecoop/modules/user'
+import { UserAvatar } from '@ecoop/modules/user'
+import type { IBaseProps } from '@ecoop/shared/types'
+import { BadgeExclamationFillIcon } from '@ecoop/ui/core'
+import { LoadingSpinner } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 interface Props extends IBaseProps {
     allowNoUserType?: boolean

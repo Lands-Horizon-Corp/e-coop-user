@@ -1,7 +1,7 @@
 import { forwardRef, useEffect, useImperativeHandle, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
 import Placeholder from '@tiptap/extension-placeholder'
 import { EditorContent, useEditor } from '@tiptap/react'
 import StarterKit from '@tiptap/starter-kit'

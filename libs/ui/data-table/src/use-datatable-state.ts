@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import { APP_VERSION } from '@e-coop-monorepo/shared/constants'
-import { getLocalStorage, setLocalStorage } from '@e-coop-monorepo/shared/hooks'
+import { APP_VERSION } from '@ecoop/shared/constants'
+import { getLocalStorage, setLocalStorage } from '@ecoop/shared/hooks'
 import type {
     ColumnDef,
     OnChangeFn,

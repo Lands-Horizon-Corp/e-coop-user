@@ -1,6 +1,6 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
-import { Avatar, AvatarFallback, AvatarImage } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
+import { Avatar, AvatarFallback, AvatarImage } from '@ecoop/ui/core'
 
 interface Props extends IBaseProps {
     src: string

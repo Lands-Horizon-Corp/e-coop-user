@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from 'react'
 
-import { getLocalStorage, setLocalStorage } from '@e-coop-monorepo/shared/hooks'
+import { getLocalStorage, setLocalStorage } from '@ecoop/shared/hooks'
 
 import {
     ACTIVITY_DEBOUNCE_TIME,

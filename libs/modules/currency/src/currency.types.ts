@@ -4,7 +4,7 @@ import type {
     IAuditable,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { CurrencySchema } from './currency.validation'
 

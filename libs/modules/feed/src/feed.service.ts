@@ -1,11 +1,11 @@
 import type {
     IFeedComment,
     IFeedCommentRequest,
-} from '@e-coop-monorepo/modules/feed-comment'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/modules/feed-comment'
+import { Logger } from '@ecoop/shared/helpers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IFeed, IFeedRequest } from '../feed'
 

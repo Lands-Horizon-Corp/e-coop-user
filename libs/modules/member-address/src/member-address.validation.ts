@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
+import { entityIdSchema } from '@ecoop/shared/validation'
 
 import { HOME_TYPES } from './member-address.constants'
 

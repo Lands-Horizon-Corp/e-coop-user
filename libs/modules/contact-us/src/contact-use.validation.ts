@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { descriptionSchema } from '@e-coop-monorepo/shared/validation'
+import { descriptionSchema } from '@ecoop/shared/validation'
 import { isValidPhoneNumber } from 'react-phone-number-input'
 
 export const contactUsSchema = z.object({

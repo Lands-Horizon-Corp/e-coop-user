@@ -1,12 +1,12 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IAccountTransaction } from '@e-coop-monorepo/modules/account-transaction'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IAccountTransaction } from '@ecoop/modules/account-transaction'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { AccountTransactionEntrySchema } from './account-transaction-entry.validation'
 

@@ -1,4 +1,4 @@
-import { formatNumber } from '@e-coop-monorepo/shared/helpers'
+import { formatNumber } from '@ecoop/shared/helpers'
 import {
     BuildingBranchIcon,
     EmailIcon,
@@ -7,11 +7,11 @@ import {
     InstagramIcon,
     PhoneIcon,
     YoutubeIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Badge } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Card } from '@e-coop-monorepo/ui/core'
-import TruncatedText from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Badge } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Card } from '@ecoop/ui/core'
+import TruncatedText from '@ecoop/ui/core'
 import {
     Calendar,
     CreditCard,

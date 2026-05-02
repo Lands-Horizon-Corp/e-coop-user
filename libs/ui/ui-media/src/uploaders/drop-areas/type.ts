@@ -1,4 +1,4 @@
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IClassProps } from '@ecoop/shared/types'
 
 export interface IDropAreaProps extends IClassProps {
     isDraggingAbove?: boolean

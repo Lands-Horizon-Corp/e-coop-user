@@ -1,5 +1,5 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IOrganization } from '@ecoop/modules/organization'
 
 export type SortBy = 'recent' | 'popular' | 'name' | 'location'
 

@@ -635,6 +635,12 @@
             "@e-coop-monorepo/ui/ui-search": ["libs/ui/ui-search/src/index.ts"],
             "@e-coop-monorepo/ui/ui-shortcut": [
                 "libs/ui/ui-shortcut/src/index.ts"
+            ],
+            "@ecoop/domains/iam/contracts": [
+                "libs/domains/iam/contracts/src/index.ts"
+            ],
+            "@ecoop/domains/iam/modules": [
+                "libs/domains/iam/modules/src/index.ts"
             ]
         },
         "strict": true

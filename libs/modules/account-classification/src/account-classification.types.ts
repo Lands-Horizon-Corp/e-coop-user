@@ -3,7 +3,7 @@ import type {
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IAccountClassification extends IAuditable, ITimeStamps {
     id: TEntityId

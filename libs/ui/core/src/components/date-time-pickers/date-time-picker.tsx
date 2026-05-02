@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import { DateTimeSetter } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Calendar } from '@e-coop-monorepo/ui/core'
+import { DateTimeSetter } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Calendar } from '@ecoop/ui/core'
 
 export type CaptionLayout =
     | 'label'

@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { useDeleteById } from '@e-coop-monorepo/modules/subscription-plan'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+import { useDeleteById } from '@ecoop/modules/subscription-plan'
+import { Logger } from '@ecoop/shared/helpers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 import type {
     ICheckRemittance,

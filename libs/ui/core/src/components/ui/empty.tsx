@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 function Empty({ className, ...props }: React.ComponentProps<'div'>) {

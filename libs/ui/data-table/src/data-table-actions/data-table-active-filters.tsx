@@ -1,11 +1,11 @@
 import { useMemo } from 'react'
 
-import { useFilter } from '@e-coop-monorepo/shared/contexts'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import { FunnelFilledIcon, FunnelIcon, XIcon } from '@e-coop-monorepo/ui/core'
-import { ActionTooltip } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { useFilter } from '@ecoop/shared/contexts'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
+import { FunnelFilledIcon, FunnelIcon, XIcon } from '@ecoop/ui/core'
+import { ActionTooltip } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -14,7 +14,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 const DataTableActiveFilters = ({ className }: IClassProps) => {
     const { filters, resetFilter, removeFilter } = useFilter()

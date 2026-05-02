@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-import type { TRelationship } from '@e-coop-monorepo/modules/member-relative-account'
-import { FAMILY_RELATIONSHIP } from '@e-coop-monorepo/modules/member-relative-account'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import type { TRelationship } from '@ecoop/modules/member-relative-account'
+import { FAMILY_RELATIONSHIP } from '@ecoop/modules/member-relative-account'
+import { cn } from '@ecoop/shared/tw-utils'
+import { CheckIcon, ChevronDownIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -12,12 +12,8 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 
 // Assuming this is where your type and const are
 

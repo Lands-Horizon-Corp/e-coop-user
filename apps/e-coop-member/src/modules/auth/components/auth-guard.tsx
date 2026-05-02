@@ -3,7 +3,7 @@ import { useRef } from 'react'
 
 import { Navigate, useLocation } from '@tanstack/react-router'
 
-import { useFakeStore } from '@e-coop-monorepo/shared/store'
+import { useFakeStore } from '@ecoop/shared/store'
 
 // adjust path
 

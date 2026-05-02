@@ -4,7 +4,7 @@ import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { LoanTermsAndConditionSuggestedPaymentSchema } from './loan-terms-and-condition-suggested-payment.validation'
 

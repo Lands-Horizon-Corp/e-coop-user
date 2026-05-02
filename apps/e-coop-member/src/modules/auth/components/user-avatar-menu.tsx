@@ -1,25 +1,25 @@
 import { useRouter } from '@tanstack/react-router'
 import { toast } from 'sonner'
 
-import useConfirmModalStore from '@e-coop-monorepo/shared/store'
-import { useFakeStore } from '@e-coop-monorepo/shared/store'
+import useConfirmModalStore from '@ecoop/shared/store'
+import { useFakeStore } from '@ecoop/shared/store'
 import {
     BadgeCheckFillIcon,
     BadgeExclamationFillIcon,
     BadgeQuestionFillIcon,
     BoxesStackedIcon,
     HouseIcon,
-} from '@e-coop-monorepo/ui/core'
-import ImageDisplay from '@e-coop-monorepo/ui/core'
-import InfoTooltip from '@e-coop-monorepo/ui/core'
-import { Badge } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import ImageDisplay from '@ecoop/ui/core'
+import InfoTooltip from '@ecoop/ui/core'
+import { Badge } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { HelpCircle, LogOut, Settings } from 'lucide-react'
 
 import { useSignOut } from '..'

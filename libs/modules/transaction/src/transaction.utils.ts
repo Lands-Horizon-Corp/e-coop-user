@@ -1,11 +1,11 @@
-import { buildOR } from '@e-coop-monorepo/modules/or-builder'
-import type { TPaymentMode } from '@e-coop-monorepo/modules/quick-transfer'
+import { buildOR } from '@ecoop/modules/or-builder'
+import type { TPaymentMode } from '@ecoop/modules/quick-transfer'
 import {
     QuickTransferOR,
     toORBuilderOptions,
-} from '@e-coop-monorepo/modules/quick-transfer'
-import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
-import { mmddyyyy } from '@e-coop-monorepo/shared/helpers'
+} from '@ecoop/modules/quick-transfer'
+import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import { mmddyyyy } from '@ecoop/shared/helpers'
 
 export const receiptPrefix = (num: number): string => {
     if (num <= 26) return ''

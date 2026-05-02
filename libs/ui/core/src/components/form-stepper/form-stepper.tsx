@@ -3,7 +3,7 @@ import { useRef } from 'react'
 import type { FieldValues, Path, UseFormReturn } from 'react-hook-form'
 
 import { cn } from '@/helpers'
-import { CheckFillIcon } from '@e-coop-monorepo/ui/core'
+import { CheckFillIcon } from '@ecoop/ui/core'
 import {
     Stepper,
     StepperDescription,
@@ -12,7 +12,7 @@ import {
     StepperSeparator,
     StepperTitle,
     StepperTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 export type StepConfig = {
     title: string

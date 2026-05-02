@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { descriptionTransformerSanitizer } from '@e-coop-monorepo/shared/validation'
+import { descriptionTransformerSanitizer } from '@ecoop/shared/validation'
 
 import {
     ACCOUNT_MODEL_NAMES,

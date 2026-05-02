@@ -1,5 +1,5 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { findCountry } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { findCountry } from '@ecoop/ui/core'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { CircleFlag } from 'react-circle-flags'
 

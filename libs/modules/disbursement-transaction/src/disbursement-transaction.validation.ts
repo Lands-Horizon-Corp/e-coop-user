@@ -4,7 +4,7 @@ import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const DisbursementTransactionSchema = z.object({
     disbursement_id: EntityIdSchema('Disbursement type is required').optional(),

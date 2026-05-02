@@ -1,4 +1,4 @@
-import { Calendar } from '@e-coop-monorepo/ui/core'
+import { Calendar } from '@ecoop/ui/core'
 import type { DateRange } from 'react-day-picker'
 
 import type { CaptionLayout } from './date-time-picker'

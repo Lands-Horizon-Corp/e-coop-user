@@ -1,13 +1,13 @@
 import z from 'zod'
 
-import type { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import type { IMemberClassification } from '@ecoop/modules/member-classification'
 import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/types'
+import { entityIdSchema } from '@ecoop/shared/validation'
 
 import type { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header'
 import type { IInterestRateScheme } from '../interest-rate-scheme'

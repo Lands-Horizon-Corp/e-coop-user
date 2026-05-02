@@ -1,10 +1,10 @@
 import z from 'zod'
 
-import { USER_TYPE } from '@e-coop-monorepo/modules/user'
+import { USER_TYPE } from '@ecoop/modules/user'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const UserOrgPermissionSchema = z.object({
     permission_name: z.string().min(1, 'Permission name is required'),

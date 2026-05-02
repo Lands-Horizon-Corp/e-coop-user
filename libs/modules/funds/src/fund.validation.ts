@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
+import { entityIdSchema } from '@ecoop/shared/validation'
 
 export const fundsSchema = z.object({
     account_id: entityIdSchema.nullable().optional(),

@@ -1,15 +1,15 @@
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
 import {
     apiCrudService,
     memberProfileBaseKey,
-} from '@e-coop-monorepo/modules/member-profile'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
+} from '@ecoop/modules/member-profile'
+import { Logger } from '@ecoop/shared/helpers'
 import {
     createMutationFactory,
     createMutationInvalidateFn,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IMemberProfileUserAccountRequest } from './member-user-account.types'
 

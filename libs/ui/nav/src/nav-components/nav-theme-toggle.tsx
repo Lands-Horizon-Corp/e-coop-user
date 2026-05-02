@@ -1,4 +1,4 @@
-import { ThemeToggleMenu } from '@e-coop-monorepo/ui/core'
+import { ThemeToggleMenu } from '@ecoop/ui/core'
 
 const NavThemeToggle = () => {
     return <ThemeToggleMenu />

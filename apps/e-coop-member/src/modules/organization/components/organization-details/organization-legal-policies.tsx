@@ -1,15 +1,15 @@
 import { useState } from 'react'
 
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
+import { useModalState } from '@ecoop/shared/hooks'
 import {
     CookieBiteIcon,
     FilesIcon,
     RefreshCwIcon,
     ShieldIcon,
     Users3Icon,
-} from '@e-coop-monorepo/ui/core'
-import Modal from '@e-coop-monorepo/ui/core'
-import { Card } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import Modal from '@ecoop/ui/core'
+import { Card } from '@ecoop/ui/core'
 import { ArrowUpRight, ChevronRight, Shield } from 'lucide-react'
 import type { IconType } from 'react-icons/lib'
 

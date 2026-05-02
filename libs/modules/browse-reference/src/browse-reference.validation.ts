@@ -1,15 +1,15 @@
 import z from 'zod'
 
-import { InterestRateByAmountSchema } from '@e-coop-monorepo/modules/interest-rate-by-amount'
-import { InterestRateByDateSchema } from '@e-coop-monorepo/modules/interest-rate-by-date'
-import { InterestRateByYearSchema } from '@e-coop-monorepo/modules/interest-rate-by-year'
+import { InterestRateByAmountSchema } from '@ecoop/modules/interest-rate-by-amount'
+import { InterestRateByDateSchema } from '@ecoop/modules/interest-rate-by-date'
+import { InterestRateByYearSchema } from '@ecoop/modules/interest-rate-by-year'
 import {
     EntityIdSchema,
     PercentageSchema,
     descriptionSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 import { INTEREST_TYPE } from './browse-reference.constant'
 

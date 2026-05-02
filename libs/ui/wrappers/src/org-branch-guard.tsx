@@ -1,16 +1,16 @@
 import { useParams, useRouter } from '@tanstack/react-router'
 
-import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication'
-import { getOrgBranchSafeURLNames } from '@e-coop-monorepo/shared/helpers'
-import type { IChildProps } from '@e-coop-monorepo/shared/types'
-import { FlickeringGrid } from '@e-coop-monorepo/ui/core'
+import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication'
+import { getOrgBranchSafeURLNames } from '@ecoop/shared/helpers'
+import type { IChildProps } from '@ecoop/shared/types'
+import { FlickeringGrid } from '@ecoop/ui/core'
 import {
     ArrowLeftIcon,
     ArrowUpIcon,
     OrganizationIcon,
     ShieldExclamationIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 const OrgBranchUrlGuard = ({ children }: IChildProps) => {
     const router = useRouter()

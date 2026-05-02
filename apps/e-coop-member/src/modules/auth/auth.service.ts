@@ -4,15 +4,15 @@ import type {
     IUserForgotPasswordRequest,
     IUserLoginRequest,
     IUserPasswordResetRequest,
-} from '@e-coop-monorepo/modules/auth'
+} from '@ecoop/modules/auth'
 import type {
     IMemberProfile,
     IQuickCreateMemberProfile,
-} from '@e-coop-monorepo/modules/member-profile'
-import type { HookMutationOptions } from '@e-coop-monorepo/shared/repositories'
-import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
-import type { IForgetPasswordEntry } from '@e-coop-monorepo/shared/store'
-import { useFakeStore } from '@e-coop-monorepo/shared/store'
+} from '@ecoop/modules/member-profile'
+import type { HookMutationOptions } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
+import type { IForgetPasswordEntry } from '@ecoop/shared/store'
+import { useFakeStore } from '@ecoop/shared/store'
 
 // FAKE SIGN IN HOOK
 export const useSignIn = ({

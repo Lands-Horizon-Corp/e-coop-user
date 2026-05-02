@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { getCurrentCurrencyByTimezone } from '@e-coop-monorepo/modules/currency'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TAPIQueryOptions } from '@e-coop-monorepo/shared/types'
+import { getCurrentCurrencyByTimezone } from '@ecoop/modules/currency'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions } from '@ecoop/shared/types'
 
 import type {
     ISubscriptionPlan,

@@ -1,10 +1,7 @@
 import z from 'zod'
 
-import type { IAccount, TAccountType } from '@e-coop-monorepo/modules/account'
-import {
-    EntityIdSchema,
-    entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+import type { IAccount, TAccountType } from '@ecoop/modules/account'
+import { EntityIdSchema, entityIdSchema } from '@ecoop/shared/validation'
 
 export const CashCheckVoucherEntrySchema = z
     .object({

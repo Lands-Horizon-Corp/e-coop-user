@@ -1,6 +1,6 @@
 'use client'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import * as ResizablePrimitive from 'react-resizable-panels'
 
 function ResizablePanelGroup({

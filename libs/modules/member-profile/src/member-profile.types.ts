@@ -1,54 +1,54 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IMemberPassbookSettings } from '@e-coop-monorepo/modules/branch-settings'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IMemberPassbookSettings } from '@ecoop/modules/branch-settings'
+import type { IMedia } from '@ecoop/modules/media'
 import type {
     IMemberAddress,
     IMemberAddressRequest,
-} from '@e-coop-monorepo/modules/member-address'
+} from '@ecoop/modules/member-address'
 import type {
     IMemberAsset,
     IMemberAssetRequest,
-} from '@e-coop-monorepo/modules/member-asset'
-import type { IMemberCenter } from '@e-coop-monorepo/modules/member-center'
-import type { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+} from '@ecoop/modules/member-asset'
+import type { IMemberCenter } from '@ecoop/modules/member-center'
+import type { IMemberClassification } from '@ecoop/modules/member-classification'
 import type {
     IMemberCloseRemark,
     IMemberCloseRemarkRequest,
-} from '@e-coop-monorepo/modules/member-close-remark'
+} from '@ecoop/modules/member-close-remark'
 import type {
     IMemberContactReference,
     IMemberContactReferenceRequest,
-} from '@e-coop-monorepo/modules/member-contact-reference'
-import type { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
-import type { IMemberDescriptionRequest } from '@e-coop-monorepo/modules/member-description-schema'
-import type { IMemberEducationalAttainment } from '@e-coop-monorepo/modules/member-educational-attainment'
+} from '@ecoop/modules/member-contact-reference'
+import type { IMemberDepartment } from '@ecoop/modules/member-department'
+import type { IMemberDescriptionRequest } from '@ecoop/modules/member-description-schema'
+import type { IMemberEducationalAttainment } from '@ecoop/modules/member-educational-attainment'
 import type {
     IMemberExpense,
     IMemberExpenseRequest,
-} from '@e-coop-monorepo/modules/member-expense'
-import type { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
+} from '@ecoop/modules/member-expense'
+import type { IMemberGender } from '@ecoop/modules/member-gender'
 import type {
     IMemberGovernmentBenefit,
     IMemberGovernmentBenefitRequest,
-} from '@e-coop-monorepo/modules/member-government-benefit'
-import type { IMemberGroup } from '@e-coop-monorepo/modules/member-group'
-import type { IMemberIncome } from '@e-coop-monorepo/modules/member-income'
+} from '@ecoop/modules/member-government-benefit'
+import type { IMemberGroup } from '@ecoop/modules/member-group'
+import type { IMemberIncome } from '@ecoop/modules/member-income'
 import type {
     IMemberJointAccount,
     IMemberJointAccountRequest,
-} from '@e-coop-monorepo/modules/member-joint-account'
-import type { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
-// import { IMemberRecruitedMembers } from '@e-coop-monorepo/modules/member-recruits'
+} from '@ecoop/modules/member-joint-account'
+import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+// import { IMemberRecruitedMembers } from '@ecoop/modules/member-recruits'
 import type {
     IMemberRelativeAccount,
     IMemberRelativeAccountRequest,
-} from '@e-coop-monorepo/modules/member-relative-account'
-import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
-import type { TSex } from '@e-coop-monorepo/shared/constants'
+} from '@ecoop/modules/member-relative-account'
+import type { IMemberType } from '@ecoop/modules/member-type'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { IQrScanResult } from '@ecoop/modules/qr-crypto'
+import type { IUserBase } from '@ecoop/modules/user'
+import type { TSex } from '@ecoop/shared/constants'
 import type {
     IAuditable,
     IPaginatedResult,
@@ -56,7 +56,7 @@ import type {
     TCivilStatus,
     TEntityId,
     TGeneralStatus,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type {
     TMemberProfileMembershipInfoSchema,

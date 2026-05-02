@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import API from '@e-coop-monorepo/shared/providers/core-providers'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
+import { Logger } from '@ecoop/shared/helpers'
+import API from '@ecoop/shared/providers/core-providers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
 
 import type { IAPIKey, IAPIList } from './developer.types'
 

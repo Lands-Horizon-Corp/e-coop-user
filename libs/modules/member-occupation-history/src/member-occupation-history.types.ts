@@ -1,12 +1,12 @@
-import type { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
 import type {
     IAuditable,
     IOrgBranchIdentity,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IMemberOccupationHistoryRequest {
     member_profile_id: TEntityId

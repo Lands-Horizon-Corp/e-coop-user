@@ -1,6 +1,6 @@
-import type { ConnectAccountType } from '@e-coop-monorepo/modules/gl-fs'
-import { createGLSFSService } from '@e-coop-monorepo/modules/gl-fs'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type { ConnectAccountType } from '@ecoop/modules/gl-fs'
+import { createGLSFSService } from '@ecoop/modules/gl-fs'
+import { Logger } from '@ecoop/shared/helpers'
 
 import type {
     IFinancialStatementDefinition,

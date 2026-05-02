@@ -1,12 +1,12 @@
 import type z from 'zod'
 
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
+import type { IBranch } from '@ecoop/modules/branch'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { MemberOccupationSchema } from './member-occupation.validation'
 

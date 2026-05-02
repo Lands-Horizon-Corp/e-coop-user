@@ -1,5 +1,5 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
 
 const NavContainer = ({ children, className }: IBaseProps) => {
     return (

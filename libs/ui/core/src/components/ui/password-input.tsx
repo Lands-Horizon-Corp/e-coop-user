@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     InputGroup,
     InputGroupAddon,
     InputGroupButton,
     InputGroupInput,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import { EyeIcon, EyeOffIcon } from '../icons/index'
 import type { InputProps } from './input'

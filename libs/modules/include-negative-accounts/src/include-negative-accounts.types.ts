@@ -1,12 +1,12 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IComputationSheet } from '@e-coop-monorepo/modules/computation-sheet'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IComputationSheet } from '@ecoop/modules/computation-sheet'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { IncludeNegativeAccountsSchema } from './include-negative-accounts.validation'
 

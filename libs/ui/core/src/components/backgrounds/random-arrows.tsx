@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { TripleArrow } from '@e-coop-monorepo/ui/core'
+import { TripleArrow } from '@ecoop/ui/core'
 
 type ArrowSize =
     | 'xs'

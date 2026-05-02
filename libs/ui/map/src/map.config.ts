@@ -8,7 +8,7 @@
  * defining their own to maintain referential equality.
  */
 
-import { GOOGLE_MAPS_API_KEY } from '@e-coop-monorepo/shared/constants';
+import { GOOGLE_MAPS_API_KEY } from '@ecoop/shared/constants';
 
 /**
  * Google Maps libraries to load.

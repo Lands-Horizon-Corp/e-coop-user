@@ -1,9 +1,6 @@
 import z from 'zod'
 
-import {
-    EntityIdSchema,
-    entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+import { EntityIdSchema, entityIdSchema } from '@ecoop/shared/validation'
 
 import { LOAN_TRANSACTION_ENTRY_TYPE } from './loan-transaction-constant'
 

@@ -1,5 +1,5 @@
 import { Separator as SeparatorPrimitive } from '@base-ui/react/separator'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 
 function Separator({
     className,

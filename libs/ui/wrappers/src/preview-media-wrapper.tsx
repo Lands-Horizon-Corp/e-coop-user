@@ -2,9 +2,9 @@ import type { MouseEvent, ReactElement } from 'react'
 import type React from 'react'
 import { cloneElement } from 'react'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import { useImagePreview } from '@e-coop-monorepo/shared/store'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import type { IMedia } from '@ecoop/modules/media'
+import { useImagePreview } from '@ecoop/shared/store'
+import { cn } from '@ecoop/shared/tw-utils'
 
 type WithClickWrapperProps<T extends HTMLElement> = {
     media?: IMedia

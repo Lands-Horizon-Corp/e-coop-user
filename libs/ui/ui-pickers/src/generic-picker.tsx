@@ -1,20 +1,20 @@
 import React, { useEffect } from 'react'
 
-import { useInternalState } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
-import { MagnifyingGlassIcon } from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core'
-import Modal from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
+import { useInternalState } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { TEntityId } from '@ecoop/shared/types'
+import { MagnifyingGlassIcon } from '@ecoop/ui/core'
+import type { IModalProps } from '@ecoop/ui/core'
+import Modal from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
 import {
     Command,
     CommandEmpty,
     CommandGroup,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
 
 interface GenericPickerProps<T extends { id: TEntityId }> extends IModalProps {
     items: T[]

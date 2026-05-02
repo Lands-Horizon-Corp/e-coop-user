@@ -11,8 +11,8 @@ import { Controller, FormProvider, useFormContext } from 'react-hook-form'
 import type * as LabelPrimitive from '@radix-ui/react-label'
 import { Slot } from '@radix-ui/react-slot'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Label } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Label } from '@ecoop/ui/core'
 
 const Form = FormProvider
 

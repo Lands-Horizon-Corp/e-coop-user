@@ -1,4 +1,4 @@
-// import { TFilterPayload, TFinalFilter } from '@e-coop-monorepo/shared/contexts'
+// import { TFilterPayload, TFinalFilter } from '@ecoop/shared/contexts'
 
 // /**
 //  * Apply filter payload to client-side data

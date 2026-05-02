@@ -3,24 +3,24 @@ import { forwardRef } from 'react'
 import type {
     IMemberIncome,
     IMemberProfile,
-} from '@e-coop-monorepo/modules/member-profile'
-import { useDeleteMemberProfileIncome } from '@e-coop-monorepo/modules/member-profile'
-import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
-import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import { formatNumber } from '@e-coop-monorepo/shared/helpers'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import useConfirmModalStore from '@e-coop-monorepo/shared/store'
+} from '@ecoop/modules/member-profile'
+import { useDeleteMemberProfileIncome } from '@ecoop/modules/member-profile'
+import { withToastCallbacks } from '@ecoop/shared/helpers'
+import { toReadableDate } from '@ecoop/shared/helpers'
+import { formatNumber } from '@ecoop/shared/helpers'
+import { useModalState } from '@ecoop/shared/hooks'
+import useConfirmModalStore from '@ecoop/shared/store'
 import {
     CalendarDotsIcon,
     MoneyIcon,
     PencilFillIcon,
     PlusIcon,
     TrashIcon,
-} from '@e-coop-monorepo/ui/core'
-import ImageDisplay from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Separator } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import ImageDisplay from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Separator } from '@ecoop/ui/core'
 
 import { MemberIncomeCreateUpdateFormModal } from '../../forms/member-income-create-update-form'
 import EmptyListIndicator from '../empty-list-indicator'

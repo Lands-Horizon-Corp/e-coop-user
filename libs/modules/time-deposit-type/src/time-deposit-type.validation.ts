@@ -1,13 +1,13 @@
 import z from 'zod'
 
-import { timeDepositComputationSchema } from '@e-coop-monorepo/modules/time-deposit-computation'
-import { TimeDepositComputationPreMatureSchema } from '@e-coop-monorepo/modules/time-deposit-computation-pre-mature'
+import { timeDepositComputationSchema } from '@ecoop/modules/time-deposit-computation'
+import { TimeDepositComputationPreMatureSchema } from '@ecoop/modules/time-deposit-computation-pre-mature'
 import {
     DaySchema,
     EntityIdSchema,
     PercentageSchema,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const timeDepositTypeCreateSchema = z.object({
     name: z.string().min(1, 'Name is required').max(255),

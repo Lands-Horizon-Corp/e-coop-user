@@ -4,7 +4,7 @@ import {
     descriptionTransformerSanitizer,
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const OnlineRemittanceSchema = z.object({
     id: entityIdSchema.optional(),

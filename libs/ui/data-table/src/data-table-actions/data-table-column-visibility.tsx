@@ -1,13 +1,9 @@
 import { useCallback } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import {
-    ColumnOutlineIcon,
-    EyeIcon,
-    EyeNoneIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
+import { ColumnOutlineIcon, EyeIcon, EyeNoneIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     // DropdownMenuCheckboxItem,
@@ -17,7 +13,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { Table } from '@tanstack/react-table'
 
 interface DataTableViewOptionsProps<TData> extends IClassProps {

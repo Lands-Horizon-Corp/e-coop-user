@@ -1,9 +1,6 @@
 import z from 'zod'
 
-import {
-    descriptionSchema,
-    entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+import { descriptionSchema, entityIdSchema } from '@ecoop/shared/validation'
 
 export const collectorsMemberAccountEntrySchema = z.object({
     collector_user_id: entityIdSchema.optional().nullable(),

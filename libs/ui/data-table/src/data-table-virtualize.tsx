@@ -1,8 +1,8 @@
 /** This table is virtualized, incase big data needs to be displayed */
 import { useRef } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
 import {
     TableBody,
     TableCell,
@@ -10,7 +10,7 @@ import {
     TableHeader,
     TableRow,
     Table as UITable,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { Row, Table } from '@tanstack/react-table'
 import { flexRender } from '@tanstack/react-table'
 import { useVirtualizer } from '@tanstack/react-virtual'

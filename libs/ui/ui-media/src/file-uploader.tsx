@@ -2,9 +2,9 @@ import { useCallback, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { formatBytes } from '@e-coop-monorepo/modules/media'
-import { FileTypeIcon } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { formatBytes } from '@ecoop/modules/media'
+import { FileTypeIcon } from '@ecoop/modules/media'
+import { cn } from '@ecoop/shared/tw-utils'
 import type {
     DropzoneOptions,
     FileRejection,

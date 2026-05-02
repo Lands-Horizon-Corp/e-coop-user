@@ -1,12 +1,12 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberType } from '@ecoop/modules/member-type'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 // FROM LATEST ERD
 export interface IMemberTypeHistory extends ITimeStamps, IAuditable {

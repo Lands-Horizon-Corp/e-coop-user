@@ -6,8 +6,8 @@ import {
     EyeNoneIcon,
     PencilFillIcon,
     TrashFillIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -15,7 +15,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { Row } from '@tanstack/react-table'
 
 export interface IRowActionOption {

@@ -4,10 +4,10 @@ import type {
     TFilterLogic,
     TFilterPayload,
     TFinalFilter,
-} from '@e-coop-monorepo/shared/contexts'
-import { toBase64 } from '@e-coop-monorepo/shared/helpers'
-import type { TSortingState } from '@e-coop-monorepo/shared/types'
-import { useDataTableSorting } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/shared/contexts'
+import { toBase64 } from '@ecoop/shared/helpers'
+import type { TSortingState } from '@ecoop/shared/types'
+import { useDataTableSorting } from '@ecoop/ui/core'
 
 type TGenerateReportProps = {
     defaultFilter: TFinalFilter

@@ -1,7 +1,7 @@
 import { Navigate, useSearch } from '@tanstack/react-router'
 
-import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
+import { useAuthStore } from '@ecoop/modules/authentication'
+import type { IBaseProps } from '@ecoop/shared/types'
 
 interface IGuestGuardProps extends Omit<IBaseProps, 'className'> {
     allowAuthenticatedUser?: false

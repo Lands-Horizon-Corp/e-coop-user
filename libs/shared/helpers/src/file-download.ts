@@ -1,4 +1,4 @@
-import { API } from '@e-coop-monorepo/shared/providers/core-providers'
+import { API } from '@ecoop/shared/providers/core-providers'
 
 export async function downloadFileService(
     url: string,

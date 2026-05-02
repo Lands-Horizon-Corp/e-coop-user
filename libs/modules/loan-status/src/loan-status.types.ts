@@ -1,9 +1,6 @@
 import type z from 'zod'
 
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { LoanStatusSchema } from './loan-status.validation'
 

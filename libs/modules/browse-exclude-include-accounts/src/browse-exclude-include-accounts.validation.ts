@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
+import { entityIdSchema } from '@ecoop/shared/validation'
 
 export const BrowseExcludeIncludeAccountsSchema = z.object({
     computation_sheet_id: entityIdSchema?.optional(),

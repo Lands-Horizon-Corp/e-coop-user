@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import { AnimatedSection } from '@e-coop-monorepo/ui/core'
+import { AnimatedSection } from '@ecoop/ui/core'
 import { AnimatePresence, motion } from 'framer-motion'
 import { ChevronLeft, ChevronRight, Quote, Star } from 'lucide-react'
 

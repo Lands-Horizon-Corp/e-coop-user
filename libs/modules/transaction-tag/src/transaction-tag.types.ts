@@ -2,7 +2,7 @@ import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export const TRANSACTION_TAG_CATEGORIES = [
     'accounting',

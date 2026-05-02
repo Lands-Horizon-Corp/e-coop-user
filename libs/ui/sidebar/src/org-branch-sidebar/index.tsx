@@ -2,22 +2,22 @@ import { useMemo } from 'react'
 
 import { useParams, useRouter } from '@tanstack/react-router'
 
-import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication'
-import { BranchModalDisplay } from '@e-coop-monorepo/modules/branch'
-import type { TUserType } from '@e-coop-monorepo/modules/user'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
+import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication'
+import { BranchModalDisplay } from '@ecoop/modules/branch'
+import type { TUserType } from '@ecoop/modules/user'
+import { useModalState } from '@ecoop/shared/hooks'
+import type { IBaseProps } from '@ecoop/shared/types'
 // import { useHotkeys } from 'react-hotkeys-hook'
 
-import { EcoopLogo } from '@e-coop-monorepo/ui/core'
-import { BuildingIcon, UserLockIcon } from '@e-coop-monorepo/ui/core'
-import { ActionTooltip } from '@e-coop-monorepo/ui/core'
-import { AppSidebarItem } from '@e-coop-monorepo/ui/core'
-import { AppSidebarQuickNavigate } from '@e-coop-monorepo/ui/core'
-import { AppSidebarUser } from '@e-coop-monorepo/ui/core'
-import { flatSidebarGroupItem } from '@e-coop-monorepo/ui/core'
-import { Badge } from '@e-coop-monorepo/ui/core'
-import { Separator } from '@e-coop-monorepo/ui/core'
+import { EcoopLogo } from '@ecoop/ui/core'
+import { BuildingIcon, UserLockIcon } from '@ecoop/ui/core'
+import { ActionTooltip } from '@ecoop/ui/core'
+import { AppSidebarItem } from '@ecoop/ui/core'
+import { AppSidebarQuickNavigate } from '@ecoop/ui/core'
+import { AppSidebarUser } from '@ecoop/ui/core'
+import { flatSidebarGroupItem } from '@ecoop/ui/core'
+import { Badge } from '@ecoop/ui/core'
+import { Separator } from '@ecoop/ui/core'
 import {
     Sidebar,
     SidebarContent,
@@ -31,7 +31,7 @@ import {
     SidebarMenuItem,
     SidebarRail,
     // useSidebar,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import { generateSidebarGroups } from './sidebar-routes'
 

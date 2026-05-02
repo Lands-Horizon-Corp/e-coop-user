@@ -1,12 +1,12 @@
 import type { ReactElement } from 'react'
 import { forwardRef, useState } from 'react'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { SignatureLightIcon, XIcon } from '@e-coop-monorepo/ui/core'
-import ImageDisplay from '@e-coop-monorepo/ui/core'
-import type { ButtonProps } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import type { IMedia } from '@ecoop/modules/media'
+import { cn } from '@ecoop/shared/tw-utils'
+import { SignatureLightIcon, XIcon } from '@ecoop/ui/core'
+import ImageDisplay from '@ecoop/ui/core'
+import type { ButtonProps } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 import { SignaturePickerUploaderModal } from './signature-picker-uploader'
 

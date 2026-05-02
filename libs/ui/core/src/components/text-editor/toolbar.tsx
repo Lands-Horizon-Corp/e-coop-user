@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     BlockQuoteIcon,
     CodeBlockIcon,
@@ -12,10 +12,10 @@ import {
     TextStrikethroughLightIcon,
     ToolbarItalicIcon,
     UndoIcon,
-} from '@e-coop-monorepo/ui/core'
-import { ActionTooltip } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Toggle } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { ActionTooltip } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Toggle } from '@ecoop/ui/core'
 import { type Editor } from '@tiptap/react'
 
 import type { THeadingLevel } from './text-editor.types'

@@ -1,14 +1,14 @@
 import * as React from 'react'
 
 import { Combobox as ComboboxPrimitive } from '@base-ui/react'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Button } from '@ecoop/ui/core'
 import {
     InputGroup,
     InputGroupAddon,
     InputGroupButton,
     InputGroupInput,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { CheckIcon, ChevronDownIcon, XIcon } from 'lucide-react'
 
 const Combobox = ComboboxPrimitive.Root

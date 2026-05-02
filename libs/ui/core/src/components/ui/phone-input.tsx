@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { InputProps } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { InputProps } from '@ecoop/ui/core'
 import {
     Button,
     Command,
@@ -15,7 +15,7 @@ import {
     PopoverContent,
     PopoverTrigger,
     ScrollArea,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import * as RPNInput from 'react-phone-number-input'
 import { type Value } from 'react-phone-number-input'
 import flags from 'react-phone-number-input/flags'

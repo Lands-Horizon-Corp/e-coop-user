@@ -2,15 +2,15 @@ import { type ReactNode } from 'react'
 
 import type * as SheetPrimitive from '@radix-ui/react-dialog'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps, IClassProps } from '@e-coop-monorepo/shared/types'
-import { Separator } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps, IClassProps } from '@ecoop/shared/types'
+import { Separator } from '@ecoop/ui/core'
 import {
     Sheet,
     SheetContent,
     SheetDescription,
     SheetTitle,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 export interface ISheetClassNames extends IClassProps {
     titleClassName?: string

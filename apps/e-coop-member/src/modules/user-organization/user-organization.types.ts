@@ -1,11 +1,11 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { USER_ORG_APPLICATION_STATUS } from '@ecoop/shared/constants'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { IAccount } from '../account'
 import type { IPaymentType } from '../payment-type/payment-type.types'

@@ -2,20 +2,20 @@ import type { UseMutationOptions } from '@tanstack/react-query'
 import { useMutation, useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import { getBranchesByOrganizationId } from '@e-coop-monorepo/modules/branch'
-import { employeeBaseKey } from '@e-coop-monorepo/modules/employee'
-import type { TimeMachineRequest } from '@e-coop-monorepo/modules/transaction-batch'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
-import { groupBy, withCatchAsync } from '@e-coop-monorepo/shared/helpers'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+import type { IBranch } from '@ecoop/modules/branch'
+import { getBranchesByOrganizationId } from '@ecoop/modules/branch'
+import { employeeBaseKey } from '@ecoop/modules/employee'
+import type { TimeMachineRequest } from '@ecoop/modules/transaction-batch'
+import type { IUserBase } from '@ecoop/modules/user'
+import { groupBy, withCatchAsync } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/helpers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import type { TAPIQueryOptions, TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 import type {
     IOrgUserOrganizationGroup,

@@ -3,7 +3,7 @@ import z from 'zod'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const AccountHistorySchema = z.object({
     id: entityIdSchema.optional(),

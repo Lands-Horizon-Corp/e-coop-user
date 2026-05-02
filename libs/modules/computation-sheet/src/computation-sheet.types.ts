@@ -1,14 +1,14 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { TMockCloanInputSchema } from '@e-coop-monorepo/modules/calculator'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { ILoanAmortizationSchedule } from '@e-coop-monorepo/modules/loan-amortization-schedule'
+import type { IAccount } from '@ecoop/modules/account'
+import type { TMockCloanInputSchema } from '@ecoop/modules/calculator'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { ILoanAmortizationSchedule } from '@ecoop/modules/loan-amortization-schedule'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { ComputationSheetSchema } from './computation-sheet.validation'
 

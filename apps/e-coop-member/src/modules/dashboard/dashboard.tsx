@@ -2,24 +2,24 @@
 
 import { useState } from 'react'
 
-import { CoopBackground } from '@e-coop-monorepo/modules/home/components/coop-bg'
-import Organization from '@e-coop-monorepo/modules/organization/pages'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { Badge } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { CoopBackground } from '@ecoop/modules/home/components/coop-bg'
+import Organization from '@ecoop/modules/organization/pages'
+import { useModalState } from '@ecoop/shared/hooks'
+import { Badge } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogTitle,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import {
     Activity,
     AlertCircle,

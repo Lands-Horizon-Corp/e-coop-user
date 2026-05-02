@@ -1,5 +1,5 @@
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { ITimeStamps, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMedia } from '@ecoop/modules/media'
+import type { ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IFeedbackRequest {
     id?: TEntityId | null

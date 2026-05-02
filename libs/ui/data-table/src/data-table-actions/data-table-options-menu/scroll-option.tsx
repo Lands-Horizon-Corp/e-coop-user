@@ -1,10 +1,10 @@
-import { RowSpacingIcon } from '@e-coop-monorepo/ui/core'
+import { RowSpacingIcon } from '@ecoop/ui/core'
 import {
     DropdownMenuGroup,
     DropdownMenuLabel,
     DropdownMenuRadioGroup,
     DropdownMenuRadioItem,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 export interface IDataTableScrollableOptionProps {
     isScrollable: boolean

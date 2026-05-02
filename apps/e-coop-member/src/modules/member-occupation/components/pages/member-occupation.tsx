@@ -1,11 +1,11 @@
 import { useQueryClient } from '@tanstack/react-query'
 
-import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication/authgentication.store'
-import { MemberOccupationCreateUpdateFormModal } from '@e-coop-monorepo/modules/member-occupation/components/member-occupation-create-update-form'
-import MemberOccupationTable from '@e-coop-monorepo/modules/member-occupation/components/tables/member-occupation-table'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { useSubscribe } from '@e-coop-monorepo/shared/hooks'
-import PageContainer from '@e-coop-monorepo/ui/core'
+import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication/authgentication.store'
+import { MemberOccupationCreateUpdateFormModal } from '@ecoop/modules/member-occupation/components/member-occupation-create-update-form'
+import MemberOccupationTable from '@ecoop/modules/member-occupation/components/tables/member-occupation-table'
+import { useModalState } from '@ecoop/shared/hooks'
+import { useSubscribe } from '@ecoop/shared/hooks'
+import PageContainer from '@ecoop/ui/core'
 
 const MemberOccupationPage = () => {
     const createModal = useModalState()

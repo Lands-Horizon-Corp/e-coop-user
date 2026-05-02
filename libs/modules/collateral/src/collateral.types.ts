@@ -1,7 +1,4 @@
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { TCollateralSchema } from './collateral.validation'
 

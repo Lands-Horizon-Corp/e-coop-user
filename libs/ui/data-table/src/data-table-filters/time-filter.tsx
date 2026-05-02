@@ -7,15 +7,15 @@ import type {
 } from '@/contexts/filter-context'
 import { filterModeMap, useFilter } from '@/contexts/filter-context'
 import logger from '@/helpers/loggers/logger'
-import TimePicker from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import TimePicker from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import TimeRange from './time-range'
 

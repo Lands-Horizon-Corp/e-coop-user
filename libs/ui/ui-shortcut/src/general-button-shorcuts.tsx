@@ -4,11 +4,11 @@ import { useState } from 'react'
 
 import Fuse from 'fuse.js'
 
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { MagnifyingGlassIcon } from '@e-coop-monorepo/ui/core'
-import { CommandIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { useModalState } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import { MagnifyingGlassIcon } from '@ecoop/ui/core'
+import { CommandIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { highlightMatch } from '../hightlight-match'

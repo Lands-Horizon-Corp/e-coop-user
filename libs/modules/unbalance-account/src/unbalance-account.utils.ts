@@ -1,4 +1,4 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IAccount } from '@ecoop/modules/account'
 
 export const canAddMemberProfile = (account?: IAccount) => {
     if (!account) return false

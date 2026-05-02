@@ -1,6 +1,6 @@
-import { ReloadIcon } from '@e-coop-monorepo/ui/core'
-import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { ReloadIcon } from '@ecoop/ui/core'
+import { LoadingSpinner } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 export interface IRefreshButtonProps {
     isLoading?: boolean

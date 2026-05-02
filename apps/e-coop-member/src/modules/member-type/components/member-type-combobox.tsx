@@ -1,10 +1,10 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
-import { ChevronDownIcon, PlusIcon } from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { TEntityId } from '@ecoop/shared/types'
+import { ChevronDownIcon, PlusIcon } from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -13,12 +13,8 @@ import {
     CommandItem,
     CommandList,
     CommandSeparator,
-} from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 import { Check } from 'lucide-react'
 
 import { useGetAllMemberTypes } from '../member-type.service'

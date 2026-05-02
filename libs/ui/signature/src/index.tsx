@@ -2,16 +2,16 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { dataUrlToFile } from '@e-coop-monorepo/modules/media'
-import useConfirmModalStore from '@e-coop-monorepo/shared/store'
-import { useSignature } from '@e-coop-monorepo/shared/store'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { dataUrlToFile } from '@ecoop/modules/media'
+import useConfirmModalStore from '@ecoop/shared/store'
+import { useSignature } from '@ecoop/shared/store'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     Tooltip,
     TooltipContent,
     TooltipProvider,
     TooltipTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { format } from 'date-fns'
 import type { FileWithPath } from 'react-dropzone'
 import type SignaturePad from 'react-signature-canvas'

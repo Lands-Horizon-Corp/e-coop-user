@@ -2,8 +2,8 @@ import * as React from 'react'
 
 import { mergeProps } from '@base-ui/react/merge-props'
 import { useRender } from '@base-ui/react/use-render'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Separator } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Separator } from '@ecoop/ui/core'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 function ItemGroup({ className, ...props }: React.ComponentProps<'div'>) {

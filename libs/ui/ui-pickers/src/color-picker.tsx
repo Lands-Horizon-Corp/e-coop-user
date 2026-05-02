@@ -12,23 +12,19 @@ import {
     rgbToHsl,
     rgbaToHex,
     rgbaToHsla,
-} from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import { Label } from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Button } from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import { Label } from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { HexAlphaColorPicker, HexColorPicker } from 'react-colorful'
 
 import { LoadingSpinnerIcon, PipetteIcon } from '../icons/index'

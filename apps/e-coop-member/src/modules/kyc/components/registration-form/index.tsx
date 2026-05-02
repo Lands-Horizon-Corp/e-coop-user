@@ -3,12 +3,12 @@ import { useForm } from 'react-hook-form'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
-import { ChevronLeftIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Form } from '@e-coop-monorepo/ui/core'
+import { useFormHelper } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps, IForm } from '@ecoop/shared/types'
+import { ChevronLeftIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Form } from '@ecoop/ui/core'
 
 import type {
     IKYCRegisterRequest,

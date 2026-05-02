@@ -4,7 +4,7 @@ import {
     AuroraBackground,
     ParticlesBackground,
     ScrollProgress,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import logo from '../assets/logo.png'
 import Navbar from '../components/Navbar'

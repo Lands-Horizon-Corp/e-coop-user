@@ -1,7 +1,7 @@
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import { DashSquareDottedIcon } from '@e-coop-monorepo/ui/core'
-import { ActionTooltip } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import type { IClassProps } from '@ecoop/shared/types'
+import { DashSquareDottedIcon } from '@ecoop/ui/core'
+import { ActionTooltip } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import type { Table } from '@tanstack/react-table'
 
 export interface IDataTableDeleteSelectedProps<T> extends IClassProps {

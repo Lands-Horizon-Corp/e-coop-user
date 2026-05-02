@@ -1,11 +1,11 @@
-import { loanTransactionBaseKey } from '@e-coop-monorepo/modules/loan-transaction'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { loanTransactionBaseKey } from '@ecoop/modules/loan-transaction'
+import { Logger } from '@ecoop/shared/helpers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type {
     ILoanLedger,

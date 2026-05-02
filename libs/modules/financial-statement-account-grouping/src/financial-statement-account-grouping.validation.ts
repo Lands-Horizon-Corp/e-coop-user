@@ -3,7 +3,7 @@ import { z } from 'zod'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const financialStatementGroupingSchema = z.object({
     name: z.string().min(1, 'Name is required'),

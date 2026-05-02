@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Label, Separator } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Label, Separator } from '@ecoop/ui/core'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 function FieldSet({ className, ...props }: React.ComponentProps<'fieldset'>) {

@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
+import { entityIdSchema } from '@ecoop/shared/validation'
 
 export const groceryComputationSheetMonthlySchema = z.object({
     grocery_computation_sheet_id: entityIdSchema,

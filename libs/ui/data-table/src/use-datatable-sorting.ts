@@ -1,7 +1,7 @@
 import { useMemo } from 'react'
 
-import { toBase64 } from '@e-coop-monorepo/shared/helpers'
-import { useSortingState } from '@e-coop-monorepo/shared/hooks'
+import { toBase64 } from '@ecoop/shared/helpers'
+import { useSortingState } from '@ecoop/shared/hooks'
 import type { OnChangeFn, SortingState } from '@tanstack/react-table'
 
 export const useDataTableSorting = () => {

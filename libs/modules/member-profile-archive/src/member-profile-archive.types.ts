@@ -1,11 +1,8 @@
 import type z from 'zod'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type {
     MemberProfileArchiveSchema,

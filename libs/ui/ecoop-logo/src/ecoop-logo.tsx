@@ -1,7 +1,7 @@
-import type { ResolvedTheme } from '@e-coop-monorepo/shared/providers/core-providers'
-import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { ResolvedTheme } from '@ecoop/shared/providers/core-providers'
+import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
 
 import Image from './image'
 

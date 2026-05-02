@@ -5,7 +5,7 @@ import {
     SelectContent,
     SelectItem,
     SelectTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 interface TimePickerProps {
     date: Date

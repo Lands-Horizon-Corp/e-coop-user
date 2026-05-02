@@ -1,5 +1,5 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { ImageIcon } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { ImageIcon } from '@ecoop/ui/core'
 
 import DropHoverOverlay from '../drop-hover-overlay'
 import type { IDropAreaProps } from './type'

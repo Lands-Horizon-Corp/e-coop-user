@@ -1,4 +1,4 @@
-import { useLocalStorage } from '@e-coop-monorepo/shared/hooks'
+import { useLocalStorage } from '@ecoop/shared/hooks'
 
 export const useTableColumnPersist = ({ key }: { key: string }) => {
     const [columnOrder, setColumnOrder] = useLocalStorage<string[]>(

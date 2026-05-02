@@ -1,7 +1,7 @@
 // import { ReactNode } from 'react'
 
-// import { cn } from '@e-coop-monorepo/shared/tw-utils'
-// import { IMedia } from '@e-coop-monorepo/modules/media'
+// import { cn } from '@ecoop/shared/tw-utils'
+// import { IMedia } from '@ecoop/modules/media'
 
 // import ImageDisplay from '../image-display'
 // import PreviewMediaWrapper from '../wrappers/preview-media-wrapper'

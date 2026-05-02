@@ -2,9 +2,9 @@ import { useMemo, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import { useUploadMedia } from '@e-coop-monorepo/modules/media'
-import { calculateUploadProgress } from '@e-coop-monorepo/shared/helpers'
+import type { IMedia } from '@ecoop/modules/media'
+import { useUploadMedia } from '@ecoop/modules/media'
+import { calculateUploadProgress } from '@ecoop/shared/helpers'
 
 import Signature from '.'
 import { ImageDisplay } from '../image-display'

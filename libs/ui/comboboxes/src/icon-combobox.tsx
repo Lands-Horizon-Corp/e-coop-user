@@ -2,10 +2,10 @@ import { forwardRef, useMemo, useState } from 'react'
 
 import Fuse from 'fuse.js'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { TIcon } from '@e-coop-monorepo/ui/core'
-import { CheckIcon, ChevronDownIcon, IconMap } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { TIcon } from '@ecoop/ui/core'
+import { CheckIcon, ChevronDownIcon, IconMap } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -13,12 +13,8 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 
 interface Props {
     value?: TIcon

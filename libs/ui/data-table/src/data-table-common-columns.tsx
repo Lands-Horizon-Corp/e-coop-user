@@ -1,5 +1,5 @@
-import { dateAgo, toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import type { ITimeStamps } from '@e-coop-monorepo/shared/types'
+import { dateAgo, toReadableDate } from '@ecoop/shared/helpers'
+import type { ITimeStamps } from '@ecoop/shared/types'
 import type { ColumnDef } from '@tanstack/react-table'
 
 import DataTableColumnHeader from './data-table-column-header'

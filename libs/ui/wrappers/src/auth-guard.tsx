@@ -5,21 +5,21 @@ import { Navigate, useLocation, useRouter } from '@tanstack/react-router'
 import { AxiosError } from 'axios'
 
 import LOADING_ARTWORK_GIF from '@/assets/gifs/e-coop-artwork-loading.gif'
-import type { IAuthContext } from '@e-coop-monorepo/modules/authentication'
-import { useAuthContext } from '@e-coop-monorepo/modules/authentication'
-import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
-import { UserAvatar } from '@e-coop-monorepo/modules/user'
-import { useSubscribe } from '@e-coop-monorepo/shared/hooks'
-import { useQeueryHookCallback } from '@e-coop-monorepo/shared/hooks'
-import type { IBaseProps, TPageType } from '@e-coop-monorepo/shared/types'
+import type { IAuthContext } from '@ecoop/modules/authentication'
+import { useAuthContext } from '@ecoop/modules/authentication'
+import { useAuthStore } from '@ecoop/modules/authentication'
+import type { IUserBase } from '@ecoop/modules/user'
+import { UserAvatar } from '@ecoop/modules/user'
+import { useSubscribe } from '@ecoop/shared/hooks'
+import { useQeueryHookCallback } from '@ecoop/shared/hooks'
+import type { IBaseProps, TPageType } from '@ecoop/shared/types'
 import {
     ArrowRightIcon,
     BadgeExclamationFillIcon,
     RefreshIcon,
     ShieldExclamationIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 import { FlickeringGrid } from '../backgrounds/flickering-grid'
 import ImageMatch from '../image-match'

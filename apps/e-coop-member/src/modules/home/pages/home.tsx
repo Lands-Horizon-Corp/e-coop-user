@@ -1,10 +1,10 @@
 import { Link } from '@tanstack/react-router'
 
-import { FlickeringGrid } from '@e-coop-monorepo/ui/core'
-import { Particles } from '@e-coop-monorepo/ui/core'
-import { Badge } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Card } from '@e-coop-monorepo/ui/core'
+import { FlickeringGrid } from '@ecoop/ui/core'
+import { Particles } from '@ecoop/ui/core'
+import { Badge } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Card } from '@ecoop/ui/core'
 import {
     ArrowRight,
     CheckCircle2,

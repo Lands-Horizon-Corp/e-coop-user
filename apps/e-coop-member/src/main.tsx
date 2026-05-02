@@ -1,7 +1,7 @@
 /// <reference types="vite-plugin-pwa/client" />
 import { StrictMode } from 'react'
 
-import { APP_ENV } from '@e-coop-monorepo/shared/constants'
+import { APP_ENV } from '@ecoop/shared/constants'
 import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 import { createRoot } from 'react-dom/client'
 import { registerSW } from 'virtual:pwa-register'

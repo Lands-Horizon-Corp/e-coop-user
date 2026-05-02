@@ -1,12 +1,12 @@
 import type z from 'zod'
 
-import type { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { ILoanTransaction } from '@ecoop/modules/loan-transaction'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { ComakerMemberProfileSchema } from './comaker-member-profile.validation'
 

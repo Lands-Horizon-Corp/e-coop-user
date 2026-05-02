@@ -1,12 +1,12 @@
 import type z from 'zod'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IUser } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { FeedCommentSchema } from './feed-comment.validation'
 

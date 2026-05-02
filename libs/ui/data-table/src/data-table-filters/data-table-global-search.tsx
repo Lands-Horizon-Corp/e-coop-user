@@ -2,11 +2,11 @@ import { useState } from 'react'
 
 import type { TFilterModes, TSearchFilter } from '@/contexts/filter-context'
 import { useFilter } from '@/contexts/filter-context'
-import type { KeysOfOrString } from '@e-coop-monorepo/shared/types'
-import { ChevronLeftIcon, MagnifyingGlassIcon } from '@e-coop-monorepo/ui/core'
-import ActionTooltip from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { DebouncedInput } from '@e-coop-monorepo/ui/core'
+import type { KeysOfOrString } from '@ecoop/shared/types'
+import { ChevronLeftIcon, MagnifyingGlassIcon } from '@ecoop/ui/core'
+import ActionTooltip from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { DebouncedInput } from '@ecoop/ui/core'
 
 export interface IGlobalSearchTargets<T> {
     field: (string & {}) | keyof T

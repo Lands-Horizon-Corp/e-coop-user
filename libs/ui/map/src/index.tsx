@@ -2,10 +2,10 @@
 
 import React, { forwardRef, useCallback, useEffect, useRef } from 'react'
 
-import { GOOGLE_MAPS_ID } from '@e-coop-monorepo/shared/constants'
-import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
+import { GOOGLE_MAPS_ID } from '@ecoop/shared/constants'
+import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
 import { GoogleMap, type GoogleMapProps } from '@react-google-maps/api'
 
 import { SadFaceIcon } from '../icons/index'

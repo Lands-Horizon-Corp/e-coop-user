@@ -1,5 +1,5 @@
-import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
-import type { IAuditable, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IAuditable, TEntityId } from '@ecoop/shared/types'
 
 import {
     PERMISSION_ALL_ACTIONS,

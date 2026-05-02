@@ -4,7 +4,7 @@ import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { FinancialStatementTitleSchema } from './financial-statement-title.validation'
 

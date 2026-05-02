@@ -1,9 +1,9 @@
 import { Outlet } from '@tanstack/react-router'
 import { createFileRoute } from '@tanstack/react-router'
 
-import AuthGuard from '@e-coop-monorepo/modules/auth/components/auth-guard'
-import LandingFooter from '@e-coop-monorepo/modules/home/pages/footer'
-import UserNav from '@e-coop-monorepo/ui/core'
+import AuthGuard from '@ecoop/modules/auth/components/auth-guard'
+import LandingFooter from '@ecoop/modules/home/pages/footer'
+import UserNav from '@ecoop/ui/core'
 
 const DashboardLayout = () => {
     return (

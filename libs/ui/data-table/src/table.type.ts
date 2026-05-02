@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 
-import type { TFilterObject } from '@e-coop-monorepo/shared/contexts'
-import type { IChildProps, IClassProps } from '@e-coop-monorepo/shared/types'
+import type { TFilterObject } from '@ecoop/shared/contexts'
+import type { IChildProps, IClassProps } from '@ecoop/shared/types'
 import type { ColumnDef, Row } from '@tanstack/react-table'
 
 export interface TableProps<T> extends IClassProps {

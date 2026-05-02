@@ -1,11 +1,11 @@
 import { useEffect } from 'react'
 
-import { useGetBranchesByOrganizationId } from '@e-coop-monorepo/modules/branch'
-import { CoopBackground } from '@e-coop-monorepo/modules/home'
-import Themes from '@e-coop-monorepo/modules/settings'
-import type { CustomThemeColors } from '@e-coop-monorepo/shared/providers/core-providers'
-import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
-import { FlowingGrid } from '@e-coop-monorepo/ui/core'
+import { useGetBranchesByOrganizationId } from '@ecoop/modules/branch'
+import { CoopBackground } from '@ecoop/modules/home'
+import Themes from '@ecoop/modules/settings'
+import type { CustomThemeColors } from '@ecoop/shared/providers/core-providers'
+import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { FlowingGrid } from '@ecoop/ui/core'
 
 import { OrganizationBanner } from '../components/organization-banner'
 import { BranchList } from '../components/organization-branch-list'

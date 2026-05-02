@@ -1,27 +1,23 @@
 import { Link, useRouter } from '@tanstack/react-router'
 import { toast } from 'sonner'
 
-import { useSignOut } from '@e-coop-monorepo/modules/auth'
-// import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { useAuthUser } from '@e-coop-monorepo/modules/auth/authgentication.store'
-import useConfirmModalStore from '@e-coop-monorepo/shared/store'
+import { useSignOut } from '@ecoop/modules/auth'
+// import { useModalState } from '@ecoop/shared/hooks'
+import { useAuthUser } from '@ecoop/modules/auth/authgentication.store'
+import useConfirmModalStore from '@ecoop/shared/store'
 import {
     ChevronsUpDownIcon,
     FingerprintOffIcon,
     SettingsIcon,
-} from '@e-coop-monorepo/ui/core'
-import ImageDisplay from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import ImageDisplay from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
-import {
-    SidebarMenu,
-    SidebarMenuButton,
-    SidebarMenuItem,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@ecoop/ui/core'
 
 const AppSidebarUser = () => {
     const router = useRouter()

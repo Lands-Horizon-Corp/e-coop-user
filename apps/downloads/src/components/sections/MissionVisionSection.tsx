@@ -1,4 +1,4 @@
-import { AnimatedSection } from '@e-coop-monorepo/ui/core'
+import { AnimatedSection } from '@ecoop/ui/core'
 import { motion } from 'framer-motion'
 import { ArrowRight, Eye, Target } from 'lucide-react'
 

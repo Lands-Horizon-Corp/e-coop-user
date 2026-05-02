@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react'
 
-import { useGetTimeZones } from '@e-coop-monorepo/shared/helpers'
-import type { TimezoneData } from '@e-coop-monorepo/shared/helpers'
+import { useGetTimeZones } from '@ecoop/shared/helpers'
+import type { TimezoneData } from '@ecoop/shared/helpers'
 import { countries } from 'country-data-list'
 import type { Country } from 'react-phone-number-input'
 

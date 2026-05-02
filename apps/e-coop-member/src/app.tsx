@@ -9,8 +9,8 @@ import {
 import { MutationCache } from '@tanstack/react-query'
 import { RouterProvider, createRouter } from '@tanstack/react-router'
 
-import { ThemeProvider } from '@e-coop-monorepo/shared/contexts'
-import { MapProvider } from '@e-coop-monorepo/ui/core'
+import { ThemeProvider } from '@ecoop/shared/contexts'
+import { MapProvider } from '@ecoop/ui/core'
 
 // import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
 

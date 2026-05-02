@@ -1,6 +1,6 @@
-import type { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
-import type { TLoanModeOfPayment } from '@e-coop-monorepo/modules/loan-transaction'
-import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IChargesRateScheme } from '@ecoop/modules/charges-rate-scheme'
+import type { TLoanModeOfPayment } from '@ecoop/modules/loan-transaction'
+import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { TChargesRateByTermSchema } from './charges-rate-by-term.validation'
 

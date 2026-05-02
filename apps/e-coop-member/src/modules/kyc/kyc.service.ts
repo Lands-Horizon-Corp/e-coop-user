@@ -1,13 +1,13 @@
-import { resizeImage } from '@e-coop-monorepo/modules/media'
-import type { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
-import type { IMemberGovernmentBenefitRequest } from '@e-coop-monorepo/modules/member-profile'
-import { imageCompressed } from '@e-coop-monorepo/shared/helpers'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import { resizeImage } from '@ecoop/modules/media'
+import type { TMemberAddressSchema } from '@ecoop/modules/member-address'
+import type { IMemberGovernmentBenefitRequest } from '@ecoop/modules/member-profile'
+import { imageCompressed } from '@ecoop/shared/helpers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IKyc } from './kyc.types'
-// import { Logger } from '@e-coop-monorepo/shared/helpers'
+// import { Logger } from '@ecoop/shared/helpers'
 
 import type {
     TKYCRegisterSchema,

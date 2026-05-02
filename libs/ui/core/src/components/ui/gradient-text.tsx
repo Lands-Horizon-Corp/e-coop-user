@@ -2,7 +2,7 @@ import type * as React from 'react'
 
 import { Slot } from '@radix-ui/react-slot'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import { type VariantProps, cva } from 'class-variance-authority'
 
 const gradientTextVariants = cva(

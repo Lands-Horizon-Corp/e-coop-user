@@ -1,10 +1,6 @@
-import type { ICategory } from '@e-coop-monorepo/modules/category'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type {
-    IAuditable,
-    ITimeStamps,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
+import type { ICategory } from '@ecoop/modules/category'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IOrganizationCategory extends ITimeStamps, IAuditable {
     id: TEntityId

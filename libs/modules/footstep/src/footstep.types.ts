@@ -1,12 +1,12 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { IUserBase, TUserType } from '@ecoop/modules/user'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export type TFootstepLevel = 'info' | 'warning' | 'error' | 'debug'
 export interface IFootstep extends ITimeStamps, IAuditable {

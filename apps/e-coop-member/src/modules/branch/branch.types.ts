@@ -1,13 +1,13 @@
-import type { IBranchSettings } from '@e-coop-monorepo/modules/branch-settings'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IBranchSettings } from '@ecoop/modules/branch-settings'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IOrganization } from '@ecoop/modules/organization'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { branchTypeEnum } from './branch.enums'
 import type { TBranchSchema } from './branch.validation'

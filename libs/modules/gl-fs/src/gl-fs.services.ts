@@ -1,13 +1,10 @@
 import {
     createMutationFactory,
     createMutationInvalidateFn,
-} from '@e-coop-monorepo/shared/repositories'
-import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type {
-    TEntityId,
-    UdpateGeneralLedgerOrder,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import { createAPIRepository } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId, UdpateGeneralLedgerOrder } from '@ecoop/shared/types'
 
 import type { ConnectAccountType, CreateAPIProps } from './gl-fs.types'
 

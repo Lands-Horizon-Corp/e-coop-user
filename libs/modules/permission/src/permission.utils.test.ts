@@ -1,4 +1,4 @@
-import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+import type { IUserOrganization } from '@ecoop/modules/user-organization'
 import { describe, expect, it } from 'vitest'
 
 import {

@@ -1,10 +1,10 @@
 import z from 'zod'
 
-import { PermissionSchema } from '@e-coop-monorepo/modules/permission'
+import { PermissionSchema } from '@ecoop/modules/permission'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const PermissionTemplateSchema = z.object({
     id: entityIdSchema.optional(),

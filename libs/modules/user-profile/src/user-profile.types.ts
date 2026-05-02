@@ -1,4 +1,4 @@
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type { USER_PROFILE_DURATION_UNITS } from './user-profile.constants'
 

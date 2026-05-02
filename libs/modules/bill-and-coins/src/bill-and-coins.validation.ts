@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { EntityIdSchema } from '@e-coop-monorepo/shared/validation'
+import { EntityIdSchema } from '@ecoop/shared/validation'
 
 export const BillsAndCoinSchema = z.object({
     name: z.string().min(1, 'Name is required'),

@@ -1,6 +1,6 @@
-import type { TFootstepLevel } from '@e-coop-monorepo/modules/footstep'
-import { createFootstep } from '@e-coop-monorepo/modules/footstep'
-import { IS_STAGING } from '@e-coop-monorepo/shared/constants'
+import type { TFootstepLevel } from '@ecoop/modules/footstep'
+import { createFootstep } from '@ecoop/modules/footstep'
+import { IS_STAGING } from '@ecoop/shared/constants'
 
 /* eslint-disable no-console */
 type LogMethod = (...args: unknown[]) => void
@@ -168,7 +168,7 @@ export default Logger.getInstance('default', false)
 export { Logger }
 
 /**
-import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { Logger } from '@ecoop/shared/helpers'
 
 const authLogger = Logger.getInstance('authentication')
 const userLogger = Logger.getInstance('user-management') 

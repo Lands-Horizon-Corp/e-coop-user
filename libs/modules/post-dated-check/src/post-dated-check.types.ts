@@ -1,12 +1,12 @@
-import type { IBank } from '@e-coop-monorepo/modules/bank'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IBank } from '@ecoop/modules/bank'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IUser } from '@ecoop/modules/user'
 import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IPostDatedCheckRequest {
     member_profile_id?: TEntityId

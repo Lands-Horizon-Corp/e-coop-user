@@ -1,13 +1,13 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IJournalVoucher } from '@e-coop-monorepo/modules/journal-voucher'
-import type { ILoanTransaction } from '@e-coop-monorepo/modules/loan-transaction'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IJournalVoucher } from '@ecoop/modules/journal-voucher'
+import type { ILoanTransaction } from '@ecoop/modules/loan-transaction'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IUser } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { TJournalVoucherEntrySchema } from './journal-voucher-entry.validation'
 

@@ -1,4 +1,4 @@
-import { downloadFile } from '@e-coop-monorepo/shared/helpers'
+import { downloadFile } from '@ecoop/shared/helpers'
 
 import type { IMedia } from './media.types'
 

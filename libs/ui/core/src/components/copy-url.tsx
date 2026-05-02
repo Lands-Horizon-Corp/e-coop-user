@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 
 import { CheckIcon, CopyIcon } from './icons/index'
 

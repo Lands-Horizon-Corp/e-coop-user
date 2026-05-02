@@ -1,16 +1,13 @@
 import * as React from 'react'
 
-import type {
-    ICurrency,
-    TCurrencyHookMode,
-} from '@e-coop-monorepo/modules/currency'
-import { useGetAllCurrency } from '@e-coop-monorepo/modules/currency'
-import { findCountry } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
-import { CheckIcon, ChevronDownIcon } from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import type { ICurrency, TCurrencyHookMode } from '@ecoop/modules/currency'
+import { useGetAllCurrency } from '@ecoop/modules/currency'
+import { findCountry } from '@ecoop/modules/member-profile/components/comboboxes/country-combobox'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { TEntityId } from '@ecoop/shared/types'
+import { CheckIcon, ChevronDownIcon } from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -18,12 +15,8 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 import { CircleFlag } from 'react-circle-flags'
 
 type TFormatDisplay =

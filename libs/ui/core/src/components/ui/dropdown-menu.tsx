@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { Menu as MenuPrimitive } from '@base-ui/react/menu'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import { CheckIcon, ChevronRightIcon } from 'lucide-react'
 
 function DropdownMenu({ ...props }: MenuPrimitive.Root.Props) {

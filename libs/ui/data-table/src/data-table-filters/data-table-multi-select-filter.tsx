@@ -5,8 +5,8 @@ import type {
     filterModeMap,
 } from '@/contexts/filter-context'
 import { useFilter } from '@/contexts/filter-context'
-import type { IMultiSelectOption } from '@e-coop-monorepo/ui/core'
-import MultiSelectFilter from '@e-coop-monorepo/ui/core'
+import type { IMultiSelectOption } from '@ecoop/ui/core'
+import MultiSelectFilter from '@ecoop/ui/core'
 
 type AllowedMode<T extends keyof typeof filterModeMap> =
     (typeof filterModeMap)[T][number]['value']

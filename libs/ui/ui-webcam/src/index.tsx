@@ -2,15 +2,15 @@ import { forwardRef, useCallback, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
 import {
     Button,
     CameraFlipIcon,
     CameraOffIcon,
     CameraSelectIcon,
     LoadingSpinner,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import Webcam from 'react-webcam'
 
 import ActionTooltip from '../tooltips/action-tooltip'

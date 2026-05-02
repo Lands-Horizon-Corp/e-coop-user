@@ -1,10 +1,10 @@
 import { createFileRoute, useRouter, useSearch } from '@tanstack/react-router'
 
 import COOKIE_ICON from '@/assets/cookie-icon.svg'
-import type { IUserPasswordResetRequest } from '@e-coop-monorepo/modules/auth'
-import ResetPasswordForm from '@e-coop-monorepo/modules/auth/components/forms/reset-password-form'
-import PageContainer from '@e-coop-monorepo/ui/core'
-import ImageDisplay from '@e-coop-monorepo/ui/core'
+import type { IUserPasswordResetRequest } from '@ecoop/modules/auth'
+import ResetPasswordForm from '@ecoop/modules/auth/components/forms/reset-password-form'
+import PageContainer from '@ecoop/ui/core'
+import ImageDisplay from '@ecoop/ui/core'
 
 export const Route = createFileRoute('/auth/reset-password')({
     component: RouteComponent,

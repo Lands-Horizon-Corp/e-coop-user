@@ -1,14 +1,14 @@
 import { useState } from 'react'
 
-import { Input } from '@e-coop-monorepo/ui/core'
-import { Label } from '@e-coop-monorepo/ui/core'
+import { Input } from '@ecoop/ui/core'
+import { Label } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 export type TPaperSize = 'A4' | 'Letter' | 'Legal'
 export type TReportType = 'pdf' | 'excel'

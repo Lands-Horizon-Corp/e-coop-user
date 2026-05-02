@@ -1,12 +1,12 @@
 import type { MouseEvent } from 'react'
 
-import { useConfirmModalStore } from '@e-coop-monorepo/shared/store'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { FormErrorMessage } from '@e-coop-monorepo/ui/core'
-import { Separator } from '@e-coop-monorepo/ui/core'
+import { useConfirmModalStore } from '@ecoop/shared/store'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
+import { LoadingSpinner } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { FormErrorMessage } from '@ecoop/ui/core'
+import { Separator } from '@ecoop/ui/core'
 
 interface IFormResetSubmitFooterProps extends IClassProps {
     readOnly?: boolean

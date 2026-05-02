@@ -1,11 +1,11 @@
-import type { TFilterLogic } from '@e-coop-monorepo/shared/contexts'
-import { FunnelIcon } from '@e-coop-monorepo/ui/core'
+import type { TFilterLogic } from '@ecoop/shared/contexts'
+import { FunnelIcon } from '@ecoop/ui/core'
 import {
     DropdownMenuGroup,
     DropdownMenuLabel,
     DropdownMenuRadioGroup,
     DropdownMenuRadioItem,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 export interface IDataTableFilterLogicOptionProps {
     filterLogic: TFilterLogic

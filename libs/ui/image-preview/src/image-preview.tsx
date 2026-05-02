@@ -2,15 +2,15 @@
 import * as React from 'react'
 import { forwardRef, useEffect, useRef, useState } from 'react'
 
-import { formatBytes } from '@e-coop-monorepo/modules/media'
-import { cn, formatDate } from '@e-coop-monorepo/shared/helpers'
+import { formatBytes } from '@ecoop/modules/media'
+import { cn, formatDate } from '@ecoop/shared/helpers'
 import type {
     DownloadProps,
     ImageContainerProps,
     ImagePreviewActionProps,
     ImagePreviewButtonActionProps,
     ImagePreviewPanelProps,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
@@ -22,9 +22,9 @@ import {
     RotateRightIcon,
     ZoomInIcon,
     ZoomOutIcon,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 // Local Components
-import { useCarousel } from '@e-coop-monorepo/ui/core'
+import { useCarousel } from '@ecoop/ui/core'
 import type useEmblaCarousel from 'embla-carousel-react'
 
 import { Button } from '../ui/button'

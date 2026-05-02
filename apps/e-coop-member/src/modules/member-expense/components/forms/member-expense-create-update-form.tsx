@@ -3,23 +3,19 @@ import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { CurrencyInput } from '@e-coop-monorepo/modules/currency'
-import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
-import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type {
-    IClassProps,
-    IForm,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core'
-import Modal from '@e-coop-monorepo/ui/core'
-import TextEditor from '@e-coop-monorepo/ui/core'
-import { Form } from '@e-coop-monorepo/ui/core'
-import FormFieldWrapper from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
+import { CurrencyInput } from '@ecoop/modules/currency'
+import { withToastCallbacks } from '@ecoop/shared/helpers'
+import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
+import { useFormHelper } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps, IForm, TEntityId } from '@ecoop/shared/types'
+import FormFooterResetSubmit from '@ecoop/ui/core'
+import type { IModalProps } from '@ecoop/ui/core'
+import Modal from '@ecoop/ui/core'
+import TextEditor from '@ecoop/ui/core'
+import { Form } from '@ecoop/ui/core'
+import FormFieldWrapper from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
 
 import {
     useCreateMemberProfileExpense,

@@ -1,7 +1,7 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import { ChevronLeftIcon, ChevronRightIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
+import { ChevronLeftIcon, ChevronRightIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 export type TPagination = {
     pageSize: number

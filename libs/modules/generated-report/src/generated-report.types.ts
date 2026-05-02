@@ -1,12 +1,12 @@
-import type { IGeneratedReportsDownloadUsers } from '@e-coop-monorepo/modules/generated-reports-download-users'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IGeneratedReportsDownloadUsers } from '@ecoop/modules/generated-reports-download-users'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IUser } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
-import type { TPaperSizeName } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/shared/types'
+import type { TPaperSizeName } from '@ecoop/ui/core'
 
 import type { TPaperSizeUnit } from './generated-reports.constants'
 

@@ -1,16 +1,16 @@
 import { useCallback } from 'react'
 
-import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
-import { MoonIcon, SunIcon, SunMoonIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
+import { MoonIcon, SunIcon, SunMoonIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 type StartPosition =
     | 'center'

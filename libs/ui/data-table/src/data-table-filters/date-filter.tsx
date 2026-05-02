@@ -4,15 +4,15 @@ import type {
     TSearchFilter,
 } from '@/contexts/filter-context'
 import { filterModeMap, useFilter } from '@/contexts/filter-context'
-import InputDatePicker from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import InputDatePicker from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import { isDate } from 'date-fns'
 
 import DateRange from './date-range'

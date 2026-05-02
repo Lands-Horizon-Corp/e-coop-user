@@ -1,8 +1,5 @@
-import type { TPermission } from '@e-coop-monorepo/modules/permission'
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
+import type { TPermission } from '@ecoop/modules/permission'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { TPermissionTemplateSchema } from './permission-template.validation'
 

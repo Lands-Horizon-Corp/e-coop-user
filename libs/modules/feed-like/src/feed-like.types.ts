@@ -1,11 +1,11 @@
 import type z from 'zod'
 
-import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IUser } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { FeedLikeSchema } from './feed-like.validation'
 

@@ -1,15 +1,15 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { IPaymentType } from '@e-coop-monorepo/modules/payment-type'
-import type { TPermission } from '@e-coop-monorepo/modules/permission'
-import type { IUserBase, TUserType } from '@e-coop-monorepo/modules/user'
-import type { USER_ORG_APPLICATION_STATUS } from '@e-coop-monorepo/shared/constants'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { IPaymentType } from '@ecoop/modules/payment-type'
+import type { TPermission } from '@ecoop/modules/permission'
+import type { IUserBase, TUserType } from '@ecoop/modules/user'
+import type { USER_ORG_APPLICATION_STATUS } from '@ecoop/shared/constants'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type {
     TTimeMachineSchema,

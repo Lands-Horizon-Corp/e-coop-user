@@ -1,15 +1,15 @@
 import z from 'zod'
 
-import type { IInterestRateByTermsHeaderResponse } from '@e-coop-monorepo/modules/interest-rate-by-terms-header'
-import type { IInterestRateScheme } from '@e-coop-monorepo/modules/interest-rate-scheme'
-import type { IMemberClassification } from '@e-coop-monorepo/modules/member-classification'
+import type { IInterestRateByTermsHeaderResponse } from '@ecoop/modules/interest-rate-by-terms-header'
+import type { IInterestRateScheme } from '@ecoop/modules/interest-rate-scheme'
+import type { IMemberClassification } from '@ecoop/modules/member-classification'
 import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/types'
+import { entityIdSchema } from '@ecoop/shared/validation'
 
 export interface IMemberClassificationInterestRateRequest {
     name: string

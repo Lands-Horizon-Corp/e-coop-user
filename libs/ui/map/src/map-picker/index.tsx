@@ -3,14 +3,11 @@
 import type React from 'react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-import {
-    GOOGLE_MAPS_API_KEY,
-    GOOGLE_MAPS_ID,
-} from '@e-coop-monorepo/shared/constants'
-import { useInternalState } from '@e-coop-monorepo/shared/hooks'
-import { useTheme } from '@e-coop-monorepo/shared/providers/core-providers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import CopyTextButton from '@e-coop-monorepo/ui/core'
+import { GOOGLE_MAPS_API_KEY, GOOGLE_MAPS_ID } from '@ecoop/shared/constants'
+import { useInternalState } from '@ecoop/shared/hooks'
+import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { cn } from '@ecoop/shared/tw-utils'
+import CopyTextButton from '@ecoop/ui/core'
 import {
     BuildingIcon,
     CloseIcon,
@@ -19,24 +16,24 @@ import {
     NavigationIcon,
     PinLocationIcon,
     TargetArrowIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Command,
     CommandEmpty,
     CommandGroup,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
-} from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import { Label } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import { Label } from '@ecoop/ui/core'
 
 import type { MapLocation } from '..'
 import MapView from '..'

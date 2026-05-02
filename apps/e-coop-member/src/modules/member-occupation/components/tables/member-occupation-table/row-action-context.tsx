@@ -1,11 +1,11 @@
 import type { ReactNode } from 'react'
 
-import { useDeleteById } from '@e-coop-monorepo/modules/member-occupation'
-import type { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
-import useConfirmModalStore from '@e-coop-monorepo/shared/store'
-import RowActionsGroup from '@e-coop-monorepo/ui/core'
-import DataTableRowContext from '@e-coop-monorepo/ui/core'
-import { useTableRowActionStore } from '@e-coop-monorepo/ui/core'
+import { useDeleteById } from '@ecoop/modules/member-occupation'
+import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+import useConfirmModalStore from '@ecoop/shared/store'
+import RowActionsGroup from '@ecoop/ui/core'
+import DataTableRowContext from '@ecoop/ui/core'
+import { useTableRowActionStore } from '@ecoop/ui/core'
 import type { Row } from '@tanstack/react-table'
 
 import { MemberOccupationCreateUpdateFormModal } from '../../member-occupation-create-update-form'

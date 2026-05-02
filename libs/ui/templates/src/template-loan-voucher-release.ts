@@ -1,4 +1,4 @@
-import type { TemplateOptions } from '@e-coop-monorepo/modules/generated-report'
+import type { TemplateOptions } from '@ecoop/modules/generated-report'
 
 export const LoanVoucherReleaseTemplates: TemplateOptions[] = [
     {

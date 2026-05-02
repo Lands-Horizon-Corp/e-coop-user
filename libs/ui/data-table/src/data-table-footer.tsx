@@ -1,5 +1,5 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { TableCell, TableFooter, TableRow } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { TableCell, TableFooter, TableRow } from '@ecoop/ui/core'
 import type { Table } from '@tanstack/react-table'
 import { flexRender } from '@tanstack/react-table'
 

@@ -2,8 +2,8 @@ import type { ReactNode } from 'react'
 
 import { toast } from 'sonner'
 
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import { Input } from '@e-coop-monorepo/ui/core'
+import type { IClassProps } from '@ecoop/shared/types'
+import { Input } from '@ecoop/ui/core'
 import type { DropzoneOptions } from 'react-dropzone'
 import { useDropzone } from 'react-dropzone'
 

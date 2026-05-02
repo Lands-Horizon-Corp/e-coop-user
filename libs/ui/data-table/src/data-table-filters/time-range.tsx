@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import { isObject } from '@e-coop-monorepo/shared/helpers'
-import { TimePicker } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { isObject } from '@ecoop/shared/helpers'
+import { TimePicker } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import { isAfter } from 'date-fns'
 
 export type TimeRange = { from: Date | undefined; to?: Date }

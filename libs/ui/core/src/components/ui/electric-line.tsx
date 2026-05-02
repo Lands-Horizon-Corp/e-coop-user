@@ -1,4 +1,4 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 
 interface ElectricLineProps {
     className?: string

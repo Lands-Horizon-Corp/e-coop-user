@@ -6,38 +6,38 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { TMemberGovernmentBenefitSchema } from '@e-coop-monorepo/modules/member-government-benefit'
+import type { IMedia } from '@ecoop/modules/media'
+import type { TMemberGovernmentBenefitSchema } from '@ecoop/modules/member-government-benefit'
 import {
     MemberGovernmentBenefitSchema,
     useGetAllGovernmentIds,
-} from '@e-coop-monorepo/modules/member-government-benefit'
-import GovernmentIdCombobox from '@e-coop-monorepo/modules/member-government-benefit/components/government-id-combobox'
-import type { IGovernmentId } from '@e-coop-monorepo/modules/member-profile'
-import { CountryCombobox } from '@e-coop-monorepo/modules/member-profile/components/comboboxes/country-combobox'
-import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-// import TextEditor from '@e-coop-monorepo/ui/core'
+} from '@ecoop/modules/member-government-benefit'
+import GovernmentIdCombobox from '@ecoop/modules/member-government-benefit/components/government-id-combobox'
+import type { IGovernmentId } from '@ecoop/modules/member-profile'
+import { CountryCombobox } from '@ecoop/modules/member-profile/components/comboboxes/country-combobox'
+import { toReadableDate } from '@ecoop/shared/helpers'
+import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
+// import TextEditor from '@ecoop/ui/core'
 
-import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps, IForm } from '@e-coop-monorepo/shared/types'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core'
-import Modal from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { useFormHelper } from '@ecoop/shared/hooks'
+import { useModalState } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps, IForm } from '@ecoop/shared/types'
+import FormFooterResetSubmit from '@ecoop/ui/core'
+import type { IModalProps } from '@ecoop/ui/core'
+import Modal from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
-import { Form } from '@e-coop-monorepo/ui/core'
-import FormFieldWrapper from '@e-coop-monorepo/ui/core'
-import ImageField from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import InputDate from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Form } from '@ecoop/ui/core'
+import FormFieldWrapper from '@ecoop/ui/core'
+import ImageField from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import InputDate from '@ecoop/ui/core'
 import { CreditCard, MoreVertical, Pencil, Plus, Trash2 } from 'lucide-react'
 
 import type { IKYCVerifyGovernmentBenefitsRequest } from '../..'

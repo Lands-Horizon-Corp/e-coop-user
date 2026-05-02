@@ -1,10 +1,10 @@
 import { useMutation } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createAPIRepository } from '@e-coop-monorepo/shared/repositories'
+import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
+import { withCatchAsync } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/helpers'
+import { createAPIRepository } from '@ecoop/shared/repositories'
 
 import type { IOperationCallbacks } from './qr-crypto.types'
 

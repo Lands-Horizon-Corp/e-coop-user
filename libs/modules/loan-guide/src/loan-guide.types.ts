@@ -1,11 +1,8 @@
 import type z from 'zod'
 
-import type { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
-import type { ILoanAccount } from '@e-coop-monorepo/modules/loan-account'
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
+import type { IGeneralLedger } from '@ecoop/modules/general-ledger'
+import type { ILoanAccount } from '@ecoop/modules/loan-account'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { LOAN_SCHEDULE_STATUS } from './loan-guide-constant'
 import type { LoanGuideSchema } from './loan-guide.validation'

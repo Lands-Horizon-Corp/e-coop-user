@@ -4,20 +4,16 @@ import { toast } from 'sonner'
 import {
     ChecklistTemplate,
     ValueChecklistMeter,
-} from '@e-coop-monorepo/modules/auth/components/value-checklist-indicator'
-import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { EmailIcon, VerifiedPatchIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { FormItem } from '@e-coop-monorepo/ui/core'
-import FormFieldWrapper from '@e-coop-monorepo/ui/core'
-import {
-    InputGroup,
-    InputGroupAddon,
-    InputGroupInput,
-} from '@e-coop-monorepo/ui/core'
-import PasswordInput from '@e-coop-monorepo/ui/core'
-import { PhoneInput } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/modules/auth/components/value-checklist-indicator'
+import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
+import { EmailIcon, VerifiedPatchIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { FormItem } from '@ecoop/ui/core'
+import FormFieldWrapper from '@ecoop/ui/core'
+import { InputGroup, InputGroupAddon, InputGroupInput } from '@ecoop/ui/core'
+import PasswordInput from '@ecoop/ui/core'
+import { PhoneInput } from '@ecoop/ui/core'
 import { Lock } from 'lucide-react'
 
 import type { TKYCVerifySecurityDetailsSchema } from '../..'

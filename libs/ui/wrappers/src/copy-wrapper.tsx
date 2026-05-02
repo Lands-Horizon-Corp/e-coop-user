@@ -2,9 +2,9 @@ import React, { useRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
-import { CheckIcon, CopyIcon } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
+import { CheckIcon, CopyIcon } from '@ecoop/ui/core'
 
 interface CopyToClipboardProps extends IBaseProps {
     copyMsg?: string

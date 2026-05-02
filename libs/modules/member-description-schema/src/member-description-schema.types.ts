@@ -1,9 +1,5 @@
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type {
-    IAuditable,
-    ITimeStamps,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IMemberDescriptionRequest {
     id?: TEntityId

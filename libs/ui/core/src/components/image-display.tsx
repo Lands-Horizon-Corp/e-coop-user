@@ -1,7 +1,7 @@
 import { forwardRef } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Avatar, AvatarFallback, AvatarImage } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Avatar, AvatarFallback, AvatarImage } from '@ecoop/ui/core'
 
 import { Image2Icon } from './icons/index'
 

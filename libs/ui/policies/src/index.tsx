@@ -2,13 +2,13 @@ import { useState } from 'react'
 
 import { ScrollArea } from '@radix-ui/react-scroll-area'
 
-import type { IOrganizationWithPolicies } from '@e-coop-monorepo/modules/organization'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Checkbox } from '@e-coop-monorepo/ui/core'
-import { Popover } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Dialog, DialogContent, DialogTrigger } from '@e-coop-monorepo/ui/core'
-import { TextEditor } from '@e-coop-monorepo/ui/core'
+import type { IOrganizationWithPolicies } from '@ecoop/modules/organization'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Checkbox } from '@ecoop/ui/core'
+import { Popover } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Dialog, DialogContent, DialogTrigger } from '@ecoop/ui/core'
+import { TextEditor } from '@ecoop/ui/core'
 
 export type PolicyKey =
     | 'terms_and_conditions'

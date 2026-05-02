@@ -1,14 +1,14 @@
 import type { ReactNode } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     Empty,
     EmptyDescription,
     EmptyHeader,
     EmptyMedia,
     EmptyTitle,
-} from '@e-coop-monorepo/ui/core'
-import { TableBody, TableCell, TableRow } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { TableBody, TableCell, TableRow } from '@ecoop/ui/core'
 import type { Row } from '@tanstack/react-table'
 import { flexRender } from '@tanstack/react-table'
 

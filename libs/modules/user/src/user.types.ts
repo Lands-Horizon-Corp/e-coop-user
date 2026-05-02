@@ -1,13 +1,9 @@
-import type { IFootstep } from '@e-coop-monorepo/modules/footstep'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { INotification } from '@e-coop-monorepo/modules/notification'
-import type { IQrScanResult } from '@e-coop-monorepo/modules/qr-crypto'
-import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
-import type {
-    IAuditable,
-    ITimeStamps,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
+import type { IFootstep } from '@ecoop/modules/footstep'
+import type { IMedia } from '@ecoop/modules/media'
+import type { INotification } from '@ecoop/modules/notification'
+import type { IQrScanResult } from '@ecoop/modules/qr-crypto'
+import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 import type { USER_TYPE } from './user.constants'
 

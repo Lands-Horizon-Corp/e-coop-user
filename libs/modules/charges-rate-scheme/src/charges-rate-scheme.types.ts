@@ -1,15 +1,15 @@
-import type { IChargesRateByRangeOrMinimumAmount } from '@e-coop-monorepo/modules/charges-rate-by-range-or-minimum-amount'
-import type { IChargesRateByTerm } from '@e-coop-monorepo/modules/charges-rate-by-term'
-import type { IChargesRateSchemeAccount } from '@e-coop-monorepo/modules/charges-rate-scheme-account'
-import type { IChargesRateSchemeModeOfPayment } from '@e-coop-monorepo/modules/charges-rate-scheme-mode-of-payment'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { TLoanModeOfPayment } from '@e-coop-monorepo/modules/loan-transaction'
-import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type { IChargesRateByRangeOrMinimumAmount } from '@ecoop/modules/charges-rate-by-range-or-minimum-amount'
+import type { IChargesRateByTerm } from '@ecoop/modules/charges-rate-by-term'
+import type { IChargesRateSchemeAccount } from '@ecoop/modules/charges-rate-scheme-account'
+import type { IChargesRateSchemeModeOfPayment } from '@ecoop/modules/charges-rate-scheme-mode-of-payment'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { TLoanModeOfPayment } from '@ecoop/modules/loan-transaction'
+import type { IMemberType } from '@ecoop/modules/member-type'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type {
     TChargesRateCreateSchemeSchema,

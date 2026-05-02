@@ -3,28 +3,24 @@ import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import { withToastCallbacks } from '@e-coop-monorepo/shared/helpers'
-import { toInputDateString } from '@e-coop-monorepo/shared/helpers'
-import { serverRequestErrExtractor } from '@e-coop-monorepo/shared/helpers'
-import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type {
-    IClassProps,
-    IForm,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-import RelationshipCombobox from '@e-coop-monorepo/ui/core'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core'
-import Modal from '@e-coop-monorepo/ui/core'
-import TextEditor from '@e-coop-monorepo/ui/core'
-import { Form } from '@e-coop-monorepo/ui/core'
-import FormFieldWrapper from '@e-coop-monorepo/ui/core'
-import ImageField from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import InputDate from '@e-coop-monorepo/ui/core'
-import SignatureField from '@e-coop-monorepo/ui/core'
+import type { IMedia } from '@ecoop/modules/media'
+import { withToastCallbacks } from '@ecoop/shared/helpers'
+import { toInputDateString } from '@ecoop/shared/helpers'
+import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
+import { useFormHelper } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps, IForm, TEntityId } from '@ecoop/shared/types'
+import RelationshipCombobox from '@ecoop/ui/core'
+import FormFooterResetSubmit from '@ecoop/ui/core'
+import type { IModalProps } from '@ecoop/ui/core'
+import Modal from '@ecoop/ui/core'
+import TextEditor from '@ecoop/ui/core'
+import { Form } from '@ecoop/ui/core'
+import FormFieldWrapper from '@ecoop/ui/core'
+import ImageField from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import InputDate from '@ecoop/ui/core'
+import SignatureField from '@ecoop/ui/core'
 
 import {
     useCreateMemberJointAccount,

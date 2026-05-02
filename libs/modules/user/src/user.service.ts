@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMedia } from '@ecoop/modules/media'
+import { Logger } from '@ecoop/shared/helpers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IUserBase } from './user.types'
 

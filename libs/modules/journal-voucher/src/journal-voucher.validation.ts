@@ -1,11 +1,11 @@
 import z from 'zod'
 
-import { JournalVoucherEntrySchema } from '@e-coop-monorepo/modules/journal-voucher-entry'
+import { JournalVoucherEntrySchema } from '@ecoop/modules/journal-voucher-entry'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const JournalVoucherSchema = z.object({
     id: z.string().optional(),

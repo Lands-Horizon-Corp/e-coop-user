@@ -3,7 +3,7 @@
 import type React from 'react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 
 interface FlowingGridProps extends React.HTMLAttributes<HTMLDivElement> {
     squareSize?: number

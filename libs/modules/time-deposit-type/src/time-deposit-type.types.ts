@@ -1,11 +1,11 @@
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { ITimeDepositComputation } from '@e-coop-monorepo/modules/time-deposit-computation'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { ITimeDepositComputation } from '@ecoop/modules/time-deposit-computation'
 import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type {
     TTimeDepositTypeCreateSchema,

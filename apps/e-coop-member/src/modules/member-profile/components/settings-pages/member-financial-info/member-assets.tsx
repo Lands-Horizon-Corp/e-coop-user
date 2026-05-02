@@ -5,12 +5,12 @@ import { toast } from 'sonner'
 import type {
     IMemberAsset,
     IMemberProfile,
-} from '@e-coop-monorepo/modules/member-profile'
-import { useDeleteMemberProfileAsset } from '@e-coop-monorepo/modules/member-profile'
-import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import { formatNumber } from '@e-coop-monorepo/shared/helpers'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import useConfirmModalStore from '@e-coop-monorepo/shared/store'
+} from '@ecoop/modules/member-profile'
+import { useDeleteMemberProfileAsset } from '@ecoop/modules/member-profile'
+import { toReadableDate } from '@ecoop/shared/helpers'
+import { formatNumber } from '@ecoop/shared/helpers'
+import { useModalState } from '@ecoop/shared/hooks'
+import useConfirmModalStore from '@ecoop/shared/store'
 import {
     CalendarDotsIcon,
     MoneyIcon,
@@ -18,12 +18,12 @@ import {
     PlusIcon,
     TrashIcon,
     WoodSignsIcon,
-} from '@e-coop-monorepo/ui/core'
-import ImageDisplay from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
-import TextRenderer from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Separator } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import ImageDisplay from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
+import TextRenderer from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Separator } from '@ecoop/ui/core'
 
 import { MemberAssetCreateUpdateFormModal } from '../../forms/member-asset-create-update-form'
 import EmptyListIndicator from '../empty-list-indicator'

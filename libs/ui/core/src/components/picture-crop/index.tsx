@@ -4,10 +4,10 @@ import type { Area } from 'react-easy-crop'
 import Cropper from 'react-easy-crop'
 import { toast } from 'sonner'
 
-import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
-import { getCroppedImg } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import { withCatchAsync } from '@ecoop/shared/helpers'
+import { getCroppedImg } from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
 import {
     FlipHorizontalIcon,
     FlipHorizontalLineIcon,
@@ -19,11 +19,11 @@ import {
     RotateBoxRightIcon,
     ZoomInIcon,
     ZoomOutIcon,
-} from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
-import ActionTooltip from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Slider } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
+import ActionTooltip from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Slider } from '@ecoop/ui/core'
 
 interface Props extends IClassProps {
     image: string

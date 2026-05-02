@@ -1,8 +1,8 @@
-import { useGetAllBranches } from '@e-coop-monorepo/modules/branch'
+import { useGetAllBranches } from '@ecoop/modules/branch'
 import {
     useGetAllOrganizations,
     useGetAllOrganizationsExplore,
-} from '@e-coop-monorepo/modules/organization'
+} from '@ecoop/modules/organization'
 
 const useExploreData = () => {
     const {

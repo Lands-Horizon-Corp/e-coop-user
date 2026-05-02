@@ -1,10 +1,10 @@
 import z from 'zod'
 
-import { AccountTransactionEntrySchema } from '@e-coop-monorepo/modules/account-transaction-entry'
+import { AccountTransactionEntrySchema } from '@ecoop/modules/account-transaction-entry'
 import {
     entityIdSchema,
     stringDateWithTransformSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const AccountTransactionSchema = z.object({
     id: entityIdSchema.optional(),

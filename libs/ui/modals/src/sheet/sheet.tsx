@@ -2,16 +2,16 @@ import { type ReactNode } from 'react'
 
 import type * as SheetPrimitive from '@radix-ui/react-dialog'
 
-// import { SHORTCUT_SCOPES } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps, IClassProps } from '@e-coop-monorepo/shared/types'
-import { Separator } from '@e-coop-monorepo/ui/core'
+// import { SHORTCUT_SCOPES } from '@ecoop/shared/constants'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps, IClassProps } from '@ecoop/shared/types'
+import { Separator } from '@ecoop/ui/core'
 import {
     Sheet,
     SheetContent,
     SheetDescription,
     SheetTitle,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 // import GeneralShortcutsWrapper from '../shorcuts/general-shortcuts-wrapper'
 

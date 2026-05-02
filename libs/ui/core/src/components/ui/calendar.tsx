@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Button, buttonVariants } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Button, buttonVariants } from '@ecoop/ui/core'
 import {
     ChevronDownIcon,
     ChevronLeftIcon,

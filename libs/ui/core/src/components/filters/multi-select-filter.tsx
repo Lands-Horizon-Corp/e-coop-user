@@ -1,5 +1,5 @@
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Button } from '@ecoop/ui/core'
 import {
     Command,
     CommandEmpty,
@@ -7,7 +7,7 @@ import {
     CommandInput,
     CommandItem,
     CommandList,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import { CheckIcon } from '../icons/index'
 

@@ -1,6 +1,6 @@
-import { Particles } from '@e-coop-monorepo/ui/core'
-import { Badge } from '@e-coop-monorepo/ui/core'
-import { Card } from '@e-coop-monorepo/ui/core'
+import { Particles } from '@ecoop/ui/core'
+import { Badge } from '@ecoop/ui/core'
+import { Card } from '@ecoop/ui/core'
 import { CheckCircle2 } from 'lucide-react'
 
 import { CoopBackground } from '../components/coop-bg'

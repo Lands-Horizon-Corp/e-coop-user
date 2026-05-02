@@ -1,11 +1,11 @@
-import type { feedBaseKey } from '@e-coop-monorepo/modules/feed'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
+import type { feedBaseKey } from '@ecoop/modules/feed'
+import { Logger } from '@ecoop/shared/helpers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IFeedComment, IFeedCommentRequest } from '../feed-comment'
 

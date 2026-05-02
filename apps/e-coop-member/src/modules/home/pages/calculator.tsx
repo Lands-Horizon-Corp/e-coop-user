@@ -3,25 +3,25 @@
 import type React from 'react'
 import { useState } from 'react'
 
-import { FlickeringGrid } from '@e-coop-monorepo/ui/core'
-import { Particles } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { FlickeringGrid } from '@ecoop/ui/core'
+import { Particles } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Card,
     CardContent,
     CardDescription,
     CardHeader,
     CardTitle,
-} from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import { Label } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import { Label } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import {
     Calendar,
     DollarSign,

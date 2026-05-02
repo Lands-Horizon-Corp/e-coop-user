@@ -5,21 +5,17 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { useFormHelper } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type {
-    IClassProps,
-    IForm,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
-import FormFooterResetSubmit from '@e-coop-monorepo/ui/core'
-import MapPicker from '@e-coop-monorepo/ui/core'
-import type { IModalProps } from '@e-coop-monorepo/ui/core'
-import Modal from '@e-coop-monorepo/ui/core'
-import { Form } from '@e-coop-monorepo/ui/core'
-import FormFieldWrapper from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
-import { Textarea } from '@e-coop-monorepo/ui/core'
+import { useFormHelper } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps, IForm, TEntityId } from '@ecoop/shared/types'
+import FormFooterResetSubmit from '@ecoop/ui/core'
+import MapPicker from '@ecoop/ui/core'
+import type { IModalProps } from '@ecoop/ui/core'
+import Modal from '@ecoop/ui/core'
+import { Form } from '@ecoop/ui/core'
+import FormFieldWrapper from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
+import { Textarea } from '@ecoop/ui/core'
 
 import type { IMemberAddressRequest } from '../../member-profile.types'
 import { MemberAddressSchema } from '../../member-profile.validation'

@@ -1,4 +1,4 @@
-import type { TMemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
+import type { TMemberAddressSchema } from '@ecoop/modules/member-address'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
@@ -6,7 +6,7 @@ import type {
     TCivilStatus,
     TEntityId,
     TGeneralStatus,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { IMemberCenter } from './components/comboboxes/member-center-combobox'
 import type { IMemberClassification } from './components/comboboxes/member-classification-combobox'

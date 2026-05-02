@@ -4,15 +4,15 @@ import type {
     TSearchFilter,
 } from '@/contexts/filter-context'
 import { filterModeMap, useFilter } from '@/contexts/filter-context'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { DebouncedInput } from '@e-coop-monorepo/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { DebouncedInput } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import NumberRange from './number-range'
 

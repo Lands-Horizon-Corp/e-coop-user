@@ -1,11 +1,11 @@
 import z from 'zod'
 
-import { LOAN_MODE_OF_PAYMENT } from '@e-coop-monorepo/modules/loan-transaction'
+import { LOAN_MODE_OF_PAYMENT } from '@ecoop/modules/loan-transaction'
 import {
     EntityIdSchema,
     PercentageSchema,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const ChargesRateByTermSchema = z.object({
     id: EntityIdSchema('Charges Rate By Term id is invalid').optional(),

@@ -1,9 +1,9 @@
 import type z from 'zod'
 
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { TRelationship } from '@e-coop-monorepo/modules/member-relative-account'
-import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { TRelationship } from '@ecoop/modules/member-relative-account'
+import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { MemberJointAccountSchema } from './member-joint-account.validation'
 

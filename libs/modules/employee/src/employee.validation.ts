@@ -4,7 +4,7 @@ import {
     EntityIdSchema,
     emailSchema,
     stringDateWithTransformSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const EmployeeCreateSchema = z
     .object({

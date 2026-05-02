@@ -3,8 +3,8 @@ import {
     SOKETI_HOST,
     SOKETI_KEY,
     SOKETI_PORT,
-} from '@e-coop-monorepo/shared/constants'
-import logger from '@e-coop-monorepo/shared/helpers'
+} from '@ecoop/shared/constants'
+import logger from '@ecoop/shared/helpers'
 import Pusher, { type Options } from 'pusher-js'
 import { create } from 'zustand'
 

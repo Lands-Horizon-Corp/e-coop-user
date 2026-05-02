@@ -1,7 +1,7 @@
 import type { UseNavigateResult } from '@tanstack/react-router'
 
-import type { ICategory } from '@e-coop-monorepo/modules/category'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { ICategory } from '@ecoop/modules/category'
+import type { TEntityId } from '@ecoop/shared/types'
 import { create } from 'zustand'
 
 export interface CategoryDataStore {

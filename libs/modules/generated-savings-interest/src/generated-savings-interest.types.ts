@@ -1,12 +1,12 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IGeneratedSavingsInterestEntry } from '@e-coop-monorepo/modules/generated-savings-interest-entry'
-import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IGeneratedSavingsInterestEntry } from '@ecoop/modules/generated-savings-interest-entry'
+import type { IMemberType } from '@ecoop/modules/member-type'
+import type { IUserBase } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constant'
 import type {

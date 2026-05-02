@@ -1,15 +1,12 @@
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IOrganization } from '@ecoop/modules/organization'
 import type {
     GetCrudPermissionOpts,
     IHasPermissionOpts,
-} from '@e-coop-monorepo/modules/permission'
-import {
-    getCrudPermissions,
-    hasPermission,
-} from '@e-coop-monorepo/modules/permission'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
-import type { IUserOrganization } from '@e-coop-monorepo/modules/user-organization'
+} from '@ecoop/modules/permission'
+import { getCrudPermissions, hasPermission } from '@ecoop/modules/permission'
+import type { IUserBase } from '@ecoop/modules/user'
+import type { IUserOrganization } from '@ecoop/modules/user-organization'
 import { create } from 'zustand'
 
 import type { IAuthContext } from './authentication.types'

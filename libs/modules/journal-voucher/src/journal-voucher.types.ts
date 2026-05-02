@@ -1,18 +1,18 @@
-import type { IJournalVoucherORSettings } from '@e-coop-monorepo/modules/branch-settings'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
+import type { IJournalVoucherORSettings } from '@ecoop/modules/branch-settings'
+import type { ICurrency } from '@ecoop/modules/currency'
 import type {
     IJournalVoucherEntry,
     IJournalVoucherEntryRequest,
-} from '@e-coop-monorepo/modules/journal-voucher-entry'
-import type { IJournalVoucherTag } from '@e-coop-monorepo/modules/journal-voucher-tag'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IUser } from '@e-coop-monorepo/modules/user'
-import type { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
+} from '@ecoop/modules/journal-voucher-entry'
+import type { IJournalVoucherTag } from '@ecoop/modules/journal-voucher-tag'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IUser } from '@ecoop/modules/user'
+import type { IUserOrganizationSettings } from '@ecoop/modules/user-organization'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IJournalVoucher extends IBaseEntityMeta {
     cash_voucher_number: string

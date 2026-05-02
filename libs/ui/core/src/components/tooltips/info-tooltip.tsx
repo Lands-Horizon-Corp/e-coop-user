@@ -1,13 +1,13 @@
 import * as React from 'react'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     Tooltip,
     TooltipContent,
     TooltipPortal,
     TooltipProvider,
     TooltipTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import { InfoIcon } from '../icons/index'
 

@@ -1,13 +1,13 @@
 import type z from 'zod'
 
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IBrowseReference } from '@e-coop-monorepo/modules/browse-reference'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IBrowseReference } from '@ecoop/modules/browse-reference'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { MemberTypeSchema } from './member-type.validation'
 

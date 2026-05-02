@@ -1,9 +1,9 @@
 import type z from 'zod'
 
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { MemberAssetSchema } from './member-asset-validation'
 

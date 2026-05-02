@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-import LoanCalculator from '@e-coop-monorepo/modules/home/pages/calculator'
+import LoanCalculator from '@ecoop/modules/home/pages/calculator'
 
 export const Route = createFileRoute('/(landing)/calculator')({
     component: RouteComponent,

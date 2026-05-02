@@ -6,22 +6,20 @@ import qs from 'query-string'
 import {
     MemberOccupationAPI,
     useGetPaginated,
-} from '@e-coop-monorepo/modules/member-occupation'
-import type { IMemberOccupation } from '@e-coop-monorepo/modules/member-occupation'
-import FilterContext from '@e-coop-monorepo/shared/contexts'
-import useDatableFilterState from '@e-coop-monorepo/shared/hooks'
-import { usePagination } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import DataTable from '@e-coop-monorepo/ui/core'
-import DataTablePagination from '@e-coop-monorepo/ui/core'
-import type { IDataTableToolbarProps } from '@e-coop-monorepo/ui/core'
-import DataTableToolbar from '@e-coop-monorepo/ui/core'
-import { TableRowActionStoreProvider } from '@e-coop-monorepo/ui/core'
-import type { TableProps } from '@e-coop-monorepo/ui/core'
-import { useDataTableSorting } from '@e-coop-monorepo/ui/core'
-import useDataTableState, {
-    useResolvedColumnOrder,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/modules/member-occupation'
+import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+import FilterContext from '@ecoop/shared/contexts'
+import useDatableFilterState from '@ecoop/shared/hooks'
+import { usePagination } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import DataTable from '@ecoop/ui/core'
+import DataTablePagination from '@ecoop/ui/core'
+import type { IDataTableToolbarProps } from '@ecoop/ui/core'
+import DataTableToolbar from '@ecoop/ui/core'
+import { TableRowActionStoreProvider } from '@ecoop/ui/core'
+import type { TableProps } from '@ecoop/ui/core'
+import { useDataTableSorting } from '@ecoop/ui/core'
+import useDataTableState, { useResolvedColumnOrder } from '@ecoop/ui/core'
 import {
     getCoreRowModel,
     getSortedRowModel,

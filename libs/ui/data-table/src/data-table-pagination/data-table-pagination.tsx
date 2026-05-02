@@ -1,19 +1,19 @@
-import { PAGE_SIZES_DENSE } from '@e-coop-monorepo/shared/constants'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { PAGE_SIZES_DENSE } from '@ecoop/shared/constants'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
     ChevronsLeftIcon,
     ChevronsRightIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { Table } from '@tanstack/react-table'
 
 interface DataTablePaginationProps<TData> {

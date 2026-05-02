@@ -1,6 +1,6 @@
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-// import { Logger } from '@e-coop-monorepo/shared/helpers'
+// import { Logger } from '@ecoop/shared/helpers'
 
 import type { IOrganization, IOrganizationRequest } from './organization.types'
 

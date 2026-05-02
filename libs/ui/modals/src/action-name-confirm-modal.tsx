@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-import { compareIgnoreCase } from '@e-coop-monorepo/modules/timesheet'
-import type { IModalProps } from '@e-coop-monorepo/ui/core'
-import type { ButtonVariantType } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import { Input } from '@e-coop-monorepo/ui/core'
+import { compareIgnoreCase } from '@ecoop/modules/timesheet'
+import type { IModalProps } from '@ecoop/ui/core'
+import type { ButtonVariantType } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Input } from '@ecoop/ui/core'
 import { AlertCircle, CheckCircle2 } from 'lucide-react'
 
 import { Modal } from './modal'

@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 
-import type { IBranch } from '@e-coop-monorepo/modules/branch'
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
+import type { IBranch } from '@ecoop/modules/branch'
+import type { IOrganization } from '@ecoop/modules/organization'
 
 import { filterBranches, filterOrganizations } from '../utils/data-filters'
 import { sortBranches, sortOrganizations } from '../utils/sorting'

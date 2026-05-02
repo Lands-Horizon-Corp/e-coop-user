@@ -1,8 +1,8 @@
 import { Outlet } from '@tanstack/react-router'
 import { createFileRoute } from '@tanstack/react-router'
 
-import LandingFooter from '@e-coop-monorepo/modules/home/pages/footer'
-import LandingNav from '@e-coop-monorepo/ui/core'
+import LandingFooter from '@ecoop/modules/home/pages/footer'
+import LandingNav from '@ecoop/ui/core'
 
 const PublicLayout = () => {
     return (

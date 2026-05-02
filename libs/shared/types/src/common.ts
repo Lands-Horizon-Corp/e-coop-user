@@ -1,7 +1,4 @@
-import type {
-    CIVIL_STATUS,
-    GENERAL_STATUS,
-} from '@e-coop-monorepo/shared/constants'
+import type { CIVIL_STATUS, GENERAL_STATUS } from '@ecoop/shared/constants'
 
 export type TEntityId = string
 

@@ -4,7 +4,7 @@ import * as ImagePreviewPrimitive from '@radix-ui/react-dialog'
 
 import { cn } from '@/helpers'
 import { useImagePreview } from '@/store/image-preview-store'
-import type { DownloadProps } from '@e-coop-monorepo/shared/types'
+import type { DownloadProps } from '@ecoop/shared/types'
 
 import { XIcon } from '../icons/index'
 import type { CarouselApi } from '../ui/carousel'

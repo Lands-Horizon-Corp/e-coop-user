@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { GOOGLE_MAPS_API_KEY } from '@e-coop-monorepo/shared/constants'
+import { GOOGLE_MAPS_API_KEY } from '@ecoop/shared/constants'
 import { LoadScript } from '@react-google-maps/api'
 
 type MapProviderState = {

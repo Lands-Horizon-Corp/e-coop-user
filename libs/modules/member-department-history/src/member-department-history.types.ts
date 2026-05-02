@@ -1,10 +1,10 @@
-import type { IMemberDepartment } from '@e-coop-monorepo/modules/member-department'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
+import type { IMemberDepartment } from '@ecoop/modules/member-department'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IMemberDepartmentHistoryRequest {
     member_department_id: TEntityId

@@ -1,20 +1,20 @@
 // import { useState } from 'react'
 
-// import { cn } from '@e-coop-monorepo/shared/tw-utils'
-// import { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-// import MemberPicker from '@e-coop-monorepo/modules/member-profile/components/member-picker'
-// import { IQRMemberProfileDecodedResult } from '@e-coop-monorepo/modules/qr-crypto'
+// import { cn } from '@ecoop/shared/tw-utils'
+// import { IMemberProfile } from '@ecoop/modules/member-profile'
+// import MemberPicker from '@ecoop/modules/member-profile/components/member-picker'
+// import { IQRMemberProfileDecodedResult } from '@ecoop/modules/qr-crypto'
 // import {
 //     TransactionMemberProfile,
 //     TransactionViewNoMemberSelected,
-// } from '@e-coop-monorepo/modules/transaction'
-// import { IPickerBaseProps } from '@e-coop-monorepo/shared/types'
+// } from '@ecoop/modules/transaction'
+// import { IPickerBaseProps } from '@ecoop/shared/types'
 // import { EyeIcon, ScanLineIcon } from 'lucide-react'
 // import { useHotkeys } from 'react-hotkeys-hook'
 
-// import QrCodeScanner from '@e-coop-monorepo/ui/core'
-// import LoadingSpinner from '@e-coop-monorepo/ui/core'
-// import { Button } from '@e-coop-monorepo/ui/core'
+// import QrCodeScanner from '@ecoop/ui/core'
+// import LoadingSpinner from '@ecoop/ui/core'
+// import { Button } from '@ecoop/ui/core'
 
 // interface MemberProfilePickerWithScannerProps extends Partial<
 //     IPickerBaseProps<IMemberProfile>

@@ -1,9 +1,6 @@
 import z from 'zod'
 
-import {
-    PercentageSchema,
-    entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+import { PercentageSchema, entityIdSchema } from '@ecoop/shared/validation'
 
 export const ChargesRateSchemeModeOfPaymentSchema = z
     .object({

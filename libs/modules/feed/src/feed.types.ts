@@ -1,12 +1,9 @@
 import type z from 'zod'
 
-import type { IFeedComment } from '@e-coop-monorepo/modules/feed-comment'
-import type { IFeedLike } from '@e-coop-monorepo/modules/feed-like'
-import type { IFeedMedia } from '@e-coop-monorepo/modules/feed-media'
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
+import type { IFeedComment } from '@ecoop/modules/feed-comment'
+import type { IFeedLike } from '@ecoop/modules/feed-like'
+import type { IFeedMedia } from '@ecoop/modules/feed-media'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { FeedSchema } from './feed.validation'
 

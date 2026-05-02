@@ -1,7 +1,7 @@
 import { useRouter } from '@tanstack/react-router'
 
-import { ChevronLeftIcon, ChevronRightIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import { ChevronLeftIcon, ChevronRightIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 
 import ActionTooltip from '../tooltips/action-tooltip'
 

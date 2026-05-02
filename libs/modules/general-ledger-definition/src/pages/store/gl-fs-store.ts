@@ -1,8 +1,8 @@
 import { toast } from 'sonner'
 
 import { arrayMove } from '@dnd-kit/sortable'
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { UpdateAccountOrder } from '@e-coop-monorepo/shared/types'
+import type { IAccount } from '@ecoop/modules/account'
+import type { UpdateAccountOrder } from '@ecoop/shared/types'
 import { create } from 'zustand'
 
 import type { IGeneralLedgerDefinition } from '../../general-ledger-definition.types'

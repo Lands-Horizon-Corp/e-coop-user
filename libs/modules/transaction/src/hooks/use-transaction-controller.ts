@@ -6,12 +6,12 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { useAuthUserWithOrgBranch } from '@e-coop-monorepo/modules/authentication/authgentication.store'
-import { useTransactionBatchStore } from '@e-coop-monorepo/modules/transaction-batch/store/transaction-batch-store'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { useQeueryHookCallback } from '@e-coop-monorepo/shared/hooks'
-import { useTransactionReverseSecurityStore } from '@e-coop-monorepo/shared/store'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication/authgentication.store'
+import { useTransactionBatchStore } from '@ecoop/modules/transaction-batch/store/transaction-batch-store'
+import { useModalState } from '@ecoop/shared/hooks'
+import { useQeueryHookCallback } from '@ecoop/shared/hooks'
+import { useTransactionReverseSecurityStore } from '@ecoop/shared/store'
+import type { TEntityId } from '@ecoop/shared/types'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useGetTransactionById } from '../transaction.service'

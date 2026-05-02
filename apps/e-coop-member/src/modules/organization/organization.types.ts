@@ -1,13 +1,9 @@
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IOrganizationCategory } from '@e-coop-monorepo/modules/organization-category'
-import type { IOrganizationMedia } from '@e-coop-monorepo/modules/organization-media'
-import type { ISubscriptionPlan } from '@e-coop-monorepo/modules/subscription-plan'
-import type {
-    IAuditable,
-    ITimeStamps,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IOrganizationCategory } from '@ecoop/modules/organization-category'
+import type { IOrganizationMedia } from '@ecoop/modules/organization-media'
+import type { ISubscriptionPlan } from '@ecoop/modules/subscription-plan'
+import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 // import { IUserOrganization } from '../user-organization'
 import type {

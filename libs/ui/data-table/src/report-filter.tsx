@@ -4,32 +4,23 @@ import type {
     TFilterLogic,
     TFilterPayload,
     TFinalFilter,
-} from '@e-coop-monorepo/shared/contexts'
-import type { IColumnReportFilter } from '@e-coop-monorepo/shared/helpers'
-import { ArrowDownIcon, ArrowUpIcon, SortIcon } from '@e-coop-monorepo/ui/core'
-import { InfoTooltip } from '@e-coop-monorepo/ui/core'
-import { Badge } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import {
-    Card,
-    CardContent,
-    CardHeader,
-    CardTitle,
-} from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/shared/contexts'
+import type { IColumnReportFilter } from '@ecoop/shared/helpers'
+import { ArrowDownIcon, ArrowUpIcon, SortIcon } from '@ecoop/ui/core'
+import { InfoTooltip } from '@ecoop/ui/core'
+import { Badge } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Card, CardContent, CardHeader, CardTitle } from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 import {
     Select,
     SelectContent,
     SelectItem,
     SelectTrigger,
     SelectValue,
-} from '@e-coop-monorepo/ui/core'
-import { useGeneratedReportFilter } from '@e-coop-monorepo/ui/core'
-import { FilterRule } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { useGeneratedReportFilter } from '@ecoop/ui/core'
+import { FilterRule } from '@ecoop/ui/core'
 import { Check, Copy, Plus, X } from 'lucide-react'
 
 interface FilterBuilderUIProps {

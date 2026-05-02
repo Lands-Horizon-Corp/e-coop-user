@@ -1,6 +1,6 @@
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
+import type { IMedia } from '@ecoop/modules/media'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IClassProps } from '@ecoop/shared/types'
 import {
     BookOpenIcon,
     CodeFileFillIcon,
@@ -15,7 +15,7 @@ import {
     SpreadSheetFileIcon,
     TextFileFillIcon,
     VideoFileFillIcon,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { IconType } from 'react-icons/lib'
 
 import { getFileCategory, getFileInfo } from '../'

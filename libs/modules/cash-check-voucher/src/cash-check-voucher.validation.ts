@@ -1,11 +1,11 @@
 import z from 'zod'
 
-import { CashCheckVoucherEntrySchema } from '@e-coop-monorepo/modules/cash-check-voucher-entry'
+import { CashCheckVoucherEntrySchema } from '@ecoop/modules/cash-check-voucher-entry'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
-} from '@e-coop-monorepo/shared/validation'
-import { entityIdSchema } from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
+import { entityIdSchema } from '@ecoop/shared/validation'
 
 export const CashCheckVoucherSchema = z.object({
     id: z.string().optional(),

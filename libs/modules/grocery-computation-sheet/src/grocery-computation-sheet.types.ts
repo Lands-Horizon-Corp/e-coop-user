@@ -3,7 +3,7 @@ import type {
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IGroceryComputationSheetRequest {
     scheme_number: number

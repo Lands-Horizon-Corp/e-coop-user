@@ -1,7 +1,7 @@
 import { cn } from '@/helpers'
-import NavProfileMenu from '@e-coop-monorepo/modules/user-profile'
-import type { IClassProps } from '@e-coop-monorepo/shared/types'
-import AppSidebarToggle from '@e-coop-monorepo/ui/core'
+import NavProfileMenu from '@ecoop/modules/user-profile'
+import type { IClassProps } from '@ecoop/shared/types'
+import AppSidebarToggle from '@ecoop/ui/core'
 
 import NavEcoopLogo from '../nav-components/nav-ecoop-logo'
 import NavThemeToggle from '../nav-components/nav-theme-toggle'

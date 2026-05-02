@@ -1,7 +1,7 @@
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import { createMutationFactory } from '@e-coop-monorepo/shared/repositories'
+import type { IUserBase } from '@ecoop/modules/user'
+import { Logger } from '@ecoop/shared/helpers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
 
 import type {
     IUserProfileGeneralRequest,

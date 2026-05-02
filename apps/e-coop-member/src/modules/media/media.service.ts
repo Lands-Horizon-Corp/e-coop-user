@@ -1,10 +1,10 @@
 import { useMutation } from '@tanstack/react-query'
 import type { AxiosProgressEvent } from 'axios'
 
-import { imageCompressed } from '@e-coop-monorepo/shared/helpers'
-import type { HookMutationOptions } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import { imageCompressed } from '@ecoop/shared/helpers'
+import type { HookMutationOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IMedia } from './media.types'
 

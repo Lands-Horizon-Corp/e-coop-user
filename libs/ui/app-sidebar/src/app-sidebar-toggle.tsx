@@ -1,4 +1,4 @@
-import { SidebarLeftIcon, SidebarLeftOpenIcon } from '@e-coop-monorepo/ui/core'
+import { SidebarLeftIcon, SidebarLeftOpenIcon } from '@ecoop/ui/core'
 
 import { Button } from '../button'
 import { useSidebar } from '../sidebar'

@@ -3,7 +3,7 @@ import z from 'zod'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 export const PaymentTypeSchema = z.object({
     name: z.string().min(1, 'Payment type name is required'),

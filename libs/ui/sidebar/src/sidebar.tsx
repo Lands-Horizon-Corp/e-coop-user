@@ -4,21 +4,17 @@ import * as React from 'react'
 
 import { mergeProps } from '@base-ui/react/merge-props'
 import { useRender } from '@base-ui/react/use-render'
-import { useIsMobile } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { Button, Input, Separator, Skeleton } from '@e-coop-monorepo/ui/core'
+import { useIsMobile } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import { Button, Input, Separator, Skeleton } from '@ecoop/ui/core'
 import {
     Sheet,
     SheetContent,
     SheetDescription,
     SheetHeader,
     SheetTitle,
-} from '@e-coop-monorepo/ui/core'
-import {
-    Tooltip,
-    TooltipContent,
-    TooltipTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@ecoop/ui/core'
 import { type VariantProps, cva } from 'class-variance-authority'
 import { PanelLeftIcon } from 'lucide-react'
 

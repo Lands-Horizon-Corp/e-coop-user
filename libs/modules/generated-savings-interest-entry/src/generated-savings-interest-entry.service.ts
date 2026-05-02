@@ -3,16 +3,16 @@ import { useQuery } from '@tanstack/react-query'
 import {
     createGeneratedSavingsInterest,
     generatedSavingsInterestBaseKey,
-} from '@e-coop-monorepo/modules/generated-savings-interest'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
-import type { HookQueryOptions } from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
+} from '@ecoop/modules/generated-savings-interest'
+import { Logger } from '@ecoop/shared/helpers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type {
     IGeneratedSavingsInterestEntry,

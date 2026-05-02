@@ -1,11 +1,11 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IChargesRateScheme } from '@e-coop-monorepo/modules/charges-rate-scheme'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IChargesRateScheme } from '@ecoop/modules/charges-rate-scheme'
 import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IChargesRateSchemeAccountRequest {
     charges_rate_scheme_id: TEntityId

@@ -1,10 +1,10 @@
-import type { IGeneralLedgerDefinition } from '@e-coop-monorepo/modules/general-ledger-definition'
+import type { IGeneralLedgerDefinition } from '@ecoop/modules/general-ledger-definition'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export type TAccountingPrincipleType = 'positive' | 'negative'
 

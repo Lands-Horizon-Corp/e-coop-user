@@ -1,8 +1,4 @@
-import type {
-    IAuditable,
-    ITimeStamps,
-    TEntityId,
-} from '@e-coop-monorepo/shared/types'
+import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IMedia extends ITimeStamps, IAuditable {
     id: TEntityId

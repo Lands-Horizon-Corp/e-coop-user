@@ -1,23 +1,23 @@
-import type { TDownloadMediaProp } from '@e-coop-monorepo/modules/media'
+import type { TDownloadMediaProp } from '@ecoop/modules/media'
 import {
     downloadMedia,
     formatBytes,
     getFileCategory,
     getFileInfo,
-} from '@e-coop-monorepo/modules/media'
-import MediaResourceFileIcon from '@e-coop-monorepo/modules/media/components/media-resource-file-icon'
-import { toReadableDateTime } from '@e-coop-monorepo/shared/helpers'
+} from '@ecoop/modules/media'
+import MediaResourceFileIcon from '@ecoop/modules/media/components/media-resource-file-icon'
+import { toReadableDateTime } from '@ecoop/shared/helpers'
 import {
     CalendarIcon,
     DownloadIcon,
     HardDriveIcon,
     TrashIcon,
-} from '@e-coop-monorepo/ui/core'
-import ImageDisplay from '@e-coop-monorepo/ui/core'
-import ActionTooltip from '@e-coop-monorepo/ui/core'
-import { AspectRatio } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import PreviewMediaWrapper from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import ImageDisplay from '@ecoop/ui/core'
+import ActionTooltip from '@ecoop/ui/core'
+import { AspectRatio } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import PreviewMediaWrapper from '@ecoop/ui/core'
 
 import type { IMemberProfileArchive } from '../member-profile-archive.types'
 

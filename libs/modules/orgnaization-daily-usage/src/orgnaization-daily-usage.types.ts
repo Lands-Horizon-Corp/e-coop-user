@@ -1,5 +1,5 @@
-import type { IOrganization } from '@e-coop-monorepo/modules/organization'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IOrganization } from '@ecoop/modules/organization'
+import type { TEntityId } from '@ecoop/shared/types'
 
 export interface IOrganizationDailyUsageRequest {
     id?: TEntityId

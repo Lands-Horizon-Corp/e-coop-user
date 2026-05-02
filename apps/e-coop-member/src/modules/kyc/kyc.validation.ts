@@ -1,12 +1,12 @@
 import z from 'zod'
 
-import { MemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
-import { MemberGovernmentBenefitSchema } from '@e-coop-monorepo/modules/member-government-benefit'
+import { MemberAddressSchema } from '@ecoop/modules/member-address'
+import { MemberGovernmentBenefitSchema } from '@ecoop/modules/member-government-benefit'
 import {
     EntityIdSchema,
     civilStatusSchema,
     stringDateSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 import { isBefore, startOfDay } from 'date-fns'
 
 //\\//\\//\\//  BASE SCHEMAS //\\//\\//\\//

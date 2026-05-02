@@ -1,11 +1,11 @@
 import type z from 'zod'
 
-import type { IUser, TUserType } from '@e-coop-monorepo/modules/user'
+import type { IUser, TUserType } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { NOTIFICATION_TYPE } from './notification.constant'
 import type { NotificationSchema } from './notification.validation'

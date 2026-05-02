@@ -1,4 +1,4 @@
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
+import type { IBaseProps } from '@ecoop/shared/types'
 import {
     ArrowDownIcon,
     ArrowUpIcon,
@@ -7,8 +7,8 @@ import {
     PushPinIcon,
     PushPinSlashIcon,
     ResetIcon,
-} from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -17,7 +17,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { Column, Table } from '@tanstack/react-table'
 
 interface Props<TData, TValue> extends IBaseProps {

@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { MemberAddressSchema } from '@e-coop-monorepo/modules/member-address'
+import { MemberAddressSchema } from '@ecoop/modules/member-address'
 import {
     SexSchema,
     birthDateSchema,
@@ -18,7 +18,7 @@ import {
     permanentAddressSchema,
     stringDateSchema,
     userNameSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 import { isBefore, startOfDay } from 'date-fns'
 
 export const BaseMemberAccountSchema = z.object({

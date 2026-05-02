@@ -1,15 +1,15 @@
-import type { TModelName } from '@e-coop-monorepo/modules/generated-report'
-import { GeneratedReportCreateFormModal } from '@e-coop-monorepo/modules/generated-report'
-import type { TFinalFilter } from '@e-coop-monorepo/shared/contexts'
-import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import { useModalState } from '@e-coop-monorepo/shared/hooks'
-import { ReportsIcon } from '@e-coop-monorepo/ui/core'
-import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import type { TModelName } from '@ecoop/modules/generated-report'
+import { GeneratedReportCreateFormModal } from '@ecoop/modules/generated-report'
+import type { TFinalFilter } from '@ecoop/shared/contexts'
+import { toReadableDate } from '@ecoop/shared/helpers'
+import { useModalState } from '@ecoop/shared/hooks'
+import { ReportsIcon } from '@ecoop/ui/core'
+import { LoadingSpinner } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     GenerateReportFilterContext,
     useDataGenerateReportFilter,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import type { Table } from '@tanstack/react-table'
 import { useHotkeys } from 'react-hotkeys-hook'
 

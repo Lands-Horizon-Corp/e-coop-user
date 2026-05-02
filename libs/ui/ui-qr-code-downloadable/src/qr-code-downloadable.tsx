@@ -1,18 +1,18 @@
 import { useRef } from 'react'
 
-import type { UseDownloadOptions } from '@e-coop-monorepo/shared/hooks'
-import { useDownloadElement } from '@e-coop-monorepo/shared/hooks'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import { ChevronDownIcon, DownloadIcon } from '@e-coop-monorepo/ui/core'
-import LoadingSpinner from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
+import type { UseDownloadOptions } from '@ecoop/shared/hooks'
+import { useDownloadElement } from '@ecoop/shared/hooks'
+import { cn } from '@ecoop/shared/tw-utils'
+import { ChevronDownIcon, DownloadIcon } from '@ecoop/ui/core'
+import LoadingSpinner from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuLabel,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import type { IQrCodeProps } from './qr-code'
 import QrCode from './qr-code'

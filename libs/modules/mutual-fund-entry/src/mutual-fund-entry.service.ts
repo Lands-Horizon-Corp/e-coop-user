@@ -1,12 +1,12 @@
-import { mutualFundBaseKey } from '@e-coop-monorepo/modules/mutual-fund'
-import { Logger } from '@e-coop-monorepo/shared/helpers'
+import { mutualFundBaseKey } from '@ecoop/modules/mutual-fund'
+import { Logger } from '@ecoop/shared/helpers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
     updateMutationInvalidationFn,
-} from '@e-coop-monorepo/shared/repositories'
-import { createDataLayerFactory } from '@e-coop-monorepo/shared/repositories'
-import type { TEntityId } from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 import type {
     IMutualFundEntry,

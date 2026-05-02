@@ -1,6 +1,6 @@
 import { useRouter } from '@tanstack/react-router'
 
-import { useAuthStore } from '@e-coop-monorepo/modules/authentication/authgentication.store'
+import { useAuthStore } from '@ecoop/modules/authentication/authgentication.store'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export const useGetIntoBranch = () => {

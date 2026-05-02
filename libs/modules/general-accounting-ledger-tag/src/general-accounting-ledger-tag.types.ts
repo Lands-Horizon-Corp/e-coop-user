@@ -1,10 +1,10 @@
-import type { TTagCategory } from '@e-coop-monorepo/modules/tag-template'
+import type { TTagCategory } from '@ecoop/modules/tag-template'
 import type {
     IAuditable,
     IOrgBranchIdentity,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 export interface IGeneralLedgerTagRequest {
     general_ledger_id: TEntityId

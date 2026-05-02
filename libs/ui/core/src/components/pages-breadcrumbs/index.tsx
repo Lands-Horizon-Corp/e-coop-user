@@ -4,7 +4,7 @@ import { Fragment, useMemo } from 'react'
 
 import { Link, useRouterState } from '@tanstack/react-router'
 
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 import {
     Breadcrumb,
     BreadcrumbEllipsis,
@@ -13,13 +13,13 @@ import {
     BreadcrumbList,
     BreadcrumbPage,
     BreadcrumbSeparator,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 import { ChevronRightIcon, HomeFillIcon } from '../icons/index'
 import PageNavigator from './page-navigator'

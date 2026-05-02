@@ -1,16 +1,16 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { IMutualFundAdditionalMembers } from '@e-coop-monorepo/modules/mutual-fund-additional-members'
-import type { IMutualFundEntry } from '@e-coop-monorepo/modules/mutual-fund-entry'
-import type { IMutualFundTable } from '@e-coop-monorepo/modules/mutual-fund-table'
-import type { IUser } from '@e-coop-monorepo/modules/user'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMutualFundAdditionalMembers } from '@ecoop/modules/mutual-fund-additional-members'
+import type { IMutualFundEntry } from '@ecoop/modules/mutual-fund-entry'
+import type { IMutualFundTable } from '@ecoop/modules/mutual-fund-table'
+import type { IUser } from '@ecoop/modules/user'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
 import type {

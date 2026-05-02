@@ -1,36 +1,36 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { IAccountHistory } from '@e-coop-monorepo/modules/account-history'
+import type { IAccount } from '@ecoop/modules/account'
+import type { IAccountHistory } from '@ecoop/modules/account-history'
 import type {
     ICashCheckVoucherGeneralORSettings,
     ILoanVoucherORSettings,
-} from '@e-coop-monorepo/modules/branch-settings'
-import type { IComakerCollateral } from '@e-coop-monorepo/modules/comaker-collateral'
-import type { IComakerMemberProfile } from '@e-coop-monorepo/modules/comaker-member-profile'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IGeneralLedger } from '@e-coop-monorepo/modules/general-ledger'
-import type { ILoanAccount } from '@e-coop-monorepo/modules/loan-account'
-import type { ILoanAmortizationSchedule } from '@e-coop-monorepo/modules/loan-amortization-schedule'
-import type { ILoanClearanceAnalysis } from '@e-coop-monorepo/modules/loan-clearance-analysis'
-import type { ILoanClearanceAnalysisInstitution } from '@e-coop-monorepo/modules/loan-clearance-analysis-institution'
-import type { ILoanPurpose } from '@e-coop-monorepo/modules/loan-purpose'
-import type { ILoanStatus } from '@e-coop-monorepo/modules/loan-status'
-import type { ILoanTag } from '@e-coop-monorepo/modules/loan-tag'
-import type { ILoanTermsAndConditionAmountReceipt } from '@e-coop-monorepo/modules/loan-terms-and-condition-amount-receipt'
-import type { ILoanTermsAndConditionSuggestedPayment } from '@e-coop-monorepo/modules/loan-terms-and-condition-suggested-payment'
-import type { ILoanTransactionEntry } from '@e-coop-monorepo/modules/loan-transaction-entry'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { IMemberAccountingLedger } from '@e-coop-monorepo/modules/member-account-ledger'
-import type { IMemberProfile } from '@e-coop-monorepo/modules/member-profile'
-import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import type { IUser } from '@e-coop-monorepo/modules/user'
-import type { IUserOrganizationSettings } from '@e-coop-monorepo/modules/user-organization'
+} from '@ecoop/modules/branch-settings'
+import type { IComakerCollateral } from '@ecoop/modules/comaker-collateral'
+import type { IComakerMemberProfile } from '@ecoop/modules/comaker-member-profile'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IGeneralLedger } from '@ecoop/modules/general-ledger'
+import type { ILoanAccount } from '@ecoop/modules/loan-account'
+import type { ILoanAmortizationSchedule } from '@ecoop/modules/loan-amortization-schedule'
+import type { ILoanClearanceAnalysis } from '@ecoop/modules/loan-clearance-analysis'
+import type { ILoanClearanceAnalysisInstitution } from '@ecoop/modules/loan-clearance-analysis-institution'
+import type { ILoanPurpose } from '@ecoop/modules/loan-purpose'
+import type { ILoanStatus } from '@ecoop/modules/loan-status'
+import type { ILoanTag } from '@ecoop/modules/loan-tag'
+import type { ILoanTermsAndConditionAmountReceipt } from '@ecoop/modules/loan-terms-and-condition-amount-receipt'
+import type { ILoanTermsAndConditionSuggestedPayment } from '@ecoop/modules/loan-terms-and-condition-suggested-payment'
+import type { ILoanTransactionEntry } from '@ecoop/modules/loan-transaction-entry'
+import type { IMedia } from '@ecoop/modules/media'
+import type { IMemberAccountingLedger } from '@ecoop/modules/member-account-ledger'
+import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
+import type { IUser } from '@ecoop/modules/user'
+import type { IUserOrganizationSettings } from '@ecoop/modules/user-organization'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type {
     LoanEditTransactionSchema,

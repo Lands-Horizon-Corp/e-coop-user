@@ -1,9 +1,6 @@
 import type z from 'zod'
 
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { CashCheckVoucherTagSchema } from './cash-check-voucher-tag.validation'
 

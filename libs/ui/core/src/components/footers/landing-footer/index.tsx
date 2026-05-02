@@ -1,8 +1,8 @@
 // import { Link, useRouter } from '@tanstack/react-router'
 
-// // import { useAuthStore } from '@e-coop-monorepo/modules/authentication'
+// // import { useAuthStore } from '@ecoop/modules/authentication'
 
-// import EcoopLogo from '@e-coop-monorepo/ui/core'
+// import EcoopLogo from '@ecoop/ui/core'
 // import {
 //     DownloadIcon,
 //     EmailIcon,
@@ -11,10 +11,10 @@
 //     PinLocationIcon,
 //     TwitterIcon,
 //     YoutubeIcon,
-// } from '@e-coop-monorepo/ui/core'
-// import { Button } from '@e-coop-monorepo/ui/core'
+// } from '@ecoop/ui/core'
+// import { Button } from '@ecoop/ui/core'
 
-// import usePWA from '@e-coop-monorepo/shared/hooks'
+// import usePWA from '@ecoop/shared/hooks'
 
 // import {
 //     EMAIL,

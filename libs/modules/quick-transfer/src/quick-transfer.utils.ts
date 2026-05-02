@@ -2,8 +2,8 @@ import type {
     IBranchSettings,
     IDepositSetting,
     IWithdrawSetting,
-} from '@e-coop-monorepo/modules/branch-settings'
-import type { TORBuilderOptions } from '@e-coop-monorepo/modules/or-builder'
+} from '@ecoop/modules/branch-settings'
+import type { TORBuilderOptions } from '@ecoop/modules/or-builder'
 
 import type { TPaymentMode } from './quick-transfer.types'
 

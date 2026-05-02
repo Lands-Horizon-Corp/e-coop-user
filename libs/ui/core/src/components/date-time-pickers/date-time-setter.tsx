@@ -1,12 +1,8 @@
-import { toReadableDate } from '@e-coop-monorepo/shared/helpers'
-import { TimePicker } from '@e-coop-monorepo/ui/core'
-import { ClockIcon } from '@e-coop-monorepo/ui/core'
-import { Button } from '@e-coop-monorepo/ui/core'
-import {
-    Popover,
-    PopoverContent,
-    PopoverTrigger,
-} from '@e-coop-monorepo/ui/core'
+import { toReadableDate } from '@ecoop/shared/helpers'
+import { TimePicker } from '@ecoop/ui/core'
+import { ClockIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
+import { Popover, PopoverContent, PopoverTrigger } from '@ecoop/ui/core'
 
 interface Props {
     date: Date

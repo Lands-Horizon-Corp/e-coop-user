@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 
-import { useLiveMonitoringStore } from '@e-coop-monorepo/shared/store'
-import { usePusherStore } from '@e-coop-monorepo/shared/store'
+import { useLiveMonitoringStore } from '@ecoop/shared/store'
+import { usePusherStore } from '@ecoop/shared/store'
 
 export const usePusherConnect = (): void => {
     const initPusher = usePusherStore((state) => state.initPusher)

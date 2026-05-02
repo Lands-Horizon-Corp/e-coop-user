@@ -1,10 +1,7 @@
 import type z from 'zod'
 
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-} from '@e-coop-monorepo/shared/types'
-import type { TIcon } from '@e-coop-monorepo/ui/core'
+import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
+import type { TIcon } from '@ecoop/ui/core'
 
 import type { TagTemplateSchema } from './tag-template.validation'
 import type { TAG_CATEGORY } from './tag.constants'

@@ -1,10 +1,10 @@
-import type { IAccount } from '@e-coop-monorepo/modules/account'
+import type { IAccount } from '@ecoop/modules/account'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { TPaymentTypeSchema } from './payment-type.validation'
 

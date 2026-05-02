@@ -1,9 +1,9 @@
-import type { IBank } from '@e-coop-monorepo/modules/bank'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IMedia } from '@e-coop-monorepo/modules/media'
-import type { ITransactionBatch } from '@e-coop-monorepo/modules/transaction-batch'
-import type { IUserBase } from '@e-coop-monorepo/modules/user'
-import type { IBaseEntityMeta, TEntityId } from '@e-coop-monorepo/shared/types'
+import type { IBank } from '@ecoop/modules/bank'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IMedia } from '@ecoop/modules/media'
+import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
+import type { IUserBase } from '@ecoop/modules/user'
+import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { TOnlineRemittanceSchema } from './online-remittance.validation'
 

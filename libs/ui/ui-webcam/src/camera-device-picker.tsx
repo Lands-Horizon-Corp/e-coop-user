@@ -1,11 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import { withCatchAsync } from '@e-coop-monorepo/shared/helpers'
-import { cn } from '@e-coop-monorepo/shared/tw-utils'
-import type { IBaseProps } from '@e-coop-monorepo/shared/types'
-import { CameraIcon, RefreshIcon } from '@e-coop-monorepo/ui/core'
-import { LoadingSpinner } from '@e-coop-monorepo/ui/core'
+import { withCatchAsync } from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
+import type { IBaseProps } from '@ecoop/shared/types'
+import { CameraIcon, RefreshIcon } from '@ecoop/ui/core'
+import { LoadingSpinner } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -13,7 +13,7 @@ import {
     DropdownMenuLabel,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '@e-coop-monorepo/ui/core'
+} from '@ecoop/ui/core'
 
 interface Props extends IBaseProps {
     currentCamId: string | undefined

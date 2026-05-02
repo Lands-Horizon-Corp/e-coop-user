@@ -6,7 +6,7 @@ import {
     descriptionTransformerSanitizer,
     entityIdSchema,
     stringDateSchema,
-} from '@e-coop-monorepo/shared/validation'
+} from '@ecoop/shared/validation'
 
 import type { IGovernmentId } from './member-government-benefit.interfaces'
 

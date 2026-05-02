@@ -1,12 +1,12 @@
 import type z from 'zod'
 
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IMemberType } from '@ecoop/modules/member-type'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type { IAccount } from '../account'
 import type { IUnbalanceAccount } from '../unbalance-account'

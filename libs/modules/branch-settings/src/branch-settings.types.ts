@@ -1,15 +1,15 @@
 import type z from 'zod'
 
-import type { IAccount } from '@e-coop-monorepo/modules/account'
-import type { ICurrency } from '@e-coop-monorepo/modules/currency'
-import type { IMemberGender } from '@e-coop-monorepo/modules/member-gender'
-import type { IMemberType } from '@e-coop-monorepo/modules/member-type'
-import type { IUnbalanceAccount } from '@e-coop-monorepo/modules/unbalance-account'
+import type { IAccount } from '@ecoop/modules/account'
+import type { ICurrency } from '@ecoop/modules/currency'
+import type { IMemberGender } from '@ecoop/modules/member-gender'
+import type { IMemberType } from '@ecoop/modules/member-type'
+import type { IUnbalanceAccount } from '@ecoop/modules/unbalance-account'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
-} from '@e-coop-monorepo/shared/types'
+} from '@ecoop/shared/types'
 
 import type {
     BranchSettingRequestSchema,

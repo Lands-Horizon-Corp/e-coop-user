@@ -1,4 +1,4 @@
-import { EcoopLogo } from '@e-coop-monorepo/ui/core'
+import { EcoopLogo } from '@ecoop/ui/core'
 
 const AuthFooter = () => {
     return (
