@@ -1,5 +1,5 @@
 import type { IMemberAccountingLedger } from '@ecoop/domains/accounting'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const {

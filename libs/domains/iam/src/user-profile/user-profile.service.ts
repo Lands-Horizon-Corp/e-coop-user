@@ -1,8 +1,8 @@
-import type { IUserBase } from '../user/user.types'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
 
+import type { IUserBase } from '../user/user.types'
 import type {
     IUserProfileGeneralRequest,
     IUserProfilePhotoUpdateRequest,

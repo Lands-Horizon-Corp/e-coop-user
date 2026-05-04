@@ -3,10 +3,9 @@ import { toast } from 'sonner'
 
 import type { IGeneralLedger } from '@ecoop/domains/accounting'
 import { generalLedgerBaseKey } from '@ecoop/domains/accounting'
-import type { IPaymentQuickRequest, IPaymentRequest, TPaymentMode } from '../quick-transfer/quick-transfer.types'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { withCatchAsync } from '@ecoop/shared/helpers'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {
@@ -15,6 +14,11 @@ import {
 } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
+import type {
+    IPaymentQuickRequest,
+    IPaymentRequest,
+    TPaymentMode,
+} from '../quick-transfer/quick-transfer.types'
 import type {
     ITransaction,
     ITransactionRequest,

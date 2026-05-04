@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import API from '@ecoop/shared/providers/core-providers'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'

@@ -168,7 +168,7 @@ export default Logger.getInstance('default', false)
 export { Logger }
 
 /**
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 
 const authLogger = Logger.getInstance('authentication')
 const userLogger = Logger.getInstance('user-management') 

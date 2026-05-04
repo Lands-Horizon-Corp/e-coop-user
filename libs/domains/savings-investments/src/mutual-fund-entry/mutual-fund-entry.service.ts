@@ -1,5 +1,5 @@
 import { mutualFundBaseKey } from '@ecoop/modules/mutual-fund'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,

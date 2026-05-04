@@ -2,13 +2,9 @@ import type { UseMutationOptions } from '@tanstack/react-query'
 import { useMutation, useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import type { IBranch } from '../branch/branch.types'
-import { getBranchesByOrganizationId } from '../branch/branch.service'
-import { employeeBaseKey } from '../employee/employee.service'
 import type { TimeMachineRequest } from '@ecoop/domains/transactions'
-import type { IUserBase } from '../user/user.types'
 import { groupBy, withCatchAsync } from '@ecoop/shared/helpers'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {
@@ -17,6 +13,10 @@ import {
 } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
+import { getBranchesByOrganizationId } from '../branch/branch.service'
+import type { IBranch } from '../branch/branch.types'
+import { employeeBaseKey } from '../employee/employee.service'
+import type { IUserBase } from '../user/user.types'
 import type {
     IOrgUserOrganizationGroup,
     IUserOrganization,

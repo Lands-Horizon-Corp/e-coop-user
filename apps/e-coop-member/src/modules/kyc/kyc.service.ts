@@ -1,13 +1,13 @@
-import { resizeImage } from '@ecoop/modules/media'
 import type { TMemberAddressSchema } from '@ecoop/domains/member-crm'
 import type { IMemberGovernmentBenefitRequest } from '@ecoop/domains/member-crm'
+import { resizeImage } from '@ecoop/modules/media'
 import { imageCompressed } from '@ecoop/shared/helpers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IKyc } from './kyc.types'
-// import { Logger } from '@ecoop/shared/helpers'
+// import { Logger } from '@ecoop/shared/loggers'
 
 import type {
     TKYCRegisterSchema,

@@ -1,8 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import type { IEmployee } from '../user/user.types'
-import type { IUserOrganization, IUserOrganizationPaginated } from '../user-organization/user-organization.types'
 import {
     API,
     createUserOrganization,
@@ -11,7 +9,7 @@ import {
     // deleteUserOrganizationById,
     userOrganizationAPIRoute,
 } from '@ecoop/modules/user-organization'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,
@@ -20,6 +18,11 @@ import {
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
+import type {
+    IUserOrganization,
+    IUserOrganizationPaginated,
+} from '../user-organization/user-organization.types'
+import type { IEmployee } from '../user/user.types'
 import type { IEmployeeCreateRequest } from './employee.types'
 
 /**

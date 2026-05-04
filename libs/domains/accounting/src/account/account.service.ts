@@ -2,9 +2,8 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
-import { Logger } from '@ecoop/shared/helpers'
 import { downloadFile } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {
@@ -13,6 +12,7 @@ import {
 } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
+import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
 import type {
     IAccount,
     IAccountPaginated,

@@ -1,3 +1,3 @@
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 
 export const logger = Logger.getInstance('member-damayan-extension-entry')

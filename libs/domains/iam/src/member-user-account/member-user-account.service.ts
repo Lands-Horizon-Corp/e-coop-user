@@ -1,6 +1,6 @@
 import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import { apiCrudService, memberProfileBaseKey } from '@ecoop/domains/member-crm'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,
     createMutationInvalidateFn,

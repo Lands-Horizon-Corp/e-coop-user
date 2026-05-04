@@ -3,7 +3,7 @@ import { toast } from 'sonner'
 
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { withCatchAsync } from '@ecoop/shared/helpers'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import { createAPIRepository } from '@ecoop/shared/repositories'
 
 import type { IOperationCallbacks } from './qr-crypto.types'

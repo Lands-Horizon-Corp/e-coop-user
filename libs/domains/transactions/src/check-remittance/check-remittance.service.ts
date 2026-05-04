@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 
 import { useDeleteById } from '@ecoop/domains/iam'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 

@@ -1,6 +1,6 @@
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-// import { Logger } from '@ecoop/shared/helpers'
+// import { Logger } from '@ecoop/shared/loggers'
 
 import type { IOrganization, IOrganizationRequest } from './organization.types'
 

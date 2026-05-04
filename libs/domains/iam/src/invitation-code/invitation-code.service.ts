@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import { createAPIRepository } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 

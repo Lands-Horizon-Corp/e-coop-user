@@ -1,5 +1,5 @@
 import { loanTransactionBaseKey } from '@ecoop/modules/loan-transaction'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,
     updateMutationInvalidationFn,

@@ -5,7 +5,7 @@ import { toast } from 'sonner'
 import { getBranchesByOrganizationId } from '@ecoop/domains/iam'
 import type { IBranch } from '@ecoop/domains/iam'
 import { groupBy, withCatchAsync } from '@ecoop/shared/helpers'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {

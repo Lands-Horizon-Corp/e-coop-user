@@ -1,8 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { accountBaseQueryKey } from '../account/account.service'
-import type { IAccount } from '../account/account.types'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
@@ -12,6 +10,8 @@ import type {
     IAccountHistory,
     IAccountHistoryRequest,
 } from '../account-history'
+import { accountBaseQueryKey } from '../account/account.service'
+import type { IAccount } from '../account/account.types'
 
 const {
     apiCrudHooks,

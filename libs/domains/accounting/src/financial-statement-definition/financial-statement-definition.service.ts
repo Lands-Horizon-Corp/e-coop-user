@@ -1,7 +1,7 @@
-import type { ConnectAccountType } from '../gl-fs/gl-fs.types'
-import { createGLSFSService } from '../gl-fs/gl-fs.services'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 
+import { createGLSFSService } from '../gl-fs/gl-fs.services'
+import type { ConnectAccountType } from '../gl-fs/gl-fs.types'
 import type {
     IFinancialStatementDefinition,
     IFinancialStatementDefinitionRequest,

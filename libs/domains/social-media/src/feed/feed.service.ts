@@ -1,10 +1,13 @@
-import type { IFeedComment, IFeedCommentRequest } from '../feed-comment/feed-comment.types'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
 import type { IFeed, IFeedRequest } from '../feed'
+import type {
+    IFeedComment,
+    IFeedCommentRequest,
+} from '../feed-comment/feed-comment.types'
 
 const {
     apiCrudHooks,

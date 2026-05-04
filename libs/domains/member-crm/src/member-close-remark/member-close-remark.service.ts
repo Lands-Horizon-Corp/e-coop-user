@@ -1,12 +1,12 @@
 import { useMutation } from '@tanstack/react-query'
 
 import { memberProfileAPIRoute } from '@ecoop/modules/member-profile'
-import type { IMemberProfile } from '../member-profile/member-profile.types'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type {
     IMemberCloseRemark,
     IMemberCloseRemarkRequest,

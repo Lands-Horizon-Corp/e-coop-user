@@ -1,5 +1,5 @@
 import type { feedBaseKey } from '@ecoop/modules/feed'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,
     deleteMutationInvalidationFn,

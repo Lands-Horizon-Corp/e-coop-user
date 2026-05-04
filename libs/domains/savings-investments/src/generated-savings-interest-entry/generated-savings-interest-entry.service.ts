@@ -4,7 +4,7 @@ import {
     createGeneratedSavingsInterest,
     generatedSavingsInterestBaseKey,
 } from '@ecoop/modules/generated-savings-interest'
-import { Logger } from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import {
