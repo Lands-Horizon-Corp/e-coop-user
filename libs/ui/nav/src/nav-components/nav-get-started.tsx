@@ -1,7 +1,7 @@
 import { useRouter } from '@tanstack/react-router'
 
 import { useAuthStore } from '@ecoop/domains/iam'
-import ImageDisplay from '@ecoop/ui/core'
+import {ImageDisplay} from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 
 const NavGetStarted = () => {
@@ -30,4 +30,4 @@ const NavGetStarted = () => {
     )
 }
 
-export default NavGetStarted
+export {NavGetStarted}

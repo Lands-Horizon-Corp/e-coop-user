@@ -50,7 +50,7 @@ import type {
     INavItem,
     INavItemDropdown,
     INavItemSingle,
-} from '@ecoop/ui/core'
+} from '@ecoop/ui/app-sidebar'
 
 const filterNavItemsByUserType = (
     items: INavItem[],

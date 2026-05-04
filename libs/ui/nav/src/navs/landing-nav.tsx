@@ -5,11 +5,11 @@ import { Link, useLocation } from '@tanstack/react-router'
 
 import { cn } from '@ecoop/shared/tw-utils'
 import { CalculatorIcon } from '@ecoop/ui/core'
-import NavAuthGroup from '@ecoop/ui/core'
-import NavEcoopLogo from '@ecoop/ui/core'
-import NavThemeToggle from '@ecoop/ui/core'
-import NavContainer from '@ecoop/ui/core'
-import RootNav from '@ecoop/ui/core'
+import {NavAuthGroup} from '@ecoop/ui/nav'
+import {NavEcoopLogo} from '@ecoop/ui/nav'
+import {NavThemeToggle} from '@ecoop/ui/nav'
+import {NavContainer} from '@ecoop/ui/nav'
+import {RootNav} from '@ecoop/ui/nav'
 import {
     Sheet,
     SheetClose,
@@ -119,7 +119,7 @@ const LandingNav = () => {
             {/* Mobile Navigation */}
             <div className="sm:hidden">
                 <Sheet onOpenChange={setIsOpen} open={isOpen}>
-                    <SheetTrigger asChild>
+                    <SheetTrigger>
                         <button
                             aria-label="Open mobile menu"
                             className="p-2 rounded-md hover:bg-muted focus:outline-none focus:ring-2 focus:ring-primary"
@@ -162,7 +162,7 @@ const LandingNav = () => {
                                                 {link.name}
                                             </a>
                                         ) : (
-                                            <SheetClose asChild>
+                                            <SheetClose>
                                                 <Link
                                                     className={cn(
                                                         'flex items-center gap-x-3 p-3 font-medium transition-colors hover:bg-muted',

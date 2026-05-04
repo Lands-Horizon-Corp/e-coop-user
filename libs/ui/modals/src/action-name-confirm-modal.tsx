@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { compareIgnoreCase } from '@ecoop/modules/timesheet'
-import type { IModalProps } from '@ecoop/ui/core'
+import type { IModalProps } from '@ecoop/ui/modals'
 import type { ButtonVariantType } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 import { Input } from '@ecoop/ui/core'

@@ -1,6 +1,6 @@
-import useConfirmModalStore from '@ecoop/shared/store'
+import {useConfirmModalStore} from '@ecoop/shared/store'
 import { cn } from '@ecoop/shared/tw-utils'
-import Modal from '@ecoop/ui/core'
+import {Modal} from '@ecoop/ui/modals'
 import { Button } from '@ecoop/ui/core'
 import { Separator } from '@ecoop/ui/core'
 

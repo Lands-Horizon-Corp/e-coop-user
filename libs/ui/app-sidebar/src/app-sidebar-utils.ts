@@ -12,6 +12,8 @@ export const sidebarRouteMatcher = (
     return toCompareUrl === selfUrl || toCompareUrl.startsWith(selfUrl + '/')
 }
 
+
+
 export function flattenNavItems(
     items: INavItem[],
     parentPath = ''

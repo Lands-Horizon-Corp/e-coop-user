@@ -4,20 +4,20 @@ import { toast } from 'sonner'
 import { useSignOut } from '@ecoop/modules/auth'
 // import { useModalState } from '@ecoop/shared/hooks'
 import { useAuthUser } from '@ecoop/modules/auth/authgentication.store'
-import useConfirmModalStore from '@ecoop/shared/store'
+import {useConfirmModalStore} from '@ecoop/shared/store'
 import {
     ChevronsUpDownIcon,
     FingerprintOffIcon,
     SettingsIcon,
 } from '@ecoop/ui/core'
-import ImageDisplay from '@ecoop/ui/core'
+import {ImageDisplay} from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
 } from '@ecoop/ui/core'
-import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@ecoop/ui/core'
+import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@ecoop/ui/sidebar'
 
 const AppSidebarUser = () => {
     const router = useRouter()
@@ -51,7 +51,7 @@ const AppSidebarUser = () => {
             <SidebarMenu>
                 <SidebarMenuItem>
                     <DropdownMenu>
-                        <DropdownMenuTrigger asChild>
+                        <DropdownMenuTrigger>
                             <SidebarMenuButton className="!py-6">
                                 <ImageDisplay
                                     className="size-5 rounded-[4rem] duration-150 ease-in-out"
@@ -97,4 +97,4 @@ const AppSidebarUser = () => {
     )
 }
 
-export default AppSidebarUser
+export {AppSidebarUser}

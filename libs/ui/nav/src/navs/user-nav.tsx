@@ -16,9 +16,9 @@ import type { IClassProps } from '@ecoop/shared/types'
 // import NavProfileMenu from '@ecoop/modules/user-profile/components/nav/nav-profile-menu'
 // import { ChevronLeft, ChevronRight } from 'lucide-react'
 
-import NavThemeToggle from '@ecoop/ui/core'
-import NavContainer from '@ecoop/ui/core'
-import RootNav from '@ecoop/ui/core'
+import {NavThemeToggle} from '../nav-components/nav-theme-toggle'
+import {NavContainer} from '@ecoop/ui/nav'
+import {RootNav} from '@ecoop/ui/nav'
 
 type NavLink = {
     name: string
@@ -115,4 +115,4 @@ const UserNav = ({ className }: { homeUrl?: `/${string}` } & IClassProps) => {
     )
 }
 
-export default UserNav
+export {UserNav}

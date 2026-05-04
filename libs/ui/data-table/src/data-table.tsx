@@ -16,7 +16,7 @@ import { cn } from '@ecoop/shared/tw-utils'
 import type { IChildProps, IClassProps } from '@ecoop/shared/types'
 import type { Row, Table as TableInstance } from '@tanstack/react-table'
 
-import { Table } from '../ui/table'
+import { Table } from '@ecoop/ui/core'
 import DataTableBody from './data-table-body'
 import DataTableFooter from './data-table-footer'
 import DataTableHeader from './data-table-header'

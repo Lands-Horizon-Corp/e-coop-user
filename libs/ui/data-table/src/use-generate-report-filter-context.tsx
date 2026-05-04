@@ -7,7 +7,7 @@ import type {
 } from '@ecoop/shared/contexts'
 import { toBase64 } from '@ecoop/shared/helpers'
 import type { TSortingState } from '@ecoop/shared/types'
-import { useDataTableSorting } from '@ecoop/ui/core'
+import { useDataTableSorting } from '@ecoop/ui/data-table'
 
 type TGenerateReportProps = {
     defaultFilter: TFinalFilter

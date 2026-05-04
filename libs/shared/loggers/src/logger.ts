@@ -6,6 +6,9 @@ import { IS_STAGING } from '@ecoop/shared/constants'
 type LogMethod = (...args: unknown[]) => void
 
 class Logger {
+    static error(arg0: string, error: unknown) {
+        throw new Error('Method not implemented.')
+    }
     private static instances: Map<string, Logger> = new Map()
     private isDevelopment: boolean
     private module?: string

@@ -9,4 +9,4 @@ const NavContainer = ({ children, className }: IBaseProps) => {
     )
 }
 
-export default NavContainer
+export {NavContainer}

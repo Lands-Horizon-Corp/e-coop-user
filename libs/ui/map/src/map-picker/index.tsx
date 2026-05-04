@@ -3,11 +3,11 @@
 import type React from 'react'
 import { useCallback, useEffect, useRef, useState } from 'react'
 
-import { GOOGLE_MAPS_API_KEY, GOOGLE_MAPS_ID } from '@ecoop/shared/constants'
+import { GOOGLE_MAPS_API_KEY, GOOGLE_MAPS_MAP_ID } from '@ecoop/shared/constants'
 import { useInternalState } from '@ecoop/shared/hooks'
-import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { useTheme } from '@ecoop/shared/contexts'
 import { cn } from '@ecoop/shared/tw-utils'
-import CopyTextButton from '@ecoop/ui/core'
+import {CopyTextButton} from '@ecoop/ui/core'
 import {
     BuildingIcon,
     CloseIcon,
@@ -655,7 +655,7 @@ export const MapPicker: React.FC<MapPickerProps> = ({
                                         onClick={onMapClick}
                                         onLoad={onMapLoad}
                                         options={{
-                                            mapId: mapId || GOOGLE_MAPS_ID,
+                                            mapId: mapId || GOOGLE_MAPS_MAP_ID,
                                             disableDefaultUI: false,
                                             zoomControl: true,
                                             streetViewControl: false,

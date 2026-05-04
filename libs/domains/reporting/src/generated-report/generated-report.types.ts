@@ -6,9 +6,7 @@ import type {
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
-import type { TPaperSizeName } from '@ecoop/ui/core'
-
-import type { TPaperSizeUnit } from './generated-reports.constants'
+import type { TPaperSizeName, TPaperSizeUnit } from './generated-reports.constants'
 
 export const ACCOUNT_MODEL_NAMES = [
     'AccountHistory',

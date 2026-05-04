@@ -3,8 +3,8 @@ import { useState } from 'react'
 import { cn } from '@ecoop/shared/tw-utils'
 import { Scanner, outline, useDevices } from '@yudiel/react-qr-scanner'
 
-import { CameraIcon } from '../icons/index'
-import { Button } from '../ui/button'
+import { CameraIcon } from '@ecoop/ui/core'
+import { Button } from '@ecoop/ui/core'
 import {
     DropdownMenu,
     DropdownMenuContent,
@@ -13,7 +13,7 @@ import {
     DropdownMenuRadioItem,
     DropdownMenuSeparator,
     DropdownMenuTrigger,
-} from '../ui/dropdown-menu'
+} from '@ecoop/ui/core'
 import type { IQrScannerProps } from './types'
 
 const QrScanner = (props: IQrScannerProps) => {
@@ -33,7 +33,7 @@ const QrScanner = (props: IQrScannerProps) => {
                 }}
             />
             <DropdownMenu>
-                <DropdownMenuTrigger asChild>
+                <DropdownMenuTrigger>
                     <Button
                         className="absolute bottom-2 right-2 z-10 size-fit bg-secondary/80 p-1"
                         size="icon"

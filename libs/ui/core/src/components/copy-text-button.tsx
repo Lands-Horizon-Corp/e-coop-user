@@ -74,4 +74,4 @@ const CopyTextButton = <TErr = Error,>({
     )
 }
 
-export default CopyTextButton
+export {CopyTextButton}

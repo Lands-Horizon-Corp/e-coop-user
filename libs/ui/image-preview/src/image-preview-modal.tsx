@@ -2,15 +2,15 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import * as ImagePreviewPrimitive from '@radix-ui/react-dialog'
 
-import { cn } from '@/helpers'
-import { useImagePreview } from '@/store/image-preview-store'
-import type { DownloadProps } from '@ecoop/shared/types'
+import { cn } from '@ecoop/shared/tw-utils'
+import { useImagePreview } from '@ecoop/shared/store'
+import type { DownloadProps } from './image-preview/index'
 
-import { XIcon } from '../icons/index'
-import type { CarouselApi } from '../ui/carousel'
-import { Carousel, CarouselContent, CarouselItem } from '../ui/carousel'
-import { Dialog, DialogContent, DialogTitle } from '../ui/dialog'
-import { TooltipProvider } from '../ui/tooltip'
+import { XIcon } from '@ecoop/ui/core'
+import type { CarouselApi } from '@ecoop/ui/core'
+import { Carousel, CarouselContent, CarouselItem } from '@ecoop/ui/core'
+import { Dialog, DialogContent, DialogTitle } from '@ecoop/ui/core'
+import { TooltipProvider } from '@ecoop/ui/core'
 import type { CarouselOptions } from './image-preview'
 import {
     ImageContainer,
@@ -153,7 +153,6 @@ const ImagePreviewModal = () => {
                     className={cn(
                         '!h-max-[100vh] h-full !w-full !max-w-full  border-[0px] border-primary bg-transparent'
                     )}
-                    overlayClassName="bg-transparent pointer-events-none"
                 >
                     <div
                         className={cn(

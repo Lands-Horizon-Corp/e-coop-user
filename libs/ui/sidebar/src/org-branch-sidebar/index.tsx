@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { Key, useMemo } from 'react'
 
 import { useParams, useRouter } from '@tanstack/react-router'
 
@@ -9,13 +9,13 @@ import { useModalState } from '@ecoop/shared/hooks'
 import type { IBaseProps } from '@ecoop/shared/types'
 // import { useHotkeys } from 'react-hotkeys-hook'
 
-import { EcoopLogo } from '@ecoop/ui/core'
+import { EcoopLogo } from '@ecoop/ui/ecoop-logo'
 import { BuildingIcon, UserLockIcon } from '@ecoop/ui/core'
 import { ActionTooltip } from '@ecoop/ui/core'
-import { AppSidebarItem } from '@ecoop/ui/core'
-import { AppSidebarQuickNavigate } from '@ecoop/ui/core'
-import { AppSidebarUser } from '@ecoop/ui/core'
-import { flatSidebarGroupItem } from '@ecoop/ui/core'
+import { AppSidebarItem, INavItem } from '@ecoop/ui/app-sidebar'
+import { AppSidebarQuickNavigate } from '@ecoop/ui/app-sidebar'
+import { AppSidebarUser } from '@ecoop/ui/app-sidebar'
+import { flatSidebarGroupItem } from '@ecoop/ui/app-sidebar'
 import { Badge } from '@ecoop/ui/core'
 import { Separator } from '@ecoop/ui/core'
 import {
@@ -31,7 +31,7 @@ import {
     SidebarMenuItem,
     SidebarRail,
     // useSidebar,
-} from '@ecoop/ui/core'
+} from '@ecoop/ui/sidebar'
 
 import { generateSidebarGroups } from './sidebar-routes'
 
@@ -92,7 +92,7 @@ const OrgBranchSidebar = (props: IBaseProps) => {
                         {...viewBranchInfoModal}
                     />
                     <SidebarMenuItem>
-                        <SidebarMenuButton asChild size="lg">
+                        <SidebarMenuButton size="lg">
                             <div
                                 onClick={() =>
                                     viewBranchInfoModal.onOpenChange(true)
@@ -169,7 +169,7 @@ const OrgBranchSidebar = (props: IBaseProps) => {
                                         //         currentUserType
                                         //     )
                                         // )
-                                        .map((navItem, index) => (
+                                        .map((navItem: INavItem, index: Key | null | undefined) => (
                                             <AppSidebarItem
                                                 key={index}
                                                 navItem={{

@@ -22,4 +22,4 @@ const AppSidebarToggle = () => {
     )
 }
 
-export default AppSidebarToggle
+export {AppSidebarToggle}

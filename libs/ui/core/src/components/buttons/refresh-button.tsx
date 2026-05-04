@@ -26,4 +26,4 @@ const RefreshButton = ({
     )
 }
 
-export default RefreshButton
+export { RefreshButton }

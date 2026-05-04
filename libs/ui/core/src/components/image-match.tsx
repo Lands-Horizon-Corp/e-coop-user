@@ -67,4 +67,4 @@ const ImageMatch = (data: ImageMatchProps) => {
     )
 }
 
-export default ImageMatch
+export {ImageMatch}

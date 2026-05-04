@@ -10,6 +10,7 @@ export interface INavItemBase {
     isSub?: boolean
     icon?: IconType
     userType: TUserType[]
+    canAccess?: boolean
     shortDescription?: string
     longDescription?: string
 }

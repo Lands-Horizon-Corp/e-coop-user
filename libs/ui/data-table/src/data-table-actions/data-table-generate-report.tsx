@@ -9,7 +9,7 @@ import { Button } from '@ecoop/ui/core'
 import {
     GenerateReportFilterContext,
     useDataGenerateReportFilter,
-} from '@ecoop/ui/core'
+} from '@ecoop/ui/data-table'
 import type { Table } from '@tanstack/react-table'
 import { useHotkeys } from 'react-hotkeys-hook'
 
@@ -102,4 +102,4 @@ const DataTableExport = <TData,>({
     )
 }
 
-export { DataTableExport }
+export default as DataTableExport 

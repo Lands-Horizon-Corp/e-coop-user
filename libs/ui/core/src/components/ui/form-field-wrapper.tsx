@@ -90,4 +90,4 @@ const FormFieldWrapper = <
     )
 }
 
-export default FormFieldWrapper
+export { FormFieldWrapper }

@@ -112,7 +112,7 @@ export const base64ImagetoFile = (
 
         return new File([u8arr], filename, { type: mime })
     } catch (error) {
-        logger.error('Failed to convert data URL to file:', error)
+        Logger.error('Failed to convert data URL to file:', error)
         return null
     }
 }

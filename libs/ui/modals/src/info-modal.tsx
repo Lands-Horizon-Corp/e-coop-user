@@ -3,7 +3,7 @@ import { cn } from '@ecoop/shared/tw-utils'
 import { Button } from '@ecoop/ui/core'
 import { Separator } from '@ecoop/ui/core'
 
-import Modal from './modal'
+import {Modal} from './modal'
 
 const InfoModal = () => {
     const {

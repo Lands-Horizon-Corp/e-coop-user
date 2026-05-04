@@ -3,14 +3,15 @@ import * as React from 'react'
 import { forwardRef, useEffect, useRef, useState } from 'react'
 
 import { formatBytes } from '@ecoop/modules/media'
-import { cn, formatDate } from '@ecoop/shared/helpers'
+import { formatDate } from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
 import type {
     DownloadProps,
     ImageContainerProps,
     ImagePreviewActionProps,
     ImagePreviewButtonActionProps,
     ImagePreviewPanelProps,
-} from '@ecoop/shared/types'
+} from './image-preview/index'
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
@@ -27,9 +28,9 @@ import {
 import { useCarousel } from '@ecoop/ui/core'
 import type useEmblaCarousel from 'embla-carousel-react'
 
-import { Button } from '../ui/button'
-import { Card } from '../ui/card'
-import { Tooltip, TooltipContent, TooltipTrigger } from '../ui/tooltip'
+import { Button } from '@ecoop/ui/core'
+import { Card } from '@ecoop/ui/core'
+import { Tooltip, TooltipContent, TooltipTrigger } from '@ecoop/ui/core'
 
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 export type CarouselOptions = UseCarouselParameters[0]
@@ -308,7 +309,7 @@ export const ImagePreviewButtonAction = React.forwardRef<
 >(({ onClick, Icon, name, className, iconClassName, ...props }, ref) => {
     return (
         <Tooltip>
-            <TooltipTrigger asChild>
+            <TooltipTrigger >
                 <Button
                     className={cn(
                         'flex items-center justify-center space-x-3 border-0 hover:bg-background/20',

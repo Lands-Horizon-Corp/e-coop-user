@@ -14,4 +14,4 @@ const RootNav = ({ className, children }: IBaseProps) => {
     )
 }
 
-export default RootNav
+export {RootNav}

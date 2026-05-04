@@ -194,4 +194,4 @@ const AppSidebarQuickNavigate = ({ groups }: Props) => {
     )
 }
 
-export default AppSidebarQuickNavigate
+export {AppSidebarQuickNavigate}

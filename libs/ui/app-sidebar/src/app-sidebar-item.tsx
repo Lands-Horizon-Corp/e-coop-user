@@ -19,8 +19,8 @@ import {
     SidebarMenuItem,
     SidebarMenuSub,
     useSidebar,
-} from '../ui/sidebar'
-import type { TooltipContent } from '../ui/tooltip'
+} from '@ecoop/ui/sidebar'
+import type { TooltipContent } from '@ecoop/ui/core'
 import { sidebarRouteMatcher } from './app-sidebar-utils'
 import type { INavItem } from './types'
 
@@ -56,7 +56,7 @@ const AppSidebarButton = React.forwardRef<
                 className
             )}
             isActive={isRouteMatched && item.type !== 'dropdown'}
-            onClick={(some) => {
+            onClick={(some: any) => {
                 if (item.type === 'item') {
                     router.navigate({ to: item.url })
                 }
@@ -175,4 +175,4 @@ const AppSidebarItem = ({ navItem }: Props) => {
         )
 }
 
-export default AppSidebarItem
+export {AppSidebarItem}

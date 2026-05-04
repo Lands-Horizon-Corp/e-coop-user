@@ -68,4 +68,4 @@ const EcoopLogo = ({
     )
 }
 
-export default EcoopLogo
+export {EcoopLogo}

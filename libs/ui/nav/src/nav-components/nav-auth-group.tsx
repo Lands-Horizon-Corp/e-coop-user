@@ -8,7 +8,10 @@ import { useLocation } from '@tanstack/react-router'
 // import NavSignOut from '@ecoop/modules/authentication/components/nav/nav-sign-out'
 // import NavSignUp from '@ecoop/modules/authentication/components/nav/nav-sign-up'
 
-import NavGetStarted from './nav-get-started'
+import { NavGetStarted } from './nav-get-started'
+import NavJoin from 'apps/e-coop-member/src/modules/auth/components/nav/nav-join'
+import NavSignIn from 'apps/e-coop-member/src/modules/auth/components/nav/nav-sign-in'
+import NavSignOut from 'apps/e-coop-member/src/modules/auth/components/nav/nav-sign-out'
 
 const NavAuthGroup = () => {
     const pathname = useLocation({
@@ -27,4 +30,4 @@ const NavAuthGroup = () => {
     )
 }
 
-export default NavAuthGroup
+export {NavAuthGroup}

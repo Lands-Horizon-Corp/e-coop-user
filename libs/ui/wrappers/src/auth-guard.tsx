@@ -21,8 +21,8 @@ import {
 } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 
-import { FlickeringGrid } from '../backgrounds/flickering-grid'
-import ImageMatch from '../image-match'
+import { FlickeringGrid } from '@ecoop/ui/core'
+import {ImageMatch} from '@ecoop/ui/core'
 
 interface Props extends IBaseProps {
     pageType?: TPageType

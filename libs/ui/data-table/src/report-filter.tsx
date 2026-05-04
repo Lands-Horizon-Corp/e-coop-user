@@ -19,8 +19,8 @@ import {
     SelectTrigger,
     SelectValue,
 } from '@ecoop/ui/core'
-import { useGeneratedReportFilter } from '@ecoop/ui/core'
-import { FilterRule } from '@ecoop/ui/core'
+import { useGeneratedReportFilter } from '@ecoop/ui/data-table'
+import { FilterRule } from '@ecoop/ui/data-table'
 import { Check, Copy, Plus, X } from 'lucide-react'
 
 interface FilterBuilderUIProps {

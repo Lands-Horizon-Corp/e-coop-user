@@ -2,13 +2,13 @@
 
 import React, { forwardRef, useCallback, useEffect, useRef } from 'react'
 
-import { GOOGLE_MAPS_ID } from '@ecoop/shared/constants'
-import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { GOOGLE_MAPS_MAP_ID } from '@ecoop/shared/constants'
+import { useTheme } from '@ecoop/shared/contexts'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IBaseProps } from '@ecoop/shared/types'
 import { GoogleMap, type GoogleMapProps } from '@react-google-maps/api'
 
-import { SadFaceIcon } from '../icons/index'
+import { SadFaceIcon } from '@ecoop/ui/core'
 import { useMap } from './map.provider'
 import { constructGoogleMapsViewUrl } from './map.utils'
 
@@ -255,7 +255,7 @@ export const MapView: React.FC<MapViewProps> = ({
                             gestureHandling: 'cooperative' as const,
                             clickableIcons: false,
                             colorScheme: resolvedTheme.toUpperCase(),
-                            mapId: GOOGLE_MAPS_ID,
+                            mapId: GOOGLE_MAPS_MAP_ID,
                             ...mapOptions,
                         }}
                         zoom={zoom}

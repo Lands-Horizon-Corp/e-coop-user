@@ -1,7 +1,7 @@
-import { ThemeToggleMenu } from '@ecoop/ui/core'
+import { ThemeToggleMenu } from '@ecoop/ui/ui-theme'
 
 const NavThemeToggle = () => {
     return <ThemeToggleMenu />
 }
 
-export default NavThemeToggle
+export {NavThemeToggle}

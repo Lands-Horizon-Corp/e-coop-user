@@ -435,6 +435,7 @@ import {
     TbFingerprintOff as FingerprintOffIcon,
     TbFingerprintScan as FingerprintScanIcon,
     TbGhost2Filled as GhostIcon,
+    TbHeartHandshake as HandHeartIcon,
     TbHeartHandshake as HandShakeHeartIcon,
     TbMinus as MinusIcon,
     TbMoneybag as MoneyBagIcon,
@@ -462,7 +463,6 @@ import {
     VscLocation as LocationPinOutlineIcon,
     VscReferences as ReferencesIcon,
 } from 'react-icons/vsc'
-
 export {
     PesoIcon,
     VoteIcon,
@@ -547,6 +547,7 @@ export {
     CrownIcon,
     ExcelIcon,
     StoreIcon,
+    HandHeartIcon,
     ResetIcon,
     HouseIcon,
     ArrowIcon,
