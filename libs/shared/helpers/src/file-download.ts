@@ -24,7 +24,7 @@ export async function downloadFileService(
             finalFileName = 'downloaded-file'
         }
         const mimeType =
-            response.headers['content-type'] || 'application/octet-stream'
+            (response.headers['content-type'] as string) || 'application/octet-stream'
 
         const blob = new Blob([response.data], { type: mimeType })
         const generatedURL = window.URL.createObjectURL(blob)

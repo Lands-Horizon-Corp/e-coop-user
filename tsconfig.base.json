@@ -631,16 +631,10 @@
             "@ecoop/ui/ui-qr-code-downloadable": [
                 "libs/ui/ui-qr-code-downloadable/src/index.ts"
             ],
-            "@ecoop/ui/ui-webcam": ["libs/ui/ui-webcam/src/index.ts"],
+            "@ecoop/ui/ui-webcam": ["libs/ui/ui-webcam/src/index.tsx"],
             "@ecoop/ui/ui-search": ["libs/ui/ui-search/src/index.ts"],
             "@ecoop/ui/ui-shortcut": [
                 "libs/ui/ui-shortcut/src/index.ts"
-            ],
-            "@ecoop/domains/iam/contracts": [
-                "libs/domains/iam/contracts/src/index.ts"
-            ],
-            "@ecoop/domains/iam/modules": [
-                "libs/domains/iam/modules/src/index.ts"
             ],
             "@ecoop/domains/iam": ["libs/domains/iam/src/index.ts"],
             "@ecoop/domains/member-crm": [

@@ -1,6 +1,6 @@
 import type { Area } from 'react-easy-crop'
 
-import logger from './loggers/logger'
+import { Logger } from '@ecoop/shared/loggers'
 
 export const createImage = (url: string): Promise<HTMLImageElement> =>
     new Promise((resolve, reject) => {

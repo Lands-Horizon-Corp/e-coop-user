@@ -1,6 +1,7 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "rootDir": "./src",
     "outDir": "../../dist/out-tsc",
     "types": [
       "node",
@@ -8,10 +9,11 @@
       "@nx/react/typings/image.d.ts",
       "vite/client"
     ],
-    "composite": true,
-    "declaration": true,
-    "declarationMap": true,
-    "noEmit": false,
+    "composite": false,
+    "declaration": false,
+    "declarationMap": false,
+    "emitDeclarationOnly": false,
+    "noEmit": true,
     "allowImportingTsExtensions": false,
     "skipLibCheck": true
   },
@@ -30,5 +32,5 @@
     "vitest.config.mts",
     "**/*.d.ts"
   ],
-  "include": ["src/**/*.js", "src/**/*.jsx", "src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }

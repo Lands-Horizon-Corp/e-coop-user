@@ -4,7 +4,7 @@ import type {
     TFilterModes,
     TFilterPayload,
     TFinalFilter,
-} from '../../contexts/filter-context'
+} from '@ecoop/shared/contexts'
 
 type Primitive = string | number | boolean | Date
 
