@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { userAccountTypeSchema } from '@ecoop/modules/user'
+import { userAccountTypeSchema } from '../user/user.validation'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,

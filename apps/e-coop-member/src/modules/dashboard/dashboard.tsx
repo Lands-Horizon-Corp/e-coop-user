@@ -3,7 +3,7 @@
 import { useState } from 'react'
 
 import { CoopBackground } from '@ecoop/modules/home/components/coop-bg'
-import Organization from '@ecoop/modules/organization/pages'
+import Organization from '@ecoop/domains/iam'
 import { useModalState } from '@ecoop/shared/hooks'
 import { Badge } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'

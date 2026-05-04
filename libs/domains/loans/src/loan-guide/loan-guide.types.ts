@@ -1,7 +1,7 @@
 import type z from 'zod'
 
-import type { IGeneralLedger } from '@ecoop/modules/general-ledger'
-import type { ILoanAccount } from '@ecoop/modules/loan-account'
+import type { IGeneralLedger } from '@ecoop/domains/accounting'
+import type { ILoanAccount } from '../loan-account/loan-account.types'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { LOAN_SCHEDULE_STATUS } from './loan-guide-constant'

@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 
-import { useGetBranchesByOrganizationId } from '@ecoop/modules/branch'
+import { useGetBranchesByOrganizationId } from '@ecoop/domains/iam'
 import { CoopBackground } from '@ecoop/modules/home'
 import Themes from '@ecoop/modules/settings'
 import type { CustomThemeColors } from '@ecoop/shared/providers/core-providers'

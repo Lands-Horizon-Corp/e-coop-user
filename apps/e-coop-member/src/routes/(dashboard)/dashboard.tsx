@@ -1,6 +1,6 @@
 import { createFileRoute } from '@tanstack/react-router'
 
-import DashboardPage from '@ecoop/modules/dashboard'
+import DashboardPage from '@ecoop/domains/analytics'
 
 export const Route = createFileRoute('/(dashboard)/dashboard')({
     component: DashboardPage,

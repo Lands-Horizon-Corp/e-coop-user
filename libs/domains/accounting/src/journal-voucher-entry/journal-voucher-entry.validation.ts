@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { IAccount, TAccountType } from '@ecoop/modules/account'
+import type { IAccount, TAccountType } from '../account/account.types'
 import { EntityIdSchema, entityIdSchema } from '@ecoop/shared/validation'
 
 export const JournalVoucherEntrySchema = z

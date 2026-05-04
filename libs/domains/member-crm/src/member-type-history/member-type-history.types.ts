@@ -1,6 +1,6 @@
-import type { IBranch } from '@ecoop/modules/branch'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import type { IMemberType } from '@ecoop/modules/member-type'
+import type { IBranch } from '@ecoop/domains/iam'
+import type { IMemberProfile } from '../member-profile/member-profile.types'
+import type { IMemberType } from '../member-type/member-type.types'
 import type {
     IAuditable,
     IPaginatedResult,

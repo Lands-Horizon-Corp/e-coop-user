@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type { ITimeStamps, TEntityId } from '@ecoop/shared/types'
 import {
     descriptionTransformerSanitizer,

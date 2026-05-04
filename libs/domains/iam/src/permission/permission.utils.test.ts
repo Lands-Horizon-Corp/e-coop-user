@@ -1,4 +1,4 @@
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 import { describe, expect, it } from 'vitest'
 
 import {

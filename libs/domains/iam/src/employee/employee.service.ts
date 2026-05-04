@@ -1,11 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import type { IEmployee } from '@ecoop/modules/user'
-import type {
-    IUserOrganization,
-    IUserOrganizationPaginated,
-} from '@ecoop/modules/user-organization'
+import type { IEmployee } from '../user/user.types'
+import type { IUserOrganization, IUserOrganizationPaginated } from '../user-organization/user-organization.types'
 import {
     API,
     createUserOrganization,

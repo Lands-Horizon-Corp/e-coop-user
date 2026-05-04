@@ -1,8 +1,8 @@
 import type { IFootstep } from '@ecoop/modules/footstep'
 import type { IMedia } from '@ecoop/modules/media'
-import type { INotification } from '@ecoop/modules/notification'
+import type { INotification } from '@ecoop/domains/communications'
 import type { IQrScanResult } from '@ecoop/modules/qr-crypto'
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 import type { USER_TYPE } from './user.constants'

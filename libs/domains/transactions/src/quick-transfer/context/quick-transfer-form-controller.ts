@@ -1,8 +1,8 @@
 import { useState } from 'react'
 
-import type { IAccount } from '@ecoop/modules/account'
-import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication/authgentication.store'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IAccount } from '@ecoop/domains/accounting'
+import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import { useGetAllPaymentType } from '@ecoop/modules/payment-type'
 import { quickPaymentORResolver } from '@ecoop/modules/transaction'
 import { useModalState } from '@ecoop/shared/hooks'

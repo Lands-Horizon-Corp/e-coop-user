@@ -1,4 +1,4 @@
-import type { TemplateOptions } from '@ecoop/modules/generated-report'
+import type { TemplateOptions } from '@ecoop/domains/reporting'
 
 export const LoanVoucherReleaseTemplates: TemplateOptions[] = [
     {

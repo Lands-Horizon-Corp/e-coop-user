@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { memberTypeBaseQueryKey } from '@ecoop/modules/member-type'
+import { memberTypeBaseQueryKey } from '@ecoop/domains/member-crm'
 import { Logger } from '@ecoop/shared/helpers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

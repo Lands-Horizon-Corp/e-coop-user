@@ -1,8 +1,8 @@
 import z from 'zod'
 
-import { InterestRateByAmountSchema } from '@ecoop/modules/interest-rate-by-amount'
-import { InterestRateByDateSchema } from '@ecoop/modules/interest-rate-by-date'
-import { InterestRateByYearSchema } from '@ecoop/modules/interest-rate-by-year'
+import { InterestRateByAmountSchema } from '../interest-rate-by-amount/interest-rate-by-amount.validation'
+import { InterestRateByDateSchema } from '../interest-rate-by-date/interest-rate-by-date.validation'
+import { InterestRateByYearSchema } from '../interest-rate-by-year/interest-rate-by-year.validation'
 import {
     EntityIdSchema,
     PercentageSchema,

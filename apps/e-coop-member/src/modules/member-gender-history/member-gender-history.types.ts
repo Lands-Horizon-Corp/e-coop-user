@@ -1,5 +1,5 @@
-import type { IMemberGender } from '@ecoop/modules/member-gender'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberGender } from '@ecoop/domains/member-crm'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

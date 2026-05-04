@@ -2,9 +2,9 @@ import type { ReactNode } from 'react'
 
 import { Navigate, useRouter } from '@tanstack/react-router'
 
-import { useAuthStore } from '@ecoop/modules/authentication'
-import type { IUserBase, TUserType } from '@ecoop/modules/user'
-import { UserAvatar } from '@ecoop/modules/user'
+import { useAuthStore } from '@ecoop/domains/iam'
+import type { IUserBase, TUserType } from '@ecoop/domains/iam'
+import { UserAvatar } from '@ecoop/domains/iam'
 import type { IBaseProps } from '@ecoop/shared/types'
 import { BadgeExclamationFillIcon } from '@ecoop/ui/core'
 import { LoadingSpinner } from '@ecoop/ui/core'

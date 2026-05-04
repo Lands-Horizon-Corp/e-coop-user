@@ -1,4 +1,4 @@
-import type { IMemberClassificationInterestRate } from '@ecoop/modules/member-classification-interest-rate'
+import type { IMemberClassificationInterestRate } from '../member-classification-interest-rate/member-classification-interest-rate.types'
 import type {
     IAuditable,
     IOrgBranchIdentity,

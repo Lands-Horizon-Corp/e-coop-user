@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { accountBaseQueryKey } from '@ecoop/modules/account'
-import type { IAccount } from '@ecoop/modules/account'
+import { accountBaseQueryKey } from '../account/account.service'
+import type { IAccount } from '../account/account.types'
 import { Logger } from '@ecoop/shared/helpers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

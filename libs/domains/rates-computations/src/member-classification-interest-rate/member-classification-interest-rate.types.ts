@@ -1,8 +1,8 @@
 import z from 'zod'
 
-import type { IInterestRateByTermsHeaderResponse } from '@ecoop/modules/interest-rate-by-terms-header'
-import type { IInterestRateScheme } from '@ecoop/modules/interest-rate-scheme'
-import type { IMemberClassification } from '@ecoop/modules/member-classification'
+import type { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header/interest-rate-by-terms-header.types'
+import type { IInterestRateScheme } from '../interest-rate-scheme/interest-rate-scheme.types'
+import type { IMemberClassification } from '@ecoop/domains/member-crm'
 import type {
     IAuditable,
     IOrgBranchIdentity,

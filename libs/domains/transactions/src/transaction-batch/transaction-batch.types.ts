@@ -1,9 +1,9 @@
-import type { IBatchFundingRequest } from '@ecoop/modules/batch-funding'
-import type { IBranch } from '@ecoop/modules/branch'
+import type { IBatchFundingRequest } from '../batch-funding/batch-funding.types'
+import type { IBranch } from '@ecoop/domains/iam'
 import type { ICurrency } from '@ecoop/modules/currency'
 import type { IMedia } from '@ecoop/modules/media'
-import type { IOrganization } from '@ecoop/modules/organization'
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IOrganization } from '@ecoop/domains/iam'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type {
     IAuditable,
     IPaginatedResult,

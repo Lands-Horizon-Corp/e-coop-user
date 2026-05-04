@@ -1,5 +1,5 @@
-import type { IAccount } from '@ecoop/modules/account'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IAccount } from '../account/account.types'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

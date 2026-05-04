@@ -1,7 +1,7 @@
-import type { IAccount } from '@ecoop/modules/account'
-import type { IGeneratedSavingsInterestEntry } from '@ecoop/modules/generated-savings-interest-entry'
-import type { IMemberType } from '@ecoop/modules/member-type'
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { IGeneratedSavingsInterestEntry } from '../generated-savings-interest-entry/generated-savings-interest-entry.types'
+import type { IMemberType } from '@ecoop/domains/member-crm'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

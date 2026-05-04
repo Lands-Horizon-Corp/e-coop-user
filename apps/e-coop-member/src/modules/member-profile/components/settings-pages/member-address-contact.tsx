@@ -3,7 +3,7 @@ import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import { Button } from '@ecoop/ui/core'
 import { Input } from '@ecoop/ui/core'
 import { Label } from '@ecoop/ui/core'

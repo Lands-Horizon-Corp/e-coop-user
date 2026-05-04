@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IUserBase } from '../user/user.types'
 import { Logger } from '@ecoop/shared/helpers'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'

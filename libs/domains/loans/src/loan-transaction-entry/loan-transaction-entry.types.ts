@@ -1,6 +1,6 @@
-import type { IAccount } from '@ecoop/modules/account'
-import type { ILoanTransaction } from '@ecoop/modules/loan-transaction'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { ILoanTransaction } from '../loan-transaction/loan-transaction.types'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

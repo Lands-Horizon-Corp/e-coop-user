@@ -5,10 +5,7 @@ import type {
     IUserLoginRequest,
     IUserPasswordResetRequest,
 } from '@ecoop/modules/auth'
-import type {
-    IMemberProfile,
-    IQuickCreateMemberProfile,
-} from '@ecoop/modules/member-profile'
+import type { IMemberProfile, IQuickCreateMemberProfile } from '@ecoop/domains/member-crm'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
 import type { IForgetPasswordEntry } from '@ecoop/shared/store'

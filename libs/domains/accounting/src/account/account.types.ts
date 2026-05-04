@@ -1,12 +1,12 @@
-import type { IAccountCategory } from '@ecoop/modules/account-category'
-import type { IAccountClassification } from '@ecoop/modules/account-classification'
-import type { IComputationSheet } from '@ecoop/modules/computation-sheet'
+import type { IAccountCategory } from '../account-category/account-category.types'
+import type { IAccountClassification } from '../account-classification/account-classification.types'
+import type { IComputationSheet } from '@ecoop/domains/rates-computations'
 import type { ICurrency } from '@ecoop/modules/currency'
-import type { TFinancialStatementType } from '@ecoop/modules/financial-statement-definition'
-import type { IFinancialStatementTitle } from '@ecoop/modules/financial-statement-title'
-import type { TGeneralLedgerType } from '@ecoop/modules/general-ledger'
-import type { IMemberType } from '@ecoop/modules/member-type'
-import type { IPaymentType } from '@ecoop/modules/payment-type'
+import type { TFinancialStatementType } from '../financial-statement-definition/financial-statement-definition.types'
+import type { IFinancialStatementTitle } from '../financial-statement-title/financial-statement-title.types'
+import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
+import type { IMemberType } from '@ecoop/domains/member-crm'
+import type { IPaymentType } from '@ecoop/domains/transactions'
 import type {
     IAuditable,
     IPaginatedResult,

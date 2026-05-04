@@ -1,8 +1,8 @@
 import { useQueryClient } from '@tanstack/react-query'
 
-import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication/authgentication.store'
-import { MemberOccupationCreateUpdateFormModal } from '@ecoop/modules/member-occupation/components/member-occupation-create-update-form'
-import MemberOccupationTable from '@ecoop/modules/member-occupation/components/tables/member-occupation-table'
+import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam'
+import { MemberOccupationCreateUpdateFormModal } from '@ecoop/domains/member-crm'
+import MemberOccupationTable from '@ecoop/domains/member-crm'
 import { useModalState } from '@ecoop/shared/hooks'
 import { useSubscribe } from '@ecoop/shared/hooks'
 import PageContainer from '@ecoop/ui/core'

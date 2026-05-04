@@ -1,7 +1,7 @@
-import type { IAccount } from '@ecoop/modules/account'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
-import type { IUser } from '@ecoop/modules/user'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
+import type { IUser } from '@ecoop/domains/iam'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { TCashCheckVoucherEntrySchema } from './cash-check-voucher-entry.validation'

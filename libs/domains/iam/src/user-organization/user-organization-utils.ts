@@ -1,4 +1,4 @@
-import { useAuthStore } from '@ecoop/modules/authentication'
+import { useAuthStore } from '../authentication/authgentication.store'
 
 export const getTimeMachineValue = () => {
     return (

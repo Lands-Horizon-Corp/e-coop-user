@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { LOAN_MODE_OF_PAYMENT } from '@ecoop/modules/loan-transaction'
+import { LOAN_MODE_OF_PAYMENT } from '@ecoop/domains/loans'
 import {
     EntityIdSchema,
     PercentageSchema,

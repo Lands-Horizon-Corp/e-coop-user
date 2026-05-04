@@ -1,8 +1,5 @@
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import {
-    apiCrudService,
-    memberProfileBaseKey,
-} from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import { apiCrudService, memberProfileBaseKey } from '@ecoop/domains/member-crm'
 import { Logger } from '@ecoop/shared/helpers'
 import {
     createMutationFactory,

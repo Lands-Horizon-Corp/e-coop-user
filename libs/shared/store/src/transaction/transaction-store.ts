@@ -1,14 +1,11 @@
 import type { Dispatch, SetStateAction } from 'react'
 
-import type { IAccount } from '@ecoop/modules/account'
-import type {
-    IGeneralLedger,
-    IGeneralLedgerPaginated,
-} from '@ecoop/modules/general-ledger'
-import type { IMemberJointAccount } from '@ecoop/modules/member-joint-account'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { IGeneralLedger, IGeneralLedgerPaginated } from '@ecoop/domains/accounting'
+import type { IMemberJointAccount } from '@ecoop/domains/member-crm'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type { IQRMemberProfile } from '@ecoop/modules/qr-crypto'
-import type { TPaymentMode } from '@ecoop/modules/quick-transfer'
+import type { TPaymentMode } from '@ecoop/domains/transactions'
 import type { TEntityId } from '@ecoop/shared/types'
 import { create } from 'zustand'
 

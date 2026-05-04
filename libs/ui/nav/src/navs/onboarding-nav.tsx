@@ -1,5 +1,5 @@
 import { cn } from '@/helpers'
-import NavProfileMenu from '@ecoop/modules/user-profile'
+import NavProfileMenu from '@ecoop/domains/iam'
 import type { IClassProps } from '@ecoop/shared/types'
 
 import NavEcoopLogo from '../nav-components/nav-ecoop-logo'

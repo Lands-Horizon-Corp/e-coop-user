@@ -1,6 +1,6 @@
 import AnimateRevealEffect from '@ecoop/modules/home/components/animate-reveal-effect'
 import { CoopBackground } from '@ecoop/modules/home/components/coop-bg'
-import type { IOrganizationMedia } from '@ecoop/modules/organization-media'
+import type { IOrganizationMedia } from '@ecoop/domains/iam'
 import {
     Carousel,
     CarouselContent,

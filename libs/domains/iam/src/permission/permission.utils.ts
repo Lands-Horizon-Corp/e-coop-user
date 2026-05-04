@@ -1,4 +1,4 @@
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 import type { IAuditable, TEntityId } from '@ecoop/shared/types'
 
 import {

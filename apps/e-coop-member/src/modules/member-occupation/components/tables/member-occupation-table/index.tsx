@@ -3,11 +3,8 @@ import { useMemo } from 'react'
 import { useQueryClient } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import {
-    MemberOccupationAPI,
-    useGetPaginated,
-} from '@ecoop/modules/member-occupation'
-import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+import { MemberOccupationAPI, useGetPaginated } from '@ecoop/domains/member-crm'
+import type { IMemberOccupation } from '@ecoop/domains/member-crm'
 import FilterContext from '@ecoop/shared/contexts'
 import useDatableFilterState from '@ecoop/shared/hooks'
 import { usePagination } from '@ecoop/shared/hooks'

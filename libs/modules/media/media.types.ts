@@ -1,4 +1,4 @@
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IMedia extends ITimeStamps, IAuditable {

@@ -1,7 +1,7 @@
 import { toast } from 'sonner'
 
 import { arrayMove } from '@dnd-kit/sortable'
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '../../../account/account.types'
 import type { UpdateAccountOrder } from '@ecoop/shared/types'
 import { create } from 'zustand'
 

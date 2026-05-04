@@ -1,7 +1,7 @@
-import type { IComakerMemberProfile } from '@ecoop/modules/comaker-member-profile'
+import type { IComakerMemberProfile } from '@ecoop/domains/member-crm'
 // import { IGeneratedReport } from '@ecoop/modules/generated-report'
-import type { IUserBase } from '@ecoop/modules/user'
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IUserBase } from '../user/user.types'
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 
 export interface IAuthContext<TUser = IUserBase | undefined> {
     user?: TUser

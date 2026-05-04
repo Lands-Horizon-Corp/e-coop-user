@@ -1,4 +1,4 @@
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IUserBase } from '../user/user.types'
 import { Logger } from '@ecoop/shared/helpers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'

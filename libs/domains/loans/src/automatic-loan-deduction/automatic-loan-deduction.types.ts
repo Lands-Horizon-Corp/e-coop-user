@@ -1,8 +1,8 @@
 import type z from 'zod'
 
-import type { IAccount, TAccountType } from '@ecoop/modules/account'
-import type { IChargesRateScheme } from '@ecoop/modules/charges-rate-scheme'
-import type { IComputationSheet } from '@ecoop/modules/computation-sheet'
+import type { IAccount, TAccountType } from '@ecoop/domains/accounting'
+import type { IChargesRateScheme } from '@ecoop/domains/rates-computations'
+import type { IComputationSheet } from '@ecoop/domains/rates-computations'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

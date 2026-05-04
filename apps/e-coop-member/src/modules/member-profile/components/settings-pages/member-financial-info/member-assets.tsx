@@ -2,11 +2,8 @@ import { forwardRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import type {
-    IMemberAsset,
-    IMemberProfile,
-} from '@ecoop/modules/member-profile'
-import { useDeleteMemberProfileAsset } from '@ecoop/modules/member-profile'
+import type { IMemberAsset, IMemberProfile } from '@ecoop/domains/member-crm'
+import { useDeleteMemberProfileAsset } from '@ecoop/domains/member-crm'
 import { toReadableDate } from '@ecoop/shared/helpers'
 import { formatNumber } from '@ecoop/shared/helpers'
 import { useModalState } from '@ecoop/shared/hooks'

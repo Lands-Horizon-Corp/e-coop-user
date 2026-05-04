@@ -1,4 +1,4 @@
-import type { IBranch } from '@ecoop/modules/branch'
+import type { IBranch } from '@ecoop/domains/iam'
 import AnimateRevealEffect from '@ecoop/modules/home/components/animate-reveal-effect'
 import { Building2 } from 'lucide-react'
 

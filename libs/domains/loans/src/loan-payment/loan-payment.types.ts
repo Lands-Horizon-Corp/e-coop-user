@@ -1,4 +1,4 @@
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '@ecoop/domains/accounting'
 import type { TEntityId } from '@ecoop/shared/types'
 
 // import { ILoanPaymentSchedule } from '@ecoop/modules/loan-transaction'

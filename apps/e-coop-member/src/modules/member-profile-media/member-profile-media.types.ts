@@ -1,7 +1,7 @@
 import type z from 'zod'
 
 import type { IMedia } from '@ecoop/modules/media'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

@@ -1,10 +1,10 @@
-import type { IChargesRateByRangeOrMinimumAmount } from '@ecoop/modules/charges-rate-by-range-or-minimum-amount'
-import type { IChargesRateByTerm } from '@ecoop/modules/charges-rate-by-term'
-import type { IChargesRateSchemeAccount } from '@ecoop/modules/charges-rate-scheme-account'
-import type { IChargesRateSchemeModeOfPayment } from '@ecoop/modules/charges-rate-scheme-mode-of-payment'
+import type { IChargesRateByRangeOrMinimumAmount } from '../charges-rate-by-range-or-minimum-amount/charges-rate-by-range-or-minimum-amount.types'
+import type { IChargesRateByTerm } from '../charges-rate-by-term/charges-rate-by-term.types'
+import type { IChargesRateSchemeAccount } from '../charges-rate-scheme-account/charges-rate-scheme-account.types'
+import type { IChargesRateSchemeModeOfPayment } from '../charges-rate-scheme-mode-of-payment/charges-rate-scheme-mode-of-payment.types'
 import type { ICurrency } from '@ecoop/modules/currency'
-import type { TLoanModeOfPayment } from '@ecoop/modules/loan-transaction'
-import type { IMemberType } from '@ecoop/modules/member-type'
+import type { TLoanModeOfPayment } from '@ecoop/domains/loans'
+import type { IMemberType } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

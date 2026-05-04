@@ -1,4 +1,4 @@
-import type { IGroceryComputationSheet } from '@ecoop/modules/grocery-computation-sheet'
+import type { IGroceryComputationSheet } from '../grocery-computation-sheet/grocery-computation-sheet.types'
 import type {
     IAuditable,
     IOrgBranchIdentity,

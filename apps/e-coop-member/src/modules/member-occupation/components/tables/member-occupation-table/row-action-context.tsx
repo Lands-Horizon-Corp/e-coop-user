@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 
-import { useDeleteById } from '@ecoop/modules/member-occupation'
-import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+import { useDeleteById } from '@ecoop/domains/member-crm'
+import type { IMemberOccupation } from '@ecoop/domains/member-crm'
 import useConfirmModalStore from '@ecoop/shared/store'
 import RowActionsGroup from '@ecoop/ui/core'
 import DataTableRowContext from '@ecoop/ui/core'

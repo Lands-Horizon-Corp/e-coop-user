@@ -1,11 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import type { IMemberGeneralLedgerTotal } from '@ecoop/modules/general-ledger'
-import type {
-    IMemberAccountingLedgerPaginated,
-    IMemberAccountingLedgerTotal,
-} from '@ecoop/modules/member-account-ledger'
+import type { IMemberGeneralLedgerTotal } from '../general-ledger/general-ledger.types'
+import type { IMemberAccountingLedgerPaginated, IMemberAccountingLedgerTotal } from '../member-account-ledger/member-account-ledger.types'
 import { Logger } from '@ecoop/shared/helpers'
 import APIService from '@ecoop/shared/providers/core-providers'
 import { createAPIRepository } from '@ecoop/shared/repositories'

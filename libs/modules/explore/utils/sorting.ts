@@ -1,5 +1,5 @@
-import type { IBranch } from '@ecoop/modules/branch'
-import type { IOrganization } from '@ecoop/modules/organization'
+import type { IBranch } from '@ecoop/domains/iam'
+import type { IOrganization } from '@ecoop/domains/iam'
 
 export type SortBy = 'recent' | 'popular' | 'name' | 'location'
 

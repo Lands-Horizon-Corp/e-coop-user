@@ -1,4 +1,4 @@
-import type { IUser } from '@ecoop/modules/user'
+import type { IUser } from '../user/user.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 export interface IUserRatingRequest {

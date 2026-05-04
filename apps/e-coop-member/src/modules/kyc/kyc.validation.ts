@@ -1,7 +1,7 @@
 import z from 'zod'
 
-import { MemberAddressSchema } from '@ecoop/modules/member-address'
-import { MemberGovernmentBenefitSchema } from '@ecoop/modules/member-government-benefit'
+import { MemberAddressSchema } from '@ecoop/domains/member-crm'
+import { MemberGovernmentBenefitSchema } from '@ecoop/domains/member-crm'
 import {
     EntityIdSchema,
     civilStatusSchema,

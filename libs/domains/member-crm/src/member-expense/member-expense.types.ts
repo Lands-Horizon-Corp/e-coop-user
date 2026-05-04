@@ -1,7 +1,7 @@
 import type z from 'zod'
 
-import type { IBranch } from '@ecoop/modules/branch'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IBranch } from '@ecoop/domains/iam'
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { MemberExpenseSchema } from './member-expense.validation'

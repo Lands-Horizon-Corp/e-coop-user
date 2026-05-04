@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IAccountTransactionEntry } from '@ecoop/modules/account-transaction-entry'
+import type { IAccountTransactionEntry } from '../account-transaction-entry/account-transaction-entry.types'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { ACCOUNT_TRANSACTION_SOURCE } from './account-transaction-constants'

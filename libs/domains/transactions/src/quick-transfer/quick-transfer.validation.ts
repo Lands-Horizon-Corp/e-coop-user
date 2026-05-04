@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { PaymentWithTransactionSchema } from '@ecoop/modules/transaction'
+import { PaymentWithTransactionSchema } from '../transaction/transaction.validation'
 import { EntityIdSchema, entityIdSchema } from '@ecoop/shared/validation'
 
 export const QuickWithdrawSchema = PaymentWithTransactionSchema.extend({

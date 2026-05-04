@@ -1,4 +1,4 @@
-import type { IMemberAccountingLedger } from '@ecoop/modules/member-account-ledger'
+import type { IMemberAccountingLedger } from '@ecoop/domains/accounting'
 import { Logger } from '@ecoop/shared/helpers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 

@@ -1,5 +1,5 @@
-import type { ConnectAccountType } from '@ecoop/modules/gl-fs'
-import { createGLSFSService } from '@ecoop/modules/gl-fs'
+import type { ConnectAccountType } from '../gl-fs/gl-fs.types'
+import { createGLSFSService } from '../gl-fs/gl-fs.services'
 import { Logger } from '@ecoop/shared/helpers'
 
 import type {

@@ -1,6 +1,6 @@
-import type { IDisbursement } from '@ecoop/modules/disbursement'
-import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
-import type { IEmployee } from '@ecoop/modules/user'
+import type { IDisbursement } from '../disbursement/disbursement.types'
+import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
+import type { IEmployee } from '@ecoop/domains/iam'
 import type {
     IAuditable,
     IPaginatedResult,

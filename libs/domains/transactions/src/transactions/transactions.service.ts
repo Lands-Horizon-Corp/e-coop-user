@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type { ITransactionPaginated } from '@ecoop/modules/transaction'
+import type { ITransactionPaginated } from '../transaction/transaction.types'
 import { getPaginated, transactionAPIRoute } from '@ecoop/modules/transaction'
 import { Logger } from '@ecoop/shared/helpers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'

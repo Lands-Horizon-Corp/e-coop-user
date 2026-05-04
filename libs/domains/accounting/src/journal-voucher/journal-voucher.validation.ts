@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { JournalVoucherEntrySchema } from '@ecoop/modules/journal-voucher-entry'
+import { JournalVoucherEntrySchema } from '../journal-voucher-entry/journal-voucher-entry.validation'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,

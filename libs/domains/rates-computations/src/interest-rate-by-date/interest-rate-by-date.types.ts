@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IBrowseReference } from '@ecoop/modules/browse-reference'
+import type { IBrowseReference } from '../browse-reference/browse-reference.types'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

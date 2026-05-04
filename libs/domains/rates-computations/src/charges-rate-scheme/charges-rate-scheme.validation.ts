@@ -1,10 +1,10 @@
 import z from 'zod'
 
-import { ChargesRateByRangeOrMinimumAmountSchema } from '@ecoop/modules/charges-rate-by-range-or-minimum-amount'
-import { ChargesRateByTermSchema } from '@ecoop/modules/charges-rate-by-term'
-import { chargesRateSchemeAccountSchema } from '@ecoop/modules/charges-rate-scheme-account'
-import { ChargesRateSchemeModeOfPaymentSchema } from '@ecoop/modules/charges-rate-scheme-mode-of-payment'
-import { LOAN_MODE_OF_PAYMENT } from '@ecoop/modules/loan-transaction'
+import { ChargesRateByRangeOrMinimumAmountSchema } from '../charges-rate-by-range-or-minimum-amount/charges-rate-by-range-or-minimum-amount.validation'
+import { ChargesRateByTermSchema } from '../charges-rate-by-term/charges-rate-by-term.validation'
+import { chargesRateSchemeAccountSchema } from '../charges-rate-scheme-account/charges-rate-scheme-account.validation'
+import { ChargesRateSchemeModeOfPaymentSchema } from '../charges-rate-scheme-mode-of-payment/charges-rate-scheme-mode-of-payment.validation'
+import { LOAN_MODE_OF_PAYMENT } from '@ecoop/domains/loans'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,

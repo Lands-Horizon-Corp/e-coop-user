@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
 
 import { memberProfileAPIRoute } from '@ecoop/modules/member-profile'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import { Logger } from '@ecoop/shared/helpers'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

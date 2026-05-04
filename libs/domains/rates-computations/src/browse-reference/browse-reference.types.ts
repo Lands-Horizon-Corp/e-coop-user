@@ -1,8 +1,8 @@
-import type { IAccount } from '@ecoop/modules/account'
-import type { IInterestRateByAmount } from '@ecoop/modules/interest-rate-by-amount'
-import type { IInterestRateByDate } from '@ecoop/modules/interest-rate-by-date'
-import type { IInterestRateByYear } from '@ecoop/modules/interest-rate-by-year'
-import type { IMemberType } from '@ecoop/modules/member-type'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { IInterestRateByAmount } from '../interest-rate-by-amount/interest-rate-by-amount.types'
+import type { IInterestRateByDate } from '../interest-rate-by-date/interest-rate-by-date.types'
+import type { IInterestRateByYear } from '../interest-rate-by-year/interest-rate-by-year.types'
+import type { IMemberType } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

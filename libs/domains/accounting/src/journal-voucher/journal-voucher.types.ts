@@ -1,13 +1,10 @@
-import type { IJournalVoucherORSettings } from '@ecoop/modules/branch-settings'
+import type { IJournalVoucherORSettings } from '@ecoop/domains/iam'
 import type { ICurrency } from '@ecoop/modules/currency'
-import type {
-    IJournalVoucherEntry,
-    IJournalVoucherEntryRequest,
-} from '@ecoop/modules/journal-voucher-entry'
-import type { IJournalVoucherTag } from '@ecoop/modules/journal-voucher-tag'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import type { IUser } from '@ecoop/modules/user'
-import type { IUserOrganizationSettings } from '@ecoop/modules/user-organization'
+import type { IJournalVoucherEntry, IJournalVoucherEntryRequest } from '../journal-voucher-entry/journal-voucher-entry.types'
+import type { IJournalVoucherTag } from '../journal-voucher-tag/journal-voucher-tag.types'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { IUser } from '@ecoop/domains/iam'
+import type { IUserOrganizationSettings } from '@ecoop/domains/iam'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

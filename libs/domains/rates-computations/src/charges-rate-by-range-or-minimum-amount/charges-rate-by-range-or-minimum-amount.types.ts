@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IChargesRateScheme } from '@ecoop/modules/charges-rate-scheme'
+import type { IChargesRateScheme } from '../charges-rate-scheme/charges-rate-scheme.types'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { ChargesRateByRangeOrMinimumAmountSchema } from './charges-rate-by-range-or-minimum-amount.validation'

@@ -2,7 +2,7 @@ import type { ReactNode } from 'react'
 
 import { toast } from 'sonner'
 
-import { useAuthStore } from '@ecoop/modules/authentication'
+import { useAuthStore } from '@ecoop/domains/iam'
 import { create } from 'zustand'
 
 interface IConfirmModalOnOpenData {

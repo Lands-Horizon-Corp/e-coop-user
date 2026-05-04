@@ -1,21 +1,15 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/modules/account'
-import type {
-    ICashCheckVoucherGeneralORSettings,
-    ICashVoucherORSettings,
-} from '@ecoop/modules/branch-settings'
-import type {
-    ICashCheckVoucherEntry,
-    ICashCheckVoucherEntryRequest,
-} from '@ecoop/modules/cash-check-voucher-entry'
-import type { ICashCheckVoucherTag } from '@ecoop/modules/cash-check-voucher-tag'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { ICashCheckVoucherGeneralORSettings, ICashVoucherORSettings } from '@ecoop/domains/iam'
+import type { ICashCheckVoucherEntry, ICashCheckVoucherEntryRequest } from '../cash-check-voucher-entry/cash-check-voucher-entry.types'
+import type { ICashCheckVoucherTag } from '../cash-check-voucher-tag/cash-check-voucher-tag.types'
 import type { ICurrency } from '@ecoop/modules/currency'
 import type { IMedia } from '@ecoop/modules/media'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
-import type { IUser } from '@ecoop/modules/user'
-import type { IUserOrganizationSettings } from '@ecoop/modules/user-organization'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
+import type { IUser } from '@ecoop/domains/iam'
+import type { IUserOrganizationSettings } from '@ecoop/domains/iam'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

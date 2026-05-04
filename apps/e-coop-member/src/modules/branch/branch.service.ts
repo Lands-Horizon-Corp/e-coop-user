@@ -1,6 +1,6 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IUserOrganization } from '@ecoop/domains/iam'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'

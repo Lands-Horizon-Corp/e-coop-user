@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IBranch } from '@ecoop/modules/branch'
+import type { IBranch } from '@ecoop/domains/iam'
 import type {
     IAuditable,
     IPaginatedResult,

@@ -1,5 +1,5 @@
-import type { IMemberClassification } from '@ecoop/modules/member-classification'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberClassification } from '../member-classification/member-classification.types'
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type {
     IAuditable,
     IOrgBranchIdentity,

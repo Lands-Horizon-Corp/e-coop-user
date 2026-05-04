@@ -1,4 +1,4 @@
-import type { IAdjustmentEntry } from '@ecoop/modules/adjustment-entry'
+import type { IAdjustmentEntry } from '../adjustment-entry/adjustment-entry.types'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

@@ -1,11 +1,11 @@
 import type z from 'zod'
 
-import type { IBranch } from '@ecoop/modules/branch'
+import type { IBranch } from '@ecoop/domains/iam'
 import type { ICurrency } from '@ecoop/modules/currency'
 import type { IMedia } from '@ecoop/modules/media'
-import type { IOrganization } from '@ecoop/modules/organization'
-import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IOrganization } from '@ecoop/domains/iam'
+import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

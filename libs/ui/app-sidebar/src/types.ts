@@ -1,4 +1,4 @@
-import type { TUserType } from '@ecoop/modules/user'
+import type { TUserType } from '@ecoop/domains/iam'
 import type { IconType } from 'react-icons/lib'
 
 export type TNavItemType = 'dropdown' | 'item'

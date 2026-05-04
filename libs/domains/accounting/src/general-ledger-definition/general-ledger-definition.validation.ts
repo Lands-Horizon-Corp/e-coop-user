@@ -1,6 +1,6 @@
 import { z } from 'zod'
 
-import { GENERAL_LEDGER_TYPE } from '@ecoop/modules/general-ledger'
+import { GENERAL_LEDGER_TYPE } from '../general-ledger/general-ledger.constants'
 import { entityIdSchema } from '@ecoop/shared/validation'
 
 export const GeneralLedgerTypeEnumSchema = z.enum(GENERAL_LEDGER_TYPE)

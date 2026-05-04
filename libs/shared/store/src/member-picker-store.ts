@@ -1,4 +1,4 @@
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type { IQRMemberProfile } from '@ecoop/modules/qr-crypto'
 import { create } from 'zustand'
 

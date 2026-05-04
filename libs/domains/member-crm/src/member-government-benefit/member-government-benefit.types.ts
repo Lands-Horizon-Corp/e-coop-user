@@ -1,5 +1,5 @@
 import type { IMedia } from '@ecoop/modules/media'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import { IGovernmentId } from './member-government-benefit.interfaces'

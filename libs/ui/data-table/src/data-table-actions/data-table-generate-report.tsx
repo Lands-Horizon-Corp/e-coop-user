@@ -1,5 +1,5 @@
-import type { TModelName } from '@ecoop/modules/generated-report'
-import { GeneratedReportCreateFormModal } from '@ecoop/modules/generated-report'
+import type { TModelName } from '@ecoop/domains/reporting'
+import { GeneratedReportCreateFormModal } from '@ecoop/domains/reporting'
 import type { TFinalFilter } from '@ecoop/shared/contexts'
 import { toReadableDate } from '@ecoop/shared/helpers'
 import { useModalState } from '@ecoop/shared/hooks'

@@ -1,5 +1,5 @@
-import type { IMemberGroup } from '@ecoop/modules/member-group'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberGroup } from '@ecoop/domains/member-crm'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

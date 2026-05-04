@@ -1,4 +1,4 @@
-import type { IOrganization } from '@ecoop/modules/organization'
+import type { IOrganization } from '@ecoop/domains/iam'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 import type { ICategory } from '../category'

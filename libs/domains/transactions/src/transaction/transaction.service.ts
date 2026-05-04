@@ -1,13 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import type { IGeneralLedger } from '@ecoop/modules/general-ledger'
-import { generalLedgerBaseKey } from '@ecoop/modules/general-ledger'
-import type {
-    IPaymentQuickRequest,
-    IPaymentRequest,
-    TPaymentMode,
-} from '@ecoop/modules/quick-transfer'
+import type { IGeneralLedger } from '@ecoop/domains/accounting'
+import { generalLedgerBaseKey } from '@ecoop/domains/accounting'
+import type { IPaymentQuickRequest, IPaymentRequest, TPaymentMode } from '../quick-transfer/quick-transfer.types'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { withCatchAsync } from '@ecoop/shared/helpers'
 import { Logger } from '@ecoop/shared/helpers'

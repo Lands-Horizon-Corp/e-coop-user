@@ -1,5 +1,5 @@
-import { hasPermissionFromAuth } from '@ecoop/modules/authentication'
-import type { TUserType } from '@ecoop/modules/user'
+import { hasPermissionFromAuth } from '@ecoop/domains/iam'
+import type { TUserType } from '@ecoop/domains/iam'
 import {
     BankDuoToneIcon,
     BankIcon,

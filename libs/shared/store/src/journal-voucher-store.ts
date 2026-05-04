@@ -1,4 +1,4 @@
-import type { IJournalVoucherEntryRequest } from '@ecoop/modules/journal-voucher-entry'
+import type { IJournalVoucherEntryRequest } from '@ecoop/domains/accounting'
 import type { TEntityId } from '@ecoop/shared/types'
 import { create } from 'zustand'
 

@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { ICollateral } from '@ecoop/modules/collateral'
+import type { ICollateral } from '../collateral/collateral.types'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

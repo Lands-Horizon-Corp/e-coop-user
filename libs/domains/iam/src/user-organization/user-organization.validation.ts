@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { USER_TYPE } from '@ecoop/modules/user'
+import { USER_TYPE } from '../user/user.constants'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,

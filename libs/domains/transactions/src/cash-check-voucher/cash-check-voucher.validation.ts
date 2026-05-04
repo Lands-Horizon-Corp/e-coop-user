@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { CashCheckVoucherEntrySchema } from '@ecoop/modules/cash-check-voucher-entry'
+import { CashCheckVoucherEntrySchema } from '../cash-check-voucher-entry/cash-check-voucher-entry.validation'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,

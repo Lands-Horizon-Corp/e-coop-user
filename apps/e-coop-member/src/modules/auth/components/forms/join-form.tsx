@@ -4,14 +4,11 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import type {
-    IMemberProfile,
-    IQuickCreateMemberProfile,
-} from '@ecoop/modules/member-profile'
-import { QuickCreateMemberProfileSchema } from '@ecoop/modules/member-profile'
-import CivilStatusCombobox from '@ecoop/modules/member-profile/components/comboboxes/civil-status-combobox'
-import { CountryCombobox } from '@ecoop/modules/member-profile/components/comboboxes/country-combobox'
-import MemberGenderCombobox from '@ecoop/modules/member-profile/components/comboboxes/member-gender-combobox'
+import type { IMemberProfile, IQuickCreateMemberProfile } from '@ecoop/domains/member-crm'
+import { QuickCreateMemberProfileSchema } from '@ecoop/domains/member-crm'
+import CivilStatusCombobox from '@ecoop/domains/member-crm'
+import { CountryCombobox } from '@ecoop/domains/member-crm'
+import MemberGenderCombobox from '@ecoop/domains/member-crm'
 import { toInputDateString } from '@ecoop/shared/helpers'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { useFormHelper } from '@ecoop/shared/hooks'

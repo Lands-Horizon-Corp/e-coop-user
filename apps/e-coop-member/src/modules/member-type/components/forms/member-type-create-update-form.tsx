@@ -3,12 +3,8 @@ import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import type { IMemberType } from '@ecoop/modules/member-type'
-import {
-    MemberTypeSchema,
-    useCreateMemberType,
-    useUpdateMemberTypeById,
-} from '@ecoop/modules/member-type'
+import type { IMemberType } from '@ecoop/domains/member-crm'
+import { MemberTypeSchema, useCreateMemberType, useUpdateMemberTypeById } from '@ecoop/domains/member-crm'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { useFormHelper } from '@ecoop/shared/hooks'
 import { cn } from '@ecoop/shared/tw-utils'

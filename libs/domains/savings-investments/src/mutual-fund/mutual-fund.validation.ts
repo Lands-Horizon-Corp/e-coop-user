@@ -1,7 +1,7 @@
 import z from 'zod'
 
-import { MutualFundAdditionalMembersSchema } from '@ecoop/modules/mutual-fund-additional-members'
-import { MutualFundTableSchema } from '@ecoop/modules/mutual-fund-table'
+import { MutualFundAdditionalMembersSchema } from '../mutual-fund-additional-members/mutual-fund-additional-members.validation'
+import { MutualFundTableSchema } from '../mutual-fund-table/mutual-fund-table.validation'
 import {
     EntityIdSchema,
     entityIdSchema,

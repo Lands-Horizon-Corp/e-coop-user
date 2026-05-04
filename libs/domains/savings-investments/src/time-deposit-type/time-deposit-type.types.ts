@@ -1,5 +1,5 @@
 import type { ICurrency } from '@ecoop/modules/currency'
-import type { ITimeDepositComputation } from '@ecoop/modules/time-deposit-computation'
+import type { ITimeDepositComputation } from '../time-deposit-computation/time-deposit-computation.types'
 import type {
     IAuditable,
     IOrgBranchIdentity,

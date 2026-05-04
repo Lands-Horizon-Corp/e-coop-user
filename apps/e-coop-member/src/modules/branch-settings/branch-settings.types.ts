@@ -1,7 +1,7 @@
 import type z from 'zod'
 
 import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMemberType } from '@ecoop/modules/member-type'
+import type { IMemberType } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

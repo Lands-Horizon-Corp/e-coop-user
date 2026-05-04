@@ -1,8 +1,8 @@
 import type { ICurrency } from '@ecoop/modules/currency'
 import type { IMedia } from '@ecoop/modules/media'
-import type { IOrganizationCategory } from '@ecoop/modules/organization-category'
-import type { IOrganizationMedia } from '@ecoop/modules/organization-media'
-import type { ISubscriptionPlan } from '@ecoop/modules/subscription-plan'
+import type { IOrganizationCategory } from '@ecoop/domains/iam'
+import type { IOrganizationMedia } from '@ecoop/domains/iam'
+import type { ISubscriptionPlan } from '@ecoop/domains/iam'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 // import { IUserOrganization } from '../user-organization'

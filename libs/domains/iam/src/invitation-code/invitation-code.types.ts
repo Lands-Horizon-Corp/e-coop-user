@@ -1,7 +1,7 @@
-import type { IBranch } from '@ecoop/modules/branch'
-import type { IOrganization } from '@ecoop/modules/organization'
-import type { TPermission } from '@ecoop/modules/permission'
-import type { TUserType } from '@ecoop/modules/user'
+import type { IBranch } from '../branch/branch.types'
+import type { IOrganization } from '../organization/organization.types'
+import type { TPermission } from '../permission/permission.types'
+import type { TUserType } from '../user/user.types'
 import type {
     IAuditable,
     IPaginatedResult,

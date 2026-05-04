@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IUser } from '@ecoop/modules/user'
+import type { IUser } from '@ecoop/domains/iam'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

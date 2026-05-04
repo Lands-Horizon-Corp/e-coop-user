@@ -1,10 +1,7 @@
 import { forwardRef, useState } from 'react'
 
-import type {
-    IMemberExpense,
-    IMemberProfile,
-} from '@ecoop/modules/member-profile'
-import { useDeleteMemberProfileExpense } from '@ecoop/modules/member-profile'
+import type { IMemberExpense, IMemberProfile } from '@ecoop/domains/member-crm'
+import { useDeleteMemberProfileExpense } from '@ecoop/domains/member-crm'
 import { withToastCallbacks } from '@ecoop/shared/helpers'
 import { toReadableDate } from '@ecoop/shared/helpers'
 import { formatNumber } from '@ecoop/shared/helpers'

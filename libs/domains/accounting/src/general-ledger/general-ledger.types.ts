@@ -1,13 +1,13 @@
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '../account/account.types'
 import type { IBank } from '@ecoop/modules/bank'
 import type { ICurrency } from '@ecoop/modules/currency'
 import type { IMedia } from '@ecoop/modules/media'
-import type { IMemberJointAccount } from '@ecoop/modules/member-joint-account'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import type { IPaymentType } from '@ecoop/modules/payment-type'
-import type { ITransaction } from '@ecoop/modules/transaction'
-import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IMemberJointAccount } from '@ecoop/domains/member-crm'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { IPaymentType } from '@ecoop/domains/transactions'
+import type { ITransaction } from '@ecoop/domains/transactions'
+import type { ITransactionBatch } from '@ecoop/domains/transactions'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

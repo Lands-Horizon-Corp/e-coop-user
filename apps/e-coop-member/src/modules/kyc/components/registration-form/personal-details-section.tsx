@@ -1,8 +1,8 @@
 import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import MemberGenderCombobox from '@ecoop/modules/member-gender/components/member-gender-combobox'
-import CivilStatusCombobox from '@ecoop/modules/member-profile/components/comboboxes/civil-status-combobox'
+import MemberGenderCombobox from '@ecoop/domains/member-crm'
+import CivilStatusCombobox from '@ecoop/domains/member-crm'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { Button } from '@ecoop/ui/core'
 import FormFieldWrapper from '@ecoop/ui/core'

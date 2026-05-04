@@ -38,214 +38,214 @@
                 "libs/shared/helpers/src/index.ts"
             ],
             "@ecoop/modules/account": [
-                "libs/modules/account/src/index.ts"
+                "libs/domains/accounting/src/account/index.ts"
             ],
             "@ecoop/modules/account-category": [
-                "libs/modules/account-category/src/index.ts"
+                "libs/domains/accounting/src/account-category/index.ts"
             ],
             "@ecoop/modules/account-classification": [
-                "libs/modules/account-classification/src/index.ts"
+                "libs/domains/accounting/src/account-classification/index.ts"
             ],
             "@ecoop/modules/account-history": [
-                "libs/modules/account-history/src/index.ts"
+                "libs/domains/accounting/src/account-history/index.ts"
             ],
             "@ecoop/modules/account-tag": [
-                "libs/modules/account-tag/src/index.ts"
+                "libs/domains/accounting/src/account-tag/index.ts"
             ],
             "@ecoop/modules/account-transaction": [
-                "libs/modules/account-transaction/src/index.ts"
+                "libs/domains/accounting/src/account-transaction/index.ts"
             ],
             "@ecoop/modules/account-transaction-entry": [
-                "libs/modules/account-transaction-entry/src/index.ts"
+                "libs/domains/accounting/src/account-transaction-entry/index.ts"
             ],
             "@ecoop/modules/adjustment-entry": [
-                "libs/modules/adjustment-entry/src/index.ts"
+                "libs/domains/transactions/src/adjustment-entry/index.ts"
             ],
             "@ecoop/modules/adjustment-entry-tag": [
-                "libs/modules/adjustment-entry-tag/src/index.ts"
+                "libs/domains/transactions/src/adjustment-entry-tag/index.ts"
             ],
             "@ecoop/modules/approvals": [
                 "libs/modules/approvals/src/index.ts"
             ],
             "@ecoop/modules/area": ["libs/modules/area/src/index.ts"],
             "@ecoop/modules/authentication": [
-                "libs/modules/authentication/src/index.ts"
+                "libs/domains/iam/src/authentication/index.ts"
             ],
             "@ecoop/modules/automatic-loan-deduction": [
-                "libs/modules/automatic-loan-deduction/src/index.ts"
+                "libs/domains/loans/src/automatic-loan-deduction/index.ts"
             ],
             "@ecoop/modules/bank": ["libs/modules/bank/src/index.ts"],
             "@ecoop/modules/batch-funding": [
-                "libs/modules/batch-funding/src/index.ts"
+                "libs/domains/transactions/src/batch-funding/index.ts"
             ],
             "@ecoop/modules/bill-and-coins": [
-                "libs/modules/bill-and-coins/src/index.ts"
+                "libs/domains/transactions/src/bill-and-coins/index.ts"
             ],
             "@ecoop/modules/branch": [
-                "libs/modules/branch/src/index.ts"
+                "libs/domains/iam/src/branch/index.ts"
             ],
             "@ecoop/modules/branch-settings": [
-                "libs/modules/branch-settings/src/index.ts"
+                "libs/domains/iam/src/branch-settings/index.ts"
             ],
             "@ecoop/modules/browse-exclude-include-accounts": [
-                "libs/modules/browse-exclude-include-accounts/src/index.ts"
+                "libs/domains/rates-computations/src/browse-exclude-include-accounts/index.ts"
             ],
             "@ecoop/modules/browse-reference": [
-                "libs/modules/browse-reference/src/index.ts"
+                "libs/domains/rates-computations/src/browse-reference/index.ts"
             ],
             "@ecoop/modules/calculator": [
-                "libs/modules/calculator/src/index.ts"
+                "libs/domains/rates-computations/src/calculator/index.ts"
             ],
             "@ecoop/modules/cancelled-cash-check-voucher": [
-                "libs/modules/cancelled-cash-check-voucher/src/index.ts"
+                "libs/domains/transactions/src/cancelled-cash-check-voucher/index.ts"
             ],
             "@ecoop/modules/cash-check-voucher": [
-                "libs/modules/cash-check-voucher/src/index.ts"
+                "libs/domains/transactions/src/cash-check-voucher/index.ts"
             ],
             "@ecoop/modules/cash-check-voucher-entry": [
-                "libs/modules/cash-check-voucher-entry/src/index.ts"
+                "libs/domains/transactions/src/cash-check-voucher-entry/index.ts"
             ],
             "@ecoop/modules/cash-check-voucher-tag": [
-                "libs/modules/cash-check-voucher-tag/src/index.ts"
+                "libs/domains/transactions/src/cash-check-voucher-tag/index.ts"
             ],
             "@ecoop/modules/cash-count": [
-                "libs/modules/cash-count/src/index.ts"
+                "libs/domains/transactions/src/cash-count/index.ts"
             ],
             "@ecoop/modules/category": [
                 "libs/modules/category/src/index.ts"
             ],
             "@ecoop/modules/charges-rate-by-range-or-minimum-amount": [
-                "libs/modules/charges-rate-by-range-or-minimum-amount/src/index.ts"
+                "libs/domains/rates-computations/src/charges-rate-by-range-or-minimum-amount/index.ts"
             ],
             "@ecoop/modules/charges-rate-by-term": [
-                "libs/modules/charges-rate-by-term/src/index.ts"
+                "libs/domains/rates-computations/src/charges-rate-by-term/index.ts"
             ],
             "@ecoop/modules/charges-rate-scheme": [
-                "libs/modules/charges-rate-scheme/src/index.ts"
+                "libs/domains/rates-computations/src/charges-rate-scheme/index.ts"
             ],
             "@ecoop/modules/charges-rate-scheme-account": [
-                "libs/modules/charges-rate-scheme-account/src/index.ts"
+                "libs/domains/rates-computations/src/charges-rate-scheme-account/index.ts"
             ],
             "@ecoop/modules/charges-rate-scheme-mode-of-payment": [
-                "libs/modules/charges-rate-scheme-mode-of-payment/src/index.ts"
+                "libs/domains/rates-computations/src/charges-rate-scheme-mode-of-payment/index.ts"
             ],
             "@ecoop/modules/check-remittance": [
-                "libs/modules/check-remittance/src/index.ts"
+                "libs/domains/transactions/src/check-remittance/index.ts"
             ],
             "@ecoop/modules/collateral": [
-                "libs/modules/collateral/src/index.ts"
+                "libs/domains/loans/src/collateral/index.ts"
             ],
             "@ecoop/modules/collectors-member-account-entry": [
-                "libs/modules/collectors-member-account-entry/src/index.ts"
+                "libs/domains/transactions/src/collectors-member-account-entry/index.ts"
             ],
             "@ecoop/modules/comaker-collateral": [
-                "libs/modules/comaker-collateral/src/index.ts"
+                "libs/domains/loans/src/comaker-collateral/index.ts"
             ],
             "@ecoop/modules/comaker-member-profile": [
-                "libs/modules/comaker-member-profile/src/index.ts"
+                "libs/domains/member-crm/src/comaker-member-profile/index.ts"
             ],
             "@ecoop/modules/company": [
-                "libs/modules/company/src/index.ts"
+                "libs/domains/iam/src/company/index.ts"
             ],
             "@ecoop/modules/computation-sheet": [
-                "libs/modules/computation-sheet/src/index.ts"
+                "libs/domains/rates-computations/src/computation-sheet/index.ts"
             ],
             "@ecoop/modules/computation-type": [
-                "libs/modules/computation-type/src/index.ts"
+                "libs/domains/rates-computations/src/computation-type/index.ts"
             ],
             "@ecoop/modules/contact-us": [
-                "libs/modules/contact-us/src/index.ts"
+                "libs/domains/communications/src/contact-us/index.ts"
             ],
             "@ecoop/modules/currency": [
                 "libs/modules/currency/src/index.ts"
             ],
             "@ecoop/modules/dashboard": [
-                "libs/modules/dashboard/src/index.ts"
+                "libs/domains/analytics/src/dashboard/index.ts"
             ],
             "@ecoop/modules/developer": [
                 "libs/modules/developer/src/index.ts"
             ],
             "@ecoop/modules/disbursement": [
-                "libs/modules/disbursement/src/index.ts"
+                "libs/domains/transactions/src/disbursement/index.ts"
             ],
             "@ecoop/modules/disbursement-transaction": [
-                "libs/modules/disbursement-transaction/src/index.ts"
+                "libs/domains/transactions/src/disbursement-transaction/index.ts"
             ],
             "@ecoop/modules/employee": [
-                "libs/modules/employee/src/index.ts"
+                "libs/domains/iam/src/employee/index.ts"
             ],
             "@ecoop/modules/explore": [
                 "libs/modules/explore/src/index.ts"
             ],
-            "@ecoop/modules/feed": ["libs/modules/feed/src/index.ts"],
+            "@ecoop/modules/feed": ["libs/domains/social-media/src/feed/index.ts"],
             "@ecoop/modules/feed-comment": [
-                "libs/modules/feed-comment/src/index.ts"
+                "libs/domains/social-media/src/feed-comment/index.ts"
             ],
             "@ecoop/modules/feed-like": [
-                "libs/modules/feed-like/src/index.ts"
+                "libs/domains/social-media/src/feed-like/index.ts"
             ],
             "@ecoop/modules/feed-media": [
-                "libs/modules/feed-media/src/index.ts"
+                "libs/domains/social-media/src/feed-media/index.ts"
             ],
             "@ecoop/modules/feedback": [
-                "libs/modules/feedback/src/index.ts"
+                "libs/domains/communications/src/feedback/index.ts"
             ],
             "@ecoop/modules/financial-statement-account-grouping": [
-                "libs/modules/financial-statement-account-grouping/src/index.ts"
+                "libs/domains/accounting/src/financial-statement-account-grouping/index.ts"
             ],
             "@ecoop/modules/financial-statement-definition": [
-                "libs/modules/financial-statement-definition/src/index.ts"
+                "libs/domains/accounting/src/financial-statement-definition/index.ts"
             ],
             "@ecoop/modules/financial-statement-title": [
-                "libs/modules/financial-statement-title/src/index.ts"
+                "libs/domains/accounting/src/financial-statement-title/index.ts"
             ],
             "@ecoop/modules/fines-maturity": [
-                "libs/modules/fines-maturity/src/index.ts"
+                "libs/domains/rates-computations/src/fines-maturity/index.ts"
             ],
             "@ecoop/modules/footstep": [
                 "libs/modules/footstep/src/index.ts"
             ],
             "@ecoop/modules/funds": [
-                "libs/modules/funds/src/index.ts"
+                "libs/domains/savings-investments/src/funds/index.ts"
             ],
             "@ecoop/modules/general-account-grouping-net-surplus-negative": [
-                "libs/modules/general-account-grouping-net-surplus-negative/src/index.ts"
+                "libs/domains/accounting/src/general-account-grouping-net-surplus-negative/index.ts"
             ],
             "@ecoop/modules/general-account-grouping-net-surplus-positive": [
-                "libs/modules/general-account-grouping-net-surplus-positive/src/index.ts"
+                "libs/domains/accounting/src/general-account-grouping-net-surplus-positive/index.ts"
             ],
             "@ecoop/modules/general-accounting-ledger-tag": [
-                "libs/modules/general-accounting-ledger-tag/src/index.ts"
+                "libs/domains/accounting/src/general-accounting-ledger-tag/index.ts"
             ],
             "@ecoop/modules/general-ledger": [
-                "libs/modules/general-ledger/src/index.ts"
+                "libs/domains/accounting/src/general-ledger/index.ts"
             ],
             "@ecoop/modules/general-ledger-account-grouping": [
-                "libs/modules/general-ledger-account-grouping/src/index.ts"
+                "libs/domains/accounting/src/general-ledger-account-grouping/index.ts"
             ],
             "@ecoop/modules/general-ledger-definition": [
-                "libs/modules/general-ledger-definition/src/index.ts"
+                "libs/domains/accounting/src/general-ledger-definition/index.ts"
             ],
             "@ecoop/modules/generated-report": [
-                "libs/modules/generated-report/src/index.ts"
+                "libs/domains/reporting/src/generated-report/index.ts"
             ],
             "@ecoop/modules/generated-reports-download-users": [
-                "libs/modules/generated-reports-download-users/src/index.ts"
+                "libs/domains/reporting/src/generated-reports-download-users/index.ts"
             ],
             "@ecoop/modules/generated-savings-interest": [
-                "libs/modules/generated-savings-interest/src/index.ts"
+                "libs/domains/savings-investments/src/generated-savings-interest/index.ts"
             ],
             "@ecoop/modules/generated-savings-interest-entry": [
-                "libs/modules/generated-savings-interest-entry/src/index.ts"
+                "libs/domains/savings-investments/src/generated-savings-interest-entry/index.ts"
             ],
             "@ecoop/modules/gl-fs": [
-                "libs/modules/gl-fs/src/index.ts"
+                "libs/domains/accounting/src/gl-fs/index.ts"
             ],
             "@ecoop/modules/grocery-computation-sheet": [
-                "libs/modules/grocery-computation-sheet/src/index.ts"
+                "libs/domains/rates-computations/src/grocery-computation-sheet/index.ts"
             ],
             "@ecoop/modules/grocery-computation-sheet-monthly": [
-                "libs/modules/grocery-computation-sheet-monthly/src/index.ts"
+                "libs/domains/rates-computations/src/grocery-computation-sheet-monthly/index.ts"
             ],
             "@ecoop/modules/heartbeat": [
                 "libs/modules/heartbeat/src/index.ts"
@@ -255,91 +255,91 @@
             ],
             "@ecoop/modules/home": ["libs/modules/home/src/index.ts"],
             "@ecoop/modules/include-negative-accounts": [
-                "libs/modules/include-negative-accounts/src/index.ts"
+                "libs/domains/accounting/src/include-negative-accounts/index.ts"
             ],
             "@ecoop/modules/interest-maturity": [
-                "libs/modules/interest-maturity/src/index.ts"
+                "libs/domains/rates-computations/src/interest-maturity/index.ts"
             ],
             "@ecoop/modules/interest-rate-by-amount": [
-                "libs/modules/interest-rate-by-amount/src/index.ts"
+                "libs/domains/rates-computations/src/interest-rate-by-amount/index.ts"
             ],
             "@ecoop/modules/interest-rate-by-date": [
-                "libs/modules/interest-rate-by-date/src/index.ts"
+                "libs/domains/rates-computations/src/interest-rate-by-date/index.ts"
             ],
             "@ecoop/modules/interest-rate-by-term": [
-                "libs/modules/interest-rate-by-term/src/index.ts"
+                "libs/domains/rates-computations/src/interest-rate-by-term/index.ts"
             ],
             "@ecoop/modules/interest-rate-by-terms-header": [
-                "libs/modules/interest-rate-by-terms-header/src/index.ts"
+                "libs/domains/rates-computations/src/interest-rate-by-terms-header/index.ts"
             ],
             "@ecoop/modules/interest-rate-by-year": [
-                "libs/modules/interest-rate-by-year/src/index.ts"
+                "libs/domains/rates-computations/src/interest-rate-by-year/index.ts"
             ],
             "@ecoop/modules/interest-rate-percentage": [
-                "libs/modules/interest-rate-percentage/src/index.ts"
+                "libs/domains/rates-computations/src/interest-rate-percentage/index.ts"
             ],
             "@ecoop/modules/interest-rate-scheme": [
-                "libs/modules/interest-rate-scheme/src/index.ts"
+                "libs/domains/rates-computations/src/interest-rate-scheme/index.ts"
             ],
             "@ecoop/modules/invitation-code": [
-                "libs/modules/invitation-code/src/index.ts"
+                "libs/domains/iam/src/invitation-code/index.ts"
             ],
             "@ecoop/modules/journal-voucher": [
-                "libs/modules/journal-voucher/src/index.ts"
+                "libs/domains/accounting/src/journal-voucher/index.ts"
             ],
             "@ecoop/modules/journal-voucher-entry": [
-                "libs/modules/journal-voucher-entry/src/index.ts"
+                "libs/domains/accounting/src/journal-voucher-entry/index.ts"
             ],
             "@ecoop/modules/journal-voucher-tag": [
-                "libs/modules/journal-voucher-tag/src/index.ts"
+                "libs/domains/accounting/src/journal-voucher-tag/index.ts"
             ],
             "@ecoop/modules/loan-account": [
-                "libs/modules/loan-account/src/index.ts"
+                "libs/domains/loans/src/loan-account/index.ts"
             ],
             "@ecoop/modules/loan-amortization-schedule": [
-                "libs/modules/loan-amortization-schedule/src/index.ts"
+                "libs/domains/loans/src/loan-amortization-schedule/index.ts"
             ],
             "@ecoop/modules/loan-clearance-analysis": [
-                "libs/modules/loan-clearance-analysis/src/index.ts"
+                "libs/domains/loans/src/loan-clearance-analysis/index.ts"
             ],
             "@ecoop/modules/loan-clearance-analysis-institution": [
-                "libs/modules/loan-clearance-analysis-institution/src/index.ts"
+                "libs/domains/loans/src/loan-clearance-analysis-institution/index.ts"
             ],
             "@ecoop/modules/loan-guaranteed-fund": [
-                "libs/modules/loan-guaranteed-fund/src/index.ts"
+                "libs/domains/loans/src/loan-guaranteed-fund/index.ts"
             ],
             "@ecoop/modules/loan-guaranteed-fund-per-month": [
-                "libs/modules/loan-guaranteed-fund-per-month/src/index.ts"
+                "libs/domains/loans/src/loan-guaranteed-fund-per-month/index.ts"
             ],
             "@ecoop/modules/loan-guide": [
-                "libs/modules/loan-guide/src/index.ts"
+                "libs/domains/loans/src/loan-guide/index.ts"
             ],
             "@ecoop/modules/loan-ledger": [
-                "libs/modules/loan-ledger/src/index.ts"
+                "libs/domains/loans/src/loan-ledger/index.ts"
             ],
             "@ecoop/modules/loan-payment": [
-                "libs/modules/loan-payment/src/index.ts"
+                "libs/domains/loans/src/loan-payment/index.ts"
             ],
             "@ecoop/modules/loan-purpose": [
-                "libs/modules/loan-purpose/src/index.ts"
+                "libs/domains/loans/src/loan-purpose/index.ts"
             ],
             "@ecoop/modules/loan-status": [
-                "libs/modules/loan-status/src/index.ts"
+                "libs/domains/loans/src/loan-status/index.ts"
             ],
             "@ecoop/modules/loan-tag": [
-                "libs/modules/loan-tag/src/index.ts"
+                "libs/domains/loans/src/loan-tag/index.ts"
             ],
             "@ecoop/modules/loan-terms-and-condition-amount-receipt": [
-                "libs/modules/loan-terms-and-condition-amount-receipt/src/index.ts"
+                "libs/domains/loans/src/loan-terms-and-condition-amount-receipt/index.ts"
             ],
             "@ecoop/modules/loan-terms-and-condition-suggested-payment": [
-                "libs/modules/loan-terms-and-condition-suggested-payment/src/index.ts"
+                "libs/domains/loans/src/loan-terms-and-condition-suggested-payment/index.ts"
             ],
             "@ecoop/modules/loan-transaction": [
-                "libs/modules/loan-transaction/src/index.ts"
+                "libs/domains/loans/src/loan-transaction/index.ts"
             ],
             "@ecoop/modules/loan-transaction-entry": [
-                "libs/modules/loan-transaction-entry/src/index.ts"
+                "libs/domains/loans/src/loan-transaction-entry/index.ts"
             ],
             "@ecoop/modules/location": [
                 "libs/modules/location/src/index.ts"
@@ -348,227 +348,227 @@
                 "libs/modules/media/src/index.ts"
             ],
             "@ecoop/modules/member-account-ledger": [
-                "libs/modules/member-account-ledger/src/index.ts"
+                "libs/domains/accounting/src/member-account-ledger/index.ts"
             ],
             "@ecoop/modules/member-accounting-ledger": [
-                "libs/modules/member-accounting-ledger/src/index.ts"
+                "libs/domains/accounting/src/member-accounting-ledger/index.ts"
             ],
             "@ecoop/modules/member-address": [
-                "libs/modules/member-address/src/index.ts"
+                "libs/domains/member-crm/src/member-address/index.ts"
             ],
             "@ecoop/modules/member-asset": [
-                "libs/modules/member-asset/src/index.ts"
+                "libs/domains/member-crm/src/member-asset/index.ts"
             ],
             "@ecoop/modules/member-bank-card": [
-                "libs/modules/member-bank-card/src/index.ts"
+                "libs/domains/member-crm/src/member-bank-card/index.ts"
             ],
             "@ecoop/modules/member-center": [
-                "libs/modules/member-center/src/index.ts"
+                "libs/domains/member-crm/src/member-center/index.ts"
             ],
             "@ecoop/modules/member-center-history": [
-                "libs/modules/member-center-history/src/index.ts"
+                "libs/domains/member-crm/src/member-center-history/index.ts"
             ],
             "@ecoop/modules/member-classification": [
-                "libs/modules/member-classification/src/index.ts"
+                "libs/domains/member-crm/src/member-classification/index.ts"
             ],
             "@ecoop/modules/member-classification-history": [
-                "libs/modules/member-classification-history/src/index.ts"
+                "libs/domains/member-crm/src/member-classification-history/index.ts"
             ],
             "@ecoop/modules/member-classification-interest-rate": [
-                "libs/modules/member-classification-interest-rate/src/index.ts"
+                "libs/domains/rates-computations/src/member-classification-interest-rate/index.ts"
             ],
             "@ecoop/modules/member-close-remark": [
-                "libs/modules/member-close-remark/src/index.ts"
+                "libs/domains/member-crm/src/member-close-remark/index.ts"
             ],
             "@ecoop/modules/member-contact-reference": [
-                "libs/modules/member-contact-reference/src/index.ts"
+                "libs/domains/member-crm/src/member-contact-reference/index.ts"
             ],
             "@ecoop/modules/member-damayan-extension-entry": [
-                "libs/modules/member-damayan-extension-entry/src/index.ts"
+                "libs/domains/savings-investments/src/member-damayan-extension-entry/index.ts"
             ],
             "@ecoop/modules/member-deduction-entry": [
-                "libs/modules/member-deduction-entry/src/index.ts"
+                "libs/domains/savings-investments/src/member-deduction-entry/index.ts"
             ],
             "@ecoop/modules/member-department": [
-                "libs/modules/member-department/src/index.ts"
+                "libs/domains/member-crm/src/member-department/index.ts"
             ],
             "@ecoop/modules/member-department-history": [
-                "libs/modules/member-department-history/src/index.ts"
+                "libs/domains/member-crm/src/member-department-history/index.ts"
             ],
             "@ecoop/modules/member-description-schema": [
-                "libs/modules/member-description-schema/src/index.ts"
+                "libs/domains/member-crm/src/member-description-schema/index.ts"
             ],
             "@ecoop/modules/member-educational-attainment": [
-                "libs/modules/member-educational-attainment/src/index.ts"
+                "libs/domains/member-crm/src/member-educational-attainment/index.ts"
             ],
             "@ecoop/modules/member-expense": [
-                "libs/modules/member-expense/src/index.ts"
+                "libs/domains/member-crm/src/member-expense/index.ts"
             ],
             "@ecoop/modules/member-gender": [
-                "libs/modules/member-gender/src/index.ts"
+                "libs/domains/member-crm/src/member-gender/index.ts"
             ],
             "@ecoop/modules/member-gender-history": [
-                "libs/modules/member-gender-history/src/index.ts"
+                "libs/domains/member-crm/src/member-gender-history/index.ts"
             ],
             "@ecoop/modules/member-government-benefit": [
-                "libs/modules/member-government-benefit/src/index.ts"
+                "libs/domains/member-crm/src/member-government-benefit/index.ts"
             ],
             "@ecoop/modules/member-group": [
-                "libs/modules/member-group/src/index.ts"
+                "libs/domains/member-crm/src/member-group/index.ts"
             ],
             "@ecoop/modules/member-group-history": [
-                "libs/modules/member-group-history/src/index.ts"
+                "libs/domains/member-crm/src/member-group-history/index.ts"
             ],
             "@ecoop/modules/member-income": [
-                "libs/modules/member-income/src/index.ts"
+                "libs/domains/member-crm/src/member-income/index.ts"
             ],
             "@ecoop/modules/member-joint-account": [
-                "libs/modules/member-joint-account/src/index.ts"
+                "libs/domains/member-crm/src/member-joint-account/index.ts"
             ],
             "@ecoop/modules/member-mutual-fund-history": [
-                "libs/modules/member-mutual-fund-history/src/index.ts"
+                "libs/domains/savings-investments/src/member-mutual-fund-history/index.ts"
             ],
             "@ecoop/modules/member-occupation": [
-                "libs/modules/member-occupation/src/index.ts"
+                "libs/domains/member-crm/src/member-occupation/index.ts"
             ],
             "@ecoop/modules/member-occupation-history": [
-                "libs/modules/member-occupation-history/src/index.ts"
+                "libs/domains/member-crm/src/member-occupation-history/index.ts"
             ],
             "@ecoop/modules/member-other-information-entry": [
-                "libs/modules/member-other-information-entry/src/index.ts"
+                "libs/domains/member-crm/src/member-other-information-entry/index.ts"
             ],
             "@ecoop/modules/member-profile": [
-                "libs/modules/member-profile/src/index.ts"
+                "libs/domains/member-crm/src/member-profile/index.ts"
             ],
             "@ecoop/modules/member-profile-archive": [
-                "libs/modules/member-profile-archive/src/index.ts"
+                "libs/domains/member-crm/src/member-profile-archive/index.ts"
             ],
             "@ecoop/modules/member-profile-media": [
-                "libs/modules/member-profile-media/src/index.ts"
+                "libs/domains/member-crm/src/member-profile-media/index.ts"
             ],
             "@ecoop/modules/member-recruits": [
-                "libs/modules/member-recruits/src/index.ts"
+                "libs/domains/member-crm/src/member-recruits/index.ts"
             ],
             "@ecoop/modules/member-relative-account": [
-                "libs/modules/member-relative-account/src/index.ts"
+                "libs/domains/member-crm/src/member-relative-account/index.ts"
             ],
             "@ecoop/modules/member-type": [
-                "libs/modules/member-type/src/index.ts"
+                "libs/domains/member-crm/src/member-type/index.ts"
             ],
             "@ecoop/modules/member-type-history": [
-                "libs/modules/member-type-history/src/index.ts"
+                "libs/domains/member-crm/src/member-type-history/index.ts"
             ],
             "@ecoop/modules/member-user-account": [
-                "libs/modules/member-user-account/src/index.ts"
+                "libs/domains/iam/src/member-user-account/index.ts"
             ],
             "@ecoop/modules/member-verification": [
-                "libs/modules/member-verification/src/index.ts"
+                "libs/domains/member-crm/src/member-verification/index.ts"
             ],
             "@ecoop/modules/mutual-fund": [
-                "libs/modules/mutual-fund/src/index.ts"
+                "libs/domains/savings-investments/src/mutual-fund/index.ts"
             ],
             "@ecoop/modules/mutual-fund-additional-members": [
-                "libs/modules/mutual-fund-additional-members/src/index.ts"
+                "libs/domains/savings-investments/src/mutual-fund-additional-members/index.ts"
             ],
             "@ecoop/modules/mutual-fund-entry": [
-                "libs/modules/mutual-fund-entry/src/index.ts"
+                "libs/domains/savings-investments/src/mutual-fund-entry/index.ts"
             ],
             "@ecoop/modules/mutual-fund-table": [
-                "libs/modules/mutual-fund-table/src/index.ts"
+                "libs/domains/savings-investments/src/mutual-fund-table/index.ts"
             ],
             "@ecoop/modules/notification": [
-                "libs/modules/notification/src/index.ts"
+                "libs/domains/communications/src/notification/index.ts"
             ],
             "@ecoop/modules/online-remittance": [
-                "libs/modules/online-remittance/src/index.ts"
+                "libs/domains/transactions/src/online-remittance/index.ts"
             ],
             "@ecoop/modules/or-builder": [
-                "libs/modules/or-builder/src/index.ts"
+                "libs/domains/transactions/src/or-builder/index.ts"
             ],
             "@ecoop/modules/organization": [
-                "libs/modules/organization/src/index.ts"
+                "libs/domains/iam/src/organization/index.ts"
             ],
             "@ecoop/modules/organization-category": [
-                "libs/modules/organization-category/src/index.ts"
+                "libs/domains/iam/src/organization-category/index.ts"
             ],
             "@ecoop/modules/organization-media": [
-                "libs/modules/organization-media/src/index.ts"
+                "libs/domains/iam/src/organization-media/index.ts"
             ],
             "@ecoop/modules/orgnaization-daily-usage": [
-                "libs/modules/orgnaization-daily-usage/src/index.ts"
+                "libs/domains/iam/src/orgnaization-daily-usage/index.ts"
             ],
             "@ecoop/modules/payment-type": [
-                "libs/modules/payment-type/src/index.ts"
+                "libs/domains/transactions/src/payment-type/index.ts"
             ],
             "@ecoop/modules/pdf-viewer": [
                 "libs/modules/pdf-viewer/src/index.ts"
             ],
             "@ecoop/modules/permission": [
-                "libs/modules/permission/src/index.ts"
+                "libs/domains/iam/src/permission/index.ts"
             ],
             "@ecoop/modules/permission-template": [
-                "libs/modules/permission-template/src/index.ts"
+                "libs/domains/iam/src/permission-template/index.ts"
             ],
             "@ecoop/modules/playground": [
                 "libs/modules/playground/src/index.ts"
             ],
             "@ecoop/modules/post-dated-check": [
-                "libs/modules/post-dated-check/src/index.ts"
+                "libs/domains/transactions/src/post-dated-check/index.ts"
             ],
             "@ecoop/modules/qr-crypto": [
                 "libs/modules/qr-crypto/src/index.ts"
             ],
             "@ecoop/modules/quick-transfer": [
-                "libs/modules/quick-transfer/src/index.ts"
+                "libs/domains/transactions/src/quick-transfer/index.ts"
             ],
             "@ecoop/modules/settings": [
                 "libs/modules/settings/src/index.ts"
             ],
             "@ecoop/modules/subscription-plan": [
-                "libs/modules/subscription-plan/src/index.ts"
+                "libs/domains/iam/src/subscription-plan/index.ts"
             ],
             "@ecoop/modules/tag-template": [
                 "libs/modules/tag-template/src/index.ts"
             ],
             "@ecoop/modules/time-deposit-computation": [
-                "libs/modules/time-deposit-computation/src/index.ts"
+                "libs/domains/savings-investments/src/time-deposit-computation/index.ts"
             ],
             "@ecoop/modules/time-deposit-computation-pre-mature": [
-                "libs/modules/time-deposit-computation-pre-mature/src/index.ts"
+                "libs/domains/savings-investments/src/time-deposit-computation-pre-mature/index.ts"
             ],
             "@ecoop/modules/time-deposit-type": [
-                "libs/modules/time-deposit-type/src/index.ts"
+                "libs/domains/savings-investments/src/time-deposit-type/index.ts"
             ],
             "@ecoop/modules/timesheet": [
                 "libs/modules/timesheet/src/index.ts"
             ],
             "@ecoop/modules/transaction": [
-                "libs/modules/transaction/src/index.ts"
+                "libs/domains/transactions/src/transaction/index.ts"
             ],
             "@ecoop/modules/transaction-batch": [
-                "libs/modules/transaction-batch/src/index.ts"
+                "libs/domains/transactions/src/transaction-batch/index.ts"
             ],
             "@ecoop/modules/transaction-tag": [
-                "libs/modules/transaction-tag/src/index.ts"
+                "libs/domains/transactions/src/transaction-tag/index.ts"
             ],
             "@ecoop/modules/transactions": [
-                "libs/modules/transactions/src/index.ts"
+                "libs/domains/transactions/src/transactions/index.ts"
             ],
             "@ecoop/modules/unbalance-account": [
-                "libs/modules/unbalance-account/src/index.ts"
+                "libs/domains/accounting/src/unbalance-account/index.ts"
             ],
-            "@ecoop/modules/user": ["libs/modules/user/src/index.ts"],
+            "@ecoop/modules/user": ["libs/domains/iam/src/user/index.ts"],
             "@ecoop/modules/user-organization": [
-                "libs/modules/user-organization/src/index.ts"
+                "libs/domains/iam/src/user-organization/index.ts"
             ],
             "@ecoop/modules/user-profile": [
-                "libs/modules/user-profile/src/index.ts"
+                "libs/domains/iam/src/user-profile/index.ts"
             ],
             "@ecoop/modules/user-rating": [
-                "libs/modules/user-rating/src/index.ts"
+                "libs/domains/iam/src/user-rating/index.ts"
             ],
             "@ecoop/modules/voucher-pay-to": [
-                "libs/modules/voucher-pay-to/src/index.ts"
+                "libs/domains/transactions/src/voucher-pay-to/index.ts"
             ],
             "@ecoop/shared/tw-utils": [
                 "libs/shared/tw-utils/src/index.ts"

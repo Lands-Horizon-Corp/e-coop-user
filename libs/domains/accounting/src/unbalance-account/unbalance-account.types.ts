@@ -1,8 +1,8 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '../account/account.types'
 import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

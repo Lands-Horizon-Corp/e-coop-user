@@ -1,8 +1,8 @@
 import type z from 'zod'
 
 import type { IMedia } from '@ecoop/modules/media'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import type { TRelationship } from '@ecoop/modules/member-relative-account'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { TRelationship } from '@ecoop/domains/member-crm'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { MemberJointAccountSchema } from './member-joint-account.validation'

@@ -1,7 +1,7 @@
 import * as React from 'react'
 
-import type { TRelationship } from '@ecoop/modules/member-relative-account'
-import { FAMILY_RELATIONSHIP } from '@ecoop/modules/member-relative-account'
+import type { TRelationship } from '@ecoop/domains/member-crm'
+import { FAMILY_RELATIONSHIP } from '@ecoop/domains/member-crm'
 import { cn } from '@ecoop/shared/tw-utils'
 import { CheckIcon, ChevronDownIcon } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'

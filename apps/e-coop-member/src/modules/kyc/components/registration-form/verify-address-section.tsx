@@ -6,9 +6,9 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { MemberAddressSchema } from '@ecoop/modules/member-address'
-import type { IMemberAddressRequest } from '@ecoop/modules/member-profile'
-import { CountryCombobox } from '@ecoop/modules/member-profile/components/comboboxes/country-combobox'
+import { MemberAddressSchema } from '@ecoop/domains/member-crm'
+import type { IMemberAddressRequest } from '@ecoop/domains/member-crm'
+import { CountryCombobox } from '@ecoop/domains/member-crm'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { useFormHelper } from '@ecoop/shared/hooks'
 import { useModalState } from '@ecoop/shared/hooks'

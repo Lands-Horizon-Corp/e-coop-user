@@ -1,9 +1,5 @@
-import type {
-    IBranchSettings,
-    IDepositSetting,
-    IWithdrawSetting,
-} from '@ecoop/modules/branch-settings'
-import type { TORBuilderOptions } from '@ecoop/modules/or-builder'
+import type { IBranchSettings, IDepositSetting, IWithdrawSetting } from '@ecoop/domains/iam'
+import type { TORBuilderOptions } from '../or-builder/or-builder.utils'
 
 import type { TPaymentMode } from './quick-transfer.types'
 

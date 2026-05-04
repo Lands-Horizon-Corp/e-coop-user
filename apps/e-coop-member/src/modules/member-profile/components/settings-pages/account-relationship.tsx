@@ -3,11 +3,7 @@ import { useState } from 'react'
 
 import { toast } from 'sonner'
 
-import type {
-    IMemberJointAccount,
-    IMemberProfile,
-    IMemberRelativeAccount,
-} from '@ecoop/modules/member-profile'
+import type { IMemberJointAccount, IMemberProfile, IMemberRelativeAccount } from '@ecoop/domains/member-crm'
 import { UserPlusIcon } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 import { Input } from '@ecoop/ui/core'

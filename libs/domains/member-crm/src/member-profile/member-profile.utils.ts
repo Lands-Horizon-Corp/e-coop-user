@@ -1,4 +1,4 @@
-import { buildOR } from '@ecoop/modules/or-builder'
+import { buildOR } from '@ecoop/domains/transactions'
 
 import type { TMemberPassbookGenerateSettings } from '.'
 

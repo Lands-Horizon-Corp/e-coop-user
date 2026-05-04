@@ -1,6 +1,6 @@
-import type { IBranch } from '@ecoop/modules/branch'
-import type { IOrganization } from '@ecoop/modules/organization'
-import type { IOrganizationCategory } from '@ecoop/modules/organization-category'
+import type { IBranch } from '@ecoop/domains/iam'
+import type { IOrganization } from '@ecoop/domains/iam'
+import type { IOrganizationCategory } from '@ecoop/domains/iam'
 
 export const filterOrganizations = (
     organizations: IOrganization[],

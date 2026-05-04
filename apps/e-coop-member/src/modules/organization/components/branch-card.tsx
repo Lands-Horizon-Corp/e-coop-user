@@ -1,4 +1,4 @@
-import type { IBranch } from '@ecoop/modules/branch'
+import type { IBranch } from '@ecoop/domains/iam'
 import ImageDisplay from '@ecoop/ui/core'
 import { Badge } from '@ecoop/ui/core'
 import { Building2, ExternalLink, Mail, MapPin, Phone } from 'lucide-react'

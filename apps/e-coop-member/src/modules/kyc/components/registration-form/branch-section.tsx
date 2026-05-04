@@ -1,7 +1,7 @@
 import type { UseFormReturn } from 'react-hook-form'
 
-import type { IBranch } from '@ecoop/modules/branch'
-import { useGetAllBranch } from '@ecoop/modules/branch'
+import type { IBranch } from '@ecoop/domains/iam'
+import { useGetAllBranch } from '@ecoop/domains/iam'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { TEntityId } from '@ecoop/shared/types'
 import { BuildingBranchIcon, EmailIcon, PhoneIcon } from '@ecoop/ui/core'

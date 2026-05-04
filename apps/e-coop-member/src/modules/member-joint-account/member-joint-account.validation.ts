@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { FamilyRelationshipSchema } from '@ecoop/modules/member-relative-account'
+import { FamilyRelationshipSchema } from '@ecoop/domains/member-crm'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,

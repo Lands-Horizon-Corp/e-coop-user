@@ -1,6 +1,6 @@
 import { resizeImage } from '@ecoop/modules/media'
-import type { TMemberAddressSchema } from '@ecoop/modules/member-address'
-import type { IMemberGovernmentBenefitRequest } from '@ecoop/modules/member-profile'
+import type { TMemberAddressSchema } from '@ecoop/domains/member-crm'
+import type { IMemberGovernmentBenefitRequest } from '@ecoop/domains/member-crm'
 import { imageCompressed } from '@ecoop/shared/helpers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'

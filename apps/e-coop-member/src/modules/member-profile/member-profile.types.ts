@@ -1,4 +1,4 @@
-import type { TMemberAddressSchema } from '@ecoop/modules/member-address'
+import type { TMemberAddressSchema } from '@ecoop/domains/member-crm'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

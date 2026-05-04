@@ -4,7 +4,7 @@ import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import MemberPicker from '@ecoop/modules/member-profile/components/member-picker'
+import MemberPicker from '@ecoop/domains/member-crm'
 import { withToastCallbacks } from '@ecoop/shared/helpers'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { useFormHelper } from '@ecoop/shared/hooks'

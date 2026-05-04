@@ -1,4 +1,4 @@
-import type { IFinancialStatementDefinition } from '@ecoop/modules/financial-statement-definition'
+import type { IFinancialStatementDefinition } from '../financial-statement-definition/financial-statement-definition.types'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IFinancialStatementAccountGrouping

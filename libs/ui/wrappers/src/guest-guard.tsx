@@ -1,6 +1,6 @@
 import { Navigate, useSearch } from '@tanstack/react-router'
 
-import { useAuthStore } from '@ecoop/modules/authentication'
+import { useAuthStore } from '@ecoop/domains/iam'
 import type { IBaseProps } from '@ecoop/shared/types'
 
 interface IGuestGuardProps extends Omit<IBaseProps, 'className'> {

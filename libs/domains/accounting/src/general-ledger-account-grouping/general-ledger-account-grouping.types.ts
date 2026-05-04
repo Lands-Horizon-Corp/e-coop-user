@@ -1,4 +1,4 @@
-import type { IGeneralLedgerDefinition } from '@ecoop/modules/general-ledger-definition'
+import type { IGeneralLedgerDefinition } from '../general-ledger-definition/general-ledger-definition.types'
 import type {
     IAuditable,
     IPaginatedResult,

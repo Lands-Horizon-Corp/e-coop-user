@@ -1,4 +1,4 @@
-import type { IOrganization } from '@ecoop/modules/organization'
+import type { IOrganization } from '../organization/organization.types'
 import type { TEntityId } from '@ecoop/shared/types'
 
 export interface IOrganizationDailyUsageRequest {

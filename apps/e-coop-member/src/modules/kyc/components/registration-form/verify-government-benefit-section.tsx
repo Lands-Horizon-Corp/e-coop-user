@@ -7,14 +7,11 @@ import { toast } from 'sonner'
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import type { IMedia } from '@ecoop/modules/media'
-import type { TMemberGovernmentBenefitSchema } from '@ecoop/modules/member-government-benefit'
-import {
-    MemberGovernmentBenefitSchema,
-    useGetAllGovernmentIds,
-} from '@ecoop/modules/member-government-benefit'
-import GovernmentIdCombobox from '@ecoop/modules/member-government-benefit/components/government-id-combobox'
-import type { IGovernmentId } from '@ecoop/modules/member-profile'
-import { CountryCombobox } from '@ecoop/modules/member-profile/components/comboboxes/country-combobox'
+import type { TMemberGovernmentBenefitSchema } from '@ecoop/domains/member-crm'
+import { MemberGovernmentBenefitSchema, useGetAllGovernmentIds } from '@ecoop/domains/member-crm'
+import GovernmentIdCombobox from '@ecoop/domains/member-crm'
+import type { IGovernmentId } from '@ecoop/domains/member-crm'
+import { CountryCombobox } from '@ecoop/domains/member-crm'
 import { toReadableDate } from '@ecoop/shared/helpers'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 // import TextEditor from '@ecoop/ui/core'

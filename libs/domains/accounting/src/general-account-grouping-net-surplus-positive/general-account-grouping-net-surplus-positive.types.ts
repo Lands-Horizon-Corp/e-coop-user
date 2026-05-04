@@ -1,4 +1,4 @@
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '../account/account.types'
 import type {
     IAuditable,
     IOrgBranchIdentity,

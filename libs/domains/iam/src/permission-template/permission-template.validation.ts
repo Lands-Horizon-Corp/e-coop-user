@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { PermissionSchema } from '@ecoop/modules/permission'
+import { PermissionSchema } from '../permission/permission.validation'
 import {
     descriptionTransformerSanitizer,
     entityIdSchema,

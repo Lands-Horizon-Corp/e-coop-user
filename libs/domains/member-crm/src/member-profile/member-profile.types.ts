@@ -1,53 +1,29 @@
-import type { IAccount } from '@ecoop/modules/account'
-import type { IBranch } from '@ecoop/modules/branch'
-import type { IMemberPassbookSettings } from '@ecoop/modules/branch-settings'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { IBranch } from '@ecoop/domains/iam'
+import type { IMemberPassbookSettings } from '@ecoop/domains/iam'
 import type { IMedia } from '@ecoop/modules/media'
-import type {
-    IMemberAddress,
-    IMemberAddressRequest,
-} from '@ecoop/modules/member-address'
-import type {
-    IMemberAsset,
-    IMemberAssetRequest,
-} from '@ecoop/modules/member-asset'
-import type { IMemberCenter } from '@ecoop/modules/member-center'
-import type { IMemberClassification } from '@ecoop/modules/member-classification'
-import type {
-    IMemberCloseRemark,
-    IMemberCloseRemarkRequest,
-} from '@ecoop/modules/member-close-remark'
-import type {
-    IMemberContactReference,
-    IMemberContactReferenceRequest,
-} from '@ecoop/modules/member-contact-reference'
-import type { IMemberDepartment } from '@ecoop/modules/member-department'
-import type { IMemberDescriptionRequest } from '@ecoop/modules/member-description-schema'
-import type { IMemberEducationalAttainment } from '@ecoop/modules/member-educational-attainment'
-import type {
-    IMemberExpense,
-    IMemberExpenseRequest,
-} from '@ecoop/modules/member-expense'
-import type { IMemberGender } from '@ecoop/modules/member-gender'
-import type {
-    IMemberGovernmentBenefit,
-    IMemberGovernmentBenefitRequest,
-} from '@ecoop/modules/member-government-benefit'
-import type { IMemberGroup } from '@ecoop/modules/member-group'
-import type { IMemberIncome } from '@ecoop/modules/member-income'
-import type {
-    IMemberJointAccount,
-    IMemberJointAccountRequest,
-} from '@ecoop/modules/member-joint-account'
-import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+import type { IMemberAddress, IMemberAddressRequest } from '../member-address/member-address.types'
+import type { IMemberAsset, IMemberAssetRequest } from '../member-asset/member-asset.types'
+import type { IMemberCenter } from '../member-center/member-center.types'
+import type { IMemberClassification } from '../member-classification/member-classification.types'
+import type { IMemberCloseRemark, IMemberCloseRemarkRequest } from '../member-close-remark/member-close-remark.types'
+import type { IMemberContactReference, IMemberContactReferenceRequest } from '../member-contact-reference/member-contact-reference.types'
+import type { IMemberDepartment } from '../member-department/member-department.types'
+import type { IMemberDescriptionRequest } from '../member-description-schema/member-description-schema.types'
+import type { IMemberEducationalAttainment } from '../member-educational-attainment/member-educational-attainment.types'
+import type { IMemberExpense, IMemberExpenseRequest } from '../member-expense/member-expense.types'
+import type { IMemberGender } from '../member-gender/member-gender.types'
+import type { IMemberGovernmentBenefit, IMemberGovernmentBenefitRequest } from '../member-government-benefit/member-government-benefit.types'
+import type { IMemberGroup } from '../member-group/member-group.types'
+import type { IMemberIncome } from '../member-income/member-income.types'
+import type { IMemberJointAccount, IMemberJointAccountRequest } from '../member-joint-account/member-joint-account.types'
+import type { IMemberOccupation } from '../member-occupation/member-occupation.types'
 // import { IMemberRecruitedMembers } from '@ecoop/modules/member-recruits'
-import type {
-    IMemberRelativeAccount,
-    IMemberRelativeAccountRequest,
-} from '@ecoop/modules/member-relative-account'
-import type { IMemberType } from '@ecoop/modules/member-type'
-import type { IOrganization } from '@ecoop/modules/organization'
+import type { IMemberRelativeAccount, IMemberRelativeAccountRequest } from '../member-relative-account/member-relative-account.types'
+import type { IMemberType } from '../member-type/member-type.types'
+import type { IOrganization } from '@ecoop/domains/iam'
 import type { IQrScanResult } from '@ecoop/modules/qr-crypto'
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type { TSex } from '@ecoop/shared/constants'
 import type {
     IAuditable,

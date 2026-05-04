@@ -1,5 +1,5 @@
-import type { IMemberDepartment } from '@ecoop/modules/member-department'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberDepartment } from '../member-department/member-department.types'
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

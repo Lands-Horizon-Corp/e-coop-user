@@ -1,7 +1,7 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/modules/account'
-import type { TGeneralLedgerType } from '@ecoop/modules/general-ledger'
+import type { IAccount } from '../account/account.types'
+import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { GeneralLedgerDefinitionSchema } from './general-ledger-definition.validation'

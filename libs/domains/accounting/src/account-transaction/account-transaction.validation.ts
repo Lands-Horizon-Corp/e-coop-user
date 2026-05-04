@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { AccountTransactionEntrySchema } from '@ecoop/modules/account-transaction-entry'
+import { AccountTransactionEntrySchema } from '../account-transaction-entry/account-transaction-entry.validation'
 import {
     entityIdSchema,
     stringDateWithTransformSchema,

@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router'
 
-import { useGetOrganizationById } from '@ecoop/modules/organization'
+import { useGetOrganizationById } from '@ecoop/domains/iam'
 import ImageDisplay from '@ecoop/ui/core'
 
 const organizationId = import.meta.env.VITE_ORGANIZATION_ID

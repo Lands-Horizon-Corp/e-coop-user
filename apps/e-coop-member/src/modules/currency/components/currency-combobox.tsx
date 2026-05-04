@@ -2,7 +2,7 @@ import * as React from 'react'
 
 import type { ICurrency, TCurrencyHookMode } from '@ecoop/modules/currency'
 import { useGetAllCurrency } from '@ecoop/modules/currency'
-import { findCountry } from '@ecoop/modules/member-profile/components/comboboxes/country-combobox'
+import { findCountry } from '@ecoop/domains/member-crm'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { TEntityId } from '@ecoop/shared/types'
 import { CheckIcon, ChevronDownIcon } from '@ecoop/ui/core'

@@ -1,10 +1,10 @@
-import { buildOR } from '@ecoop/modules/or-builder'
-import type { TPaymentMode } from '@ecoop/modules/quick-transfer'
+import { buildOR } from '../or-builder/or-builder.utils'
+import type { TPaymentMode } from '../quick-transfer/quick-transfer.types'
 import {
     QuickTransferOR,
     toORBuilderOptions,
 } from '@ecoop/modules/quick-transfer'
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IUserOrganization } from '@ecoop/domains/iam'
 import { mmddyyyy } from '@ecoop/shared/helpers'
 
 export const receiptPrefix = (num: number): string => {

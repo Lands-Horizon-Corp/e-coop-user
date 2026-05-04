@@ -1,7 +1,7 @@
 import z from 'zod'
 
-import { timeDepositComputationSchema } from '@ecoop/modules/time-deposit-computation'
-import { TimeDepositComputationPreMatureSchema } from '@ecoop/modules/time-deposit-computation-pre-mature'
+import { timeDepositComputationSchema } from '../time-deposit-computation/time-deposit-computation.validation'
+import { TimeDepositComputationPreMatureSchema } from '../time-deposit-computation-pre-mature/time-deposit-computation-pre-mature.validation'
 import {
     DaySchema,
     EntityIdSchema,

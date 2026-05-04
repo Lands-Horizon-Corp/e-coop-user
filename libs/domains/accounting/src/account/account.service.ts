@@ -2,7 +2,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import type { TGeneralLedgerType } from '@ecoop/modules/general-ledger'
+import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
 import { Logger } from '@ecoop/shared/helpers'
 import { downloadFile } from '@ecoop/shared/helpers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'

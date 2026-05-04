@@ -1,4 +1,4 @@
-import type { ITimeDepositType } from '@ecoop/modules/time-deposit-type'
+import type { ITimeDepositType } from '../time-deposit-type/time-deposit-type.types'
 import type {
     IAuditable,
     IOrgBranchIdentity,

@@ -1,12 +1,12 @@
-import type { IBranch } from '@ecoop/modules/branch'
-import type { IOrganization } from '@ecoop/modules/organization'
+import type { IBranch } from '../branch/branch.types'
+import type { IOrganization } from '../organization/organization.types'
 import type {
     GetCrudPermissionOpts,
     IHasPermissionOpts,
 } from '@ecoop/modules/permission'
 import { getCrudPermissions, hasPermission } from '@ecoop/modules/permission'
-import type { IUserBase } from '@ecoop/modules/user'
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IUserBase } from '../user/user.types'
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 import { create } from 'zustand'
 
 import type { IAuthContext } from './authentication.types'

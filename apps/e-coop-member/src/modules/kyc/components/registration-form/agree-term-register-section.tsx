@@ -3,7 +3,7 @@ import { useMemo } from 'react'
 import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
-import { useGetOrganizationById } from '@ecoop/modules/organization'
+import { useGetOrganizationById } from '@ecoop/domains/iam'
 import { ORGANIZATION_ID } from '@ecoop/shared/constants'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { cn } from '@ecoop/shared/tw-utils'

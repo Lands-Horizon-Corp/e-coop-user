@@ -1,4 +1,4 @@
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '../account/account.types'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 import type { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'

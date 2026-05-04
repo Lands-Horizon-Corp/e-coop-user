@@ -1,6 +1,6 @@
 import { useRouter } from '@tanstack/react-router'
 
-import { useAuthStore } from '@ecoop/modules/authentication/authgentication.store'
+import { useAuthStore } from '@ecoop/domains/iam'
 import ImageDisplay from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 

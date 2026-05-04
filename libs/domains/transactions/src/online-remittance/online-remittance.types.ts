@@ -1,8 +1,8 @@
 import type { IBank } from '@ecoop/modules/bank'
 import type { ICurrency } from '@ecoop/modules/currency'
 import type { IMedia } from '@ecoop/modules/media'
-import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
-import type { IUserBase } from '@ecoop/modules/user'
+import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { TOnlineRemittanceSchema } from './online-remittance.validation'

@@ -1,11 +1,11 @@
 import z from 'zod'
 
-import { ComakerCollateralSchema } from '@ecoop/modules/comaker-collateral'
-import { ComakerMemberProfileSchema } from '@ecoop/modules/comaker-member-profile'
-import { LoanClearanceAnalysisSchema } from '@ecoop/modules/loan-clearance-analysis'
-import { LoanClearanceAnalysisInstitutionSchema } from '@ecoop/modules/loan-clearance-analysis-institution'
-import { LoanTermsAndConditionAmountReceiptSchema } from '@ecoop/modules/loan-terms-and-condition-amount-receipt'
-import { LoanTermsAndConditionSuggestedPaymentSchema } from '@ecoop/modules/loan-terms-and-condition-suggested-payment'
+import { ComakerCollateralSchema } from '../comaker-collateral/comaker-collateral.validation'
+import { ComakerMemberProfileSchema } from '@ecoop/domains/member-crm'
+import { LoanClearanceAnalysisSchema } from '../loan-clearance-analysis/loan-clearance-analysis.validation'
+import { LoanClearanceAnalysisInstitutionSchema } from '../loan-clearance-analysis-institution/loan-clearance-analysis-institution.validation'
+import { LoanTermsAndConditionAmountReceiptSchema } from '../loan-terms-and-condition-amount-receipt/loan-terms-and-condition-amount-receipt.validation'
+import { LoanTermsAndConditionSuggestedPaymentSchema } from '../loan-terms-and-condition-suggested-payment/loan-terms-and-condition-suggested-payment.validation'
 import {
     EntityIdSchema,
     entityIdSchema,

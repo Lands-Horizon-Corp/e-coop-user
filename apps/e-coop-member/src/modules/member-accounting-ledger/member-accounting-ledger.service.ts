@@ -1,10 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import type {
-    IMemberAccountingLedgerPaginated,
-    IMemberAccountingLedgerTotal,
-} from '@ecoop/modules/member-account-ledger'
+import type { IMemberAccountingLedgerPaginated, IMemberAccountingLedgerTotal } from '@ecoop/domains/accounting'
 import { Logger } from '@ecoop/shared/helpers'
 import { APIService } from '@ecoop/shared/providers/core-providers'
 import { createAPIRepository } from '@ecoop/shared/repositories'

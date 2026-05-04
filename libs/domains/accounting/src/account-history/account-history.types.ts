@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '../account/account.types'
 import type { IPaginatedResult, TEntityId } from '@ecoop/shared/types'
 
 import type { AccountHistorySchema } from './account-history.validation'

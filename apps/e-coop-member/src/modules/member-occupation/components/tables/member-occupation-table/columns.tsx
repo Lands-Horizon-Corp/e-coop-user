@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 
-import type { IMemberOccupation } from '@ecoop/modules/member-occupation'
+import type { IMemberOccupation } from '@ecoop/domains/member-crm'
 import DataTableColumnHeader from '@ecoop/ui/core'
 import ColumnActions from '@ecoop/ui/core'
 import { createUpdateColumns } from '@ecoop/ui/core'

@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { MemberAddressSchema } from './member-address.validation'

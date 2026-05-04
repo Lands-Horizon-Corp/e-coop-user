@@ -1,7 +1,4 @@
-import type {
-    IFeedComment,
-    IFeedCommentRequest,
-} from '@ecoop/modules/feed-comment'
+import type { IFeedComment, IFeedCommentRequest } from '../feed-comment/feed-comment.types'
 import { Logger } from '@ecoop/shared/helpers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'

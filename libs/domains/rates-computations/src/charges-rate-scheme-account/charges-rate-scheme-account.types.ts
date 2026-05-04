@@ -1,5 +1,5 @@
-import type { IAccount } from '@ecoop/modules/account'
-import type { IChargesRateScheme } from '@ecoop/modules/charges-rate-scheme'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { IChargesRateScheme } from '../charges-rate-scheme/charges-rate-scheme.types'
 import type {
     IAuditable,
     IOrgBranchIdentity,

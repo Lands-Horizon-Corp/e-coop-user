@@ -5,7 +5,7 @@ import z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { useVerifyPassword } from '@ecoop/modules/authentication'
+import { useVerifyPassword } from '@ecoop/domains/iam'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { useActionSecurityStore } from '@ecoop/shared/store'
 import { ShieldCheckIcon, ShieldLockIcon } from '@ecoop/ui/core'

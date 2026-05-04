@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { ITimeDepositType } from '@ecoop/modules/time-deposit-type'
+import type { ITimeDepositType } from '../time-deposit-type/time-deposit-type.types'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

@@ -6,8 +6,8 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication/authgentication.store'
-import { useTransactionBatchStore } from '@ecoop/modules/transaction-batch/store/transaction-batch-store'
+import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam'
+import { useTransactionBatchStore } from '../../transaction-batch/store/transaction-batch-store'
 import { useModalState } from '@ecoop/shared/hooks'
 import { useQeueryHookCallback } from '@ecoop/shared/hooks'
 import { useTransactionReverseSecurityStore } from '@ecoop/shared/store'

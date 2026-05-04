@@ -1,7 +1,7 @@
 import z from 'zod'
 
-import { FINANCIAL_STATEMENT_TYPE } from '@ecoop/modules/financial-statement-definition'
-import { GENERAL_LEDGER_TYPE } from '@ecoop/modules/general-ledger'
+import { FINANCIAL_STATEMENT_TYPE } from '../financial-statement-definition/financial-statement-definition.constants'
+import { GENERAL_LEDGER_TYPE } from '../general-ledger/general-ledger.constants'
 import { ICONS } from '@ecoop/shared/constants'
 import {
     DaySchema,

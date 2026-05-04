@@ -1,7 +1,7 @@
 import type z from 'zod'
 
 import type { IMedia } from '@ecoop/modules/media'
-import type { IOrganization } from '@ecoop/modules/organization'
+import type { IOrganization } from '../organization/organization.types'
 import type {
     IAuditable,
     IPaginatedResult,

@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
 import { allErrorMessageExtractor } from '@ecoop/shared/helpers'
 import { useFormHelper } from '@ecoop/shared/hooks'
 import { cn } from '@ecoop/shared/tw-utils'

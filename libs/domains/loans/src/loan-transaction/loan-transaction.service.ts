@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type { IComakerMemberProfile } from '@ecoop/modules/comaker-member-profile'
-import type { ILoanGuide } from '@ecoop/modules/loan-guide'
+import type { IComakerMemberProfile } from '@ecoop/domains/member-crm'
+import type { ILoanGuide } from '../loan-guide/loan-guide.types'
 import { Logger } from '@ecoop/shared/helpers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

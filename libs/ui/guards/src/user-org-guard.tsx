@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 
 import { Navigate } from '@tanstack/react-router'
 
-import { useAuthUser } from '@ecoop/modules/authentication'
+import { useAuthUser } from '@ecoop/domains/iam'
 import {
     useSendHeartbeatOffline,
     useSendHeartbeatOnline,

@@ -1,9 +1,9 @@
 import type { ICurrency } from '@ecoop/modules/currency'
 import type { IMedia } from '@ecoop/modules/media'
-import type { IOrganizationCategory } from '@ecoop/modules/organization-category'
-import type { IOrganizationMedia } from '@ecoop/modules/organization-media'
-import type { ISubscriptionPlan } from '@ecoop/modules/subscription-plan'
-import type { IUserOrganization } from '@ecoop/modules/user-organization'
+import type { IOrganizationCategory } from '../organization-category/organization-category.types'
+import type { IOrganizationMedia } from '../organization-media/organization-media.types'
+import type { ISubscriptionPlan } from '../subscription-plan/subscription-plan.types'
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 import type {
     IAuditable,
     IPaginatedResult,

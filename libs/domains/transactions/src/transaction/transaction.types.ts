@@ -1,12 +1,12 @@
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '@ecoop/domains/accounting'
 import type { ICurrency } from '@ecoop/modules/currency'
-import type { TGeneralLedgerSource } from '@ecoop/modules/general-ledger'
+import type { TGeneralLedgerSource } from '@ecoop/domains/accounting'
 import type { IMedia } from '@ecoop/modules/media'
-import type { IMemberJointAccount } from '@ecoop/modules/member-joint-account'
-import type { IMemberProfile } from '@ecoop/modules/member-profile'
-import type { IPaymentRequest } from '@ecoop/modules/quick-transfer'
-import type { ITransactionBatch } from '@ecoop/modules/transaction-batch'
-import type { IUserBase } from '@ecoop/modules/user'
+import type { IMemberJointAccount } from '@ecoop/domains/member-crm'
+import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { IPaymentRequest } from '../quick-transfer/quick-transfer.types'
+import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
+import type { IUserBase } from '@ecoop/domains/iam'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

@@ -1,4 +1,4 @@
-import { buildOR } from '@ecoop/modules/or-builder'
+import { buildOR } from '../or-builder/or-builder.utils'
 
 import type { TORCashCheckSettings } from './cash-check-voucher.types'
 

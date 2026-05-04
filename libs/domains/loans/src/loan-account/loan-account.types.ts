@@ -1,8 +1,8 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/modules/account'
-import type { IAccountHistory } from '@ecoop/modules/account-history'
-import type { LoanTransaction } from '@ecoop/modules/automatic-loan-deduction'
+import type { IAccount } from '@ecoop/domains/accounting'
+import type { IAccountHistory } from '@ecoop/domains/accounting'
+import type { LoanTransaction } from '../automatic-loan-deduction/automatic-loan-deduction.types'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

@@ -2,9 +2,9 @@ import { useMemo } from 'react'
 
 import { useParams, useRouter } from '@tanstack/react-router'
 
-import { useAuthUserWithOrgBranch } from '@ecoop/modules/authentication'
-import { BranchModalDisplay } from '@ecoop/modules/branch'
-import type { TUserType } from '@ecoop/modules/user'
+import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam'
+import { BranchModalDisplay } from '@ecoop/domains/iam'
+import type { TUserType } from '@ecoop/domains/iam'
 import { useModalState } from '@ecoop/shared/hooks'
 import type { IBaseProps } from '@ecoop/shared/types'
 // import { useHotkeys } from 'react-hotkeys-hook'

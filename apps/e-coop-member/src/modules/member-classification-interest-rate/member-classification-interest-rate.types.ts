@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { IMemberClassification } from '@ecoop/modules/member-classification'
+import type { IMemberClassification } from '@ecoop/domains/member-crm'
 import type {
     IAuditable,
     IOrgBranchIdentity,

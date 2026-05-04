@@ -1,5 +1,5 @@
 // import z from 'zod'
-import type { IAccount } from '@ecoop/modules/account'
+import type { IAccount } from '@ecoop/domains/accounting'
 import type { IBaseEntityMeta } from '@ecoop/shared/types'
 
 // import { LoanAmortizationScheduleSchema } from './loan-amortization-schedule.validation'

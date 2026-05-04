@@ -1,9 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type {
-    ICashCount,
-    ICashCountBatchRequest,
-} from '@ecoop/modules/cash-count'
+import type { ICashCount, ICashCountBatchRequest } from '../cash-count/cash-count.types'
 import { cashCountAPIRoute } from '@ecoop/modules/cash-count'
 import { Logger } from '@ecoop/shared/helpers'
 import {

@@ -1,8 +1,8 @@
 import type z from 'zod'
 
-import type { IFeedComment } from '@ecoop/modules/feed-comment'
-import type { IFeedLike } from '@ecoop/modules/feed-like'
-import type { IFeedMedia } from '@ecoop/modules/feed-media'
+import type { IFeedComment } from '../feed-comment/feed-comment.types'
+import type { IFeedLike } from '../feed-like/feed-like.types'
+import type { IFeedMedia } from '../feed-media/feed-media.types'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
 import type { FeedSchema } from './feed.validation'
