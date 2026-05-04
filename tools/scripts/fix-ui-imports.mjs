@@ -49,13 +49,11 @@ const replacements = [
     },
     {
         pattern: /(['"])@\/hooks(?:\/[^'"]*)?\1/g,
-        replace: (match, quote) =>
-            `${quote}@ecoop/shared/hooks${quote}`,
+        replace: (match, quote) => `${quote}@ecoop/shared/hooks${quote}`,
     },
     {
         pattern: /(['"])@\/types(?:\/[^'"]*)?\1/g,
-        replace: (match, quote) =>
-            `${quote}@ecoop/shared/types${quote}`,
+        replace: (match, quote) => `${quote}@ecoop/shared/types${quote}`,
     },
 ]
 

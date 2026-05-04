@@ -4,17 +4,16 @@ import { toast } from 'sonner'
 
 import { cn } from '@ecoop/shared/helpers'
 import { IClassProps } from '@ecoop/shared/types'
-import Webcam from 'react-webcam'
-
 import {
+    Button,
     CameraFlipIcon,
     CameraOffIcon,
     CameraSelectIcon,
     LoadingSpinner,
-    Button,
 } from '@ecoop/ui'
+import Webcam from 'react-webcam'
 
-import {ActionTooltip} from '../tooltips/action-tooltip'
+import { ActionTooltip } from '../tooltips/action-tooltip'
 import CameraDevicePicker from './camera-device-picker'
 
 type Props = IClassProps
