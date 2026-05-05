@@ -8,7 +8,7 @@ import {
     stringDateWithTransformSchema,
 } from '@ecoop/shared/validation'
 
-import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
+import { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constants'
 
 export const MutualFundSchema = z.object({
     id: entityIdSchema.optional(),

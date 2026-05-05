@@ -58,3 +58,5 @@ describe('buildAdjustmentVoucherOR', () => {
         expect(result).toBe('ADJ-0000')
     })
 })
+
+export {};

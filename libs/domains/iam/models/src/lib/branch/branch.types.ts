@@ -9,7 +9,7 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
-import type { branchTypeEnum } from './branch.enums'
+import type { branchTypeEnum } from './branch.enum'
 import type { TBranchSchema } from './branch.validation'
 
 // Resource

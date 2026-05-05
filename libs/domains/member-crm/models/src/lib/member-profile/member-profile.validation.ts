@@ -106,14 +106,14 @@ export const QuickCreateMemberProfileSchema = z
         contact_number: z.string().optional(),
         birthdate: stringDateSchema
             .refine(
-                (val) => {
+                (val: any) => {
                     const date = startOfDay(new Date(val))
                     const now = startOfDay(new Date())
                     return isBefore(date, now)
                 },
                 { message: 'Birthdate must be in the past' }
             )
-            .transform((val) => new Date(val).toISOString()),
+            .transform((val: any) => new Date(val).toISOString()),
         sex: SexSchema,
         // member_gender_id: entityIdSchema.optional(),
 

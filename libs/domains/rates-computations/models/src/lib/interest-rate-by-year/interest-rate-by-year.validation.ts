@@ -10,14 +10,14 @@ export const InterestRateByYearSchema = z
             .number()
             .int('From year must be a whole number')
             .min(0, 'From year must be at least 0')
-            .refine((val) => !isNaN(val), {
+            .refine((val: any) => !isNaN(val), {
                 message: 'From year is required',
             }),
         to_year: z.coerce
             .number()
             .int('To year must be a whole number')
             .min(0, 'To year must be at least 0')
-            .refine((val) => !isNaN(val), {
+            .refine((val: any) => !isNaN(val), {
                 message: 'To year is required',
             }),
         interest_rate: PercentageSchema,

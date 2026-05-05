@@ -5,3 +5,5 @@ describe('transactionsModels', () => {
         expect(transactionsModels()).toEqual('transactions-models')
     })
 })
+
+export {};

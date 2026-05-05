@@ -1,7 +1,7 @@
 import z from 'zod'
 
 import { WithModeOfPaymentSchema } from '@ecoop/domains/loans/models'
-import { LOAN_MODE_OF_PAYMENT, WEEKDAYS } from '@ecoop/domains/loans/models'
+import { TLoanModeOfPayment, TWeekdays } from '@ecoop/domains/loans/models'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
@@ -33,13 +33,13 @@ export const MockLoanInputSchema = z
         member_type: z.any().optional(),
         member_type_id: entityIdSchema.optional(),
 
-        mode_of_payment: z.enum(LOAN_MODE_OF_PAYMENT).default('monthly'),
+        mode_of_payment: z.enum(TLoanModeOfPayment).default('monthly'),
         mode_of_payment_fixed_days: z.coerce
             .number('Invalid number of days')
             .optional(),
 
         mode_of_payment_weekly: z
-            .enum(WEEKDAYS, {
+            .enum(TWeekdays, {
                 error: 'Please provide valid weekdays',
             })
             .optional()

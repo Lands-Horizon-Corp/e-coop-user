@@ -16,9 +16,9 @@ export const MemberEducationalAttainmentSchema = z.object({
     school_name: z.string().optional(),
     school_year: z.coerce
         .number({ error: 'Invalid Year' })
-        .transform((val) => Math.trunc(val))
+        .transform((val: any) => Math.trunc(val))
         .refine(
-            (val) => {
+            (val: any) => {
                 const year = Number(val)
                 const currentYear = new Date().getFullYear()
                 return year >= 1900 && year <= currentYear + 1

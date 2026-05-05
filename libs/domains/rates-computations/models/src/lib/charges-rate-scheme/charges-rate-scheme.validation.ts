@@ -4,14 +4,14 @@ import { ChargesRateByRangeOrMinimumAmountSchema } from '../charges-rate-by-rang
 import { ChargesRateByTermSchema } from '../charges-rate-by-term/charges-rate-by-term.validation'
 import { chargesRateSchemeAccountSchema } from '../charges-rate-scheme-account/charges-rate-scheme-account.validation'
 import { ChargesRateSchemeModeOfPaymentSchema } from '../charges-rate-scheme-mode-of-payment/charges-rate-scheme-mode-of-payment.validation'
-import { LOAN_MODE_OF_PAYMENT } from '@ecoop/domains/loans/models'
+import { TLoanModeOfPayment } from '@ecoop/domains/loans/models'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
 } from '@ecoop/shared/validation'
 
-import { CHARGES_RATE_SCHEME_TYPE } from './charges-rate.constant'
+import { CHARGES_RATE_SCHEME_TYPE } from './charges-rate.constants'
 
 export const ChargesRateCreateSchemeSchema = z.object({
     id: entityIdSchema.optional(),
@@ -103,7 +103,7 @@ export const ChargesRateSchemeSchema = ChargesRateCreateSchemeSchema.extend({
 
     member_type_id: entityIdSchema.optional(),
     member_type: z.any().optional(),
-    mode_of_payment: z.enum(LOAN_MODE_OF_PAYMENT).optional(),
+    mode_of_payment: z.enum(TLoanModeOfPayment).optional(),
 })
 
 export type TChargesRateSchemeSchema = z.infer<typeof ChargesRateSchemeSchema>

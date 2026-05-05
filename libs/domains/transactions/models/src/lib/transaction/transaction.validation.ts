@@ -12,7 +12,7 @@ export const PaymentWithTransactionSchema = z
     .object({
         amount: z.coerce
             .number({ error: 'Amount is required' })
-            .refine((val) => val !== 0, '0 Amount is not allowed'),
+            .refine((val: any) => val !== 0, '0 Amount is not allowed'),
         signature_media_id: entityIdSchema.optional(),
         proof_of_payment_media_id: entityIdSchema.optional(),
         bank_id: entityIdSchema.optional(),

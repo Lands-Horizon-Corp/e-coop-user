@@ -6,7 +6,7 @@ import {
     entityIdSchema,
 } from '@ecoop/shared/validation'
 
-import { branchTypeEnum } from './branch.enums'
+import { branchTypeEnum } from './branch.enum'
 
 export const branchSchema = z.object({
     id: entityIdSchema.optional(),

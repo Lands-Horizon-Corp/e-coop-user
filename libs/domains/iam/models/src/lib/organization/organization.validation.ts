@@ -23,7 +23,7 @@ export const OrganizationSchema = z.object({
     address: z.string().optional(),
     email: emailSchema.min(1, 'Organization email is required').optional(),
     contact_number: z.string().optional(),
-    description: z.preprocess((val) => {
+    description: z.preprocess((val: any) => {
         if (val === '') return ''
         return val
     }, z.string().transform(descriptionTransformerSanitizer)),

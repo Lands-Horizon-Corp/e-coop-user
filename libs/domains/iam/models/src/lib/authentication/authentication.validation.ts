@@ -149,7 +149,7 @@ export const SignUpSchema = z.object({
     suffix: z.string().optional(),
 
     birthdate: stringDateSchema.refine(
-        (val) => {
+        (val: any) => {
             const date = startOfDay(new Date(val))
             const now = startOfDay(new Date())
             return isBefore(date, now)
@@ -164,7 +164,7 @@ export const SignUpSchema = z.object({
         .boolean()
         .default(false)
         .refine(
-            (val) => {
+            (val: any) => {
                 return val === true
             },
             {

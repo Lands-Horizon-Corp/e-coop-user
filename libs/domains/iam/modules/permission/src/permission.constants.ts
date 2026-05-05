@@ -97,7 +97,7 @@ export const generateBaseAction = ({
     excludeActions?: (typeof PERMISSION_BASE_ACTIONS)[number][]
 } = {}) => {
     return PERMISSION_BASE_ACTIONS.filter(
-        (val) => !excludeActions?.includes(val)
+        (val: any) => !excludeActions?.includes(val)
     ) as (typeof PERMISSION_BASE_ACTIONS)[number][]
 }
 

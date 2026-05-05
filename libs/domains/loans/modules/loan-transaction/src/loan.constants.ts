@@ -1,4 +1,4 @@
-export const LOAN_MODE_OF_PAYMENT = [
+export const TLoanModeOfPayment = [
     'day',
     'daily',
     'weekly',
@@ -9,7 +9,7 @@ export const LOAN_MODE_OF_PAYMENT = [
     'lumpsum',
 ] as const
 
-export const WEEKDAYS = [
+export const TWeekdays = [
     'monday',
     'tuesday',
     'wednesday',

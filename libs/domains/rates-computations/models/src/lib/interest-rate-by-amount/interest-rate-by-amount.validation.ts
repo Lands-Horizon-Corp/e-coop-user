@@ -9,13 +9,13 @@ export const InterestRateByAmountSchema = z
         from_amount: z.coerce
             .number('Invalid amount')
             .min(0, 'From amount must be at least 0')
-            .refine((val) => !isNaN(val), {
+            .refine((val: any) => !isNaN(val), {
                 message: 'From amount is required',
             }),
         to_amount: z.coerce
             .number('Invalid amount')
             .min(0, 'To amount must be at least 0')
-            .refine((val) => !isNaN(val), {
+            .refine((val: any) => !isNaN(val), {
                 message: 'To amount is required',
             }),
         interest_rate: PercentageSchema,

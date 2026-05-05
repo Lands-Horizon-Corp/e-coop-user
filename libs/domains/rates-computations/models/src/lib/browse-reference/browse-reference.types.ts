@@ -9,7 +9,7 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
-import type { INTEREST_TYPE } from './browse-reference.constant'
+import type { INTEREST_TYPE } from './browse-reference.constants'
 import type { TBrowseReferenceSchema } from './browse-reference.validation'
 
 export type TInterestType = (typeof INTEREST_TYPE)[number]

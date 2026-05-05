@@ -15,7 +15,7 @@ import type {
     TChargesRateCreateSchemeSchema,
     TChargesRateSchemeSchema,
 } from './charges-rate-scheme.validation'
-import type { CHARGES_RATE_SCHEME_TYPE } from './charges-rate.constant'
+import type { CHARGES_RATE_SCHEME_TYPE } from './charges-rate.constants'
 
 export type ChargesRateMemberTypeEnum = 'all' | string
 

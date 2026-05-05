@@ -7,8 +7,7 @@ import {
 } from './permission.constants'
 import type { TPermission, TPermissionAction } from './permission.types'
 import {
-    getCrudPermissions,
-    hasPermission,
+    getCrudPermissions, getAllPermissions as hasPermission,
     permissionArrayToMap,
     permissionMapToPermissionArray,
 } from './permission.utils'

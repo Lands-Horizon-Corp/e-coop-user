@@ -9,17 +9,17 @@ export const InterestRateByDateSchema = z
         from_date: z.coerce
             .string()
             .min(1, 'From date is required')
-            .refine((val) => !isNaN(Date.parse(val)), {
+            .refine((val: any) => !isNaN(Date.parse(val)), {
                 message: 'Invalid date format',
             })
-            .transform((val) => new Date(val).toISOString()),
+            .transform((val: any) => new Date(val).toISOString()),
         to_date: z.coerce
             .string()
             .min(1, 'To date is required')
-            .refine((val) => !isNaN(Date.parse(val)), {
+            .refine((val: any) => !isNaN(Date.parse(val)), {
                 message: 'Invalid date format',
             })
-            .transform((val) => new Date(val).toISOString()),
+            .transform((val: any) => new Date(val).toISOString()),
         interest_rate: PercentageSchema,
     })
     .superRefine((data, ctx) => {

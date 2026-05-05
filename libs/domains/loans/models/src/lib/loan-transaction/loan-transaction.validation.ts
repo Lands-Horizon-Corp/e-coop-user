@@ -17,9 +17,9 @@ import {
     LOAN_COLLECTOR_PLACE,
     LOAN_COMAKER_TYPE,
     // LOAN_COMAKER_TYPE,
-    LOAN_MODE_OF_PAYMENT,
+    TLoanModeOfPayment,
     LOAN_TYPE,
-    WEEKDAYS,
+    TWeekdays,
 } from './loan.constants'
 
 export const WithModeOfPaymentSchema = z.discriminatedUnion(
@@ -33,7 +33,7 @@ export const WithModeOfPaymentSchema = z.discriminatedUnion(
         }),
         z.object({
             mode_of_payment: z.literal('weekly'),
-            mode_of_payment_weekly: z.enum(WEEKDAYS, {
+            mode_of_payment_weekly: z.enum(TWeekdays, {
                 error: 'Please provide valid weekdays',
             }),
         }),
@@ -67,8 +67,8 @@ export const WithModeOfPaymentSchema = z.discriminatedUnion(
         z.object({
             mode_of_payment: z
                 .enum(
-                    LOAN_MODE_OF_PAYMENT.filter(
-                        (val) =>
+                    TLoanModeOfPayment.filter(
+                        (val: any) =>
                             ![
                                 'weekly',
                                 'day',
@@ -116,7 +116,7 @@ export const WithComaker = z.discriminatedUnion(
             comaker_type: z
                 .enum(
                     LOAN_COMAKER_TYPE.filter(
-                        (val) => !['others', 'deposit', 'member'].includes(val)
+                        (val: any) => !['others', 'deposit', 'member'].includes(val)
                     )
                 )
                 .default('none'),
@@ -134,7 +134,7 @@ export const withLoanType = z.discriminatedUnion('loan_type', [
     }),
     z.object({
         loan_type: z.enum(
-            LOAN_TYPE.filter((val) => !['renewal'].includes(val))
+            LOAN_TYPE.filter((val: any) => !['renewal'].includes(val))
         ),
     }),
 ])
@@ -180,13 +180,13 @@ export const LoanTransactionSchema = z
             error: 'Please select valid collector place',
         }),
 
-        mode_of_payment: z.enum(LOAN_MODE_OF_PAYMENT).default('monthly'),
+        mode_of_payment: z.enum(TLoanModeOfPayment).default('monthly'),
         mode_of_payment_fixed_days: z.coerce
             .number('Invalid number of days')
             .optional(),
 
         mode_of_payment_weekly: z
-            .enum(WEEKDAYS, {
+            .enum(TWeekdays, {
                 error: 'Please provide valid weekdays',
             })
             .optional()
@@ -432,7 +432,7 @@ export const LoanTransactionPrintSchema = z
         check_date: z
             .string()
             .optional()
-            .transform((val) => {
+            .transform((val: any) => {
                 if (!val || val.trim() === '') return undefined
                 const date = new Date(val)
                 return isNaN(date.getTime()) ? val : date.toISOString()
@@ -458,7 +458,7 @@ export const LoanTransactionSuggestedSchema = z.object({
     amount: z.coerce.number().min(1, 'Amount must be at least 1'),
     principal: z.coerce.number().min(1, 'Principal Amount Required'),
     fixed_days: z.number().optional(),
-    mode_of_payment: z.enum(LOAN_MODE_OF_PAYMENT).default('monthly'),
+    mode_of_payment: z.enum(TLoanModeOfPayment).default('monthly'),
 })
 
 export type TLoanTransactionSuggestedSchema = z.infer<

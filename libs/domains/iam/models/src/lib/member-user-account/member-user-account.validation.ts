@@ -16,7 +16,7 @@ export const WithPassword = z.discriminatedUnion('with_password', [
     z.object({
         with_password: z.literal(false),
         password: z.preprocess(
-            (val) =>
+            (val: any) =>
                 typeof val === 'string' && val.length === 0 ? undefined : val,
             passwordSchema.optional()
         ),
@@ -35,7 +35,7 @@ export const MemberProfileUserAccountSchema = z
         suffix: z.string().optional(),
 
         birthdate: stringDateSchema.refine(
-            (val) => {
+            (val: any) => {
                 const date = startOfDay(new Date(val))
                 const now = startOfDay(new Date())
                 return isBefore(date, now)

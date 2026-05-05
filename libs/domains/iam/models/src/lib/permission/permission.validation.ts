@@ -7,7 +7,7 @@ import {
 import type { TPermissionAction, TPermissionResource } from './permission.types'
 
 export const PermissionSchema = z.string().refine(
-    (val) => {
+    (val: any) => {
         const [resource, action] = val.split(':')
         return (
             !!resource &&

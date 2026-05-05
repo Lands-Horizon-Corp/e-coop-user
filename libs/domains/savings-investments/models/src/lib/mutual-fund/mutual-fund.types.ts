@@ -12,7 +12,7 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
-import type { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constant'
+import type { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constants'
 import type {
     MutualFundSchema,
     MutualFundViewSchema,

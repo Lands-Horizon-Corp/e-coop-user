@@ -43,16 +43,16 @@ import type {
     LOAN_AMORTIZATION_TYPE,
     LOAN_COLLECTOR_PLACE,
     LOAN_COMAKER_TYPE,
-    LOAN_MODE_OF_PAYMENT,
+    TLoanModeOfPayment,
     LOAN_OVERALL_PAYMENT_STATUS,
     LOAN_PAYMENT_STATUS,
     LOAN_TYPE,
-    WEEKDAYS,
+    TWeekdays,
 } from './loan.constants'
 
-export type TLoanModeOfPayment = (typeof LOAN_MODE_OF_PAYMENT)[number]
+export type TLoanModeOfPayment = (typeof TLoanModeOfPayment)[number]
 
-export type TWeekdays = (typeof WEEKDAYS)[number]
+export type TWeekdays = (typeof TWeekdays)[number]
 
 export type TLoanCollectorPlace = (typeof LOAN_COLLECTOR_PLACE)[number]
 

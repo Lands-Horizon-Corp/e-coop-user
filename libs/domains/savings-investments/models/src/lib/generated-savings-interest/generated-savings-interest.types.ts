@@ -8,7 +8,7 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
-import type { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constant'
+import type { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constants'
 import type {
     TGeneratedSavingsInterestPostSchema,
     TGeneratedSavingsInterestPrintSchema,

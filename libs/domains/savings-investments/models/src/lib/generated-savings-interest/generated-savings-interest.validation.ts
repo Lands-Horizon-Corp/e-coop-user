@@ -7,7 +7,7 @@ import {
 } from '@ecoop/shared/validation'
 import { differenceInDays } from 'date-fns'
 
-import { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constant'
+import { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constants'
 
 // Base schema without refinements
 const GeneratedSavingsInterestBaseSchema = z.object({

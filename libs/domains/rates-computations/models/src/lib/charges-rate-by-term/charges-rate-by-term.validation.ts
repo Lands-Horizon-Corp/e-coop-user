@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { LOAN_MODE_OF_PAYMENT } from '@ecoop/domains/loans/models'
+import { TLoanModeOfPayment } from '@ecoop/domains/loans/models'
 import {
     EntityIdSchema,
     PercentageSchema,
@@ -10,7 +10,7 @@ import {
 export const ChargesRateByTermSchema = z.object({
     id: EntityIdSchema('Charges Rate By Term id is invalid').optional(),
     charges_rate_scheme_id: entityIdSchema.optional(),
-    mode_of_payment: z.enum(LOAN_MODE_OF_PAYMENT),
+    mode_of_payment: z.enum(TLoanModeOfPayment),
 
     rate_1: PercentageSchema.optional(),
     rate_2: PercentageSchema.optional(),

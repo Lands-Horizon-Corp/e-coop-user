@@ -1,8 +1,5 @@
 import z from 'zod'
 
-import { InterestRateByAmountSchema } from '../interest-rate-by-amount/interest-rate-by-amount.validation'
-import { InterestRateByDateSchema } from '../interest-rate-by-date/interest-rate-by-date.validation'
-import { InterestRateByYearSchema } from '../interest-rate-by-year/interest-rate-by-year.validation'
 import {
     EntityIdSchema,
     PercentageSchema,
@@ -11,9 +8,12 @@ import {
     entityIdSchema,
 } from '@ecoop/shared/validation'
 
+import { InterestRateByAmountSchema } from '../interest-rate-by-amount/interest-rate-by-amount.validation'
+import { InterestRateByDateSchema } from '../interest-rate-by-date/interest-rate-by-date.validation'
+import { InterestRateByYearSchema } from '../interest-rate-by-year/interest-rate-by-year.validation'
 import { INTEREST_TYPE } from './browse-reference.constant'
 
-// import { INTEREST_TYPE } from './member-type-reference.constant'
+// import { INTEREST_TYPE } from './member-type-reference.constants'
 
 const BaseBrowseReferenceSchema = z
     .object({
@@ -91,7 +91,7 @@ export const WithInterestType = z.discriminatedUnion('interest_type', [
     z.object({
         interest_type: z.enum(
             INTEREST_TYPE.filter(
-                (val) => !['year', 'date', 'amount'].includes(val)
+                (val: any) => !['year', 'date', 'amount'].includes(val)
             )
         ),
     }),

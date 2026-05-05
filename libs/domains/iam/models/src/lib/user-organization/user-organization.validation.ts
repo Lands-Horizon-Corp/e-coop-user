@@ -23,7 +23,7 @@ export type TUserOrgPermissionSchema = z.infer<typeof UserOrgPermissionSchema>
 export const TimeMachineSchema = z.object({
     time_machine_time: z.coerce
         .string()
-        .transform((val) => {
+        .transform((val: any) => {
             if (!val || val === '') return undefined
 
             const date = new Date(val)

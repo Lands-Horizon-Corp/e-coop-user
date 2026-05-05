@@ -66,3 +66,5 @@ describe('buildMemberProfilePB', () => {
         expect(result).toBe('00012')
     })
 })
+
+export {};

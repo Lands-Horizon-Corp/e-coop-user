@@ -103,3 +103,5 @@ describe('buildLoanVoucherOR', () => {
         expect(result).toBe('GEN-0000')
     })
 })
+
+export {};

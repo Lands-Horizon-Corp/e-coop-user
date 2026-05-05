@@ -5,7 +5,7 @@ import type { IMedia } from '@ecoop/platforms/media'
 import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
-import type { MemberAssetSchema } from './member-asset-validation'
+import type { MemberAssetSchema } from './member-asset.validation'
 
 export interface IMemberAsset extends IBaseEntityMeta {
     id: TEntityId

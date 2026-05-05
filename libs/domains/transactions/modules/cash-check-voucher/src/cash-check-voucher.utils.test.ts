@@ -102,3 +102,5 @@ describe('buildCashCheckOR', () => {
         expect(result).toBe('GEN-0000')
     })
 })
+
+export {};

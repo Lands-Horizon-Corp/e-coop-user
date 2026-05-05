@@ -59,3 +59,5 @@ describe('BuildOR Suite', () => {
         expect(buildOR({ currentOr: 0, padding: 4 })).toBe('0000')
     })
 })
+
+export {};
