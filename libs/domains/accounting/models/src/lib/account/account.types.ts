@@ -1,12 +1,7 @@
-import type { IAccountCategory } from '../account-category/account-category.types'
-import type { IAccountClassification } from '../account-classification/account-classification.types'
-import type { IComputationSheet } from '@ecoop/domains/rates-computations'
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { TFinancialStatementType } from '../financial-statement-definition/financial-statement-definition.types'
-import type { IFinancialStatementTitle } from '../financial-statement-title/financial-statement-title.types'
-import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
 import type { IMemberType } from '@ecoop/domains/member-crm'
+import type { IComputationSheet } from '@ecoop/domains/rates-computations'
 import type { IPaymentType } from '@ecoop/domains/transactions'
+import type { ICurrency } from '@ecoop/modules/currency'
 import type {
     IAuditable,
     IPaginatedResult,
@@ -15,6 +10,11 @@ import type {
 } from '@ecoop/shared/types'
 import type { TIcon } from '@ecoop/ui/core'
 
+import type { IAccountCategory } from '../account-category/account-category.types'
+import type { IAccountClassification } from '../account-classification/account-classification.types'
+import type { TFinancialStatementType } from '../financial-statement-definition/financial-statement-definition.types'
+import type { IFinancialStatementTitle } from '../financial-statement-title/financial-statement-title.types'
+import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
 import type {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,
     ACCOUNT_INTEREST_STANDARD_COMPUTATION,
