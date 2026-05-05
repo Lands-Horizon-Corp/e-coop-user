@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { cashCountAPIRoute } from '@ecoop/modules/cash-count'
+import { cashCountAPIRoute } from '@ecoop/domains/transactions/modules/cash-count'
 import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,

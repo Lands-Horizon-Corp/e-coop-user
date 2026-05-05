@@ -1,9 +1,9 @@
 import type z from 'zod'
 
 import type { IGeneratedReport } from '../generated-report/generated-report.types'
-import type { IMedia } from '@ecoop/modules/media'
-import type { IUser } from '@ecoop/domains/iam'
-import type { IUserOrganization } from '@ecoop/domains/iam'
+import type { IMedia } from '@ecoop/platforms/media'
+import type { IUser } from '@ecoop/domains/iam/models'
+import type { IUserOrganization } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

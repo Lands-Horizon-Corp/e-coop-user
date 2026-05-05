@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { ILoanTransaction } from '@ecoop/domains/loans'
+import type { ILoanTransaction } from '@ecoop/domains/loans/models'
 import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type {
     IBaseEntityMeta,

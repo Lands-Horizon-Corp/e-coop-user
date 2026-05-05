@@ -1,4 +1,4 @@
-import type { IGeneralLedger } from '@ecoop/domains/accounting'
+import type { IGeneralLedger } from '@ecoop/domains/accounting/models'
 import type { TPaymentMode } from '../../quick-transfer/quick-transfer.types'
 import type { TEntityId } from '@ecoop/shared/types'
 import { create } from 'zustand'

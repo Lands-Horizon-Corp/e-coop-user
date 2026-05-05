@@ -1,4 +1,4 @@
-import type { IAccount } from '@ecoop/domains/accounting'
+import type { IAccount } from '@ecoop/domains/accounting/models'
 import type {
     IAuditable,
     IPaginatedResult,

@@ -1,4 +1,4 @@
-import type { TemplateOptions } from '@ecoop/domains/reporting'
+import type { TemplateOptions } from '@ecoop/domains/reporting/models'
 
 export const CashCheckVoucherTemplates: TemplateOptions[] = [
     {

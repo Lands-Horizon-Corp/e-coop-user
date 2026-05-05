@@ -1,10 +1,10 @@
 import type z from 'zod'
 
-import type { IBank } from '@ecoop/modules/bank'
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMedia } from '@ecoop/modules/media'
+import type { IBank } from '@ecoop/platforms/bank'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media'
 import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
-import type { IUserBase } from '@ecoop/domains/iam'
+import type { IUserBase } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

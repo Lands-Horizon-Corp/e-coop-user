@@ -1,9 +1,9 @@
 import type z from 'zod'
 
-import type { IArea } from '@ecoop/modules/area'
+import type { IArea } from '@ecoop/platforms/area'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
-// import { IMemberProfile } from '@ecoop/modules/member-profile'
+// import { IMemberProfile } from '@ecoop/domains/member-crm/modules/member-profile'
 import type { HOME_TYPES } from './member-address.constants'
 import type { MemberAddressSchema } from './member-address.validation'
 

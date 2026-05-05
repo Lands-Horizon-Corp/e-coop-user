@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IGeneralLedger } from '@ecoop/domains/accounting'
+import type { IGeneralLedger } from '@ecoop/domains/accounting/models'
 import type { ILoanAccount } from '../loan-account/loan-account.types'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 

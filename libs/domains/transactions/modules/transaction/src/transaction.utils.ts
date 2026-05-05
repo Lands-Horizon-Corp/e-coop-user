@@ -3,8 +3,8 @@ import type { TPaymentMode } from '../quick-transfer/quick-transfer.types'
 import {
     QuickTransferOR,
     toORBuilderOptions,
-} from '@ecoop/modules/quick-transfer'
-import type { IUserOrganization } from '@ecoop/domains/iam'
+} from '@ecoop/domains/transactions/modules/quick-transfer'
+import type { IUserOrganization } from '@ecoop/domains/iam/models'
 import { mmddyyyy } from '@ecoop/shared/helpers'
 
 export const receiptPrefix = (num: number): string => {

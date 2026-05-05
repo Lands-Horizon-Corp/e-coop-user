@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { IBank } from '@ecoop/modules/bank'
+import type { IBank } from '@ecoop/platforms/bank'
 import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type {
     IAuditable,

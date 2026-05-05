@@ -1,6 +1,6 @@
 import type { IBranchSettings } from '../branch-settings/branch-settings.types'
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMedia } from '@ecoop/modules/media'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media'
 import type { IOrganization } from '../organization/organization.types'
 import type {
     IAuditable,

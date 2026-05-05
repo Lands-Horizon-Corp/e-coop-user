@@ -11,7 +11,7 @@ import type {
 import { toReadableDate } from '@ecoop/shared/helpers'
 import { toBase64 } from '@ecoop/shared/helpers'
 
-import { useDebounce } from './use-debounce'
+import useDebounce from './use-debounce'
 
 // import logger from '@ecoop/shared/helpers'
 

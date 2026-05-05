@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { ICurrency } from '@ecoop/modules/currency'
+import type { ICurrency } from '@ecoop/platforms/currency'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

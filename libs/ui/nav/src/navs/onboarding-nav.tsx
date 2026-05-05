@@ -1,5 +1,5 @@
 import { cn } from '@ecoop/shared/tw-utils'
-import NavProfileMenu from '@ecoop/domains/iam'
+import NavProfileMenu from '@ecoop/domains/iam/models'
 import type { IClassProps } from '@ecoop/shared/types'
 
 import {NavEcoopLogo} from '../nav-components/nav-ecoop-logo'

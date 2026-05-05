@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { dataUrlToFile } from '@ecoop/modules/media'
+import { dataUrlToFile } from '@ecoop/platforms/media'
 import useConfirmModalStore from '@ecoop/shared/store'
 import { useSignature } from '@ecoop/shared/store'
 import { cn } from '@ecoop/shared/tw-utils'

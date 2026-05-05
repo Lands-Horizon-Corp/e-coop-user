@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { TTagCategory } from '@ecoop/modules/tag-template'
+import type { TTagCategory } from '@ecoop/platforms/tag-template'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,

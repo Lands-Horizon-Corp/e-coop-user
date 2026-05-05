@@ -1,6 +1,6 @@
 import type { IGeneratedReportsDownloadUsers } from '../generated-reports-download-users/generated-reports-download-users.types'
-import type { IMedia } from '@ecoop/modules/media'
-import type { IUser } from '@ecoop/domains/iam'
+import type { IMedia } from '@ecoop/platforms/media'
+import type { IUser } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

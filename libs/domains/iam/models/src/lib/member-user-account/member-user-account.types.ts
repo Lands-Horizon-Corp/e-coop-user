@@ -1,4 +1,4 @@
-import type { ISignUpRequest } from '@ecoop/modules/authentication'
+import type { ISignUpRequest } from '@ecoop/domains/iam/modules/authentication'
 import type { TEntityId } from '@ecoop/shared/types'
 
 // For creation of member user account

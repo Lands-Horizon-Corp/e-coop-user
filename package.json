@@ -13,6 +13,7 @@
         "g:modules": "bun tools/scripts/g-modules.mjs $1",
         "g:modules:all": "bun tools/scripts/g-modules-all.mjs",
         "check:ts" : "bun tools/scripts/run-typecheck-all.mjs",
+        "check:ts-domains": "bun tools/scripts/run-typecheck-domains.mjs",
         "check:circular-deps": "bun tools/scripts/check-circular-deps.mjs",
         "check:modules-imports": "bun tools/scripts/check-modules-imports.mjs",
         "check:deps-imports": "bun tools/scripts/report-dependency-import-errors.mjs",

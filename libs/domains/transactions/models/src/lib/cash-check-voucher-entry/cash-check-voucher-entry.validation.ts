@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { IAccount, TAccountType } from '@ecoop/domains/accounting'
+import type { IAccount, TAccountType } from '@ecoop/domains/accounting/models'
 import { EntityIdSchema, entityIdSchema } from '@ecoop/shared/validation'
 
 export const CashCheckVoucherEntrySchema = z

@@ -1,5 +1,5 @@
 import type { IAccount } from '../account/account.types'
-import type { TTagCategory } from '@ecoop/modules/tag-template'
+import type { TTagCategory } from '@ecoop/platforms/tag-template'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

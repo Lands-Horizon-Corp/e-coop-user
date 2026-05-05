@@ -1,10 +1,10 @@
 import { useState } from 'react'
 
-import type { IAccount } from '@ecoop/domains/accounting'
-import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
-import { useGetAllPaymentType } from '@ecoop/modules/payment-type'
-import { quickPaymentORResolver } from '@ecoop/modules/transaction'
+import type { IAccount } from '@ecoop/domains/accounting/models'
+import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam/models'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import { useGetAllPaymentType } from '@ecoop/domains/transactions/modules/payment-type'
+import { quickPaymentORResolver } from '@ecoop/domains/transactions/modules/transaction'
 import { useModalState } from '@ecoop/shared/hooks'
 import { useTransactionReverseSecurityStore } from '@ecoop/shared/store'
 

@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 import { ScrollArea } from '@radix-ui/react-scroll-area'
 
-import type { IOrganizationWithPolicies } from '@ecoop/domains/iam'
+import type { IOrganizationWithPolicies } from '@ecoop/domains/iam/models'
 import { cn } from '@ecoop/shared/tw-utils'
 import { Checkbox } from '@ecoop/ui/core'
 import { Popover } from '@ecoop/ui/core'

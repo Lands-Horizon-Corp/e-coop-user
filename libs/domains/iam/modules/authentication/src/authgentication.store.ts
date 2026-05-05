@@ -3,8 +3,8 @@ import type { IOrganization } from '../organization/organization.types'
 import type {
     GetCrudPermissionOpts,
     IHasPermissionOpts,
-} from '@ecoop/modules/permission'
-import { getCrudPermissions, hasPermission } from '@ecoop/modules/permission'
+} from '@ecoop/domains/iam/modules/permission'
+import { getCrudPermissions, hasPermission } from '@ecoop/domains/iam/modules/permission'
 import type { IUserBase } from '../user/user.types'
 import type { IUserOrganization } from '../user-organization/user-organization.types'
 import { create } from 'zustand'

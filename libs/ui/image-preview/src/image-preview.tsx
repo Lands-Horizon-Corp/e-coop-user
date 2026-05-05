@@ -2,7 +2,7 @@
 import * as React from 'react'
 import { forwardRef, useEffect, useRef, useState } from 'react'
 
-import { formatBytes } from '@ecoop/modules/media'
+import { formatBytes } from '@ecoop/platforms/media'
 import { formatDate } from '@ecoop/shared/helpers'
 import { cn } from '@ecoop/shared/tw-utils'
 import type {

@@ -1,6 +1,6 @@
-import type { INotification } from '@ecoop/domains/communications'
-import type { IMedia } from '@ecoop/modules/media'
-import type { IQrScanResult } from '@ecoop/modules/qr-crypto'
+import type { INotification } from '@ecoop/domains/communications/models'
+import type { IMedia } from '@ecoop/platforms/media'
+import type { IQrScanResult } from '@ecoop/platforms/qr-crypto'
 import type { IFootstep } from '@ecoop/platforms/footstep'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 

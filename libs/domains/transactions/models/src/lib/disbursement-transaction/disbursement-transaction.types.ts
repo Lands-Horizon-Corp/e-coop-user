@@ -1,6 +1,6 @@
 import type { IDisbursement } from '../disbursement/disbursement.types'
 import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
-import type { IEmployee } from '@ecoop/domains/iam'
+import type { IEmployee } from '@ecoop/domains/iam/models'
 import type {
     IAuditable,
     IPaginatedResult,

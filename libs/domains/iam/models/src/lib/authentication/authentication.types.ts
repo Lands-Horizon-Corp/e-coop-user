@@ -1,5 +1,5 @@
-import type { IComakerMemberProfile } from '@ecoop/domains/member-crm'
-// import { IGeneratedReport } from '@ecoop/modules/generated-report'
+import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
+// import { IGeneratedReport } from '@ecoop/domains/reporting/modules/generated-report'
 import type { IUserBase } from '../user/user.types'
 import type { IUserOrganization } from '../user-organization/user-organization.types'
 

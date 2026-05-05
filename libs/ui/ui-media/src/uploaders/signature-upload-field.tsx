@@ -2,7 +2,7 @@ import { forwardRef, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import type { IMedia } from '@ecoop/modules/media'
+import type { IMedia } from '@ecoop/platforms/media'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IClassProps, TEntityId } from '@ecoop/shared/types'
 import { ImageIcon, TrashIcon } from '@ecoop/ui/core'

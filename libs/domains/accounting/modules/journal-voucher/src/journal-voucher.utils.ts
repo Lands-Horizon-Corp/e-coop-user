@@ -1,4 +1,4 @@
-import { buildOR } from '@ecoop/domains/transactions'
+import { buildOR } from '@ecoop/domains/transactions/models'
 
 import type { TORJournalVoucherSettings } from '../journal-voucher'
 

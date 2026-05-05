@@ -2,7 +2,7 @@ import z from 'zod'
 
 import type { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header/interest-rate-by-terms-header.types'
 import type { IInterestRateScheme } from '../interest-rate-scheme/interest-rate-scheme.types'
-import type { IMemberClassification } from '@ecoop/domains/member-crm'
+import type { IMemberClassification } from '@ecoop/domains/member-crm/models'
 import type {
     IAuditable,
     IOrgBranchIdentity,

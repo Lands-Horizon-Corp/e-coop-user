@@ -2,8 +2,8 @@ import { useCallback, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { formatBytes } from '@ecoop/modules/media'
-import { FileTypeIcon } from '@ecoop/modules/media'
+import { formatBytes } from '@ecoop/platforms/media'
+import { FileTypeIcon } from '@ecoop/platforms/media'
 import { cn } from '@ecoop/shared/tw-utils'
 import type {
     DropzoneOptions,

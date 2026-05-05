@@ -1,11 +1,11 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/domains/accounting'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { IAccount } from '@ecoop/domains/accounting/models'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import type { IMutualFundAdditionalMembers } from '../mutual-fund-additional-members/mutual-fund-additional-members.types'
 import type { IMutualFundEntry } from '../mutual-fund-entry/mutual-fund-entry.types'
 import type { IMutualFundTable } from '../mutual-fund-table/mutual-fund-table.types'
-import type { IUser } from '@ecoop/domains/iam'
+import type { IUser } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

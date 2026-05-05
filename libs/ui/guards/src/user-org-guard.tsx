@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 
 import { Navigate } from '@tanstack/react-router'
 
-import { useAuthUser } from '@ecoop/domains/iam'
+import { useAuthUser } from '@ecoop/domains/iam/models'
 import {
     useSendHeartbeatOffline,
     useSendHeartbeatOnline,
-} from '@ecoop/modules/heartbeat'
+} from '@ecoop/platforms/heartbeat'
 import type { IChildProps } from '@ecoop/shared/types'
 
 // interface Props extends IChildProps {}

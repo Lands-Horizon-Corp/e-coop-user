@@ -1,6 +1,6 @@
-import type { IBank } from '@ecoop/modules/bank'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
-import type { IUser } from '@ecoop/domains/iam'
+import type { IBank } from '@ecoop/platforms/bank'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import type { IUser } from '@ecoop/domains/iam/models'
 import type {
     IAuditable,
     IOrgBranchIdentity,

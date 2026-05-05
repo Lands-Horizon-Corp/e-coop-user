@@ -5,9 +5,9 @@ import type z from 'zod'
 
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
-import { useCreateGeneratedReport, useUpdateGeneratedReportById } from '@ecoop/domains/reporting'
-import type { IGeneratedReport, IGeneratedReportRequest } from '@ecoop/domains/reporting'
-import { GeneratedReportSchema } from '@ecoop/domains/reporting'
+import { useCreateGeneratedReport, useUpdateGeneratedReportById } from '@ecoop/domains/reporting/models'
+import type { IGeneratedReport, IGeneratedReportRequest } from '@ecoop/domains/reporting/models'
+import { GeneratedReportSchema } from '@ecoop/domains/reporting/models'
 import type { IFilterState } from '@ecoop/shared/contexts'
 import { withToastCallbacks } from '@ecoop/shared/helpers'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'

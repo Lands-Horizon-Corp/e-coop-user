@@ -1,4 +1,4 @@
-import { loanTransactionBaseKey } from '@ecoop/modules/loan-transaction'
+import { loanTransactionBaseKey } from '@ecoop/domains/loans/modules/loan-transaction'
 import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,

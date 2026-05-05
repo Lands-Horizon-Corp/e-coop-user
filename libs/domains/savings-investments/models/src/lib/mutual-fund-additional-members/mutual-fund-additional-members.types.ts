@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IMemberType } from '@ecoop/domains/member-crm'
+import type { IMemberType } from '@ecoop/domains/member-crm/models'
 import type { IMutualFund } from '../mutual-fund/mutual-fund.types'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 

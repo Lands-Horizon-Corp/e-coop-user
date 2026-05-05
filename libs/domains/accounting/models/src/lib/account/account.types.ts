@@ -1,7 +1,7 @@
-import type { IMemberType } from '@ecoop/domains/member-crm'
-import type { IComputationSheet } from '@ecoop/domains/rates-computations'
-import type { IPaymentType } from '@ecoop/domains/transactions'
-import type { ICurrency } from '@ecoop/modules/currency'
+import type { IMemberType } from '@ecoop/domains/member-crm/models'
+import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
+import type { IPaymentType } from '@ecoop/domains/transactions/models'
+import type { ICurrency } from '@ecoop/platforms/currency'
 import type {
     IAuditable,
     IPaginatedResult,

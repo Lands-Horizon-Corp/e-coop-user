@@ -1,10 +1,10 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/domains/accounting'
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMemberGender } from '@ecoop/domains/member-crm'
-import type { IMemberType } from '@ecoop/domains/member-crm'
-import type { IUnbalanceAccount } from '@ecoop/domains/accounting'
+import type { IAccount } from '@ecoop/domains/accounting/models'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMemberGender } from '@ecoop/domains/member-crm/models'
+import type { IMemberType } from '@ecoop/domains/member-crm/models'
+import type { IUnbalanceAccount } from '@ecoop/domains/accounting/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

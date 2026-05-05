@@ -1,5 +1,5 @@
-import type { ITimesheet } from '@ecoop/modules/timesheet'
-import type { IUserOrganizationResponse } from '@ecoop/domains/iam'
+import type { ITimesheet } from '@ecoop/platforms/timesheet'
+import type { IUserOrganizationResponse } from '@ecoop/domains/iam/models'
 
 export interface HeartbeatResponse {
     user_organizations: IUserOrganizationResponse[]

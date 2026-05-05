@@ -1,5 +1,5 @@
 import type { IChargesRateScheme } from '../charges-rate-scheme/charges-rate-scheme.types'
-import type { TLoanModeOfPayment } from '@ecoop/domains/loans'
+import type { TLoanModeOfPayment } from '@ecoop/domains/loans/models'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { TChargesRateByTermSchema } from './charges-rate-by-term.validation'

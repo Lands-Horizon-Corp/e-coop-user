@@ -1,5 +1,5 @@
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { IUserBase } from '@ecoop/domains/iam'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IUserBase } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

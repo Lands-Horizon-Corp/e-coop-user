@@ -1,5 +1,5 @@
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMedia } from '@ecoop/modules/media'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media'
 import type { IOrganizationCategory } from '../organization-category/organization-category.types'
 import type { IOrganizationMedia } from '../organization-media/organization-media.types'
 import type { ISubscriptionPlan } from '../subscription-plan/subscription-plan.types'

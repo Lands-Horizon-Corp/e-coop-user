@@ -8,7 +8,7 @@ import {
     deleteUserOrganizationById,
     // deleteUserOrganizationById,
     userOrganizationAPIRoute,
-} from '@ecoop/modules/user-organization'
+} from '@ecoop/domains/iam/modules/user-organization'
 import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,

@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type { IComakerMemberProfile } from '@ecoop/domains/member-crm'
+import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

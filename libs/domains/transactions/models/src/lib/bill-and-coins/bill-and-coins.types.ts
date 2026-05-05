@@ -1,7 +1,7 @@
-import type { IBranch } from '@ecoop/domains/iam'
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMedia } from '@ecoop/modules/media'
-import type { IOrganization } from '@ecoop/domains/iam'
+import type { IBranch } from '@ecoop/domains/iam/models'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media'
+import type { IOrganization } from '@ecoop/domains/iam/models'
 import type {
     IPaginatedResult,
     ITimeStamps,

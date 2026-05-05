@@ -1,10 +1,10 @@
-import type { IAccount } from '@ecoop/domains/accounting'
+import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { IAdjustmentEntryTag } from '../adjustment-entry-tag/adjustment-entry-tag.types'
-import type { IAdjustmentVoucherSettings } from '@ecoop/domains/iam'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { IAdjustmentVoucherSettings } from '@ecoop/domains/iam/models'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import type { IPaymentType } from '../payment-type/payment-type.types'
-import type { IUser } from '@ecoop/domains/iam'
-import type { IUserOrganizationSettings } from '@ecoop/domains/iam'
+import type { IUser } from '@ecoop/domains/iam/models'
+import type { IUserOrganizationSettings } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

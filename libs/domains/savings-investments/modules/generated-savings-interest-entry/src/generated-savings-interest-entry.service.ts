@@ -3,7 +3,7 @@ import { useQuery } from '@tanstack/react-query'
 import {
     createGeneratedSavingsInterest,
     generatedSavingsInterestBaseKey,
-} from '@ecoop/modules/generated-savings-interest'
+} from '@ecoop/domains/savings-investments/modules/generated-savings-interest'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

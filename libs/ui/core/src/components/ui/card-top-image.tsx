@@ -1,7 +1,7 @@
 // import { ReactNode } from 'react'
 
 // import { cn } from '@ecoop/shared/tw-utils'
-// import { IMedia } from '@ecoop/modules/media'
+// import { IMedia } from '@ecoop/platforms/media'
 
 // import ImageDisplay from '../image-display'
 // import PreviewMediaWrapper from '../wrappers/preview-media-wrapper'

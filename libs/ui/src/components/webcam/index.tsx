@@ -10,7 +10,7 @@ import {
     CameraOffIcon,
     CameraSelectIcon,
     LoadingSpinner,
-} from '@ecoop/ui'
+} from '@ecoop/ui/core'
 import Webcam from 'react-webcam'
 
 import { ActionTooltip } from '../tooltips/action-tooltip'

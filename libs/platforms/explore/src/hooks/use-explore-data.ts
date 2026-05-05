@@ -1,5 +1,5 @@
-import { useGetAllBranches } from '@ecoop/domains/iam'
-import { useGetAllOrganizations, useGetAllOrganizationsExplore } from '@ecoop/domains/iam'
+import { useGetAllBranches } from '@ecoop/domains/iam/models'
+import { useGetAllOrganizations, useGetAllOrganizationsExplore } from '@ecoop/domains/iam/models'
 
 const useExploreData = () => {
     const {

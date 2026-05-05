@@ -1,9 +1,9 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/domains/accounting'
+import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { TMockCloanInputSchema } from '../calculator/calculator.validation'
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { ILoanAmortizationSchedule } from '@ecoop/domains/loans'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { ILoanAmortizationSchedule } from '@ecoop/domains/loans/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

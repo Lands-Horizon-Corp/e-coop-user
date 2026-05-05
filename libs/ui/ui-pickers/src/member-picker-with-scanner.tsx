@@ -1,13 +1,13 @@
 // import { useState } from 'react'
 
 // import { cn } from '@ecoop/shared/tw-utils'
-// import { IMemberProfile } from '@ecoop/modules/member-profile'
+// import { IMemberProfile } from '@ecoop/domains/member-crm/modules/member-profile'
 // import MemberPicker from '@ecoop/modules/member-profile/components/member-picker'
-// import { IQRMemberProfileDecodedResult } from '@ecoop/modules/qr-crypto'
+// import { IQRMemberProfileDecodedResult } from '@ecoop/platforms/qr-crypto'
 // import {
 //     TransactionMemberProfile,
 //     TransactionViewNoMemberSelected,
-// } from '@ecoop/modules/transaction'
+// } from '@ecoop/domains/transactions/modules/transaction'
 // import { IPickerBaseProps } from '@ecoop/shared/types'
 // import { EyeIcon, ScanLineIcon } from 'lucide-react'
 // import { useHotkeys } from 'react-hotkeys-hook'

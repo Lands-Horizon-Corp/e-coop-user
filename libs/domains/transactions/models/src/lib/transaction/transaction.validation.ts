@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { IAccount } from '@ecoop/domains/accounting'
+import type { IAccount } from '@ecoop/domains/accounting/models'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,

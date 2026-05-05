@@ -1,4 +1,4 @@
-import type { IMedia } from '@ecoop/modules/media'
+import type { IMedia } from '@ecoop/platforms/media'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 export interface IVoucherPayToRequest {

@@ -1,10 +1,10 @@
-import type { IJournalVoucherORSettings } from '@ecoop/domains/iam'
-import type { ICurrency } from '@ecoop/modules/currency'
+import type { IJournalVoucherORSettings } from '@ecoop/domains/iam/models'
+import type { ICurrency } from '@ecoop/platforms/currency'
 import type { IJournalVoucherEntry, IJournalVoucherEntryRequest } from '../journal-voucher-entry/journal-voucher-entry.types'
 import type { IJournalVoucherTag } from '../journal-voucher-tag/journal-voucher-tag.types'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
-import type { IUser } from '@ecoop/domains/iam'
-import type { IUserOrganizationSettings } from '@ecoop/domains/iam'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import type { IUser } from '@ecoop/domains/iam/models'
+import type { IUserOrganizationSettings } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IBranch } from '@ecoop/domains/iam'
+import type { IBranch } from '@ecoop/domains/iam/models'
 import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 

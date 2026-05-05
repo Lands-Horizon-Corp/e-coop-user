@@ -2,8 +2,8 @@ import { useCallback } from 'react'
 
 import { toast } from 'sonner'
 
-import type { IQrScanResult } from '@ecoop/modules/qr-crypto'
-import { useQrDecryptData } from '@ecoop/modules/qr-crypto'
+import type { IQrScanResult } from '@ecoop/platforms/qr-crypto'
+import { useQrDecryptData } from '@ecoop/platforms/qr-crypto'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IDetectedBarcode } from '@yudiel/react-qr-scanner'
 

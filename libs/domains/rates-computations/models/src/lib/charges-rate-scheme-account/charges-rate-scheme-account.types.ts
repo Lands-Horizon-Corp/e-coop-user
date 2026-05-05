@@ -1,4 +1,4 @@
-import type { IAccount } from '@ecoop/domains/accounting'
+import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { IChargesRateScheme } from '../charges-rate-scheme/charges-rate-scheme.types'
 import type {
     IAuditable,

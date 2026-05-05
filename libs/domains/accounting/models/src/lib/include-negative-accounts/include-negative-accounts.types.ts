@@ -1,7 +1,7 @@
 import type z from 'zod'
 
 import type { IAccount } from '../account/account.types'
-import type { IComputationSheet } from '@ecoop/domains/rates-computations'
+import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

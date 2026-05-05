@@ -1,8 +1,8 @@
 import type { IAccount } from '../account/account.types'
 import type { IJournalVoucher } from '../journal-voucher/journal-voucher.types'
-import type { ILoanTransaction } from '@ecoop/domains/loans'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
-import type { IUser } from '@ecoop/domains/iam'
+import type { ILoanTransaction } from '@ecoop/domains/loans/models'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import type { IUser } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

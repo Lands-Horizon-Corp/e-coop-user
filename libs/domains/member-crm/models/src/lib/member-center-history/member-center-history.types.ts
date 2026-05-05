@@ -1,4 +1,4 @@
-import type { IBranch } from '@ecoop/domains/iam'
+import type { IBranch } from '@ecoop/domains/iam/models'
 import type { IMemberCenter } from '../member-center/member-center.types'
 import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type {

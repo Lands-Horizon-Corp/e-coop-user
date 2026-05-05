@@ -1,7 +1,7 @@
 import type z from 'zod'
 
-import type { IBranch } from '@ecoop/domains/iam'
-import type { IBrowseReference } from '@ecoop/domains/rates-computations'
+import type { IBranch } from '@ecoop/domains/iam/models'
+import type { IBrowseReference } from '@ecoop/domains/rates-computations/models'
 import type {
     IAuditable,
     IPaginatedResult,

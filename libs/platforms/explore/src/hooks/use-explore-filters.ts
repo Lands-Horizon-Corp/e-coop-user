@@ -1,7 +1,7 @@
 import { useMemo, useState } from 'react'
 
-import type { IBranch } from '@ecoop/domains/iam'
-import type { IOrganization } from '@ecoop/domains/iam'
+import type { IBranch } from '@ecoop/domains/iam/models'
+import type { IOrganization } from '@ecoop/domains/iam/models'
 
 import { filterBranches, filterOrganizations } from '../utils/data-filters'
 import { sortBranches, sortOrganizations } from '../utils/sorting'

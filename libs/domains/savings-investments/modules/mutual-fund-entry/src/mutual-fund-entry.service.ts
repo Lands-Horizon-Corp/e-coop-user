@@ -1,4 +1,4 @@
-import { mutualFundBaseKey } from '@ecoop/modules/mutual-fund'
+import { mutualFundBaseKey } from '@ecoop/domains/savings-investments/modules/mutual-fund'
 import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,

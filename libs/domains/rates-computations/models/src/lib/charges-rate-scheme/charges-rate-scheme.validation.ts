@@ -4,7 +4,7 @@ import { ChargesRateByRangeOrMinimumAmountSchema } from '../charges-rate-by-rang
 import { ChargesRateByTermSchema } from '../charges-rate-by-term/charges-rate-by-term.validation'
 import { chargesRateSchemeAccountSchema } from '../charges-rate-scheme-account/charges-rate-scheme-account.validation'
 import { ChargesRateSchemeModeOfPaymentSchema } from '../charges-rate-scheme-mode-of-payment/charges-rate-scheme-mode-of-payment.validation'
-import { LOAN_MODE_OF_PAYMENT } from '@ecoop/domains/loans'
+import { LOAN_MODE_OF_PAYMENT } from '@ecoop/domains/loans/models'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,

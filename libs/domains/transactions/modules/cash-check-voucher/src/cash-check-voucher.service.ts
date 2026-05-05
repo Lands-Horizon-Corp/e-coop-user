@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { getPaginatedJournalVoucher } from '@ecoop/domains/accounting'
+import { getPaginatedJournalVoucher } from '@ecoop/domains/accounting/models'
 import { Logger } from '@ecoop/shared/loggers'
 import { createMutationInvalidateFn } from '@ecoop/shared/providers/repositories/mutation-factory'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'

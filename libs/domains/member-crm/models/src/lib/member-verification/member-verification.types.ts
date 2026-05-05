@@ -1,7 +1,7 @@
 import z from 'zod'
 
 import type { IMemberProfile } from '../member-profile/member-profile.types'
-import type { IUser } from '@ecoop/domains/iam'
+import type { IUser } from '@ecoop/domains/iam/models'
 import type {
     IAuditable,
     IOrgBranchIdentity,

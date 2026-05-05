@@ -1,8 +1,8 @@
 import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import type { IGeneralLedger } from '@ecoop/domains/accounting'
-import { generalLedgerBaseKey } from '@ecoop/domains/accounting'
+import type { IGeneralLedger } from '@ecoop/domains/accounting/models'
+import { generalLedgerBaseKey } from '@ecoop/domains/accounting/models'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
 import { withCatchAsync } from '@ecoop/shared/helpers'
 import { Logger } from '@ecoop/shared/loggers'

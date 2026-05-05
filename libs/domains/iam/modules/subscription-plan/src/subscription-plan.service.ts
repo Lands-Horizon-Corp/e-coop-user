@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { getCurrentCurrencyByTimezone } from '@ecoop/modules/currency'
+import { getCurrentCurrencyByTimezone } from '@ecoop/platforms/currency'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

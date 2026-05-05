@@ -2,7 +2,7 @@ import type { UseMutationOptions } from '@tanstack/react-query'
 import { useMutation, useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import type { TimeMachineRequest } from '@ecoop/domains/transactions'
+import type { TimeMachineRequest } from '@ecoop/domains/transactions/models'
 import { groupBy, withCatchAsync } from '@ecoop/shared/helpers'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'

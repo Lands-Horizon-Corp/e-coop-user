@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import { MemberAddressSchema } from '@ecoop/modules/member-address'
+import { MemberAddressSchema } from '@ecoop/domains/member-crm/modules/member-address'
 import {
     SexSchema,
     birthDateSchema,

@@ -1,4 +1,4 @@
-import type { ICurrency } from '@ecoop/modules/currency'
+import type { ICurrency } from '@ecoop/platforms/currency'
 import type { IPaginatedResult } from '@ecoop/shared/types'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 

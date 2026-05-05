@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IMedia } from '@ecoop/modules/media'
+import type { IMedia } from '@ecoop/platforms/media'
 import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type { TRelationship } from '../member-relative-account/member-relative-account.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'

@@ -1,4 +1,4 @@
-import type { feedBaseKey } from '@ecoop/modules/feed'
+import type { feedBaseKey } from '@ecoop/domains/social-media/modules/feed'
 import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,

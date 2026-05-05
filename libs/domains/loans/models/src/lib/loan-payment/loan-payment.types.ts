@@ -1,7 +1,7 @@
-import type { IAccount } from '@ecoop/domains/accounting'
+import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { TEntityId } from '@ecoop/shared/types'
 
-// import { ILoanPaymentSchedule } from '@ecoop/modules/loan-transaction'
+// import { ILoanPaymentSchedule } from '@ecoop/domains/loans/modules/loan-transaction'
 
 export interface ILoanPayableAccount {
     account: IAccount

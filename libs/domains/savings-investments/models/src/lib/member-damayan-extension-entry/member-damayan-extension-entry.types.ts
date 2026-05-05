@@ -1,6 +1,6 @@
 import z from 'zod'
 
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import type {
     IAuditable,
     IOrgBranchIdentity,

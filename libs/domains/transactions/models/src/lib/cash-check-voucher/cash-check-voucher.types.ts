@@ -1,15 +1,15 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/domains/accounting'
-import type { ICashCheckVoucherGeneralORSettings, ICashVoucherORSettings } from '@ecoop/domains/iam'
+import type { IAccount } from '@ecoop/domains/accounting/models'
+import type { ICashCheckVoucherGeneralORSettings, ICashVoucherORSettings } from '@ecoop/domains/iam/models'
 import type { ICashCheckVoucherEntry, ICashCheckVoucherEntryRequest } from '../cash-check-voucher-entry/cash-check-voucher-entry.types'
 import type { ICashCheckVoucherTag } from '../cash-check-voucher-tag/cash-check-voucher-tag.types'
-import type { ICurrency } from '@ecoop/modules/currency'
-import type { IMedia } from '@ecoop/modules/media'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
-import type { IUser } from '@ecoop/domains/iam'
-import type { IUserOrganizationSettings } from '@ecoop/domains/iam'
+import type { IUser } from '@ecoop/domains/iam/models'
+import type { IUserOrganizationSettings } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
