@@ -4,7 +4,7 @@ import {
     SOKETI_KEY,
     SOKETI_PORT,
 } from '@ecoop/shared/constants'
-import logger from '@ecoop/shared/helpers'
+import { Logger } from '@ecoop/shared/loggers'
 import Pusher, { type Options } from 'pusher-js'
 import { create } from 'zustand'
 
@@ -34,6 +34,8 @@ export const usePusherStore = create<PusherState>((set, get) => ({
         if (get().pusher) return
 
         const pusher = new Pusher(SOKETI_KEY, DEFAULT_OPTIONS)
+
+        const logger = Logger.getInstance('pusher', false)
 
         pusher.connection.bind('connected', () => {
             logger.info('📡🛰️: Soketi connected.')

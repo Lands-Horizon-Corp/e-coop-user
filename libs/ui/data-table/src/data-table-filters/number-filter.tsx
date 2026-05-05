@@ -2,8 +2,8 @@ import type {
     IFilterComponentProps,
     TFilterModes,
     TSearchFilter,
-} from '@/contexts/filter-context'
-import { filterModeMap, useFilter } from '@/contexts/filter-context'
+} from '@ecoop/shared/contexts'
+import { filterModeMap, useFilter } from '@ecoop/shared/contexts'
 import { Button } from '@ecoop/ui/core'
 import { DebouncedInput } from '@ecoop/ui/core'
 import {

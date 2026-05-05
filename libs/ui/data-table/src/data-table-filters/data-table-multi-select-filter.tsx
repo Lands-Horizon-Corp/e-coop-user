@@ -3,8 +3,8 @@ import type {
     TColumnDataTypes,
     TSearchFilter,
     filterModeMap,
-} from '@/contexts/filter-context'
-import { useFilter } from '@/contexts/filter-context'
+} from '@ecoop/shared/contexts'
+import { useFilter } from '@ecoop/shared/contexts'
 import type { IMultiSelectOption } from '@ecoop/ui/core'
 import MultiSelectFilter from '@ecoop/ui/core'
 

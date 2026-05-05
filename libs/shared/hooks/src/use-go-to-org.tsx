@@ -1,6 +1,6 @@
 import { useRouter } from '@tanstack/react-router'
 
-import { useAuthStore } from '@ecoop/domains/iam'
+import { useAuthStore } from '@ecoop/domains/iam/modules/authentication'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 export const useGetIntoBranch = () => {

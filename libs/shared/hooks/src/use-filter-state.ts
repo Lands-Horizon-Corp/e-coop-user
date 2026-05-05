@@ -10,7 +10,8 @@ import type {
 } from '@ecoop/shared/contexts'
 import { toReadableDate } from '@ecoop/shared/helpers'
 import { toBase64 } from '@ecoop/shared/helpers'
-import useDebounce from '@ecoop/shared/hooks'
+
+import { useDebounce } from './use-debounce'
 
 // import logger from '@ecoop/shared/helpers'
 
@@ -68,8 +69,14 @@ const useFilterState = ({
     const finalFilterPayload: TFilterPayload = useMemo(() => {
         const filteredFilter: TFinalFilter[] = []
 
-        Object.entries(debouncedFilter).forEach(([key, value]) => {
-            if ((!value || !value.value) && value?.mode !== 'range') {
+        Object.entries(debouncedFilter).forEach(([key, rawValue]) => {
+            const value = rawValue as TSearchFilter | undefined
+
+            if (!value) {
+                return
+            }
+
+            if (!value.value && value.mode !== 'range') {
                 // logger.log('Value failed', value)
                 return
             }

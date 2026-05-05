@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react'
 
 import { cn } from '@ecoop/shared/tw-utils'
-
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogTitle,
-} from '@/components/ui/dialog'
+} from '@ecoop/ui/core'
 
 const ConnectionProvider = ({ interval = 10_000 }: { interval?: number }) => {
     const [isConnected, setIsConnected] = useState(true)

@@ -19,6 +19,22 @@ import {
     DialogTitle,
 } from './dialog'
 
+declare global {
+    interface Window {
+        turnstile?: {
+            render: (
+                container: string,
+                options: {
+                    sitekey: string
+                    callback: (token: string) => void
+                    'error-callback'?: (error: Error) => void
+                }
+            ) => string
+            remove: (widgetId: string) => void
+        }
+    }
+}
+
 interface ChatReCaptchaProps {
     onSuccess: (token: string) => void
     onError?: (error: Error) => void

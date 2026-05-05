@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import type { TFilterModes, TSearchFilter } from '@/contexts/filter-context'
-import { useFilter } from '@/contexts/filter-context'
+import type { TFilterModes, TSearchFilter } from '@ecoop/shared/contexts'
+import { useFilter } from '@ecoop/shared/contexts'
 import type { KeysOfOrString } from '@ecoop/shared/types'
 import { ChevronLeftIcon, MagnifyingGlassIcon } from '@ecoop/ui/core'
 import ActionTooltip from '@ecoop/ui/core'

@@ -86,10 +86,12 @@ const PageBreadCrumb = ({ className, homeUrl }: Props) => {
                 {homeUrl && (
                     <>
                         <BreadcrumbItem>
-                            <BreadcrumbLink asChild>
-                                <Link to={homeUrl as string}>
-                                    <HomeFillIcon className="size-4" />
-                                </Link>
+                            <BreadcrumbLink
+                                render={(props) => (
+                                    <Link {...props} to={homeUrl as string} />
+                                )}
+                            >
+                                <HomeFillIcon className="size-4" />
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         {paths.paths.length > 0 && (
@@ -105,10 +107,16 @@ const PageBreadCrumb = ({ className, homeUrl }: Props) => {
                             className="text-foreground/40"
                             data-id="Yes"
                         >
-                            <BreadcrumbLink asChild className="text-inherit">
-                                <Link to={paths.firstPart.urlPath}>
-                                    {paths.firstPart.name}
-                                </Link>
+                            <BreadcrumbLink
+                                className="text-inherit"
+                                render={(props) => (
+                                    <Link
+                                        {...props}
+                                        to={paths.firstPart.urlPath}
+                                    />
+                                )}
+                            >
+                                {paths.firstPart.name}
                             </BreadcrumbLink>
                         </BreadcrumbItem>
                         {paths.lastPart.length > 0 && (
@@ -136,10 +144,15 @@ const PageBreadCrumb = ({ className, homeUrl }: Props) => {
                                             key={path.urlPath}
                                         >
                                             <BreadcrumbItem className="w-full">
-                                                <BreadcrumbLink asChild>
-                                                    <Link to={path.urlPath}>
-                                                        {path.name}
-                                                    </Link>
+                                                <BreadcrumbLink
+                                                    render={(props) => (
+                                                        <Link
+                                                            {...props}
+                                                            to={path.urlPath}
+                                                        />
+                                                    )}
+                                                >
+                                                    {path.name}
                                                 </BreadcrumbLink>
                                             </BreadcrumbItem>
                                         </DropdownMenuItem>
@@ -158,12 +171,15 @@ const PageBreadCrumb = ({ className, homeUrl }: Props) => {
                             <BreadcrumbItem className="text-foreground/40">
                                 {i !== paths.lastPart.length - 1 ? (
                                     <BreadcrumbLink
-                                        asChild
                                         className="text-inherit text-nowrap"
+                                        render={(props) => (
+                                            <Link
+                                                {...props}
+                                                to={path.urlPath}
+                                            />
+                                        )}
                                     >
-                                        <Link to={path.urlPath}>
-                                            {path.name}
-                                        </Link>
+                                        {path.name}
                                     </BreadcrumbLink>
                                 ) : (
                                     <BreadcrumbPage className="cursor-default text-nowrap">

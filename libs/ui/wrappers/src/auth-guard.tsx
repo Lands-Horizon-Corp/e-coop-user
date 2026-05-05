@@ -5,11 +5,12 @@ import { Navigate, useLocation, useRouter } from '@tanstack/react-router'
 import { AxiosError } from 'axios'
 
 import LOADING_ARTWORK_GIF from '@/assets/gifs/e-coop-artwork-loading.gif'
-import type { IAuthContext } from '@ecoop/domains/iam'
-import { useAuthContext } from '@ecoop/domains/iam'
-import { useAuthStore } from '@ecoop/domains/iam'
-import type { IUserBase } from '@ecoop/domains/iam'
-import { UserAvatar } from '@ecoop/domains/iam'
+import type { IAuthContext, IUserBase } from '@ecoop/domains/iam/models'
+import {
+    useAuthContext,
+    useAuthStore,
+} from '@ecoop/domains/iam/modules/authentication'
+import { UserAvatar } from '@ecoop/domains/iam/modules/user'
 import { useSubscribe } from '@ecoop/shared/hooks'
 import { useQeueryHookCallback } from '@ecoop/shared/hooks'
 import type { IBaseProps, TPageType } from '@ecoop/shared/types'
@@ -20,9 +21,8 @@ import {
     ShieldExclamationIcon,
 } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
-
 import { FlickeringGrid } from '@ecoop/ui/core'
-import {ImageMatch} from '@ecoop/ui/core'
+import { ImageMatch } from '@ecoop/ui/core'
 
 interface Props extends IBaseProps {
     pageType?: TPageType

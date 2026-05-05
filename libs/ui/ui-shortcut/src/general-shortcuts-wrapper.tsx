@@ -1,7 +1,7 @@
 import type { FC, ReactNode } from 'react'
 import { createContext, useContext, useEffect, useState } from 'react'
 
-import { SHORTCUT_SCOPES } from '@/constants'
+import { SHORTCUT_SCOPES } from '@ecoop/shared/constants'
 import { useHotkeysContext } from 'react-hotkeys-hook'
 
 interface ShortcutContextType {

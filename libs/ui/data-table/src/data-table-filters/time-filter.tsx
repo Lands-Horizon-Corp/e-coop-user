@@ -4,9 +4,9 @@ import type {
     IFilterComponentProps,
     TFilterModes,
     TSearchFilter,
-} from '@/contexts/filter-context'
-import { filterModeMap, useFilter } from '@/contexts/filter-context'
-import logger from '@/helpers/loggers/logger'
+} from '@ecoop/shared/contexts'
+import { filterModeMap, useFilter } from '@ecoop/shared/contexts'
+import logger from '@ecoop/shared/loggers'
 import TimePicker from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 import {

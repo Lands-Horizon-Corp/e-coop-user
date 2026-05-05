@@ -1,10 +1,10 @@
-import type { IFootstep } from '@ecoop/modules/footstep'
-import type { IMedia } from '@ecoop/modules/media'
 import type { INotification } from '@ecoop/domains/communications'
+import type { IMedia } from '@ecoop/modules/media'
 import type { IQrScanResult } from '@ecoop/modules/qr-crypto'
-import type { IUserOrganization } from '../user-organization/user-organization.types'
+import type { IFootstep } from '@ecoop/platforms/footstep'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 import type { USER_TYPE } from './user.constants'
 
 export type TUserType = (typeof USER_TYPE)[number] // move User module

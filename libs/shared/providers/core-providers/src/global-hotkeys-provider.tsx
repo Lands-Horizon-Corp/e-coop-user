@@ -2,7 +2,6 @@ import type { ReactNode } from 'react'
 
 import { useRouter } from '@tanstack/react-router'
 
-import { router } from '@/app'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 interface HotkeysProviderProps {
@@ -19,7 +18,7 @@ const GlobalHotkeysProvider = ({ children }: HotkeysProviderProps) => {
             e.preventDefault()
 
             router.navigate({
-                to: `${getBaseUrl()}/view-members`,
+                to: `${getBaseUrl(router)}/view-members`,
             })
         },
         {
@@ -31,7 +30,7 @@ const GlobalHotkeysProvider = ({ children }: HotkeysProviderProps) => {
     return <>{children}</>
 }
 
-export function getBaseUrl(): string {
+export function getBaseUrl(router: ReturnType<typeof useRouter>): string {
     const matches = router.state.matches
 
     const lastMatch = matches[matches.length - 1]

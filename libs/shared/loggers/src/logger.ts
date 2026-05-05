@@ -1,5 +1,5 @@
-import type { TFootstepLevel } from '@ecoop/modules/footstep'
-import { createFootstep } from '@ecoop/modules/footstep'
+import type { TFootstepLevel } from '@ecoop/platforms/footstep'
+import { createFootstep } from '@ecoop/platforms/footstep'
 import { IS_STAGING } from '@ecoop/shared/constants'
 
 /* eslint-disable no-console */

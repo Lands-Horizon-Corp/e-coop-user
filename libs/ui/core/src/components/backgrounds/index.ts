@@ -1,3 +1,3 @@
-export { default as AuroraBackground } from './AuroraBackground'
-export { default as ParticlesBackground } from './ParticlesBackground'
-export { default as ScrollProgress } from './ScrollProgress'
+export { AuroraBackground } from './aurora-background'
+export { ParticlesBackground } from './particles-background'
+export { ScrollProgress } from './scroll-progress'

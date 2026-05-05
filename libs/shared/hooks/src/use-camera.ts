@@ -1,6 +1,6 @@
 import { useCallback, useRef } from 'react'
 
-import { dataUrlToFile } from '@ecoop/modules/media'
+import { dataUrlToFile } from '@ecoop/platforms/media'
 import { format } from 'date-fns'
 import type Webcam from 'react-webcam'
 

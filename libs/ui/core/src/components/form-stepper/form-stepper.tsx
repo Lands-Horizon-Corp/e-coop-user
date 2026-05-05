@@ -2,7 +2,7 @@ import { useRef } from 'react'
 
 import type { FieldValues, Path, UseFormReturn } from 'react-hook-form'
 
-import { cn } from '@/helpers'
+import { cn } from '@ecoop/shared/tw-utils'
 import { CheckFillIcon } from '@ecoop/ui/core'
 import {
     Stepper,

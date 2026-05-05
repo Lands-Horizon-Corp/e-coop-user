@@ -143,9 +143,9 @@ export function StaggerItem({
         <motion.div
             className={className}
             variants={{
-                hidden: animationVariants[animation].hidden,
+                hidden: animationVariants[animation]['hidden'],
                 visible: {
-                    ...animationVariants[animation].visible,
+                    ...animationVariants[animation]['visible'],
                     transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] },
                 },
             }}

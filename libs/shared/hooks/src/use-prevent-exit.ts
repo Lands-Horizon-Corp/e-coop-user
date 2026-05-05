@@ -33,6 +33,7 @@ export const usePreventExit = ({
                 event.preventDefault()
                 return message
             }
+            return undefined
         }
 
         window.addEventListener('beforeunload', handleBeforeUnload)

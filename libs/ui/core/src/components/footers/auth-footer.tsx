@@ -1,4 +1,4 @@
-import { EcoopLogo } from '@ecoop/ui/core'
+import { EcoopLogo } from '@ecoop/ui/ecoop-logo'
 
 const AuthFooter = () => {
     return (

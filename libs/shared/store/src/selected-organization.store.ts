@@ -1,4 +1,4 @@
-import type { IOrgUserOrganizationGroup } from '@ecoop/domains/iam'
+import type { IOrgUserOrganizationGroup } from '@ecoop/domains/iam/models'
 import type { TEntityId } from '@ecoop/shared/types'
 import { create } from 'zustand'
 

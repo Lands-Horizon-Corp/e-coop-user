@@ -1,6 +1,6 @@
 import type { UseNavigateResult } from '@tanstack/react-router'
 
-import type { ICategory } from '@ecoop/modules/category'
+import type { ICategory } from '@ecoop/platforms/category'
 import type { TEntityId } from '@ecoop/shared/types'
 import { create } from 'zustand'
 

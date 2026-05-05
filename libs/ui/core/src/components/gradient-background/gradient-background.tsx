@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import { useMemo } from 'react'
 
-import { cn } from '@/helpers/tw-utils'
+import { cn } from '@ecoop/shared/tw-utils'
 
 import ImageDisplay from '../image-display'
 

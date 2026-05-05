@@ -1,7 +1,7 @@
 import type { Dispatch, SetStateAction } from 'react'
 
-import type { IAccount } from '@ecoop/domains/accounting'
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
+import type { IAccount } from '@ecoop/domains/accounting/models'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import { create } from 'zustand'
 
 export interface DepositWithdrawStore {

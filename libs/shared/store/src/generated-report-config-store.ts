@@ -1,4 +1,7 @@
-import type { IGeneratedReportRequest, TemplateOptions } from '@ecoop/domains/reporting'
+import type {
+    IGeneratedReportRequest,
+    TemplateOptions,
+} from '@ecoop/domains/reporting/models'
 import type { IForm } from '@ecoop/shared/types'
 import { create } from 'zustand'
 

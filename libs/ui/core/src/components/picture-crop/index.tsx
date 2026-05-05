@@ -20,8 +20,7 @@ import {
     ZoomInIcon,
     ZoomOutIcon,
 } from '@ecoop/ui/core'
-import LoadingSpinner from '@ecoop/ui/core'
-import ActionTooltip from '@ecoop/ui/core'
+import { ActionTooltip, LoadingSpinner } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 import { Slider } from '@ecoop/ui/core'
 
@@ -178,11 +177,10 @@ const PictureCrop = ({ image, onCancel, onCrop }: Props) => {
                         disabled={loading}
                         max={3}
                         min={1}
-                        onValueChange={(val) => setZoom(val[0])}
-                        rangeClassName="duration-400 ease-in-out transition-colors bg-primary/50 group-hover:bg-primary/80"
+                        onValueChange={(val) =>
+                            setZoom(Array.isArray(val) ? val[0] : val)
+                        }
                         step={0.08}
-                        thumbClassName="size-4 duration-200 border-primary/50 bg-background shadow"
-                        trackClassName="h-1"
                         value={[zoom]}
                     />
                     <ZoomInIcon className="size-4 duration-200 ease-in-out group-hover:text-foreground" />
@@ -194,11 +192,10 @@ const PictureCrop = ({ image, onCancel, onCrop }: Props) => {
                         disabled={loading}
                         max={360}
                         min={-360}
-                        onValueChange={(val) => setRotation(val[0])}
-                        rangeClassName="duration-400 ease-in-out transition-colors bg-primary/50 group-hover:bg-primary/80"
+                        onValueChange={(val) =>
+                            setRotation(Array.isArray(val) ? val[0] : val)
+                        }
                         step={1}
-                        thumbClassName="size-4 duration-200 border-primary/50 bg-background"
-                        trackClassName="h-1"
                         value={[rotation]}
                     />
                     <RotateBoxRightIcon className="size-4 duration-200 ease-in-out group-hover:text-foreground" />

@@ -208,8 +208,8 @@ function CalendarDayButton({
 
     const ref = React.useRef<HTMLButtonElement>(null)
     React.useEffect(() => {
-        if (modifiers.focused) ref.current?.focus()
-    }, [modifiers.focused])
+        if (modifiers['focused']) ref.current?.focus()
+    }, [modifiers['focused']])
 
     return (
         <Button
@@ -219,14 +219,14 @@ function CalendarDayButton({
                 className
             )}
             data-day={day.date.toLocaleDateString(locale?.code)}
-            data-range-end={modifiers.range_end}
-            data-range-middle={modifiers.range_middle}
-            data-range-start={modifiers.range_start}
+            data-range-end={modifiers['range_end']}
+            data-range-middle={modifiers['range_middle']}
+            data-range-start={modifiers['range_start']}
             data-selected-single={
-                modifiers.selected &&
-                !modifiers.range_start &&
-                !modifiers.range_end &&
-                !modifiers.range_middle
+                modifiers['selected'] &&
+                !modifiers['range_start'] &&
+                !modifiers['range_end'] &&
+                !modifiers['range_middle']
             }
             size="icon"
             variant="ghost"

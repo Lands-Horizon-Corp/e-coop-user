@@ -1,7 +1,6 @@
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IBaseProps } from '@ecoop/shared/types'
-
-import CopyWrapper from './wrappers/copy-wrapper'
+import { CopyWrapper } from '@ecoop/ui/wrappers'
 
 type Props = {
     noValueText?: string

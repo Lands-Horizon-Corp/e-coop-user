@@ -1,5 +1,5 @@
-import type { IMemberProfile } from '@ecoop/domains/member-crm'
-import type { IQRMemberProfile } from '@ecoop/modules/qr-crypto'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import type { IQRMemberProfile } from '@ecoop/platforms/qr-crypto'
 import { create } from 'zustand'
 
 interface MemberPickerStoreProps {

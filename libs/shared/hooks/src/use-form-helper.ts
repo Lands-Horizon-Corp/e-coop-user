@@ -8,7 +8,7 @@ import type {
     UseFormReturn,
 } from 'react-hook-form'
 
-import useConfirmModalStore from '@ecoop/shared/store'
+import { useConfirmModalStore } from '@ecoop/shared/store'
 
 import { usePreventExit } from './use-prevent-exit'
 

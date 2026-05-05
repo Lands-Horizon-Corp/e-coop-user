@@ -1,8 +1,13 @@
 import { type ReactNode } from 'react'
 
-import type { FieldValues, Path, UseFormReturn } from 'react-hook-form'
+import type {
+    ControllerRenderProps,
+    FieldValues,
+    Path,
+    UseFormReturn,
+} from 'react-hook-form'
 
-import FormFieldWrapper from './ui/form-field-wrapper'
+import { FormFieldWrapper } from './ui/form-field-wrapper'
 import { Label } from './ui/label'
 import { Switch } from './ui/switch'
 
@@ -27,7 +32,11 @@ function SwitchFormField<T extends FieldValues>({
         <FormFieldWrapper
             control={form.control}
             name={name}
-            render={({ field }) => (
+            render={({
+                field,
+            }: {
+                field: ControllerRenderProps<T, Path<T>>
+            }) => (
                 <div className="shadow-xs bg-background/50 relative flex w-full items-start gap-2 rounded-lg border border-input p-4 outline-none duration-200 ease-out has-checked:border-primary/30 has-checked:bg-linear-to-br has-checked:from-primary/50 has-checked:to-primary/10">
                     <Switch
                         aria-describedby={

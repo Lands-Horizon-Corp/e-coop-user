@@ -3,7 +3,7 @@ import { useRouter } from '@tanstack/react-router'
 import { ChevronLeftIcon, ChevronRightIcon } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 
-import ActionTooltip from '../tooltips/action-tooltip'
+import { ActionTooltip } from '../tooltips/action-tooltip'
 
 const PageNavigator = () => {
     const router = useRouter()

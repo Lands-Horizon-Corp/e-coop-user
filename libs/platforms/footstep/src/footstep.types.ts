@@ -1,6 +1,9 @@
-import type { IBranch } from '@ecoop/domains/iam'
-import type { IOrganization } from '@ecoop/domains/iam'
-import type { IUserBase, TUserType } from '@ecoop/domains/iam'
+import type {
+    IBranch,
+    IOrganization,
+    IUserBase,
+    TUserType,
+} from '@ecoop/domains/iam/models'
 import type {
     IAuditable,
     IPaginatedResult,

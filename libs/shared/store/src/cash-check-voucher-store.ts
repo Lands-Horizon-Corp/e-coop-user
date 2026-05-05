@@ -1,4 +1,4 @@
-import type { ICashCheckVoucherEntryRequest } from '@ecoop/domains/transactions'
+import type { ICashCheckVoucherEntryRequest } from '@ecoop/domains/transactions/models'
 import type { TEntityId } from '@ecoop/shared/types'
 import { create } from 'zustand'
 

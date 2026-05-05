@@ -1,6 +1,6 @@
 import { useParams, useRouter } from '@tanstack/react-router'
 
-import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam'
+import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam/modules/authentication'
 import { getOrgBranchSafeURLNames } from '@ecoop/shared/helpers'
 import type { IChildProps } from '@ecoop/shared/types'
 import { FlickeringGrid } from '@ecoop/ui/core'

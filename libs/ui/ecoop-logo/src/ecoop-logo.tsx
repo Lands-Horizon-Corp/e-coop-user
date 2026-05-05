@@ -1,9 +1,8 @@
-import type { ResolvedTheme } from '@ecoop/shared/providers/core-providers'
-import { useTheme } from '@ecoop/shared/providers/core-providers'
+import { useTheme } from '@ecoop/shared/contexts'
+import type { ResolvedTheme } from '@ecoop/shared/contexts'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IClassProps } from '@ecoop/shared/types'
-
-import Image from './image'
+import { Image } from '@ecoop/ui/core'
 
 type TEcoopThemeMode = 'dynamic' | ResolvedTheme
 
@@ -68,4 +67,4 @@ const EcoopLogo = ({
     )
 }
 
-export {EcoopLogo}
+export { EcoopLogo }
