@@ -636,6 +636,13 @@
             ],
             "@ecoop/platforms/timesheet": [
                 "libs/platforms/timesheet/src/index.ts"
+            ],
+            "@ecoop/ui/ui-text-display": [
+                "libs/ui/ui-text-display/src/index.ts"
+            ],
+            "@ecoop/ui/re-captcha": ["libs/ui/re-captcha/src/index.ts"],
+            "@ecoop/ui/ui-date-time-pickers": [
+                "libs/ui/ui-date-time-pickers/src/index.ts"
             ]
         },
         "strict": true

@@ -10,14 +10,13 @@ import {
 import { toast } from 'sonner'
 
 import { TURNSTILE_CAPTCHA_SITE_KEY } from '@ecoop/shared/constants'
-
 import {
     Dialog,
     DialogContent,
     DialogDescription,
     DialogHeader,
     DialogTitle,
-} from './dialog'
+} from '@ecoop/ui/dialog'
 
 declare global {
     interface Window {
