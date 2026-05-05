@@ -1,0 +1,9 @@
+{
+    "name": "communications-contact-us",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/communications/modules/contact-us/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project communications-contact-us --web",
+    "targets": {}
+}

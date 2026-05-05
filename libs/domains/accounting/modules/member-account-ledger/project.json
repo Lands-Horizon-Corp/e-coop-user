@@ -1,0 +1,9 @@
+{
+    "name": "accounting-member-account-ledger",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/accounting/modules/member-account-ledger/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project accounting-member-account-ledger --web",
+    "targets": {}
+}

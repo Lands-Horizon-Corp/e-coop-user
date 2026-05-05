@@ -1,0 +1,9 @@
+{
+    "name": "analytics-models",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/analytics/models/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project analytics-models --web",
+    "targets": {}
+}

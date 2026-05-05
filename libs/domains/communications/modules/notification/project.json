@@ -1,0 +1,9 @@
+{
+    "name": "communications-notification",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/communications/modules/notification/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project communications-notification --web",
+    "targets": {}
+}

@@ -1,0 +1,9 @@
+{
+    "name": "member-crm-member-recruits",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/member-crm/modules/member-recruits/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-crm-member-recruits --web",
+    "targets": {}
+}

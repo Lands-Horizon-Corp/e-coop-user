@@ -1,0 +1,9 @@
+{
+    "name": "rates-computations-grocery-computation-sheet-monthly",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/rates-computations/modules/grocery-computation-sheet-monthly/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project rates-computations-grocery-computation-sheet-monthly --web",
+    "targets": {}
+}

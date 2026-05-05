@@ -1,0 +1,9 @@
+{
+    "name": "accounting-financial-statement-account-grouping",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/accounting/modules/financial-statement-account-grouping/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project accounting-financial-statement-account-grouping --web",
+    "targets": {}
+}

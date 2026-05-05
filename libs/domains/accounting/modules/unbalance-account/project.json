@@ -1,0 +1,9 @@
+{
+    "name": "accounting-unbalance-account",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/accounting/modules/unbalance-account/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project accounting-unbalance-account --web",
+    "targets": {}
+}

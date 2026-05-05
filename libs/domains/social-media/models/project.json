@@ -1,0 +1,9 @@
+{
+    "name": "social-media-models",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/social-media/models/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project social-media-models --web",
+    "targets": {}
+}

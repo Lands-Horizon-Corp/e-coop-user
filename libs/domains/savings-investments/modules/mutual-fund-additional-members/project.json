@@ -1,0 +1,9 @@
+{
+    "name": "savings-investments-mutual-fund-additional-members",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/savings-investments/modules/mutual-fund-additional-members/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project savings-investments-mutual-fund-additional-members --web",
+    "targets": {}
+}

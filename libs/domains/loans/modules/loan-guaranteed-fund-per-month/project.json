@@ -1,0 +1,9 @@
+{
+    "name": "loans-loan-guaranteed-fund-per-month",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/loans/modules/loan-guaranteed-fund-per-month/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project loans-loan-guaranteed-fund-per-month --web",
+    "targets": {}
+}

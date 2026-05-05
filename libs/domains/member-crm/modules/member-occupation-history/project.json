@@ -1,0 +1,9 @@
+{
+    "name": "member-crm-member-occupation-history",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/member-crm/modules/member-occupation-history/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-crm-member-occupation-history --web",
+    "targets": {}
+}

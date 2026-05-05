@@ -1,0 +1,9 @@
+{
+    "name": "accounting-account-classification",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/accounting/modules/account-classification/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project accounting-account-classification --web",
+    "targets": {}
+}

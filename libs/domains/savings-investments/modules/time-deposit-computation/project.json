@@ -1,0 +1,9 @@
+{
+    "name": "savings-investments-time-deposit-computation",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/savings-investments/modules/time-deposit-computation/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project savings-investments-time-deposit-computation --web",
+    "targets": {}
+}

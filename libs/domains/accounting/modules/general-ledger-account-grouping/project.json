@@ -1,0 +1,9 @@
+{
+    "name": "accounting-general-ledger-account-grouping",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/accounting/modules/general-ledger-account-grouping/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project accounting-general-ledger-account-grouping --web",
+    "targets": {}
+}

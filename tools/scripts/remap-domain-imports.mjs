@@ -30,7 +30,16 @@ for (const filePath of sourceFiles) {
     const original = await readFile(filePath, 'utf8')
     const updated = original.replace(
         importExportPattern,
-        (fullMatch, statementStart, statementKind, typeKeyword, namedClause, defaultClause, quote, specifier) => {
+        (
+            fullMatch,
+            statementStart,
+            statementKind,
+            typeKeyword,
+            namedClause,
+            defaultClause,
+            quote,
+            specifier
+        ) => {
             const rewritten = rewriteStatement({
                 filePath,
                 statementKind,
@@ -115,7 +124,9 @@ function rewriteStatement({
     }
 
     if (specifier.startsWith('@ecoop/domains/')) {
-        const domainName = specifier.slice('@ecoop/domains/'.length).split('/')[0]
+        const domainName = specifier
+            .slice('@ecoop/domains/'.length)
+            .split('/')[0]
 
         if (!currentDomain || currentDomain !== domainName) {
             return null
@@ -234,7 +245,9 @@ function rebuildStatement({
     defaultClause,
     targetSpecifier,
 }) {
-    const prefix = `${statementKind} ${typeKeyword ?? ''}`.replace(/\s+/g, ' ').trimEnd()
+    const prefix = `${statementKind} ${typeKeyword ?? ''}`
+        .replace(/\s+/g, ' ')
+        .trimEnd()
 
     if (namedClause && defaultClause) {
         return `${prefix} ${defaultClause.trim()}, { ${normalizeNamedClause(namedClause)} } from '${targetSpecifier}'`
@@ -323,7 +336,9 @@ function parseDefaultClause(defaultClause) {
 }
 
 function getCurrentDomain(filePath) {
-    const relativePath = path.relative(domainsRoot, filePath).replace(/\\/g, '/')
+    const relativePath = path
+        .relative(domainsRoot, filePath)
+        .replace(/\\/g, '/')
     if (relativePath.startsWith('..')) {
         return null
     }
@@ -334,12 +349,20 @@ function getCurrentDomain(filePath) {
     }
 
     const domainRoot = path.join(domainsRoot, domainName, 'src')
-    const relativeToSrc = path.relative(domainRoot, filePath).replace(/\\/g, '/')
+    const relativeToSrc = path
+        .relative(domainRoot, filePath)
+        .replace(/\\/g, '/')
     return relativeToSrc.startsWith('..') ? null : domainName
 }
 
 function resolveModuleTargetFile({ domainName, moduleName, rest }) {
-    const basePath = path.join(domainsRoot, domainName, 'src', moduleName, ...rest)
+    const basePath = path.join(
+        domainsRoot,
+        domainName,
+        'src',
+        moduleName,
+        ...rest
+    )
     return resolveFileLikePath(basePath)
 }
 
@@ -407,7 +430,8 @@ function getExportMap(filePath, trail = new Set()) {
         exportMap.set('default', filePath)
     }
 
-    const exportFromPattern = /^\s*export\s+\{([\s\S]*?)\}\s+from\s+['"]([^'"]+)['"]/gm
+    const exportFromPattern =
+        /^\s*export\s+\{([\s\S]*?)\}\s+from\s+['"]([^'"]+)['"]/gm
     while ((match = exportFromPattern.exec(content))) {
         const [, clause, fromPath] = match
         const targetFile = resolveImportTarget(filePath, fromPath)
@@ -416,7 +440,10 @@ function getExportMap(filePath, trail = new Set()) {
         }
 
         const targetExports = getExportMap(targetFile, nextTrail)
-        for (const entry of clause.split(',').map((part) => part.trim()).filter(Boolean)) {
+        for (const entry of clause
+            .split(',')
+            .map((part) => part.trim())
+            .filter(Boolean)) {
             const [localName, exportedName] = entry
                 .split(/\s+as\s+/i)
                 .map((value) => value.trim())

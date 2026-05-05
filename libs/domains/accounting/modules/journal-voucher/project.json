@@ -1,0 +1,9 @@
+{
+    "name": "accounting-journal-voucher",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/accounting/modules/journal-voucher/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project accounting-journal-voucher --web",
+    "targets": {}
+}

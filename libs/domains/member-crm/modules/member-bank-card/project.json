@@ -1,0 +1,9 @@
+{
+    "name": "member-crm-member-bank-card",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/member-crm/modules/member-bank-card/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project member-crm-member-bank-card --web",
+    "targets": {}
+}

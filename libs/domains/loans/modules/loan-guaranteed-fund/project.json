@@ -1,0 +1,9 @@
+{
+    "name": "loans-loan-guaranteed-fund",
+    "$schema": "../../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/domains/loans/modules/loan-guaranteed-fund/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project loans-loan-guaranteed-fund --web",
+    "targets": {}
+}
