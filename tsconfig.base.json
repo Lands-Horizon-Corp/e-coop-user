@@ -29,7 +29,6 @@
             "@ecoop/shared/types": ["libs/shared/types/src/index.ts"],
             "@ecoop/shared/validation": ["libs/shared/validation/src/index.ts"],
             "@ecoop/shared/helpers": ["libs/shared/helpers/src/index.ts"],
-         
             "@ecoop/shared/tw-utils": ["libs/shared/tw-utils/src/index.ts"],
             "@ecoop/shared/loggers": ["libs/shared/loggers/src/index.ts"],
             "@ecoop/shared/repositories": [
@@ -74,7 +73,6 @@
             "@ecoop/ui/ui-webcam": ["libs/ui/ui-webcam/src/index.tsx"],
             "@ecoop/ui/ui-search": ["libs/ui/ui-search/src/index.ts"],
             "@ecoop/ui/ui-shortcut": ["libs/ui/ui-shortcut/src/index.ts"],
-         
             "@ecoop/domains/accounting/models": [
                 "libs/domains/accounting/models/src/index.ts"
             ],
@@ -593,6 +591,51 @@
             ],
             "@ecoop/domains/transactions/modules/voucher-pay-to": [
                 "libs/domains/transactions/modules/voucher-pay-to/src/index.ts"
+            ],
+            "@ecoop/platforms/approvals": [
+                "libs/platforms/approvals/src/index.ts"
+            ],
+            "@ecoop/platforms/area": ["libs/platforms/area/src/index.ts"],
+            "@ecoop/platforms/bank": ["libs/platforms/bank/src/index.ts"],
+            "@ecoop/platforms/category": [
+                "libs/platforms/category/src/index.ts"
+            ],
+            "@ecoop/platforms/currency": [
+                "libs/platforms/currency/src/index.ts"
+            ],
+            "@ecoop/platforms/developer": [
+                "libs/platforms/developer/src/index.ts"
+            ],
+            "@ecoop/platforms/explore": ["libs/platforms/explore/src/index.ts"],
+            "@ecoop/platforms/footstep": [
+                "libs/platforms/footstep/src/index.ts"
+            ],
+            "@ecoop/platforms/heartbeat": [
+                "libs/platforms/heartbeat/src/index.ts"
+            ],
+            "@ecoop/platforms/holiday": ["libs/platforms/holiday/src/index.ts"],
+            "@ecoop/platforms/home": ["libs/platforms/home/src/index.ts"],
+            "@ecoop/platforms/location": [
+                "libs/platforms/location/src/index.ts"
+            ],
+            "@ecoop/platforms/media": ["libs/platforms/media/src/index.ts"],
+            "@ecoop/platforms/pdf-viewer": [
+                "libs/platforms/pdf-viewer/src/index.ts"
+            ],
+            "@ecoop/platforms/playground": [
+                "libs/platforms/playground/src/index.ts"
+            ],
+            "@ecoop/platforms/qr-crypto": [
+                "libs/platforms/qr-crypto/src/index.ts"
+            ],
+            "@ecoop/platforms/settings": [
+                "libs/platforms/settings/src/index.ts"
+            ],
+            "@ecoop/platforms/tag-template": [
+                "libs/platforms/tag-template/src/index.ts"
+            ],
+            "@ecoop/platforms/timesheet": [
+                "libs/platforms/timesheet/src/index.ts"
             ]
         },
         "strict": true
