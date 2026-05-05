@@ -3,8 +3,8 @@ import { spawnSync } from 'node:child_process'
 import {
     existsSync,
     mkdirSync,
-    readdirSync,
     readFileSync,
+    readdirSync,
     renameSync,
     rmSync,
     writeFileSync,
@@ -74,11 +74,7 @@ function runNxGenerate(moduleName) {
 }
 
 function ensureProject(moduleName) {
-    const projectJson = path.join(
-        platformsRoot,
-        moduleName,
-        'project.json'
-    )
+    const projectJson = path.join(platformsRoot, moduleName, 'project.json')
     if (existsSync(projectJson)) {
         return
     }
@@ -94,9 +90,7 @@ function clearGeneratedScaffold(moduleName) {
     if (existsSync(libDir)) {
         if (checkOnly) {
             console.log(
-                `DRY DELETE: ${path
-                    .relative(root, libDir)
-                    .replace(/\\/g, '/')}`
+                `DRY DELETE: ${path.relative(root, libDir).replace(/\\/g, '/')}`
             )
         } else {
             rmSync(libDir, { recursive: true, force: true })
@@ -105,9 +99,7 @@ function clearGeneratedScaffold(moduleName) {
 
     if (existsSync(indexPath)) {
         const content = readFileSync(indexPath, 'utf8').trim()
-        const looksGenerated = /^export\s+\*\s+from\s+['"]\.\/lib/.test(
-            content
-        )
+        const looksGenerated = /^export\s+\*\s+from\s+['"]\.\/lib/.test(content)
         if (looksGenerated) {
             if (checkOnly) {
                 console.log(
@@ -161,9 +153,7 @@ function moveModuleFiles(moduleName) {
 
     if (checkOnly) {
         console.log(
-            `DRY DELETE: ${path
-                .relative(root, sourceRoot)
-                .replace(/\\/g, '/')}`
+            `DRY DELETE: ${path.relative(root, sourceRoot).replace(/\\/g, '/')}`
         )
         return
     }
@@ -207,9 +197,7 @@ function ensureIndexExports(moduleName) {
 
     if (checkOnly) {
         console.log(
-            `DRY INDEX: ${path
-                .relative(root, indexPath)
-                .replace(/\\/g, '/')}`
+            `DRY INDEX: ${path.relative(root, indexPath).replace(/\\/g, '/')}`
         )
         return
     }
@@ -230,7 +218,9 @@ function run() {
         ensureIndexExports(moduleName)
     }
 
-    console.log(checkOnly ? 'Dry-run complete.' : 'Platform migration complete.')
+    console.log(
+        checkOnly ? 'Dry-run complete.' : 'Platform migration complete.'
+    )
 }
 
 run()
