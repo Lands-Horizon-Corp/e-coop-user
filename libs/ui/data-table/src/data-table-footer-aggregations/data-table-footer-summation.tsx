@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react'
 import { useMemo } from 'react'
 
-import { formatNumber } from '@ecoop/shared/helpers'
+import { formatNumber } from '@ecoop/shared/helpers/core-helpers'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IClassProps } from '@ecoop/shared/types'
 import type { Column, Header, Table } from '@tanstack/react-table'

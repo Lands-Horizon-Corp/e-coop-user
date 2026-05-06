@@ -1,5 +1,5 @@
 // this component sanitizes and display any content including html, text
-import { sanitizeHtml } from '@ecoop/shared/helpers'
+import { sanitizeHtml } from '@ecoop/shared/helpers/core-helpers'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IClassProps } from '@ecoop/shared/types'
 

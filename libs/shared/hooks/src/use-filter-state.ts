@@ -8,12 +8,12 @@ import type {
     TFinalFilter,
     TSearchFilter,
 } from '@ecoop/shared/contexts'
-import { toReadableDate } from '@ecoop/shared/helpers'
-import { toBase64 } from '@ecoop/shared/helpers'
+import { toReadableDate } from '@ecoop/shared/helpers/core-helpers'
+import { toBase64 } from '@ecoop/shared/helpers/core-helpers'
 
 import useDebounce from './use-debounce'
 
-// import logger from '@ecoop/shared/helpers'
+// import logger from '@ecoop/shared/helpers/core-helpers'
 
 const useFilterState = ({
     debounceFinalFilterMs,

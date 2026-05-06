@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
 import type { AxiosProgressEvent } from 'axios'
 
-// import { compressImage } from '@ecoop/shared/helpers'
+// import { compressImage } from '@ecoop/shared/helpers/core-helpers'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'

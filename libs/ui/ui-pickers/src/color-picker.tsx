@@ -12,7 +12,7 @@ import {
     rgbToHsl,
     rgbaToHex,
     rgbaToHsla,
-} from '@ecoop/shared/helpers'
+} from '@ecoop/shared/helpers/core-helpers'
 import { cn } from '@ecoop/shared/tw-utils'
 import { Button } from '@ecoop/ui/core'
 import { Input } from '@ecoop/ui/core'

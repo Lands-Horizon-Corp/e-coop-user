@@ -4,8 +4,8 @@ import type { Area } from 'react-easy-crop'
 import Cropper from 'react-easy-crop'
 import { toast } from 'sonner'
 
-import { withCatchAsync } from '@ecoop/shared/helpers'
-import { getCroppedImg } from '@ecoop/shared/helpers'
+import { withCatchAsync } from '@ecoop/shared/helpers/core-helpers'
+import { getCroppedImg } from '@ecoop/shared/helpers/picture-crop-helper'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IClassProps } from '@ecoop/shared/types'
 import {

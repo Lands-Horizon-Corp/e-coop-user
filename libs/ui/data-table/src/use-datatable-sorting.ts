@@ -1,6 +1,6 @@
 import { useMemo } from 'react'
 
-import { toBase64 } from '@ecoop/shared/helpers'
+import { toBase64 } from '@ecoop/shared/helpers/core-helpers'
 import { useSortingState } from '@ecoop/shared/hooks'
 import type { OnChangeFn, SortingState } from '@tanstack/react-table'
 

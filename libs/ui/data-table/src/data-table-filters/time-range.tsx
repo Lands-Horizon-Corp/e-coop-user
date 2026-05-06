@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { isObject } from '@ecoop/shared/helpers'
+import { isObject } from '@ecoop/shared/helpers/core-helpers'
 import { TimePicker } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 import { isAfter } from 'date-fns'

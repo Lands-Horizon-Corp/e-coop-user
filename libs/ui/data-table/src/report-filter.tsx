@@ -5,7 +5,7 @@ import type {
     TFilterPayload,
     TFinalFilter,
 } from '@ecoop/shared/contexts'
-import type { IColumnReportFilter } from '@ecoop/shared/helpers'
+import type { IColumnReportFilter } from '@ecoop/shared/helpers/core-helpers'
 import { ArrowDownIcon, ArrowUpIcon, SortIcon } from '@ecoop/ui/core'
 import { InfoTooltip } from '@ecoop/ui/core'
 import { Badge } from '@ecoop/ui/core'

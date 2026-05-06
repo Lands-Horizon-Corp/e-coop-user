@@ -1,16 +1,18 @@
-import type { IBranch } from '@ecoop/domains/iam'
-import type { IOrganization } from '@ecoop/domains/iam'
+import type { IAccount } from '@ecoop/domains/accounting/models'
+import type {
+    IBranch,
+    IUserBase,
+    TPermission,
+    TUserType,
+} from '@ecoop/domains/iam/models'
+import type { IOrganization } from '@ecoop/domains/iam/models'
+import type { IPaymentType } from '@ecoop/domains/transactions/models'
 import type { USER_ORG_APPLICATION_STATUS } from '@ecoop/shared/constants'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
-
-import type { IAccount } from '../account'
-import type { IPaymentType } from '../payment-type/payment-type.types'
-import type { TPermission } from '../permission'
-import type { IUserBase, TUserType } from '../user/user.types'
 
 export interface IUserOrganizationContext<
     TUserOrganization = IUserOrganization | undefined,

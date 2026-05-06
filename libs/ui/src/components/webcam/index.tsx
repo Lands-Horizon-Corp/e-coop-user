@@ -2,7 +2,7 @@ import { forwardRef, useCallback, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { cn } from '@ecoop/shared/helpers'
+import { cn } from '@ecoop/shared/helpers/core-helpers'
 import { IClassProps } from '@ecoop/shared/types'
 import {
     Button,

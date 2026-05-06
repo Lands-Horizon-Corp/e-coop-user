@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 
 import type { IMedia } from '@ecoop/platforms/media'
 import { useUploadMedia } from '@ecoop/platforms/media'
-import { calculateUploadProgress } from '@ecoop/shared/helpers'
+import { calculateUploadProgress } from '@ecoop/shared/helpers/core-helpers'
 
 import Signature from '.'
 import { ImageDisplay } from '../image-display'

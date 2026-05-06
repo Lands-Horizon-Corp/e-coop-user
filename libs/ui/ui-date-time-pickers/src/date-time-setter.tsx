@@ -1,4 +1,4 @@
-import { toReadableDate } from '@ecoop/shared/helpers'
+import { toReadableDate } from '@ecoop/shared/helpers/core-helpers'
 import { TimePicker } from '@ecoop/ui/core'
 import { ClockIcon } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'

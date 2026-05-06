@@ -1,4 +1,4 @@
-import { dateAgo, toReadableDate } from '@ecoop/shared/helpers'
+import { dateAgo, toReadableDate } from '@ecoop/shared/helpers/core-helpers'
 import type { ITimeStamps } from '@ecoop/shared/types'
 import type { ColumnDef } from '@tanstack/react-table'
 

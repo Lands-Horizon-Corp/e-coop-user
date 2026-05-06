@@ -1,6 +1,6 @@
 import type { TColumnDataTypes, TFinalFilter } from '@ecoop/shared/contexts'
 import { filterModeMap } from '@ecoop/shared/contexts'
-import type { IColumnReportFilter } from '@ecoop/shared/helpers'
+import type { IColumnReportFilter } from '@ecoop/shared/helpers/core-helpers'
 import { DateRangePicker } from '@ecoop/ui/core'
 import { TrashIcon } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'

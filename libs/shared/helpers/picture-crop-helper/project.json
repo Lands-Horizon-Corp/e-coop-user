@@ -1,0 +1,9 @@
+{
+    "name": "picture-crop-helper",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/shared/helpers/picture-crop-helper/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project picture-crop-helper --web",
+    "targets": {}
+}

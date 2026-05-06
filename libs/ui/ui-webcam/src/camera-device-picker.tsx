@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import { withCatchAsync } from '@ecoop/shared/helpers'
+import { withCatchAsync } from '@ecoop/shared/helpers/core-helpers'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IBaseProps } from '@ecoop/shared/types'
 import { CameraIcon, RefreshIcon } from '@ecoop/ui/core'

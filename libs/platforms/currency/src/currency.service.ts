@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { getCurrentTimezone } from '@ecoop/shared/helpers'
+import { getCurrentTimezone } from '@ecoop/shared/helpers/core-helpers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions } from '@ecoop/shared/types'

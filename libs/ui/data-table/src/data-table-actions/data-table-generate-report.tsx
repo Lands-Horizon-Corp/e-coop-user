@@ -1,7 +1,7 @@
 import type { TModelName } from '@ecoop/domains/reporting/models'
 import { GeneratedReportCreateFormModal } from '@ecoop/domains/reporting/models'
 import type { TFinalFilter } from '@ecoop/shared/contexts'
-import { toReadableDate } from '@ecoop/shared/helpers'
+import { toReadableDate } from '@ecoop/shared/helpers/core-helpers'
 import { useModalState } from '@ecoop/shared/hooks'
 import { ReportsIcon } from '@ecoop/ui/core'
 import { LoadingSpinner } from '@ecoop/ui/core'

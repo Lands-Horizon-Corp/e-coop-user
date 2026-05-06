@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { toReadableDateShort } from '@ecoop/shared/helpers'
+import { toReadableDateShort } from '@ecoop/shared/helpers/core-helpers'
 import { cn } from '@ecoop/shared/tw-utils'
 import { Button } from '@ecoop/ui/core'
 import { Calendar } from '@ecoop/ui/core'

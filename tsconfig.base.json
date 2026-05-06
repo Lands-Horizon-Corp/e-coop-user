@@ -649,6 +649,12 @@
             ],
             "@ecoop/ui/ui-text-renderer": [
                 "libs/ui/ui-text-renderer/src/index.ts"
+            ],
+            "@ecoop/shared/helpers/core-helpers": [
+                "libs/shared/helpers/core-helpers/src/index.ts"
+            ],
+            "@ecoop/shared/helpers/picture-crop-helper": [
+                "libs/shared/helpers/picture-crop-helper/src/index.ts"
             ]
         },
         "strict": true

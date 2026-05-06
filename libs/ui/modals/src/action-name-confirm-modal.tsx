@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { compareIgnoreCase } from '@ecoop/shared/helpers'
+import { compareIgnoreCase } from '@ecoop/shared/helpers/core-helpers'
 import type { ButtonVariantType } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 import { Input } from '@ecoop/ui/core'

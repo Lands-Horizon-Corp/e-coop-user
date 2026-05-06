@@ -1,8 +1,8 @@
 import { useMutation } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
-import { serverRequestErrExtractor } from '@ecoop/shared/helpers'
-import { withCatchAsync } from '@ecoop/shared/helpers'
+import { serverRequestErrExtractor } from '@ecoop/shared/helpers/core-helpers'
+import { withCatchAsync } from '@ecoop/shared/helpers/core-helpers'
 import { Logger } from '@ecoop/shared/loggers'
 import { createAPIRepository } from '@ecoop/shared/repositories'
 

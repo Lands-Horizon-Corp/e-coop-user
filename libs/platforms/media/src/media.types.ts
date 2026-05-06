@@ -1,4 +1,3 @@
-import type { IUserBase } from '@ecoop/domains/iam/models'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IMedia extends ITimeStamps, IAuditable {
@@ -23,5 +22,5 @@ export interface IMediaRequest {
     bucketName?: string
 
     userId?: TEntityId
-    user?: IUserBase
+    // user?: IUserBase
 }

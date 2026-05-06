@@ -1,0 +1,9 @@
+{
+    "name": "core-helpers",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/shared/helpers/core-helpers/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project core-helpers --web",
+    "targets": {}
+}

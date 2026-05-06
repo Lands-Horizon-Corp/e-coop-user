@@ -1,11 +1,12 @@
-import { buildOR } from '../or-builder/or-builder.utils'
-import type { TPaymentMode } from '../quick-transfer/quick-transfer.types'
+import type { IUserOrganization } from '@ecoop/domains/iam/models'
 import {
     QuickTransferOR,
     toORBuilderOptions,
 } from '@ecoop/domains/transactions/modules/quick-transfer'
-import type { IUserOrganization } from '@ecoop/domains/iam/models'
-import { mmddyyyy } from '@ecoop/shared/helpers'
+import { mmddyyyy } from '@ecoop/shared/helpers/core-helpers'
+
+import { buildOR } from '../or-builder/or-builder.utils'
+import type { TPaymentMode } from '../quick-transfer/quick-transfer.types'
 
 export const receiptPrefix = (num: number): string => {
     if (num <= 26) return ''

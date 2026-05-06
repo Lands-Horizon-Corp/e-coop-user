@@ -5,7 +5,7 @@ import type {
     TFilterPayload,
     TFinalFilter,
 } from '@ecoop/shared/contexts'
-import { toBase64 } from '@ecoop/shared/helpers'
+import { toBase64 } from '@ecoop/shared/helpers/core-helpers'
 import type { TSortingState } from '@ecoop/shared/types'
 import { useDataTableSorting } from '@ecoop/ui/data-table'
 

@@ -4,10 +4,10 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig(() => ({
     root: __dirname,
-    cacheDir: '../../../node_modules/.vite/libs/shared/helpers',
+    cacheDir: '../../../../node_modules/.vite/libs/shared/helpers/core-helpers',
     plugins: [nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
     test: {
-        name: 'helpers',
+        name: 'core-helpers',
         watch: false,
         globals: true,
         environment: 'node',
@@ -16,7 +16,8 @@ export default defineConfig(() => ({
         ],
         reporters: ['default'],
         coverage: {
-            reportsDirectory: '../../../coverage/libs/shared/helpers',
+            reportsDirectory:
+                '../../../../coverage/libs/shared/helpers/core-helpers',
             provider: 'v8' as const,
         },
     },

@@ -7,7 +7,7 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
-import type { NOTIFICATION_TYPE } from './notification.constants'
+import type { NOTIFICATION_TYPE } from './notification.constant'
 import type { NotificationSchema } from './notification.validation'
 
 export type TNotificationType = (typeof NOTIFICATION_TYPE)[number]

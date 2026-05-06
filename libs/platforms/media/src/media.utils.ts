@@ -1,4 +1,4 @@
-import { downloadFile } from '@ecoop/shared/helpers'
+import { downloadFile } from '@ecoop/shared/helpers/core-helpers'
 
 import type { IMedia } from './media.types'
 

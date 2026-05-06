@@ -3,15 +3,8 @@ import * as React from 'react'
 import { forwardRef, useEffect, useRef, useState } from 'react'
 
 import { formatBytes } from '@ecoop/platforms/media'
-import { formatDate } from '@ecoop/shared/helpers'
+import { formatDate } from '@ecoop/shared/helpers/core-helpers'
 import { cn } from '@ecoop/shared/tw-utils'
-import type {
-    DownloadProps,
-    ImageContainerProps,
-    ImagePreviewActionProps,
-    ImagePreviewButtonActionProps,
-    ImagePreviewPanelProps,
-} from './image-preview/index'
 import {
     ChevronLeftIcon,
     ChevronRightIcon,
@@ -26,11 +19,18 @@ import {
 } from '@ecoop/ui/core'
 // Local Components
 import { useCarousel } from '@ecoop/ui/core'
-import type useEmblaCarousel from 'embla-carousel-react'
-
 import { Button } from '@ecoop/ui/core'
 import { Card } from '@ecoop/ui/core'
 import { Tooltip, TooltipContent, TooltipTrigger } from '@ecoop/ui/core'
+import type useEmblaCarousel from 'embla-carousel-react'
+
+import type {
+    DownloadProps,
+    ImageContainerProps,
+    ImagePreviewActionProps,
+    ImagePreviewButtonActionProps,
+    ImagePreviewPanelProps,
+} from './image-preview/index'
 
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>
 export type CarouselOptions = UseCarouselParameters[0]
@@ -309,7 +309,7 @@ export const ImagePreviewButtonAction = React.forwardRef<
 >(({ onClick, Icon, name, className, iconClassName, ...props }, ref) => {
     return (
         <Tooltip>
-            <TooltipTrigger >
+            <TooltipTrigger>
                 <Button
                     className={cn(
                         'flex items-center justify-center space-x-3 border-0 hover:bg-background/20',
