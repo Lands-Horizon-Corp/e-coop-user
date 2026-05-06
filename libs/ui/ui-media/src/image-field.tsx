@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react'
 import { forwardRef, useState } from 'react'
 
-import type { IMedia } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import { cn } from '@ecoop/shared/tw-utils'
 import type { IClassProps } from '@ecoop/shared/types'
 import type { ButtonProps } from '@ecoop/ui/core'

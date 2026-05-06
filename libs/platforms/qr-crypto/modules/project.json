@@ -1,0 +1,9 @@
+{
+    "name": "qr-crypto-modules",
+    "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/platforms/qr-crypto/modules/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project qr-crypto-modules --web",
+    "targets": {}
+}

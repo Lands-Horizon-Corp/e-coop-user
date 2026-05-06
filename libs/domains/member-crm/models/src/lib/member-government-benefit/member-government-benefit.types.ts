@@ -1,7 +1,7 @@
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IMemberProfile } from '../member-profile/member-profile.types'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import { IGovernmentId } from './member-government-benefit.interfaces'
 import type { TMemberGovernmentBenefitSchema } from './member-government-benefit.validation'
 

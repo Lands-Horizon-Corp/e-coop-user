@@ -1,12 +1,11 @@
 import { useMutation } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
+import type { IOperationCallbacks } from '@ecoop/platforms/qr-crypto/models'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers/core-helpers'
 import { withCatchAsync } from '@ecoop/shared/helpers/core-helpers'
 import { Logger } from '@ecoop/shared/loggers'
 import { createAPIRepository } from '@ecoop/shared/repositories'
-
-import type { IOperationCallbacks } from './qr-crypto.types'
 
 const { API, route } = createAPIRepository('/api/v1/qr-code')
 

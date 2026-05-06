@@ -618,7 +618,6 @@
             "@ecoop/platforms/location": [
                 "libs/platforms/location/src/index.ts"
             ],
-            "@ecoop/platforms/media": ["libs/platforms/media/src/index.ts"],
             "@ecoop/platforms/pdf-viewer": [
                 "libs/platforms/pdf-viewer/src/index.ts"
             ],
@@ -655,6 +654,18 @@
             ],
             "@ecoop/shared/helpers/picture-crop-helper": [
                 "libs/shared/helpers/picture-crop-helper/src/index.ts"
+            ],
+            "@ecoop/platforms/media/models": [
+                "libs/platforms/media/models/src/index.ts"
+            ],
+            "@ecoop/platforms/media/modules": [
+                "libs/platforms/media/modules/src/index.ts"
+            ],
+            "@ecoop/platforms/qr-crypto/modules": [
+                "libs/platforms/qr-crypto/modules/src/index.ts"
+            ],
+            "@ecoop/platforms/qr-crypto/models": [
+                "libs/platforms/qr-crypto/models/src/index.ts"
             ]
         },
         "strict": true

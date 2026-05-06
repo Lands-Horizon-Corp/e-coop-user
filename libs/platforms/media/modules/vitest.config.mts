@@ -4,10 +4,10 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig(() => ({
     root: __dirname,
-    cacheDir: '../../../node_modules/.vite/libs/platforms/media',
+    cacheDir: '../../../../node_modules/.vite/libs/platforms/media/modules',
     plugins: [nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
     test: {
-        name: 'media',
+        name: 'media-modules',
         watch: false,
         globals: true,
         environment: 'node',
@@ -16,7 +16,8 @@ export default defineConfig(() => ({
         ],
         reporters: ['default'],
         coverage: {
-            reportsDirectory: '../../../coverage/libs/platforms/media',
+            reportsDirectory:
+                '../../../../coverage/libs/platforms/media/modules',
             provider: 'v8' as const,
         },
     },

@@ -1,9 +1,8 @@
-import type { IBatchFundingRequest } from '../batch-funding/batch-funding.types'
 import type { IBranch } from '@ecoop/domains/iam/models'
-import type { ICurrency } from '@ecoop/platforms/currency'
-import type { IMedia } from '@ecoop/platforms/media'
 import type { IOrganization } from '@ecoop/domains/iam/models'
 import type { IUserBase } from '@ecoop/domains/iam/models'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IAuditable,
     IPaginatedResult,
@@ -11,6 +10,7 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IBatchFundingRequest } from '../batch-funding/batch-funding.types'
 import type { TDepositInBankSchema } from './transaction-batch.validation'
 
 export type TBatchBalanceStatus =

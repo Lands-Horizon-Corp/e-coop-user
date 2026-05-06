@@ -1,6 +1,6 @@
 import type z from 'zod'
 
-import type { IMedia } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

@@ -1,4 +1,4 @@
-import type { IMedia } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type { ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 export interface IFeedbackRequest {

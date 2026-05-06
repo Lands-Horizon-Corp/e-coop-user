@@ -1,13 +1,13 @@
 import type z from 'zod'
 
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IMemberProfile } from '../member-profile/member-profile.types'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type { MemberProfileMediaSchema } from './member-profile-media.validation'
 
 export interface IMemberProfileMedia extends IBaseEntityMeta {

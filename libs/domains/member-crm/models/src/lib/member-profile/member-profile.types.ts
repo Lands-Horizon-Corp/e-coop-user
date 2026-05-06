@@ -1,29 +1,10 @@
 import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { IBranch } from '@ecoop/domains/iam/models'
 import type { IMemberPassbookSettings } from '@ecoop/domains/iam/models'
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IMemberAddress, IMemberAddressRequest } from '../member-address/member-address.types'
-import type { IMemberAsset, IMemberAssetRequest } from '../member-asset/member-asset.types'
-import type { IMemberCenter } from '../member-center/member-center.types'
-import type { IMemberClassification } from '../member-classification/member-classification.types'
-import type { IMemberCloseRemark, IMemberCloseRemarkRequest } from '../member-close-remark/member-close-remark.types'
-import type { IMemberContactReference, IMemberContactReferenceRequest } from '../member-contact-reference/member-contact-reference.types'
-import type { IMemberDepartment } from '../member-department/member-department.types'
-import type { IMemberDescriptionRequest } from '../member-description-schema/member-description-schema.types'
-import type { IMemberEducationalAttainment } from '../member-educational-attainment/member-educational-attainment.types'
-import type { IMemberExpense, IMemberExpenseRequest } from '../member-expense/member-expense.types'
-import type { IMemberGender } from '../member-gender/member-gender.types'
-import type { IMemberGovernmentBenefit, IMemberGovernmentBenefitRequest } from '../member-government-benefit/member-government-benefit.types'
-import type { IMemberGroup } from '../member-group/member-group.types'
-import type { IMemberIncome } from '../member-income/member-income.types'
-import type { IMemberJointAccount, IMemberJointAccountRequest } from '../member-joint-account/member-joint-account.types'
-import type { IMemberOccupation } from '../member-occupation/member-occupation.types'
-// import { IMemberRecruitedMembers } from '@ecoop/domains/member-crm/modules/member-recruits'
-import type { IMemberRelativeAccount, IMemberRelativeAccountRequest } from '../member-relative-account/member-relative-account.types'
-import type { IMemberType } from '../member-type/member-type.types'
 import type { IOrganization } from '@ecoop/domains/iam/models'
-import type { IQrScanResult } from '@ecoop/platforms/qr-crypto'
 import type { IUserBase } from '@ecoop/domains/iam/models'
+import type { IMedia } from '@ecoop/platforms/media/models'
+import type { IQrScanResult } from '@ecoop/platforms/qr-crypto'
 import type { TSex } from '@ecoop/shared/constants'
 import type {
     IAuditable,
@@ -34,6 +15,49 @@ import type {
     TGeneralStatus,
 } from '@ecoop/shared/types'
 
+import type {
+    IMemberAddress,
+    IMemberAddressRequest,
+} from '../member-address/member-address.types'
+import type {
+    IMemberAsset,
+    IMemberAssetRequest,
+} from '../member-asset/member-asset.types'
+import type { IMemberCenter } from '../member-center/member-center.types'
+import type { IMemberClassification } from '../member-classification/member-classification.types'
+import type {
+    IMemberCloseRemark,
+    IMemberCloseRemarkRequest,
+} from '../member-close-remark/member-close-remark.types'
+import type {
+    IMemberContactReference,
+    IMemberContactReferenceRequest,
+} from '../member-contact-reference/member-contact-reference.types'
+import type { IMemberDepartment } from '../member-department/member-department.types'
+import type { IMemberDescriptionRequest } from '../member-description-schema/member-description-schema.types'
+import type { IMemberEducationalAttainment } from '../member-educational-attainment/member-educational-attainment.types'
+import type {
+    IMemberExpense,
+    IMemberExpenseRequest,
+} from '../member-expense/member-expense.types'
+import type { IMemberGender } from '../member-gender/member-gender.types'
+import type {
+    IMemberGovernmentBenefit,
+    IMemberGovernmentBenefitRequest,
+} from '../member-government-benefit/member-government-benefit.types'
+import type { IMemberGroup } from '../member-group/member-group.types'
+import type { IMemberIncome } from '../member-income/member-income.types'
+import type {
+    IMemberJointAccount,
+    IMemberJointAccountRequest,
+} from '../member-joint-account/member-joint-account.types'
+import type { IMemberOccupation } from '../member-occupation/member-occupation.types'
+// import { IMemberRecruitedMembers } from '@ecoop/domains/member-crm/modules/member-recruits'
+import type {
+    IMemberRelativeAccount,
+    IMemberRelativeAccountRequest,
+} from '../member-relative-account/member-relative-account.types'
+import type { IMemberType } from '../member-type/member-type.types'
 import type {
     TMemberProfileMembershipInfoSchema,
     TMemberProfilePersonalInfoSchema,

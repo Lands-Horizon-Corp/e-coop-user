@@ -1,6 +1,6 @@
 import type { MutableRefObject } from 'react'
 
-import type { IMedia } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 
 export interface ImagePreviewProps {
     hideCloseButton?: boolean

@@ -2,33 +2,36 @@ import type z from 'zod'
 
 import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { IAccountHistory } from '@ecoop/domains/accounting/models'
-import type { ICashCheckVoucherGeneralORSettings, ILoanVoucherORSettings } from '@ecoop/domains/iam/models'
-import type { IComakerCollateral } from '../comaker-collateral/comaker-collateral.types'
-import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
-import type { ICurrency } from '@ecoop/platforms/currency'
 import type { IGeneralLedger } from '@ecoop/domains/accounting/models'
-import type { ILoanAccount } from '../loan-account/loan-account.types'
-import type { ILoanAmortizationSchedule } from '../loan-amortization-schedule/loan-amortization-schedule.types'
-import type { ILoanClearanceAnalysis } from '../loan-clearance-analysis/loan-clearance-analysis.types'
-import type { ILoanClearanceAnalysisInstitution } from '../loan-clearance-analysis-institution/loan-clearance-analysis-institution.types'
-import type { ILoanPurpose } from '../loan-purpose/loan-purpose.types'
-import type { ILoanStatus } from '../loan-status/loan-status.types'
-import type { ILoanTag } from '../loan-tag/loan-tag.types'
-import type { ILoanTermsAndConditionAmountReceipt } from '../loan-terms-and-condition-amount-receipt/loan-terms-and-condition-amount-receipt.types'
-import type { ILoanTermsAndConditionSuggestedPayment } from '../loan-terms-and-condition-suggested-payment/loan-terms-and-condition-suggested-payment.types'
-import type { ILoanTransactionEntry } from '../loan-transaction-entry/loan-transaction-entry.types'
-import type { IMedia } from '@ecoop/platforms/media'
 import type { IMemberAccountingLedger } from '@ecoop/domains/accounting/models'
-import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
-import type { ITransactionBatch } from '@ecoop/domains/transactions/models'
+import type {
+    ICashCheckVoucherGeneralORSettings,
+    ILoanVoucherORSettings,
+} from '@ecoop/domains/iam/models'
 import type { IUser } from '@ecoop/domains/iam/models'
 import type { IUserOrganizationSettings } from '@ecoop/domains/iam/models'
+import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import type { ITransactionBatch } from '@ecoop/domains/transactions/models'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IComakerCollateral } from '../comaker-collateral/comaker-collateral.types'
+import type { ILoanAccount } from '../loan-account/loan-account.types'
+import type { ILoanAmortizationSchedule } from '../loan-amortization-schedule/loan-amortization-schedule.types'
+import type { ILoanClearanceAnalysisInstitution } from '../loan-clearance-analysis-institution/loan-clearance-analysis-institution.types'
+import type { ILoanClearanceAnalysis } from '../loan-clearance-analysis/loan-clearance-analysis.types'
+import type { ILoanPurpose } from '../loan-purpose/loan-purpose.types'
+import type { ILoanStatus } from '../loan-status/loan-status.types'
+import type { ILoanTag } from '../loan-tag/loan-tag.types'
+import type { ILoanTermsAndConditionAmountReceipt } from '../loan-terms-and-condition-amount-receipt/loan-terms-and-condition-amount-receipt.types'
+import type { ILoanTermsAndConditionSuggestedPayment } from '../loan-terms-and-condition-suggested-payment/loan-terms-and-condition-suggested-payment.types'
+import type { ILoanTransactionEntry } from '../loan-transaction-entry/loan-transaction-entry.types'
 import type {
     LoanEditTransactionSchema,
     LoanTransactionSchema,
@@ -43,10 +46,10 @@ import type {
     LOAN_AMORTIZATION_TYPE,
     LOAN_COLLECTOR_PLACE,
     LOAN_COMAKER_TYPE,
-    TLoanModeOfPayment,
     LOAN_OVERALL_PAYMENT_STATUS,
     LOAN_PAYMENT_STATUS,
     LOAN_TYPE,
+    TLoanModeOfPayment,
     TWeekdays,
 } from './loan.constants'
 

@@ -1,7 +1,5 @@
-import type { IBranchSettings } from '../branch-settings/branch-settings.types'
 import type { ICurrency } from '@ecoop/platforms/currency'
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IOrganization } from '../organization/organization.types'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IAuditable,
     IPaginatedResult,
@@ -9,6 +7,8 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IBranchSettings } from '../branch-settings/branch-settings.types'
+import type { IOrganization } from '../organization/organization.types'
 import type { branchTypeEnum } from './branch.enum'
 import type { TBranchSchema } from './branch.validation'
 

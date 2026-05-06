@@ -1,18 +1,18 @@
 import type { IAccount } from '@ecoop/domains/accounting/models'
-import type { ICurrency } from '@ecoop/platforms/currency'
 import type { TGeneralLedgerSource } from '@ecoop/domains/accounting/models'
-import type { IMedia } from '@ecoop/platforms/media'
+import type { IUserBase } from '@ecoop/domains/iam/models'
 import type { IMemberJointAccount } from '@ecoop/domains/member-crm/models'
 import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
-import type { IPaymentRequest } from '../quick-transfer/quick-transfer.types'
-import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
-import type { IUserBase } from '@ecoop/domains/iam/models'
+import type { ICurrency } from '@ecoop/platforms/currency'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IPaymentRequest } from '../quick-transfer/quick-transfer.types'
+import type { ITransactionBatch } from '../transaction-batch/transaction-batch.types'
 import type { TTransactionSchema } from './transaction.validation'
 
 export interface ITransactionRequest {

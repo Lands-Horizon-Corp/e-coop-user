@@ -2,8 +2,8 @@ import { useMemo, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import type { IMedia } from '@ecoop/platforms/media'
 import { useUploadMedia } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import { calculateUploadProgress } from '@ecoop/shared/helpers/core-helpers'
 
 import Signature from '.'

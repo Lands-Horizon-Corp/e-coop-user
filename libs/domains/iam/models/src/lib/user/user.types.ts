@@ -1,7 +1,7 @@
-import type { INotification } from '@ecoop/domains/communications/models'
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IQrScanResult } from '@ecoop/platforms/qr-crypto'
-import type { IFootstep } from '@ecoop/platforms/footstep'
+// import type { INotification } from '@ecoop/domains/communications/models'
+// import type { IFootstep } from '@ecoop/platforms/footstep'
+import type { IMedia } from '@ecoop/platforms/media/models'
+import type { IQrScanResult } from '@ecoop/platforms/qr-crypto/models'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
 import type { IUserOrganization } from '../user-organization/user-organization.types'
@@ -64,8 +64,8 @@ export interface IUser extends ITimeStamps {
     media?: IMedia
     signature_media?: IMedia
 
-    foot_steps?: IFootstep[]
-    notifications?: INotification[]
+    // foot_steps?: IFootstep[]
+    // notifications?: INotification[]
     // generated_reports?: TGeneratedReportResponse[];
     user_organizations?: IUserOrganization[]
 }

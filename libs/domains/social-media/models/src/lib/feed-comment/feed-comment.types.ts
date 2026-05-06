@@ -1,7 +1,7 @@
 import type z from 'zod'
 
-import type { IMedia } from '@ecoop/platforms/media'
 import type { IUser } from '@ecoop/domains/iam/models'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,

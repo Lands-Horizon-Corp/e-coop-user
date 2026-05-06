@@ -1,13 +1,12 @@
 import { useMutation } from '@tanstack/react-query'
 import type { AxiosProgressEvent } from 'axios'
 
+import type { IMedia } from '@ecoop/platforms/media/models'
 // import { compressImage } from '@ecoop/shared/helpers/core-helpers'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type { IMedia } from './media.types'
 
 const { apiCrudService } = createDataLayerFactory({
     url: '/api/v1/media',

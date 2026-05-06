@@ -1,10 +1,10 @@
 import type z from 'zod'
 
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IMemberProfile } from '../member-profile/member-profile.types'
-import type { TRelationship } from '../member-relative-account/member-relative-account.types'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
+import type { IMemberProfile } from '../member-profile/member-profile.types'
+import type { TRelationship } from '../member-relative-account/member-relative-account.types'
 import type { MemberJointAccountSchema } from './member-joint-account.validation'
 
 // LATEST FROM ERD

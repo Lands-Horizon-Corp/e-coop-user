@@ -1,4 +1,4 @@
-import type { IMedia } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import { create } from 'zustand'
 
 interface ImagePreviewState {

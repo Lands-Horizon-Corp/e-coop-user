@@ -1,9 +1,5 @@
 import type { ICurrency } from '@ecoop/platforms/currency'
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IOrganizationCategory } from '../organization-category/organization-category.types'
-import type { IOrganizationMedia } from '../organization-media/organization-media.types'
-import type { ISubscriptionPlan } from '../subscription-plan/subscription-plan.types'
-import type { IUserOrganization } from '../user-organization/user-organization.types'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IAuditable,
     IPaginatedResult,
@@ -11,6 +7,10 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IOrganizationCategory } from '../organization-category/organization-category.types'
+import type { IOrganizationMedia } from '../organization-media/organization-media.types'
+import type { ISubscriptionPlan } from '../subscription-plan/subscription-plan.types'
+import type { IUserOrganization } from '../user-organization/user-organization.types'
 import type {
     TOrganizationEditSchema,
     TOrganizationSchema,

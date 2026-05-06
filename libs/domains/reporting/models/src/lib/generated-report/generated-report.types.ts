@@ -1,12 +1,16 @@
-import type { IGeneratedReportsDownloadUsers } from '../generated-reports-download-users/generated-reports-download-users.types'
-import type { IMedia } from '@ecoop/platforms/media'
 import type { IUser } from '@ecoop/domains/iam/models'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
-import type { TPaperSizeName, TPaperSizeUnit } from './generated-reports.constants'
+
+import type { IGeneratedReportsDownloadUsers } from '../generated-reports-download-users/generated-reports-download-users.types'
+import type {
+    TPaperSizeName,
+    TPaperSizeUnit,
+} from './generated-reports.constants'
 
 export const ACCOUNT_MODEL_NAMES = [
     'AccountHistory',

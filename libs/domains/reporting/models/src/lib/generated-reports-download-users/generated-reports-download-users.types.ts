@@ -1,15 +1,15 @@
 import type z from 'zod'
 
-import type { IGeneratedReport } from '../generated-report/generated-report.types'
-import type { IMedia } from '@ecoop/platforms/media'
 import type { IUser } from '@ecoop/domains/iam/models'
 import type { IUserOrganization } from '@ecoop/domains/iam/models'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IGeneratedReport } from '../generated-report/generated-report.types'
 import type { GeneratedReportsDownloadUsersSchema } from './generated-reports-download-users.validation'
 
 export interface IGeneratedReportsDownloadUsers extends IBaseEntityMeta {

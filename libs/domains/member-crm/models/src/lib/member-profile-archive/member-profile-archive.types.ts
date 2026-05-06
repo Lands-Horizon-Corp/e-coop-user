@@ -1,9 +1,9 @@
 import type z from 'zod'
 
-import type { IMedia } from '@ecoop/platforms/media'
-import type { IMemberProfile } from '../member-profile/member-profile.types'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import type { IBaseEntityMeta, IPaginatedResult } from '@ecoop/shared/types'
 
+import type { IMemberProfile } from '../member-profile/member-profile.types'
 import type {
     MemberProfileArchiveSchema,
     TMemberProfileArchiveBulkUpdateSchema,

@@ -1,6 +1,6 @@
-import type { IMedia } from '@ecoop/platforms/media'
 import { formatBytes } from '@ecoop/platforms/media'
 import { FileTypeIcon } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 
 import { DotMediumIcon, TrashIcon } from '../icons/index'
 import { ImageDisplay } from '../image-display'

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 import { useUploadMedia } from '@ecoop/platforms/media'
-import type { IMedia } from '@ecoop/platforms/media'
+import type { IMedia } from '@ecoop/platforms/media/models'
 import { calculateUploadProgress } from '@ecoop/shared/helpers/core-helpers'
 import { base64ImagetoFile } from '@ecoop/shared/helpers/picture-crop-helper'
 import { cn } from '@ecoop/shared/tw-utils'
