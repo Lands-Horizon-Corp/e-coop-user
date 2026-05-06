@@ -1,0 +1,9 @@
+{
+    "name": "ui-picture-crop",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/ui/ui-picture-crop/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project ui-picture-crop --web",
+    "targets": {}
+}

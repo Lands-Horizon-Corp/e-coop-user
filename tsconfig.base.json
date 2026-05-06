@@ -643,6 +643,12 @@
             "@ecoop/ui/re-captcha": ["libs/ui/re-captcha/src/index.ts"],
             "@ecoop/ui/ui-date-time-pickers": [
                 "libs/ui/ui-date-time-pickers/src/index.ts"
+            ],
+            "@ecoop/ui/ui-picture-crop": [
+                "libs/ui/ui-picture-crop/src/index.ts"
+            ],
+            "@ecoop/ui/ui-text-renderer": [
+                "libs/ui/ui-text-renderer/src/index.ts"
             ]
         },
         "strict": true

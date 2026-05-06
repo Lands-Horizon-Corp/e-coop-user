@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
 
 import { cn } from '@ecoop/shared/tw-utils'
+import {PictureCrop} from '@ecoop/ui/ui-picture-crop'
 
 import { AdjustIcon } from '../icons/index'
 import { ImageDisplay } from '../image-display'
 import type { IModalProps } from '../modals/modal'
 import Modal from '../modals/modal'
-import PictureCrop from '../picture-crop'
 import { ActionTooltip } from '../tooltips/action-tooltip'
 import { Button } from '../ui/button'
 import PictureDrop from './picture-drop'

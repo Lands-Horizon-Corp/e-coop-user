@@ -1,15 +1,15 @@
 import z from 'zod'
 
-import { FINANCIAL_STATEMENT_TYPE } from '../financial-statement-definition/financial-statement-definition.constants'
-import { GENERAL_LEDGER_TYPE } from '../general-ledger/general-ledger.constants'
-import { ICONS } from '@ecoop/shared/constants'
 import {
     DaySchema,
     PercentageSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
 } from '@ecoop/shared/validation'
+import { ICONS } from '@ecoop/ui/core'
 
+import { FINANCIAL_STATEMENT_TYPE } from '../financial-statement-definition/financial-statement-definition.constants'
+import { GENERAL_LEDGER_TYPE } from '../general-ledger/general-ledger.constants'
 import {
     ACCOUNT_EXCLUSIVE_SETTING_TYPE,
     ACCOUNT_INTEREST_STANDARD_COMPUTATION,

@@ -7,11 +7,11 @@ import { base64ImagetoFile } from '@ecoop/shared/helpers'
 import { cn } from '@ecoop/shared/tw-utils'
 import { AdjustIcon } from '@ecoop/ui/core'
 import { ImageDisplay } from '@ecoop/ui/core'
-import { PictureCrop } from '@ecoop/ui/core'
 import { LoadingSpinner } from '@ecoop/ui/core'
 import { ActionTooltip } from '@ecoop/ui/core'
 import { Button } from '@ecoop/ui/core'
 import { Progress } from '@ecoop/ui/core'
+import { PictureCrop } from '@ecoop/ui/ui-picture-crop'
 
 import SingleImageUploadOption from './upload-options'
 

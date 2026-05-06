@@ -172,8 +172,8 @@ export * from './components/pagination-bars/mini-pagination-bar'
 // export * from './components/pickers/member-picker-with-scanner'
 
 // picture-crop
-export { default as PictureCrop } from './components/picture-crop'
-export * from './components/picture-crop'
+// export { default as PictureCrop } from './components/picture-crop'
+// export * from './components/picture-crop'
 
 // policies
 // export { default as OrganizationPolicies } from './components/policies'
