@@ -1,6 +1,6 @@
-import type { TFootstepLevel } from '@ecoop/platforms/footstep'
-import { createFootstep } from '@ecoop/platforms/footstep'
+import { createFootstep } from '@ecoop/platforms/footstep/modules'
 import { IS_STAGING } from '@ecoop/shared/constants'
+import type { TFootstepLevel } from '@ecoop/shared/types'
 
 /* eslint-disable no-console */
 type LogMethod = (...args: unknown[]) => void

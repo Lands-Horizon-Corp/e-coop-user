@@ -4,10 +4,10 @@ import { defineConfig } from 'vitest/config'
 
 export default defineConfig(() => ({
     root: __dirname,
-    cacheDir: '../../../node_modules/.vite/libs/platforms/footstep',
+    cacheDir: '../../../../node_modules/.vite/libs/platforms/footstep/models',
     plugins: [nxViteTsPaths(), nxCopyAssetsPlugin(['*.md'])],
     test: {
-        name: 'footstep',
+        name: 'footstep-models',
         watch: false,
         globals: true,
         environment: 'node',
@@ -16,7 +16,8 @@ export default defineConfig(() => ({
         ],
         reporters: ['default'],
         coverage: {
-            reportsDirectory: '../../../coverage/libs/platforms/footstep',
+            reportsDirectory:
+                '../../../../coverage/libs/platforms/footstep/models',
             provider: 'v8' as const,
         },
     },

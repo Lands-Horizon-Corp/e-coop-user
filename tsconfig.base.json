@@ -667,7 +667,13 @@
             "@ecoop/platforms/qr-crypto/models": [
                 "libs/platforms/qr-crypto/models/src/index.ts"
             ],
-            "@ecoop/ui/ui-footer": ["libs/ui/ui-footer/src/index.ts"]
+            "@ecoop/ui/ui-footer": ["libs/ui/ui-footer/src/index.ts"],
+            "@ecoop/platforms/footstep/models": [
+                "libs/platforms/footstep/models/src/index.ts"
+            ],
+            "@ecoop/platforms/footstep/modules": [
+                "libs/platforms/footstep/modules/src/index.ts"
+            ]
         },
         "strict": true
     },

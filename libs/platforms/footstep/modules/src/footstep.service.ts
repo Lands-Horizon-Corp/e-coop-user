@@ -1,14 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 
-import type { HookQueryOptions } from '@ecoop/shared/repositories'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-import type { TEntityId } from '@ecoop/shared/types'
-
 import type {
     IFootstep,
     IFootstepPaginated,
     IFootstepRequest,
-} from './footstep.types'
+} from '@ecoop/platforms/footstep/models'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IFootstep,

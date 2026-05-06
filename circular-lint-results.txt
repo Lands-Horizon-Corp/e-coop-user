@@ -1,298 +1,3 @@
-[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "ecoop-logo" and "core-ui" detected: ecoop-logo -> core-ui -> ecoop-logo[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/ui/ecoop-logo/src/ecoop-logo.tsx[0m
-[0m- libs/ui/core/src/components/footers/auth-footer.tsx  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
-[0m[31m[1m✖ 1 problem (1 error, 0 warnings)[22m[39m[0m
-[0m[31m[1m[22m[39m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "core-ui" and "ecoop-logo" detected: core-ui -> ecoop-logo -> core-ui[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/ui/core/src/components/footers/auth-footer.tsx[0m
-[0m- libs/ui/ecoop-logo/src/ecoop-logo.tsx  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
-[0m[4mD:\JoshFile\Github\e-coop-user\libs\ui\core\src\components\image.tsx[24m[0m
-[0m  [2m56:17[22m  [31merror[39m  Error: Calling setState synchronously within an effect can trigger cascading renders[0m
-[0m    [2m1:1[22m   [31merror[39m    Circular dependency between "loggers" and "footstep" detected: loggers -> footstep -> iam-models -> transactions-models -> bank -> loggers[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/check-remittance/check-remittance.types.ts,[0m
-[0m    [2m2:1[22m   [31merror[39m    Circular dependency between "loggers" and "footstep" detected: loggers -> footstep -> iam-models -> transactions-models -> bank -> loggers[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/check-remittance/check-remittance.types.ts,[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "bank" and "loggers" detected: bank -> loggers -> footstep -> iam-models -> transactions-models -> bank[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/platforms/bank/src/bank.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m- [[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "iam-models" and "member-crm-models" detected: iam-models -> member-crm-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/authentication/authentication.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/member-crm/models/src/lib/member-asset/member-asset.types.ts,[0m
-[0m    libs/domains/member-crm/models/src/lib/member-center-history/member-center-history.types.ts,[0m
-[0m    libs/domains/member-crm/models/src/lib/member-educational-attainment/member-educational-attainment.types.ts,[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "iam-models" and "member-crm-models" detected: iam-models -> member-crm-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/member-crm/models/src/lib/member-asset/member-asset.types.ts,[0m
-[0m    libs/domains/member-crm/models/src/lib/member-center-history/member-center-history.types.ts,[0m
-[0m    libs/domains/member-crm/models/src/lib/member-educational-attainment/member-educational-attainment.types.ts,[0m
-[0m  [2m6:1[22m  [31merror[39m  Circular dependency between "iam-models" and "member-crm-models" detected: iam-models -> member-crm-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/member-crm/models/src/lib/member-asset/member-asset.types.ts,[0m
-[0m    libs/domains/member-crm/models/src/lib/member-center-history/member-center-history.types.ts,[0m
-[0m    libs/domains/member-crm/models/src/lib/member-educational-attainment/member-educational-attainment.types.ts,[0m
-[0m  [2m7:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts[0m
-[0m- [[0m
-[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "iam-models" and "iam-authentication" detected: iam-models -> iam-authentication -> loggers -> footstep -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/member-user-account/member-user-account.types.ts[0m
-[0m- libs/domains/iam/modules/authentication/src/authentication.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "iam-models" and "category" detected: iam-models -> category -> loggers -> footstep -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/organization-category/organization-category.types.ts[0m
-[0m- libs/platforms/category/src/category.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
-[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "iam-models" and "transactions-models" detected: iam-models -> transactions-models -> iam-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/batch-funding/batch-funding.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/bill-and-coins/bill-and-coins.types.ts,[0m
-[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "tag-template" detected: accounting-models -> tag-template -> loggers -> footstep -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/account-tag/account-tag.types.ts[0m
-[0m- libs/platforms/tag-template/src/tag-template.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "tag-template" detected: accounting-models -> tag-template -> loggers -> footstep -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/account-tag/account-tag.validation.ts[0m
-[0m- libs/platforms/tag-template/src/tag-template.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/account/account.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "rates-computations-models" detected: accounting-models -> rates-computations-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/account/account.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/rates-computations/models/src/lib/browse-exclude-include-accounts/browse-exclude-include-accounts.types.ts,[0m
-[0m    libs/domains/rates-computations/models/src/lib/browse-reference/browse-reference.types.ts,[0m
-[0m    libs/domains/rates-computations/models/src/lib/charges-rate-scheme-account/charges-rate-scheme-account.types.ts,[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/account/account.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "tag-template" detected: accounting-models -> tag-template -> loggers -> footstep -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-accounting-ledger-tag/general-accounting-ledger-tag.types.ts[0m
-[0m- libs/platforms/tag-template/src/tag-template.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
-[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
-[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
-[0m  [2m6:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
-[0m  [2m7:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "bank" detected: accounting-models -> bank -> loggers -> footstep -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
-[0m- libs/platforms/bank/src/bank.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
-[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "rates-computations-models" detected: accounting-models -> rates-computations-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/include-negative-accounts/include-negative-accounts.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/rates-computations/models/src/lib/browse-exclude-include-accounts/browse-exclude-include-accounts.types.ts,[0m
-[0m    libs/domains/rates-computations/models/src/lib/browse-reference/browse-reference.types.ts,[0m
-[0m    libs/domains/rates-computations/models/src/lib/charges-rate-scheme-account/charges-rate-scheme-account.types.ts,[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "loans-models" detected: accounting-models -> loans-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/loans/models/src/lib/automatic-loan-deduction/automatic-loan-deduction.types.ts,[0m
-[0m    libs/domains/loans/models/src/lib/loan-account/loan-account.types.ts,[0m
-[0m    libs/domains/loans/models/src/lib/loan-amortization-schedule/loan-amortization-schedule.types.ts,[0m
-[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
-[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
-[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                              [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m6:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
-[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m  [2m7:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
-[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
-[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/member-account-ledger/member-account-ledger.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
-[0m[4mD:\JoshFile\Github\e-coop-user\libs\domains\accounting\models\src\lib\member-accounting-ledger\member-accounting-ledger.types.ts[24m[0m
-[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/member-accounting-ledger/member-accounting-ledger.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
-[0m[4mD:\JoshFile\Github\e-coop-user\libs\domains\accounting\models\src\lib\unbalance-account\unbalance-account.types.ts[24m[0m
-[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/accounting/models/src/lib/unbalance-account/unbalance-account.types.ts[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
-[0m[31m[1m✖ 24 problems (24 errors, 0 warnings)[22m[39m[0m
-[0m[31m[1m[22m[39m[0m
 [0m  [2m1:1[22m  [31merror[39m  Circular dependency between "transactions-models" and "accounting-models" detected: transactions-models -> accounting-models -> transactions-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -428,15 +133,9 @@
 [0m[0m
 [0mCircular file chain:[0m
 [0m- libs/domains/transactions/models/src/lib/check-remittance/check-remittance.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts                                                                                                                                                         [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "transactions-models" and "bank" detected: transactions-models -> bank -> loggers -> footstep -> iam-models -> transactions-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/transactions/models/src/lib/check-remittance/check-remittance.types.ts[0m
-[0m- libs/platforms/bank/src/bank.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
 [0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
+[0m[0m
+[0m[4mD:\JoshFile\Github\e-coop-user\libs\domains\transactions\models\src\lib\collectors-member-account-entry\collectors-member-account-entry.types.ts[24m[0m
 [0m  [2m1:1[22m  [31merror[39m  Circular dependency between "transactions-models" and "accounting-models" detected: transactions-models -> accounting-models -> transactions-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -471,15 +170,9 @@
 [0m[0m
 [0mCircular file chain:[0m
 [0m- libs/domains/transactions/models/src/lib/online-remittance/online-remittance.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts                                                                                                                                                         [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "transactions-models" and "bank" detected: transactions-models -> bank -> loggers -> footstep -> iam-models -> transactions-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/transactions/models/src/lib/online-remittance/online-remittance.types.ts[0m
-[0m- libs/platforms/bank/src/bank.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
 [0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
+[0m[0m
+[0m[4mD:\JoshFile\Github\e-coop-user\libs\domains\transactions\models\src\lib\payment-type\payment-type.types.ts[24m[0m
 [0m  [2m1:1[22m  [31merror[39m  Circular dependency between "transactions-models" and "accounting-models" detected: transactions-models -> accounting-models -> transactions-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -488,14 +181,6 @@
 [0m    libs/domains/accounting/models/src/lib/account/account.types.ts,[0m
 [0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
 [0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "transactions-models" and "bank" detected: transactions-models -> bank -> loggers -> footstep -> iam-models -> transactions-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/transactions/models/src/lib/post-dated-check/post-dated-check.types.ts[0m
-[0m- libs/platforms/bank/src/bank.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts                                              [2m@nx/enforce-module-boundaries[22m[0m
 [0m  [2m2:1[22m  [31merror[39m  Circular dependency between "transactions-models" and "member-crm-models" detected: transactions-models -> member-crm-models -> accounting-models -> transactions-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -573,30 +258,6 @@
 [0m    libs/domains/accounting/models/src/lib/account/account.types.ts,[0m
 [0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
 [0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "iam-permission" and "loggers" detected: iam-permission -> loggers -> footstep -> iam-models -> iam-authentication -> iam-permission[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/modules/permission/src/permission.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/member-user-account/member-user-account.types.ts[0m
-[0m- libs/domains/iam/modules/authentication/src/authgentication.store.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "member-crm-member-address" and "loggers" detected: member-crm-member-address -> loggers -> footstep -> iam-models -> member-crm-models -> member-crm-member-address[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/member-crm/modules/member-address/src/member-address.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/iam/models/src/lib/authentication/authentication.types.ts,[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "iam-authentication" and "loggers" detected: iam-authentication -> loggers -> footstep -> iam-models -> iam-authentication[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/iam/modules/authentication/src/authentication.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/member-user-account/member-user-account.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
 [0m  [2m3:1[22m  [31merror[39m  Circular dependency between "rates-computations-models" and "accounting-models" detected: rates-computations-models -> accounting-models -> rates-computations-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -713,6 +374,149 @@
 [0m[0m
 [0m[31m[1m✖ 25 problems (16 errors, 9 warnings)[22m[39m[0m
 [0m[31m[1m[22m[39m[0m
+[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/account/account.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2m@nx/enforce-module-boundaries[22m[0m
+[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "rates-computations-models" detected: accounting-models -> rates-computations-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/account/account.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/rates-computations/models/src/lib/browse-exclude-include-accounts/browse-exclude-include-accounts.types.ts,[0m
+[0m    libs/domains/rates-computations/models/src/lib/browse-reference/browse-reference.types.ts,[0m
+[0m    libs/domains/rates-computations/models/src/lib/charges-rate-scheme-account/charges-rate-scheme-account.types.ts,[0m
+[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/account/account.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
+[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
+[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
+[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2m@nx/enforce-module-boundaries[22m[0m
+[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2m@nx/enforce-module-boundaries[22m[0m
+[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
+[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
+[0m  [2m6:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "transactions-models" detected: accounting-models -> transactions-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts,[0m
+[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "rates-computations-models" detected: accounting-models -> rates-computations-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/include-negative-accounts/include-negative-accounts.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/rates-computations/models/src/lib/browse-exclude-include-accounts/browse-exclude-include-accounts.types.ts,[0m
+[0m    libs/domains/rates-computations/models/src/lib/browse-reference/browse-reference.types.ts,[0m
+[0m    libs/domains/rates-computations/models/src/lib/charges-rate-scheme-account/charges-rate-scheme-account.types.ts,[0m
+[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "loans-models" detected: accounting-models -> loans-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/loans/models/src/lib/automatic-loan-deduction/automatic-loan-deduction.types.ts,[0m
+[0m    libs/domains/loans/models/src/lib/loan-account/loan-account.types.ts,[0m
+[0m    libs/domains/loans/models/src/lib/loan-amortization-schedule/loan-amortization-schedule.types.ts,[0m
+[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 [2m@nx/enforce-module-boundaries[22m[0m
+[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
+[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
+[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
+[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
+[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts                                                                                                                                                              [2m@nx/enforce-module-boundaries[22m[0m
+[0m  [2m6:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
+[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
+[0m  [2m7:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "iam-models" detected: accounting-models -> iam-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
+[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts,[0m
+[0m    libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
+[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/member-account-ledger/member-account-ledger.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
+[0m[0m
+[0m[4mD:\JoshFile\Github\e-coop-user\libs\domains\accounting\models\src\lib\member-accounting-ledger\member-accounting-ledger.types.ts[24m[0m
+[0m  [2m2:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/member-accounting-ledger/member-accounting-ledger.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
+[0m[0m
+[0m[4mD:\JoshFile\Github\e-coop-user\libs\domains\accounting\models\src\lib\unbalance-account\unbalance-account.types.ts[24m[0m
+[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "accounting-models" and "member-crm-models" detected: accounting-models -> member-crm-models -> accounting-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/accounting/models/src/lib/unbalance-account/unbalance-account.types.ts[0m
+[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
+[0m[0m
+[0m[31m[1m✖ 20 problems (20 errors, 0 warnings)[22m[39m[0m
+[0m[31m[1m[22m[39m[0m
 [0m  [2m3:1[22m  [31merror[39m  Circular dependency between "member-crm-models" and "loans-models" detected: member-crm-models -> loans-models -> member-crm-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -721,14 +525,6 @@
 [0m    libs/domains/loans/models/src/lib/loan-transaction-entry/loan-transaction-entry.types.ts,[0m
 [0m    libs/domains/loans/models/src/lib/loan-transaction/loan-transaction.types.ts,[0m
 [0m    libs/domains/loans/models/src/lib/loan-transaction/loan-transaction.validation.ts[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "member-crm-models" and "area" detected: member-crm-models -> area -> loggers -> footstep -> iam-models -> member-crm-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/member-crm/models/src/lib/member-address/member-address.types.ts[0m
-[0m- libs/platforms/area/src/area.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
 [0m  [2m3:1[22m  [31merror[39m  Circular dependency between "member-crm-models" and "iam-models" detected: member-crm-models -> iam-models -> member-crm-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -737,14 +533,6 @@
 [0m    libs/domains/iam/models/src/lib/authentication/authentication.types.ts,[0m
 [0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
 [0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "member-crm-models" and "bank" detected: member-crm-models -> bank -> loggers -> footstep -> iam-models -> member-crm-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/member-crm/models/src/lib/member-bank-card/member-bank-card.types.ts[0m
-[0m- libs/platforms/bank/src/bank.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
 [0m  [2m1:1[22m  [31merror[39m  Circular dependency between "member-crm-models" and "iam-models" detected: member-crm-models -> iam-models -> member-crm-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -817,14 +605,6 @@
 [0m    libs/domains/iam/models/src/lib/authentication/authentication.types.ts,[0m
 [0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
 [0m  ]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     [2m@nx/enforce-module-boundaries[22m[0m
-[0m    [2m3:1[22m   [31merror[39m    Circular dependency between "member-crm-models" and "member-crm-member-address" detected: member-crm-models -> member-crm-member-address -> loggers -> footstep -> iam-models -> member-crm-models[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/domains/member-crm/models/src/lib/member-profile/member-profile.validation.ts[0m
-[0m- libs/domains/member-crm/modules/member-address/src/member-address.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
 [0m  [2m1:1[22m  [31merror[39m  Circular dependency between "member-crm-models" and "iam-models" detected: member-crm-models -> iam-models -> member-crm-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -857,22 +637,6 @@
 [0m    libs/domains/iam/models/src/lib/authentication/authentication.types.ts,[0m
 [0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
 [0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "tag-template" and "loggers" detected: tag-template -> loggers -> footstep -> iam-models -> accounting-models -> tag-template[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/platforms/tag-template/src/tag-template.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- [[0m
-[0m    libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts,[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "category" and "loggers" detected: category -> loggers -> footstep -> iam-models -> category[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/platforms/category/src/category.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
-[0m- libs/domains/iam/models/src/lib/organization-category/organization-category.types.ts  [2m@nx/enforce-module-boundaries[22m[0m
-[0m[0m
 [0m  [2m3:1[22m  [31merror[39m  Circular dependency between "loans-models" and "accounting-models" detected: loans-models -> accounting-models -> loans-models[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -1016,38 +780,70 @@
 [0m   [2m71:31[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                  [2m@typescript-eslint/no-explicit-any[22m[0m
 [0m  [2m119:31[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                  [2m@typescript-eslint/no-explicit-any[22m[0m
 [0m  [2m137:36[22m  [33mwarning[39m  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                  [2m@typescript-eslint/no-explicit-any[22m[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "footstep" and "iam-models" detected: footstep -> iam-models -> transactions-models -> bank -> loggers -> footstep[0m
+[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "iam-models" and "member-crm-models" detected: iam-models -> member-crm-models -> iam-models[0m
 [0m[0m
 [0mCircular file chain:[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
+[0m- libs/domains/iam/models/src/lib/authentication/authentication.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/member-crm/models/src/lib/member-asset/member-asset.types.ts,[0m
+[0m    libs/domains/member-crm/models/src/lib/member-center-history/member-center-history.types.ts,[0m
+[0m    libs/domains/member-crm/models/src/lib/member-educational-attainment/member-educational-attainment.types.ts,[0m
+[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m  [2m5:1[22m  [31merror[39m  Circular dependency between "iam-models" and "member-crm-models" detected: iam-models -> member-crm-models -> iam-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/member-crm/models/src/lib/member-asset/member-asset.types.ts,[0m
+[0m    libs/domains/member-crm/models/src/lib/member-center-history/member-center-history.types.ts,[0m
+[0m    libs/domains/member-crm/models/src/lib/member-educational-attainment/member-educational-attainment.types.ts,[0m
+[0m  [2m6:1[22m  [31merror[39m  Circular dependency between "iam-models" and "member-crm-models" detected: iam-models -> member-crm-models -> iam-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/member-crm/models/src/lib/member-asset/member-asset.types.ts,[0m
+[0m    libs/domains/member-crm/models/src/lib/member-center-history/member-center-history.types.ts,[0m
+[0m    libs/domains/member-crm/models/src/lib/member-educational-attainment/member-educational-attainment.types.ts,[0m
+[0m  [2m7:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts[0m
+[0m- [[0m
+[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m  [2m3:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts[0m
+[0m- [[0m
+[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "iam-models" and "accounting-models" detected: iam-models -> accounting-models -> iam-models[0m
+[0m[0m
+[0mCircular file chain:[0m
 [0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
 [0m- [[0m
-[0m    libs/domains/transactions/models/src/lib/check-remittance/check-remittance.types.ts,[0m
-[0m    libs/domains/transactions/models/src/lib/online-remittance/online-remittance.types.ts,[0m
-[0m  [2m1:1[22m  [31merror[39m  Circular dependency between "area" and "loggers" detected: area -> loggers -> footstep -> iam-models -> member-crm-models -> area[0m
+[0m    libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts,[0m
+[0m    libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts[0m
+[0m  [2m4:1[22m  [31merror[39m  Circular dependency between "iam-models" and "transactions-models" detected: iam-models -> transactions-models -> iam-models[0m
 [0m[0m
 [0mCircular file chain:[0m
-[0m- libs/platforms/area/src/area.service.ts[0m
-[0m- libs/shared/loggers/src/logger.ts[0m
-[0m- libs/platforms/footstep/src/footstep.types.ts[0m
+[0m- libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts[0m
 [0m- [[0m
-[0m    libs/domains/iam/models/src/lib/authentication/authentication.types.ts,[0m
-[0m  [2m17:1[22m   [31merror[39m    Circular dependency between "app-sidebar" and "sidebar" detected: app-sidebar -> sidebar -> app-sidebar[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/ui/app-sidebar/src/app-sidebar-item.tsx[0m
-[0m- [[0m
-[0m    libs/ui/sidebar/src/org-branch-sidebar/index.tsx,[0m
-[0m    libs/ui/sidebar/src/org-branch-sidebar/sidebar-routes.tsx[0m
-[0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
-[0m  [2m20:1[22m  [31merror[39m  Circular dependency between "app-sidebar" and "sidebar" detected: app-sidebar -> sidebar -> app-sidebar[0m
-[0m[0m
-[0mCircular file chain:[0m
-[0m- libs/ui/app-sidebar/src/app-sidebar-user.tsx[0m
-[0m- [[0m
-[0m    libs/ui/sidebar/src/org-branch-sidebar/index.tsx,[0m
-[0m    libs/ui/sidebar/src/org-branch-sidebar/sidebar-routes.tsx[0m
-[0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
+[0m    libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/batch-funding/batch-funding.types.ts,[0m
+[0m    libs/domains/transactions/models/src/lib/bill-and-coins/bill-and-coins.types.ts,[0m
 [0m  [2m7:1[22m  [31merror[39m  Circular dependency between "transactions-quick-transfer" and "transactions-transaction" detected: transactions-quick-transfer -> transactions-transaction -> transactions-quick-transfer[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -1064,6 +860,22 @@
 [0m[0m
 [0m[31m[1m✖ 1 problem (1 error, 0 warnings)[22m[39m[0m
 [0m[31m[1m[22m[39m[0m
+[0m  [2m17:1[22m   [31merror[39m    Circular dependency between "app-sidebar" and "sidebar" detected: app-sidebar -> sidebar -> app-sidebar[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/ui/app-sidebar/src/app-sidebar-item.tsx[0m
+[0m- [[0m
+[0m    libs/ui/sidebar/src/org-branch-sidebar/index.tsx,[0m
+[0m    libs/ui/sidebar/src/org-branch-sidebar/sidebar-routes.tsx[0m
+[0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
+[0m  [2m20:1[22m  [31merror[39m  Circular dependency between "app-sidebar" and "sidebar" detected: app-sidebar -> sidebar -> app-sidebar[0m
+[0m[0m
+[0mCircular file chain:[0m
+[0m- libs/ui/app-sidebar/src/app-sidebar-user.tsx[0m
+[0m- [[0m
+[0m    libs/ui/sidebar/src/org-branch-sidebar/index.tsx,[0m
+[0m    libs/ui/sidebar/src/org-branch-sidebar/sidebar-routes.tsx[0m
+[0m  ]  [2m@nx/enforce-module-boundaries[22m[0m
 [0m  [2m15:1[22m  [31merror[39m  Circular dependency between "sidebar" and "app-sidebar" detected: sidebar -> app-sidebar -> sidebar[0m
 [0m[0m
 [0mCircular file chain:[0m
@@ -1108,58 +920,58 @@
 ==================================================
 STATISTICAL SUMMARY
 ==================================================
-Total circular dependency mentions: 304
-Unique files involved: 110
+Total circular dependency mentions: 256
+Unique files involved: 91
 
 Top Choke Point Files (Most frequent in circular paths):
-[39 occurrences] libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts
-[28 occurrences] libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts
+[32 occurrences] libs/domains/iam/models/src/lib/user-organization/user-organization.types.ts
+[27 occurrences] libs/domains/accounting/models/src/lib/general-ledger/general-ledger.types.ts
 [26 occurrences] libs/domains/accounting/models/src/lib/account/account.types.ts
-[25 occurrences] libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts
-[22 occurrences] libs/platforms/footstep/src/footstep.types.ts
-[21 occurrences] libs/shared/loggers/src/logger.ts
-[20 occurrences] libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts
+[24 occurrences] libs/domains/iam/models/src/lib/branch-settings/branch-settings.types.ts
 [20 occurrences] libs/domains/member-crm/models/src/lib/member-profile/member-profile.types.ts
-[15 occurrences] libs/domains/iam/models/src/lib/authentication/authentication.types.ts
+[20 occurrences] libs/domains/accounting/models/src/lib/journal-voucher-entry/journal-voucher-entry.types.ts
+[13 occurrences] libs/domains/iam/models/src/lib/authentication/authentication.types.ts
 [11 occurrences] libs/domains/transactions/models/src/lib/adjustment-entry/adjustment-entry.types.ts
 [11 occurrences] libs/domains/loans/models/src/lib/automatic-loan-deduction/automatic-loan-deduction.types.ts
 [11 occurrences] libs/domains/loans/models/src/lib/loan-transaction/loan-transaction.types.ts
 [9 occurrences] libs/domains/iam/models/src/lib/branch-settings/branch-settings.validation.ts
-[8 occurrences] libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts
 [8 occurrences] libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.types.ts
+[8 occurrences] libs/domains/accounting/models/src/lib/journal-voucher/journal-voucher.types.ts
 [7 occurrences] libs/domains/accounting/models/src/lib/include-negative-accounts/include-negative-accounts.types.ts
-[6 occurrences] libs/platforms/bank/src/bank.service.ts
 [6 occurrences] libs/domains/transactions/models/src/lib/cash-check-voucher/cash-check-voucher.types.ts
 [6 occurrences] libs/ui/app-sidebar/src/app-sidebar-item.ts
 [6 occurrences] libs/ui/sidebar/src/org-branch-sidebar/index.ts
 [6 occurrences] libs/ui/app-sidebar/src/app-sidebar-user.ts
-[5 occurrences] libs/domains/transactions/models/src/lib/check-remittance/check-remittance.types.ts
-[5 occurrences] libs/domains/rates-computations/models/src/lib/browse-reference/browse-reference.types.ts
 [5 occurrences] libs/domains/transactions/models/src/lib/cash-check-voucher-entry/cash-check-voucher-entry.validation.ts
 [5 occurrences] libs/domains/transactions/models/src/lib/transaction/transaction.types.ts
+[5 occurrences] libs/domains/rates-computations/models/src/lib/browse-reference/browse-reference.types.ts
 [5 occurrences] libs/domains/member-crm/models/src/lib/member-type/member-type.types.ts
 [5 occurrences] libs/domains/member-crm/models/src/lib/comaker-member-profile/comaker-member-profile.types.ts
+[4 occurrences] libs/domains/transactions/models/src/lib/batch-funding/batch-funding.types.ts
+[4 occurrences] libs/domains/rates-computations/models/src/lib/calculator/calculator.validation.ts
 [4 occurrences] libs/domains/member-crm/models/src/lib/member-asset/member-asset.types.ts
 [4 occurrences] libs/domains/member-crm/models/src/lib/member-center-history/member-center-history.types.ts
 [4 occurrences] libs/domains/member-crm/models/src/lib/member-educational-attainment/member-educational-attainment.types.ts
-[4 occurrences] libs/domains/transactions/models/src/lib/batch-funding/batch-funding.types.ts
-[4 occurrences] libs/platforms/tag-template/src/tag-template.service.ts
-[4 occurrences] libs/domains/rates-computations/models/src/lib/calculator/calculator.validation.ts
-[3 occurrences] libs/domains/iam/models/src/lib/member-user-account/member-user-account.types.ts
 [3 occurrences] libs/domains/transactions/models/src/lib/bill-and-coins/bill-and-coins.types.ts
-[3 occurrences] libs/domains/rates-computations/models/src/lib/browse-exclude-include-accounts/browse-exclude-include-accounts.types.ts
-[3 occurrences] libs/domains/rates-computations/models/src/lib/charges-rate-scheme-account/charges-rate-scheme-account.types.ts
-[3 occurrences] libs/domains/loans/models/src/lib/loan-account/loan-account.types.ts
 [3 occurrences] libs/domains/transactions/models/src/lib/collectors-member-account-entry/collectors-member-account-entry.types.ts
-[3 occurrences] libs/domains/transactions/models/src/lib/online-remittance/online-remittance.types.ts
-[3 occurrences] libs/domains/transactions/models/src/lib/post-dated-check/post-dated-check.types.ts
 [3 occurrences] libs/domains/transactions/models/src/lib/transaction-batch/transaction-batch.types.ts
+[3 occurrences] libs/domains/rates-computations/models/src/lib/browse-exclude-include-accounts/browse-exclude-include-accounts.types.ts
 [3 occurrences] libs/domains/rates-computations/models/src/lib/charges-rate-by-term/charges-rate-by-term.types.ts
 [3 occurrences] libs/domains/rates-computations/models/src/lib/charges-rate-by-term/charges-rate-by-term.validation.ts
+[3 occurrences] libs/domains/rates-computations/models/src/lib/charges-rate-scheme-account/charges-rate-scheme-account.types.ts
 [3 occurrences] libs/domains/rates-computations/models/src/lib/charges-rate-scheme/charges-rate-scheme.types.ts
+[3 occurrences] libs/domains/loans/models/src/lib/loan-account/loan-account.types.ts
 [3 occurrences] libs/domains/loans/models/src/lib/loan-transaction-entry/loan-transaction-entry.types.ts
 [3 occurrences] libs/ui/sidebar/src/org-branch-sidebar/sidebar-routes.ts
-[2 occurrences] libs/ui/ecoop-logo/src/ecoop-logo.ts
-[2 occurrences] libs/ui/core/src/components/footers/auth-footer.ts
-[2 occurrences] libs/domains/iam/modules/authentication/src/authentication.service.ts
+[2 occurrences] libs/domains/transactions/models/src/lib/post-dated-check/post-dated-check.types.ts
+[2 occurrences] libs/domains/rates-computations/models/src/lib/computation-sheet/computation-sheet.types.ts
+[2 occurrences] libs/domains/rates-computations/models/src/lib/member-classification-interest-rate/member-classification-interest-rate.types.ts
+[2 occurrences] libs/domains/loans/models/src/lib/loan-amortization-schedule/loan-amortization-schedule.types.ts
+[2 occurrences] libs/domains/loans/models/src/lib/loan-transaction/loan-transaction.validation.ts
+[2 occurrences] libs/domains/transactions/modules/quick-transfer/src/context/quick-transfer-form-controller.ts
+[2 occurrences] libs/domains/transactions/modules/transaction/src/transaction.utils.ts
+[1 occurrences] batch-funding.types.ts
+[1 occurrences] bill-and-coins.types.ts
+[1 occurrences] cash-check-voucher-entry.types.ts
+[1 occurrences] cash-check-voucher-entry.validation.ts
 ==================================================

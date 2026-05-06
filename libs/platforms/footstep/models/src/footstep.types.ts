@@ -1,18 +1,24 @@
-import type {
-    IBranch,
-    IOrganization,
-    IUserBase,
-    TUserType,
-} from '@ecoop/domains/iam/models'
+// import type {
+//     IBranch,
+//     IOrganization,
+//     IUserBase,
+//     TUserType,
+// } from '@ecoop/domains/iam/models'
 import type {
     IAuditable,
     IPaginatedResult,
     ITimeStamps,
     TEntityId,
 } from '@ecoop/shared/types'
+import type { TFootstepLevel } from '@ecoop/shared/types'
 
-export type TFootstepLevel = 'info' | 'warning' | 'error' | 'debug'
-export interface IFootstep extends ITimeStamps, IAuditable {
+export interface IFootstep<
+    IOrganization = any,
+    IBranch = any,
+    IUserBase = any,
+    TUserType = any,
+>
+    extends ITimeStamps, IAuditable {
     id: TEntityId
 
     organization_id?: TEntityId
