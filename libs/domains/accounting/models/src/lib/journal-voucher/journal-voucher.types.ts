@@ -1,17 +1,24 @@
-import type { IJournalVoucherORSettings } from '@ecoop/domains/iam/models'
+// import type { IJournalVoucherORSettings } from '@ecoop/domains/iam/models'
 import type { ICurrency } from '@ecoop/platforms/currency'
-import type { IJournalVoucherEntry, IJournalVoucherEntryRequest } from '../journal-voucher-entry/journal-voucher-entry.types'
-import type { IJournalVoucherTag } from '../journal-voucher-tag/journal-voucher-tag.types'
-import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
-import type { IUser } from '@ecoop/domains/iam/models'
-import type { IUserOrganizationSettings } from '@ecoop/domains/iam/models'
+// import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+// import type { IUser } from '@ecoop/domains/iam/models'
+// import type { IUserOrganizationSettings } from '@ecoop/domains/iam/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
-export interface IJournalVoucher extends IBaseEntityMeta {
+import type {
+    IJournalVoucherEntry,
+    IJournalVoucherEntryRequest,
+} from '../journal-voucher-entry/journal-voucher-entry.types'
+import type { IJournalVoucherTag } from '../journal-voucher-tag/journal-voucher-tag.types'
+
+export interface IJournalVoucher<
+    IUser = unknown,
+    IMemberProfile = unknown,
+> extends IBaseEntityMeta {
     cash_voucher_number: string
     date: string
     description?: string
@@ -87,8 +94,10 @@ export type TJournalActionMode = 'approve-undo' | 'release' | 'print-only'
 
 export type IJournalVoucherPaginated = IPaginatedResult<IJournalVoucher>
 
-export type TORJournalVoucherSettings = Omit<
-    IJournalVoucherORSettings,
-    'journal_voucher_or_unique'
-> &
+export type TORJournalVoucherSettings<
+    IJournalVoucherORSettings = unknown,
+    IUserOrganizationSettings extends {
+        journal_voucher_auto_increment: boolean
+    } = { journal_voucher_auto_increment: boolean },
+> = Omit<IJournalVoucherORSettings, 'journal_voucher_or_unique'> &
     Pick<IUserOrganizationSettings, 'journal_voucher_auto_increment'>

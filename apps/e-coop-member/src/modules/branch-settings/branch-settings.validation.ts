@@ -1,8 +1,7 @@
 import z from 'zod'
 
+import { UnbalanceAccountSchema } from '@ecoop/domains/accounting/models'
 import { PercentageSchema, entityIdSchema } from '@ecoop/shared/validation'
-
-import { UnbalanceAccountSchema } from '../unbalance-account'
 
 export const BranchSettingsSchema = z.object({
     id: entityIdSchema,

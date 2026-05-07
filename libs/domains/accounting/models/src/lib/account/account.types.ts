@@ -1,6 +1,6 @@
-import type { IMemberType } from '@ecoop/domains/member-crm/models'
-import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
-import type { IPaymentType } from '@ecoop/domains/transactions/models'
+// import type { IMemberType } from '@ecoop/domains/member-crm/models'
+// import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
+// import type { IPaymentType } from '@ecoop/domains/transactions/models'
 import type { ICurrency } from '@ecoop/platforms/currency'
 import type {
     IAuditable,
@@ -64,7 +64,12 @@ export type TInterestStandardComputation =
 export type TAccountExclusiveSettingType =
     (typeof ACCOUNT_EXCLUSIVE_SETTING_TYPE)[number]
 
-export interface IAccount extends IAuditable, ITimeStamps {
+export interface IAccount<
+    IMemberType = unknown,
+    IComputationSheet = unknown,
+    IPaymentType = unknown,
+>
+    extends IAuditable, ITimeStamps {
     id: TEntityId
 
     // GENERAL CONFIG

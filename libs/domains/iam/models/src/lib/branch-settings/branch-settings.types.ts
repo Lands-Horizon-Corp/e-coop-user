@@ -1,10 +1,10 @@
 import type z from 'zod'
 
-import type { IAccount } from '@ecoop/domains/accounting/models'
+// import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { ICurrency } from '@ecoop/platforms/currency'
-import type { IMemberGender } from '@ecoop/domains/member-crm/models'
-import type { IMemberType } from '@ecoop/domains/member-crm/models'
-import type { IUnbalanceAccount } from '@ecoop/domains/accounting/models'
+// import type { IMemberGender } from '@ecoop/domains/member-crm/models'
+// import type { IMemberType } from '@ecoop/domains/member-crm/models'
+// import type { IUnbalanceAccount } from '@ecoop/domains/accounting/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
@@ -105,7 +105,12 @@ export interface IDepositSetting {
     deposit_padding: number
     deposit_common_or?: string
 }
-export interface IBranchSettings
+export interface IBranchSettings<
+    IMemberType = unknown,
+    IMemberGender = unknown,
+    IUnbalanceAccount = unknown,
+    IAccount = unknown,
+>
     extends
         IBaseEntityMeta,
         ICashCheckVoucherGeneralORSettings,

@@ -1,10 +1,10 @@
-import type { IAccount } from '@ecoop/domains/accounting/models'
-import type { IBranch } from '@ecoop/domains/iam/models'
-import type { IMemberPassbookSettings } from '@ecoop/domains/iam/models'
-import type { IOrganization } from '@ecoop/domains/iam/models'
-import type { IUserBase } from '@ecoop/domains/iam/models'
+// import type { IAccount } from '@ecoop/domains/accounting/models'
+// import type { IBranch } from '@ecoop/domains/iam/models'
+// import type { IMemberPassbookSettings } from '@ecoop/domains/iam/models'
+// import type { IOrganization } from '@ecoop/domains/iam/models'
+// import type { IUserBase } from '@ecoop/domains/iam/models'
 import type { IMedia } from '@ecoop/platforms/media/models'
-import type { IQrScanResult } from '@ecoop/platforms/qr-crypto'
+import type { IQrScanResult } from '@ecoop/platforms/qr-crypto/models'
 import type { TSex } from '@ecoop/shared/constants'
 import type {
     IAuditable,
@@ -118,7 +118,13 @@ export interface IMemberProfileRequest {
     memberContactNumberReferences: IMemberContactReferenceRequest[]
 }
 
-export interface IMemberProfile extends ITimeStamps, IAuditable {
+export interface IMemberProfile<
+    IBranch = unknown,
+    IOrganization = unknown,
+    IUserBase = unknown,
+    IAccount = unknown,
+>
+    extends ITimeStamps, IAuditable {
     id: TEntityId
 
     branch_id: TEntityId
@@ -300,11 +306,9 @@ export interface IMemberProfileDashboardSummaryResponse {
     member_type_counts: IMemberTypeCountResponse[]
 }
 
-export type TMemberPassbookGenerateSettings = Omit<
-    IMemberPassbookSettings,
-    'check_voucher_general_or_unique'
-> &
-    Omit<IMemberPassbookSettings, 'member_profile_passbook_or_unique'>
+export type TMemberPassbookGenerateSettings<IMemberPassbookSettings = unknown> =
+    Omit<IMemberPassbookSettings, 'check_voucher_general_or_unique'> &
+        Omit<IMemberPassbookSettings, 'member_profile_passbook_or_unique'>
 
 export interface IMemberProfileQuickSearchResponse {
     id: string

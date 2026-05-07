@@ -1,9 +1,4 @@
-import type { IAccount } from '@ecoop/domains/accounting/models'
-import type { IBranch } from '../branch/branch.types'
-import type { IOrganization } from '../organization/organization.types'
-import type { IPaymentType } from '@ecoop/domains/transactions/models'
-import type { TPermission } from '../permission/permission.types'
-import type { IUserBase, TUserType } from '../user/user.types'
+// import type { IAccount } from '@ecoop/domains/accounting/models'
 import type { USER_ORG_APPLICATION_STATUS } from '@ecoop/shared/constants'
 import type {
     IBaseEntityMeta,
@@ -11,6 +6,11 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IBranch } from '../branch/branch.types'
+import type { IOrganization } from '../organization/organization.types'
+// import type { IPaymentType } from '@ecoop/domains/transactions/models'
+import type { TPermission } from '../permission/permission.types'
+import type { IUserBase, TUserType } from '../user/user.types'
 import type {
     TTimeMachineSchema,
     TUserOrganizationSettingsSchema,
@@ -25,7 +25,11 @@ export interface IUserOrganizationContext<
 export type TUserOrganizationApplicationStatus =
     (typeof USER_ORG_APPLICATION_STATUS)[number]
 
-export interface IUserOrganization<TUser = IUserBase>
+export interface IUserOrganization<
+    TUser = IUserBase,
+    IAccount = unknown,
+    IPaymentType = unknown,
+>
     extends
         IBaseEntityMeta,
         Omit<IUserOrganizationSettings, 'user_type' | 'description'> {

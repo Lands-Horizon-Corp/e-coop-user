@@ -1,9 +1,9 @@
-import type { IUserBase } from '@ecoop/domains/iam/models'
-import type { IMemberJointAccount } from '@ecoop/domains/member-crm/models'
-import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
-import type { IPaymentType } from '@ecoop/domains/transactions/models'
-import type { ITransaction } from '@ecoop/domains/transactions/models'
-import type { ITransactionBatch } from '@ecoop/domains/transactions/models'
+// import type { IUserBase } from '@ecoop/domains/iam/models'
+// import type { IMemberJointAccount } from '@ecoop/domains/member-crm/models'
+// import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+// import type { IPaymentType } from '@ecoop/domains/transactions/models'
+// import type { ITransaction } from '@ecoop/domains/transactions/models'
+// import type { ITransactionBatch } from '@ecoop/domains/transactions/models'
 import type { IBank } from '@ecoop/platforms/bank'
 import type { ICurrency } from '@ecoop/platforms/currency'
 import type { IMedia } from '@ecoop/platforms/media/models'
@@ -36,7 +36,14 @@ export type TGeneralLedgerSource = (typeof GENERAL_LEDGER_SOURCES)[number]
 
 export type TGeneralLedgerType = (typeof GENERAL_LEDGER_TYPE)[number]
 
-export interface IGeneralLedger extends IBaseEntityMeta {
+export interface IGeneralLedger<
+    ITransaction = unknown,
+    ITransactionBatch = unknown,
+    IUserBase = unknown,
+    IMemberProfile = unknown,
+    IMemberJointAccount = unknown,
+    IPaymentType = unknown,
+> extends IBaseEntityMeta {
     account_id: TEntityId
     account: IAccount
     account_history_id: TEntityId

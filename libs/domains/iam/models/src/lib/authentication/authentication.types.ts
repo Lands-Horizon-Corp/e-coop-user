@@ -1,9 +1,12 @@
-import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
+// import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
 // import { IGeneratedReport } from '@ecoop/domains/reporting/modules/generated-report'
-import type { IUserBase } from '../user/user.types'
 import type { IUserOrganization } from '../user-organization/user-organization.types'
+import type { IUserBase } from '../user/user.types'
 
-export interface IAuthContext<TUser = IUserBase | undefined> {
+export interface IAuthContext<
+    TUser = IUserBase | undefined,
+    IComakerMemberProfile = unknown,
+> {
     user?: TUser
     user_organization?: IUserOrganization | null
     // reports: IGeneratedReport[]

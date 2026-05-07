@@ -1,17 +1,19 @@
 import type z from 'zod'
 
-import type { IAccount } from '../account/account.types'
 import type { ICurrency } from '@ecoop/platforms/currency'
-import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+// import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IAccount } from '../account/account.types'
 import type { UnbalanceAccountSchema } from './unbalance-account.validation'
 
-export interface IUnbalanceAccount extends IBaseEntityMeta {
+export interface IUnbalanceAccount<
+    IMemberProfile = unknown,
+> extends IBaseEntityMeta {
     currency_id: TEntityId
     currency: ICurrency
 

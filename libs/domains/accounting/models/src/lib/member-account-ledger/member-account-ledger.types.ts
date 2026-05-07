@@ -1,12 +1,15 @@
-import type { IAccount } from '../account/account.types'
-import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+// import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
-export interface IMemberAccountingLedger extends IBaseEntityMeta {
+import type { IAccount } from '../account/account.types'
+
+export interface IMemberAccountingLedger<
+    IMemberProfile = unknown,
+> extends IBaseEntityMeta {
     id: TEntityId
 
     member_profile_id: TEntityId
