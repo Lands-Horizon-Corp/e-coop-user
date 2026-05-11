@@ -1,8 +1,8 @@
 import type z from 'zod'
 
-import type { IAccount, TAccountType } from '@ecoop/domains/accounting/models'
-import type { IChargesRateScheme } from '@ecoop/domains/rates-computations/models'
-import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
+// import type { IAccount, TAccountType } from '@ecoop/domains/accounting/models'
+// import type { IChargesRateScheme } from '@ecoop/domains/rates-computations/models'
+// import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
@@ -11,7 +11,11 @@ import type {
 
 import type { AutomaticLoanDeductionSchema } from './automatic-loan-deduction.validation'
 
-export interface IAutomaticLoanDeduction extends IBaseEntityMeta {
+export interface IAutomaticLoanDeduction<
+    IAccount = unknown,
+    IComputationSheet = unknown,
+    IChargesRateScheme = unknown,
+> extends IBaseEntityMeta {
     account_id: TEntityId
     account: IAccount
 
@@ -49,7 +53,7 @@ export type IAutomaticLoanDeductionPaginated =
     IPaginatedResult<IAutomaticLoanDeduction>
 
 // For computation of deduction entry amount/values
-export type AutomaticLoanDeductionEntry = {
+export type AutomaticLoanDeductionEntry<TAccountType = unknown> = {
     charges_percentage_1: number
     charges_percentage_2: number
     charges_amount: number

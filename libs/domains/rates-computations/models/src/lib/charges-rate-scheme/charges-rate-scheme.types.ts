@@ -1,27 +1,30 @@
-import type { IChargesRateByRangeOrMinimumAmount } from '../charges-rate-by-range-or-minimum-amount/charges-rate-by-range-or-minimum-amount.types'
-import type { IChargesRateByTerm } from '../charges-rate-by-term/charges-rate-by-term.types'
-import type { IChargesRateSchemeAccount } from '../charges-rate-scheme-account/charges-rate-scheme-account.types'
-import type { IChargesRateSchemeModeOfPayment } from '../charges-rate-scheme-mode-of-payment/charges-rate-scheme-mode-of-payment.types'
 import type { ICurrency } from '@ecoop/platforms/currency'
-import type { TLoanModeOfPayment } from '@ecoop/domains/loans/models'
-import type { IMemberType } from '@ecoop/domains/member-crm/models'
+// import type { TLoanModeOfPayment } from '@ecoop/domains/loans/models'
+// import type { IMemberType } from '@ecoop/domains/member-crm/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IChargesRateByRangeOrMinimumAmount } from '../charges-rate-by-range-or-minimum-amount/charges-rate-by-range-or-minimum-amount.types'
+import type { IChargesRateByTerm } from '../charges-rate-by-term/charges-rate-by-term.types'
+import type { IChargesRateSchemeAccount } from '../charges-rate-scheme-account/charges-rate-scheme-account.types'
+import type { IChargesRateSchemeModeOfPayment } from '../charges-rate-scheme-mode-of-payment/charges-rate-scheme-mode-of-payment.types'
 import type {
     TChargesRateCreateSchemeSchema,
     TChargesRateSchemeSchema,
 } from './charges-rate-scheme.validation'
-import type { CHARGES_RATE_SCHEME_TYPE } from './charges-rate.constants'
+import type { CHARGES_RATE_SCHEME_TYPE } from './charges-rate.constant'
 
 export type ChargesRateMemberTypeEnum = 'all' | string
 
 export type TChargesRateSchemeType = (typeof CHARGES_RATE_SCHEME_TYPE)[number]
 
-export interface IChargesRateScheme extends IBaseEntityMeta {
+export interface IChargesRateScheme<
+    TLoanModeOfPayment = unknown,
+    IMemberType = unknown,
+> extends IBaseEntityMeta {
     charges_rate_by_term_header_id: string
 
     name: string

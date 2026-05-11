@@ -1,7 +1,7 @@
 import z from 'zod'
 
 import { WithModeOfPaymentSchema } from '@ecoop/domains/loans/models'
-import { TLoanModeOfPayment, TWeekdays } from '@ecoop/domains/loans/models'
+// import { TLoanModeOfPayment, TWeekdays } from '@ecoop/domains/loans/models'
 import {
     EntityIdSchema,
     descriptionTransformerSanitizer,

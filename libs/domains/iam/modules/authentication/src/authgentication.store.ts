@@ -1,14 +1,17 @@
-import type { IBranch } from '../branch/branch.types'
-import type { IOrganization } from '../organization/organization.types'
+import type { IBranch, IOrganization } from '@ecoop/domains/iam/models'
 import type {
     GetCrudPermissionOpts,
     IHasPermissionOpts,
 } from '@ecoop/domains/iam/modules/permission'
-import { getCrudPermissions, getAllPermissions as getAllPermissions as hasPermission } from '@ecoop/domains/iam/modules/permission'
-import type { IUserBase } from '../user/user.types'
-import type { IUserOrganization } from '../user-organization/user-organization.types'
+import {
+    getAllPermissions,
+    getCrudPermissions,
+    hasPermission,
+} from '@ecoop/domains/iam/modules/permission'
 import { create } from 'zustand'
 
+import type { IUserOrganization } from '../user-organization/user-organization.types'
+import type { IUserBase } from '../user/user.types'
 import type { IAuthContext } from './authentication.types'
 
 type TAuthStoreStatus = 'loading' | 'authorized' | 'unauthorized' | 'error'

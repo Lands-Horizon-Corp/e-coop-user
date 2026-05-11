@@ -13,6 +13,6 @@
     "aliases": {
       "ui": "@ecoop/ui/core",
       "components": "@ecoop/ui/core",
-      "utils": "@ecoop/utils/utils"
+      "utils": "@ecoop/shared/tw-utils"
     }
   }

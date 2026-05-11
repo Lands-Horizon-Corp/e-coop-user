@@ -1,19 +1,21 @@
 import type { IAccount } from '@ecoop/domains/accounting/models'
-import type { ILoanTransaction } from '../loan-transaction/loan-transaction.types'
-import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+// import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { ILoanTransaction } from '../loan-transaction/loan-transaction.types'
 import type { LOAN_TRANSACTION_ENTRY_TYPE } from './loan-transaction-constant'
 import type { TLoanTransactionEntrySchema } from './loan-transaction-entry.validation'
 
 export type TLoanTransactionEntryType =
     (typeof LOAN_TRANSACTION_ENTRY_TYPE)[number]
 
-export interface ILoanTransactionEntry extends IBaseEntityMeta {
+export interface ILoanTransactionEntry<
+    IMemberProfile = unknown,
+> extends IBaseEntityMeta {
     loan_transaction_id: TEntityId
     loan_transaction?: ILoanTransaction
 

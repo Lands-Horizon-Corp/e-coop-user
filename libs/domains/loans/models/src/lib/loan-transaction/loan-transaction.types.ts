@@ -10,9 +10,6 @@ import type {
 } from '@ecoop/domains/iam/models'
 import type { IUser } from '@ecoop/domains/iam/models'
 import type { IUserOrganizationSettings } from '@ecoop/domains/iam/models'
-import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
-import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
-import type { ITransactionBatch } from '@ecoop/domains/transactions/models'
 import type { ICurrency } from '@ecoop/platforms/currency'
 import type { IMedia } from '@ecoop/platforms/media/models'
 import type {
@@ -77,7 +74,11 @@ export type TLoanMode =
     | 'released'
     | 'release-today'
 
-export interface ILoanTransaction
+export interface ILoanTransaction<
+    ITransactionBatch = unknown,
+    IMemberProfile = unknown,
+    IComakerMemberProfile = unknown,
+>
     extends
         IBaseEntityMeta,
         ILoanTransactionSignatures,

@@ -1,7 +1,7 @@
-import type { IChargesRateScheme } from '../charges-rate-scheme/charges-rate-scheme.types'
-import type { TLoanModeOfPayment } from '@ecoop/domains/loans/models'
+// import type { TLoanModeOfPayment } from '@ecoop/domains/loans/models'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
+import type { IChargesRateScheme } from '../charges-rate-scheme/charges-rate-scheme.types'
 import type { TChargesRateByTermSchema } from './charges-rate-by-term.validation'
 
 export type TChargesModeOfPaymentType =
@@ -13,7 +13,9 @@ export type TChargesModeOfPaymentType =
     | 'annually'
     | 'lumpsum'
 
-export interface IChargesRateByTerm extends IBaseEntityMeta {
+export interface IChargesRateByTerm<
+    TLoanModeOfPayment = unknown,
+> extends IBaseEntityMeta {
     charges_rate_scheme_id: TEntityId
     charges_rate_scheme?: IChargesRateScheme
     mode_of_payment: TLoanModeOfPayment

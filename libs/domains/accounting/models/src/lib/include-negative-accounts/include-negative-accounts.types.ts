@@ -1,16 +1,18 @@
 import type z from 'zod'
 
-import type { IAccount } from '../account/account.types'
-import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
+// import type { IComputationSheet } from '@ecoop/domains/rates-computations/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { IAccount } from '../account/account.types'
 import type { IncludeNegativeAccountsSchema } from './include-negative-accounts.validation'
 
-export interface IIncludeNegativeAccounts extends IBaseEntityMeta {
+export interface IIncludeNegativeAccounts<
+    IComputationSheet = unknown,
+> extends IBaseEntityMeta {
     computation_sheet_id: TEntityId
     computation_sheet: IComputationSheet
 

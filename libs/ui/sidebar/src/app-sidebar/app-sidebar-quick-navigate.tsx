@@ -17,7 +17,7 @@ import {
 } from '@ecoop/ui/core'
 import { useHotkeys } from 'react-hotkeys-hook'
 
-import { useSidebar } from '../ui/sidebar'
+import { useSidebar } from '../sidebar'
 import type { TQuickSearchGroup } from './types'
 
 interface Props {
@@ -194,4 +194,4 @@ const AppSidebarQuickNavigate = ({ groups }: Props) => {
     )
 }
 
-export {AppSidebarQuickNavigate}
+export { AppSidebarQuickNavigate }

@@ -1,24 +1,24 @@
 import z from 'zod'
 
-import { ComakerCollateralSchema } from '../comaker-collateral/comaker-collateral.validation'
 import { ComakerMemberProfileSchema } from '@ecoop/domains/member-crm/models'
-import { LoanClearanceAnalysisSchema } from '../loan-clearance-analysis/loan-clearance-analysis.validation'
-import { LoanClearanceAnalysisInstitutionSchema } from '../loan-clearance-analysis-institution/loan-clearance-analysis-institution.validation'
-import { LoanTermsAndConditionAmountReceiptSchema } from '../loan-terms-and-condition-amount-receipt/loan-terms-and-condition-amount-receipt.validation'
-import { LoanTermsAndConditionSuggestedPaymentSchema } from '../loan-terms-and-condition-suggested-payment/loan-terms-and-condition-suggested-payment.validation'
 import {
     EntityIdSchema,
     entityIdSchema,
     stringDateWithTransformSchema,
 } from '@ecoop/shared/validation'
 
+import { ComakerCollateralSchema } from '../comaker-collateral/comaker-collateral.validation'
+import { LoanClearanceAnalysisInstitutionSchema } from '../loan-clearance-analysis-institution/loan-clearance-analysis-institution.validation'
+import { LoanClearanceAnalysisSchema } from '../loan-clearance-analysis/loan-clearance-analysis.validation'
+import { LoanTermsAndConditionAmountReceiptSchema } from '../loan-terms-and-condition-amount-receipt/loan-terms-and-condition-amount-receipt.validation'
+import { LoanTermsAndConditionSuggestedPaymentSchema } from '../loan-terms-and-condition-suggested-payment/loan-terms-and-condition-suggested-payment.validation'
 import {
     LOAN_ADJUSTMENT_TYPE,
     LOAN_COLLECTOR_PLACE,
     LOAN_COMAKER_TYPE,
+    LOAN_TYPE,
     // LOAN_COMAKER_TYPE,
     TLoanModeOfPayment,
-    LOAN_TYPE,
     TWeekdays,
 } from './loan.constants'
 
@@ -116,7 +116,8 @@ export const WithComaker = z.discriminatedUnion(
             comaker_type: z
                 .enum(
                     LOAN_COMAKER_TYPE.filter(
-                        (val: any) => !['others', 'deposit', 'member'].includes(val)
+                        (val: any) =>
+                            !['others', 'deposit', 'member'].includes(val)
                     )
                 )
                 .default('none'),
