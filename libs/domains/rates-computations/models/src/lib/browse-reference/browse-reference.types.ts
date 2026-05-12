@@ -1,15 +1,15 @@
 import type { IAccount } from '@ecoop/domains/accounting/models'
-import type { IInterestRateByAmount } from '../interest-rate-by-amount/interest-rate-by-amount.types'
-import type { IInterestRateByDate } from '../interest-rate-by-date/interest-rate-by-date.types'
-import type { IInterestRateByYear } from '../interest-rate-by-year/interest-rate-by-year.types'
-import type { IMemberType } from '@ecoop/domains/member-crm/models'
+// import type { IMemberType } from '@ecoop/domains/member-crm/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
-import type { INTEREST_TYPE } from './browse-reference.constants'
+import type { IInterestRateByAmount } from '../interest-rate-by-amount/interest-rate-by-amount.types'
+import type { IInterestRateByDate } from '../interest-rate-by-date/interest-rate-by-date.types'
+import type { IInterestRateByYear } from '../interest-rate-by-year/interest-rate-by-year.types'
+import type { INTEREST_TYPE } from './browse-reference.constant'
 import type { TBrowseReferenceSchema } from './browse-reference.validation'
 
 export type TInterestType = (typeof INTEREST_TYPE)[number]
@@ -18,7 +18,9 @@ export type TInterestType = (typeof INTEREST_TYPE)[number]
 export type IBrowseReferenceRequest = TBrowseReferenceSchema
 
 // LATEST FROM ERD
-export interface IBrowseReference extends IBaseEntityMeta {
+export interface IBrowseReference<
+    IMemberType = unknown,
+> extends IBaseEntityMeta {
     id: TEntityId
 
     name: string

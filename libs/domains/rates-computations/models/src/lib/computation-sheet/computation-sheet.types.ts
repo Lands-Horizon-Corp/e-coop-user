@@ -1,15 +1,15 @@
 import type z from 'zod'
 
 import type { IAccount } from '@ecoop/domains/accounting/models'
-import type { TMockCloanInputSchema } from '../calculator/calculator.validation'
 import type { ICurrency } from '@ecoop/platforms/currency'
-import type { ILoanAmortizationSchedule } from '@ecoop/domains/loans/models'
+// import type { ILoanAmortizationSchedule } from '@ecoop/domains/loans/models'
 import type {
     IBaseEntityMeta,
     IPaginatedResult,
     TEntityId,
 } from '@ecoop/shared/types'
 
+import type { TMockCloanInputSchema } from '../calculator/calculator.validation'
 import type { ComputationSheetSchema } from './computation-sheet.validation'
 
 export interface IComputationSheet extends IBaseEntityMeta {
@@ -48,7 +48,9 @@ export interface IComputationSheetAmortizationResponseDeduction {
     debit: number
 }
 
-export interface IComputationSheetAmortizationResponse {
+export interface IComputationSheetAmortizationResponse<
+    ILoanAmortizationSchedule = unknown,
+> {
     currency: ICurrency
 
     entries: IComputationSheetAmortizationResponseDeduction[]

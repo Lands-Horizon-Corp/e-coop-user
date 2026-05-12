@@ -1,13 +1,4 @@
-export type TORBuilderOptions = {
-    currentOr: number
-    useReceiptPrefix?: boolean // only for payment
-    itiration?: number // only for payment
-
-    padding?: number
-    paddingChar?: string
-
-    prefix?: string
-}
+import type { TORBuilderOptions } from '@ecoop/domains/transactions/models'
 
 export const buildOR = ({
     currentOr,

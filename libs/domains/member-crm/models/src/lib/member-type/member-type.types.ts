@@ -1,7 +1,7 @@
 import type z from 'zod'
 
 import type { IBranch } from '@ecoop/domains/iam/models'
-import type { IBrowseReference } from '@ecoop/domains/rates-computations/models'
+// import type { IBrowseReference } from '@ecoop/domains/rates-computations/models'
 import type {
     IAuditable,
     IPaginatedResult,
@@ -11,7 +11,8 @@ import type {
 
 import type { MemberTypeSchema } from './member-type.validation'
 
-export interface IMemberType extends ITimeStamps, IAuditable {
+export interface IMemberType<IBrowseReference = unknown>
+    extends ITimeStamps, IAuditable {
     id: TEntityId
 
     branch_id?: TEntityId

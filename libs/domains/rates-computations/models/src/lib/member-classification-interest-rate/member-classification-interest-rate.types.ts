@@ -1,8 +1,6 @@
 import z from 'zod'
 
-import type { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header/interest-rate-by-terms-header.types'
-import type { IInterestRateScheme } from '../interest-rate-scheme/interest-rate-scheme.types'
-import type { IMemberClassification } from '@ecoop/domains/member-crm/models'
+// import type { IMemberClassification } from '@ecoop/domains/member-crm/models'
 import type {
     IAuditable,
     IOrgBranchIdentity,
@@ -10,6 +8,9 @@ import type {
     TEntityId,
 } from '@ecoop/shared/types'
 import { entityIdSchema } from '@ecoop/shared/validation'
+
+import type { IInterestRateByTermsHeaderResponse } from '../interest-rate-by-terms-header/interest-rate-by-terms-header.types'
+import type { IInterestRateScheme } from '../interest-rate-scheme/interest-rate-scheme.types'
 
 export interface IMemberClassificationInterestRateRequest {
     name: string
@@ -19,7 +20,9 @@ export interface IMemberClassificationInterestRateRequest {
     interest_rate_by_terms_header_id?: TEntityId
 }
 
-export interface IMemberClassificationInterestRate
+export interface IMemberClassificationInterestRate<
+    IMemberClassification = unknown,
+>
     extends ITimeStamps, IAuditable, IOrgBranchIdentity {
     id: TEntityId
     name: string

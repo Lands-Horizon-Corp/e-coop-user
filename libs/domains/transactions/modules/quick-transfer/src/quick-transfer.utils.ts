@@ -1,7 +1,12 @@
-import type { IBranchSettings, IDepositSetting, IWithdrawSetting } from '@ecoop/domains/iam/models'
-import type { TORBuilderOptions } from '../or-builder/or-builder.utils'
-
-import type { TPaymentMode } from './quick-transfer.types'
+import type {
+    IBranchSettings,
+    IDepositSetting,
+    IWithdrawSetting,
+} from '@ecoop/domains/iam/models'
+import type {
+    TORBuilderOptions,
+    TPaymentMode,
+} from '@ecoop/domains/transactions/models'
 
 type TORSettingResult =
     | { mode: 'withdraw'; setting: IWithdrawSetting }

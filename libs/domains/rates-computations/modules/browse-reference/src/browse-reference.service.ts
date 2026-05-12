@@ -1,6 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 
 import { memberTypeBaseQueryKey } from '@ecoop/domains/member-crm/models'
+import type {
+    IBrowseReference,
+    IBrowseReferencePaginated,
+    IBrowseReferenceRequest,
+} from '@ecoop/domains/rates-computations/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
@@ -9,12 +14,6 @@ import {
     deleteMutationInvalidationFn,
 } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IBrowseReference,
-    IBrowseReferencePaginated,
-    IBrowseReferenceRequest,
-} from './browse-reference.types'
 
 const {
     apiCrudHooks,

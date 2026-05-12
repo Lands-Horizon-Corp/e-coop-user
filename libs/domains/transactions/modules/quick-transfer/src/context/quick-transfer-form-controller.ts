@@ -1,14 +1,13 @@
 import { useState } from 'react'
 
 import type { IAccount } from '@ecoop/domains/accounting/models'
-import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam/models'
+import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam/modules/authentication'
 import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import type { TPaymentMode } from '@ecoop/domains/transactions/models'
 import { useGetAllPaymentType } from '@ecoop/domains/transactions/modules/payment-type'
 import { quickPaymentORResolver } from '@ecoop/domains/transactions/modules/transaction'
 import { useModalState } from '@ecoop/shared/hooks'
 import { useTransactionReverseSecurityStore } from '@ecoop/shared/store'
-
-import type { TPaymentMode } from '../quick-transfer.types'
 
 interface QuickTransferControllerProps {
     mode: Omit<TPaymentMode, 'payment'>

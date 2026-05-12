@@ -8,19 +8,162 @@ The remote cache will not be read from or written to during this run.
 
 [2m> [22mtsc --noEmit -p tsconfig.lib.json
 
-[96m../../iam/modules/authentication/src/authgentication.store.ts[0m:[93m7[0m:[93m69[0m - [91merror[0m[90m TS1005: [0m',' expected.
+[96msrc/index.ts[0m:[93m14[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './lib/account-history/account-history.types' has already exported a member named 'IAccountHistory'. Consider explicitly re-exporting to resolve the ambiguity.
 
-[7m7[0m import { getCrudPermissions, getAllPermissions as getAllPermissions as hasPermission } from '@ecoop/domains/iam/modules/permission'
-[7m [0m [91m                                                                    ~~[0m
+[7m14[0m export * from './lib/account/account.types'
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
-[96m../../iam/modules/authentication/src/authgentication.store.ts[0m:[93m7[0m:[93m72[0m - [91merror[0m[90m TS1005: [0m',' expected.
+[96msrc/index.ts[0m:[93m44[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './lib/member-account-ledger/member-account-ledger.types' has already exported a member named 'IMemberAccountingLedger'. Consider explicitly re-exporting to resolve the ambiguity.
 
-[7m7[0m import { getCrudPermissions, getAllPermissions as getAllPermissions as hasPermission } from '@ecoop/domains/iam/modules/permission'
-[7m [0m [91m                                                                       ~~~~~~~~~~~~~[0m
+[7m44[0m export * from './lib/member-accounting-ledger/member-accounting-ledger.types'
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/index.ts[0m:[93m44[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './lib/member-account-ledger/member-account-ledger.types' has already exported a member named 'IMemberAccountingLedgerPaginated'. Consider explicitly re-exporting to resolve the ambiguity.
+
+[7m44[0m export * from './lib/member-accounting-ledger/member-accounting-ledger.types'
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/index.ts[0m:[93m44[0m:[93m1[0m - [91merror[0m[90m TS2308: [0mModule './lib/member-account-ledger/member-account-ledger.types' has already exported a member named 'IMemberAccountingLedgerTotal'. Consider explicitly re-exporting to resolve the ambiguity.
+
+[7m44[0m export * from './lib/member-accounting-ledger/member-accounting-ledger.types'
+[7m  [0m [91m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/lib/account-transaction/account-transaction.types.ts[0m:[93m6[0m:[93m49[0m - [91merror[0m[90m TS2307: [0mCannot find module './account-transaction.constants' or its corresponding type declarations.
+
+[7m6[0m import type { ACCOUNT_TRANSACTION_SOURCE } from './account-transaction.constants'
+[7m [0m [91m                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/lib/account/account.validation.ts[0m:[93m11[0m:[93m42[0m - [91merror[0m[90m TS2307: [0mCannot find module '../financial-statement-definition/financial-statement-definition.constants' or its corresponding type declarations.
+
+[7m11[0m import { FINANCIAL_STATEMENT_TYPE } from '../financial-statement-definition/financial-statement-definition.constants'
+[7m  [0m [91m                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/lib/financial-statement-definition/financial-statement-definition.types.ts[0m:[93m4[0m:[93m47[0m - [91merror[0m[90m TS2307: [0mCannot find module './financial-statement-definition.constants' or its corresponding type declarations.
+
+[7m4[0m import type { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
+[7m [0m [91m                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96msrc/lib/financial-statement-definition/financial-statement-definition.validation.ts[0m:[93m9[0m:[93m42[0m - [91merror[0m[90m TS2307: [0mCannot find module './financial-statement-definition.constants' or its corresponding type declarations.
+
+[7m9[0m import { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
+[7m [0m [91m                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../platforms/currency/src/currency.service.ts[0m:[93m12[0m:[93m8[0m - [91merror[0m[90m TS2307: [0mCannot find module '../currency' or its corresponding type declarations.
+
+[7m12[0m } from '../currency'
+[7m  [0m [91m       ~~~~~~~~~~~~~[0m
+
+[96m../../../platforms/tag-template/src/tag-template.service.ts[0m:[93m4[0m:[93m56[0m - [91merror[0m[90m TS2307: [0mCannot find module '../tag-template' or its corresponding type declarations.
+
+[7m4[0m import type { ITagTemplate, ITagTemplateRequest } from '../tag-template'
+[7m [0m [91m                                                       ~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m4[0m:[93m24[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m4[0m export const APP_ENV = import.meta.env["VITE_APP_ENV"] || 'development'
+[7m [0m [91m                       ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m6[0m:[93m28[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m6[0m export const APP_VERSION = import.meta.env["VITE_APP_VERSION"] || '0.0.0'
+[7m [0m [91m                           ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m10[0m:[93m5[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m10[0m     import.meta.env["VITE_API_BASE_URL"] || 'http://localhost:8000'
+[7m  [0m [91m    ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m14[0m:[93m5[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m14[0m     import.meta.env["VITE_SOKETI_KEY"] ||
+[7m  [0m [91m    ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m16[0m:[93m28[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m16[0m export const SOKETI_HOST = import.meta.env["VITE_SOKETI_HOST"] || '127.0.0.1'
+[7m  [0m [91m                           ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m17[0m:[93m37[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m17[0m export const SOKETI_PORT = parseInt(import.meta.env["VITE_SOKETI_PORT"] || '6001')
+[7m  [0m [91m                                    ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m21[0m:[93m5[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m21[0m     import.meta.env["VITE_TURNSTILE_CAPTCHA_SITE_KEY"] || ''
+[7m  [0m [91m    ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m25[0m:[93m5[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m25[0m     import.meta.env["VITE_GOOGLE_MAPS_API_KEY"] || ''
+[7m  [0m [91m    ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/envs.ts[0m:[93m27[0m:[93m35[0m - [91merror[0m[90m TS1343: [0mThe 'import.meta' meta-property is only allowed when the '--module' option is 'es2020', 'es2022', 'esnext', 'system', 'node16', 'node18', 'node20', or 'nodenext'.
+
+[7m27[0m export const GOOGLE_MAPS_MAP_ID = import.meta.env["VITE_GOOGLE_MAPS_ID"] || ''
+[7m  [0m [91m                                  ~~~~~~~~~~~[0m
+
+[96m../../../shared/constants/src/index.ts[0m:[93m2[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './icons' or its corresponding type declarations.
+
+[7m2[0m export * from './icons'
+[7m [0m [91m              ~~~~~~~~~[0m
+
+[96m../../../shared/helpers/core-helpers/src/index.ts[0m:[93m10[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './picture-crop-helper' or its corresponding type declarations.
+
+[7m10[0m export * from './picture-crop-helper'
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../shared/providers/core-providers/src/index.ts[0m:[93m4[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './action-security-provider' or its corresponding type declarations.
+
+[7m4[0m export * from './action-security-provider'
+[7m [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../ui/core/src/index.ts[0m:[93m51[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './components/ui/re-captcha' or its corresponding type declarations.
+
+[7m51[0m export * from './components/ui/re-captcha'
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../ui/core/src/index.ts[0m:[93m89[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './components/text-display' or its corresponding type declarations.
+
+[7m89[0m export * from './components/text-display'
+[7m  [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../ui/core/src/index.ts[0m:[93m130[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './components/date-time-pickers' or its corresponding type declarations.
+
+[7m130[0m export * from './components/date-time-pickers'
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../ui/core/src/index.ts[0m:[93m133[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './components/footers/auth-footer' or its corresponding type declarations.
+
+[7m133[0m export * from './components/footers/auth-footer'
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../ui/core/src/index.ts[0m:[93m134[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './components/footers/common-links' or its corresponding type declarations.
+
+[7m134[0m export * from './components/footers/common-links'
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+[96m../../../ui/core/src/index.ts[0m:[93m219[0m:[93m15[0m - [91merror[0m[90m TS2307: [0mCannot find module './components/text-renderer' or its corresponding type declarations.
+
+[7m219[0m export * from './components/text-renderer'
+[7m   [0m [91m              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-Found 2 errors in the same file, starting at: ../../iam/modules/authentication/src/authgentication.store.ts[90m:7[0m
+Found 28 errors in 12 files.
 
+Errors  Files
+     4  src/index.ts[90m:14[0m
+     1  src/lib/account-transaction/account-transaction.types.ts[90m:6[0m
+     1  src/lib/account/account.validation.ts[90m:11[0m
+     1  src/lib/financial-statement-definition/financial-statement-definition.types.ts[90m:4[0m
+     1  src/lib/financial-statement-definition/financial-statement-definition.validation.ts[90m:9[0m
+     1  ../../../platforms/currency/src/currency.service.ts[90m:12[0m
+     1  ../../../platforms/tag-template/src/tag-template.service.ts[90m:4[0m
+     9  ../../../shared/constants/src/envs.ts[90m:4[0m
+     1  ../../../shared/constants/src/index.ts[90m:2[0m
+     1  ../../../shared/helpers/core-helpers/src/index.ts[90m:10[0m
+     1  ../../../shared/providers/core-providers/src/index.ts[90m:4[0m
+     6  ../../../ui/core/src/index.ts[90m:51[0m
 Warning: command "tsc --noEmit -p tsconfig.lib.json" exited with non-zero status code
 [2m[31m[39m[22m
 
