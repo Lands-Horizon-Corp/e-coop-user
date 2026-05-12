@@ -6,11 +6,11 @@ import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
-import type { IMemberProfile } from '../member-profile/member-profile.types'
+import type { IMemberProfile } from '@ecoop/member-crm/models'
 import type {
     IMemberCloseRemark,
     IMemberCloseRemarkRequest,
-} from './member-close-remark.types'
+} from '@ecoop/member-crm/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberCloseRemark,

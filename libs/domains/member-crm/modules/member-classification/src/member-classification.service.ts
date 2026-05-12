@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IMemberClassification,
     IMemberClassificationRequest,
-} from './member-classification.types'
+} from '@ecoop/member-crm/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberClassification,

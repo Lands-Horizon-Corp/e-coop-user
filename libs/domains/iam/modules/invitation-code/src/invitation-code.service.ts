@@ -7,7 +7,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IInvitationCode,
     IInvitationCodeRequest,
-} from './invitation-code.types'
+} from '@ecoop/iam/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IInvitationCode,

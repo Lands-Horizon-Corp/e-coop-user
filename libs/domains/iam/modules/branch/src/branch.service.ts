@@ -6,8 +6,8 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
-import type { IUserOrganization } from '../user-organization/user-organization.types'
-import type { IBranch, IBranchRequest } from './branch.types'
+import type { IUserOrganization } from '@ecoop/iam/models'
+import type { IBranch, IBranchRequest } from '@ecoop/iam/models'
 
 /**
  * CRUD Factory

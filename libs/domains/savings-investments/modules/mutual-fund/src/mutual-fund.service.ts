@@ -15,7 +15,7 @@ import type {
     IMutualFundPrintRequest,
     IMutualFundRequest,
     IMutualFundView,
-} from './mutual-fund.types'
+} from '@ecoop/savings-investments/models'
 
 const {
     apiCrudHooks,

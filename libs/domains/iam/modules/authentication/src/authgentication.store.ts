@@ -10,9 +10,9 @@ import {
 } from '@ecoop/domains/iam/modules/permission'
 import { create } from 'zustand'
 
-import type { IUserOrganization } from '../user-organization/user-organization.types'
-import type { IUserBase } from '../user/user.types'
-import type { IAuthContext } from './authentication.types'
+import type { IUserOrganization } from '@ecoop/iam/models'
+import type { IUserBase } from '@ecoop/iam/models'
+import type { IAuthContext } from '@ecoop/iam/models'
 
 type TAuthStoreStatus = 'loading' | 'authorized' | 'unauthorized' | 'error'
 

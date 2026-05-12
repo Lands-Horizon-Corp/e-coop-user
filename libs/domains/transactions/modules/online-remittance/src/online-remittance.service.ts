@@ -8,7 +8,7 @@ import type { TEntityId } from '@ecoop/shared/types'
 import type {
     IOnlineRemittance,
     IOnlineRemittanceRequest,
-} from './online-remittance.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

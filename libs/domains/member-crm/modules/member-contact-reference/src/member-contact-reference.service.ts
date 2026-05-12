@@ -6,7 +6,7 @@ import type { TEntityId } from '@ecoop/shared/types'
 import type {
     IMemberContactReference,
     IMemberContactReferenceRequest,
-} from './member-contact-reference.types'
+} from '@ecoop/member-crm/models'
 
 // Create the base data layer factory
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<

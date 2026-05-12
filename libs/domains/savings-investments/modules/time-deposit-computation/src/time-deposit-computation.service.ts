@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     ITimeDepositComputation,
     ITimeDepositComputationRequest,
-} from './time-deposit-computation.types'
+} from '@ecoop/savings-investments/models'
 
 const {
     apiCrudHooks,

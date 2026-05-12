@@ -4,7 +4,7 @@ import type {
     ILoanTransactionStatusDates,
     TLoanStatusType,
     TORLoanVoucherSettings,
-} from './loan-transaction.types'
+} from '@ecoop/loans/models'
 
 export const resolveLoanDatesToStatus = (
     dates: ILoanTransactionStatusDates

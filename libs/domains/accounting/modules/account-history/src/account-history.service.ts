@@ -11,7 +11,7 @@ import type {
     IAccountHistoryRequest,
 } from '../account-history'
 import { accountBaseQueryKey } from '../account/account.service'
-import type { IAccount } from '../account/account.types'
+import type { IAccount } from '@ecoop/accounting/models'
 
 const {
     apiCrudHooks,

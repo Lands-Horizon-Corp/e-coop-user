@@ -1,7 +1,7 @@
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-import type { IFeedback, IFeedbackRequest } from './feedback.types'
+import type { IFeedback, IFeedbackRequest } from '@ecoop/communications/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IFeedback,

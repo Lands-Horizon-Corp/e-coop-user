@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IFinesMaturity,
     IFinesMaturityRequest,
-} from './fines-maturity.types'
+} from '@ecoop/rates-computations/models'
 
 const {
     apiCrudHooks,

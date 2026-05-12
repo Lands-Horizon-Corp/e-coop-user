@@ -1,4 +1,4 @@
-import type { IAccount } from '../account/account.types'
+import type { IAccount } from '@ecoop/accounting/models'
 
 export const canAddMemberProfile = (account?: IAccount) => {
     if (!account) return false

@@ -9,7 +9,7 @@ import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 import type {
     IMemberClassificationHistory,
     IMemberClassificationHistoryPaginated,
-} from './member-classification-history.types'
+} from '@ecoop/member-crm/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberClassificationHistory,

@@ -13,7 +13,7 @@ import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 import type {
     ICashCount,
     ICashCountBatchRequest,
-} from '../cash-count/cash-count.types'
+} from '@ecoop/transactions/models'
 import type {
     ITransactionBatch,
     ITransactionBatchDepositInBankRequest,
@@ -24,7 +24,7 @@ import type {
     ITransactionBatchRequest,
     ITransactionBatchSignatures,
     TTransactionBatchFullorMin,
-} from './transaction-batch.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

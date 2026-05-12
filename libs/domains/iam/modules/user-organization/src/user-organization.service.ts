@@ -14,9 +14,9 @@ import {
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 import { getBranchesByOrganizationId } from '../branch/branch.service'
-import type { IBranch } from '../branch/branch.types'
+import type { IBranch } from '@ecoop/iam/models'
 import { employeeBaseKey } from '../employee/employee.service'
-import type { IUserBase } from '../user/user.types'
+import type { IUserBase } from '@ecoop/iam/models'
 import type {
     IOrgUserOrganizationGroup,
     IUserOrganization,
@@ -24,7 +24,7 @@ import type {
     IUserOrganizationPermissionRequest,
     IUserOrganizationSettings,
     IUserOrganizationTimeMachine,
-} from './user-organization.types'
+} from '@ecoop/iam/models'
 
 export const { apiCrudHooks, apiCrudService, baseQueryKey } =
     createDataLayerFactory<IUserOrganization, void>({

@@ -21,9 +21,9 @@ import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 import type {
     IUserOrganization,
     IUserOrganizationPaginated,
-} from '../user-organization/user-organization.types'
-import type { IEmployee } from '../user/user.types'
-import type { IEmployeeCreateRequest } from './employee.types'
+} from '@ecoop/iam/models'
+import type { IEmployee } from '@ecoop/iam/models'
+import type { IEmployeeCreateRequest } from '@ecoop/iam/models'
 
 /**
  * 👻 Ghost Module: Employee

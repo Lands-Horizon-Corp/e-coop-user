@@ -1,7 +1,7 @@
-import type { IAccount } from '../account/account.types'
+import type { FINANCIAL_STATEMENT_TYPE } from '@ecoop/domains/accounting/models'
 import type { IAuditable, ITimeStamps, TEntityId } from '@ecoop/shared/types'
 
-import type { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
+import type { IAccount } from '../account/account.types'
 import type { IFinancialStatementDefinitionSchema } from './financial-statement-definition.validation'
 
 export type TFinancialStatementType = (typeof FINANCIAL_STATEMENT_TYPE)[number]

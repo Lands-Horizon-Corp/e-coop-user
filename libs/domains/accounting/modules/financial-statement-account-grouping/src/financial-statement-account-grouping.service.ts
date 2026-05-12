@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IFinancialStatementAccountGrouping,
     IFinancialStatementAccountGroupingRequest,
-} from './financial-statement-account-grouping.types'
+} from '@ecoop/accounting/models'
 
 const { apiCrudHooks } = createDataLayerFactory<
     IFinancialStatementAccountGrouping,

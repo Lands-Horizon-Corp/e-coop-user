@@ -1,6 +1,6 @@
 import { buildOR } from '../or-builder/or-builder.utils'
 
-import type { TORCashCheckSettings } from './cash-check-voucher.types'
+import type { TORCashCheckSettings } from '@ecoop/transactions/models'
 
 export const isAllowedInputCashCheckOR = (orOptions?: TORCashCheckSettings) => {
     if (!orOptions) return true

@@ -1,7 +1,7 @@
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-import type { IFunds, IFundsRequest } from './funds.types'
+import type { IFunds, IFundsRequest } from '@ecoop/savings-investments/models'
 
 const {
     apiCrudHooks,

@@ -1,7 +1,7 @@
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-import type { ITagTemplate, ITagTemplateRequest } from '../tag-template'
+import type { ITagTemplate, ITagTemplateRequest } from './tag-template.types'
 
 const {
     apiCrudHooks,

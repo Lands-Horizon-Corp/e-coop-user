@@ -1,12 +1,11 @@
 import { z } from 'zod'
 
+import { FINANCIAL_STATEMENT_TYPE } from '@ecoop/domains/accounting/models'
 import {
     descriptionSchema,
     descriptionTransformerSanitizer,
     entityIdSchema,
 } from '@ecoop/shared/validation'
-
-import { FINANCIAL_STATEMENT_TYPE } from './financial-statement-definition.constants'
 
 export const FinancialStatementTypeSchema = z.enum(FINANCIAL_STATEMENT_TYPE)
 

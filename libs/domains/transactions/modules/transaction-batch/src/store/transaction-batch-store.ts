@@ -3,7 +3,7 @@ import { create } from 'zustand'
 import type {
     ITransactionBatch,
     ITransactionBatchMinimal,
-} from '../transaction-batch.types'
+} from '@ecoop/transactions/models'
 
 interface ITransactionBatchStoreContent {
     data: ITransactionBatch | ITransactionBatchMinimal | null

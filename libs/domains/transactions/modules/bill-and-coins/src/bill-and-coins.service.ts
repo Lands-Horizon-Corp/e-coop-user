@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IBillsAndCoin,
     IBillsAndCoinRequest,
-} from './bill-and-coins.types'
+} from '@ecoop/transactions/models'
 
 const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory<
     IBillsAndCoin,

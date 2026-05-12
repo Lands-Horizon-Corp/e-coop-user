@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     ILoanGuaranteedFundPerMonth,
     ILoanGuaranteedFundPerMonthRequest,
-} from './loan-guaranteed-fund-per-month.types'
+} from '@ecoop/loans/models'
 
 const {
     apiCrudHooks,

@@ -11,7 +11,7 @@ import type {
     IGeneralLedgerPaginated,
     IMemberGeneralLedgerTotal,
     TEntryType,
-} from './general-ledger.types'
+} from '@ecoop/accounting/models'
 
 // ⚙️🛠️ API SERVICE HERE
 

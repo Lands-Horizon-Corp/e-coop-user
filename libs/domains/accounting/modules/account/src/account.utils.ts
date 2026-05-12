@@ -1,6 +1,5 @@
+import type { IAccount, TAccountType } from '@ecoop/domains/accounting/models'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type { IAccount, TAccountType } from './account.types'
 
 export const getAccountTypePriority = (accountType: TAccountType) => {
     switch (accountType) {

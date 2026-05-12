@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IPostDatedCheck,
     IPostDatedCheckRequest,
-} from './post-dated-check.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

@@ -7,11 +7,11 @@ import { createAPIRepository } from '@ecoop/shared/repositories'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
-import type { IMemberGeneralLedgerTotal } from '../general-ledger/general-ledger.types'
+import type { IMemberGeneralLedgerTotal } from '@ecoop/accounting/models'
 import type {
     IMemberAccountingLedgerPaginated,
     IMemberAccountingLedgerTotal,
-} from '../member-account-ledger/member-account-ledger.types'
+} from '@ecoop/accounting/models'
 
 // ⚙️🛠️ API SERVICE HERE
 

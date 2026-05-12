@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IVoucherPayTo,
     IVoucherPayToRequest,
-} from './voucher-pay-to.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

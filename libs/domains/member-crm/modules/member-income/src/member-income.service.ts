@@ -3,7 +3,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
-import type { IMemberIncome, IMemberIncomeRequest } from './member-income.types'
+import type { IMemberIncome, IMemberIncomeRequest } from '@ecoop/member-crm/models'
 
 // Create the base data layer factory
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<

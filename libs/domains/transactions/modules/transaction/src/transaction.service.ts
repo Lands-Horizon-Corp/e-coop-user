@@ -18,14 +18,14 @@ import type {
     IPaymentQuickRequest,
     IPaymentRequest,
     TPaymentMode,
-} from '../quick-transfer/quick-transfer.types'
+} from '@ecoop/transactions/models'
 import type {
     ITransaction,
     ITransactionRequest,
     TCreateTransactionPaymentProps,
     TTransactionRequest,
     TUpdateReferenceNumberProps,
-} from './transaction.types'
+} from '@ecoop/transactions/models'
 
 export const {
     apiCrudHooks,

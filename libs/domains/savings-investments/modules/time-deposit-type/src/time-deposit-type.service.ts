@@ -6,7 +6,7 @@ import type {
     ITimeDepositType,
     ITimeDepositTypeCreateRequest,
     ITimeDepositTypeRequest,
-} from './time-deposit-type.types'
+} from '@ecoop/savings-investments/models'
 
 const {
     apiCrudHooks,

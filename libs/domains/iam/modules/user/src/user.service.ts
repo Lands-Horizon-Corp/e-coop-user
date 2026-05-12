@@ -6,7 +6,7 @@ import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
-import type { IUserBase } from './user.types'
+import type { IUserBase } from '@ecoop/iam/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IUserBase,

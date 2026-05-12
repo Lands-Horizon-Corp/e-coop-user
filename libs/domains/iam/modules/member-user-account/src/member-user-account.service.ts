@@ -8,7 +8,7 @@ import {
 } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
-import type { IMemberProfileUserAccountRequest } from './member-user-account.types'
+import type { IMemberProfileUserAccountRequest } from '@ecoop/iam/models'
 
 const { API, route } = apiCrudService
 

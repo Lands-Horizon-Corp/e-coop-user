@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IInterestRateByTerm,
     IInterestRateByTermRequest,
-} from './interest-rate-by-term.types'
+} from '@ecoop/rates-computations/models'
 
 const {
     apiCrudHooks,

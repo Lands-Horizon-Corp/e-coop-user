@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     ITransactionTag,
     ITransactionTagRequest,
-} from './transaction-tag.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

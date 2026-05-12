@@ -10,7 +10,7 @@ import {
 } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
-import type { ILoanGuide } from '../loan-guide/loan-guide.types'
+import type { ILoanGuide } from '@ecoop/loans/models'
 // import { IAmortizationSchedule } from '../amortization'
 import type {
     IAllMembersLoanSummaryResponse,

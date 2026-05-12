@@ -10,7 +10,7 @@ import type {
     IDisbursementTransaction,
     IDisbursementTransactionPaginated,
     IDisbursementTransactionRequest,
-} from './disbursement-transaction.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

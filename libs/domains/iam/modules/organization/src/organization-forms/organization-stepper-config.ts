@@ -2,7 +2,7 @@ import type { Path } from 'react-hook-form'
 
 import type { StepConfig, StepValidation } from '@ecoop/ui/core'
 
-import type { TOrganizationSchema } from '../organization.validation'
+import type { TOrganizationSchema } from '@ecoop/iam/models'
 
 export const organizationSteps: StepConfig[] = [
     {

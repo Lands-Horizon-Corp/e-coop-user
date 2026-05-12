@@ -1,7 +1,7 @@
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-import type { IDisbursement, IDisbursementRequest } from './disbursement.types'
+import type { IDisbursement, IDisbursementRequest } from '@ecoop/transactions/models'
 
 const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory<
     IDisbursement,

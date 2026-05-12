@@ -1,7 +1,7 @@
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-import type { IContactUs, IContactUsRequest } from './contact-us.types'
+import type { IContactUs, IContactUsRequest } from '@ecoop/communications/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IContactUs,

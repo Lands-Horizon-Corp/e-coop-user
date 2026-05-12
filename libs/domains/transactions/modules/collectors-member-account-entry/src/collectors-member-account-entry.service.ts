@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     ICollectorsMemberAccountEntry,
     ICollectorsMemberAccountEntryRequest,
-} from './collectors-member-account-entry.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

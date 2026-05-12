@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-import type { IUserProfileInactivitySettings } from '../user-profile.types'
+import type { IUserProfileInactivitySettings } from '@ecoop/iam/models'
 
 type userActivityState = 'active' | 'inactive'
 

@@ -1,7 +1,7 @@
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-import type { IMemberGroup, IMemberGroupRequest } from './member-group.types'
+import type { IMemberGroup, IMemberGroupRequest } from '@ecoop/member-crm/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberGroup,

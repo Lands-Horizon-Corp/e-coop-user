@@ -13,7 +13,7 @@ import type {
     ILoanTransactionEntry,
     ILoanTransactionEntryRequest,
 } from '../loan-transaction-entry'
-import type { ILoanTransaction } from '../loan-transaction/loan-transaction.types'
+import type { ILoanTransaction } from '@ecoop/loans/models'
 
 const {
     apiCrudHooks,

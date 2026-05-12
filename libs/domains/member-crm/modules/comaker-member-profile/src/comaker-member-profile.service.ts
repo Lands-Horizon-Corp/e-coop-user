@@ -8,7 +8,7 @@ import type { TEntityId } from '@ecoop/shared/types'
 import type {
     IComakerMemberProfile,
     IComakerMemberProfileRequest,
-} from './comaker-member-profile.types'
+} from '@ecoop/member-crm/models'
 
 const {
     apiCrudHooks,

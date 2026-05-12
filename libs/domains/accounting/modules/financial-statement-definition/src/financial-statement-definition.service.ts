@@ -1,11 +1,10 @@
-import { Logger } from '@ecoop/shared/loggers'
-
-import { createGLSFSService } from '../gl-fs/gl-fs.services'
-import type { ConnectAccountType } from '../gl-fs/gl-fs.types'
 import type {
     IFinancialStatementDefinition,
     IFinancialStatementDefinitionRequest,
-} from './financial-statement-definition.types'
+} from '@ecoop/domains/accounting/models'
+import type { ConnectAccountType } from '@ecoop/domains/accounting/models'
+import { createGLSFSService } from '@ecoop/domains/accounting/modules/gl-fs'
+import { Logger } from '@ecoop/shared/loggers'
 
 export const {
     useCreate,

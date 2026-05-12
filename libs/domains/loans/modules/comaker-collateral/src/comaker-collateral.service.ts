@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IComakerCollateral,
     IComakerCollateralRequest,
-} from './comaker-collateral.types'
+} from '@ecoop/loans/models'
 
 const {
     apiCrudHooks,

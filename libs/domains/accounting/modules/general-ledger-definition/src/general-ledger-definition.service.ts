@@ -1,11 +1,11 @@
 import { Logger } from '@ecoop/shared/loggers'
 
 import { createGLSFSService } from '../gl-fs/gl-fs.services'
-import type { ConnectAccountType } from '../gl-fs/gl-fs.types'
+import type { ConnectAccountType } from '@ecoop/accounting/models'
 import type {
     IGeneralLedgerDefinition,
     IGeneralLedgerDefinitionRequest,
-} from './general-ledger-definition.types'
+} from '@ecoop/accounting/models'
 
 export const {
     useCreate,

@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IGeneralLedgerAccountGrouping,
     IGeneralLedgerAccountGroupingRequest,
-} from './general-ledger-account-grouping.types'
+} from '@ecoop/accounting/models'
 
 const { apiCrudHooks } = createDataLayerFactory<
     IGeneralLedgerAccountGrouping,

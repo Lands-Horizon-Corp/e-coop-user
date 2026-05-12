@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IOrganizationDailyUsage,
     IOrganizationDailyUsageRequest,
-} from './orgnaization-daily-usage.types'
+} from '@ecoop/iam/models'
 
 const {
     apiCrudHooks,

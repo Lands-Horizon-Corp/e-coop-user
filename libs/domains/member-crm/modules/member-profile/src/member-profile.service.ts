@@ -20,8 +20,8 @@ import type {
     IMemberProfileQuickCreateRequest,
     IMemberProfileQuickSearchResponse,
     IMemberProfileRequest,
-} from './member-profile.types'
-import type { TMemberProfileCoordinatesSchema } from './member-profile.validation'
+} from '@ecoop/member-crm/models'
+import type { TMemberProfileCoordinatesSchema } from '@ecoop/member-crm/models'
 
 export const {
     apiCrudHooks,

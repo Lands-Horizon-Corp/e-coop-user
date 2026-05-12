@@ -5,7 +5,7 @@ import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
-import type { IAccounTagRequest, IAccountTag } from './account-tag.types'
+import type { IAccounTagRequest, IAccountTag } from '@ecoop/accounting/models'
 
 const {
     apiCrudHooks,

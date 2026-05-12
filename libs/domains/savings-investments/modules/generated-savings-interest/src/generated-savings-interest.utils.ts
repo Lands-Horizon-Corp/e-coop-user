@@ -1,4 +1,4 @@
-import type { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from './generated-savings-interest.constants'
+import type { GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES } from '@ecoop/savings-investments/models'
 
 export const COMPUTATION_TYPE_LABELS: Record<
     (typeof GENERATED_INTEREST_SAVINGS_COMPUTATION_TYPES)[number],

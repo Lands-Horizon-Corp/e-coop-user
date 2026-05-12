@@ -1,11 +1,11 @@
 import { toast } from 'sonner'
 
 import { arrayMove } from '@dnd-kit/sortable'
-import type { IAccount } from '../../../account/account.types'
+import type { IAccount } from '@ecoop/accounting/models'
 import type { UpdateAccountOrder } from '@ecoop/shared/types'
 import { create } from 'zustand'
 
-import type { IGeneralLedgerDefinition } from '../../general-ledger-definition.types'
+import type { IGeneralLedgerDefinition } from '@ecoop/accounting/models'
 
 export interface GLFSStoreProps {
     generalLedgerDefinitions: IGeneralLedgerDefinition[]

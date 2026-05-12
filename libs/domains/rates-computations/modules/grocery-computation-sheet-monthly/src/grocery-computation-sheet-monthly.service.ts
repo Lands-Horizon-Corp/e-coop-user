@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IGroceryComputationSheetMonthly,
     IGroceryComputationSheetMonthlyRequest,
-} from './grocery-computation-sheet-monthly.types'
+} from '@ecoop/rates-computations/models'
 
 const {
     apiCrudHooks,

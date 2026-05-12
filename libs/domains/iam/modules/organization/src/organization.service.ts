@@ -15,7 +15,7 @@ import type {
     IOrganizationEditRequest,
     IOrganizationRequest,
     IOrganizationWithPolicies,
-} from './organization.types'
+} from '@ecoop/iam/models'
 
 const {
     apiCrudHooks,

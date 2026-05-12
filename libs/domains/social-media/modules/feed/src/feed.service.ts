@@ -7,7 +7,7 @@ import type { IFeed, IFeedRequest } from '../feed'
 import type {
     IFeedComment,
     IFeedCommentRequest,
-} from '../feed-comment/feed-comment.types'
+} from '@ecoop/social-media/models'
 
 const {
     apiCrudHooks,

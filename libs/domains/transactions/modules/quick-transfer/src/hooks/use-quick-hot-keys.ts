@@ -4,7 +4,7 @@ import { toast } from 'sonner'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useQuickTransferContext } from '../context/quick-transfer-context'
-import type { TQuickWithdrawSchemaFormValues } from '../quick-transfer.validation'
+import type { TQuickWithdrawSchemaFormValues } from '@ecoop/transactions/models'
 
 interface QuickTransferHotkeyProps {
     form: UseFormReturn<TQuickWithdrawSchemaFormValues>

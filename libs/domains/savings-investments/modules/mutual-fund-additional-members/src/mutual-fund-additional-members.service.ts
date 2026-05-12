@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IMutualFundAdditionalMembers,
     IMutualFundAdditionalMembersRequest,
-} from './mutual-fund-additional-members.types'
+} from '@ecoop/savings-investments/models'
 
 const {
     apiCrudHooks,

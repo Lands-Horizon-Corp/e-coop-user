@@ -235,10 +235,10 @@ export interface IAccount<
     account_history_id?: TEntityId
 }
 
-export interface IAccountHistory extends IAccount {
-    account_id: TEntityId
-    account: IAccount
-}
+// export interface IAccountHistory extends IAccount {
+//     account_id: TEntityId
+//     account: IAccount
+// }
 
 // FOR US TO REMEMBER
 // interest_secured?: number - WALA NATO DI NADAW GAGMITIN

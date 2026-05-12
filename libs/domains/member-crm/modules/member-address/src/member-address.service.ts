@@ -6,7 +6,7 @@ import type { TEntityId } from '@ecoop/shared/types'
 import type {
     IMemberAddress,
     IMemberAddressRequest,
-} from './member-address.types'
+} from '@ecoop/member-crm/models'
 
 // Create the base data layer factory
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<

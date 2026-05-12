@@ -10,7 +10,7 @@ import type {
     IGovernmentId,
     IMemberGovernmentBenefit,
     IMemberGovernmentBenefitRequest,
-} from './member-government-benefit.types'
+} from '@ecoop/member-crm/models'
 
 // Create the base data layer factory
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<

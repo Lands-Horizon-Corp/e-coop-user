@@ -10,7 +10,7 @@ import type {
     ISubscriptionPlan,
     ISubscriptionPlanRequest,
     TSubscriptionPlanMode,
-} from './subscription-plan.types'
+} from '@ecoop/iam/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     ISubscriptionPlan,

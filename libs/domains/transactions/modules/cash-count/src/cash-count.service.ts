@@ -5,7 +5,7 @@ import type {
     ICashCount,
     ICashCountBatchRequest,
     ICashCountRequest,
-} from './cash-count.types'
+} from '@ecoop/transactions/models'
 
 const {
     apiCrudHooks,

@@ -1,3 +1,7 @@
+import type {
+    ConnectAccountType,
+    CreateAPIProps,
+} from '@ecoop/domains/accounting/models'
 import {
     createMutationFactory,
     createMutationInvalidateFn,
@@ -5,8 +9,6 @@ import {
 import { createAPIRepository } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId, UdpateGeneralLedgerOrder } from '@ecoop/shared/types'
-
-import type { ConnectAccountType, CreateAPIProps } from './gl-fs.types'
 
 export const createGLSFSService = <
     TResponse extends { id: TEntityId },

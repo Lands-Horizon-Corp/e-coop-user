@@ -7,7 +7,7 @@ import { createAPIRepository } from '@ecoop/shared/repositories'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
 
-import type { IUserBase } from '../user/user.types'
+import type { IUserBase } from '@ecoop/iam/models'
 import type {
     IAuthContext,
     IChangePasswordRequest,
@@ -20,7 +20,7 @@ import type {
     IVerificationPasswordRequest,
     IVerifyContactNumberRequest,
     IVerifyEmailRequest,
-} from './authentication.types'
+} from '@ecoop/iam/models'
 
 const { API, route: authenticationAPIRoute } = createAPIRepository(
     '/api/v1/authentication'

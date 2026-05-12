@@ -1,15 +1,14 @@
 import qs from 'query-string'
 
+import type {
+    IAccountCategory,
+    IAccountCategoryRequest,
+} from '@ecoop/domains/accounting/models'
 import { downloadFile } from '@ecoop/shared/helpers/core-helpers'
 import { Logger } from '@ecoop/shared/loggers'
 import { createAPIRepository } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IAccountCategory,
-    IAccountCategoryRequest,
-} from './account-category.types'
 
 const { apiCrudHooks } = createDataLayerFactory<
     IAccountCategory,

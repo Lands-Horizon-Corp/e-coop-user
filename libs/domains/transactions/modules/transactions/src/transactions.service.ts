@@ -5,7 +5,7 @@ import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions } from '@ecoop/shared/types'
 
-import type { ITransactionPaginated } from '../transaction/transaction.types'
+import type { ITransactionPaginated } from '@ecoop/transactions/models'
 
 export type TTransactionHookMode =
     | 'current-branch'

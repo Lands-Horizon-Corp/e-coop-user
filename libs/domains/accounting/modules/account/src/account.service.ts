@@ -2,17 +2,7 @@ import { useMutation, useQueryClient } from '@tanstack/react-query'
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { downloadFile } from '@ecoop/shared/helpers/core-helpers'
-import { Logger } from '@ecoop/shared/loggers'
-import type { HookQueryOptions } from '@ecoop/shared/repositories'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-import {
-    createMutationFactory,
-    updateMutationInvalidationFn,
-} from '@ecoop/shared/repositories'
-import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
-import type { TGeneralLedgerType } from '../general-ledger/general-ledger.types'
+import type { TGeneralLedgerType } from '@ecoop/domains/accounting/models'
 import type {
     IAccount,
     IAccountPaginated,
@@ -23,7 +13,16 @@ import type {
     TDeleteAccountFromGLFSType,
     TGetAllAccountMode,
     TPaginatedAccountHookMode,
-} from './account.types'
+} from '@ecoop/domains/accounting/models'
+import { downloadFile } from '@ecoop/shared/helpers/core-helpers'
+import { Logger } from '@ecoop/shared/loggers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import {
+    createMutationFactory,
+    updateMutationInvalidationFn,
+} from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 const { baseQueryKey, apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IAccount,

@@ -1,4 +1,4 @@
-import type { MUTUAL_FUND_COMPUTATION_TYPES } from './mutual-fund.constants'
+import type { MUTUAL_FUND_COMPUTATION_TYPES } from '@ecoop/savings-investments/models'
 
 export const MUTUAL_FUND_COMPUTATION_TYPE_LABELS: Record<
     (typeof MUTUAL_FUND_COMPUTATION_TYPES)[number],

@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IGeneralLedgerTag,
     IGeneralLedgerTagRequest,
-} from './general-accounting-ledger-tag.types'
+} from '@ecoop/accounting/models'
 
 const {
     apiCrudHooks,

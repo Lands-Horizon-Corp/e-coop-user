@@ -4,7 +4,7 @@ import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type {
     IGeneralAccountGroupingNetSurplusNegative,
     IGeneralAccountGroupingNetSurplusNegativeRequest,
-} from './general-account-grouping-net-surplus-negative.types'
+} from '@ecoop/accounting/models'
 
 const {
     apiCrudHooks,

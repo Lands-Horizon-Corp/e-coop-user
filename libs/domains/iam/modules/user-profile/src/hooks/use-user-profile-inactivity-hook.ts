@@ -8,13 +8,13 @@ import {
     ACTIVITY_STORAGE_KEY,
     INACTIVITY_SETTINGS_KEY,
     POLLING_INTERVAL,
-} from '../user-profile.constants'
+} from '@ecoop/iam/models'
 import { logger } from '../user-profile.service'
 import type {
     IUserProfileInactivitySettings,
     TInactivityTimeUnit,
-} from '../user-profile.types'
-import type { TUserProfileInactivitySettings } from '../user-profile.validation'
+} from '@ecoop/iam/models'
+import type { TUserProfileInactivitySettings } from '@ecoop/iam/models'
 
 export const DEFAULT_INACTIVITY_SETTINGS: TUserProfileInactivitySettings = {
     enabled: false,

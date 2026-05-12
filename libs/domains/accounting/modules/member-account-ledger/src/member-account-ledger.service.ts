@@ -1,7 +1,7 @@
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
-import type { IMemberAccountingLedger } from './member-account-ledger.types'
+import type { IMemberAccountingLedger } from '@ecoop/accounting/models'
 
 const {
     apiCrudHooks,
