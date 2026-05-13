@@ -1,13 +1,14 @@
-import type { IUser } from '../user/user.types'
 import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
-export interface IUserRatingRequest {
-    id?: TEntityId
-    ratee_user_id: TEntityId
-    rater_user_id: TEntityId
-    rate: number
-    remark?: string
-}
+import type { IUser } from '../user/user.types'
+
+// export interface IUserRatingRequest {
+//     id?: TEntityId
+//     ratee_user_id: TEntityId
+//     rater_user_id: TEntityId
+//     rate: number
+//     remark?: string
+// }
 
 export interface IUserRating extends IBaseEntityMeta {
     id: TEntityId

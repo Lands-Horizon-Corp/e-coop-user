@@ -3,12 +3,12 @@ import type { IBaseEntityMeta, TEntityId } from '@ecoop/shared/types'
 
 import type { IMemberProfile } from '../member-profile/member-profile.types'
 
-export interface IMemberIncomeRequest {
-    media_id?: TEntityId
-    name: string
-    amount: number
-    release_date?: string
-}
+// export interface IMemberIncomeRequest {
+//     media_id?: TEntityId
+//     name: string
+//     amount: number
+//     release_date?: string
+// }
 
 export interface IMemberIncome extends IBaseEntityMeta {
     id: TEntityId

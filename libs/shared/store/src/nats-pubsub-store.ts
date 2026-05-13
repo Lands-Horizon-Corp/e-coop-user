@@ -1,9 +1,4 @@
-import {
-    env.IS_STAGING,
-    env.SOKETI_HOST,
-    env.SOKETI_KEY,
-    env.SOKETI_PORT,
-} from '@ecoop/shared/constants'
+import { env } from '@ecoop/shared/constants'
 import { Logger } from '@ecoop/shared/loggers'
 import Pusher, { type Options } from 'pusher-js'
 import { create } from 'zustand'

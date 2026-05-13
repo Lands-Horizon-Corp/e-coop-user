@@ -1,42 +1,44 @@
+// parehas na sa member-accounting-ledger
+
 // import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
-import type {
-    IBaseEntityMeta,
-    IPaginatedResult,
-    TEntityId,
-} from '@ecoop/shared/types'
+// import type {
+//     IBaseEntityMeta,
+//     IPaginatedResult,
+//     TEntityId,
+// } from '@ecoop/shared/types'
 
-import type { IAccount } from '../account/account.types'
+// import type { IAccount } from '../account/account.types'
 
-export interface IMemberAccountingLedger<
-    IMemberProfile = unknown,
-> extends IBaseEntityMeta {
-    id: TEntityId
+// export interface IMemberAccountingLedger<
+//     IMemberProfile = unknown,
+// > extends IBaseEntityMeta {
+//     id: TEntityId
 
-    member_profile_id: TEntityId
-    member_profile: IMemberProfile
+//     member_profile_id: TEntityId
+//     member_profile: IMemberProfile
 
-    account_id: TEntityId
-    account: IAccount
+//     account_id: TEntityId
+//     account: IAccount
 
-    count: number
-    balance: number
-    interest: number
-    fines: number
-    due: number
+//     count: number
+//     balance: number
+//     interest: number
+//     fines: number
+//     due: number
 
-    carried_forward_due: number
-    stored_value_facility: number
-    principal_due: number
-    last_pay?: string
+//     carried_forward_due: number
+//     stored_value_facility: number
+//     principal_due: number
+//     last_pay?: string
 
-    hold_out?: string
-}
+//     hold_out?: string
+// }
 
-export type IMemberAccountingLedgerPaginated =
-    IPaginatedResult<IMemberAccountingLedger>
+// export type IMemberAccountingLedgerPaginated =
+//     IPaginatedResult<IMemberAccountingLedger>
 
-export interface IMemberAccountingLedgerTotal {
-    total_share_capital_plus_fixed_savings: number
-    total_deposits: number
-    total_loans: number
-}
+// export interface IMemberAccountingLedgerTotal {
+//     total_share_capital_plus_fixed_savings: number
+//     total_deposits: number
+//     total_loans: number
+// }

@@ -1,4 +1,4 @@
-import { env.APP_VERSION } from './envs'
+import { env } from './envs'
 
 export type TSoftwareUpdateEntryStatus = 'general' | 'bug' | 'feature'
 
