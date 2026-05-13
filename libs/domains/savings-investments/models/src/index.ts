@@ -22,3 +22,6 @@ export * from './lib/time-deposit-computation/time-deposit-computation.types'
 export * from './lib/time-deposit-computation/time-deposit-computation.validation'
 export * from './lib/time-deposit-type/time-deposit-type.types'
 export * from './lib/time-deposit-type/time-deposit-type.validation'
+
+export * from '../generated-savings-interest/generated-savings-interest.constant';
+export * from '../mutual-fund/mutual-fund.constant';

@@ -48,7 +48,7 @@ export * from './components/ui/popover'
 export * from './components/ui/progress'
 export * from './components/ui/radio-group'
 export * from './components/ui/random-code'
-export * from './components/ui/re-captcha'
+// export * from './components/ui/re-captcha'
 export * from './components/ui/resizable'
 export * from './components/ui/scroll-area'
 export * from './components/ui/select'
@@ -86,7 +86,7 @@ export * from './components/image-name-display'
 export * from './components/image'
 // export * from './components/live-toggle'
 export * from './components/switch-form-field'
-export * from './components/text-display'
+// export * from './components/text-display'
 
 // ==========================================
 // 📁 COMPONENT SUBFOLDERS
@@ -127,11 +127,11 @@ export * from './components/containers/page-container'
 // export * from './components/data-table'
 
 //date-time-pickers
-export * from './components/date-time-pickers'
+// export * from './components/date-time-pickers'
 
 // footers
-export * from './components/footers/auth-footer'
-export * from './components/footers/common-links'
+// export * from './components/footers/auth-footer'
+// export * from './components/footers/common-links'
 
 // form-components
 // export * from './components/form-components/form-footer-reset-submit'
@@ -216,7 +216,7 @@ export { default as TextEditor } from './components/text-editor'
 export * from './components/text-editor/toolbar'
 
 // text-renderer
-export * from './components/text-renderer'
+// export * from './components/text-renderer'
 
 // theme-toggle
 // export * from './components/theme-toggle'

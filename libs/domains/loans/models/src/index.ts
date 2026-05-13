@@ -37,3 +37,5 @@ export * from './lib/loan-transaction-entry/loan-transaction-entry.types'
 export * from './lib/loan-transaction-entry/loan-transaction-entry.validation'
 export * from './lib/loan-transaction/loan-transaction.types'
 export * from './lib/loan-transaction/loan-transaction.validation'
+
+export * from './lib/loan-transaction/loan.constants';

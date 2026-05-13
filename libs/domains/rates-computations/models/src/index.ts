@@ -41,3 +41,6 @@ export * from './lib/interest-rate-percentage/interest-rate-percentage.validatio
 export * from './lib/interest-rate-scheme/interest-rate-scheme.types'
 export * from './lib/interest-rate-scheme/interest-rate-scheme.validation'
 export * from './lib/member-classification-interest-rate/member-classification-interest-rate.types'
+
+export * from './lib/browse-reference/browse-reference.constant';
+export * from './lib/charges-rate-scheme/charges-rate.constant';

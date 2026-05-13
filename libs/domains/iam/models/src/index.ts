@@ -35,3 +35,5 @@ export * from './lib/user-rating/user-rating.types'
 export * from './lib/user-rating/user-rating.validation'
 export * from './lib/user/user.types'
 export * from './lib/user/user.validation'
+
+export * from './lib/user/user.constants';

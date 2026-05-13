@@ -5,3 +5,6 @@ export * from './lib/feedback/feedback.types'
 export * from './lib/feedback/feedback.validation'
 export * from './lib/notification/notification.types'
 export * from './lib/notification/notification.validation'
+
+export * from '../notification/notification.constant';
+export * from './lib/notification/notification.constant';

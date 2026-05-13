@@ -1,5 +1,5 @@
 // export * from './account.types'
 // export * from './account.validation'
 export * from './account.service'
-export * from './pages'
+// export * from './pages'
 // export * from './account.constants'
