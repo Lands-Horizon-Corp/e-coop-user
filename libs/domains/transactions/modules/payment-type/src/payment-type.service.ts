@@ -1,7 +1,9 @@
+import type {
+    IPaymentType,
+    IPaymentTypeRequest,
+} from '@ecoop/domains/transactions/models'
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
-import type { IPaymentType, IPaymentTypeRequest } from '@ecoop/transactions/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IPaymentType,

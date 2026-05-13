@@ -7,17 +7,17 @@ import { toast } from 'sonner'
 import { standardSchemaResolver } from '@hookform/resolvers/standard-schema'
 
 import { useAuthUserWithOrgBranch } from '@ecoop/domains/iam/models'
-import { useTransactionBatchStore } from '../../transaction-batch/store/transaction-batch-store'
+import type { TTransactionFormSchema } from '@ecoop/domains/transactions/models'
+import { TransactionFromSchema } from '@ecoop/domains/transactions/models'
 import { useModalState } from '@ecoop/shared/hooks'
 import { useQeueryHookCallback } from '@ecoop/shared/hooks'
 import { useTransactionReverseSecurityStore } from '@ecoop/shared/store'
 import type { TEntityId } from '@ecoop/shared/types'
 import { useHotkeys } from 'react-hotkeys-hook'
 
+import { useTransactionBatchStore } from '../../transaction-batch/store/transaction-batch-store'
 import { useGetTransactionById } from '../transaction.service'
 import { paymentORResolver } from '../transaction.utils'
-import type { TTransactionFormSchema } from '@ecoop/transactions/models'
-import { TransactionFromSchema } from '@ecoop/transactions/models'
 
 // Navigation helper
 const useTransactionNavigation = (fullPath: string) => {

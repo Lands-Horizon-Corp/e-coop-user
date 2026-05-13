@@ -1,19 +1,9 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { cashCountAPIRoute } from '@ecoop/domains/transactions/modules/cash-count'
-import { Logger } from '@ecoop/shared/loggers'
-import {
-    createMutationFactory,
-    updateMutationInvalidationFn,
-} from '@ecoop/shared/repositories'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-import type { HookQueryOptions } from '@ecoop/shared/repositories'
-import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
 import type {
     ICashCount,
     ICashCountBatchRequest,
-} from '@ecoop/transactions/models'
+} from '@ecoop/domains/transactions/models'
 import type {
     ITransactionBatch,
     ITransactionBatchDepositInBankRequest,
@@ -24,7 +14,16 @@ import type {
     ITransactionBatchRequest,
     ITransactionBatchSignatures,
     TTransactionBatchFullorMin,
-} from '@ecoop/transactions/models'
+} from '@ecoop/domains/transactions/models'
+import { cashCountAPIRoute } from '@ecoop/domains/transactions/modules/cash-count'
+import { Logger } from '@ecoop/shared/loggers'
+import {
+    createMutationFactory,
+    updateMutationInvalidationFn,
+} from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 const {
     apiCrudHooks,

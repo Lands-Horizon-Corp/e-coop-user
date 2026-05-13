@@ -1,10 +1,10 @@
 import type { UseFormReturn } from 'react-hook-form'
 import { toast } from 'sonner'
 
+import type { TQuickWithdrawSchemaFormValues } from '@ecoop/domains/transactions/models'
 import { useHotkeys } from 'react-hotkeys-hook'
 
 import { useQuickTransferContext } from '../context/quick-transfer-context'
-import type { TQuickWithdrawSchemaFormValues } from '@ecoop/transactions/models'
 
 interface QuickTransferHotkeyProps {
     form: UseFormReturn<TQuickWithdrawSchemaFormValues>

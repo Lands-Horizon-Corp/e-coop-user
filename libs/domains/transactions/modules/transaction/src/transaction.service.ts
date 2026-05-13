@@ -2,7 +2,19 @@ import { useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
 import type { IGeneralLedger } from '@ecoop/domains/accounting/models'
-import { generalLedgerBaseKey } from '@ecoop/domains/accounting/models'
+import { generalLedgerBaseKey } from '@ecoop/domains/accounting/modules/general-ledger'
+import type {
+    IPaymentQuickRequest,
+    IPaymentRequest,
+    TPaymentMode,
+} from '@ecoop/domains/transactions/models'
+import type {
+    ITransaction,
+    ITransactionRequest,
+    TCreateTransactionPaymentProps,
+    TTransactionRequest,
+    TUpdateReferenceNumberProps,
+} from '@ecoop/domains/transactions/models'
 import { serverRequestErrExtractor } from '@ecoop/shared/helpers/core-helpers'
 import { withCatchAsync } from '@ecoop/shared/helpers/core-helpers'
 import { Logger } from '@ecoop/shared/loggers'
@@ -13,19 +25,6 @@ import {
     createMutationInvalidateFn,
 } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IPaymentQuickRequest,
-    IPaymentRequest,
-    TPaymentMode,
-} from '@ecoop/transactions/models'
-import type {
-    ITransaction,
-    ITransactionRequest,
-    TCreateTransactionPaymentProps,
-    TTransactionRequest,
-    TUpdateReferenceNumberProps,
-} from '@ecoop/transactions/models'
 
 export const {
     apiCrudHooks,

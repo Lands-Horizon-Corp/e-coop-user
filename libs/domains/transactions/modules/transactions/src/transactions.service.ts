@@ -1,11 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { getPaginated, transactionAPIRoute } from '@ecoop/domains/transactions/modules/transaction'
+import type { ITransactionPaginated } from '@ecoop/domains/transactions/models'
+import {
+    getPaginated,
+    transactionAPIRoute,
+} from '@ecoop/domains/transactions/modules/transaction'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions } from '@ecoop/shared/types'
-
-import type { ITransactionPaginated } from '@ecoop/transactions/models'
 
 export type TTransactionHookMode =
     | 'current-branch'

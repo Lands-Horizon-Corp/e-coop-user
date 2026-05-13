@@ -1,10 +1,9 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     IBillsAndCoin,
     IBillsAndCoinRequest,
-} from '@ecoop/transactions/models'
+} from '@ecoop/domains/transactions/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory<
     IBillsAndCoin,

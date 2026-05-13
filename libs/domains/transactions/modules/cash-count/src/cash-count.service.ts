@@ -1,11 +1,10 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     ICashCount,
     ICashCountBatchRequest,
     ICashCountRequest,
-} from '@ecoop/transactions/models'
+} from '@ecoop/domains/transactions/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const {
     apiCrudHooks,

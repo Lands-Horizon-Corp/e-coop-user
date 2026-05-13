@@ -1,7 +1,9 @@
+import type {
+    IDisbursement,
+    IDisbursementRequest,
+} from '@ecoop/domains/transactions/models'
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
-import type { IDisbursement, IDisbursementRequest } from '@ecoop/transactions/models'
 
 const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory<
     IDisbursement,

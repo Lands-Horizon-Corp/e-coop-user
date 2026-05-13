@@ -1,9 +1,8 @@
-import { create } from 'zustand'
-
 import type {
     ITransactionBatch,
     ITransactionBatchMinimal,
-} from '@ecoop/transactions/models'
+} from '@ecoop/domains/transactions/models'
+import { create } from 'zustand'
 
 interface ITransactionBatchStoreContent {
     data: ITransactionBatch | ITransactionBatchMinimal | null

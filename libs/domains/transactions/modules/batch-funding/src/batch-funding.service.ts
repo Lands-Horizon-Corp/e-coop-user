@@ -1,11 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type {
+    IBatchFunding,
+    IBatchFundingRequest,
+} from '@ecoop/domains/transactions/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
-import type { IBatchFunding, IBatchFundingRequest } from '@ecoop/transactions/models'
 
 const { apiCrudHooks, apiCrudService, baseQueryKey } = createDataLayerFactory<
     IBatchFunding,
