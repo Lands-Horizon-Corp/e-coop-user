@@ -624,9 +624,6 @@
             "@ecoop/platforms/playground": [
                 "libs/platforms/playground/src/index.ts"
             ],
-            "@ecoop/platforms/qr-crypto": [
-                "libs/platforms/qr-crypto/src/index.ts"
-            ],
             "@ecoop/platforms/settings": [
                 "libs/platforms/settings/src/index.ts"
             ],
@@ -667,12 +664,17 @@
             "@ecoop/platforms/qr-crypto/models": [
                 "libs/platforms/qr-crypto/models/src/index.ts"
             ],
-            "@ecoop/ui/ui-footer": ["libs/ui/ui-footer/src/index.ts"],
+     
             "@ecoop/platforms/footstep/models": [
                 "libs/platforms/footstep/models/src/index.ts"
             ],
             "@ecoop/platforms/footstep/modules": [
                 "libs/platforms/footstep/modules/src/index.ts"
+            ],
+            "@ecoop/shared/env-web": ["libs/shared/env-web/src/index.ts"],
+            "@ecoop/platforms/env-web": ["libs/platforms/env-web/src/index.ts"],
+            "@ecoop/platforms/env-mobile": [
+                "libs/platforms/env-mobile/src/index.ts"
             ]
         },
         "strict": true

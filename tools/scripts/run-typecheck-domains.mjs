@@ -65,7 +65,9 @@ const runNxProject = (project) =>
             if (typeof code === 'number' && code === 0) {
                 resolvePromise()
             } else {
-                rejectPromise(new Error(`Nx run failed: ${String(code)}`))
+                rejectPromise(
+                    new Error(`Nx run failed with exit code: ${String(code)}`)
+                )
             }
         })
 
@@ -86,17 +88,49 @@ const main = async () => {
         return
     }
 
+    const failedProjects = [] // Track failed projects
+
+    // Iterate through all projects and catch errors individually
     for (const project of projects) {
-        await runNxProject(project)
+        outputStream.write(`\n[START] Typechecking project: ${project}\n`)
+        try {
+            await runNxProject(project)
+            outputStream.write(`[SUCCESS] Project: ${project}\n`)
+        } catch (error) {
+            outputStream.write(
+                `[ERROR] Project ${project} failed: ${String(error)}\n`
+            )
+            failedProjects.push(project) // Record the failure but don't stop the loop
+        }
     }
 
-    outputStream.end(() => {
-        process.exitCode = 0
-    })
+    // Write a final summary to the file
+    if (failedProjects.length > 0) {
+        outputStream.write('\n=========================================\n')
+        outputStream.write('TYPECHECK COMPLETED WITH ERRORS\n')
+        outputStream.write(
+            `The following ${failedProjects.length} projects failed:\n`
+        )
+        failedProjects.forEach((p) => outputStream.write(`- ${p}\n`))
+        outputStream.write('=========================================\n')
+
+        outputStream.end(() => {
+            process.exitCode = 1 // Fail the CI/script overall since at least one failed
+        })
+    } else {
+        outputStream.write('\n=========================================\n')
+        outputStream.write('ALL PROJECTS TYPECHECKED SUCCESSFULLY\n')
+        outputStream.write('=========================================\n')
+
+        outputStream.end(() => {
+            process.exitCode = 0
+        })
+    }
 }
 
 main().catch((error) => {
-    outputStream.write(`Failed to run typecheck: ${String(error)}\n`)
+    // This now only catches top-level errors (like missing nxBin or unreadable directories)
+    outputStream.write(`Fatal script error: ${String(error)}\n`)
     outputStream.end(() => {
         process.exitCode = 1
     })

@@ -1,31 +1,51 @@
-/// <reference types="vite/client" />
+export interface AppEnvironment {
+    APP_ENV: string
+    APP_VERSION: string
+    API_BASE_URL: string
+    SOKETI_KEY: string
+    SOKETI_HOST: string
+    SOKETI_PORT: number
+    TURNSTILE_CAPTCHA_SITE_KEY: string
+    GOOGLE_MAPS_API_KEY: string
+    GOOGLE_MAPS_MAP_ID: string
+    IS_STAGING: boolean
+}
 
-// App Environment
-export const APP_ENV = import.meta.env['VITE_APP_ENV'] || 'development'
+export let env: AppEnvironment
 
-export const APP_VERSION = import.meta.env['VITE_APP_VERSION'] || '0.0.0'
+export const setEnv = (environment: AppEnvironment) => {
+    env = environment
+}
+//inject nalang sa app
+// import.meta.env sa web and process.env sa mobile,
+// /// <reference types="vite/client" />
 
-// API / BACKEND SERVER
-export const API_URL =
-    import.meta.env['VITE_API_BASE_URL'] || 'http://localhost:8000'
+// // App Environment
+// export const APP_ENV = import.meta.env['VITE_APP_ENV'] || 'development'
 
-// WS
-export const SOKETI_KEY =
-    import.meta.env['VITE_SOKETI_KEY'] ||
-    '8KxrqyQiVuoIbVryU8tTPcoJW9RtAVI8Khqrb5rv3Wb8eW8foXGmxwC0jbgEJvGd'
-export const SOKETI_HOST = import.meta.env['VITE_SOKETI_HOST'] || '127.0.0.1'
-export const SOKETI_PORT = parseInt(
-    import.meta.env['VITE_SOKETI_PORT'] || '6001'
-)
+// export const APP_VERSION = import.meta.env['VITE_APP_VERSION'] || '0.0.0'
 
-// TURNSTILE CAPTCHA
-export const TURNSTILE_CAPTCHA_SITE_KEY =
-    import.meta.env['VITE_TURNSTILE_CAPTCHA_SITE_KEY'] || ''
+// // API / BACKEND SERVER
+// export const API_URL =
+//     import.meta.env['VITE_API_BASE_URL'] || 'http://localhost:8000'
 
-// GOOGLE
-export const GOOGLE_MAPS_API_KEY =
-    import.meta.env['VITE_GOOGLE_MAPS_API_KEY'] || ''
+// // WS
+// export const SOKETI_KEY =
+//     import.meta.env['VITE_SOKETI_KEY'] ||
+//     '8KxrqyQiVuoIbVryU8tTPcoJW9RtAVI8Khqrb5rv3Wb8eW8foXGmxwC0jbgEJvGd'
+// export const SOKETI_HOST = import.meta.env['VITE_SOKETI_HOST'] || '127.0.0.1'
+// export const SOKETI_PORT = parseInt(
+//     import.meta.env['VITE_SOKETI_PORT'] || '6001'
+// )
 
-export const GOOGLE_MAPS_MAP_ID = import.meta.env['VITE_GOOGLE_MAPS_ID'] || ''
+// // TURNSTILE CAPTCHA
+// export const TURNSTILE_CAPTCHA_SITE_KEY =
+//     import.meta.env['VITE_TURNSTILE_CAPTCHA_SITE_KEY'] || ''
 
-export const IS_STAGING = !['development', 'local'].includes(APP_ENV)
+// // GOOGLE
+// export const GOOGLE_MAPS_API_KEY =
+//     import.meta.env['VITE_GOOGLE_MAPS_API_KEY'] || ''
+
+// export const GOOGLE_MAPS_MAP_ID = import.meta.env['VITE_GOOGLE_MAPS_ID'] || ''
+
+// export const IS_STAGING = !['development', 'local'].includes(APP_ENV)
