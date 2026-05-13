@@ -1,7 +1,7 @@
 export interface AppEnvironment {
     APP_ENV: string
     APP_VERSION: string
-    API_BASE_URL: string
+    API_URL: string
     SOKETI_KEY: string
     SOKETI_HOST: string
     SOKETI_PORT: number
@@ -16,8 +16,9 @@ export let env: AppEnvironment
 export const setEnv = (environment: AppEnvironment) => {
     env = environment
 }
-//inject nalang sa app
+//inject nalang sa app gamit env-mobile o env-web
 // import.meta.env sa web and process.env sa mobile,
+
 // /// <reference types="vite/client" />
 
 // // App Environment

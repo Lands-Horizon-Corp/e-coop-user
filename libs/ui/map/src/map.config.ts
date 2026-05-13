@@ -8,7 +8,7 @@
  * defining their own to maintain referential equality.
  */
 
-import { GOOGLE_MAPS_API_KEY } from '@ecoop/shared/constants';
+import { env } from '@ecoop/shared/constants';
 
 /**
  * Google Maps libraries to load.
@@ -26,6 +26,6 @@ export const GOOGLE_MAPS_LIBRARIES: ("places" | "geometry")[] = [
  */
 export const GOOGLE_MAPS_LOADER_CONFIG = {
   id: "google-maps-script",
-  googleMapsApiKey: GOOGLE_MAPS_API_KEY ?? "",
+  googleMapsApiKey: env.GOOGLE_MAPS_API_KEY ?? "",
   libraries: GOOGLE_MAPS_LIBRARIES,
 } as const;

@@ -9,7 +9,7 @@ import {
 
 import { toast } from 'sonner'
 
-import { TURNSTILE_CAPTCHA_SITE_KEY } from '@ecoop/shared/constants'
+import { env } from '@ecoop/shared/constants'
 import {
     Dialog,
     DialogContent,
@@ -77,7 +77,7 @@ const ChatReCaptcha = forwardRef<ChatReCaptchaRef, ChatReCaptchaProps>(
 
         // Initialize Turnstile when component becomes visible
         useEffect(() => {
-            const siteKey = TURNSTILE_CAPTCHA_SITE_KEY
+            const siteKey = env.TURNSTILE_CAPTCHA_SITE_KEY
 
             if (!isVisible) {
                 return

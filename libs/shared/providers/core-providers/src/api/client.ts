@@ -1,13 +1,13 @@
 import type { AxiosInstance } from 'axios'
 import axios from 'axios'
 
-import { API_URL } from '@ecoop/shared/constants'
+import { env } from '@ecoop/shared/constants'
 
 let geoCache: Record<string, string> | null = {}
 let geoPermissionRequested = false
 
 const getDefaultUrl = (): string => {
-    return API_URL?.endsWith('/') ? API_URL : `${API_URL}/`
+    return env.API_URL?.endsWith('/') ? env.API_URL : `${env.API_URL}/`
 }
 
 export const httpClient: AxiosInstance = axios.create({

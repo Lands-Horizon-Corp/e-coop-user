@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState } from 'react'
 
 import { toast } from 'sonner'
 
-import { GOOGLE_MAPS_API_KEY } from '@ecoop/shared/constants'
+import { env } from '@ecoop/shared/constants'
 import { LoadScript } from '@react-google-maps/api'
 
 type MapProviderState = {
@@ -40,7 +40,7 @@ export const MapProvider = ({
 
     let errorMessage: string | undefined
 
-    if (!GOOGLE_MAPS_API_KEY) {
+    if (!env.GOOGLE_MAPS_API_KEY) {
         errorMessage = 'Google Maps API key is missing'
     }
 
@@ -54,7 +54,7 @@ export const MapProvider = ({
             value={{ map, isLoaded, loadError, errorMessage }}
         >
             <LoadScript
-                googleMapsApiKey={GOOGLE_MAPS_API_KEY}
+                googleMapsApiKey={env.GOOGLE_MAPS_API_KEY}
                 loadingElement={<></>}
                 onError={() => {
                     toast.error('Failed to load map, maps may display error.')

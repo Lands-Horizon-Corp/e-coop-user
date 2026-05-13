@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react'
 
-import { APP_VERSION } from '@ecoop/shared/constants'
+import { env } from '@ecoop/shared/constants'
 import { getLocalStorage, setLocalStorage } from '@ecoop/shared/hooks'
 import type {
     ColumnDef,
@@ -23,11 +23,11 @@ interface RowSelectionStateWithData<TData> {
 }
 
 export const buildTableKeyColumnOrder = (key: string[]) => {
-    return `data-table.${APP_VERSION}.${key.join('.')}.column-order`
+    return `data-table.${env.APP_VERSION}.${key.join('.')}.column-order`
 }
 
 export const buildTableKeyColumnVisibility = (key: string[]) => {
-    return `data-table.${APP_VERSION}.${key.join('.')}.column-visibility`
+    return `data-table.${env.APP_VERSION}.${key.join('.')}.column-visibility`
 }
 
 const useDataTableState = <TData extends { id: string | number }>({

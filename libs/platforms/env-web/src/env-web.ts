@@ -4,7 +4,7 @@ export const setupEnvWeb = () => {
     setEnv({
         APP_ENV: import.meta.env['VITE_APP_ENV'] || 'development',
         APP_VERSION: import.meta.env['VITE_APP_VERSION'] || '0.0.0',
-        API_BASE_URL:
+        API_URL:
             import.meta.env['VITE_API_BASE_URL'] || 'http://localhost:8000',
         SOKETI_KEY:
             import.meta.env['VITE_SOKETI_KEY'] ||

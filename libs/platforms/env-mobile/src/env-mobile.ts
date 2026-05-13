@@ -4,8 +4,7 @@ export const setupEnvMobile = () => {
     setEnv({
         APP_ENV: process.env['LYNX_APP_ENV'] || 'development',
         APP_VERSION: process.env['LYNX_APP_VERSION'] || '0.0.0',
-        API_BASE_URL:
-            process.env['LYNX_API_BASE_URL'] || 'http://localhost:8000',
+        API_URL: process.env['LYNX_API_BASE_URL'] || 'http://localhost:8000',
         SOKETI_KEY:
             process.env['LYNX_SOKETI_KEY'] ||
             '8KxrqyQiVuoIbVryU8tTPcoJW9RtAVI8Khqrb5rv3Wb8eW8foXGmxwC0jbgEJvGd',

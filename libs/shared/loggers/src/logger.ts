@@ -1,5 +1,5 @@
 import { createFootstep } from '@ecoop/platforms/footstep/modules'
-import { IS_STAGING } from '@ecoop/shared/constants'
+import { env } from '@ecoop/shared/constants'
 import type { TFootstepLevel } from '@ecoop/shared/types'
 
 /* eslint-disable no-console */
@@ -21,7 +21,7 @@ class Logger {
     public debug: LogMethod
 
     private constructor(module?: string, footstep = true) {
-        this.isDevelopment = !IS_STAGING
+        this.isDevelopment = !env.IS_STAGING
         this.module = module
 
         if (!Logger.hasLoggedAsciiArt && !this.isDevelopment) {
@@ -129,11 +129,22 @@ class Logger {
                     footstep
                 )
             }
-            console.log = (..._args) => {}
-            console.warn = (..._args) => {}
-            console.error = (..._args) => {}
-            console.info = (..._args) => {}
-            console.debug = (..._args) => {}
+
+            console.log = (..._args) => {
+                /* intentional no-op */
+            }
+            console.warn = (..._args) => {
+                /* intentional no-op */
+            }
+            console.error = (..._args) => {
+                /* intentional no-op */
+            }
+            console.info = (..._args) => {
+                /* intentional no-op */
+            }
+            console.debug = (..._args) => {
+                /* intentional no-op */
+            }
         }
     }
 

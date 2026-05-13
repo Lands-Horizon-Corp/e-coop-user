@@ -1,8 +1,8 @@
 import {
-    IS_STAGING,
-    SOKETI_HOST,
-    SOKETI_KEY,
-    SOKETI_PORT,
+    env.IS_STAGING,
+    env.SOKETI_HOST,
+    env.SOKETI_KEY,
+    env.SOKETI_PORT,
 } from '@ecoop/shared/constants'
 import { Logger } from '@ecoop/shared/loggers'
 import Pusher, { type Options } from 'pusher-js'
@@ -17,9 +17,9 @@ interface PusherState {
 }
 
 const DEFAULT_OPTIONS: Options = {
-    wsHost: SOKETI_HOST,
-    wsPort: SOKETI_PORT,
-    forceTLS: IS_STAGING,
+    wsHost: env.SOKETI_HOST,
+    wsPort: env.SOKETI_PORT,
+    forceTLS: env.IS_STAGING,
     disableStats: true,
     enabledTransports: ['ws', 'wss'],
     cluster: 'mt1',
@@ -33,7 +33,7 @@ export const usePusherStore = create<PusherState>((set, get) => ({
     initPusher: () => {
         if (get().pusher) return
 
-        const pusher = new Pusher(SOKETI_KEY, DEFAULT_OPTIONS)
+        const pusher = new Pusher(env.SOKETI_KEY, DEFAULT_OPTIONS)
 
         const logger = Logger.getInstance('pusher', false)
 

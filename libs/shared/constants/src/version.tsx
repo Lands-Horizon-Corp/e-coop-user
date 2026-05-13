@@ -1,4 +1,4 @@
-import { APP_VERSION } from './envs'
+import { env.APP_VERSION } from './envs'
 
 export type TSoftwareUpdateEntryStatus = 'general' | 'bug' | 'feature'
 
@@ -18,7 +18,7 @@ export interface SoftwareUpdateEntry {
 
 export const softwareUpdates: SoftwareUpdates = {
     name: 'e-Coop Beta',
-    version: `v${APP_VERSION}`,
+    version: `v${env.APP_VERSION}`,
     description: 'Updated version with performance improvements.',
     date: new Date('2024-09-15'),
     updates: [
