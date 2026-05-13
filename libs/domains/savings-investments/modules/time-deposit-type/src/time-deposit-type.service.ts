@@ -1,12 +1,11 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-import { createMutationFactory } from '@ecoop/shared/repositories'
-
 import type {
     ITimeDepositType,
     ITimeDepositTypeCreateRequest,
     ITimeDepositTypeRequest,
-} from '@ecoop/savings-investments/models'
+} from '@ecoop/domains/savings-investments/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
 
 const {
     apiCrudHooks,

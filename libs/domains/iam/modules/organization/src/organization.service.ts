@@ -1,5 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type {
+    IOrganization,
+    IOrganizationEditRequest,
+    IOrganizationRequest,
+    IOrganizationWithPolicies,
+} from '@ecoop/domains/iam/models'
 import type { ICategory } from '@ecoop/platforms/category'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
@@ -9,13 +15,6 @@ import {
     updateMutationInvalidationFn,
 } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IOrganization,
-    IOrganizationEditRequest,
-    IOrganizationRequest,
-    IOrganizationWithPolicies,
-} from '@ecoop/iam/models'
 
 const {
     apiCrudHooks,

@@ -1,10 +1,9 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     IOrganizationDailyUsage,
     IOrganizationDailyUsageRequest,
-} from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const {
     apiCrudHooks,

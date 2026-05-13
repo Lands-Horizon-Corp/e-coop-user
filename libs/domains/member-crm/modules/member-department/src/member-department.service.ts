@@ -1,10 +1,9 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     IMemberDepartment,
     IMemberDepartmentRequest,
-} from '@ecoop/member-crm/models'
+} from '@ecoop/domains/member-crm/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberDepartment,

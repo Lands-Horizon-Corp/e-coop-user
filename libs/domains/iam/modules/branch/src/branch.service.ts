@@ -1,13 +1,12 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
+import type { IUserOrganization } from '@ecoop/domains/iam/models'
+import type { IBranch, IBranchRequest } from '@ecoop/domains/iam/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import { createMutationFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type { IUserOrganization } from '@ecoop/iam/models'
-import type { IBranch, IBranchRequest } from '@ecoop/iam/models'
 
 /**
  * CRUD Factory

@@ -1,16 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { Logger } from '@ecoop/shared/loggers'
-import type { HookQueryOptions } from '@ecoop/shared/repositories'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-import {
-    createMutationFactory,
-    createMutationInvalidateFn,
-    updateMutationInvalidationFn,
-} from '@ecoop/shared/repositories'
-import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
 import type {
     IMemberProfile,
     IMemberProfileDashboardSummaryResponse,
@@ -20,8 +10,17 @@ import type {
     IMemberProfileQuickCreateRequest,
     IMemberProfileQuickSearchResponse,
     IMemberProfileRequest,
-} from '@ecoop/member-crm/models'
-import type { TMemberProfileCoordinatesSchema } from '@ecoop/member-crm/models'
+} from '@ecoop/domains/member-crm/models'
+import type { TMemberProfileCoordinatesSchema } from '@ecoop/domains/member-crm/models'
+import { Logger } from '@ecoop/shared/loggers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import {
+    createMutationFactory,
+    createMutationInvalidateFn,
+    updateMutationInvalidationFn,
+} from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 export const {
     apiCrudHooks,

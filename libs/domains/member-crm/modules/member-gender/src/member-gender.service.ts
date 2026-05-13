@@ -1,7 +1,9 @@
+import type {
+    IMemberGender,
+    IMemberGenderRequest,
+} from '@ecoop/domains/member-crm/models'
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
-import type { IMemberGender, IMemberGenderRequest } from '@ecoop/member-crm/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberGender,

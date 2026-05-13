@@ -1,17 +1,16 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
-import { Logger } from '@ecoop/shared/loggers'
-import type { HookQueryOptions } from '@ecoop/shared/repositories'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
 import type {
     IGeneralLedger,
     IGeneralLedgerPaginated,
     IMemberGeneralLedgerTotal,
     TEntryType,
-} from '@ecoop/accounting/models'
+} from '@ecoop/domains/accounting/models'
+import { Logger } from '@ecoop/shared/loggers'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 // ⚙️🛠️ API SERVICE HERE
 

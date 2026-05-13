@@ -1,4 +1,7 @@
 import type { IBranch, IOrganization } from '@ecoop/domains/iam/models'
+import type { IUserOrganization } from '@ecoop/domains/iam/models'
+import type { IUserBase } from '@ecoop/domains/iam/models'
+import type { IAuthContext } from '@ecoop/domains/iam/models'
 import type {
     GetCrudPermissionOpts,
     IHasPermissionOpts,
@@ -9,10 +12,6 @@ import {
     hasPermission,
 } from '@ecoop/domains/iam/modules/permission'
 import { create } from 'zustand'
-
-import type { IUserOrganization } from '@ecoop/iam/models'
-import type { IUserBase } from '@ecoop/iam/models'
-import type { IAuthContext } from '@ecoop/iam/models'
 
 type TAuthStoreStatus = 'loading' | 'authorized' | 'unauthorized' | 'error'
 

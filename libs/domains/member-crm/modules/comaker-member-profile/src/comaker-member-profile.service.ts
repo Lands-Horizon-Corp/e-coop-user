@@ -1,14 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type {
+    IComakerMemberProfile,
+    IComakerMemberProfileRequest,
+} from '@ecoop/domains/member-crm/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IComakerMemberProfile,
-    IComakerMemberProfileRequest,
-} from '@ecoop/member-crm/models'
 
 const {
     apiCrudHooks,

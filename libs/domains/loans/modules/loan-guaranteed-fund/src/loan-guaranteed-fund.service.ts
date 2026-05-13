@@ -1,10 +1,9 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     ILoanGuaranteedFund,
     ILoanGuaranteedFundRequest,
-} from '@ecoop/loans/models'
+} from '@ecoop/domains/loans/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const {
     apiCrudHooks,

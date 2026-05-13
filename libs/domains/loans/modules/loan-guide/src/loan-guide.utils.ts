@@ -2,7 +2,7 @@ import type {
     ILoanAccountSummary,
     ILoanGuide,
     ILoanPaymentSchedule,
-} from '@ecoop/loans/models'
+} from '@ecoop/domains/loans/models'
 
 export interface LoanGuideTimelineRow {
     payment_date: string

@@ -1,5 +1,6 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type { ILoanGuide } from '@ecoop/domains/loans/models'
 import type { IComakerMemberProfile } from '@ecoop/domains/member-crm/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
@@ -10,7 +11,6 @@ import {
 } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
-import type { ILoanGuide } from '@ecoop/loans/models'
 // import { IAmortizationSchedule } from '../amortization'
 import type {
     IAllMembersLoanSummaryResponse,

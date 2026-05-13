@@ -1,20 +1,20 @@
 import { useCallback, useEffect, useRef } from 'react'
 
-import { getLocalStorage, setLocalStorage } from '@ecoop/shared/hooks'
-
 import {
     ACTIVITY_DEBOUNCE_TIME,
     ACTIVITY_GRACE_PERIOD,
     ACTIVITY_STORAGE_KEY,
     INACTIVITY_SETTINGS_KEY,
     POLLING_INTERVAL,
-} from '@ecoop/iam/models'
-import { logger } from '../user-profile.service'
+} from '@ecoop/domains/iam/models'
 import type {
     IUserProfileInactivitySettings,
     TInactivityTimeUnit,
-} from '@ecoop/iam/models'
-import type { TUserProfileInactivitySettings } from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
+import type { TUserProfileInactivitySettings } from '@ecoop/domains/iam/models'
+import { getLocalStorage, setLocalStorage } from '@ecoop/shared/hooks'
+
+import { logger } from '../user-profile.service'
 
 export const DEFAULT_INACTIVITY_SETTINGS: TUserProfileInactivitySettings = {
     enabled: false,

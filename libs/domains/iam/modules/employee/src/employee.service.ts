@@ -1,6 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
+import type {
+    IUserOrganization,
+    IUserOrganizationPaginated,
+} from '@ecoop/domains/iam/models'
+import type { IEmployee } from '@ecoop/domains/iam/models'
+import type { IEmployeeCreateRequest } from '@ecoop/domains/iam/models'
 import {
     API,
     createUserOrganization,
@@ -17,13 +23,6 @@ import {
 } from '@ecoop/shared/repositories'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IUserOrganization,
-    IUserOrganizationPaginated,
-} from '@ecoop/iam/models'
-import type { IEmployee } from '@ecoop/iam/models'
-import type { IEmployeeCreateRequest } from '@ecoop/iam/models'
 
 /**
  * 👻 Ghost Module: Employee

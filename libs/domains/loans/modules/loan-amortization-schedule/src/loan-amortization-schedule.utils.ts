@@ -1,4 +1,4 @@
-import type { ILoanAmortizationSchedule } from '@ecoop/loans/models'
+import type { ILoanAmortizationSchedule } from '@ecoop/domains/loans/models'
 
 export const scheduleToTableRow = (
     loanSchedules: ILoanAmortizationSchedule[]

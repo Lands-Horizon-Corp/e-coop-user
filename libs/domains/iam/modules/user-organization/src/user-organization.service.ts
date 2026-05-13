@@ -2,6 +2,16 @@ import type { UseMutationOptions } from '@tanstack/react-query'
 import { useMutation, useQuery } from '@tanstack/react-query'
 import { toast } from 'sonner'
 
+import type { IBranch } from '@ecoop/domains/iam/models'
+import type { IUserBase } from '@ecoop/domains/iam/models'
+import type {
+    IOrgUserOrganizationGroup,
+    IUserOrganization,
+    IUserOrganizationPaginated,
+    IUserOrganizationPermissionRequest,
+    IUserOrganizationSettings,
+    IUserOrganizationTimeMachine,
+} from '@ecoop/domains/iam/models'
 import type { TimeMachineRequest } from '@ecoop/domains/transactions/models'
 import { groupBy, withCatchAsync } from '@ecoop/shared/helpers/core-helpers'
 import { Logger } from '@ecoop/shared/loggers'
@@ -14,17 +24,7 @@ import {
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
 
 import { getBranchesByOrganizationId } from '../branch/branch.service'
-import type { IBranch } from '@ecoop/iam/models'
 import { employeeBaseKey } from '../employee/employee.service'
-import type { IUserBase } from '@ecoop/iam/models'
-import type {
-    IOrgUserOrganizationGroup,
-    IUserOrganization,
-    IUserOrganizationPaginated,
-    IUserOrganizationPermissionRequest,
-    IUserOrganizationSettings,
-    IUserOrganizationTimeMachine,
-} from '@ecoop/iam/models'
 
 export const { apiCrudHooks, apiCrudService, baseQueryKey } =
     createDataLayerFactory<IUserOrganization, void>({

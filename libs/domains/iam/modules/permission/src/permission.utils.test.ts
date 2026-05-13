@@ -1,13 +1,14 @@
-import type { IUserOrganization } from '@ecoop/iam/models'
-import { describe, expect, it } from 'vitest'
-
+import type { IUserOrganization } from '@ecoop/domains/iam/models'
 import {
     PERMISSION_BASE_ACTIONS,
     generateBaseAction,
-} from '@ecoop/iam/models'
-import type { TPermission, TPermissionAction } from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
+import type { TPermission, TPermissionAction } from '@ecoop/domains/iam/models'
+import { describe, expect, it } from 'vitest'
+
 import {
-    getCrudPermissions, getAllPermissions as hasPermission,
+    getCrudPermissions,
+    getAllPermissions as hasPermission,
     permissionArrayToMap,
     permissionMapToPermissionArray,
 } from './permission.utils'

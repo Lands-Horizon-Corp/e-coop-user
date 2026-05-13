@@ -1,5 +1,9 @@
+import type { IMemberProfileUserAccountRequest } from '@ecoop/domains/iam/models'
 import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
-import { apiCrudService, memberProfileBaseKey } from '@ecoop/domains/member-crm/models'
+import {
+    apiCrudService,
+    memberProfileBaseKey,
+} from '@ecoop/domains/member-crm/models'
 import { Logger } from '@ecoop/shared/loggers'
 import {
     createMutationFactory,
@@ -7,8 +11,6 @@ import {
     updateMutationInvalidationFn,
 } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type { IMemberProfileUserAccountRequest } from '@ecoop/iam/models'
 
 const { API, route } = apiCrudService
 

@@ -1,7 +1,9 @@
+import type {
+    IMemberType,
+    IMemberTypeRequest,
+} from '@ecoop/domains/member-crm/models'
 import { Logger } from '@ecoop/shared/loggers'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
-import type { IMemberType, IMemberTypeRequest } from '@ecoop/member-crm/models'
 
 export const {
     apiCrudHooks,

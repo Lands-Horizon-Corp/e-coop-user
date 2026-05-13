@@ -1,5 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type {
+    IMutualFund,
+    IMutualFundPostRequest,
+    IMutualFundPrintRequest,
+    IMutualFundRequest,
+    IMutualFundView,
+} from '@ecoop/domains/savings-investments/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
@@ -8,14 +15,6 @@ import {
     updateMutationInvalidationFn,
 } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IMutualFund,
-    IMutualFundPostRequest,
-    IMutualFundPrintRequest,
-    IMutualFundRequest,
-    IMutualFundView,
-} from '@ecoop/savings-investments/models'
 
 const {
     apiCrudHooks,

@@ -1,15 +1,14 @@
 import { useQuery } from '@tanstack/react-query'
 import qs from 'query-string'
 
+import type {
+    IMemberGenderHistory,
+    IMemberGenderHistoryPaginated,
+} from '@ecoop/domains/member-crm/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
-import type {
-    IMemberGenderHistory,
-    IMemberGenderHistoryPaginated,
-} from '@ecoop/member-crm/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberGenderHistory,

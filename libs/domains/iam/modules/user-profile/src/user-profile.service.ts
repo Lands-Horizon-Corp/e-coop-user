@@ -1,14 +1,13 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-import { createMutationFactory } from '@ecoop/shared/repositories'
-
-import type { IUserBase } from '@ecoop/iam/models'
+import type { IUserBase } from '@ecoop/domains/iam/models'
 import type {
     IUserProfileGeneralRequest,
     IUserProfilePhotoUpdateRequest,
     IUserProfileRequest,
     IUserProfileSecurityRequest,
-} from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
 
 const { apiCrudService } = createDataLayerFactory({
     url: '/api/v1/profile',

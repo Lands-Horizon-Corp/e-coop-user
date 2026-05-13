@@ -1,3 +1,4 @@
+import type { ILoanTransaction } from '@ecoop/domains/loans/models'
 import { loanTransactionBaseKey } from '@ecoop/domains/loans/modules/loan-transaction'
 import { Logger } from '@ecoop/shared/loggers'
 import {
@@ -13,7 +14,6 @@ import type {
     ILoanTransactionEntry,
     ILoanTransactionEntryRequest,
 } from '../loan-transaction-entry'
-import type { ILoanTransaction } from '@ecoop/loans/models'
 
 const {
     apiCrudHooks,

@@ -1,10 +1,9 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     IInterestMaturity,
     IInterestMaturityRequest,
-} from '@ecoop/rates-computations/models'
+} from '@ecoop/domains/rates-computations/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const {
     apiCrudHooks,

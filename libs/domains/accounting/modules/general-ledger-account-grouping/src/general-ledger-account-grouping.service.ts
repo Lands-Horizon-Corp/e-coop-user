@@ -1,10 +1,9 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     IGeneralLedgerAccountGrouping,
     IGeneralLedgerAccountGroupingRequest,
-} from '@ecoop/accounting/models'
+} from '@ecoop/domains/accounting/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const { apiCrudHooks } = createDataLayerFactory<
     IGeneralLedgerAccountGrouping,

@@ -1,12 +1,11 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type { IUserBase } from '@ecoop/domains/iam/models'
 import type { IMedia } from '@ecoop/platforms/media/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type { IUserBase } from '@ecoop/iam/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IUserBase,

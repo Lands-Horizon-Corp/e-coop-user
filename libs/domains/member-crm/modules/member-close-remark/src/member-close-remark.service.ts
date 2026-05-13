@@ -1,16 +1,15 @@
 import { useMutation } from '@tanstack/react-query'
 
+import type { IMemberProfile } from '@ecoop/domains/member-crm/models'
+import type {
+    IMemberCloseRemark,
+    IMemberCloseRemarkRequest,
+} from '@ecoop/domains/member-crm/models'
 import { memberProfileAPIRoute } from '@ecoop/domains/member-crm/modules/member-profile'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookMutationOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TEntityId } from '@ecoop/shared/types'
-
-import type { IMemberProfile } from '@ecoop/member-crm/models'
-import type {
-    IMemberCloseRemark,
-    IMemberCloseRemarkRequest,
-} from '@ecoop/member-crm/models'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IMemberCloseRemark,

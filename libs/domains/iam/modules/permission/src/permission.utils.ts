@@ -1,15 +1,14 @@
-import type { IUserOrganization } from '@ecoop/iam/models'
-import type { IAuditable, TEntityId } from '@ecoop/shared/types'
-
+import type { IUserOrganization } from '@ecoop/domains/iam/models'
 import {
     PERMISSION_ALL_ACTIONS,
     PERMISSION_BASE_ACTIONS,
-} from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
 import type {
     TPermission,
     TPermissionAction,
     TPermissionResource,
-} from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
+import type { IAuditable, TEntityId } from '@ecoop/shared/types'
 
 export type TPermissionLogic = 'all' | 'some'
 

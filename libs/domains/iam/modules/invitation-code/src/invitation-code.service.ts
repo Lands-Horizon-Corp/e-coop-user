@@ -1,13 +1,12 @@
 import { useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@ecoop/shared/loggers'
-import { createAPIRepository } from '@ecoop/shared/repositories'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     IInvitationCode,
     IInvitationCodeRequest,
-} from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createAPIRepository } from '@ecoop/shared/repositories'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const { apiCrudHooks, apiCrudService } = createDataLayerFactory<
     IInvitationCode,

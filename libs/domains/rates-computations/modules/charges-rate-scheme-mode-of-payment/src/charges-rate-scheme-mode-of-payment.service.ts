@@ -1,10 +1,9 @@
-import { Logger } from '@ecoop/shared/loggers'
-import { createDataLayerFactory } from '@ecoop/shared/repositories'
-
 import type {
     IChargesRateSchemeModeOfPayment,
     IChargesRateSchemeModeOfPaymentRequest,
-} from '@ecoop/rates-computations/models'
+} from '@ecoop/domains/rates-computations/models'
+import { Logger } from '@ecoop/shared/loggers'
+import { createDataLayerFactory } from '@ecoop/shared/repositories'
 
 const {
     apiCrudHooks,

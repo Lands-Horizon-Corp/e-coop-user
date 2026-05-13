@@ -1,11 +1,13 @@
 import { useQuery } from '@tanstack/react-query'
 
+import type {
+    IAccounTagRequest,
+    IAccountTag,
+} from '@ecoop/domains/accounting/models'
 import { Logger } from '@ecoop/shared/loggers'
 import type { HookQueryOptions } from '@ecoop/shared/repositories'
 import { createDataLayerFactory } from '@ecoop/shared/repositories'
 import type { TAPIQueryOptions, TEntityId } from '@ecoop/shared/types'
-
-import type { IAccounTagRequest, IAccountTag } from '@ecoop/accounting/models'
 
 const {
     apiCrudHooks,

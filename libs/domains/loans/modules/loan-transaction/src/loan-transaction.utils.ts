@@ -1,10 +1,9 @@
-import { buildOR } from '@ecoop/domains/transactions/models'
-
 import type {
     ILoanTransactionStatusDates,
     TLoanStatusType,
     TORLoanVoucherSettings,
-} from '@ecoop/loans/models'
+} from '@ecoop/domains/loans/models'
+import { buildOR } from '@ecoop/domains/transactions/models'
 
 export const resolveLoanDatesToStatus = (
     dates: ILoanTransactionStatusDates

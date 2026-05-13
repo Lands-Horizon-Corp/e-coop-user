@@ -1,13 +1,6 @@
 import { useMutation, useQuery } from '@tanstack/react-query'
 
-import { Logger } from '@ecoop/shared/loggers'
-import type { HookMutationOptions } from '@ecoop/shared/repositories'
-import { createMutationFactory } from '@ecoop/shared/repositories'
-import { createAPIRepository } from '@ecoop/shared/repositories'
-import type { HookQueryOptions } from '@ecoop/shared/repositories'
-import type { TEntityId } from '@ecoop/shared/types'
-
-import type { IUserBase } from '@ecoop/iam/models'
+import type { IUserBase } from '@ecoop/domains/iam/models'
 import type {
     IAuthContext,
     IChangePasswordRequest,
@@ -20,7 +13,13 @@ import type {
     IVerificationPasswordRequest,
     IVerifyContactNumberRequest,
     IVerifyEmailRequest,
-} from '@ecoop/iam/models'
+} from '@ecoop/domains/iam/models'
+import { Logger } from '@ecoop/shared/loggers'
+import type { HookMutationOptions } from '@ecoop/shared/repositories'
+import { createMutationFactory } from '@ecoop/shared/repositories'
+import { createAPIRepository } from '@ecoop/shared/repositories'
+import type { HookQueryOptions } from '@ecoop/shared/repositories'
+import type { TEntityId } from '@ecoop/shared/types'
 
 const { API, route: authenticationAPIRoute } = createAPIRepository(
     '/api/v1/authentication'

@@ -1,11 +1,10 @@
 import { toast } from 'sonner'
 
 import { arrayMove } from '@dnd-kit/sortable'
-import type { IAccount } from '@ecoop/accounting/models'
+import type { IAccount } from '@ecoop/domains/accounting/models'
+import type { IGeneralLedgerDefinition } from '@ecoop/domains/accounting/models'
 import type { UpdateAccountOrder } from '@ecoop/shared/types'
 import { create } from 'zustand'
-
-import type { IGeneralLedgerDefinition } from '@ecoop/accounting/models'
 
 export interface GLFSStoreProps {
     generalLedgerDefinitions: IGeneralLedgerDefinition[]

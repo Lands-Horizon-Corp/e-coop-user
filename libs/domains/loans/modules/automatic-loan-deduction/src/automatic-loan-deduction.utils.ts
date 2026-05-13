@@ -1,7 +1,7 @@
 import type {
     AutomaticLoanDeductionEntry,
     LoanTransaction,
-} from '@ecoop/loans/models'
+} from '@ecoop/domains/loans/models'
 
 export function computation(
     {
