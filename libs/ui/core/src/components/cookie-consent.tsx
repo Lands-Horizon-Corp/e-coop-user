@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-import CookieSvg from '@/assets/cookie-icon.svg'
+// import CookieSvg from '@/assets/cookie-icon.svg'
 import { cn } from '@ecoop/shared/tw-utils'
 import { addYears } from 'date-fns'
 import Cookies from 'js-cookie'
@@ -45,7 +45,7 @@ const CookieConsent = () => {
                 <Image
                     alt="cookie"
                     className="size-9 lg:size-6"
-                    src={CookieSvg}
+                    src="/cookie-icon.svg"
                 />
             </span>
             <AlertDescription className="pt-4 lg:pt-0">

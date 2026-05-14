@@ -4,21 +4,19 @@
     "moduleResolution": "bundler",
     "module": "esnext",
     "jsx": "react-jsx",
-    "allowJs": false,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "noImplicitAny": true,
-    "composite": true,
-    "declaration": true,
-    "types": ["vite/client", "vitest"],
-    // "paths": {
-    //   "@/*": ["src/*"]
-    // }
+    // "composite": true,
+    // "declaration": true,
+    "types": ["vite/client", "vitest"]
+    // paths inherited from tsconfig.base.json
   },
   "include": [
     "vite.config.mts",
     "src/**/*.ts",
     "src/**/*.tsx",
-    "src/**/*.d.ts"
+    "src/**/*.d.ts",
   ]
 }

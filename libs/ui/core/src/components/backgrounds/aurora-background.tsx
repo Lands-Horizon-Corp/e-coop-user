@@ -79,7 +79,7 @@ export function AuroraBackground() {
             />
 
             {/* Subtle grid pattern */}
-            <div
+            {/* <div
                 className="absolute inset-0 opacity-[0.05]"
                 style={{
                     backgroundImage: `
@@ -88,7 +88,7 @@ export function AuroraBackground() {
           `,
                     backgroundSize: '100px 100px',
                 }}
-            />
+            /> */}
 
             {/* Vignette overlay */}
             <div

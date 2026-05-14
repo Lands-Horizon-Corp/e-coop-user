@@ -1,0 +1,29 @@
+{
+    "name": "assets",
+    "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "libs/shared/assets/src",
+    "projectType": "library",
+    "tags": [],
+    "// targets": "to see all targets run: nx show project assets --web",
+    "targets": {
+        "build": {
+    "executor": "@nx/webpack:webpack",
+    "options": {
+      "assets": [
+        "libs/shared/assets/src/file-thumbnails/attachment-audio.svg",
+        "libs/shared/assets/src/file-thumbnails/attachment-doc.svg",
+        "libs/shared/assets/src/file-thumbnails/attachment-sheets.svg",
+        "libs/shared/assets/src/file-thumbnails/attachment-txt.svg",
+        "libs/shared/assets/src/file-thumbnails/attachment-video.svg",
+        "libs/shared/assets/src/cookie-icon.svg",
+        "libs/shared/assets/src/react.svg",
+        {
+          "glob": "**/*",
+          "input": "libs/shared/assets/src/images",
+          "output": "assets/images"
+        }
+      ]
+    }
+  }
+    }
+}

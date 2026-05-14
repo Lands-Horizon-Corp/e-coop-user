@@ -102,10 +102,10 @@ export * from './components/switch-form-field'
 
 // backgrounds
 export * from './components/backgrounds'
-export * from './components/backgrounds/flickering-grid'
-export * from './components/backgrounds/flowing-grid'
-export * from './components/backgrounds/random-arrows'
-export * from './components/backgrounds/random-dots'
+// export * from './components/backgrounds/flickering-grid'
+// export * from './components/backgrounds/flowing-grid'
+// export * from './components/backgrounds/random-arrows'
+// export * from './components/backgrounds/random-dots'
 
 // animations
 export * from './components/animations/animated-section'

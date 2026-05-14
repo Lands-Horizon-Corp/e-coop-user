@@ -1,3 +1,7 @@
 export { AuroraBackground } from './aurora-background'
 export { ParticlesBackground } from './particles-background'
 export { ScrollProgress } from './scroll-progress'
+export { FlickeringGrid } from './flickering-grid'
+export { FlowingGrid } from './flowing-grid'
+export { RandomArrows } from './random-arrows'
+export { RandomDots } from './random-dots'

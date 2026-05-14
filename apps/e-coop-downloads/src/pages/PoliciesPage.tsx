@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react'
 
-import {
-    type Policy,
-    type PolicySection,
+import type {
+    Policy,
+    PolicySection,
     allPolicies,
     policyList,
-} from '@ecoop/shared/policies'
+} from '@ecoop/shared/download-policies'
 import { motion } from 'framer-motion'
 import { Link2 } from 'lucide-react'
 import { Link, useParams } from 'react-router-dom'

@@ -664,7 +664,6 @@
             "@ecoop/platforms/qr-crypto/models": [
                 "libs/platforms/qr-crypto/models/src/index.ts"
             ],
-     
             "@ecoop/platforms/footstep/models": [
                 "libs/platforms/footstep/models/src/index.ts"
             ],
@@ -675,7 +674,8 @@
             "@ecoop/platforms/env-web": ["libs/platforms/env-web/src/index.ts"],
             "@ecoop/platforms/env-mobile": [
                 "libs/platforms/env-mobile/src/index.ts"
-            ]
+            ],
+            "@ecoop/shared/assets": ["libs/shared/assets/src/index.ts"]
         },
         "strict": true
     },
